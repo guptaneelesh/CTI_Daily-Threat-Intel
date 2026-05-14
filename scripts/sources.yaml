@@ -1,0 +1,240 @@
+# Open-source CTI feeds. Add/remove freely.
+# `type`: rss | atom | nvd | cisa_kev
+# `trust`: 1-5, used as a tiebreaker for dedup (higher wins)
+# `category`: threat | vuln | advisory | breach | mixed
+
+feeds:
+  # ---------------- News / Blogs ----------------
+  - name: BleepingComputer
+    url: https://www.bleepingcomputer.com/feed/
+    type: rss
+    trust: 4
+    category: mixed
+
+  - name: The Hacker News
+    url: https://feeds.feedburner.com/TheHackersNews
+    type: rss
+    trust: 4
+    category: mixed
+
+  - name: GBHackers
+    url: https://gbhackers.com/feed/
+    type: rss
+    trust: 3
+    category: mixed
+
+  - name: Krebs on Security
+    url: https://krebsonsecurity.com/feed/
+    type: rss
+    trust: 5
+    category: mixed
+
+  - name: SecurityWeek
+    url: https://www.securityweek.com/feed/
+    type: rss
+    trust: 4
+    category: mixed
+
+  - name: The Record
+    url: https://therecord.media/feed/
+    type: rss
+    trust: 4
+    category: mixed
+
+  - name: Dark Reading
+    url: https://www.darkreading.com/rss.xml
+    type: rss
+    trust: 4
+    category: mixed
+
+  # ---------------- Vendor Threat Intel ----------------
+  - name: Unit 42 (Palo Alto)
+    url: https://unit42.paloaltonetworks.com/feed/
+    type: rss
+    trust: 5
+    category: threat
+
+  - name: Microsoft Security Blog
+    url: https://www.microsoft.com/en-us/security/blog/feed/
+    type: rss
+    trust: 5
+    category: threat
+
+  - name: Microsoft MSRC
+    url: https://msrc.microsoft.com/blog/feed
+    type: rss
+    trust: 5
+    category: advisory
+
+  - name: Google TAG / Mandiant
+    url: https://cloud.google.com/blog/topics/threat-intelligence/rss
+    type: rss
+    trust: 5
+    category: threat
+
+  - name: Cisco Talos
+    url: https://blog.talosintelligence.com/rss/
+    type: rss
+    trust: 5
+    category: threat
+
+  - name: CrowdStrike Blog
+    url: https://www.crowdstrike.com/blog/feed
+    type: rss
+    trust: 5
+    category: threat
+
+  - name: SentinelOne Labs
+    url: https://www.sentinelone.com/labs/feed/
+    type: rss
+    trust: 4
+    category: threat
+
+  - name: Trend Micro Research
+    url: https://www.trendmicro.com/en_us/research.xml.rss.xml
+    type: rss
+    trust: 4
+    category: threat
+
+  - name: Securelist (Kaspersky)
+    url: https://securelist.com/feed/
+    type: rss
+    trust: 4
+    category: threat
+
+  - name: Check Point Research
+    url: https://research.checkpoint.com/feed/
+    type: rss
+    trust: 4
+    category: threat
+
+  # ---------------- Government / CERT ----------------
+  - name: CISA Alerts
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    type: rss
+    trust: 5
+    category: advisory
+
+  - name: CISA Known Exploited Vulns
+    url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+    type: cisa_kev
+    trust: 5
+    category: vuln
+
+  - name: US-CERT Current Activity
+    url: https://www.cisa.gov/news-events/news.xml
+    type: rss
+    trust: 5
+    category: advisory
+
+  # ---------------- Vulnerability Sources ----------------
+  - name: NVD Recent CVEs
+    url: https://services.nvd.nist.gov/rest/json/cves/2.0?resultsPerPage=50
+    type: nvd
+    trust: 5
+    category: vuln
+
+# ------------- Sector keyword mappings -------------
+sectors:
+  Consumer:
+    - retail
+    - e-commerce
+    - consumer
+    - shopify
+    - amazon
+    - walmart
+    - hospitality
+    - hotel
+  Financial Services:
+    - bank
+    - banking
+    - financial
+    - fintech
+    - swift
+    - payment
+    - cryptocurrency
+    - crypto exchange
+    - insurance
+    - trading
+  Energy Resources & Industrials:
+    - energy
+    - oil
+    - gas
+    - utility
+    - utilities
+    - power grid
+    - electric
+    - ics
+    - scada
+    - ot
+    - operational technology
+    - manufacturing
+    - industrial
+    - chemical
+    - mining
+  Life Sciences & Health Care:
+    - healthcare
+    - hospital
+    - medical
+    - pharma
+    - pharmaceutical
+    - biotech
+    - clinical
+    - patient
+    - HIPAA
+  Government & Public Services:
+    - government
+    - federal
+    - municipal
+    - defense
+    - military
+    - cisa
+    - nsa
+    - fbi
+    - election
+    - public sector
+    - state agency
+  Technology, Media & Telecom:
+    - microsoft
+    - google
+    - apple
+    - cisco
+    - vmware
+    - oracle
+    - sap
+    - telecom
+    - 5g
+    - isp
+    - cloudflare
+    - aws
+    - azure
+    - saas
+    - software
+    - browser
+    - chrome
+    - firefox
+
+# ------------- Region keywords -------------
+regions:
+  Global: [global, worldwide, multiple countries, international]
+  North America: [united states, u.s., usa, canada, north america, mexico]
+  Europe: [europe, eu, european union, uk, united kingdom, germany, france, italy, spain, netherlands]
+  Asia-Pacific: [asia, apac, china, japan, india, korea, australia, singapore, taiwan]
+  Middle East: [middle east, israel, iran, saudi arabia, uae]
+  Latin America: [latin america, brazil, argentina, chile, colombia]
+  Africa: [africa, south africa, nigeria, kenya, egypt]
+
+# ------------- Active exploitation signals -------------
+exploitation_keywords:
+  - actively exploited
+  - in the wild
+  - zero-day
+  - 0-day
+  - exploited in attacks
+  - mass exploitation
+  - ransomware gang
+  - apt
+  - proof-of-concept
+  - poc exploit
+  - public exploit
+  - weaponized

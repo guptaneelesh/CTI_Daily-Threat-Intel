@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CTI Daily Brief — Operational Threat Intelligence</title>
+<meta name="description" content="Open-source cyber threat intelligence dashboard aggregated from CISA, NVD, Unit 42, Microsoft, Google TAG, BleepingComputer and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="dot dot-live" aria-hidden="true"></span>
+    <span class="brand-label">CTI//DAILY-BRIEF</span>
+  </div>
+  <div class="meta">
+    <span id="generated-at" class="mono">loading…</span>
+    <span class="sep">·</span>
+    <span id="lookback" class="mono"></span>
+    <span class="sep">·</span>
+    <a class="link" href="https://github.com/" target="_blank" rel="noopener">source</a>
+  </div>
+</header>
+
+<section class="stats" aria-label="Stats">
+  <div class="stat" data-filter-priority="all">
+    <div class="stat-num" id="stat-all">—</div>
+    <div class="stat-lbl">ITEMS</div>
+  </div>
+  <div class="stat critical" data-filter-priority="Critical">
+    <div class="stat-num" id="stat-critical">—</div>
+    <div class="stat-lbl">CRITICAL</div>
+  </div>
+  <div class="stat high" data-filter-priority="High">
+    <div class="stat-num" id="stat-high">—</div>
+    <div class="stat-lbl">HIGH</div>
+  </div>
+  <div class="stat medium" data-filter-priority="Medium">
+    <div class="stat-num" id="stat-medium">—</div>
+    <div class="stat-lbl">MEDIUM</div>
+  </div>
+  <div class="stat exploited" data-filter-exploited="true">
+    <div class="stat-num" id="stat-exploited">—</div>
+    <div class="stat-lbl">ACTIVELY EXPLOITED</div>
+  </div>
+  <div class="stat cve" data-filter-cve="true">
+    <div class="stat-num" id="stat-cves">—</div>
+    <div class="stat-lbl">WITH CVE</div>
+  </div>
+</section>
+
+<section class="filters" aria-label="Filters">
+  <input id="q" type="search" placeholder="search title, CVE, product, source…" autocomplete="off" />
+  <select id="f-category">
+    <option value="">all categories</option>
+    <option value="threat">threats</option>
+    <option value="vuln">vulnerabilities</option>
+    <option value="advisory">advisories</option>
+    <option value="breach">breaches</option>
+    <option value="mixed">news / mixed</option>
+  </select>
+  <select id="f-sector">
+    <option value="">all sectors</option>
+    <option>Consumer</option>
+    <option>Financial Services</option>
+    <option>Energy Resources &amp; Industrials</option>
+    <option>Life Sciences &amp; Health Care</option>
+    <option>Government &amp; Public Services</option>
+    <option>Technology, Media &amp; Telecom</option>
+  </select>
+  <select id="f-priority">
+    <option value="">all priority</option>
+    <option>Critical</option>
+    <option>High</option>
+    <option>Medium</option>
+    <option>Low</option>
+  </select>
+  <label class="check"><input type="checkbox" id="f-exploited" /> actively exploited</label>
+  <button id="reset" class="btn-ghost">reset</button>
+</section>
+
+<main>
+  <h2 class="section-title">// TOP HEADLINES — LAST 24H</h2>
+  <ol id="headlines" class="headlines" aria-live="polite"></ol>
+
+  <h2 class="section-title">// FULL FEED</h2>
+  <div id="feed" class="feed"></div>
+
+  <p id="empty" class="empty hidden">No items match the current filters.</p>
+</main>
+
+<footer>
+  <p>
+    Aggregated from open sources: CISA, NVD, MSRC, Unit 42, Cisco Talos, Microsoft, Google TAG, CrowdStrike, SentinelOne,
+    Trend Micro, Securelist, Check Point, BleepingComputer, The Hacker News, GBHackers, Krebs, SecurityWeek, The Record,
+    Dark Reading.
+  </p>
+  <p class="mono small">// not affiliated with any listed vendor // intel is aggregated as-is for situational awareness</p>
+</footer>
+
+<template id="card-tpl">
+  <article class="card">
+    <div class="card-head">
+      <span class="pill priority"></span>
+      <span class="pill category"></span>
+      <span class="pill exploited hidden">⚡ EXPLOITED</span>
+      <span class="pill cvss hidden"></span>
+      <span class="when mono"></span>
+    </div>
+    <h3 class="card-title"></h3>
+    <p class="card-summary"></p>
+    <div class="meta-grid">
+      <div class="meta-row cves hidden"><span class="meta-key">CVE</span><span class="meta-val"></span></div>
+      <div class="meta-row products hidden"><span class="meta-key">PRODUCT</span><span class="meta-val"></span></div>
+      <div class="meta-row sectors hidden"><span class="meta-key">SECTOR</span><span class="meta-val"></span></div>
+      <div class="meta-row regions hidden"><span class="meta-key">REGION</span><span class="meta-val"></span></div>
+      <div class="meta-row sources hidden"><span class="meta-key">SOURCES</span><span class="meta-val"></span></div>
+    </div>
+    <div class="card-foot">
+      <a class="card-link" target="_blank" rel="noopener">read primary source →</a>
+      <span class="related-toggle hidden">+ <span class="related-count"></span> corroborating</span>
+    </div>
+    <div class="related hidden"></div>
+  </article>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>
