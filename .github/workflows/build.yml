@@ -1,0 +1,72 @@
+name: Build CTI Daily Brief
+
+on:
+  schedule:
+    # Every 6 hours: 00:00, 06:00, 12:00, 18:00 UTC
+    - cron: "0 */6 * * *"
+  workflow_dispatch:        # manual trigger
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/**"
+
+permissions:
+  contents: write           # commit data.json updates
+  pages: write              # publish to GitHub Pages
+  id-token: write           # OIDC for Pages
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Aggregate feeds
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run aggregator
+        run: python scripts/aggregate.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "cti-bot"
+          git config user.email "cti-bot@users.noreply.github.com"
+          git add docs/data.json data/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(data): refresh CTI brief $(date -u +%FT%TZ)"
+            git push
+          else
+            echo "No changes."
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
