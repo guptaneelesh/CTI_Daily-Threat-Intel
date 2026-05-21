@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-21T15:25:46.623587+00:00",
+  "generated_at": "2026-05-21T19:53:26.891766+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 100,
+    "all": 108,
     "critical": 4,
-    "high": 7,
-    "medium": 11,
-    "low": 78,
-    "actively_exploited": 19,
-    "with_cves": 19
+    "high": 9,
+    "medium": 14,
+    "low": 81,
+    "actively_exploited": 21,
+    "with_cves": 27
   },
   "sources_used": [
     "BleepingComputer",
@@ -138,6 +138,58 @@
       "cvss": null,
       "priority_score": 75,
       "priority_label": "Critical",
+      "related_sources": []
+    },
+    {
+      "id": "1fdb2d743d175ec6",
+      "title": "CVE-2025-34291: Langflow Origin Validation Error Vulnerability (Langflow Langflow)",
+      "summary": "CISA KEV — actively exploited. Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. This could allow the attacker to execute arbitrary code and achieve full system compromise via obtained tokens that permit access to authenticated endpoints. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. (due 2026-06-04).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34291",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-05-21T00:00:00+00:00",
+      "published_ts": 1779321600.0,
+      "cves": [
+        "CVE-2025-34291"
+      ],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "5617e967af4e8fcf",
+      "title": "CVE-2026-34926: Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability (Trend Micro Apex One)",
+      "summary": "CISA KEV — actively exploited. Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. (due 2026-06-04).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34926",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-05-21T00:00:00+00:00",
+      "published_ts": 1779321600.0,
+      "cves": [
+        "CVE-2026-34926"
+      ],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
       "related_sources": []
     },
     {
@@ -542,6 +594,92 @@
       "related_sources": []
     },
     {
+      "id": "a6021960bb5216c8",
+      "title": "ABB B&R Automation Runtime",
+      "summary": "View CSAF Summary An update is available that resolves a vulnerability identified by B&amp;Rs internal security analysis in the product versions listed as affected in this advisory. An attacker who successfully exploited these vulnerabilities could take over a remote session or execute code in the context of the user’s browser session. The following versions of ABB B&amp;R Automation Runtime are affected: Automation Runtime &lt;6.4, 6.4 (CVE-2025-3449, CVE-2025-3448, CVE-2025-11498) CVSS Vendor Equipment Vulnerabilities v3 6.1 B&amp;R ABB B&amp;R Automation Runtime Generation of Predictable Numbers or Identifiers, Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'), Improper Neutralization of Formula Elements in a CSV File Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-3449 A Generation of Predictable Numbers or Identifiers vulnerability in the SDM component of B&amp;R Automation Runtime versions before 6.4 may allow an unauthenticated network-based attacker to take over already established sessions. View CVE Details Affected Products ABB B&amp;R Automation Runtime Vendor: B&amp;R Product Version: Automation Runtime &lt;6.4 Product Status: fixed, known_affected Remediations Vendor fix The problem is corrected in Automation Runtime 6.4. The System Diagnostic Manager (SDM) is disabled by default in Automation Runtime 6 and is ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-21T12:00:00+00:00",
+      "published_ts": 1779364800.0,
+      "cves": [
+        "CVE-2025-11498",
+        "CVE-2025-3448",
+        "CVE-2025-3449"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "f0df3582fc4df6f8",
+      "title": "ABB Terra AC Wallbox",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited this vulnerability could cause the pollution of heap memory which potentially takes remote control of the product and performs a write operation to the flash memory to alter the firmware behavior. The following versions of ABB Terra AC Wallbox are affected: Terra AC wallbox (JP) &lt;=1.8.33, 1.8.36 (CVE-2025-10504, CVE-2025-12142, CVE-2025-12143) CVSS Vendor Equipment Vulnerabilities v3 6.1 ABB ABB Terra AC Wallbox Heap-based Buffer Overflow, Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-10504 There is potential risk to pollute the memory when developing apps which has used to communicate with charger according to self-defined protocol if developers don’t strictly follow the field length which has not been validated in firmware. View CVE Details Affected Products ABB Terra AC Wallbox Vendor: ABB Product Version: ABB Terra AC wallbox (JP) &lt;=1.8.33 Product Status: fixed, known_affected Remediations Vendor fix The problem is corrected in the following product version; apply the following update depending on product variant: Terra AC wallbox (JP) 1.8.36 ABB recommends that customers apply the update at earliest c",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-21T12:00:00+00:00",
+      "published_ts": 1779364800.0,
+      "cves": [
+        "CVE-2025-10504",
+        "CVE-2025-12142",
+        "CVE-2025-12143"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "9e8c6aa57c9ec696",
+      "title": "Hitachi Energy GMS600",
+      "summary": "View CSAF Summary Hitachi Energy is aware of the vulnerability, CVE-2022-4304 in the OSS component OpenSSL, that affects the GMS600 versions that are listed below. An attacker successfully exploiting this vulnerability could send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection. For immediate mitigation /workaround information, please refer to the General Mitigation Factors/Workarounds The following versions of Hitachi Energy GMS600 are affected: GMS600 vers:GMS600/&gt;=1.3.0|&lt;=1.3.1 (CVE-2022-4304) CVSS Vendor Equipment Vulnerabilities v3 5.9 Hitachi Energy Hitachi Energy GMS600 Observable Discrepancy Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2022-4304 A timing-based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-21T12:00:00+00:00",
+      "published_ts": 1779364800.0,
+      "cves": [
+        "CVE-2022-4304"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "OpenSSL"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "79d0d0a7aa4a0ea7",
       "title": "Exposing Fox Tempest: A malware-signing service operation",
       "summary": "Fox Tempest is a financially motivated threat actor operating a malware‑signing‑as‑a‑service (MSaaS) used by other cybercriminals, including Vanilla Tempest and Storm groups, to more effectively distribute malicious code, including ransomware. The post Exposing Fox Tempest: A malware-signing service operation appeared first on Microsoft Security Blog .",
@@ -559,36 +697,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "41389dda058dfc28",
-      "title": "Kieback & Peter DDC Building Controllers",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to take control of the victim's browser. The following versions of Kieback &amp; Peter DDC Building Controllers are affected: DDC4002 &lt;=1.12.14 (CVE-2026-4293) DDC4100 &lt;=1.12.14 (CVE-2026-4293) DDC4200 &lt;=1.12.14 (CVE-2026-4293) DDC4200-L &lt;=1.12.14 (CVE-2026-4293) DDC4400 &lt;=1.12.14 (CVE-2026-4293) DDC4002e &lt;=1.23.4 (CVE-2026-4293) DDC4200e &lt;=1.23.4 (CVE-2026-4293) DDC4400e &lt;=1.23.4 (CVE-2026-4293) DDC4020e &lt;=1.23.4 (CVE-2026-4293) DDC4040e &lt;=1.23.4 (CVE-2026-4293) DDC520 &lt;=1.24.1 (CVE-2026-4293) CVSS Vendor Equipment Vulnerabilities v3 5.3 Kieback &amp; Peter Kieback &amp; Peter DDC Building Controllers Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') Background Critical Infrastructure Sectors: Commercial Facilities, Communications, Financial Services, Food and Agriculture, Government Services and Facilities, Healthcare and Public Health, Information Technology Countries/Areas Deployed: Austria, China, France, Germany, United Arab Emirates Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-4293 The affected products are vulnerable to cross-site scripting (XSS), enabling JavaScript to be executed by the victim's browser, which allows the attacker to control the browser. View CVE Details Affected Products Kieback &amp; Peter DDC Building Controllers Vendor: Kieback &amp; Peter Product Version: Kieba",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-05",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-05-19T12:00:00+00:00",
-      "published_ts": 1779192000.0,
-      "cves": [
-        "CVE-2026-4293"
-      ],
-      "sectors": [
-        "Financial Services",
-        "Government & Public Services",
-        "Life Sciences & Health Care",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -629,6 +737,61 @@
       "cvss": null,
       "priority_score": 25,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "41389dda058dfc28",
+      "title": "Kieback & Peter DDC Building Controllers",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to take control of the victim's browser. The following versions of Kieback &amp; Peter DDC Building Controllers are affected: DDC4002 &lt;=1.12.14 (CVE-2026-4293) DDC4100 &lt;=1.12.14 (CVE-2026-4293) DDC4200 &lt;=1.12.14 (CVE-2026-4293) DDC4200-L &lt;=1.12.14 (CVE-2026-4293) DDC4400 &lt;=1.12.14 (CVE-2026-4293) DDC4002e &lt;=1.23.4 (CVE-2026-4293) DDC4200e &lt;=1.23.4 (CVE-2026-4293) DDC4400e &lt;=1.23.4 (CVE-2026-4293) DDC4020e &lt;=1.23.4 (CVE-2026-4293) DDC4040e &lt;=1.23.4 (CVE-2026-4293) DDC520 &lt;=1.24.1 (CVE-2026-4293) CVSS Vendor Equipment Vulnerabilities v3 5.3 Kieback &amp; Peter Kieback &amp; Peter DDC Building Controllers Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') Background Critical Infrastructure Sectors: Commercial Facilities, Communications, Financial Services, Food and Agriculture, Government Services and Facilities, Healthcare and Public Health, Information Technology Countries/Areas Deployed: Austria, China, France, Germany, United Arab Emirates Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-4293 The affected products are vulnerable to cross-site scripting (XSS), enabling JavaScript to be executed by the victim's browser, which allows the attacker to control the browser. View CVE Details Affected Products Kieback &amp; Peter DDC Building Controllers Vendor: Kieback &amp; Peter Product Version: Kieba",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-19T12:00:00+00:00",
+      "published_ts": 1779192000.0,
+      "cves": [
+        "CVE-2026-4293"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Government & Public Services",
+        "Life Sciences & Health Care",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "4dc4deefc6b2db5a",
+      "title": "What’s new in Microsoft Security: May 2026",
+      "summary": "Microsoft Security’s latest updates extend visibility, control, and protection across expanding ecosystems as organizations accelerate AI adoption. The post What’s new in Microsoft Security: May 2026 appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-05-21T16:00:00+00:00",
+      "published_ts": 1779379200.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -680,6 +843,34 @@
       "related_sources": []
     },
     {
+      "id": "e6ad04b9d28c0a12",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2025-34291 Langflow Origin Validation Error Vulnerability CVE-2026-34926 Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats. See the BOD 22-01 Fact Sheet for more information. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp;",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/05/21/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-21T12:00:00+00:00",
+      "published_ts": 1779364800.0,
+      "cves": [
+        "CVE-2025-34291",
+        "CVE-2026-34926"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "7104d823ad336191",
       "title": "Apple Rejected 2 Million App Store Submissions in 2025 for Security and Fraud Prevention",
       "summary": "The company blocked over 1.1 billion accounts and $2.2 billion in potentially fraudulent transactions. The post Apple Rejected 2 Million App Store Submissions in 2025 for Security and Fraud Prevention appeared first on SecurityWeek .",
@@ -720,31 +911,6 @@
       "regions": [
         "Europe",
         "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "101202afa9efb022",
-      "title": "Securing the gaming culture of cultures",
-      "summary": "Read about the unique challenges and rewards of securing gaming platforms and how to better protect gaming communities. The post Securing the gaming culture of cultures appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/20/securing-the-gaming-culture-of-cultures/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-05-20T16:00:00+00:00",
-      "published_ts": 1779292800.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -812,6 +978,31 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1c9c21db9229d271",
+      "title": "Google accidentally exposed details of unfixed Chromium flaw",
+      "summary": "Google has accidentally leaked details about an unfixed issue in Chromium that keeps JavaScript running in the background even when the browser is closed, allowing remote code execution on the device. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-21T18:13:50+00:00",
+      "published_ts": 1779387230.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -893,6 +1084,90 @@
       "related_sources": []
     },
     {
+      "id": "89ab1caf0ba16efc",
+      "title": "ABB B&R Automation Studio",
+      "summary": "View CSAF Summary ABB became aware of vulnerability in the product versions listed as affected in the advisory. An update is available that replaces an outdated third-party component. Although no successful exploitation was observed during testing of the affected B&amp;R products, the identified vulnerabilities could present potential attack vectors that might enable unauthorized access, data exposure, or remote code execution. The following versions of ABB B&amp;R Automation Studio are affected: B&amp;R Automation Studio &lt;6.5, 6.5 (CVE-2025-6965, CVE-2025-3277, CVE-2023-7104, CVE-2022-35737, CVE-2020-15358, CVE-2020-13632, CVE-2020-13631, CVE-2020-13630, CVE-2020-13435, CVE-2020-13434, CVE-2020-11656, CVE-2020-11655, CVE-2019-19646, CVE-2019-19645, CVE-2019-8457, CVE-2018-20506, CVE-2018-20505, CVE-2018-20346, CVE-2018-8740, CVE-2017-10989, CVE-2016-6153, CVE-2015-6607, CVE-2015-5895, CVE-2015-3717, CVE-2015-3416) CVSS Vendor Equipment Vulnerabilities v3 9.8 ABB ABB B&amp;R Automation Studio Numeric Truncation Error, Heap-based Buffer Overflow, Improper Restriction of Operations within the Bounds of a Memory Buffer, Out-of-bounds Write, NULL Pointer Dereference, Incorrect User Management, Use After Free, Integer Overflow or Wraparound, Improper Check for Unusual or Exceptional Conditions, Uncontrolled Recursion, Out-of-bounds Read, Improper Input Validation, Exposure of Sensitive Information to an Unauthorized Actor, Buffer Copy without Checking Size of Input ('Classic Bu",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-21T12:00:00+00:00",
+      "published_ts": 1779364800.0,
+      "cves": [
+        "CVE-2015-3416",
+        "CVE-2015-3717",
+        "CVE-2015-5895",
+        "CVE-2015-6607",
+        "CVE-2016-6153",
+        "CVE-2017-10989",
+        "CVE-2018-20346",
+        "CVE-2018-20505",
+        "CVE-2018-20506",
+        "CVE-2018-8740",
+        "CVE-2019-19645",
+        "CVE-2019-19646",
+        "CVE-2019-8457",
+        "CVE-2020-11655",
+        "CVE-2020-11656",
+        "CVE-2020-13434",
+        "CVE-2020-13435",
+        "CVE-2020-13630",
+        "CVE-2020-13631",
+        "CVE-2020-13632",
+        "CVE-2020-15358",
+        "CVE-2022-35737",
+        "CVE-2023-7104",
+        "CVE-2025-3277",
+        "CVE-2025-6965"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d82811b9aadfda44",
+      "title": "ABB B&R PCs",
+      "summary": "View CSAF Summary ABB became aware of vulnerability in the product versions listed as affected in the advisory. An update is now available that addresses and remediates the vulnerability. A network attacker could exploit the vulnerabilities to execute remote code, initiate DoS attacks, conduct DNS cache poisoning, or extract sensitive information. The following versions of ABB B&amp;R PCs are affected: APC4100 &lt;1.09, 1.09 (CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237) APC910 &lt;=1.25 (CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237) C80 &lt;1.14, 1.14 (CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237) MPC3100 &lt;1.24, 1.24 (CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237) PPC1200 &lt;1.14, 1.14 (CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237) PPC900 &lt;2.16, 2.16 (CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237) APC2200 &lt;1.35, 1.35 (CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-21T12:00:00+00:00",
+      "published_ts": 1779364800.0,
+      "cves": [
+        "CVE-2023-45229",
+        "CVE-2023-45230",
+        "CVE-2023-45231",
+        "CVE-2023-45232",
+        "CVE-2023-45233",
+        "CVE-2023-45234",
+        "CVE-2023-45235",
+        "CVE-2023-45236",
+        "CVE-2023-45237"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "77a1eb567d8c9102",
       "title": "When Identity is the Attack Path",
       "summary": "Consider a cached access key on a single Windows machine. It got there the way most cached credentials do - a user logged in, and the key stored itself automatically. Standard AWS behavior. No one misconfigured anything or violated a policy. Yet that single key, which was easily accessible to a minor-league attacker, could have opened a path to some 98% of entities in the company's cloud",
@@ -947,68 +1222,15 @@
       "related_sources": []
     },
     {
-      "id": "24b889e6ab02c367",
-      "title": "Mini Shai Hulud: Compromised @antv npm packages enable CI/CD credential theft",
-      "summary": "Compromised @antv npm packages deploy the Mini Shai-Hulud payload to steal CI/CD secrets from Linux-based automation environments. The malware executes during npm install and targets credentials across GitHub, AWS, Kubernetes, Vault, npm, and 1Password platforms. The post Mini Shai Hulud: Compromised @antv npm packages enable CI/CD credential theft appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/20/mini-shai-hulud-compromised-antv-npm-packages-enable-ci-cd-credential-theft/",
+      "id": "101202afa9efb022",
+      "title": "Securing the gaming culture of cultures",
+      "summary": "Read about the unique challenges and rewards of securing gaming platforms and how to better protect gaming communities. The post Securing the gaming culture of cultures appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/20/securing-the-gaming-culture-of-cultures/",
       "source": "Microsoft Security Blog",
       "source_trust": 5,
       "category": "threat",
-      "published": "2026-05-20T17:48:44+00:00",
-      "published_ts": 1779299324.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub",
-        "Kubernetes",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "54944493d6a4118e",
-      "title": "Processes and Culture Top Reasons Behind Data Breaches",
-      "summary": "Government leaders revealed that, in spite of state laws meant to improve cyber hygiene, an analysis of incidents showed issues persist and visibility falls short.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/processes-and-culture-top-reasons-behind-data-breaches",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-20T17:42:30+00:00",
-      "published_ts": 1779298950.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c2d927d6eb944008",
-      "title": "Microsoft Rolls Out Mitigations for ‘YellowKey’ BitLocker Bypass",
-      "summary": "The exploitation is mitigated by preventing the FsTx Auto Recovery Utility from starting when the WinRE image launches. The post Microsoft Rolls Out Mitigations for &#8216;YellowKey&#8217; BitLocker Bypass appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/microsoft-rolls-out-mitigations-for-yellowkey-bitlocker-bypass/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-20T15:39:00+00:00",
-      "published_ts": 1779291540.0,
+      "published": "2026-05-20T16:00:00+00:00",
+      "published_ts": 1779292800.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -1077,19 +1299,18 @@
       "related_sources": []
     },
     {
-      "id": "eef8bab30889efcd",
-      "title": "How to better protect your growing business in an AI-powered world",
-      "summary": "See how built-in security helps keep your growing business running, protect customer trust, and support growth. The post How to better protect your growing business in an AI-powered world appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/18/how-to-better-protect-your-growing-business-in-an-ai-powered-world/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-05-18T16:00:00+00:00",
-      "published_ts": 1779120000.0,
+      "id": "a8a284622c1cb24a",
+      "title": "Tech giants promise British regulator they will tweak platforms to protect kids online",
+      "summary": "The regulator, Ofcom, had required Roblox, Snapchat, Instagram, Facebook, YouTube and TikTok to answer questions about their efforts to remove harmful algorithms, check kids’ ages and protect them from sexual predators by the end of April.",
+      "url": "https://therecord.media/tech-giants-promise-ofcom-regulator-changes-child-access",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-21T19:01:00+00:00",
+      "published_ts": 1779390060.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
@@ -1097,7 +1318,99 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "78bd9362035a4926",
+      "title": "Two Americans plead guilty to assisting India-based tech support scam centers",
+      "summary": "Adam Young, 42, and Harrison Gevirtz, 33, pleaded guilty to misprision of a felony after they were accused of offering phone numbers, call routing services, call tracking tools and call forwarding services to India-based telemarketing fraudsters.",
+      "url": "https://therecord.media/two-americans-plead-guilty-india-call-center-scams",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-21T18:02:00+00:00",
+      "published_ts": 1779386520.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "49c27ed0b933db7d",
+      "title": "The art of being ungovernable",
+      "summary": "In this edition of the Threat Source newsletter, William explores the value of being \"ungovernable\" in a professional setting, sharing how challenging the status quo and seeking out the smartest people in the room can lead to a more fulfilling and successful career.",
+      "url": "https://blog.talosintelligence.com/the-art-of-being-ungovernable/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-05-21T18:00:14+00:00",
+      "published_ts": 1779386414.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "dada7d16c025c1f0",
+      "title": "AI Agents Are Shifting Identity Security Budget Dynamics",
+      "summary": "AI agent projects are proliferating throughout the enterprise, and those AI agent identities require management, security, and governance. New Omdia research shows the AI agent identity budget dynamics are very different than traditional IAM projects.",
+      "url": "https://www.darkreading.com/identity-access-management-security/shifting-budget-dynamics-identity-security-ai-agents",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-21T15:43:37+00:00",
+      "published_ts": 1779378217.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "79ce523d1162e760",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations (Updated May 21)",
+      "summary": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations (Updated May 21) appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-05-21T15:30:33+00:00",
+      "published_ts": 1779377433.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1290,6 +1603,28 @@
       "related_sources": []
     },
     {
+      "id": "2f666a81d2c381ee",
+      "title": "New Claude Integration Brings Audit Data into the Falcon Platform",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/new-claude-integration-brings-audit-data-into-the-falcon-platform/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-05-21T05:00:00+00:00",
+      "published_ts": 1779339600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "c4f72fc9e1fc8b20",
       "title": "GitHub Internal Repositories Breached via Malicious Nx Console VS Code Extension",
       "summary": "GitHub on Wednesday officially confirmed that the breach of its internal repositories was the result of a compromise of an employee device involving a poisoned version of the Nx Console Microsoft Visual Studio Code (VS Code) extension.&nbsp; The development comes as the Nx team revealed that the extension, nrwl.angular-console, was breached after one of its developers' systems was hacked in the",
@@ -1388,21 +1723,27 @@
       "related_sources": []
     },
     {
-      "id": "79ce523d1162e760",
-      "title": "The npm Threat Landscape: Attack Surface and Mitigations (Updated May 20)",
-      "summary": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations (Updated May 20) appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
-      "source": "Unit 42 (Palo Alto)",
+      "id": "24b889e6ab02c367",
+      "title": "Mini Shai Hulud: Compromised @antv npm packages enable CI/CD credential theft",
+      "summary": "Compromised @antv npm packages deploy the Mini Shai-Hulud payload to steal CI/CD secrets from Linux-based automation environments. The malware executes during npm install and targets credentials across GitHub, AWS, Kubernetes, Vault, npm, and 1Password platforms. The post Mini Shai Hulud: Compromised @antv npm packages enable CI/CD credential theft appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/20/mini-shai-hulud-compromised-antv-npm-packages-enable-ci-cd-credential-theft/",
+      "source": "Microsoft Security Blog",
       "source_trust": 5,
       "category": "threat",
-      "published": "2026-05-20T19:30:33+00:00",
-      "published_ts": 1779305433.0,
+      "published": "2026-05-20T17:48:44+00:00",
+      "published_ts": 1779299324.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "GitHub",
+        "Kubernetes",
+        "Linux"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1410,17 +1751,18 @@
       "related_sources": []
     },
     {
-      "id": "a2ca716fabd57c3e",
-      "title": "Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development",
-      "summary": "Microsoft has unveiled two new open-source tools called RAMPART and Clarity to assist developers in better testing the security of artificial intelligence (AI) agents. RAMPART, short for Risk Assessment and Measurement Platform for Agentic Red Teaming, functions as a Pytest-native safety and security testing framework for writing and running safety and security tests for AI agents, covering",
-      "url": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
-      "source": "The Hacker News",
+      "id": "54944493d6a4118e",
+      "title": "Processes and Culture Top Reasons Behind Data Breaches",
+      "summary": "Government leaders revealed that, in spite of state laws meant to improve cyber hygiene, an analysis of incidents showed issues persist and visibility falls short.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/processes-and-culture-top-reasons-behind-data-breaches",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-05-20T17:06:54+00:00",
-      "published_ts": 1779296814.0,
+      "published": "2026-05-20T17:42:30+00:00",
+      "published_ts": 1779298950.0,
       "cves": [],
       "sectors": [
+        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -1434,93 +1776,19 @@
       "related_sources": []
     },
     {
-      "id": "5abe93dec2b90cbf",
-      "title": "Ukraine probes teen suspect in cyber theft scheme targeting California online shoppers",
-      "summary": "The investigation began after U.S. authorities informed their Ukrainian counterparts that hackers operating from Ukraine could be involved in attacks targeting users of American e-commerce platforms, Ukraine's Prosecutor General said.",
-      "url": "https://therecord.media/ukraine-probes-teen-suspect-cyber-theft-scheme",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-20T16:33:00+00:00",
-      "published_ts": 1779294780.0,
-      "cves": [],
-      "sectors": [
-        "Consumer"
-      ],
-      "regions": [
-        "Europe",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d1a513d4a12bf691",
-      "title": "Patch Now: Critical Flaw in OT Robot OS Gives Attackers Control",
-      "summary": "An unauthenticated attacker can exploit the command injection vulnerability to gain remote access to robotic systems, causing significant disruption to the environment.",
-      "url": "https://www.darkreading.com/ics-ot-security/patch-now-critical-flaw-ot-robot-os",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-20T16:12:08+00:00",
-      "published_ts": 1779293528.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "add0376330250cb5",
-      "title": "Grafana breach caused by missed token rotation after TanStack attack",
-      "summary": "The Grafana data breach was caused by a single GitHub workflow token that slipped through the rotation process following the TanStack npm supply-chain attack last week. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/grafana-breach-caused-by-missed-token-rotation-after-tanstack-attack/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-20T15:46:37+00:00",
-      "published_ts": 1779291997.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c1b1eea2cd33d790",
-      "title": "Quantum Bridge Raises $8 Million for Quantum-Safe Key Distribution Solution",
-      "summary": "The new Series A funding round brings the total raised by Quantum Bridge to $16 million. The post Quantum Bridge Raises $8 Million for Quantum-Safe Key Distribution Solution appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/quantum-bridge-raises-8-million-for-quantum-safe-key-distribution-solution/",
+      "id": "c2d927d6eb944008",
+      "title": "Microsoft Rolls Out Mitigations for ‘YellowKey’ BitLocker Bypass",
+      "summary": "The exploitation is mitigated by preventing the FsTx Auto Recovery Utility from starting when the WinRE image launches. The post Microsoft Rolls Out Mitigations for &#8216;YellowKey&#8217; BitLocker Bypass appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/microsoft-rolls-out-mitigations-for-yellowkey-bitlocker-bypass/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-05-20T15:45:07+00:00",
-      "published_ts": 1779291907.0,
+      "published": "2026-05-20T15:39:00+00:00",
+      "published_ts": 1779291540.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -1913,17 +2181,93 @@
       "related_sources": []
     },
     {
-      "id": "0cd7aadad60f7a63",
-      "title": "FTC warns 12 major tech firms of violating Take It Down Act",
-      "summary": "The law mandates that platforms make it easy for people to ask that nonconsensual intimate images be removed and to delete them within 48 hours of a request.",
-      "url": "https://therecord.media/ftc-warns-12-firms-of-violating-take-it-down-act",
-      "source": "The Record",
+      "id": "a2ca716fabd57c3e",
+      "title": "Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development",
+      "summary": "Microsoft has unveiled two new open-source tools called RAMPART and Clarity to assist developers in better testing the security of artificial intelligence (AI) agents. RAMPART, short for Risk Assessment and Measurement Platform for Agentic Red Teaming, functions as a Pytest-native safety and security testing framework for writing and running safety and security tests for AI agents, covering",
+      "url": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-05-20T17:29:00+00:00",
-      "published_ts": 1779298140.0,
+      "published": "2026-05-20T17:06:54+00:00",
+      "published_ts": 1779296814.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d1a513d4a12bf691",
+      "title": "Patch Now: Critical Flaw in OT Robot OS Gives Attackers Control",
+      "summary": "An unauthenticated attacker can exploit the command injection vulnerability to gain remote access to robotic systems, causing significant disruption to the environment.",
+      "url": "https://www.darkreading.com/ics-ot-security/patch-now-critical-flaw-ot-robot-os",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-20T16:12:08+00:00",
+      "published_ts": 1779293528.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "add0376330250cb5",
+      "title": "Grafana breach caused by missed token rotation after TanStack attack",
+      "summary": "The Grafana data breach was caused by a single GitHub workflow token that slipped through the rotation process following the TanStack npm supply-chain attack last week. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/grafana-breach-caused-by-missed-token-rotation-after-tanstack-attack/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-20T15:46:37+00:00",
+      "published_ts": 1779291997.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c1b1eea2cd33d790",
+      "title": "Quantum Bridge Raises $8 Million for Quantum-Safe Key Distribution Solution",
+      "summary": "The new Series A funding round brings the total raised by Quantum Bridge to $16 million. The post Quantum Bridge Raises $8 Million for Quantum-Safe Key Distribution Solution appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/quantum-bridge-raises-8-million-for-quantum-safe-key-distribution-solution/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-20T15:45:07+00:00",
+      "published_ts": 1779291907.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -2203,30 +2547,6 @@
       "related_sources": []
     },
     {
-      "id": "668bfd3a7853438d",
-      "title": "Shai-Hulud Worm Clones Spread After Code Release",
-      "summary": "The release of Shai-Hulud source code spells trouble for software developers as researchers worry the self-replicating worm could scale.",
-      "url": "https://www.darkreading.com/application-security/shai-hulud-worm-clones-spread-code-release",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-18T19:53:05+00:00",
-      "published_ts": 1779133985.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "db6e39f5febc7ea4",
       "title": "Drupal critical update to fix bug with high exploitation risk",
       "summary": "Drupal has announced a \"core security release\" scheduled for later today, warning that threat actors might develop exploits within hours of the update disclosure. [...]",
@@ -2289,30 +2609,6 @@
       ],
       "products": [
         "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7dceea245df89671",
-      "title": "GitHub confirms breach of 3,800 repos via malicious VSCode extension",
-      "summary": "GitHub has confirmed that roughly 3,800 internal repositories were breached after one of its employees installed a malicious VS Code extension. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-20T08:14:08+00:00",
-      "published_ts": 1779264848.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -2492,52 +2788,6 @@
       "sectors": [],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "953cde50a9e8eeab",
-      "title": "INTERPOL Operation Ramz Disrupts MENA Cybercrime Networks with 201 Arrests",
-      "summary": "INTERPOL has coordinated a first-of-its-kind cybercrime crackdown across the Middle East and North Africa (MENA) that led to 201 arrests and the identification of an additional 382 suspects. The initiative involved the efforts of 13 countries from the region between October 2025 and February 2026, aiming to investigate and neutralize malicious infrastructure, arrest perpetrators behind these",
-      "url": "https://thehackernews.com/2026/05/interpol-operation-ramz-disrupts-mena.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-18T17:21:18+00:00",
-      "published_ts": 1779124878.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Africa",
-        "Europe",
-        "Middle East"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8632c22c923ac208",
-      "title": "Fuel Tank Breaches Expand Scope of Iran's Cyber Offensive",
-      "summary": "Security experts have long warned that insecure automatic tank gauge (ATG) systems exposed on the Internet can be tampered with by threat actors.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/fuel-tank-breaches-expand-scope-irans-cyber-offensive",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-18T15:41:55+00:00",
-      "published_ts": 1779118915.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Middle East"
       ],
       "products": [],
       "actively_exploited": false,
