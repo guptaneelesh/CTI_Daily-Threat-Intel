@@ -1,17 +1,18 @@
 {
-  "generated_at": "2026-05-26T15:26:55.874817+00:00",
+  "generated_at": "2026-05-26T20:08:52.374404+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 42,
+    "all": 53,
     "critical": 0,
-    "high": 1,
-    "medium": 5,
-    "low": 36,
-    "actively_exploited": 6,
-    "with_cves": 3
+    "high": 3,
+    "medium": 12,
+    "low": 38,
+    "actively_exploited": 9,
+    "with_cves": 11
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
     "Check Point Research",
     "CrowdStrike Blog",
     "Dark Reading",
@@ -21,6 +22,34 @@
     "The Record"
   ],
   "items": [
+    {
+      "id": "b55981c18674d826",
+      "title": "ABB AbilityTM Zenon Remote Transport Vulnerability",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. The vulnerability enables unauthorized access to the Reboot OS function within the Remote Transport Service, allowing an attacker to trigger a system reboot without the required authentication. This functionality initiates a system reboot on the target machine. However, remote exploitation of this vulnerability is not feasible unless the attacker has already gained access to the network where the affected ABB Ability™ zenon system is deployed. At the time of writing, there is no evidence that this vulnerability is being actively exploited in the wild. The following versions of ABB AbilityTM Zenon Remote Transport Vulnerability are affected: AbilityTM zenon &gt;=7.50|&lt;=14 CVSS Vendor Equipment Vulnerabilities v3 7.5 ABB ABB AbilityTM Zenon Remote Transport Vulnerability Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-8754 In the default configuration of the ABB zenon software platform, the zensyssrv.exe service is set to start automatically. To utilize the Remote Transport Service, users are required to configure a password beforehand. However, a security vulnerability has b",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2025-8754"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
     {
       "id": "eb1de441bb61543f",
       "title": "Iranian APT Targets Aviation, Software Companies With Updated Tools",
@@ -45,6 +74,40 @@
       "priority_score": 55,
       "priority_label": "High",
       "related_sources": []
+    },
+    {
+      "id": "b8caa3ef17795cce",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added&nbsp;one&nbsp;new vulnerability&nbsp;to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.&nbsp; CVE-2026-48172 &nbsp;LiteSpeed&nbsp;cPanel Plugin Privilege Escalation Vulnerability This&nbsp;type of vulnerability is a&nbsp;frequent attack vector for malicious cyber actors and poses&nbsp;significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities &nbsp;established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats. See the&nbsp; BOD 22-01 Fact Sheet &nbsp;for more information. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing&nbsp;timely&nbsp;remediation of&nbsp; KEV Catalog vulnerabilities &nbsp;as part of their vulnerability management practice. CISA will continue to add vulnerabilities to the catalog that meet the&nbsp; specified criteria .",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/05/26/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2026-48172"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48172",
+          "title": "CVE-2026-48172: LiteSpeed cPanel Plugin Privilege Escalation Vulnerability (LiteSpeed cPanel Plugin)",
+          "published": "2026-05-26T00:00:00+00:00"
+        }
+      ]
     },
     {
       "id": "370cf96dabb870a1",
@@ -146,6 +209,30 @@
       "related_sources": []
     },
     {
+      "id": "87a0bfbcbaaeba71",
+      "title": "KnowledgeDeliver flaw exploited as a zero-day to install web shells",
+      "summary": "Hackers exploited a critical zero-day vulnerability in a server running the KnowledgeDeliver learning management system (LMS) to deploy the Godzilla web shell. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/knowledgedeliver-flaw-exploited-as-a-zero-day-to-install-web-shells/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-26T20:07:31+00:00",
+      "published_ts": 1779826051.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Edge"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "278c1404aaab8f77",
       "title": "KnowledgeDeliver LMS Flaw Exploited to Deploy Godzilla and Cobalt Strike",
       "summary": "A now-patched high-severity security flaw affecting Digital Knowledge KnowledgeDeliver, a Learning Management System (LMS) popular in Japan, was exploited as a zero-day to deliver the Godzilla web shell and ultimately facilitate the deployment of Cobalt Strike Beacon. The vulnerability, tracked as CVE-2026-5426 (CVSS score: 7.5), stems from the use of hard-coded ASP.NET machine keys, leading to",
@@ -169,6 +256,192 @@
       "cvss": null,
       "priority_score": 40,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "b77ce11cda8ebfb7",
+      "title": "Eppendorf BioFlo 320",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to gain full access to functionality and data with the bioreactor. The following versions of Eppendorf BioFlo 320 are affected: BioFlo 320 Bioreactor vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8 Eppendorf Eppendorf BioFlo 320 Use of Hard-coded Password Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-7251 The affected product is vulnerable to due to VNC server using a hard-coded password. If a remote attacker knows the network address of any BioFlo 320 model with remote access enabled, they can gain full control of the user interface by using this password. Once connected, the attacker would have full access to all control panel features for the BioFlo 320. VNC traffic is not encrypted. View CVE Details Affected Products Eppendorf BioFlo 320 Vendor: Eppendorf Product Version: Eppendorf BioFlo 320 Bioreactor: vers:all/* Product Status: known_affected Remediations Mitigation Eppendorf has released a software update that permanently removes VNC access from the controller. Users should download and apply this update from: https://www.eppendorf.com/software-downloads. https://www.eppendorf.com/software-downloads Mitigation All affected BioFlo 320 systems always shipped with Virtual Network Computing (VNC) disabled by default, and VNC can only be ena",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-146-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2026-7251"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 35,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "797f2547f06bb41c",
+      "title": "ABB B&R Automation Runtime DoS Vulnerability in System Diagnostics Manager (SDM)",
+      "summary": "View CSAF Summary An update is available that resolves a vulnerability identified by B&amp;Rs internal security analysis in the product versions listed as affected in this advisory. An attacker who successfully exploited this vulnerability could cause the product to stop. The following versions of ABB B&amp;R Automation Runtime DoS Vulnerability in System Diagnostics Manager (SDM) are affected: Automation Runtime &lt;6.3 Automation Runtime &lt;Q4.93 CVSS Vendor Equipment Vulnerabilities v3 10 B&amp;R ABB B&amp;R Automation Runtime DoS Vulnerability in System Diagnostics Manager (SDM) Improper Resource Locking Background Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-3450 An Improper Resource Locking vulnerability in the SDM component of B&amp;R Automation Runtime versions before 6.3 and before Q4.93 may allow an unauthenticated network-based attacker to delete data causing denial of service conditions. View CVE Details Affected Products ABB B&amp;R Automation Runtime DoS Vulnerability in System Diagnostics Manager (SDM) Vendor: B&amp;R Product Version: Automation Runtime &lt;6.3, Automation Runtime &lt;Q4.93 Product Status: fixed, known_affected Remediations Vendor fix The problem is corrected in Automation Runtime versions 6.3 and Q4.93.",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2025-3450"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "ae9f2aa69b8c05b5",
+      "title": "ABB LVS MConfig",
+      "summary": "View CSAF Summary ABB became aware of an internally discovered vulnerability in the MConfig product versions listed as affected in the advisory. An attacker with access to local networks who successfully exploits vulnerability could have access to application’s sensitive information. ABB strongly advises customers to update MConfig with latest software version. The following versions of ABB LVS MConfig are affected: LVS &lt;=1.4.9.21 CVSS Vendor Equipment Vulnerabilities v3 7.4 ABB ABB LVS MConfig Cleartext Storage of Sensitive Information in Memory Background Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Food and Agriculture, Transportation Systems, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-9970 During the runtime of the MConfig Software application, an attacker can export the memory dump file into the operating system. If passwords are stored in plain text in memory, they will be included in these dump files. If such dump files are mishandled, attackers could obtain them and extract the passwords. View CVE Details Affected Products ABB LVS MConfig Vendor: ABB Product Version: MConfig Version &lt;=1.4.9.21 Product Status: fixed, known_affected Remediations Vendor fix The vulnerability is resolved in the following product versions: MConfig version 1.4.9.22 ABB advises users to update their devices to the latest software version. Additionally, ABB recomm",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-06",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2025-9970"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "a0cf208e015d68a4",
+      "title": "ABB Ability Camera Connect",
+      "summary": "View CSAF Summary ABB is aware of public reports of vulnerabilities in a 3rd party component VLC media player Version 2.2.4 which was delivered together with the installation package of Camera Connect Version 1.5.0.14 and below. An update is available that resolves a privately reported outdated 3rd party component with vulnerabilities in the product versions listed as affected in this advisory. An attacker who successfully exploited any of these vulnerabilities in the 3rd party component could potentially compromise the system in different ways. The following versions of ABB Ability Camera Connect are affected: Ability Camera Connect vers:intdot/&lt;=1.5.0.14, 1.5.0.15 CVSS Vendor Equipment Vulnerabilities v3 9.8 ABB ABB Ability Camera Connect Heap-based Buffer Overflow, Integer Underflow (Wrap or Wraparound), Out-of-bounds Write, Uncontrolled Search Path Element, Integer Overflow or Wraparound, Off-by-one Error, Out-of-bounds Read, Double Free, Improper Restriction of Operations within the Bounds of a Memory Buffer, Use After Free Background Critical Infrastructure Sectors: Chemical, Commercial Facilities, Communications, Critical Manufacturing, Energy, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2024-46461 VLC media player 3.0.20 and earlier is vulnerable to denial of service through an integer overflow which could be triggered with a maliciously crafted mms stream (heap based overflo",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2024-46461"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "c4b44a9a82003d9d",
+      "title": "ABB AC500 V2",
+      "summary": "View CSAF Summary ABB became aware of vulnerabilities in AC500 V2 listed as affected in the advisory. An attacker who successfully exploited this vulnerability could access fragments of Modbus telegrams that have been sent earlier by that PLC The following versions of ABB AC500 V2 are affected: AC500 V2 &lt;=2.5.2, 2.5.3 CVSS Vendor Equipment Vulnerabilities v3 5.8 ABB ABB AC500 V2 Buffer Over-read Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-7745 Sending unsupported function codes to the AC500 V2 Modbus server might result in invalid responses. Fragments of previous responses might be added to the end of the response. View CVE Details Affected Products ABB AC500 V2 Vendor: ABB Product Version: ABB AC500 V2 &lt;=2.5.2 Product Status: fixed, known_affected Remediations Vendor fix The vulnerabilities have been resolved in the following product versions: AC500 V2 firmware version 2.5.3 (released in 2016) and later Relevant CWE: CWE-126 Buffer Over-read Metrics CVSS Version Base Score Base Severity Vector String 3.1 5.8 MEDIUM CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N Acknowledgments Reid Wightman of Dragos. Inc reported these vulnerabilities to Schneider Electric. Notice The information in this document is subject to change without notice, and should not be construed as a commitment by ABB. ABB provides no war",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2025-7745"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "6c68f05f3f087151",
+      "title": "ABB Terra AC",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited this vulnerability could cause the pollution of heap memory which potentially takes remote control of the product and performs a write operation to the flash memory to alter the firmware behavior. The following versions of ABB Terra AC are affected: Terra AC wallbox (UL40/80A) &lt;=1.8.32, 1.8.33 Terra AC wallbox (UL32A) &lt;=1.8.2, 1.8.34 Terra AC wallbox (MID/ CE) &lt;=1.8.32, 1.8.34 Terra AC wallbox (JP) &lt;=1.8.2, 1.8.34 CVSS Vendor Equipment Vulnerabilities v3 6.8 ABB ABB Terra AC Heap-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-5517 There is potential risk to pollute the memory when a specially crafted OCPP message may be sent to a target vulnerable charger by exploiting unencrypted communication to the Charging Station Management System (CSMS) or fully remotely from its CSMS server. View CVE Details Affected Products ABB Terra AC Vendor: ABB Product Version: ABB Terra AC wallbox (UL40/80A) &lt;=1.8.32, ABB Terra AC wallbox (UL32A) &lt;=1.8.2, ABB Terra AC wallbox (MID/ CE) Terra AC MID &lt;=1.8.32, ABB Terra AC wallbox (JP) &lt;=1.8.2 Product Status: fixed, known_affected Remediations Vendor fix The problem i",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-26T12:00:00+00:00",
+      "published_ts": 1779796800.0,
+      "cves": [
+        "CVE-2025-5517"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "290b62659338b6a6",
+      "title": "MuddyWater Uses DLL Side-Loading in Espionage Campaign Targeting 9 Countries",
+      "summary": "The Iranian hacking group known as MuddyWater has been linked to a new campaign affecting at least nine organizations across nine countries on four continents in the first quarter of 2026. The activity targeted industrial and electronics manufacturing, education and public-sector bodies, financial services, and professional services, per the Threat Hunter Team from Symantec and Carbon Black.",
+      "url": "https://thehackernews.com/2026/05/muddywater-uses-dll-side-loading-in.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-26T15:48:41+00:00",
+      "published_ts": 1779810521.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Middle East"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -277,6 +550,78 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7a74342f49d04b82",
+      "title": "Disrupting Glassworm: Inside CrowdStrike&rsquo;s Takedown of a Developer-Targeting Botnet",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/inside-crowdstrike-takedown-of-a-developer-targeting-botnet/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-05-26T05:00:00+00:00",
+      "published_ts": 1779771600.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "28610ea64aa586cf",
+      "title": "Charter confirms data breach after ShinyHunters extortion threat",
+      "summary": "U.S. telecommunications giant Charter Communications has confirmed it suffered a data breach after the ShinyHunters extortion group threatened to leak stolen data unless a ransom is paid. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/charter-confirms-data-breach-after-shinyhunters-extortion-threat/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-26T19:46:01+00:00",
+      "published_ts": 1779824761.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b86ba25b83019320",
+      "title": "The Hackers Behind Shai-Hulud: Lucky or Skilled?",
+      "summary": "TeamPCP, the hackers behind the Shai-Hulud worm, has done significant damage to the open source ecosystem. But it's not necessarily due to skill alone.",
+      "url": "https://www.darkreading.com/application-security/shai-hulud-hackers-teampcp-lucky-skilled",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-26T19:18:01+00:00",
+      "published_ts": 1779823081.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -475,30 +820,6 @@
       "related_sources": []
     },
     {
-      "id": "273ae67d76fd839d",
-      "title": "Anthropic’s restricted Claude Mythos model may be coming to Claude Code",
-      "summary": "Anthropic appears to be preparing for the public rollout of the Mythos model, which was announced in April as a restricted model that poses major security risks to private and public software. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-restricted-claude-mythos-model-may-be-coming-to-claude-code/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-25T17:07:33+00:00",
-      "published_ts": 1779728853.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "3e8b34d350b1c4fd",
       "title": "25th May – Threat Intelligence Report",
       "summary": "For the latest discoveries in cyber research for the week of 25th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES 7-Eleven, the global convenience store chain, confirmed a breach after an unauthorized access to systems used for franchisee documents. ShinyHunters claimed responsibility and said it stole more than 600,000 Salesforce records containing personal [&#8230;] The post 25th May – Threat Intelligence Report appeared first on Check Point Research .",
@@ -663,7 +984,7 @@
     {
       "id": "e250db13f3b65889",
       "title": "Remembering Tim Wilson, Whose Legacy Lives on at Dark Reading",
-      "summary": "The co-founder and former editor-in-chief passed away five years ago in November. As Dark Reading enters is third decade, we pause to celebrate and honor Wilson's instrumental role in building and elevating the media site.",
+      "summary": "The co-founder and former editor-in-chief passed away five years ago in November. As Dark Reading enters its third decade, we pause to celebrate and honor Wilson's instrumental role in building and elevating the media site.",
       "url": "https://www.darkreading.com/cybersecurity-operations/remembering-tim-wilson-legacy-dark-reading",
       "source": "Dark Reading",
       "source_trust": 4,
@@ -839,6 +1160,30 @@
       "related_sources": []
     },
     {
+      "id": "273ae67d76fd839d",
+      "title": "Anthropic’s restricted Claude Mythos model may be coming to Claude Code",
+      "summary": "Anthropic appears to be preparing for the public rollout of the Mythos model, which was announced in April as a restricted model that poses major security risks to private and public software. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-restricted-claude-mythos-model-may-be-coming-to-claude-code/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-25T17:07:33+00:00",
+      "published_ts": 1779728853.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "dc832112f249d4af",
       "title": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
       "summary": "Authorities in the Netherlands have arrested the co-owners of two related Internet hosting companies for operating IT infrastructure used by Russia to carry out cyberattacks, influence operations and disinformation campaigns inside the European Union. The two men were the focus of a 2025 KrebsOnSecurity story about how their hosting companies had assumed control over the technical infrastructure of Stark Industries Solutions, an Internet service provider sanctioned last year by the EU as a frequent staging ground for cyber mischief from Russia's intelligence agencies.",
@@ -878,59 +1223,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "52ccec702eb6f568",
-      "title": "npm Adds 2FA-Gated Publishing and Package Install Controls Against Supply Chain Attacks",
-      "summary": "GitHub has rolled out new controls for npm to improve the security of the software supply chain, giving maintainers the ability to explicitly approve a release prior to the packages becoming publicly available for installation. Called staged publishing, the feature is now generally available on npm. It mandates that a human maintainer pass a two-factor authentication (2FA) challenge to approve",
-      "url": "https://thehackernews.com/2026/05/npm-adds-2fa-gated-publishing-and.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-23T16:35:10+00:00",
-      "published_ts": 1779554110.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7f508a1ef88b19cc",
-      "title": "Packagist Supply Chain Attack Infects 8 Packages Using GitHub-Hosted Linux Malware",
-      "summary": "A new \"coordinated\" supply chain attack campaign has impacted eight packages on Packagist including malicious code designed to run a Linux binary retrieved from a GitHub Releases URL. \"Although the affected packages were all Composer packages, the malicious code was not added to composer.json,\" Socket said. \"Instead, it was inserted into package.json, targeting projects that ship JavaScript",
-      "url": "https://thehackernews.com/2026/05/packagist-supply-chain-attack-infects-8.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-23T16:07:51+00:00",
-      "published_ts": 1779552471.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub",
-        "Linux"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
