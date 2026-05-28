@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-28T15:53:52.430503+00:00",
+  "generated_at": "2026-05-28T20:23:04.241505+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 85,
+    "all": 99,
     "critical": 0,
     "high": 6,
-    "medium": 9,
-    "low": 70,
-    "actively_exploited": 12,
-    "with_cves": 15
+    "medium": 16,
+    "low": 77,
+    "actively_exploited": 11,
+    "with_cves": 25
   },
   "sources_used": [
     "BleepingComputer",
@@ -26,32 +26,6 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
-    {
-      "id": "a8676c5eaabd1951",
-      "title": "CVE-2026-48027: Nx Console Embedded Malicious Code Vulnerability (Nx Nx Console)",
-      "summary": "CISA KEV — actively exploited. Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harvested credentials from multiple sources on disk and in memory. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. (due 2026-06-10).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48027",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-05-27T00:00:00+00:00",
-      "published_ts": 1779840000.0,
-      "cves": [
-        "CVE-2026-48027"
-      ],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 65,
-      "priority_label": "High",
-      "related_sources": []
-    },
     {
       "id": "51c9083662469d72",
       "title": "CVE-2026-45321: TanStack Unspecified Vulnerability (TanStack TanStack)",
@@ -106,8 +80,8 @@
     },
     {
       "id": "b55981c18674d826",
-      "title": "ABB AbilityTM Zenon Remote Transport Vulnerability",
-      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. The vulnerability enables unauthorized access to the Reboot OS function within the Remote Transport Service, allowing an attacker to trigger a system reboot without the required authentication. This functionality initiates a system reboot on the target machine. However, remote exploitation of this vulnerability is not feasible unless the attacker has already gained access to the network where the affected ABB Ability™ zenon system is deployed. At the time of writing, there is no evidence that this vulnerability is being actively exploited in the wild. The following versions of ABB AbilityTM Zenon Remote Transport Vulnerability are affected: AbilityTM zenon &gt;=7.50|&lt;=14 CVSS Vendor Equipment Vulnerabilities v3 7.5 ABB ABB AbilityTM Zenon Remote Transport Vulnerability Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-8754 In the default configuration of the ABB zenon software platform, the zensyssrv.exe service is set to start automatically. To utilize the Remote Transport Service, users are required to configure a password beforehand. However, a security vulnerability has b",
+      "title": "ABB Ability Zenon Remote Transport Vulnerability (Update A)",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. The vulnerability enables unauthorized access to the Reboot OS function within the Remote Transport Service, allowing an attacker to trigger a system reboot without the required authentication. This functionality initiates a system reboot on the target machine. However, remote exploitation of this vulnerability is not feasible unless the attacker has already gained access to the network where the affected ABB Ability Zenon system is deployed. At the time of writing, there is no evidence that this vulnerability is being actively exploited in the wild. The following versions of ABB Ability Zenon Remote Transport Vulnerability are affected: Ability Zenon &gt;=7.50|&lt;=14 CVSS Vendor Equipment Vulnerabilities v3 7.5 ABB ABB Ability Zenon Remote Transport Vulnerability Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Chemical, Communications, Critical Manufacturing, Dams, Energy, Healthcare and Public Health, Information Technology, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-8754 In the default configuration of the ABB Zenon software platform, the zensyssrv.exe service is set to start automatically. To utilize the Remote Transport Service, users are required to configure a password beforehand. However, a security vulnerability has been ide",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-03",
       "source": "CISA Alerts",
       "source_trust": 5,
@@ -131,6 +105,43 @@
       "priority_score": 65,
       "priority_label": "High",
       "related_sources": []
+    },
+    {
+      "id": "014f5ba9b02f0a5c",
+      "title": "Supply Chain Compromises Impact Nx Console and GitHub Repositories",
+      "summary": "CISA is prioritizing the response to multiple emerging software supply chain intrusion campaigns targeting developer ecosystems Continuous Integration/Continuous Development (CI/CD) pipelines. These recent incidents, including the GitHub compromise via a malicious Nx Console Visual Studio Code (VS Code) extension and the “Megalodon” supply chain intrusion campaign, demonstrate how cyber threat actors are abusing tools and processes that support enterprise, cloud, and DevOps environments—specifically CI/CD pipelines, code extensions and workflows.&nbsp; Threat actors leveraged a prior compromise of Nx developer systems to compromise a GitHub employee’s device&nbsp;through a poisoned third-party VS Code extension, resulting in unauthorized access and exfiltration of internal GitHub repositories. The malicious extension version (18.95.0) was distributed through VS Code’s automatic update mechanism, meaning systems with Nx Console previously installed may have received the malicious build without developers taking any manual installation action. GitHub released a security advisory on this activity, and CVE-2026-48027 has been assigned to the malicious version of Nx Console and added to CISA’s Known Exploited Vulnerabilities (KEV) Catalog . Additionally, in a campaign known as “Megalodon,” a cyber threat actor injected malicious GitHub Action workflows to harvest CI/CD secrets, cloud credentials, and tokens, impacting both development and deployment pipelines in public GitHub repo",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/05/28/supply-chain-compromises-impact-nx-console-and-github-repositories",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-48027"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48027",
+          "title": "CVE-2026-48027: Nx Console Embedded Malicious Code Vulnerability (Nx Nx Console)",
+          "published": "2026-05-27T00:00:00+00:00"
+        }
+      ]
     },
     {
       "id": "aa83975467c47881",
@@ -290,24 +301,28 @@
       "related_sources": []
     },
     {
-      "id": "87a0bfbcbaaeba71",
-      "title": "KnowledgeDeliver flaw exploited as a zero-day to install web shells",
-      "summary": "Hackers exploited a critical zero-day vulnerability in a server running the KnowledgeDeliver learning management system (LMS) to deploy the Godzilla web shell. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/knowledgedeliver-flaw-exploited-as-a-zero-day-to-install-web-shells/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-26T20:07:31+00:00",
-      "published_ts": 1779826051.0,
-      "cves": [],
-      "sectors": [],
+      "id": "465e7354071a1723",
+      "title": "KMW CCTV Security Cameras",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability may grant full unauthorized access to camera feeds and settings. The following versions of KMW CCTV Security Cameras are affected: KM-IP521 IPCAM_V4.04.91.230307 KM-IP421 IPCAM_V4.04.53.210416&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.1 KMW KMW CCTV Security Cameras Unverified Password Change Background Critical Infrastructure Sectors: Commercial Facilities, Government Services and Facilities, Critical Manufacturing, Financial Services, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Romania Vulnerabilities Expand All + CVE-2026-5386 The affected product is vulnerable to a critical unauthenticated password reset. This flaw allows an attacker to remotely reset the administrator password to a known value without authentication, granting full access to the camera feeds and settings. View CVE Details Affected Products KMW CCTV Security Cameras Vendor: KMW Product Version: KMW KM-IP521: IPCAM_V4.04.91.230307, KMW KM-IP421: IPCAM_V4.04.53.210416 Product Status: known_affected Remediations Mitigation KMW has issued a firmware update to address this vulnerability. The firmware update can be found at https://main.kmw.ro/pub/Firmware/521_421.zip. https://main.kmw.ro/pub/Firmware/521_421.zip Vendor fix KM-IP421 - will lose the cloud authorization after this update so users will need to contact customer support to re-authorize the P2P connection. Mitigation KMW recommends conn",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-5386"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Government & Public Services"
+      ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": true,
+      "products": [],
+      "actively_exploited": false,
       "cvss": null,
       "priority_score": 35,
       "priority_label": "Medium",
@@ -340,6 +355,121 @@
       "related_sources": []
     },
     {
+      "id": "b22ac5810cbe3a06",
+      "title": "FBI warns of fake FIFA websites running World Cup fraud schemes",
+      "summary": "The FBI is warning of fake websites impersonating FIFA ahead of the 2026 World Cup, to steal personal and financial information, sell fake tickets and hospitality packages, and push other fraud related to the event. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-of-fake-fifa-websites-running-world-cup-fraud-schemes/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-28T19:08:10+00:00",
+      "published_ts": 1779995290.0,
+      "cves": [],
+      "sectors": [
+        "Consumer",
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Government & Public Services",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "4538d0d0d576e901",
+      "title": "Schnieider Electric EcoStruxure Machine Expert HVAC",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcostruxureTM Machine Expert HVAC product. The [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) product is a programming software for Modicon M171-M172 logic controllers. Failure to apply the remediation provided below may risk in revealing sensitive information, which could result in disclosing protected source code, leading to loss of confidentiality. The following versions of Schnieider Electric EcoStruxure Machine Expert HVAC (SEVD-2026-132-01) are affected: Ecostruxure™ Machine Expert HVAC vers&lt;1.10.0 CVSS Vendor Equipment Vulnerabilities v3 5.5 Schneider Electric Schnieider Electric EcoStruxure Machine Expert HVAC (SEVD-2026-132-01) Cleartext Storage of Sensitive Information Background Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities Expand All + CVE-2026-6332 CWE-312: Cleartext Storage of Sensitive Information vulnerability exists that could cause the disclosure of a sensitive information which could result in revealing protected source code and loss of confidentiality, when an authorized attacker accesses the source code for editing or compiling it. View CVE Details Affected Products Schnieider Electric EcoStruxure Machine Expert HVAC (SEVD-2026-132-01) Vendor: Schneider Electric Product Version: Ecostruxure™ ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-6332"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "646276cd0b41bc76",
+      "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in an attacker gaining administrator access to the device. The following versions of Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter are affected: USR-W610 RS232/485 to Wi-Fi/Ethernet Converter 7.03T.07 CVSS Vendor Equipment Vulnerabilities v3 9.8 Jinan USR IOT Technology Limited (PUSR) Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter Use of Hard-coded Credentials Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities Expand All + CVE-2026-7786 The device firmware contains plaintext administrative credentials embedded in the firmware image. These credentials can be extracted through firmware analysis and used to authenticate to device services. View CVE Details Affected Products Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter Vendor: Jinan USR IOT Technology Limited (PUSR) Product Version: Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter: 7.03T.07 Product Status: known_affected Remediations Mitigation Jinan USR IOT Technology Limited (PUSR) did not respond to CISA's attempts at coordination. Users of PUSR USR-W610 devices are encouraged to contact PUSR and keep their systems up to date. Relevant CWE: CWE-798 Use of Hard-coded Credentials Metrics CVSS",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-7786"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d9e40677dbe2eb60",
+      "title": "Fourth Frontier Frontier X Mobile Application, Frontier X2",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to read and write arbitrary handle values and change clinical readings, which could result in taking control of the device and lead to patient harm. The following versions of Fourth Frontier Frontier X Mobile Application, Frontier X2 are affected: Frontier X Android application vers&lt;v15.0.0 Frontier X IOS application vers&lt;v25.0.0 Frontier X2 vers:all/* CVSS Vendor Equipment Vulnerabilities v3 8.8 Fourth Frontier Fourth Frontier Frontier X Mobile Application, Frontier X2 Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-5768 The Frontier X2 device allows unauthenticated BLE read/write access to critical GATT characteristics without enforcing pairing authentication or authorization. This allows attackers within BLE range to perform unauthorized control of device functions, including starting/stopping activities, triggering vibrations, causing denial-of-service conditions, and fuzzing characteristic values to induce unexpected behavior. Additionally, the Frontier X mobile application lacks proper BLE device authentication, allowing attackers to impersonate a legitimate Frontier X2 device and connect to the application. By cloning BLE advertisements and exposing expected GATT characteristics, attackers c",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-148-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-5768"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [
+        "Android",
+        "iOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "b77ce11cda8ebfb7",
       "title": "Eppendorf BioFlo 320",
       "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to gain full access to functionality and data with the bioreactor. The following versions of Eppendorf BioFlo 320 are affected: BioFlo 320 Bioreactor vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8 Eppendorf Eppendorf BioFlo 320 Use of Hard-coded Password Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-7251 The affected product is vulnerable to due to VNC server using a hard-coded password. If a remote attacker knows the network address of any BioFlo 320 model with remote access enabled, they can gain full control of the user interface by using this password. Once connected, the attacker would have full access to all control panel features for the BioFlo 320. VNC traffic is not encrypted. View CVE Details Affected Products Eppendorf BioFlo 320 Vendor: Eppendorf Product Version: Eppendorf BioFlo 320 Bioreactor: vers:all/* Product Status: known_affected Remediations Mitigation Eppendorf has released a software update that permanently removes VNC access from the controller. Users should download and apply this update from: https://www.eppendorf.com/software-downloads. https://www.eppendorf.com/software-downloads Mitigation All affected BioFlo 320 systems always shipped with Virtual Network Computing (VNC) disabled by default, and VNC can only be ena",
@@ -365,6 +495,86 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "116debcf8f3631c1",
+      "title": "ABB EIBPORT",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. A firmware update is available that resolves these privately reported vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited these vulnerabilities could access sensitive information stored inside the device and can change the configuration of the device. The following versions of ABB EIBPORT are affected: EIBPORT V3 KNX (2CLA963710W1001) &lt;3.9.2 EIBPORT V3 KNX (2CSM256242R2001) &lt;3.9.2 EIBPORT V3 KNX GSM (2CLA963720W1001) &lt;3.9.2 CVSS Vendor Equipment Vulnerabilities v3 8 ABB ABB EIBPORT Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') Background Critical Infrastructure Sectors: Critical Manufacturing, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2021-22291 The vulnerability allows the successful attacker to receive a copy of the session id. View CVE Details Affected Products ABB EIBPORT Vendor: ABB Product Version: EIBPORT V3 KNX (2CLA963710W1001) Version &lt;3.9.2, EIBPORT V3 KNX (2CSM256242R2001) Version &lt;3.9.2, EIBPORT V3 KNX GSM (2CLA963720W1001) version &lt; 3.9.2 Product Status: fixed, known_affected Remediations Vendor fix ABB recommends that customers apply the update at the earliest convenience. Relevant CWE: CWE-79 Improper Neutralization of Input During Web Page Ge",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2021-22291"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "230cf8dd6ba1d8a8",
+      "title": "XCharge C6",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain administrator rights or execute code on the affected device. The following versions of XCharge C6 are affected: C6 CVSS Vendor Equipment Vulnerabilities v3 9.8 XCharge XCharge C6 Download of Code Without Integrity Check, Stack-based Buffer Overflow, Initialization of a Resource with an Insecure Default Background Critical Infrastructure Sectors: Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-9037 A firmware update mechanism in the affected charging controller fails to validate the authenticity of firmware packages delivered through the device's management interface. Because cryptographic signatures are not verified, an attacker with the ability to interfere with or impersonate the management channel could cause the device to install an unauthorized firmware package. This condition could allow execution of unauthorized code with high privileges on the device, View CVE Details Affected Products XCharge C6 Vendor: XCharge Product Version: XCharge C6: &lt;May_22_2026 Product Status: known_affected Remediations Mitigation XCharge has confirmed that the update has been deployed for all affected chargers. Users with questions can reach out to XCharge Support for further details if needed. https://www.xcharge.com/contact https://www.xcharge.com/contact Relevant CWE: CWE-494 Download of Code Wi",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-08",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-9037"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "755ac560a9407f8f",
+      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected: MacGregor Voyage Data Recorder (VDR) G4e &lt;V5.250 CVSS Vendor Equipment Vulnerabilities v3 8.3 Danelec MacGregor Voyage Data Recorder (VDR) G4e Use of Default Credentials, Insufficiently Protected Credentials, Use of Password Hash With Insufficient Computational Effort, Use of Hard-coded Credentials, Files or Directories Accessible to External Parties Background Critical Infrastructure Sectors: Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities Expand All + CVE-2026-42941 The VDR device includes a default username and password, with no enforced password change. View CVE Details Affected Products MacGregor Voyage Data Recorder (VDR) G4e Vendor: Danelec Product Version: Danelec MacGregor Voyage Data Recorder (VDR) G4e: &lt;V5.250 Product Status: known_affected Remediations Vendor fix Danelec has released firmware version V5.250 to resolve these vulnerabilities. Users of MacGregor Voyage Data Recorder (VDR) G4e devices are encouraged to update the firmware at the earliest service attendance rather than waiting for an annual performance test. Contact Danelec with additional questions: https://www.danelec.com/contact https://www.danelec.com/contact Relevant CWE: CWE-1392 Use of Default Credentials Met",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-42941"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -438,6 +648,58 @@
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "47b511232453c476",
+      "title": "ABB Busch-Welcome 2 Wire Door Opener Actuator",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited this vulnerability could gain physical, unauthorized access to a Building where the product is installed The following versions of ABB Busch-Welcome 2 Wire Door Opener Actuator are affected: Switch Actuator 4 DU vers:all/*&nbsp; Switch actuator, door/light 4 DU vers:all/*&nbsp; CVSS Vendor Equipment Vulnerabilities v3 6.8 ABB ABB Busch-Welcome 2 Wire Door Opener Actuator Active Debug Code Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2025-7705 Authentication bypass due to compatibility mode enabled by default View CVE Details Affected Products ABB Busch-Welcome 2 Wire Door Opener Actuator Vendor: ABB Product Version: Switch Actuator 4 DU -83330 - All Versions, Switch actuator, door/light 4 DU -83330-500 - All Versions Product Status: known_affected Remediations Mitigation The following actions need to be executed on premise where the respective Busch-Welcome® System is installed: • While the Busch-Welcome® System is in operation, toggle the mode switch on the product from “Door-Open” - to “Light” – Mode, wait one second and switch back to “Door-Open” - Mode. • Restart the Busch-Welcome® System with a Power reset (mains power off and on again). By executing the above steps, the system will recalibrate",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2025-7705"
+      ],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "183681adb231bb29",
+      "title": "CP Plus 8 Ch. Network Video Recorder",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. This could lead to compromise of user sessions, execution of unauthorized actions with the victim's privileges, exposure or manipulation of sensitive data, and degradation of overall system integrity. The following versions of CP Plus 8 Ch. Network Video Recorder are affected: CP-UNR-108F1 Hardware V1.0 CP-UNR-108F1 Web V3.2.7.128806&nbsp; CP-UNR-108F1 System V4.001.00AT009.0.R&nbsp; CVSS Vendor Equipment Vulnerabilities v3 8.4 CP Plus CP Plus 8 Ch. Network Video Recorder Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') Background Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Emergency Services Countries/Areas Deployed: India, Nepal, United Arab Emirates, Gambia Company Headquarters Location: India Vulnerabilities Expand All + CVE-2026-6824 A stored Cross-Site Scripting (XSS) vulnerability exists in certain 1xxx series NVR devices due to insufficient sanitization of user-supplied input in specific functional modules. Attackers can inject malicious scripts, which are then persistently stored on the device backend. When administrators or users access affected pages, the stored scripts are executed in their browsers, leading to potential session hijacking, unauthorized actions, or data theft. View CVE Deta",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-05-28T12:00:00+00:00",
+      "published_ts": 1779969600.0,
+      "cves": [
+        "CVE-2026-6824"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -545,6 +807,29 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0ef621eaded4151d",
+      "title": "[An RX Global Event] Infosecurity Europe",
+      "summary": "",
+      "url": "https://www.darkreading.com/events/infosecurity-europe",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T13:30:00+00:00",
+      "published_ts": 1780407000.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -805,6 +1090,100 @@
       "related_sources": []
     },
     {
+      "id": "3e552eb448e7b02a",
+      "title": "Russia-Linked ‘GreyVibe’ Attackers Use AI to Supercharge Cyberattacks",
+      "summary": "Researchers warn GreyVibe’s extensive use of ChatGPT, Gemini, and other AI tools offers a glimpse into how future cybercriminal and state-aligned groups will operate. The post Russia-Linked ‘GreyVibe’ Attackers Use AI to Supercharge Cyberattacks appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/russia-linked-greyvibe-attackers-use-ai-to-supercharge-cyberattacks/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-28T18:50:49+00:00",
+      "published_ts": 1779994249.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2f8471f20e74b7ff",
+      "title": "Less panic patching, more precision",
+      "summary": "In this newsletter, Thor breaks down why you should stop relying solely on CVSS and start using EPSS and GCVE to focus your patching efforts on the threats that actually matter.",
+      "url": "https://blog.talosintelligence.com/less-panic-patching-more-precision/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-05-28T18:00:27+00:00",
+      "published_ts": 1779991227.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c61f3aec0fb7202c",
+      "title": "Critical Gogs RCE Vulnerability Lets Any Authenticated User Execute Arbitrary Code",
+      "summary": "A critical security vulnerability has been disclosed in Gogs, a popular open-source self-hosted Git service, that allows an authenticated user to execute arbitrary code under certain conditions. The security flaw, per Rapid7, is rated 9.4 on the CVSS scoring system. It does not have a CVE identifier. \"The vulnerability allows any authenticated user to achieve remote code execution (RCE) on",
+      "url": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-28T17:24:44+00:00",
+      "published_ts": 1779989084.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "af6f8ddcce498567",
+      "title": "Agentic AI Isn't Risky; the Way Orgs Deploy It Is",
+      "summary": "AI agents aren't black boxes — they're models interacting with software tools. The risk lies in their overlap.",
+      "url": "https://www.darkreading.com/application-security/agentic-ai-risky",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-28T15:36:25+00:00",
+      "published_ts": 1779982585.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "900d85b7e3fd4ad2",
       "title": "Russia conducting daily attacks on UK 'from seabed to cyberspace,' spy chief warns",
       "summary": "Anne Keast-Butler, director of GCHQ, said Russia's actions have prompted the agency to defend subsea cables and energy pipelines in British waters, disrupt Russian networks smuggling sanctioned technology and countering “reckless sabotage and assassination attempts.”",
@@ -988,85 +1367,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9dfb693991dff8b1",
-      "title": "Romanian national sentenced to more than 4 years for hacking Oregon government systems",
-      "summary": "Dragomir was arrested in Romania in November 2024 and brought to the U.S. last year to face charges for hacking into the network belonging to Oregon’s Office of Emergency Management.",
-      "url": "https://therecord.media/romanian-national-sentenced-to-over-4-years-oregon-hack",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-27T18:06:00+00:00",
-      "published_ts": 1779905160.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "17a1f7662df29497",
-      "title": "Latin American Cybercriminals Hoover Up Government Data",
-      "summary": "A purported leak exposing 5.8 million records of Uruguayan citizens is the latest incident where cybercriminals targeted government agencies to monetize citizen data.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/latin-american-cybercriminals-government-data",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-27T16:19:03+00:00",
-      "published_ts": 1779898743.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Latin America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "02b9e82cd9c2964f",
-      "title": "Grandoreiro Malware and BTMOB RAT Campaigns Target Windows and Android Users",
-      "summary": "Latin America and Europe become the target of two banking trojan campaigns that are designed to infect Windows and Android devices with Grandoreiro and BTMOB malware, respectively. That's according to new findings from WatchGuard and ESET, which have observed the two malware families being used to single out companies in Spain, Portugal, and Mexico, as well as mobile users in Brazil. The",
-      "url": "https://thehackernews.com/2026/05/grandoreiro-malware-and-btmob-rat.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-27T16:10:21+00:00",
-      "published_ts": 1779898221.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Europe",
-        "Latin America",
-        "North America"
-      ],
-      "products": [
-        "Android",
-        "Windows"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1332,15 +1632,15 @@
       "related_sources": []
     },
     {
-      "id": "f7ecae32f879afcf",
-      "title": "[Virtual Event] Anatomy of a Data Breach: What to Do if it Happens to You",
+      "id": "9972e7acb8090cc4",
+      "title": "Name That Toon Contest",
       "summary": "",
-      "url": "https://www.darkreading.com/events/anatomy-of-a-data-breach-what-to-do-if-it-happens-to-you",
+      "url": "https://www.darkreading.com/events/celebrate-20-years-of-dark-reading-name-that-toon-contest",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-18T15:00:00+00:00",
-      "published_ts": 1781794800.0,
+      "published": "2026-06-26T11:00:00+00:00",
+      "published_ts": 1782471600.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1354,21 +1654,91 @@
       "related_sources": []
     },
     {
-      "id": "0ef621eaded4151d",
-      "title": "Infosecurity Europe",
-      "summary": "",
-      "url": "https://www.darkreading.com/events/infosecurity-europe",
+      "id": "507ae8db5648e5b5",
+      "title": "Dutch Raid Fails to Dent Russian Bulletproof Host",
+      "summary": "Dutch law enforcement seized 800 servers and arrested two operators of THE.Hosting but left the hosting provider's core IP address space intact.",
+      "url": "https://www.darkreading.com/cyber-risk/dutch-raid-russian-bulletproof-host",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-02T13:30:00+00:00",
-      "published_ts": 1780407000.0,
+      "published": "2026-05-28T19:04:37+00:00",
+      "published_ts": 1779995077.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Europe"
+        "Unspecified"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9c960f380c6f5ae2",
+      "title": "Hackers exploit FortiClient EMS flaw to push infostealer malware",
+      "summary": "Hackers are exploiting an authentication bypass vulnerability (CVE-2026-35616) in FortiClient Enterprise Management Server (EMS) to deliver an undocumented credential stealer called EKZ. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-28T17:25:43+00:00",
+      "published_ts": 1779989143.0,
+      "cves": [
+        "CVE-2026-35616"
+      ],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1d3c80e3976ef4ca",
+      "title": "Geordie Raises $30 Million for AI Security and Governance Platform",
+      "summary": "The funding round was led by Balderton Capital, with additional support from Crosspoint Capital and previous investors General Catalyst and Ten Eleven Ventures. The post Geordie Raises $30 Million for AI Security and Governance Platform appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/geordie-raises-30-million-for-ai-security-and-governance-platform/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-28T17:07:16+00:00",
+      "published_ts": 1779988036.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "55e2cac8e936e190",
+      "title": "Threat Actors Exploit Critical FortiClient EMS Flaw to Deploy Credential Stealer",
+      "summary": "Threat actors are continuing to exploit a critical, now-patched security flaw impacting FortiClient Endpoint Management Server (EMS) deployments to deliver credential-stealing malware. \"The campaign abused trusted endpoint management infrastructure to deliver malware across managed endpoints,\" Arctic Wolf said. \"Threat actors disguised the credential stealer payload as a Fortinet endpoint",
+      "url": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-28T15:26:04+00:00",
+      "published_ts": 1779981964.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Fortinet"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1625,21 +1995,25 @@
       "related_sources": []
     },
     {
-      "id": "22d667172dc0bfc8",
-      "title": "UK Cyberspying Chief Calls AI ‘an Unstoppable Force’ and Warns About Russia",
-      "summary": "The speech is the latest in a string of warnings from intelligence experts that Russia is stepping up hostile activity in a “gray zone” that falls just below the threshold of war. The post UK Cyberspying Chief Calls AI ‘an Unstoppable Force’ and Warns About Russia appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/uk-cyberspying-chief-calls-ai-an-unstoppable-force-and-warns-about-russia/",
-      "source": "SecurityWeek",
+      "id": "9dfb693991dff8b1",
+      "title": "Romanian national sentenced to more than 4 years for hacking Oregon government systems",
+      "summary": "Dragomir was arrested in Romania in November 2024 and brought to the U.S. last year to face charges for hacking into the network belonging to Oregon’s Office of Emergency Management.",
+      "url": "https://therecord.media/romanian-national-sentenced-to-over-4-years-oregon-hack",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-05-27T17:32:14+00:00",
-      "published_ts": 1779903134.0,
+      "published": "2026-05-27T18:06:00+00:00",
+      "published_ts": 1779905160.0,
       "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
+      "sectors": [
+        "Government & Public Services"
       ],
-      "products": [],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Office"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1647,19 +2021,21 @@
       "related_sources": []
     },
     {
-      "id": "2cbc1fdd4a17d0bd",
-      "title": "AI-Assisted Exploit Development Outpaces Scanner Detection",
-      "summary": "Attackers are using AI to dramatically reduce the time they need to develop a working exploit for a CVE, according to new research.",
-      "url": "https://www.darkreading.com/threat-intelligence/ai-assisted-exploit-development-scanner-detection",
+      "id": "17a1f7662df29497",
+      "title": "Latin American Cybercriminals Hoover Up Government Data",
+      "summary": "A purported leak exposing 5.8 million records of Uruguayan citizens is the latest incident where cybercriminals targeted government agencies to monetize citizen data.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/latin-american-cybercriminals-government-data",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-05-27T16:11:19+00:00",
-      "published_ts": 1779898279.0,
+      "published": "2026-05-27T16:19:03+00:00",
+      "published_ts": 1779898743.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
       "regions": [
-        "Unspecified"
+        "Latin America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1669,23 +2045,28 @@
       "related_sources": []
     },
     {
-      "id": "95557a9bb7b9bc6e",
-      "title": "Vulnerability in Popular Conference Software Granted Attackers a 100% Talk Acceptance Rate",
-      "summary": "Novee researchers discovered an account takeover vulnerability in the open source CFP management tool Pretalx. The post Vulnerability in Popular Conference Software Granted Attackers a 100% Talk Acceptance Rate appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/vulnerability-in-popular-conference-software-granted-attackers-a-100-talk-acceptance-rate/",
-      "source": "SecurityWeek",
+      "id": "02b9e82cd9c2964f",
+      "title": "Grandoreiro Malware and BTMOB RAT Campaigns Target Windows and Android Users",
+      "summary": "Latin America and Europe become the target of two banking trojan campaigns that are designed to infect Windows and Android devices with Grandoreiro and BTMOB malware, respectively. That's according to new findings from WatchGuard and ESET, which have observed the two malware families being used to single out companies in Spain, Portugal, and Mexico, as well as mobile users in Brazil. The",
+      "url": "https://thehackernews.com/2026/05/grandoreiro-malware-and-btmob-rat.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-05-27T14:30:00+00:00",
-      "published_ts": 1779892200.0,
+      "published": "2026-05-27T16:10:21+00:00",
+      "published_ts": 1779898221.0,
       "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Financial Services"
       ],
       "regions": [
-        "Unspecified"
+        "Europe",
+        "Latin America",
+        "North America"
       ],
-      "products": [],
+      "products": [
+        "Android",
+        "Windows"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1861,30 +2242,6 @@
       "related_sources": []
     },
     {
-      "id": "28610ea64aa586cf",
-      "title": "Charter confirms data breach after ShinyHunters extortion threat",
-      "summary": "U.S. telecommunications giant Charter Communications has confirmed it suffered a data breach after the ShinyHunters extortion group threatened to leak stolen data unless a ransom is paid. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/charter-confirms-data-breach-after-shinyhunters-extortion-threat/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-05-26T19:46:01+00:00",
-      "published_ts": 1779824761.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "075a52bd64bd9ea1",
       "title": "State Cyber Leaders Beg Congress for More Funding, Support",
       "summary": "A recent congressional hearing highlighted how states are reeling from federal cutbacks to important cybergrants and information-sharing initiatives amid damaging attacks to critical infrastructure.",
@@ -2001,6 +2358,28 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2cbc1fdd4a17d0bd",
+      "title": "AI-Assisted Exploit Development Outpaces Scanner Detection",
+      "summary": "Attackers are using AI to dramatically reduce the time they need to develop a working exploit for a CVE, according to new research.",
+      "url": "https://www.darkreading.com/threat-intelligence/ai-assisted-exploit-development-scanner-detection",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-05-27T16:11:19+00:00",
+      "published_ts": 1779898279.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
