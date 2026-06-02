@@ -1,22 +1,24 @@
 {
-  "generated_at": "2026-06-02T16:24:18.848056+00:00",
+  "generated_at": "2026-06-02T20:48:47.358803+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 56,
-    "critical": 0,
+    "all": 65,
+    "critical": 1,
     "high": 4,
-    "medium": 6,
-    "low": 46,
-    "actively_exploited": 10,
-    "with_cves": 2
+    "medium": 7,
+    "low": 53,
+    "actively_exploited": 11,
+    "with_cves": 5
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
+    "CISA KEV",
     "Check Point Research",
     "CrowdStrike Blog",
     "Dark Reading",
     "Krebs on Security",
+    "Microsoft Security Blog",
     "Securelist (Kaspersky)",
     "SecurityWeek",
     "SentinelOne Labs",
@@ -25,6 +27,77 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "0ccb3bacfcd50e7c",
+      "title": "CVE-2025-48595: Android Framework Integer Overflow Vulnerability (Android Framework)",
+      "summary": "CISA KEV — actively exploited. Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. (due 2026-06-05).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48595",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-06-02T00:00:00+00:00",
+      "published_ts": 1780358400.0,
+      "cves": [
+        "CVE-2025-48595"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 80,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+          "title": "Google June 2026 Android Update Patches 124 Flaws, One Actively Exploited",
+          "published": "2026-06-02T18:46:00+00:00"
+        },
+        {
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/android-update-patches-exploited-zero-day-123-other-vulnerabilities/",
+          "title": "Android Update Patches Exploited Zero-Day, 123 Other Vulnerabilities",
+          "published": "2026-06-02T14:36:33+00:00"
+        }
+      ]
+    },
+    {
+      "id": "3e6d3a939da4fd4c",
+      "title": "CVE-2022-0492: Linux Kernel Improper Authentication Vulnerability (Linux Kernel)",
+      "summary": "CISA KEV — actively exploited. Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. (due 2026-06-05).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0492",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-06-02T00:00:00+00:00",
+      "published_ts": 1780358400.0,
+      "cves": [
+        "CVE-2022-0492"
+      ],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
     {
       "id": "02a046ecf4372625",
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -44,7 +117,7 @@
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "North America"
       ],
       "products": [
         "Oracle WebLogic"
@@ -61,41 +134,18 @@
           "published": "2026-06-01T00:00:00+00:00"
         },
         {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/oracle-weblogic-cve-2024-21182-added-to.html",
+          "title": "Oracle WebLogic CVE-2024-21182 Added to KEV Catalog After Active Exploitation",
+          "published": "2026-06-02T18:14:42+00:00"
+        },
+        {
           "source": "SecurityWeek",
           "url": "https://www.securityweek.com/oracle-weblogic-vulnerability-exploited-in-the-wild/",
           "title": "Oracle WebLogic Vulnerability Exploited in the Wild",
           "published": "2026-06-02T11:39:04+00:00"
         }
       ]
-    },
-    {
-      "id": "8b185c289c76ba0a",
-      "title": "Android Update Patches Exploited Zero-Day, 123 Other Vulnerabilities",
-      "summary": "Google says the Android vulnerability CVE-2025-48595 has been exploited in limited, targeted attacks. The post Android Update Patches Exploited Zero-Day, 123 Other Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/android-update-patches-exploited-zero-day-123-other-vulnerabilities/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-02T14:36:33+00:00",
-      "published_ts": 1780410993.0,
-      "cves": [
-        "CVE-2025-48595"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
     },
     {
       "id": "4273f84150eb7430",
@@ -219,7 +269,7 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 45,
+      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -295,6 +345,111 @@
       "cvss": null,
       "priority_score": 35,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "fddef4941bdd1cba",
+      "title": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems",
+      "summary": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems Overview The Cybersecurity and Infrastructure Security Agency (CISA), the Federal Bureau of Investigation (FBI), the National Security Agency (NSA), the Department of Energy (DOE), the Environmental Protection Agency (EPA), the Transportation Security Administration (TSA), the Department of Transportation (DOT), and the U.S. Department of Agriculture (USDA)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting U.S.-based automatic tank gauge (ATG) systems. ATG systems are widely used throughout the Energy , Chemical , Food and Agriculture , and Transportation Systems Sectors for automated and remote monitoring of storage tank parameters, including fuel and liquid levels, temperature, and possible leak detection. The authoring organizations urge ATG owners and operators to defend against this malicious activity by securing their ATG systems with strong passwords and by removing them from the internet to reduce public exposure. &nbsp; Threat The recent malicious cyber activity observed by the authoring organizations—which the U.S. government has not yet attributed to a nation-state or threat actor group—involves cyber threat actors compromising internet-exposed ATG systems and subsequently modifying them through command execution. This fact sheet provides insight into probable tactics, techniques, and procedures (TTPs) leveraged by these cyber actors, highlights risk f",
+      "url": "https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-02T12:00:00+00:00",
+      "published_ts": 1780401600.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "ccc58f3206a4f848",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2022-0492 Linux Kernel Improper Authentication Vulnerability CVE-2025-48595 Android Framework Integer Overflow Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats. See the&nbsp; BOD 22-01 Fact Sheet for more information. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of&nbsp; KEV Catalog vulnerabilities as part of their vulnerability management practice. CISA will continue to add vulnerabilities to the catalog that meet the&nbsp; specified criteria .",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-02T12:00:00+00:00",
+      "published_ts": 1780401600.0,
+      "cves": [
+        "CVE-2022-0492",
+        "CVE-2025-48595"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android",
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2fdb936158dc2597",
+      "title": "White House unveils pared-back AI executive order",
+      "summary": "The order notes that federal access to the models should be subject to “appropriate confidentiality, cybersecurity, insider-risk, and intellectual-property protection, use, and nondisclosure requirements.”",
+      "url": "https://therecord.media/white-house-unveils-ai-executive-order",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T18:43:00+00:00",
+      "published_ts": 1780425780.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f43ba70e12996d96",
+      "title": "Microsoft Build 2026: Securing code, agents, and models across the development lifecycle",
+      "summary": "Discover how Microsoft enables fast, secure AI development with MDASH and new security capabilities. The post Microsoft Build 2026: Securing code, agents, and models across the development lifecycle appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-06-02T17:15:18+00:00",
+      "published_ts": 1780420518.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -423,31 +578,6 @@
       "related_sources": []
     },
     {
-      "id": "efbedc89221c7809",
-      "title": "Hackers Used Meta’s AI Support Bot to Seize Instagram Accounts",
-      "summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords.",
-      "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
-      "source": "Krebs on Security",
-      "source_trust": 5,
-      "category": "mixed",
-      "published": "2026-06-01T17:32:50+00:00",
-      "published_ts": 1780335170.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Middle East",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "d803aca06e7a5cb9",
       "title": "Patch Now: Another Palo Alto Auth Bypass Bug Under Active Exploit",
       "summary": "Exploiting the PAN-OS GlobalProtect VPN vulnerability requires certain conditions, but adversaries have done so in two attack waves that started in mid-May.",
@@ -468,6 +598,127 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "99585b52d801a2ee",
+      "title": "Trump Signs Executive Order That Invites Vetting of Top AI Models for National Security Risks",
+      "summary": "The order establishes a framework for the federal government to vet the national security risks of the most advanced AI systems for up to a month before their public release. The post Trump Signs Executive Order That Invites Vetting of Top AI Models for National Security Risks appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/trump-signs-executive-order-that-invites-vetting-of-top-ai-models-for-national-security-risks/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T20:10:49+00:00",
+      "published_ts": 1780431049.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ecd4e689c96b5a6e",
+      "title": "AI-built ransomware toolkit automates EDR evasion, AD discovery",
+      "summary": "A threat actor is using an AI-built ransomware attack toolkit that automates Active Directory discovery and helps evade endpoint detection and response (EDR) solutions. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/ai-built-ransomware-toolkit-automates-edr-evasion-ad-discovery/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T20:01:20+00:00",
+      "published_ts": 1780430480.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Active Directory"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d297570e43e854c9",
+      "title": "China Uses Dual-Method Cyberattack on Czech Orgs",
+      "summary": "China is stealing data from high-value targets via a sneaky, double-layer spear-phishing campaign that includes the Azureveil malware.",
+      "url": "https://www.darkreading.com/threat-intelligence/china-uses-dual-method-attack-czech-taiwan-orgs",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T19:50:53+00:00",
+      "published_ts": 1780429853.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "79ce523d1162e760",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations (Updated June 2)",
+      "summary": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations (Updated June 2) appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-06-02T17:30:33+00:00",
+      "published_ts": 1780421433.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3cc8dd2dd0b43770",
+      "title": "Microsoft Exchange Online outage causes email delays, failures",
+      "summary": "Microsoft is working to address a widespread service issue affecting the mail flow pipeline for Exchange Online customers across North America and Germany. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-delays-failures/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T17:02:40+00:00",
+      "published_ts": 1780419760.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "North America"
+      ],
+      "products": [
+        "Exchange"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -642,54 +893,6 @@
       "related_sources": []
     },
     {
-      "id": "eb3bae5b5d2b36dd",
-      "title": "Dashlane Brute-Force Attack Leads to Limited Encrypted Vault Downloads",
-      "summary": "Dashlane’s security systems automatically locked accounts to protect them against the hacking attempts. The post Dashlane Brute-Force Attack Leads to Limited Encrypted Vault Downloads appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/dashlane-brute-force-attack-leads-to-limited-encrypted-vault-downloads/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-02T08:07:41+00:00",
-      "published_ts": 1780387661.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "79aba5c7ba87ff77",
-      "title": "Oracle’s First Monthly Patches Resolve 77 Vulnerabilities",
-      "summary": "Oracle’s monthly Critical Security Patch Update (CSPU) rollouts are meant to deliver critical fixes faster. The post Oracle&#8217;s First Monthly Patches Resolve 77 Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/oracles-first-monthly-patches-resolve-77-vulnerabilities/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-02T07:20:14+00:00",
-      "published_ts": 1780384814.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "6379e18666820f0b",
       "title": "Spain arrests suspected hacker for publishing personal data of police, prosecutors and cyber officials",
       "summary": "Police described the incident as a large-scale disclosure of sensitive personal information that posed a threat to both the affected individuals and the institutions they serve. The data was allegedly posted on multiple internet platforms.",
@@ -738,69 +941,22 @@
       "related_sources": []
     },
     {
-      "id": "a884f39443eae7da",
-      "title": "Inspector general finds NIST mistakes have made vulnerability database ineffective",
-      "summary": "NIST’s National Vulnerability Database (NVD) backlog mushroomed from 13,000 unprocessed security vulnerabilities in February 2024 to more than 27,000 by the end of 2025, “undermining the NVD’s utility and public trust,\" according to an inspector general report.",
-      "url": "https://therecord.media/nist-mistakes-vulnerability-database-inspector-general",
-      "source": "The Record",
-      "source_trust": 4,
+      "id": "efbedc89221c7809",
+      "title": "Hackers Used Meta’s AI Support Bot to Seize Instagram Accounts",
+      "summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords.",
+      "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+      "source": "Krebs on Security",
+      "source_trust": 5,
       "category": "mixed",
-      "published": "2026-06-01T20:28:00+00:00",
-      "published_ts": 1780345680.0,
+      "published": "2026-06-01T17:32:50+00:00",
+      "published_ts": 1780335170.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d776aac912cf6b93",
-      "title": "NSA selects new leads for key cybersecurity posts",
-      "summary": "David Imbordino, an NSA senior executive who most recently led its cybersecurity directorate in an acting capacity, has been named as its new chief. Bruce Jones, a career NSA technical and operational leader, as the new head of its Cybersecurity Collaboration Center.",
-      "url": "https://therecord.media/nsa-selects-new-leads-for-cyber-posts",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-01T18:30:00+00:00",
-      "published_ts": 1780338600.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "6e189a5771af0102",
-      "title": "Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm",
-      "summary": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm. \"This is effectively a Mini Shai-Hulud campaign: it uses the same core tactics of install-time execution, credential harvesting, CI/CD targeting, encrypted exfiltration, and potential",
-      "url": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-01T17:40:28+00:00",
-      "published_ts": 1780335628.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
+        "Middle East",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -841,6 +997,97 @@
       "category": "mixed",
       "published": "2026-06-26T11:00:00+00:00",
       "published_ts": 1782471600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "05ce53607a51a8b3",
+      "title": "DriveSurge Hijacks Thousands of Sites for ClickFix, FakeUpdate Attacks",
+      "summary": "A sneaky, wide-scale IAB operation uses a malicious traffic distribution system (TDS) to redirect visitors of trusted websites to ones that deliver malware.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/drivesurge-hijacks-thousands-sites-clickfix-fakeupdate-attacks",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T20:11:51+00:00",
+      "published_ts": 1780431111.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "99e3281afc0470ac",
+      "title": "Securing AI Agents Before They Go Rogue Is Next to Impossible",
+      "summary": "High-autonomy agents with broad permissions and unfettered access are a recipe for disaster, and enterprises need to act now before they become the next horror story.",
+      "url": "https://www.darkreading.com/cyber-risk/securing-ai-agents-rogue",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T19:10:14+00:00",
+      "published_ts": 1780427414.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2fbf5868a1e6a49c",
+      "title": "Gamaredon Exploits WinRAR to Deliver GammaWorm and GammaSteel Against Ukraine",
+      "summary": "The Russian hacking group known as Gamaredon has been attributed to the continued exploitation of a WinRAR vulnerability to deliver multiple malware families aimed at data theft and propagation. Per Sekoia, the activity involves the weaponization of CVE-2025-8088, a path traversal flaw in WinRAR, to launch an HTML Application payload dubbed GammaPhish, which is then used to retrieve an",
+      "url": "https://thehackernews.com/2026/06/gamaredon-exploits-winrar-to-deliver.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T18:21:49+00:00",
+      "published_ts": 1780424509.0,
+      "cves": [
+        "CVE-2025-8088"
+      ],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "184d0e40adc78c93",
+      "title": "Two New Reports Offer Competing Explanations for Cybersecurity’s Growing Crisis",
+      "summary": "As AI shortens the path from vulnerability disclosure to exploitation, researchers disagree on whether the problem is inadequate security tools or inadequate operational control. The post Two New Reports Offer Competing Explanations for Cybersecurity&#8217;s Growing Crisis appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/two-new-reports-offer-competing-explanations-for-cybersecuritys-growing-crisis/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-02T16:35:38+00:00",
+      "published_ts": 1780418138.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1055,17 +1302,19 @@
       "related_sources": []
     },
     {
-      "id": "820a7ededc53a7a5",
-      "title": "Dashlane password manager users locked out by brute force attacks",
-      "summary": "Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/",
-      "source": "BleepingComputer",
+      "id": "a884f39443eae7da",
+      "title": "Inspector general finds NIST mistakes have made vulnerability database ineffective",
+      "summary": "NIST’s National Vulnerability Database (NVD) backlog mushroomed from 13,000 unprocessed security vulnerabilities in February 2024 to more than 27,000 by the end of 2025, “undermining the NVD’s utility and public trust,\" according to an inspector general report.",
+      "url": "https://therecord.media/nist-mistakes-vulnerability-database-inspector-general",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-01T18:17:13+00:00",
-      "published_ts": 1780337833.0,
+      "published": "2026-06-01T20:28:00+00:00",
+      "published_ts": 1780345680.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1077,23 +1326,23 @@
       "related_sources": []
     },
     {
-      "id": "79d0952c9f1e72e1",
-      "title": "WordPress malware campaign hides payloads in Steam profiles",
-      "summary": "Nearly 2,000 WordPress websites were infected with malware that relies on Steam Community profile comments to hide command-and-control (C2) data. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/wordpress-malware-campaign-hides-payloads-in-steam-profiles/",
-      "source": "BleepingComputer",
+      "id": "6e189a5771af0102",
+      "title": "Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm",
+      "summary": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm. \"This is effectively a Mini Shai-Hulud campaign: it uses the same core tactics of install-time execution, credential harvesting, CI/CD targeting, encrypted exfiltration, and potential",
+      "url": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-01T17:04:16+00:00",
-      "published_ts": 1780333456.0,
+      "published": "2026-06-01T17:40:28+00:00",
+      "published_ts": 1780335628.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "WordPress"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1127,30 +1376,6 @@
       "related_sources": []
     },
     {
-      "id": "5f68c00e2fed5c4e",
-      "title": "Microsoft fixes outage affecting MFA setup, MySignIn service",
-      "summary": "Microsoft is working to address an ongoing incident preventing customers from setting up multi-factor authentication (MFA) or accessing the My Sign-Ins platform. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-outage-affecting-mfa-setup-mysignin-service/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-01T11:40:16+00:00",
-      "published_ts": 1780314016.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "96d4669c47f36e6f",
       "title": "The Security Growth Platform: Why MSPs Are Moving Beyond vCISO Tools",
       "summary": "Three years ago, the practical question for an MSP building a cybersecurity practice was which \"vCISO platform\" to buy. The term was good shorthand for the work at the time: assessments, advisory, reporting, maybe a compliance module bolted on the side. The work has since outgrown the descriptor. A Security Growth Platform is the more precise name for what MSPs and MSSPs need from the software",
@@ -1168,32 +1393,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "677a9b1b995cff91",
-      "title": "Microsoft fixes KB5089549 Windows security update install issues",
-      "summary": "Microsoft has resolved a known issue causing installation failures and 0x800f0922 errors when deploying the May 2026 Windows 11 security update (KB5089549). [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-kb5089549-windows-security-update-install-issues/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-01T10:59:43+00:00",
-      "published_ts": 1780311583.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1314,6 +1513,52 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "820a7ededc53a7a5",
+      "title": "Dashlane password manager users locked out by brute force attacks",
+      "summary": "Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-01T18:17:13+00:00",
+      "published_ts": 1780337833.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "79d0952c9f1e72e1",
+      "title": "WordPress malware campaign hides payloads in Steam profiles",
+      "summary": "Nearly 2,000 WordPress websites were infected with malware that relies on Steam Community profile comments to hide command-and-control (C2) data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-malware-campaign-hides-payloads-in-steam-profiles/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-01T17:04:16+00:00",
+      "published_ts": 1780333456.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
