@@ -1,26 +1,23 @@
 {
-  "generated_at": "2026-06-14T09:33:44.487385+00:00",
+  "generated_at": "2026-06-14T14:01:59.624011+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 61,
+    "all": 45,
     "critical": 0,
     "high": 2,
-    "medium": 7,
-    "low": 52,
+    "medium": 6,
+    "low": 37,
     "actively_exploited": 7,
-    "with_cves": 6
+    "with_cves": 2
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
-    "Check Point Research",
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
     "SecurityWeek",
-    "SentinelOne Labs",
     "The Hacker News",
-    "The Record",
     "Unit 42 (Palo Alto)"
   ],
   "items": [
@@ -75,12 +72,6 @@
           "url": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
           "title": "Oracle mitigates PeopleSoft zero-day exploited in data theft attacks",
           "published": "2026-06-11T19:39:53+00:00"
-        },
-        {
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/oracle-addresses-peoplesoft-vulnerability-amid-reports-of-zero-day-attacks/",
-          "title": "Oracle Addresses PeopleSoft Vulnerability Amid Reports of Zero-Day Attacks",
-          "published": "2026-06-11T13:57:54+00:00"
         }
       ]
     },
@@ -232,36 +223,6 @@
       "related_sources": []
     },
     {
-      "id": "4c337850287c847c",
-      "title": "Brickcom Cameras",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to gain unauthorized access to live video feeds, retrieve sensitive visual information from affected premises, and obtain administrative control of the device. The following versions of Brickcom Cameras are affected: Brickcom Cube 3.2.3.5.6 Brickcom Dome 3.2.3.5.6&nbsp; Brickcom Bullet 3.2.3.5.6&nbsp; Brickcom Box 3.2.3.5.6 CVSS Vendor Equipment Vulnerabilities v3 7.7 Brickcom Brickcom Cameras Missing Authentication for Critical Function, Use of Default Credentials Background Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Financial Services, Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: Taiwan Vulnerabilities Expand All + CVE-2026-50245 The affected product allows unauthenticated access to live snapshot images via the /ONVIF endpoint and no authentication is required to retrieve still images from the camera feed. View CVE Details Affected Products Brickcom Cameras Vendor: Brickcom Product Version: Brickcom Brickcom Cube: 3.2.3.5.6, Brickcom Brickcom Dome: 3.2.3.5.6, Brickcom Brickcom Bullet: 3.2.3.5.6, Brickcom Brickcom Box: 3.2.3.5.6 Product Status: known_affected Remediations Mitigation Brickcom did not respond to CISAs request for coordination. Users are encouraged to reach out to Brickcom for support https://www.brickcom.com/case/ https://www.brickcom.com/case/ Relevant CWE: CWE-",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-11T12:00:00+00:00",
-      "published_ts": 1781179200.0,
-      "cves": [
-        "CVE-2026-50245"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Government & Public Services",
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 35,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "58897942439243a4",
       "title": "US Gov asks Anthropic to ban 'foreign national' access to Fable, Mythos",
       "summary": "The US government has ordered Anthropic to block all foreign nationals from accessing Fable 5 and Mythos 5, forcing the company to suspend both models worldwide. Anthropic is complying but disputes the basis, calling the cited jailbreak narrow and the capability widely available elsewhere. [...]",
@@ -283,65 +244,8 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "78e9e067f34ee479",
-      "title": "Yarbo Android/iOS Mobile Application and Cloud Infrastructure",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to obtain hard-coded credentials, gain access to telemetry data, and potentially send operational commands to the robot fleet. The following versions of Yarbo Android/iOS Mobile Application and Cloud Infrastructure are affected: Yarbo Android/IOS mobile application Cloud MQTT infrastructure vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8 Yarbo Yarbo Android/iOS Mobile Application and Cloud Infrastructure Use of Hard-coded Credentials, Missing Authorization Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities Expand All + CVE-2026-10557 The Yarbo Android and iOS applications contain hard-coded MQTT broker credentials that are identical for all users and all devices. These credentials are embedded in the application binary and are readily extractable via APK decompilation. The credentials provide access to cloud MQTT brokers carrying real-time telemetry for the entire global Yarbo robot fleet. They allow both wildcard subscription to all robot telemetry topics and publishing to any robot's command topic using only the robot's serial number.. View CVE Details Affected Products Yarbo Android/iOS Mobile Application and Cloud Infrastructure Vendor: Yarbo Product Version: Yarbo Yarbo Android/IOS mobile application: &lt;v3.17.4, Yarbo Cloud MQTT infrastructure: vers:all/* Product Status",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-11T12:00:00+00:00",
-      "published_ts": 1781179200.0,
-      "cves": [
-        "CVE-2026-10557"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [
-        "Android",
-        "iOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "624e1f3294f1a3ea",
-      "title": "Naxclow IoT Platform",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to impersonate devices, intercept or manipulate communications, harvest sensitive credentials at scale, or gain unauthorized access. The following versions of Naxclow IoT Platform are affected: Smart Doorbell X3 vers:all/*&nbsp; X Smart Home vers:all/*&nbsp; V720 vers:all/*&nbsp; ix cam vers:all/*&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.8 Naxclow Naxclow IoT Platform Authorization Bypass Through User-Controlled Key, Missing Authorization, Not Using Password Aging, Use of Hard-coded Cryptographic Key, Generation of Predictable Numbers or Identifiers, Insertion of Sensitive Information into Externally-Accessible File or Directory Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities Expand All + CVE-2026-42947 A flaw in Naxclow's platform's onboarding workflow allows an attacker to replay a confirm-then-bind sequence to silently reassign a device to an arbitrary account. Because the affected endpoints validate request signatures but do not confirm legitimate ownership, an attacker with any account can take over a device without user interaction while the device remains online and unaware. View CVE Details Affected Products Naxclow IoT Platform Vendor: Naxclow Product Version: Naxclow Smart Doorbell X3: vers:all/*, Naxclow X Smart Home: vers:all/*, Naxclow V720: vers:all/*, Naxclow",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-11T12:00:00+00:00",
-      "published_ts": 1781179200.0,
-      "cves": [
-        "CVE-2026-42947"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -370,61 +274,6 @@
       "related_sources": []
     },
     {
-      "id": "2d371b93dd3652dc",
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-10520 Ivanti Sentry OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies, updating BOD 22-01 . BOD 26-04 reinforces the importance of the KEV catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of an exploited vulnerability not currently listed in the KEV catalog? Submit for potenti",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/06/11/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-11T12:00:00+00:00",
-      "published_ts": 1781179200.0,
-      "cves": [
-        "CVE-2026-10520"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Ivanti"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "25be2beb92e4d9af",
-      "title": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
-      "summary": "Splunk has released security updates to address a critical security flaw in Splunk Enterprise that could be exploited to conduct unauthenticated file operations and even remote code execution. The vulnerability, tracked as CVE-2026-20253, is rated 9.8 on the CVSS scoring system. \"In Splunk Enterprise versions below 10.2.4 and 10.0.7, an unauthenticated user could create or truncate arbitrary",
-      "url": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-13T13:23:03+00:00",
-      "published_ts": 1781356983.0,
-      "cves": [
-        "CVE-2026-20253"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "bb5bb939c61c30ae",
       "title": "Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered",
       "summary": "Unit 42 has discovered a new macOS Tahoe 26 forensic artifact that tracks user menu selections across the operating system. Learn more here. The post Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered appeared first on Unit 42 .",
@@ -444,31 +293,6 @@
       "products": [
         "macOS"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "03021151eb35ab01",
-      "title": "Bankruptcy admin approves settlement fund of $47 million for 23andMe data breach victims",
-      "summary": "About 7 million customers of the genetics testing company had their data stolen by hackers starting in April 2023, and many had their information posted on the dark web.",
-      "url": "https://therecord.media/bankruptcy-admin-approves-settlement-for-23andme-breach-victims",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-12T17:12:00+00:00",
-      "published_ts": 1781284320.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -605,80 +429,6 @@
       "related_sources": []
     },
     {
-      "id": "b3debd611da2635a",
-      "title": "Cyber Force not included in Senate defense policy roadmap",
-      "summary": "An amendment by Sen. Kirsten Gillibrand (D-NY) to the chamber’s fiscal 2027 national defense authorization bill that would have created the digital-focused service was defeated 14-13 when the Senate Armed Services Committee took up the nearly $1.2 trillion legislation behind closed doors this week.",
-      "url": "https://therecord.media/cyber-force-not-included-senate-defense-roadmap",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-11T16:47:00+00:00",
-      "published_ts": 1781196420.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2d952a41c06aefdd",
-      "title": "ThreatsDay Bulletin: Worm Code Leaked, AI Agent Phished, Claude Code Patch + 28 New Stories",
-      "summary": "It's been one of those weeks. You expect the usual noise: recycled malware, sloppy attacks, another easy target getting hit. Instead, there's a supply chain attack kit in a public repo, a $5,000-a-month RAT that clones browsers, and research showing AI agents can be tricked into leaking real credentials. The bigger problem is how polished this all looks now. Mule networks run like SaaS.",
-      "url": "https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-11T13:20:41+00:00",
-      "published_ts": 1781184041.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4b0fb970cb0e581b",
-      "title": "Trust No Skill: Integrity Verification for AI Agent Supply Chains",
-      "summary": "Protect enterprise AI agents from supply chain risks by auditing third-party skills for hidden vulnerabilities and multi-stage attack chains. The post Trust No Skill: Integrity Verification for AI Agent Supply Chains appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/ai-agent-supply-chain-risks/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-06-11T10:00:24+00:00",
-      "published_ts": 1781172024.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "9972e7acb8090cc4",
       "title": "Name That Toon Contest",
       "summary": "",
@@ -756,6 +506,32 @@
       "published_ts": 1781359602.0,
       "cves": [],
       "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "25be2beb92e4d9af",
+      "title": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
+      "summary": "Splunk has released security updates to address a critical security flaw in Splunk Enterprise that could be exploited to conduct unauthenticated file operations and even remote code execution. The vulnerability, tracked as CVE-2026-20253, is rated 9.8 on the CVSS scoring system. \"In Splunk Enterprise versions below 10.2.4 and 10.0.7, an unauthenticated user could create or truncate arbitrary",
+      "url": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-13T13:23:03+00:00",
+      "published_ts": 1781356983.0,
+      "cves": [
+        "CVE-2026-20253"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -907,30 +683,6 @@
       "products": [
         "Linux"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3864cb9e3c254fcd",
-      "title": "South Korea hits Coupang with record $409 million fine over data breach",
-      "summary": "The penalty is the largest ever issued by the commission for a personal data breach, surpassing the record 134.8 billion won ($88.8 million) fine levied against SK Telecom earlier this year.",
-      "url": "https://therecord.media/south-korea-data-breach-record-fine-coupang",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-12T15:56:00+00:00",
-      "published_ts": 1781279760.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1206,78 +958,6 @@
       "related_sources": []
     },
     {
-      "id": "846867c0db2b20ba",
-      "title": "LABScon25 Replay | Keynote: Steps to an Ecology of Cyber",
-      "summary": "Decades of piling complexity onto non-standardized stacks have left security unsteerable. Juan Andrés Guerrero-Saade makes the case for a new approach.",
-      "url": "https://www.sentinelone.com/labs/labscon25-replay-keynote-steps-to-an-ecology-of-cyber/",
-      "source": "SentinelOne Labs",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-06-11T13:00:59+00:00",
-      "published_ts": 1781182859.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "98a521ba8f8823a9",
-      "title": "AI Broke Vulnerability Management. That's Why CISOs Are Moving Budget to BAS.",
-      "summary": "For thirty years, vulnerability management ran on a buffer: the months between when a vulnerability was found and when someone could figure out how to weaponize it. The solution was straightforward enough; triage by severity, schedule the fix, validate, and move on. The buffer was what made that work. Today, that buffer is gone. AI didn't make your team slower. It changed the other side of the",
-      "url": "https://thehackernews.com/2026/06/ai-broke-vulnerability-management-thats.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-11T11:30:00+00:00",
-      "published_ts": 1781177400.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d3a6417c9c52e5b3",
-      "title": "OceanLotus Hits Vietnam Investors With SPECTRALVIPER in FireAnt Attack",
-      "summary": "The Vietnam-aligned threat actor known as OceanLotus has been attributed to two distinct campaigns that targeted domestic entities and stock investors with a backdoor known as SPECTRALVIPER. The campaigns involve a prolonged cyber espionage operation aimed at a Vietnamese infrastructure and transport construction corporation between mid-2024 and February 2026, as well as a supply chain attack",
-      "url": "https://thehackernews.com/2026/06/oceanlotus-hits-vietnam-investors-with.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-11T09:45:58+00:00",
-      "published_ts": 1781171158.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "fb5c0de19d1bb1b9",
       "title": "Anthropic Says It Has Taken Its Latest AI Models Offline to Comply With New Export Controls",
       "summary": "Anthropic takes Fable 5 and Mythos 5 offline to comply with a directive from the Trump administration to prevent use by foreign nationals. The post Anthropic Says It Has Taken Its Latest AI Models Offline to Comply With New Export Controls appeared first on SecurityWeek .",
@@ -1287,28 +967,6 @@
       "category": "mixed",
       "published": "2026-06-13T06:38:34+00:00",
       "published_ts": 1781332714.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1879a85533849d1a",
-      "title": "Major US surveillance program poised to lapse after legislative deadlock",
-      "summary": "It is the first lapse of the spy program, known as Section 702 of the Foreign Intelligence Surveillance Act (FISA), since it was passed into law in 2008.",
-      "url": "https://therecord.media/major-us-surveillance-program-set-to-lapse-702-fisa",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-12T17:08:00+00:00",
-      "published_ts": 1781284080.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1466,72 +1124,6 @@
       "category": "mixed",
       "published": "2026-06-11T17:46:32+00:00",
       "published_ts": 1781199992.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e5008d1dd75d5a9e",
-      "title": "British high school sends students home following cyberattack",
-      "summary": "Great Marlow School, which has 1,428 pupils according to the Department for Education (DfE), said it was set to remain closed while it works with specialist IT and cybersecurity professionals to resolve the issue.",
-      "url": "https://therecord.media/british-school-sends-students-home-cyberattack",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-11T15:25:00+00:00",
-      "published_ts": 1781191500.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "76be423fd110143c",
-      "title": "From SQLi to RCE – Exploiting LangGraph’s Checkpointer",
-      "summary": "By Yarden Porat AI agents need memory. Frameworks like LangGraph provide it through checkpointers &#8211; persistence layers that store execution state. But what happens when that persistence layer isn&#8217;t locked down? Key Points Background LangGraph is an open-source framework for building stateful, multi-agent AI systems with built-in persistence. It&#8217;s an extension of LangChain, with over [&#8230;] The post From SQLi to RCE &#8211; Exploiting LangGraph’s Checkpointer appeared first on Check Point Research .",
-      "url": "https://research.checkpoint.com/2026/from-sqli-to-rce-exploiting-langgraphs-checkpointer/",
-      "source": "Check Point Research",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-06-11T13:37:11+00:00",
-      "published_ts": 1781185031.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "39a14ba1011db461",
-      "title": "Cybersecurity Stars Awards 2026: Winners Announced Across 95 Categories",
-      "summary": "Most good security work is invisible by design. Today is the exception. The 2026 Cybersecurity Stars Awards winners are announced across 95 subcategories in four main award categories. The reason is simple. Cybersecurity is full of work that deserves recognition and rarely gets it. Products that quietly close real gaps. Teams that stop incidents nobody reads about. Companies that raise the",
-      "url": "https://thehackernews.com/2026/06/cybersecurity-stars-awards-2026-winners.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-11T13:26:13+00:00",
-      "published_ts": 1781184373.0,
       "cves": [],
       "sectors": [],
       "regions": [
