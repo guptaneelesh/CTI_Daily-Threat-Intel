@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-16T11:09:44.008774+00:00",
+  "generated_at": "2026-06-16T16:51:11.765861+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 55,
+    "all": 63,
     "critical": 1,
     "high": 4,
-    "medium": 2,
-    "low": 48,
-    "actively_exploited": 6,
-    "with_cves": 6
+    "medium": 6,
+    "low": 52,
+    "actively_exploited": 7,
+    "with_cves": 10
   },
   "sources_used": [
     "BleepingComputer",
@@ -52,12 +52,6 @@
       "priority_score": 75,
       "priority_label": "Critical",
       "related_sources": [
-        {
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/cisco-patches-another-sd-wan-zero-day-exploited-in-attacks/",
-          "title": "Cisco Patches Another SD-WAN Zero-Day Exploited in Attacks",
-          "published": "2026-06-16T06:20:18+00:00"
-        },
         {
           "source": "The Hacker News",
           "url": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html",
@@ -115,6 +109,34 @@
       ]
     },
     {
+      "id": "78b9bcad668bff42",
+      "title": "Rockwell Automation FLEX I/O EtherNet/IP Adapters",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain unauthorized access, account takeover, and cause loss of availability. The following versions of Rockwell Automation FLEX I/O EtherNet/IP Adapters are affected: 1794-AENTR V2.012 (CVE-2026-0646, CVE-2026-0647) 1794-AENTRXT V2.012 (CVE-2026-0646, CVE-2026-0647) CVSS Vendor Equipment Vulnerabilities v3 9.4 Rockwell Automation Rockwell Automation FLEX I/O EtherNet/IP Adapters Missing Release of Memory after Effective Lifetime, Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-0646 A denial-of-service security issue exists within the 1794-AENTR adapter due to improper memory handling of CIP protocol requests. This vulnerability can result in the adapter faulting and losing connection to its associated I/O modules, requiring a manual reset to recover. View CVE Details Affected Products Rockwell Automation FLEX I/O EtherNet/IP Adapters Vendor: Rockwell Automation Product Version: Rockwell Automation 1794-AENTR: V2.012, Rockwell Automation 1794-AENTRXT: V2.012 Product Status: known_affected Remediations Mitigation Rockwell Automation recommends users update to 2.013 to resolve these vulnerabilities. Mitigation For more information, please visit Rockwell Automation's SD1775 https://www.rockwellautomation.com/",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-16T12:00:00+00:00",
+      "published_ts": 1781611200.0,
+      "cves": [
+        "CVE-2026-0646",
+        "CVE-2026-0647"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "a9470e1f671d5eb5",
       "title": "Fake Microsoft Alerts Used to Deploy North Korean NarwhalRAT Malware",
       "summary": "The North Korean state-sponsored hacking group known as ScarCruft (aka APT37) has been observed using spear-phishing messages impersonating Microsoft Account security notifications to deliver malware called NarwhalRAT. \"The attack email contained a message impersonating an MS account security alert,\" the Genians Security Center (GSC) said. \"It was designed to create concern over possible",
@@ -164,34 +186,6 @@
       "related_sources": []
     },
     {
-      "id": "f1bb06d1b41a2865",
-      "title": "⚡ Weekly Recap: Chrome 0-Day, UniFi Exploits, macOS Stealers, VPN Flaw and More",
-      "summary": "Stuff broke again. Not in a movie way. An old tool was left exposed. An abandoned package was abused. A deprecated feature was still running in prod. This week is the same lesson in a new form: phishing kits are easier to rent, AI names are useful bait, old login paths still fail, and forgotten software keeps becoming someone else's entry point. Scroll through the full Monday Cybersecurity",
-      "url": "https://thehackernews.com/2026/06/weekly-recap-chrome-0-day-unifi.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T13:49:29+00:00",
-      "published_ts": 1781531369.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Chrome",
-        "macOS"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
       "id": "1d5c6436f11a6c97",
       "title": "Critical Fortinet FortiSandbox flaws now exploited in attacks",
       "summary": "Attackers are now exploiting several critical vulnerabilities in Fortinet's FortiSandbox cyber threat detection platform, according to threat intelligence company Defused. [...]",
@@ -218,32 +212,169 @@
       "related_sources": []
     },
     {
-      "id": "476acee3ca4994f3",
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-20262 Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability CVE-2026-54420 LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies, updating BOD 22-01 . BOD 26-04 reinforces the importance of the KEV catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog tha",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/06/15/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-15T12:00:00+00:00",
-      "published_ts": 1781524800.0,
-      "cves": [
-        "CVE-2026-20262",
-        "CVE-2026-54420"
-      ],
+      "id": "f1bb06d1b41a2865",
+      "title": "⚡ Weekly Recap: Chrome 0-Day, UniFi Exploits, macOS Stealers, VPN Flaw and More",
+      "summary": "Stuff broke again. Not in a movie way. An old tool was left exposed. An abandoned package was abused. A deprecated feature was still running in prod. This week is the same lesson in a new form: phishing kits are easier to rent, AI names are useful bait, old login paths still fail, and forgotten software keeps becoming someone else's entry point. Scroll through the full Monday Cybersecurity",
+      "url": "https://thehackernews.com/2026/06/weekly-recap-chrome-0-day-unifi.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-15T13:49:29+00:00",
+      "published_ts": 1781531369.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [
+        "Chrome",
+        "macOS"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "2bfa0417ea7ad324",
+      "title": "Rockwell Automation RSLinx",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability can lead to a denial of service, where the application will become unresponsive and will not recover on its own. The following versions of RSLinx Classic Third-Party Vulnerability are affected: RSLinx Classic &lt;=4.50.00 (CVE-2020-13573) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation RSLinx Classic Third-Party Vulnerability Out-of-bounds Read Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Food and Agriculture, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2020-13573 The affected product is vulnerable to a stack-based buffer overflow, which may allow an attacker to remotely execute arbitrary code. View CVE Details Affected Products RSLinx Classic Third-Party Vulnerability Vendor: Rockwell Automation Product Version: Rockwell Automation RSLinx Classic: &lt;=4.50.00 Product Status: known_affected Remediations Mitigation Rockwell Automation recommends that customers using the affected software should upgrade to version 4.60.00 or later. Customers who are not able to upgrade to one of the corrected versions, should consider applying the available patch (BF31213) for their current version or applying the recommended security best practices. https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1774.html Relevant CWE: CWE-125 Out-of-bounds Read Metrics CV",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-16T12:00:00+00:00",
+      "published_ts": 1781611200.0,
+      "cves": [
+        "CVE-2020-13573"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "54ac23c467573ba9",
+      "title": "Rockwell Automation FactoryTalk Analytics PavilionX",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in an attacker executing privileged operations. The following versions of Rockwell Automation FactoryTalk Analytics PavilionX are affected: FactoryTalk Analytics PavilionX &lt;7.01 (CVE-2025-14272) CVSS Vendor Equipment Vulnerabilities v3 7 Rockwell Automation Rockwell Automation FactoryTalk Analytics PavilionX Missing Authorization Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2025-14272 A security issue was identified in Pavilion due to improper authorization enforcement in API endpoints. This vulnerability can allow an unauthorized actor to execute privileged operations, including user/role management and other administrative actions. View CVE Details Affected Products Rockwell Automation FactoryTalk Analytics PavilionX Vendor: Rockwell Automation Product Version: Rockwell Automation FactoryTalk Analytics PavilionX: &lt;7.01 Product Status: known_affected Remediations Vendor fix Rockwell Automation recommends users update FactoryTalk Analytics PavilionX software to version 7.01 or later. The upgrade can be downloaded from the Rockwell Automation Download Center: https://www.rockwellautomation.com/en-us/support/product/product-downloads.html https://www.rockwellautomation.com/en-us/support/product/product-downloads.html Mitigation See Rockwell Automation's SD1777 ad",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-16T12:00:00+00:00",
+      "published_ts": 1781611200.0,
+      "cves": [
+        "CVE-2025-14272"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "e99ec9aa7cd71ca6",
+      "title": "Rockwell Automation Logix 5370 & 5570 Controllers Vulnerable To Denial of Service Via CIP",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could cause a denial-of-service condition that may result in a major nonrecoverable fault (MNRF). The following versions of Rockwell Automation Logix 5370 &amp; 5570 Controllers Vulnerable To Denial of Service Via CIP are affected: CompactLogix 5370 &lt;=34.016 (CVE-2026-11317) Compact GuardLogix 5370 &lt;=35.015 (CVE-2026-11317) ControlLogix 5570 &lt;=35.015 (CVE-2026-11317) GuardLogix 5570 36.012 (CVE-2026-11317) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation Logix 5370 &amp; 5570 Controllers Vulnerable To Denial of Service Via CIP Improper Resource Shutdown or Release Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-11317 A denial of service security issue exists in the affected product. The security issue stems from a fault occurring when a crafted CIP message is sent. Devices with less memory are more likely to be affected. This can result in a major nonrecoverable fault (MNRF). A program download is required to recover. View CVE Details Affected Products Rockwell Automation Logix 5370 &amp; 5570 Controllers Vulnerable To Denial of Service Via CIP Vendor: Rockwell Automation Product Version: Rockwell Automation CompactLogix 5370: &lt;=34.016, Rockwell Automation Compact GuardLogix 5370: &lt;=35.015, Rockwell Automation ControlLogix 5570",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-16T12:00:00+00:00",
+      "published_ts": 1781611200.0,
+      "cves": [
+        "CVE-2026-11317"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 25,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "c504ce93867d6f10",
+      "title": "Rockwell Automation CompactLogix",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition. The following versions of Rockwell Automation CompactLogix are affected: CompactLogix 5370 L1 CompactLogix 5370 L2 CompactLogix 5370 L3 CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation CompactLogix Improper Validation of Integrity Check Value, Exposure of Sensitive System Information to an Unauthorized Control Sphere Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2025-11694 A security issue exists within 1769 CompactLogix controllers due to the missing validation of sequence numbers and source IP addresses in the CIP protocol. This allows attacker to abuse the exposed Connection ID's visible on the web interface to perform denial-of-service attacks, resulting in a minor fault. View CVE Details Affected Products Rockwell Automation CompactLogix Vendor: Rockwell Automation Product Version: Rockwell Automation CompactLogix 5370 L1: &lt;V38.011, Rockwell Automation CompactLogix 5370 L2: &lt;V38.011, Rockwell Automation CompactLogix 5370 L3: &lt;V38.011 Product Status: known_affected Remediations Mitigation Rockwell Automation recommends users update to V38.011 https://compatibility.rockwellautomation.com/Pages/MultiProductFindDownloads.aspx?crumb=112&amp;mode=3&amp;refSoft=1&amp;versi",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-16T12:00:00+00:00",
+      "published_ts": 1781611200.0,
+      "cves": [
+        "CVE-2025-11694"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "96b2e8f58a3fae49",
+      "title": "New Rokarolla Android Malware Steals PINs, SMS Codes, and Crypto Wallet Funds",
+      "summary": "Security researchers at&nbsp;Zimperium's zLabs&nbsp;have documented a new Android banking trojan, Rokarolla, that targets 217 banking and cryptocurrency apps and packs 137 remote commands. Together, they give an operator near-total control of an infected phone: it lifts lock-screen PINs, reads and sends SMS, rewrites the clipboard to redirect crypto payments, and switches off Google Play",
+      "url": "https://thehackernews.com/2026/06/new-rokarolla-android-malware-steals.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T13:10:17+00:00",
+      "published_ts": 1781615417.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -274,23 +405,26 @@
       "related_sources": []
     },
     {
-      "id": "139fd9678bb2a574",
-      "title": "Chinese Hackers Target Medical, Military, and AI Research in North America",
-      "summary": "Google’s Threat Intelligence Group has been tracking the cyberespionage group as UNC6508 since early 2025. The post Chinese Hackers Target Medical, Military, and AI Research in North America appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/chinese-hackers-target-medical-military-and-ai-research-in-north-america/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T14:07:45+00:00",
-      "published_ts": 1781532465.0,
-      "cves": [],
+      "id": "476acee3ca4994f3",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-20262 Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability CVE-2026-54420 LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies, updating BOD 22-01 . BOD 26-04 reinforces the importance of the KEV catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog tha",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/15/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-15T12:00:00+00:00",
+      "published_ts": 1781524800.0,
+      "cves": [
+        "CVE-2026-20262",
+        "CVE-2026-54420"
+      ],
       "sectors": [
+        "Energy Resources & Industrials",
         "Government & Public Services",
-        "Life Sciences & Health Care",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -355,6 +489,32 @@
       "related_sources": []
     },
     {
+      "id": "801e6ef182aa091d",
+      "title": "'Lorem Ipsum' Malware Pivots to ClickFix Delivery",
+      "summary": "New analysis shows the campaign, which uses compromised WordPress sites, may be linked to the ransomware and data extortion group Vice Society.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/lorem-ipsum-malware-clickfix-delivery",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T15:10:48+00:00",
+      "published_ts": 1781622648.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "76c89ccf21268c5a",
       "title": "Pickle in the Middle – Hijacking Vertex AI Model Uploads for Cross-Tenant RCE",
       "summary": "Unit 42 discovered a Vertex AI Python SDK vulnerability that allows remote code execution via bucket squatting. Read the article for more. The post Pickle in the Middle – Hijacking Vertex AI Model Uploads for Cross-Tenant RCE appeared first on Unit 42 .",
@@ -404,15 +564,63 @@
       "related_sources": []
     },
     {
-      "id": "ed70eda2c261d9f8",
-      "title": "Microsoft Defender email security benchmarking: Key insights from one year of data",
-      "summary": "See how Microsoft Defender performed in one year of real-world email security benchmarking against SEG and ICES vendors. The post Microsoft Defender email security benchmarking: Key insights from one year of data appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/15/microsoft-defender-email-security-benchmarking-key-insights-from-one-year-of-data/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-06-15T16:00:00+00:00",
-      "published_ts": 1781539200.0,
+      "id": "746fee06c2f5e4df",
+      "title": "India temporarily blocks Telegram over medical exam cheating fears",
+      "summary": "Authorities said scammers previously exploited the feature by posting fake exam questions before the test and later replacing them with the real questions, making it look like they had leaked the exam in advance.",
+      "url": "https://therecord.media/india-blocks-telegram-over-cheating-fears",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T15:38:00+00:00",
+      "published_ts": 1781624280.0,
+      "cves": [],
+      "sectors": [
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8c2062fa9e8e0dae",
+      "title": "UK to require ID or face scan before you can make social media accounts",
+      "summary": "Opening a new social media account in the UK will soon mean proving you're over 16 with an ID upload or a facial age scan, under a government ban on under-16s taking effect in spring 2027. Security experts warn the age checks are easy to circumvent and create new data-breach risks. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/uk-to-require-id-or-face-scan-before-you-can-make-social-media-accounts/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T14:38:49+00:00",
+      "published_ts": 1781620729.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "94d210620bbc7605",
+      "title": "GhostTree Attack Abused Recursive Windows Junctions to Hide Malware",
+      "summary": "GhostTree uses recursive NTFS junctions to generate vast numbers of valid Windows file paths. Varonis explains how the technique could cause Microsoft Defender folder scans to never complete, leaving malware undetected. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/ghosttree-attack-abused-recursive-windows-junctions-to-hide-malware/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T14:17:27+00:00",
+      "published_ts": 1781619447.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
@@ -420,26 +628,27 @@
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Windows"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "26be4c34964e934c",
-      "title": "FBI: Fraudsters use couriers to steal money in crypto scams",
-      "summary": "The U.S. Federal Bureau of Investigation (FBI) warned that criminals are using couriers to collect money from victims of cryptocurrency investment scams, also known as pig butchering or romance baiting. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fbi-fraudsters-use-couriers-to-steal-money-in-crypto-scams/",
+      "id": "c0d83ff074bfc48a",
+      "title": "FTC warns of record $3.5 billion losses to imposter scams in 2025",
+      "summary": "The U.S. Federal Trade Commission (FTC) warned that Americans lost $3.5 billion to imposter scams in 2025, with reported losses nearly tripling since 2020. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/ftc-warns-of-record-35-billion-losses-to-imposter-scams-in-2025/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-15T15:30:23+00:00",
-      "published_ts": 1781537423.0,
+      "published": "2026-06-16T13:42:19+00:00",
+      "published_ts": 1781617339.0,
       "cves": [],
       "sectors": [
-        "Financial Services",
         "Government & Public Services"
       ],
       "regions": [
@@ -448,23 +657,46 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "ad09fbe933a8d3b9",
-      "title": "One-Click Microsoft 365 Copilot Flaw Could Have Let Attackers Steal Emails, Files, and MFA Codes",
-      "summary": "A single click on a trusted Microsoft link could have let an attacker pull emails, calendar details, and indexed files out of Microsoft 365 Copilot Enterprise Search. Researchers at Varonis Threat Labs chained three bugs into a one-click exfiltration path they call SearchLeak. Because the link pointed to a real microsoft.com domain, traditional anti-phishing and URL filtering tools were",
-      "url": "https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html",
+      "id": "0afa693323f06ef3",
+      "title": "Cybercrime Group Claims Novo Nordisk Hack",
+      "summary": "The hack-and-leak group FulcrumSec claims to have stolen 1.3TB of data from the pharmaceutical giant. The post Cybercrime Group Claims Novo Nordisk Hack appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/cybercrime-group-claims-novo-nordisk-hack/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T12:32:27+00:00",
+      "published_ts": 1781613147.0,
+      "cves": [],
+      "sectors": [
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "50f2fecb25fc015d",
+      "title": "Survey: 94% of Incidents Involve Anonymized Infrastructure. Teams Are Still Reactive",
+      "summary": "Security teams have never had more IP data at their disposal. Every day, analysts ingest enrichment feeds, geolocation data, reputation scores, telemetry, and threat intelligence from a growing ecosystem of vendors and platforms. Yet despite this abundance of information, many organizations continue to face a fundamental challenge: sifting through the noise to understand who is behind an IP and",
+      "url": "https://thehackernews.com/2026/06/survey-94-of-incidents-involve.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-15T15:09:05+00:00",
-      "published_ts": 1781536145.0,
+      "published": "2026-06-16T11:30:00+00:00",
+      "published_ts": 1781609400.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -473,61 +705,7 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "320479fdb08a5a3d",
-      "title": "Finland brings charges against cargo ship officers for cutting submarine cables",
-      "summary": "According to the deputy prosecutor general, the ship’s officers have now been charged with “having damaged two subsea telecommunications cables and of having attempted to damage a total of eight other subsea connections.”",
-      "url": "https://therecord.media/finland-brings-charges-against-cargo-ship-undersea-cables",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T13:30:00+00:00",
-      "published_ts": 1781530200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0ea1510e230fe506",
-      "title": "New attack turned Microsoft 365 Copilot into 1-click data theft tool",
-      "summary": "A critical vulnerability chain dubbed SearchLeak in Microsoft 365 Copilot Enterprise could allow attackers to steal sensitive data from a target's mailbox, OneDrive, or SharePoint account through a specially crafted URL. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-copilot-into-1-click-data-theft-tool/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T13:00:00+00:00",
-      "published_ts": 1781528400.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "SharePoint"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -582,30 +760,6 @@
         "Linux",
         "Windows"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4b19614f851aed36",
-      "title": "Tech Coalition ‘Athena’ Targets OSS Vulnerabilities Ahead of Disclosure",
-      "summary": "Over two dozen organizations built a shared platform to triage vulnerabilities, fix them, and secure the software before patches arrive. The post Tech Coalition &#8216;Athena&#8217; Targets OSS Vulnerabilities Ahead of Disclosure appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/tech-coalition-athena-targets-oss-vulnerabilities-ahead-of-disclosure/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-16T09:39:47+00:00",
-      "published_ts": 1781602787.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -710,6 +864,30 @@
       "related_sources": []
     },
     {
+      "id": "9dc445e837176692",
+      "title": "Estonia to quarantine emails sent from Russian .ru domain before they reach government officials",
+      "summary": "Estonia will require additional security screening for emails sent from Russia’s .ru top-level domain before they reach government officials, according to the country's minister of justice and digital affairs.",
+      "url": "https://therecord.media/estonia-quarantine-russian-emails",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-15T23:00:00+00:00",
+      "published_ts": 1781564400.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "11213b77df8cc198",
       "title": "Copilot 'SearchLeak' Attack Allows 1-Click Data Theft",
       "summary": "The critical, three-stage attack is now patched, but it's part of a new group of AI prompt-injection issues that use hidden URLs and other variables.",
@@ -761,8 +939,8 @@
     },
     {
       "id": "370d990176b039cd",
-      "title": "China-Nexus Actor Spy on US Researchers Undetected for a Year",
-      "summary": "Google discovered and disrupted the sprawling campaign, which stole RedCAP credentials to target numerous institutions and exfiltrate sensitive data.",
+      "title": "China-Nexus Actor Spies on US Researchers Undetected for a Year",
+      "summary": "Google discovered and disrupted the sprawling campaign, which stole RedCAP credentials to breach numerous institutions and exfiltrate sensitive data.",
       "url": "https://www.darkreading.com/threat-intelligence/china-nexus-actor-us-researchers-undetected",
       "source": "Dark Reading",
       "source_trust": 4,
@@ -784,18 +962,18 @@
       "related_sources": []
     },
     {
-      "id": "eff5373c6d0fd6e5",
-      "title": "Most CISOs Report Pressure to Bury Bad Security News",
-      "summary": "Executive leaders may not be saying it aloud, but business objectives and priorities don't always promote timely disclosures.",
-      "url": "https://www.darkreading.com/cyber-risk/most-cisos-report-pressure-to-bury-bad-security-news",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T16:45:59+00:00",
-      "published_ts": 1781541959.0,
+      "id": "ed70eda2c261d9f8",
+      "title": "Microsoft Defender email security benchmarking: Key insights from one year of data",
+      "summary": "See how Microsoft Defender performed in one year of real-world email security benchmarking against SEG and ICES vendors. The post Microsoft Defender email security benchmarking: Key insights from one year of data appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/15/microsoft-defender-email-security-benchmarking-key-insights-from-one-year-of-data/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-06-15T16:00:00+00:00",
+      "published_ts": 1781539200.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -808,91 +986,21 @@
       "related_sources": []
     },
     {
-      "id": "e9ad5f1618350896",
-      "title": "Council of Europe investigates ShinyHunters data breach claims",
-      "summary": "The Council of Europe, the continent's oldest intergovernmental body, is probing claims of a data breach made by the ShinyHunters extortion group over the weekend. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/council-of-europe-investigates-shinyhunters-data-breach-claims/",
+      "id": "26be4c34964e934c",
+      "title": "FBI: Fraudsters use couriers to steal money in crypto scams",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) warned that criminals are using couriers to collect money from victims of cryptocurrency investment scams, also known as pig butchering or romance baiting. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-fraudsters-use-couriers-to-steal-money-in-crypto-scams/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-15T16:37:11+00:00",
-      "published_ts": 1781541431.0,
+      "published": "2026-06-15T15:30:23+00:00",
+      "published_ts": 1781537423.0,
       "cves": [],
       "sectors": [
+        "Financial Services",
         "Government & Public Services"
       ],
       "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9852f2b4e82883ae",
-      "title": "Ransomware Attack Shuts Down Mills of Australia’s Second-Largest Sugar Producer",
-      "summary": "Mackay Sugar was targeted in a cyberattack carried out by a threat group known as The Gentlemen. The post Ransomware Attack Shuts Down Mills of Australia&#8217;s Second-Largest Sugar Producer appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ransomware-attack-shuts-down-mills-of-australias-second-largest-sugar-producer/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T15:15:55+00:00",
-      "published_ts": 1781536555.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e28eb1d1af3d8591",
-      "title": "Cyberattack on Russian tech firm Astral disrupts business, government services for week",
-      "summary": "According to customer complaints, the disruption affected a range of services used by businesses, leading to interruptions in cash register operations, difficulties selling certain regulated goods, loss of access to customer portals and corporate email and problems with electronic human resources document management systems and authentication using digital certificates.",
-      "url": "https://therecord.media/cyberattack-on-russian-tech-firm-astral-disrupts-business-government-services",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T15:07:00+00:00",
-      "published_ts": 1781536020.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c00bb781e127c77b",
-      "title": "Chinese hackers breach REDCap servers, steal medical research",
-      "summary": "A China-linked espionage campaign targeted exposed REDCap servers to deploy the InfiniteRed malware and steal sensitive data from a medical institution in North America. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-breach-redcap-servers-steal-medical-research/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T14:00:00+00:00",
-      "published_ts": 1781532000.0,
-      "cves": [],
-      "sectors": [
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Asia-Pacific",
         "North America"
       ],
       "products": [],
@@ -903,115 +1011,22 @@
       "related_sources": []
     },
     {
-      "id": "5c8ebd7709f51895",
-      "title": "15th June – Threat Intelligence Report",
-      "summary": "For the latest discoveries in cyber research for the week of 15th June, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The University of Nottingham, a UK research university, has suffered a data breach after ShinyHunters accessed its student records system. The incident affected about 454,600 current and former students and exposed contact details, [&#8230;] The post 15th June – Threat Intelligence Report appeared first on Check Point Research .",
-      "url": "https://research.checkpoint.com/2026/15th-june-threat-intelligence-report/",
-      "source": "Check Point Research",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-06-15T13:40:44+00:00",
-      "published_ts": 1781530844.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3e1a051cf8fd8486",
-      "title": "NewCore Emerges From Stealth Mode With $66 Million in Funding",
-      "summary": "The startup has built a security-first identity platform to protect humans, machines, and AI agents. The post NewCore Emerges From Stealth Mode With $66 Million in Funding appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/newcore-emerges-from-stealth-mode-with-66-million-in-funding/",
-      "source": "SecurityWeek",
+      "id": "ad09fbe933a8d3b9",
+      "title": "One-Click Microsoft 365 Copilot Flaw Could Have Let Attackers Steal Emails, Files, and MFA Codes",
+      "summary": "A single click on a trusted Microsoft link could have let an attacker pull emails, calendar details, and indexed files out of Microsoft 365 Copilot Enterprise Search. Researchers at Varonis Threat Labs chained three bugs into a one-click exfiltration path they call SearchLeak. Because the link pointed to a real microsoft.com domain, traditional anti-phishing and URL filtering tools were",
+      "url": "https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-15T13:00:00+00:00",
-      "published_ts": 1781528400.0,
+      "published": "2026-06-15T15:09:05+00:00",
+      "published_ts": 1781536145.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "251688710a1188c9",
-      "title": "Anthropic says US government forced it to disable cybersecurity AI models",
-      "summary": "According to the company, the directive cited national security authorities. It appears to be the first time such authorities have been used to curtail the export of AI models rather than chips or hardware.",
-      "url": "https://therecord.media/anthropic-says-gov-forced-it-to-disable-cyber-ai-models",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T12:31:00+00:00",
-      "published_ts": 1781526660.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8adeae21e5b19547",
-      "title": "Ukrainian Man Pleads Guilty in US to Conti Ransomware Charges",
-      "summary": "Oleksii Oleksiyovych Lytvynenko admitted to working on the development of a loader for the Conti gang. The post Ukrainian Man Pleads Guilty in US to Conti Ransomware Charges appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ukrainian-man-pleads-guilty-in-us-to-conti-ransomware-charges/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T11:33:20+00:00",
-      "published_ts": 1781523200.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "84d27e42f10c8118",
-      "title": "Ozempic Maker Novo Nordisk Says Hackers Breached IT Systems",
-      "summary": "The pharmaceutical giant says the attackers gained access to personal data stored on the compromised systems. The post Ozempic Maker Novo Nordisk Says Hackers Breached IT Systems appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ozempic-maker-novo-nordisk-says-hackers-breached-it-systems/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T11:17:21+00:00",
-      "published_ts": 1781522241.0,
-      "cves": [],
-      "sectors": [
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1048,6 +1063,182 @@
       "related_sources": []
     },
     {
+      "id": "a52071f1699c8c6a",
+      "title": "iRhythm Confirms Data Stolen in Hack",
+      "summary": "The digital health company said it learned of the breach on June 8 and the attackers demanded a ransom. The post iRhythm Confirms Data Stolen in Hack appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/irhythm-confirms-data-stolen-in-hack/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T15:06:24+00:00",
+      "published_ts": 1781622384.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f0551c537cca8971",
+      "title": "Hacker Conversations: Isira Adithya, the Evolution of an Ethical Hacker",
+      "summary": "From building LED bulbs to graduating college and buying a house with money earned from bug bounties. The post Hacker Conversations: Isira Adithya, the Evolution of an Ethical Hacker appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/hacker-conversations-isira-adithya-the-evolution-of-an-ethical-hacker/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T14:27:45+00:00",
+      "published_ts": 1781620065.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d1415974b5a06c8c",
+      "title": "Magnitude Emerges From Stealth Mode With $10 Million in Funding",
+      "summary": "The company is enhancing third-party risk management (TPRM) through autonomous AI agents. The post Magnitude Emerges From Stealth Mode With $10 Million in Funding appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/magnitude-emerges-from-stealth-mode-with-10-million-in-funding/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T13:34:57+00:00",
+      "published_ts": 1781616897.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5179f79b0da1d7cb",
+      "title": "AI and Cybersecurity – Everything You Wanted to Know, But Were Afraid to Ask",
+      "summary": "From defending networks to enabling attacks, artificial intelligence is changing every aspect of cybersecurity. Here's what dozens of experts say security leaders need to understand now. The post AI and Cybersecurity – Everything You Wanted to Know, But Were Afraid to Ask appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/ai-and-cybersecurity-everything-you-wanted-to-know-but-were-afraid-to-ask/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T13:15:34+00:00",
+      "published_ts": 1781615734.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1cdf8e6353bbfbb2",
+      "title": "Endpoint Security Startup Ent Emerges From Stealth With $100 Million Seed Round",
+      "summary": "Ent has developed an intent-aware platform designed to interpret user and agent behavior before risky actions are carried out. The post Endpoint Security Startup Ent Emerges From Stealth With $100 Million Seed Round appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/endpoint-security-startup-ent-emerges-from-stealth-with-100-million-seed-round/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T12:53:19+00:00",
+      "published_ts": 1781614399.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "01239f7de8cba2ca",
+      "title": "Can CISOs Trust Their Applications? TrustCloud Wants to Replace the Questionnaire",
+      "summary": "By continuously analyzing security, infrastructure, and governance data, TrustCloud aims to give CISOs a real-time view of application risk and board-ready assurance. The post Can CISOs Trust Their Applications? TrustCloud Wants to Replace the Questionnaire appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/can-cisos-trust-their-applications-trustcloud-wants-to-replace-the-questionnaire/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T12:15:00+00:00",
+      "published_ts": 1781612100.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "021e32aa869c4c37",
+      "title": "Cal Water Investigating Iranian Hackers’ Claims",
+      "summary": "California Water Service says there is no indication of operational disruptions to its water and wastewater systems. The post Cal Water Investigating Iranian Hackers&#8217; Claims appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/cal-water-investigating-iranian-hackers-claims/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T11:53:11+00:00",
+      "published_ts": 1781610791.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Middle East"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "27aedae1e8d6b980",
+      "title": "White House Issues Memo to Bolster NSS Cybersecurity",
+      "summary": "NSPM-12 establishes a clear structure for NSS cybersecurity governance and accountability and reestablishes CNSS. The post White House Issues Memo to Bolster NSS Cybersecurity appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/white-house-issues-memo-to-bolster-nss-cybersecurity/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-16T11:41:46+00:00",
+      "published_ts": 1781610106.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "ae59d7800d47fdda",
       "title": "Atomic Arch Supply Chain Attack Hits 1,500 AUR Packages",
       "summary": "Arch Linux suspended account registrations in response to the wave of malicious packages being uploaded to AUR. The post Atomic Arch Supply Chain Attack Hits 1,500 AUR Packages appeared first on SecurityWeek .",
@@ -1065,28 +1256,6 @@
       "products": [
         "Linux"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "06d15edc84255657",
-      "title": "Cybersecurity Executives Urge the Trump Administration to Ease Restrictions on Anthropic AI Models",
-      "summary": "A group of cybersecurity executives and experts is asking the Trump administration to lift its directive preventing the use of Anthropic’s latest artificial intelligence models by foreign nationals. The post Cybersecurity Executives Urge the Trump Administration to Ease Restrictions on Anthropic AI Models appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/cybersecurity-executives-urge-the-trump-administration-to-ease-restrictions-on-anthropic-ai-models/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-16T10:28:30+00:00",
-      "published_ts": 1781605710.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1184,39 +1353,19 @@
       "related_sources": []
     },
     {
-      "id": "e60a290b0b631aff",
-      "title": "LiteLLM Vulnerability Chain Lets Low-Privilege Users Take Over AI Gateway Servers",
-      "summary": "A default low-privilege account on a LiteLLM proxy can climb to full admin and run code on the server by chaining three vulnerabilities, researchers at Obsidian Security disclosed LiteLLM is a widely deployed open-source AI gateway that brokers calls to more than 100 model providers behind one OpenAI-compatible interface. A server takeover exposes every provider key it holds, the secrets that",
-      "url": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T16:39:01+00:00",
-      "published_ts": 1781541541.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0d13cf3809273ab7",
-      "title": "The Beginning of the End of Social Engineering",
-      "summary": "AI-native operating systems are shifting the responsibility to stay vigilant against social engineering cyberattacks from the user onto the system itself.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/beginning-end-social-engineering",
+      "id": "eff5373c6d0fd6e5",
+      "title": "Most CISOs Report Pressure to Bury Bad Security News",
+      "summary": "Executive leaders may not be saying it aloud, but business objectives and priorities don't always promote timely disclosures.",
+      "url": "https://www.darkreading.com/cyber-risk/most-cisos-report-pressure-to-bury-bad-security-news",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-15T15:08:32+00:00",
-      "published_ts": 1781536112.0,
+      "published": "2026-06-15T16:45:59+00:00",
+      "published_ts": 1781541959.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1228,85 +1377,19 @@
       "related_sources": []
     },
     {
-      "id": "1d3d006be4381989",
-      "title": "Vibe coders are gonna vibe code: How CISOs are tackling code sprawl",
-      "summary": "Employees are increasingly building automations, agents, and apps with AI tools outside traditional security oversight. Tines explores how CISOs are handling AI-driven code sprawl, shadow tooling, and governance challenges. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/vibe-coders-are-gonna-vibe-code-how-cisos-are-tackling-code-sprawl/",
+      "id": "e9ad5f1618350896",
+      "title": "Council of Europe investigates ShinyHunters data breach claims",
+      "summary": "The Council of Europe, the continent's oldest intergovernmental body, is probing claims of a data breach made by the ShinyHunters extortion group over the weekend. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/council-of-europe-investigates-shinyhunters-data-breach-claims/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-15T14:01:11+00:00",
-      "published_ts": 1781532071.0,
+      "published": "2026-06-15T16:37:11+00:00",
+      "published_ts": 1781541431.0,
       "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
+      "sectors": [
+        "Government & Public Services"
       ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "dd267c2d49a5c8a6",
-      "title": "Infinite Campus data breach affects 137,000 school staff accounts",
-      "summary": "The ShinyHunters extortion gang stole personal information from more than 137,000 school staff accounts in a Salesforce data theft attack that targeted the widely used Infinite Campus K-12 student information system in March. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/infinite-campus-data-breach-affects-137-000-school-staff-accounts/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T12:38:55+00:00",
-      "published_ts": 1781527135.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Salesforce"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "bac7aeafa0538dbb",
-      "title": "US Cracks Down on Anthropic AI Models Amid Abuse Concerns",
-      "summary": "Anthropic abruptly suspended all access to Fable 5 and Mythos 5 after receiving an export control directive that banned foreign nationals from using the technology.",
-      "url": "https://www.darkreading.com/cyber-risk/us-cracks-down-anthropic-ai-models-abuse-concerns",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T12:17:22+00:00",
-      "published_ts": 1781525842.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5067071a7561bb88",
-      "title": "The Onboarding Password Mistake That Creates Unnecessary Risk",
-      "summary": "Employee onboarding is a busy time for IT teams. New starters need devices, accounts, access permissions, and passwords, all delivered within a tight timeframe. That usually means sharing a temporary \"first-day\" password so employees can access systems for the first time. The issue is that these passwords don't always stay temporary. They may be sent over email or SMS, reused across accounts,",
-      "url": "https://thehackernews.com/2026/06/the-onboarding-password-mistake-that.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-15T11:30:00+00:00",
-      "published_ts": 1781523000.0,
-      "cves": [],
-      "sectors": [],
       "regions": [
         "Europe"
       ],
@@ -1318,21 +1401,45 @@
       "related_sources": []
     },
     {
-      "id": "c152e55ea7fde278",
-      "title": "French Government Messaging Platform Breached by Mysterious ‘Misere’ Hacker",
-      "summary": "French officials say roughly 73,000 government accounts were affected, while the threat actor claims to have stolen messages and user data from the sovereign Tchap platform. The post French Government Messaging Platform Breached by Mysterious ‘Misere’ Hacker appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/french-government-messaging-platform-breached-by-mysterious-misere-hacker/",
-      "source": "SecurityWeek",
+      "id": "e28eb1d1af3d8591",
+      "title": "Cyberattack on Russian tech firm Astral disrupts business, government services for week",
+      "summary": "According to customer complaints, the disruption affected a range of services used by businesses, leading to interruptions in cash register operations, difficulties selling certain regulated goods, loss of access to customer portals and corporate email and problems with electronic human resources document management systems and authentication using digital certificates.",
+      "url": "https://therecord.media/cyberattack-on-russian-tech-firm-astral-disrupts-business-government-services",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-15T11:09:10+00:00",
-      "published_ts": 1781521750.0,
+      "published": "2026-06-15T15:07:00+00:00",
+      "published_ts": 1781536020.0,
       "cves": [],
       "sectors": [
         "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5c8ebd7709f51895",
+      "title": "15th June – Threat Intelligence Report",
+      "summary": "For the latest discoveries in cyber research for the week of 15th June, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The University of Nottingham, a UK research university, has suffered a data breach after ShinyHunters accessed its student records system. The incident affected about 454,600 current and former students and exposed contact details, [&#8230;] The post 15th June – Threat Intelligence Report appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/15th-june-threat-intelligence-report/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-06-15T13:40:44+00:00",
+      "published_ts": 1781530844.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1390,28 +1497,112 @@
       "related_sources": []
     },
     {
-      "id": "25be2beb92e4d9af",
-      "title": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
-      "summary": "Splunk has released security updates to address a critical security flaw in Splunk Enterprise that could be exploited to conduct unauthenticated file operations and even remote code execution. The vulnerability, tracked as CVE-2026-20253, is rated 9.8 on the CVSS scoring system. \"In Splunk Enterprise versions below 10.2.4 and 10.0.7, an unauthenticated user could create or truncate arbitrary",
-      "url": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
+      "id": "e60a290b0b631aff",
+      "title": "LiteLLM Vulnerability Chain Lets Low-Privilege Users Take Over AI Gateway Servers",
+      "summary": "A default low-privilege account on a LiteLLM proxy can climb to full admin and run code on the server by chaining three vulnerabilities, researchers at Obsidian Security disclosed LiteLLM is a widely deployed open-source AI gateway that brokers calls to more than 100 model providers behind one OpenAI-compatible interface. A server takeover exposes every provider key it holds, the secrets that",
+      "url": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-13T13:23:03+00:00",
-      "published_ts": 1781356983.0,
-      "cves": [
-        "CVE-2026-20253"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "published": "2026-06-15T16:39:01+00:00",
+      "published_ts": 1781541541.0,
+      "cves": [],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0d13cf3809273ab7",
+      "title": "The Beginning of the End of Social Engineering",
+      "summary": "AI-native operating systems are shifting the responsibility to stay vigilant against social engineering cyberattacks from the user onto the system itself.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/beginning-end-social-engineering",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-15T15:08:32+00:00",
+      "published_ts": 1781536112.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1d3d006be4381989",
+      "title": "Vibe coders are gonna vibe code: How CISOs are tackling code sprawl",
+      "summary": "Employees are increasingly building automations, agents, and apps with AI tools outside traditional security oversight. Tines explores how CISOs are handling AI-driven code sprawl, shadow tooling, and governance challenges. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/vibe-coders-are-gonna-vibe-code-how-cisos-are-tackling-code-sprawl/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-15T14:01:11+00:00",
+      "published_ts": 1781532071.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bac7aeafa0538dbb",
+      "title": "US Cracks Down on Anthropic AI Models Amid Abuse Concerns",
+      "summary": "Anthropic abruptly suspended all access to Fable 5 and Mythos 5 after receiving an export control directive that banned foreign nationals from using the technology.",
+      "url": "https://www.darkreading.com/cyber-risk/us-cracks-down-anthropic-ai-models-abuse-concerns",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-15T12:17:22+00:00",
+      "published_ts": 1781525842.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5067071a7561bb88",
+      "title": "The Onboarding Password Mistake That Creates Unnecessary Risk",
+      "summary": "Employee onboarding is a busy time for IT teams. New starters need devices, accounts, access permissions, and passwords, all delivered within a tight timeframe. That usually means sharing a temporary \"first-day\" password so employees can access systems for the first time. The issue is that these passwords don't always stay temporary. They may be sent over email or SMS, reused across accounts,",
+      "url": "https://thehackernews.com/2026/06/the-onboarding-password-mistake-that.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-15T11:30:00+00:00",
+      "published_ts": 1781523000.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     }
