@@ -1,18 +1,17 @@
 {
-  "generated_at": "2026-06-21T09:49:41.401788+00:00",
+  "generated_at": "2026-06-21T14:11:51.810117+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 67,
+    "all": 53,
     "critical": 0,
-    "high": 1,
-    "medium": 4,
-    "low": 62,
+    "high": 0,
+    "medium": 2,
+    "low": 51,
     "actively_exploited": 2,
-    "with_cves": 12
+    "with_cves": 4
   },
   "sources_used": [
     "BleepingComputer",
-    "CISA Alerts",
     "Cisco Talos",
     "Dark Reading",
     "Krebs on Security",
@@ -24,15 +23,15 @@
   ],
   "items": [
     {
-      "id": "dc092aba7fef047d",
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-20253 Splunk Enterprise Missing Authentication for Critical Function Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies, updating BOD 22-01 . BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s Known Exploited Vulnerabilities (KEV) Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of an exploited vulnerability not currently listed in the KEV",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/06/18/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
+      "id": "844b58c03fe9d0ea",
+      "title": "Splunk Enterprise Vulnerability Exploited in Attacks Days After Disclosure",
+      "summary": "CISA has given federal agencies only three days to patch CVE-2026-20253, which can be exploited for unauthenticated remote code execution. The post Splunk Enterprise Vulnerability Exploited in Attacks Days After Disclosure appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-19T04:10:34+00:00",
+      "published_ts": 1781842234.0,
       "cves": [
         "CVE-2026-20253"
       ],
@@ -46,16 +45,9 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/",
-          "title": "Splunk Enterprise Vulnerability Exploited in Attacks Days After Disclosure",
-          "published": "2026-06-19T04:10:34+00:00"
-        }
-      ]
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
     },
     {
       "id": "22e148a2f9341fd8",
@@ -82,94 +74,6 @@
       "related_sources": []
     },
     {
-      "id": "a047bd23238ff08b",
-      "title": "AVer PTC cameras",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow arbitrary code execution. The following versions of AVer PTC cameras are affected: PTC500S vers:all/* (CVE-2026-40624) PTC115 vers:all/* (CVE-2026-40624) PTC500+ vers:all/* (CVE-2026-40624) PTC115+ vers:all/* (CVE-2026-40624) CVSS Vendor Equipment Vulnerabilities v3 9.8 AVer AVer PTC cameras Files or Directories Accessible to External Parties Background Critical Infrastructure Sectors: Government Services and Facilities, Commercial Facilities, Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: Taiwan Vulnerabilities Expand All + CVE-2026-40624 Improper input validation in AVer PTC500S, PTC115, PTC500+, and PTC115+ cameras may allow a remote, unauthenticated attacker to achieve arbitrary code execution via a specially crafted web request. View CVE Details Affected Products AVer PTC cameras Vendor: AVer Product Version: AVer PTC500S: vers:all/*, AVer PTC115: vers:all/*, AVer PTC500+: vers:all/*, AVer PTC115+: vers:all/* Product Status: known_affected Remediations Mitigation AVer has provided a firmware fix to address this vulnerability; users can find it at the following location: (https://presentation.aver.com/DownloadFile.aspx?n=6617|1C01A887-7CDC-4C96-AD9A-11D53DE1AD71&amp;t=ServiceDownload). https://presentation.aver.com/DownloadFile.aspx?n=6617%7C1C01A887-7CDC-4C96-AD9A-11D53DE1AD71&amp;t=ServiceDownload Relevant CWE: CWE-552 Files or Directories Accessi",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2026-40624"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "4162d89d40e502e1",
-      "title": "CISA Urges Hardening Fortinet Devices After Reports of Credential Exposure",
-      "summary": "CISA is aware of global reports that malicious cyber actors have targeted internet-accessible Fortinet devices across government and private sector organizations using compromised credentials. This activity, referred to as FortiBleed, involves the exposure of leaked credentials associated with approximately 74,000 Fortinet devices, including firewalls and virtual private network (VPN) gateways. &nbsp; To defend against this malicious cyber activity, CISA urges impacted Fortinet customers with FortiGate appliances and associated secure sockets layer (SSL) VPN gateways to immediately: Terminate sessions and reset credentials. Terminate all active SSL VPN and administrative sessions. Reset all Fortinet VPN and administrative passwords, especially on internet-facing systems, and enforce strong password policies. Ensure secure credential storage. Confirm your organization’s use of the Password-Based Key Derivation Function 2 (PBKDF2) algorithm to store administrator credentials and remove weaker legacy hashes per Fortinet’s guidance (see, Fortinet's Technical Tip: Enforcing PBKDF2 as hash function for administrator accounts in FortiOS v7.2.11 and later ). &nbsp; Review logs. Review firewall, VPN, authentication, and domain controller logs for lateral movement, unusual access, suspicious accounts, or unauthorized configuration changes. Enable phishing-resistant multifactor authentication (MFA). Require phishing-resistant MFA on all remote access and administrative accounts and ensu",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/06/18/cisa-urges-hardening-fortinet-devices-after-reports-credential-exposure",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "FortiOS",
-        "Fortinet",
-        "iOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "37a4863cca0ba6f8",
-      "title": "Rockwell Automation FactoryTalk Historian Site Edition",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to obtain a valid authentication token, perform a denial of service, or crash the system. The following versions of Rockwell Automation FactoryTalk Historian Site Edition are affected: FactoryTalk Historian SE 11 (CVE-2025-13036) FactoryTalk Historian SE &lt;=11.00 (CVE-2025-44019) FactoryTalk Historian SE &lt;=11.00 (CVE-2025-36539) CVSS Vendor Equipment Vulnerabilities v3 7.7 Rockwell Automation Rockwell Automation FactoryTalk Historian Site Edition Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'), Uncaught Exception Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2025-13036 An authentication bypass security issue exists within FactoryTalk Historian Site Edition. By continually sending requests to the login endpoint, an attacker may obtain a valid authentication token. View CVE Details Affected Products Rockwell Automation FactoryTalk Historian Site Edition Vendor: Rockwell Automation Product Version: Rockwell Automation FactoryTalk Historian SE: 11 Product Status: known_affected Remediations Mitigation Rockwell Automation recommends the following: Mitigations and Workarounds for CVE-2025-13036: Customers using the affected software, who are not able to upgrade to one of the corrected versions, should use our se",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2025-13036",
-        "CVE-2025-36539",
-        "CVE-2025-44019"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "ef65904f0f8e14ad",
       "title": "AutoJack: How a single page can RCE the host running your AI agent",
       "summary": "AutoJack is a novel exploit chain showing how a single malicious webpage can turn an AI browsing agent into a remote code execution vector on the host machine. By abusing trust in localhost, missing authentication, and unsafe parameter handling, attackers can trigger arbitrary process execution through AutoGen Studio’s MCP WebSocket. The research highlights a broader pattern - when agents can browse untrusted content and access local services, traditional boundaries like localhost are no longer secure. The post AutoJack: How a single page can RCE the host running your AI agent appeared first on Microsoft Security Blog .",
@@ -187,143 +91,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5ae4f1a27b0b05e3",
-      "title": "AzeoTech DAQFactory",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to upload malicious .ctl files that may lead to arbitrary code execution. The following versions of AzeoTech DAQFactory are affected: DAQFactory &lt;=21.1 (CVE-2026-12390) CVSS Vendor Equipment Vulnerabilities v3 7.8 AzeoTech AzeoTech DAQFactory Access of Resource Using Incompatible Type ('Type Confusion') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-12390 In AzeoTech DAQFactory versions 21.1 and prior, a Type Confusion vulnerability can be exploited by an attacker using specially crafted .ctl files which can result in code execution. View CVE Details Affected Products AzeoTech DAQFactory Vendor: AzeoTech Product Version: AzeoTech DAQFactory: &lt;=21.1 Product Status: known_affected Remediations Mitigation Users are discouraged from using documents from unknown/untrusted sources. Mitigation Users are encouraged to store .ctl files in a folder only writeable by admin-level users. Mitigation Users are encouraged to operate in \"Safe Mode\" when loading documents that have been out of their control. Mitigation Users are encouraged to apply a document editing password to their documents. Relevant CWE: CWE-843 Access of Resource Using Incompatible Type ('Type Confusion') Metrics CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1/AV:L/A",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2026-12390"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b5d443a5f5e7941a",
-      "title": "Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive health-related information and prevent legitimate users from establishing a connection with the device. The following versions of Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT are affected: Blood Glucose Monitoring System (Model No. APG-01 BT) 0x0110_v1.1.0 (CVE-2026-50034, CVE-2026-52866) CVSS Vendor Equipment Vulnerabilities v3 6.5 Apollo Pharmacy Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT Cleartext Transmission of Sensitive Information, Missing Authorization Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: India Company Headquarters Location: India Vulnerabilities Expand All + CVE-2026-50034 An attacker within BLE communication range can passively intercept wireless traffic and obtain sensitive health-related information, including glucose measurement values. View CVE Details Affected Products Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT Vendor: Apollo Pharmacy Product Version: Apollo Pharmacy Blood Glucose Monitoring System (Model No. APG-01 BT): 0x0110_v1.1.0 Product Status: known_affected Remediations Mitigation Apollo Pharmacy did not respond to CISA's requests to coordinate. Users are encouraged to reach out to Apollo Pharmacy directly for more information:https://www.apollopharmacy.in/contact-us. https://www.apollopharmacy.in/contact-us Mitigation CISA recommends users ",
-      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-169-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2026-50034",
-        "CVE-2026-52866"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b33b3902d4d3e442",
-      "title": "Mitsubishi Electric Co.'s MELSEC iQ-F Series FX5-ENET/IP Ethernet Module",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial-of-service (DoS) condition in the affected product by continuously sending a large number of communication packets to the Ethernet port of the product in a short period of time, increasing the processing load of the product, preventing the internal anomaly-detection processing from being performed, and causing the communication function to stop. The following versions of Mitsubishi Electric Co.'s MELSEC iQ-F Series FX5-ENET/IP Ethernet Module are affected: Mitsubishi Electric MELSEC iQ-F Series FX5-ENET/IP Ethernet Module FX5-ENET/IP vers:all/* (CVE-2026-8806) CVSS Vendor Equipment Vulnerabilities v3 7.5 Mitsubishi Electric Mitsubishi Electric Co.'s MELSEC iQ-F Series FX5-ENET/IP Ethernet Module Expected Behavior Violation Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Japan Vulnerabilities Expand All + CVE-2026-8806 Expected Behavior Violation (CWE-440) vulnerability exists in MELSEC iQ-F Series FX5-ENET/IP Ethernet Module FX5-ENET/IP. This vulnerability could allow a remote attacker to cause a denial-of-service (DoS) condition in the affected product by continuously sending a large number of communication packets to the Ethernet port of the product in a short period of time, increasing the processing load of the product, preventing the internal anomaly-detection processing from ",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-06",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2026-8806"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1e6b459b905acbd7",
-      "title": "Mitsubishi Electric MELSEC iQ-F Series",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial-of-service (DoS) condition in the affected product by rapidly establishing a large number of TCP connections to it, resulting in an inconsistency in the product's internal connection management process and triggering improper memory access. The following versions of Mitsubishi Electric MELSEC iQ-F Series are affected: MELSEC iQ-F Series FX5-EIP EtherNet/IP Module FX5-EIP &lt;=1.000 (CVE-2026-8805) CVSS Vendor Equipment Vulnerabilities v3 7.5 Mitsubishi Electric Mitsubishi Electric MELSEC iQ-F Series Integer Overflow or Wraparound Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Japan Vulnerabilities Expand All + CVE-2026-8805 An integer overflow or wraparound vulnerability exists in the EtherNet/IP function of MELSEC iQ-F Series EtherNet/IP module. This vulnerability could allow a remote attacker to cause a denial-of-service condition in the affected product by rapidly establishing a large number of TCP connections to it, resulting in an inconsistency in the product's internal connection management process and triggering improper memory access. View CVE Details Affected Products Mitsubishi Electric MELSEC iQ-F Series Vendor: Mitsubishi Electric Product Version: Mitsubishi Electric MELSEC iQ-F Series FX5-EIP EtherNet/IP Module FX5-EIP: &lt;=1.000 Product Status: known_affected Remedi",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-05",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2026-8805"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4026ae1817e3e427",
-      "title": "Schneider Electric EasyLogic T150 and Saitel DP",
-      "summary": "View CSAF Summary Successful exploitation this vulnerability could allow an attacker to gain unauthorized access to sensitive files The following versions of Schneider Electric EasyLogic T150 and Saitel DP are affected: Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller Firmware installed on Schneider Electric EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit &amp; Controller (All versions) vers:semver/&lt;=11.06.31 (CVE-2026-6865) Schneider Electric Saitel DP Remote Terminal Unit &amp; Controller Firmware installed on Schneider Electric Saitel DP Remote Terminal Unit &amp; Controller (All versions) vers:semver/&lt;=11.06.36 (CVE-2026-6865) CVSS Vendor Equipment Vulnerabilities v3 7.1 Schneider Electric Schneider Electric EasyLogic T150 and Saitel DP Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') Background Critical Infrastructure Sectors: Energy, Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities Expand All + CVE-2026-6865 CWE-22: Improper Limitation of a Pathname to a Restricted Directory (\"Path Traversal\") vulnerability that could cause unauthorized access to sensitive files when user-supplied input is improperly handled during server-side file path processing. View CVE Details Affected Products Schneider Electric EasyLogic T150 and Saitel DP Vendor: Schneider Electric Product Version: Schneider Electric Schneider Electric EasyLogic",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-04",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2026-6865"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -429,110 +196,6 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7634d28980c92204",
-      "title": "The Scripts on Your Checkout Page Are Now a PCI DSS Problem",
-      "summary": "An independent PCI assessor tested Reflectiz against the new PCI DSS rules. Here is the verdict: See the full QSA assessment here → When a customer types their card number into your checkout, their browser is running far more than your code. Analytics tags, a tag manager, a support widget, a payment iframe: a modern checkout loads dozens of third-party scripts, and any one of them can be turned",
-      "url": "https://thehackernews.com/2026/06/the-scripts-on-your-checkout-page-are.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-18T13:58:39+00:00",
-      "published_ts": 1781791119.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0821eff691bfca6d",
-      "title": "DragonForce Hackers Abuse Microsoft Teams Relays to Hide Backdoor.Turn C2 Traffic",
-      "summary": "Threat actors associated with the DragonForce ransomware have been observed using a custom Go-based remote access trojan (RAT) called Backdoor.Turn to conceal command-and-control (C2) traffic inside Microsoft Teams relay infrastructure. According to findings from Broadcom-owned Symantec and Carbon Black, the backdoor was deployed against a major U.S. services firm. The name of the company was",
-      "url": "https://thehackernews.com/2026/06/dragonforce-hackers-abuse-microsoft.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-18T13:30:07+00:00",
-      "published_ts": 1781789407.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1472a4f4d9616294",
-      "title": "Schneider Electric Easergy, EcoStruxture, PowerLogic, and Saitel Products",
-      "summary": "View CSAF Summary Schneider Electric is aware of vulnerabilities in its PowerChute™ Serial Shutdown product. The [PowerChute Serial Shutdown](https://www.se.com/ww/en/product-range/137943580-powerchute-serial-shutdown/#products) product is a UPS management software enabling graceful system shutdown and energy management capabilities for desktop, servers and workstations. Failure to apply the remediation provided below may risk improper input validation which could result in disruption of operations and access to system data. The following versions of Schneider Electric Easergy, EcoStruxture, PowerLogic, and Saitel Products are affected: Easergy MiCOM C264 vers:generic/&lt;=D7.33 (CVE-2026-4827) Easergy MiCOM P139 vers:generic/&lt;=P139.678.700 (CVE-2026-4827) Easergy MiCOM P437 vers:generic/&lt;=P437.678.700 (CVE-2026-4827) Easergy MiCOM P439 vers:generic/&lt;=P439.678.700 (CVE-2026-4827) Easergy MiCOM P532 vers:generic/&lt;=P532.678.700 (CVE-2026-4827) Easergy MiCOM P539 vers:generic/&lt;=P539.678.700 (CVE-2026-4827) Easergy MiCOM P631 vers:generic/&lt;=P631.678.700 (CVE-2026-4827) Easergy MiCOM P632 vers:generic/&lt;=P632.678.700 (CVE-2026-4827) Easergy MiCOM P633 vers:generic/&lt;=P633.678.700 (CVE-2026-4827) Easergy MiCOM P634 vers:generic/&lt;=P634.678.700 (CVE-2026-4827) Easergy MiCOM P633 P633.680.700 (CVE-2026-4827) Easergy MiCOM P634 P634.680.700 (CVE-2026-4827) Easergy MiCOM P138 vers:generic/&lt;=P138.677.700 (CVE-2026-4827) Easergy MiCOM P436 vers:generic/&lt;=P43",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-07",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-06-18T12:00:00+00:00",
-      "published_ts": 1781784000.0,
-      "cves": [
-        "CVE-2026-4827"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1220ca29eb8b334e",
-      "title": "Microsoft links Mastra AI supply chain attack to North Korean hackers",
-      "summary": "Microsoft has attributed a recent Mastra AI supply chain attack that compromised more than 140 npm packages to the North Korean hacking group Sapphire Sleet, also known as BlueNoroff. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-links-mastra-ai-supply-chain-attack-to-north-korean-hackers/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-20T14:09:19+00:00",
-      "published_ts": 1781964559.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "SAP"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -824,48 +487,24 @@
       "related_sources": []
     },
     {
-      "id": "22cdd77cfa6b9e2a",
-      "title": "Scripting the disassembler: Local agentic reverse engineering through vbdec’s live COM object model",
-      "summary": "Cisco Talos detailed a new approach to reverse engineering that pairs local AI agents with traditional analysis tools like the VB6 disassembler vbdec. Instead of awkwardly bolting AI onto the software, vbdec exposes its parsed data through a live COM interface.",
-      "url": "https://blog.talosintelligence.com/scripting-the-disassembler/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-06-18T10:00:05+00:00",
-      "published_ts": 1781776805.0,
+      "id": "1220ca29eb8b334e",
+      "title": "Microsoft links Mastra AI supply chain attack to North Korean hackers",
+      "summary": "Microsoft has attributed a recent Mastra AI supply chain attack that compromised more than 140 npm packages to the North Korean hacking group Sapphire Sleet, also known as BlueNoroff. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-links-mastra-ai-supply-chain-attack-to-north-korean-hackers/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-20T14:09:19+00:00",
+      "published_ts": 1781964559.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b89f58cf8554054c",
-      "title": "Hackers Exploit Gravity SMTP WordPress Plugin Bug to Expose API Keys",
-      "summary": "Threat actors are exploiting a recently patched security flaw impacting Gravity SMTP, a WordPress plugin that's installed on about 100,000 sites. The vulnerability, tracked as CVE-2026-4020 (CVSS score: 5.3), is a medium-severity information disclosure flaw that can allow unauthenticated attackers to extract sensitive data, such as configuration data, API keys, secrets, and OAuth tokens",
-      "url": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-20T09:56:04+00:00",
-      "published_ts": 1781949364.0,
-      "cves": [
-        "CVE-2026-4020"
-      ],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
       "products": [
-        "WordPress"
+        "SAP"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1290,26 +929,28 @@
       "related_sources": []
     },
     {
-      "id": "4ab987c17a62f069",
-      "title": "Accenture to Acquire Majority Stake in Dragos, All of runZero, NetRise in $4.1 Billion OT Cybersecurity Push",
-      "summary": "The deal values industrial cybersecurity giant Dragos at $3.25 billion, and runZero and NetRise will operate under Dragos. The post Accenture to Acquire Majority Stake in Dragos, All of runZero, NetRise in $4.1 Billion OT Cybersecurity Push appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/accenture-to-acquire-majority-stake-in-dragos-all-of-runzero-netrise-in-4-1-billion-ot-cybersecurity-push/",
-      "source": "SecurityWeek",
+      "id": "b89f58cf8554054c",
+      "title": "Hackers Exploit Gravity SMTP WordPress Plugin Bug to Expose API Keys",
+      "summary": "Threat actors are exploiting a recently patched security flaw impacting Gravity SMTP, a WordPress plugin that's installed on about 100,000 sites. The vulnerability, tracked as CVE-2026-4020 (CVSS score: 5.3), is a medium-severity information disclosure flaw that can allow unauthenticated attackers to extract sensitive data, such as configuration data, API keys, secrets, and OAuth tokens",
+      "url": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-18T13:08:53+00:00",
-      "published_ts": 1781788133.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
+      "published": "2026-06-20T09:56:04+00:00",
+      "published_ts": 1781949364.0,
+      "cves": [
+        "CVE-2026-4020"
       ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "WordPress"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1676,28 +1317,6 @@
       "products": [
         "Salesforce"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a95d3a092b8c2cf6",
-      "title": "Get Out of Security Debt by Tackling the Exposure Problem",
-      "summary": "Teams digging out of security debt need to answer only two simple questions: Which vulnerabilities in our systems are exposed, and how long should they stay that way?",
-      "url": "https://www.darkreading.com/cyber-risk/security-debt-tackle-exposure-problem",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-18T13:00:00+00:00",
-      "published_ts": 1781787600.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
