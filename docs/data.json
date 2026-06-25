@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-25T14:31:48.173052+00:00",
+  "generated_at": "2026-06-25T19:59:36.393571+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 84,
-    "critical": 0,
-    "high": 9,
-    "medium": 3,
-    "low": 72,
-    "actively_exploited": 10,
-    "with_cves": 13
+    "all": 93,
+    "critical": 2,
+    "high": 8,
+    "medium": 12,
+    "low": 71,
+    "actively_exploited": 11,
+    "with_cves": 23
   },
   "sources_used": [
     "BleepingComputer",
@@ -27,6 +27,68 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "a0b5971a9e50e387",
+      "title": "CVE-2026-20230: Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability (Cisco Unified Communications Manager)",
+      "summary": "CISA KEV — actively exploited. Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that could allow an unauthenticated, remote attacker to write files to the underlying operating system that could be used later to elevate to root. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-06-28).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20230",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-06-25T00:00:00+00:00",
+      "published_ts": 1782345600.0,
+      "cves": [
+        "CVE-2026-20230"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 80,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
+          "title": "Cisco Unified CM Flaw Exploited After PoC Reveals File-Write Path to Root",
+          "published": "2026-06-24T06:50:38+00:00"
+        }
+      ]
+    },
+    {
+      "id": "f235885446059aa5",
+      "title": "CVE-2026-12569: PTC Windchill and FlexPLM Improper Input Validation Vulnerability (PTC Windchill and FlexPLM)",
+      "summary": "CISA KEV — actively exploited. PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-06-28).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-06-25T00:00:00+00:00",
+      "published_ts": 1782345600.0,
+      "cves": [
+        "CVE-2026-12569"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": []
+    },
     {
       "id": "80058b8f1e591309",
       "title": "CVE-2025-67038: Lantronix EDS5000 Code Injection Vulnerability (Lantronix EDS5000)",
@@ -149,6 +211,29 @@
       "related_sources": []
     },
     {
+      "id": "a89e9109ecacaf14",
+      "title": "Europe Evolves Into Ransomware's Favorite Region",
+      "summary": "After a global lull, ransomware gangs are setting sights on a rich new arena: attacking EU organizations and their suppliers.",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T10:00:00+00:00",
+      "published_ts": 1782381600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "0b10dadd7adb5ef3",
       "title": "Amadey, StealC malware operations disrupted in Operation Endgame action",
       "summary": "Microsoft, Europol, and international partners have disrupted infrastructure used by the Amadey and StealC malware operations as part of Operation Endgame, which targets cybercriminal services and ransomware gangs. [...]",
@@ -162,29 +247,6 @@
       "sectors": [
         "Technology, Media & Telecom"
       ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "a89e9109ecacaf14",
-      "title": "Europe Evolves Into Ransomware's Favorite Region",
-      "summary": "After a global lull, ransomware gangs are setting sights on a rich new arena: attacking EU organizations and their suppliers.",
-      "url": "https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-25T10:00:00+00:00",
-      "published_ts": 1782381600.0,
-      "cves": [],
-      "sectors": [],
       "regions": [
         "Europe",
         "Global"
@@ -285,43 +347,40 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "14d707976a575279",
-      "title": "Cisco Unified CM Flaw Exploited After PoC Reveals File-Write Path to Root",
-      "summary": "Threat actors have begun to exploit a recently disclosed critical security flaw impacting Cisco Unified Communications Manager (Unified CM) and Unified Communications Manager Session Management Edition (Unified CM SME). The vulnerability, tracked as CVE-2026-20230 (CVSS score: 8.6), is a case of improper input validation for specific HTTP requests that could allow an unauthenticated, remote",
-      "url": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-24T06:50:38+00:00",
-      "published_ts": 1782283838.0,
+      "id": "0599fc4b0d2cf384",
+      "title": "pydicom pynetdicom Library",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an unauthenticated attacker to write to arbitrary file paths. The following versions of pydicom pynetdicom Library are affected: pynetdicom &gt;=v1.0.0|&lt;v3.0.4 CVSS Vendor Equipment Vulnerabilities v3 9.1 pydicom pydicom pynetdicom Library Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-56445 The qrscp application's C-STORE handler uses a specific instance from attacker-supplied DICOM datasets directly in os.path.join() without sanitization, allowing file writes to arbitrary paths. View CVE Details Affected Products pydicom pynetdicom Library Vendor: pydicom Product Version: pydicom pynetdicom: &gt;=v1.0.0|&lt;v3.0.4 Product Status: known_affected Remediations Vendor fix The maintainer of pynetdicom has not responded to requests to work with CISA to mitigate this vulnerability. For update information, refer to the github page https://github.com/pydicom/pynetdicom. https://github.com/pydicom/pynetdicom Relevant CWE: CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') Metrics CVSS Version Base Score Base Severity Vector String 3.1 9.1 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H 4.0 8.8 HIGH CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-176-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
       "cves": [
-        "CVE-2026-20230"
+        "CVE-2026-56445"
       ],
       "sectors": [
         "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Government & Public Services",
+        "Life Sciences & Health Care"
       ],
       "regions": [
-        "Unspecified"
+        "Global",
+        "North America"
       ],
-      "products": [],
-      "actively_exploited": true,
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 45,
+      "priority_score": 35,
       "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks/",
-          "title": "Cisco Unified CM flaw CVE-2026-20230 now exploited in attacks",
-          "published": "2026-06-23T21:48:32+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
       "id": "80581d8ba480fa45",
@@ -384,22 +443,246 @@
       "related_sources": []
     },
     {
-      "id": "8a6d656a3b33798d",
-      "title": "Amadey and StealC Malware Network Disrupted, 27M Stolen Credentials Recovered",
-      "summary": "A coordinated law enforcement operation, in partnership with private sector companies, including Bitdefender, Bitsight, ESET, and Microsoft, has resulted in the takedown of criminal infrastructure powering Amadey and StealC. \"The main common goal was to disrupt the 'assembly lines' cybercriminals use to launch ransomware, financial fraud, and attacks on critical infrastructure,\" Europol said in",
-      "url": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-24T15:59:50+00:00",
-      "published_ts": 1782316790.0,
-      "cves": [],
+      "id": "9b16b060e8526a3d",
+      "title": "Daktronics Controller Firmware",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could could provide an unauthenticated user with complete root-level access and control of the system. The following versions of Daktronics Controller Firmware are affected: VFC-DMP-5000 &lt;v8.117.x.x VFC-DMP-5000 &lt;v9.43.x.x VFC-DMP-5000 &lt;v10.34.x.x DMP-5000 &lt;v10.34.x.x DMP-5000 &lt;v8.117.x.x DMP-5000 &lt;v9.43.x.x DMP-8000 &lt;v10.34.x.x DMP-8000 &lt;v8.117.x.x DMP-8000 &lt;v9.43.x.x CVSS Vendor Equipment Vulnerabilities v3 8.1 Daktronics Daktronics Controller Firmware Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), Unrestricted Upload of File with Dangerous Type, Use of Hard-coded Credentials Background Critical Infrastructure Sectors: Commercial Facilities, Information Technology, Emergency Services, Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-28701 Various versions of Daktronics Controller Firmware could allow authenticated and unauthenticated remote users to escape the intended directory and enumerate arbitrary file system paths. View CVE Details Affected Products Daktronics Controller Firmware Vendor: Daktronics Product Version: Daktronics VFC-DMP-5000: &lt;v8.117.x.x, Daktronics VFC-DMP-5000: &lt;v9.43.x.x, Daktronics VFC-DMP-5000: &lt;v10.34.x.x, Daktronics DMP-5000: &lt;v10.34.x.x, Daktronics DMP-5000: &lt;v8.117.x.x, Daktronics DMP-5000: &lt;v9.43.x.x, Dak",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-28701"
+      ],
       "sectors": [
-        "Financial Services",
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "5c39fa28f8d28253",
+      "title": "Delta Electronics DTM Soft",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code. The following versions of Delta Electronics DTM Soft are affected: DTMSoft vers:all/*&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.8 Delta Electronics Delta Electronics DTM Soft Deserialization of Untrusted Data Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Taiwan Vulnerabilities Expand All + CVE-2026-12578 The affected product is vulnerable to a deserialization of untrusted data, which may allow an attacker to execute arbitrary code. View CVE Details Affected Products Delta Electronics DTM Soft Vendor: Delta Electronics Product Version: Delta Electronics DTMSoft: vers:all/* Product Status: known_affected Remediations Mitigation Delta Electronics is aware of the vulnerability and is currently working on a fix. Mitigation Delta Electronics recommends users apply the following workarounds: Mitigation Do not open unsolicited project files: Do not open or import unsolicited project files, untrusted Internet links, or unexpected attachments from emails, network shares, or USB drives. Always verify the source of the file before opening it. Mitigation Avoid running as administrator: Do not use the \"Run as Administrator\" option when launching the software. Running the software with standard user privileges effectively limits the damage of potential malicious code. Mitigation For m",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-06",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-12578"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe"
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "df4fdfabe24ac4da",
+      "title": "OHIF Viewers DICOM",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability in a custom integration version could allow an attacker to steal an authenticated clinician's token via a crafted link. The following versions of OHIF Viewers DICOM are affected: OHIF DICOM Web Viewer Framework &lt;=v3.12.0 CVSS Vendor Equipment Vulnerabilities v3 8.2 Open Health Imaging Foundation (OHIF) OHIF Viewers DICOM Server-Side Request Forgery (SSRF) Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-12473 Two data sources (DICOMWebProxy and DICOMJSON) shipped in the default configuration fetch an arbitrary URL parameter without validation. A global authentication service in OHIF automatically injects the authenticated user's OIDC Bearer token into the resulting requests, sending it to the attacker-controlled server. DICOMweb data sources are not impacted. View CVE Details Affected Products OHIF Viewers DICOM Vendor: Open Health Imaging Foundation (OHIF) Product Version: Open Health Imaging Foundation (OHIF) OHIF DICOM Web Viewer Framework: &lt;=v3.12.0 Product Status: known_affected Remediations Mitigation The maintainer has fixed the reported vulnerability and released version 3.12.2 (2026-05-18). The fix is located at OHIF/Viewers#5985 (master), OHIF/Viewers#5978 (release/3.12). Mitigation Users are recommended to upgrade to v3.12.2 or later. Operators who need di",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-176-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-12473"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "c82b7f5bf9507044",
+      "title": "H.VIEW HV-500S6 IP Camera",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and upload malicious files to the affected device. The following versions of H.VIEW HV-500S6 IP Camera are affected: H.VIEW HV-500S6 IP Camera IPCAM_V4.06.88.251229&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.2 H.VIEW H.VIEW HV-500S6 IP Camera Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Unrestricted Upload of File with Dangerous Type Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities Expand All + CVE-2026-55975 A vulnerability exists in H.View IP cameras that could allow an authenticated user to supply unsanitized XML fields to the device's certificate generation interface, which are incorporated into a backend certificate creation command without proper input validation. This may allow for command execution with elevated privileges during certificate generation. View CVE Details Affected Products H.VIEW HV-500S6 IP Camera Vendor: H.VIEW Product Version: H.VIEW H.VIEW HV-500S6 IP Camera: IPCAM_V4.06.88.251229 Product Status: known_affected Remediations Mitigation H.View did not respond to CISA's request to coordinate. Users are encouraged to reach out to H.View for support. https://hviewsmart.com/pages/contact-us https://hviewsmart.com/pages/contact-us Relevant CWE: CWE-78 Improper Neutralization of Special",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-55975"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "b93e642c4585182c",
+      "title": "Yokogawa FAST/TOOLS and CI Server",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability may return a response containing the CI Server setting information. The following versions of Yokogawa FAST/TOOLS and CI Server are affected: FAST/TOOLS &gt;=R9.01|&lt;=R10.04&nbsp; Collaborative Information Server (CI Server) &gt;=R1.01|&lt;=R1.04 CVSS Vendor Equipment Vulnerabilities v3 7.5 Yokogawa Yokogawa FAST/TOOLS and CI Server Cleartext Transmission of Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Food and Agriculture Countries/Areas Deployed: Worldwide Company Headquarters Location: Japan Vulnerabilities Expand All + CVE-2026-11833 The web server may return a response containing the CI Server setting information. This information could be exploited by an attacker for other attacks. View CVE Details Affected Products Yokogawa FAST/TOOLS and CI Server Vendor: Yokogawa Product Version: Yokogawa FAST/TOOLS: &gt;=R9.01|&lt;=R10.04, Yokogawa Collaborative Information Server (CI Server): &gt;=R1.01|&lt;=R1.04 Product Status: known_affected Remediations Vendor fix Yokogawa recommends users update FAST/TOOLS up to R10.04 and apply patch software (R10.04 SP4). Mitigation Yokogawa recommends users update Collaborative Information Server (CI Server) up to R1.05. Mitigation For more information and details on implementing these mitigations, users should see the Yokogawa security advisory report YSAR-26-0004 at: https://web-material3.yokogawa.com/1/39777/files/YSAR-2",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-11833"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "cb2a511f80c0eb8d",
+      "title": "Horner Automation Cscape",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a local attacker to disclose information and execute arbitrary code. The following versions of Horner Automation Cscape are affected: Cscape &lt;10.2_SP3&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.8 Horner Automation Horner Automation Cscape Out-of-bounds Read Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-12897 Horner Automation Cscape versions prior to 10.2 SP3 are vulnerable to an Out-of-Bounds Read vulnerability through parsing CSP files. Successful exploitation of this vulnerability could allow an attacker to disclose information and execute arbitrary code. View CVE Details Affected Products Horner Automation Cscape Vendor: Horner Automation Product Version: Horner Automation Cscape: &lt;10.2_SP3 Product Status: known_affected Remediations Vendor fix Horner Automation has released Cscape 10.2 SP3 for users to download. Vendor fix For more information, see the Cscape 10.2 SP3 release notes (https://hornerautomation.com/cscape-software-free/cscape-software/). https://hornerautomation.com/cscape-software-free/cscape-software/ Relevant CWE: CWE-125 Out-of-bounds Read Metrics CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H 4.0 8.4 HIGH CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-12897"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "34f6a6e5490abba1",
+      "title": "Schneider Electric PowerLogic P7",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its PowerLogic™ P7 product. The PowerLogic™ P7 is a protection and control platform designed for complex and advanced electrical network applications. Failure to apply the remediation provided below may risk unauthorized execution of privileged commands or loss of HMI operability and configuration functionality, which could result in loss of control over system operations and disruption of critical services. The following versions of Schneider Electric PowerLogic P7 are affected: PowerLogic™ P7 vers:intdot/&lt;=0.2.003.001.000 PowerLogic™ P7 0.2.003.001.000&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.5 Schneider Electric Schneider Electric PowerLogic P7 NULL Pointer Dereference, Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Reachable Assertion Background Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities Expand All + CVE-2026-9716 CWE-476 NULL Pointer Dereference vulnerability exists that could cause a denial-of-service condition, rendering the device’s HMI and configuration functionality unavailable when malformed requests are received over exposed network interfaces. View CVE Details Affected Products Schneider Electric PowerLogic P7 Vendor: Schneider Electric Product Version: PowerLogic™ P7 version 0.2.003.001.000 and prior Product ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-07",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-9716"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "7b1210c570d12486",
+      "title": "EVoke Systems Charging Station Management System",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control over vulnerable charging stations or disrupt charging services through denial-of-service attacks. The following versions of EVoke Systems Charging Station Management System are affected: EVoke CSMS vers:all/*&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.4 EVoke Systems EVoke Systems Charging Station Management System Missing Authentication for Critical Function, Improper Restriction of Excessive Authentication Attempts, Insufficient Session Expiration, Insufficiently Protected Credentials Background Critical Infrastructure Sectors: Energy, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-40702 WebSocket endpoints lack proper authentication mechanisms, enabling attackers to impersonate charging stations. As a result, attackers can exploit this weakness to gain unauthorized access to sensitive data or perform unauthorized actions. Given that no authentication is required, this can lead to privilege escalation and potentially compromise the security of the entire system. View CVE Details Affected Products EVoke Systems Charging Station Management System Vendor: EVoke Systems Product Version: EVoke Systems EVoke CSMS: vers:all/* Product Status: known_affected Remediations Vendor fix EVoke states that as a hardware-agnostic platform supporting multiple c",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-06-25T12:00:00+00:00",
+      "published_ts": 1782388800.0,
+      "cves": [
+        "CVE-2026-40702"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "e0d90dd9b6fc9baa",
+      "title": "Order-tracking app Shop abused to push callback phishing attacks",
+      "summary": "Threat actors are increasingly abusing Shop, the order-tracking app from Shopify, by adding fake purchase receipts in users' order histories to trick them into providing sensitive data or installing remote access software. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/order-tracking-app-shop-abused-to-push-callback-phishing-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T19:45:48+00:00",
+      "published_ts": 1782416748.0,
+      "cves": [],
+      "sectors": [
+        "Consumer",
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -435,18 +718,92 @@
       "related_sources": []
     },
     {
-      "id": "66af57bb380d7930",
-      "title": "One intrusion, two cyberattackers: Uncovering parallel threat activity",
-      "summary": "Ransomware case reveals two parallel threat actors, blending tactics and evasion—showing why isolated signals can often miss modern, overlapping cyberattacks. The post One intrusion, two cyberattackers: Uncovering parallel threat activity appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/22/one-intrusion-two-cyberattackers-uncovering-parallel-threat-activity/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-06-22T16:00:00+00:00",
-      "published_ts": 1782144000.0,
+      "id": "1e06942c97462d31",
+      "title": "Local Police Collusion Hampers Crackdown on Asian Scam Centers",
+      "summary": "With tens of billions of dollars flowing into regional economies from cybercrime, scam centers continue to flourish, despite international and law-enforcement efforts.",
+      "url": "https://www.darkreading.com/threat-intelligence/police-collusion-crackdown-asian-scam-centers",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T19:07:41+00:00",
+      "published_ts": 1782414461.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b676b0aadc57bea0",
+      "title": "DHS chief says president has met with potential CISA nominee; agency plans to hire 600",
+      "summary": "Once a new CISA director is in place, the agency will ramp up hiring efforts, Homeland Security Secretary Markwayne Mullin told lawmakers. The White House has not yet announced a nominee.",
+      "url": "https://therecord.media/cisa-director-nominee-workforce-hires-mullin-house-hearing",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T18:47:51+00:00",
+      "published_ts": 1782413271.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "438c681017402d82",
+      "title": "Microsoft quietly extends free Windows 10 ESU support to October 2027",
+      "summary": "Microsoft has quietly extended its free Windows 10 Extended Security Updates (ESU) program for consumers by an additional year, allowing enrolled devices to continue receiving security updates until October 12, 2027. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-quietly-extends-free-windows-10-esu-support-to-october-2027/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T18:29:20+00:00",
+      "published_ts": 1782412160.0,
+      "cves": [],
+      "sectors": [
+        "Consumer",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3d0660d7bfabd5c1",
+      "title": "Microsoft a Leader in The Forrester Wave™ for Endpoint Management Platforms",
+      "summary": "Microsoft named a Leader in the Forrester Wave™: Endpoint Management Platforms, Q2 2026, with the highest scores in the current offering and strategy categories. The post Microsoft a Leader in The Forrester Wave™ for Endpoint Management Platforms appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/25/microsoft-a-leader-in-the-forrester-wave-for-endpoint-management-platforms/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-06-25T16:00:00+00:00",
+      "published_ts": 1782403200.0,
+      "cves": [],
+      "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -455,7 +812,7 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -613,21 +970,22 @@
       "related_sources": []
     },
     {
-      "id": "c57dfd714b8d964b",
-      "title": "CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms",
-      "summary": "Learn how CNAPP platforms are helping organizations prioritize exploitable risks, reduce exposure, and operationalize security across the application lifecycle. The post CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-06-24T18:00:00+00:00",
-      "published_ts": 1782324000.0,
+      "id": "8a6d656a3b33798d",
+      "title": "Amadey and StealC Malware Network Disrupted, 27M Stolen Credentials Recovered",
+      "summary": "A coordinated law enforcement operation, in partnership with private sector companies, including Bitdefender, Bitsight, ESET, and Microsoft, has resulted in the takedown of criminal infrastructure powering Amadey and StealC. \"The main common goal was to disrupt the 'assembly lines' cybercriminals use to launch ransomware, financial fraud, and attacks on critical infrastructure,\" Europol said in",
+      "url": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-24T15:59:50+00:00",
+      "published_ts": 1782316790.0,
       "cves": [],
       "sectors": [
+        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -795,18 +1153,89 @@
       "related_sources": []
     },
     {
-      "id": "2a0b1d878eeb4555",
-      "title": "Guarding AI memory",
-      "summary": "What happens when threat actors target what AI remembers? Microsoft breaks down the risks and the defenses. The post Guarding AI memory appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/22/guarding-ai-memory/",
-      "source": "Microsoft Security Blog",
+      "id": "f5794e6a1f07aa71",
+      "title": "Beyond IOCs: AI-enabled threat intelligence",
+      "summary": "In this week’s newsletter, Martin considers how AI will help threat intelligence by creating an easily queryable data source of intelligence reports.",
+      "url": "https://blog.talosintelligence.com/beyond-iocs-ai-enabled-threat-intelligence/",
+      "source": "Cisco Talos",
       "source_trust": 5,
       "category": "threat",
-      "published": "2026-06-22T19:07:28+00:00",
-      "published_ts": 1782155248.0,
+      "published": "2026-06-25T18:00:26+00:00",
+      "published_ts": 1782410426.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6b9163aa53c15ac8",
+      "title": "New macOS malware embeds fake errors to confuse AI analysis tools",
+      "summary": "A newly discovered macOS malware dubbed \"Gaslight\" is designed to confuse AI-assisted malware analysis tools by hiding prompt injection strings and fake debugging data within the executable. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T16:23:19+00:00",
+      "published_ts": 1782404599.0,
       "cves": [],
       "sectors": [
-        "Government & Public Services",
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b6e0c174e7bdfd5d",
+      "title": "PirloTV sports piracy network disrupted as 44 domains seized",
+      "summary": "A major sports piracy ring linked to the illegal PirloTV streaming platform has been disrupted in an action that targeted 44 domains. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/pirlotv-sports-piracy-network-disrupted-as-44-domains-seized/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T15:36:56+00:00",
+      "published_ts": 1782401816.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "82cf5503a0b65af2",
+      "title": "Bluekit phishing kit adopts browser-in-the-middle for login theft",
+      "summary": "The Bluekit phishing-as-a-service platform continues to evolve with nearly 70 new hostnames identified over the past week and by adding browser-in-the-middle capabilities for improved data theft. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/bluekit-phishing-kit-adopts-browser-in-the-middle-for-login-theft/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T15:00:00+00:00",
+      "published_ts": 1782399600.0,
+      "cves": [],
+      "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -815,7 +1244,57 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f57a908b67d32fa9",
+      "title": "Another Russian dairy company reportedly disrupted by cyberattack",
+      "summary": "A dairy products manufacturer in Russia's republic of Bashkortostan is the latest such company to have its operations snarled by a cyberattack.",
+      "url": "https://therecord.media/russia-dairy-producter-cyberattack-ufa",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T14:45:00+00:00",
+      "published_ts": 1782398700.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c6aa08f97b5c3f65",
+      "title": "Chrome Ad Blocker with 10M+ Installs Found with Dormant Script Injection Capability",
+      "summary": "An analysis of a popular Google Chrome ad block extension for YouTube has uncovered the ability to execute arbitrary JavaScript code. According to Island, the extension, named Adblock for YouTube (ID: cmedhionkhpnakcndndgjdbohmhepckk), has more than 10 million installs and carries a Featured badge on the Chrome Web Store. The extension description states that it allows users to prevent web",
+      "url": "https://thehackernews.com/2026/06/chrome-ad-blocker-with-10m-installs.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T14:12:52+00:00",
+      "published_ts": 1782396772.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Chrome"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -893,8 +1372,8 @@
     },
     {
       "id": "e11c4d7bb9c44c9a",
-      "title": "Cal Water Finds No Evidence of OT Activity After Hackers Claimed They Could Disrupt Water Supply",
-      "summary": "Mandiant has helped the California water utility investigate the cyberattack launched by Iranian hacker group Handala. The post Cal Water Finds No Evidence of OT Activity After Hackers Claimed They Could Disrupt Water Supply appeared first on SecurityWeek .",
+      "title": "Cal Water Says No OT Systems Breached in Iranian Handala Cyberattack",
+      "summary": "Mandiant has helped the California water utility investigate the cyberattack launched by Iranian hacker group Handala. The post Cal Water Says No OT Systems Breached in Iranian Handala Cyberattack appeared first on SecurityWeek .",
       "url": "https://www.securityweek.com/cal-water-finds-no-evidence-of-ot-activity-after-hackers-claimed-they-could-disrupt-water-supply/",
       "source": "SecurityWeek",
       "source_trust": 4,
@@ -991,6 +1470,30 @@
       "related_sources": []
     },
     {
+      "id": "89b8902c73a3c627",
+      "title": "SecurityWeek ICS Cybersecurity Conference Heads to Nashville for Special 25-Year Anniversary Edition",
+      "summary": "The 2026 Industrial Control Systems (ICS) Cybersecurity Conference takes place October 6-8, 2026, at the W Nashville. The post SecurityWeek ICS Cybersecurity Conference Heads to Nashville for Special 25-Year Anniversary Edition appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/securityweek-ics-cybersecurity-conference-heads-to-nashville-for-special-25-year-anniversary-edition/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-25T09:00:00+00:00",
+      "published_ts": 1782378000.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "a6f7885b7b2228cf",
       "title": "Google releases new privacy controls for activity history, personalization",
       "summary": "Google is rolling out new privacy controls for Search services and Google Play, giving you more control over saved history and personalized recommendations. [...]",
@@ -1039,63 +1542,15 @@
       "related_sources": []
     },
     {
-      "id": "5776bd31644ec039",
-      "title": "Do CISOs Need a Code of Ethics?",
-      "summary": "Dark Reading Confidential Episode 19: Kickbacks, no-show jobs, &quot;dirty&quot; VCs, and shelf ware — industry expert Robert &quot;RSnake&quot; Hansen explains why he thinks its time for a CISO code of ethics to ensure cybersecurity bosses aren't engaged in self-dealing that could risk enterprise, and even national, security.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/ciso-code-of-ethics",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-24T19:10:17+00:00",
-      "published_ts": 1782328217.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "602296082c1873c1",
-      "title": "More Malicious OpenClaw Skills Threaten AI Supply Chain",
-      "summary": "OpenClaw removed five packages from its ClawHub skills marketplace that bypassed security checks even though they included infostealers and other threats.",
-      "url": "https://www.darkreading.com/cyber-risk/malicious-openclaw-skills-clawhub-threaten-ai-supply-chain",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-24T16:56:49+00:00",
-      "published_ts": 1782320209.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f83e008cd18da6d4",
-      "title": "Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware",
-      "summary": "Hundreds of C&#038;C servers were disrupted in an operation involving law enforcement and several cybersecurity companies. The post Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/microsoft-and-allies-smash-shared-infrastructure-of-amadey-and-stealc-malware/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-24T15:02:07+00:00",
-      "published_ts": 1782313327.0,
+      "id": "c57dfd714b8d964b",
+      "title": "CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms",
+      "summary": "Learn how CNAPP platforms are helping organizations prioritize exploitable risks, reduce exposure, and operationalize security across the application lifecycle. The post CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-06-24T18:00:00+00:00",
+      "published_ts": 1782324000.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
@@ -1361,33 +1816,6 @@
       "related_sources": []
     },
     {
-      "id": "df84eff422f4fbbb",
-      "title": "Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants",
-      "summary": "Cybersecurity researchers have disclosed details of four vulnerabilities in Dify, an open-source agentic workflow platform with more than 146,000 GitHub stars, that could allow attackers to stealthily read artificial intelligence (AI) conversions from other customers' applications without requiring authentication. The vulnerabilities have been collectively codenamed DifyTap by Zafran Security.",
-      "url": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-22T16:13:28+00:00",
-      "published_ts": 1782144808.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "2cbcdf2368c85f14",
       "title": "Runlayer Raises $30 Million in Series A Funding",
       "summary": "The startup’s platform functions as a secure control layer, aiming to secure AI tools across enterprises. The post Runlayer Raises $30 Million in Series A Funding appeared first on SecurityWeek .",
@@ -1544,17 +1972,43 @@
       "related_sources": []
     },
     {
-      "id": "6af79746af83bcb0",
-      "title": "When Information Becomes the Attack Surface – Understanding AI Agent Traps",
-      "summary": "From hidden content injections to cognitive state poisoning, attackers are turning trusted data sources into traps for autonomous AI. The post When Information Becomes the Attack Surface &#8211; Understanding AI Agent Traps appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/when-information-becomes-the-attack-surface-understanding-ai-agent-traps/",
-      "source": "SecurityWeek",
+      "id": "5776bd31644ec039",
+      "title": "Do CISOs Need a Code of Ethics?",
+      "summary": "Dark Reading Confidential Episode 19: Kickbacks, no-show jobs, &quot;dirty&quot; VCs, and shelf ware — industry expert Robert &quot;RSnake&quot; Hansen explains why he thinks it's time for a CISO code of ethics. It could ensure cybersecurity bosses aren't engaged in self-dealing that could risk enterprise, and even national, security.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/ciso-code-of-ethics",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-24T17:37:57+00:00",
-      "published_ts": 1782322677.0,
+      "published": "2026-06-24T19:10:17+00:00",
+      "published_ts": 1782328217.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "602296082c1873c1",
+      "title": "More Malicious OpenClaw Skills Threaten AI Supply Chain",
+      "summary": "OpenClaw removed five packages from its ClawHub skills marketplace that bypassed security checks even though they included infostealers and other threats.",
+      "url": "https://www.darkreading.com/cyber-risk/malicious-openclaw-skills-clawhub-threaten-ai-supply-chain",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-24T16:56:49+00:00",
+      "published_ts": 1782320209.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1581,28 +2035,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2d9658fafced8950",
-      "title": "Indian auto giant Bajaj Auto hit by ransomware incident",
-      "summary": "The company said in a regulatory filing that it became aware of the incident on Tuesday morning and had taken precautionary measures to contain its impact.",
-      "url": "https://therecord.media/indian-auto-giant-bajaj-auto-hit-by-ransomware",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-24T13:23:00+00:00",
-      "published_ts": 1782307380.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1679,80 +2111,6 @@
       "products": [
         "macOS"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2a3e57803446dd0e",
-      "title": "Tata Electronics confirms cyberattack as hackers leak data",
-      "summary": "Tata Electronics has confirmed in a statement to BleepingComputer that it was the target of a cyberattack that impacted parts of its IT infrastructure. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/tata-electronics-confirms-cyberattack-as-hackers-leak-data/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-23T21:06:32+00:00",
-      "published_ts": 1782248792.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a4e52194e1442418",
-      "title": "Windows 11 KB5095093 update rolls out new Point-in-Time restore feature",
-      "summary": "​​Microsoft has released the KB5095093 preview cumulative update for Windows 11 24H2 and 25H2, which fixes numerous bugs and begins rolling out new features, including the new Point-in-Time restore feature. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5095093-update-rolls-out-new-point-in-time-restore-feature/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-23T20:22:21+00:00",
-      "published_ts": 1782246141.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9f841cc17db189de",
-      "title": "Healthtech firm Xolis suffers data breach impacting 1.4 million people",
-      "summary": "Healthcare technology company Xsolis says that sensitive data belonging to nearly 1.4 million individuals was compromised in a phishing attack that gave attackers access to its network. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-23T19:59:12+00:00",
-      "published_ts": 1782244752.0,
-      "cves": [],
-      "sectors": [
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1906,69 +2264,19 @@
       "related_sources": []
     },
     {
-      "id": "b6100dda73ae89c1",
-      "title": "29-Year-Old Squid Proxy Bug 'Squidbleed' Can Leak Cleartext HTTP Requests",
-      "summary": "A heap over-read in the Squid web proxy can leak another user's cleartext HTTP request, including any credentials or session tokens it carries, to anyone already allowed to send traffic through the same proxy. The bug traces to a 1997 FTP-parsing change and is still live in Squid's default configuration. Researchers at Calif.io&nbsp;disclosed it in June&nbsp;and named it Squidbleed (",
-      "url": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html",
-      "source": "The Hacker News",
+      "id": "6af79746af83bcb0",
+      "title": "When Information Becomes the Attack Surface – Understanding AI Agent Traps",
+      "summary": "From hidden content injections to cognitive state poisoning, attackers are turning trusted data sources into traps for autonomous AI. The post When Information Becomes the Attack Surface &#8211; Understanding AI Agent Traps appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/when-information-becomes-the-attack-surface-understanding-ai-agent-traps/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-22T16:29:00+00:00",
-      "published_ts": 1782145740.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "573b6e7e12ec0a28",
-      "title": "Crypto Heist Fueled by Elaborate Fake Reputation-Boosting Campaign",
-      "summary": "Attackers are using multiple online channels — including GitHub, YouTube, and VirusTotal — to build an illusion of trust to spread a cross-platform clipboard hijacker.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/crypto-heist-fake-reputation-boosting-campaign",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-22T16:10:10+00:00",
-      "published_ts": 1782144610.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a216458768bc8509",
-      "title": "German rail services resume after wireless communications outage",
-      "summary": "Deutsche Bahn said a nationwide disruption of railway services was tied to a malfunction in its 2G-based GSM-R communications system.",
-      "url": "https://therecord.media/deutsche-bahn-railroad-gsmr-outage",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-24T14:15:37+00:00",
-      "published_ts": 1782310537.0,
+      "published": "2026-06-24T17:37:57+00:00",
+      "published_ts": 1782322677.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Europe"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2046,30 +2354,6 @@
       "related_sources": []
     },
     {
-      "id": "5f42441db3bec79f",
-      "title": "New macOS ClickFix attack silently mounts DMGs to push infostealer",
-      "summary": "A new macOS ClickFix campaign is using Terminal commands to silently download, mount, and launch info-stealing malware from malicious disk image (DMG) files. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-macos-clickfix-attack-silently-mounts-dmgs-to-push-infostealer/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-23T18:30:16+00:00",
-      "published_ts": 1782239416.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "973d0402da90c72e",
       "title": "Agentic AI: The Weapon That No Longer Needs a Warrior",
       "summary": "Every weapon begins as an extension of the hand that holds it. The spear lengthened the reach of the arm. The bow sent the point flying without the throw. The rifle placed a man's death a quarter mile beyond his sight, and the aircraft carried that death across oceans. At each turn, the distance between the warrior and the wound grew wider, and yet one thing never moved: a human chose the target",
@@ -2107,30 +2391,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "99621963ad2f1b5d",
-      "title": "ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chain Attack",
-      "summary": "Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack after unknown threat actors managed to tamper with the official release channels and push backdoor code. \"Attackers compromised the vendor's build and distribution pipeline, injecting backdoor code into Pro plugin releases distributed through official licensed update channels,\" Wordfence said in an analysis",
-      "url": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-22T18:00:48+00:00",
-      "published_ts": 1782151248.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "WordPress"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
