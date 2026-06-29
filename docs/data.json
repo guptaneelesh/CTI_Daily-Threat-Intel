@@ -1,26 +1,64 @@
 {
-  "generated_at": "2026-06-29T15:44:52.031112+00:00",
+  "generated_at": "2026-06-29T19:57:04.875056+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 42,
-    "critical": 0,
-    "high": 2,
+    "all": 39,
+    "critical": 1,
+    "high": 1,
     "medium": 3,
-    "low": 37,
-    "actively_exploited": 5,
+    "low": 34,
+    "actively_exploited": 4,
     "with_cves": 3
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA KEV",
     "Check Point Research",
-    "Dark Reading",
+    "Microsoft Security Blog",
     "Securelist (Kaspersky)",
     "SecurityWeek",
     "The Hacker News",
-    "The Record",
-    "Unit 42 (Palo Alto)"
+    "The Record"
   ],
   "items": [
+    {
+      "id": "fa90a56cfcae5e9a",
+      "title": "CVE-2026-48558: SimpleHelp Authentication Bypass Vulnerability (SimpleHelp  SimpleHelp)",
+      "summary": "CISA KEV — actively exploited. SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-07-02).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-06-29T00:00:00+00:00",
+      "published_ts": 1782691200.0,
+      "cves": [
+        "CVE-2026-48558"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/",
+          "title": "Critical SimpleHelp flaw exploited to deploy new stealer malware",
+          "published": "2026-06-29T14:00:00+00:00"
+        }
+      ]
+    },
     {
       "id": "93718e16b5331cb7",
       "title": "Why Post-Quantum Cryptography Starts With Credentials",
@@ -37,31 +75,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "9734bcc381a2698d",
-      "title": "Chinese-Speaking APT Deploys New TinyRCT Backdoor in Southeast Asia Campaign",
-      "summary": "A Chinese-speaking advanced persistent threat (APT) actor has been linked to a new custom backdoor called TinyRCT as part of cyber attacks aimed at government entities and critical infrastructure in Southeast Asia. The activity, particularly aimed at state-owned enterprises in the energy and government sectors, has been attributed to a threat actor called CL-STA-1062, which Palo Alto Networks",
-      "url": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T16:21:25+00:00",
-      "published_ts": 1782490885.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": true,
@@ -119,28 +132,135 @@
       "related_sources": []
     },
     {
-      "id": "23231a9e562b8605",
-      "title": "CISA sets urgent deadline to fix Cisco flaw exploited in attacks",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is giving federal agencies until Sunday to patch a vulnerability in Cisco Unified Communications Manager Server that is being actively exploited. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/",
-      "source": "BleepingComputer",
+      "id": "ab6ed98a85ef287e",
+      "title": "WhatsApp is Finally Getting Usernames to Help Keep Phone Numbers Private",
+      "summary": "WhatsApp on Monday officially announced the start of global reservations of usernames with an aim to protect the privacy of more than three billion users on the messaging platform. The optional feature is designed to help users connect with someone on the service through usernames, as opposed to directly sharing their phone numbers. Username reservations will start rolling out starting today,",
+      "url": "https://thehackernews.com/2026/06/whatsapp-is-finally-getting-usernames.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-26T19:43:06+00:00",
-      "published_ts": 1782502986.0,
+      "published": "2026-06-29T16:09:21+00:00",
+      "published_ts": 1782749361.0,
       "cves": [],
       "sectors": [
-        "Government & Public Services",
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "North America"
+        "Global"
+      ],
+      "products": [
+        "SAP"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "3fd8b08803d8215f",
+      "title": "WhatsApp rolls out usernames to help users hide their phone number",
+      "summary": "WhatsApp is finally allowing users to reserve usernames, a privacy feature that lets them hide their phone numbers from people not in their contact list. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/whatsapp-rolls-out-usernames-to-help-users-hide-their-phone-number/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-29T17:48:28+00:00",
+      "published_ts": 1782755308.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "SAP"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "14db1ad3f9dbb0db",
+      "title": "Microsoft extends Windows Server 2022 hotpatching until October 2027",
+      "summary": "Microsoft has extended Windows Server 2022 hotpatching until October 2027, one year after the mainstream end date of October 2026. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-extends-windows-server-2022-hotpatching-until-october-2027/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-29T17:11:15+00:00",
+      "published_ts": 1782753075.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b4af3816d91ed64f",
+      "title": "Chromium extension uses AI‑related branding to redirect browser search",
+      "summary": "A malicious Chromium-based extension that spoofs the AI-powered answer engine Perplexity AI redirects browser search traffic using MV3 APIs and intermediary infrastructure. The post Chromium extension uses AI‑related branding to redirect browser search appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/29/chromium-extension-uses-airelated-branding-redirect-browser-search/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-06-29T16:27:46+00:00",
+      "published_ts": 1782750466.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "784753631870db96",
+      "title": "WhatsApp Rolling Out Username Feature to Bolster Phone Number Privacy",
+      "summary": "An optional ‘username key’ adds another layer by requiring a secondary credential before someone can message users. The post WhatsApp Rolling Out Username Feature to Bolster Phone Number Privacy appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/whatsapp-rolling-out-username-feature-to-bolster-phone-number-privacy/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-29T16:00:01+00:00",
+      "published_ts": 1782748801.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "SAP"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -329,27 +449,100 @@
       "related_sources": []
     },
     {
-      "id": "dc92a2157e9130d3",
-      "title": "Third-Party Breaches Teach Education Sector a Costly Lesson in Vendor Risk",
-      "summary": "Rising threats from third-party actors are forcing institutions to play defense to protect student data from ransomware and other attacks.",
-      "url": "https://www.darkreading.com/cyber-risk/third-party-breaches-teaches-education-lesson-vendor-risk",
-      "source": "Dark Reading",
+      "id": "591e57243ac97e46",
+      "title": "Justices rule that cellphone location histories are protected by the Fourth Amendment",
+      "summary": "Police must get a warrant to request geofence data involving individual cellphones, the U.S. Supreme Court ruled in what represents a victory for privacy advocates.",
+      "url": "https://therecord.media/supreme-court-geofencing-ruling-fourth-amendment",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-06-27T11:48:05+00:00",
-      "published_ts": 1782560885.0,
+      "published": "2026-06-29T18:50:00+00:00",
+      "published_ts": 1782759000.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2abacbd85a3883e2",
+      "title": "Malicious Perplexity Chrome Extension Intercepted Searches and Address Bar Input",
+      "summary": "Microsoft has found a malicious Chrome extension that posed as the AI search engine Perplexity and quietly logged what people searched for. It routed every query and every character typed into the address bar through an attacker-controlled server before redirecting users to real results. Microsoft says Google removed it from the store after responsible disclosure. The extension was called \"",
+      "url": "https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-29T18:40:09+00:00",
+      "published_ts": 1782758409.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Chrome"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "963b051d82625078",
+      "title": "US racks up about 400 wins over illegal World Cup streaming sites",
+      "summary": "The World Cup’s organizing body, FIFA, helped identify hundreds of domains taken down in an action organized by the U.S., along with the help of U.S. broadcaster NBC Universal and other entities.",
+      "url": "https://therecord.media/us-takes-down-hundreds-world-cup-streaming-sites",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-29T17:10:00+00:00",
+      "published_ts": 1782753000.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "de074c3874467984",
+      "title": "Mustang Panda Uses Zoho WorkDrive as Command Channel in Indian Government Attacks",
+      "summary": "The China-aligned espionage group&nbsp;Mustang Panda&nbsp;is running two campaigns against the Indian government and hydropower targets, deploying new malware and turning a legitimate cloud service into its command channel. Acronis Threat Research Unit&nbsp;found active compromises inside Indian government networks, including machines used by senior administrative staff, and worked with&nbsp;",
+      "url": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-06-29T15:03:40+00:00",
+      "published_ts": 1782745420.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -593,34 +786,6 @@
       "related_sources": []
     },
     {
-      "id": "05fc9c28c8cbd41b",
-      "title": "Critical SimpleHelp flaw exploited to deploy new stealer malware",
-      "summary": "Hackers are exploiting a recently disclosed critical vulnerability (CVE-2026-48558) in SimpleHelp to deploy Djinn Stealer, a previously undocumented cross-platform information stealer targeting Windows, macOS, and Linux. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-29T14:00:00+00:00",
-      "published_ts": 1782741600.0,
-      "cves": [
-        "CVE-2026-48558"
-      ],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "9bb7e83b3709de04",
       "title": "US seizes hundreds of FIFA World Cup illegal streaming domains",
       "summary": "The U.S. Justice Department's Criminal Division has seized nearly 400 web domains used for illegally streaming matches at the FIFA World Cup. [...]",
@@ -786,124 +951,6 @@
       "related_sources": []
     },
     {
-      "id": "7f975028cf2fa9dc",
-      "title": "FBI Warns Russian Intelligence Hackers Target Signal Backup Recovery Keys",
-      "summary": "The FBI and CISA have updated&nbsp;their March warning&nbsp;about Russian intelligence phishing Signal accounts, and the operators have added a step: they now coax targets into handing over their Signal Backup Recovery Key. Hand it over once, and the attacker can restore the account's backup, read the private and group message history, and take over the account. Worse, the key keeps working.",
-      "url": "https://thehackernews.com/2026/06/fbi-warns-russian-intelligence-hackers.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T19:38:29+00:00",
-      "published_ts": 1782502709.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a5cf29bcc27319fe",
-      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
-      "summary": "We provide guidance for preparing for and mitigating large-scale credential attacks, focusing on recent campaigns targeting security vendors' devices. The post Threat Brief: Mitigating Large-Scale Credential Attacks appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-06-26T19:05:33+00:00",
-      "published_ts": 1782500733.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "bb68b86803cebc19",
-      "title": "New SharkLoader Malware Deploys Cobalt Strike in StrikeShark Cyberattacks",
-      "summary": "A newly discovered cyber attack campaign has been observed delivering a previously undocumented malware family called SharkLoader that acts as a loader for deploying Cobalt Strike Beacon on compromised hosts. Kaspersky, which is tracking the activity under the moniker StrikeShark, said the campaign has targeted a diplomatic organization in Indonesia, government organizations in Taiwan,",
-      "url": "https://thehackernews.com/2026/06/new-sharkloader-malware-deploys-cobalt.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T18:17:46+00:00",
-      "published_ts": 1782497866.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0ad08b15dbacf090",
-      "title": "Cisco Adds NHI to Security Stack With Astrix, WideField Acquisitions",
-      "summary": "Cisco joins a growing list of security platform providers that are betting that securing the agentic workforce means turning identity into the primary control plane.",
-      "url": "https://www.darkreading.com/identity-access-management-security/cisco-adds-nhi-security-stack-with-astrix-widefield",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T17:31:04+00:00",
-      "published_ts": 1782495064.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f1a3215dd106c720",
-      "title": "New Initiative Tackles Security for End-of-Life Open Source Software",
-      "summary": "The Open Source Sustainability Initiative's goal is to help enterprises manage and secure aging open source projects while maintaining regulatory compliance.",
-      "url": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T16:32:30+00:00",
-      "published_ts": 1782491550.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "042cdaef5a0a75ce",
       "title": "Clean GitHub repo tricks AI coding agents into running malware",
       "summary": "An agentic coding tool tasked with cloning and setting up a seemingly benign GitHub repository could execute a malicious payload that remains invisible to security scanners, AI agents, and human reviewers. [...]",
@@ -937,94 +984,6 @@
       "category": "mixed",
       "published": "2026-06-27T12:13:51+00:00",
       "published_ts": 1782562431.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "cd1e01026628082c",
-      "title": "AI Decline? Confidence in Autonomous Penetration Testing Falls",
-      "summary": "Companies are still experimenting with automated AI systems to find security weaknesses, but fewer are relying on the technology.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-decline-confidence-autonomous-penetration-testing",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T19:11:02+00:00",
-      "published_ts": 1782501062.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4b281bdecc9be2df",
-      "title": "Polymarket customers lose $3 million in supply-chain attack",
-      "summary": "Polymarket says it will fully reimburse customers who lost an estimated $3 million after hackers injected a malicious script into the platform's frontend following a breach at a third-party vendor. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/polymarket-customers-lose-3-million-in-supply-chain-attack/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T18:04:12+00:00",
-      "published_ts": 1782497052.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b47ebbd9a4ea474d",
-      "title": "Cybersecurity firms targeted by fraudulent OpenAI organization invites",
-      "summary": "Threat actors are creating OpenAI tenants that impersonate legitimate companies and inviting employees to join them, in what appears to be a ploy to trick targets into submitting sensitive company information in chats and projects. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cybersecurity-firms-targeted-by-fraudulent-openai-organization-invites/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T17:49:07+00:00",
-      "published_ts": 1782496147.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c3cc09dee7f18c1f",
-      "title": "AI Won't Wipe-Out Entry-Level Cybersecurity Jobs",
-      "summary": "Instead of eliminating jobs for early-career cyber pros, AI is creating new opportunities for candidates with strong human decision-making skills.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-wont-wipe-out-entry-level-cybersecurity-jobs",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-06-26T16:00:00+00:00",
-      "published_ts": 1782489600.0,
       "cves": [],
       "sectors": [],
       "regions": [
