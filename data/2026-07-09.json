@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-09T14:57:31.011874+00:00",
+  "generated_at": "2026-07-09T19:45:26.912912+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 94,
+    "all": 100,
     "critical": 0,
     "high": 7,
     "medium": 11,
-    "low": 76,
-    "actively_exploited": 16,
+    "low": 82,
+    "actively_exploited": 14,
     "with_cves": 18
   },
   "sources_used": [
@@ -375,54 +375,31 @@
       "related_sources": []
     },
     {
-      "id": "af5cc11fe1bca238",
-      "title": "CISA orders feds to prioritize patching Langflow auth bypass flaw",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) gave federal agencies until Friday to patch an actively exploited vulnerability in the Langflow visual framework for building AI agents. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-08T09:58:11+00:00",
-      "published_ts": 1783504691.0,
-      "cves": [],
+      "id": "ac37485a83d31b13",
+      "title": "Schneider Electric PowerChute Serial Shutdown",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow attackers to overwrite critical files, forge or inject malicious log data, gain unauthorized account access, trigger denial‑of‑service conditions, truncate or alter logging information, reset user credentials, or expose sensitive information. The following versions of Schneider Electric PowerChute Serial Shutdown are affected: PowerChute Serial Shutdown &lt;=1.4&nbsp; CVSS Vendor Equipment Vulnerabilities v3 6.1 SuSE, Schneider Electric, Red Hat, Microsoft Schneider Electric PowerChute Serial Shutdown Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), Improper Encoding or Escaping of Output, Improper Restriction of Excessive Authentication Attempts, Uncontrolled Resource Consumption, Improper Validation of Specified Quantity in Input, Improper Neutralization of CRLF Sequences ('CRLF Injection'), Insertion of Sensitive Information into Log File Background Critical Infrastructure Sectors: Communications, Critical Manufacturing, Energy, Healthcare and Public Health, Information Technology, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities Expand All + CVE-2026-2399 PowerChute is vulnerable to improper restriction of file paths, which could allow critical system files to be overwritten with unintended data. View CVE Details Affected Products Schneider Electric PowerChute Serial Shutdown Vendor: SuSE, Schneider E",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-09T12:00:00+00:00",
+      "published_ts": 1783598400.0,
+      "cves": [
+        "CVE-2026-2399"
+      ],
       "sectors": [
-        "Government & Public Services"
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "North America"
+        "Europe",
+        "Global"
       ],
       "products": [],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "79bbcfdcec685ab5",
-      "title": "16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems",
-      "summary": "A use-after-free bug in Linux's KVM hypervisor can be triggered from a guest virtual machine to corrupt the shadow-page state of the host kernel that runs it. Dubbed 'Januscape' and tracked as&nbsp;CVE-2026-53359, the flaw sits in the shadow MMU code that KVM shares across both Intel and AMD. The public proof-of-concept panics the host; the researcher claims that a separate, unreleased exploit",
-      "url": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-06T17:37:01+00:00",
-      "published_ts": 1783359421.0,
-      "cves": [
-        "CVE-2026-53359"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
+      "priority_score": 35,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -507,6 +484,111 @@
       "related_sources": []
     },
     {
+      "id": "b8575b7b9d02d4ec",
+      "title": "OpenPLC v3",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an authenticated attacker to write arbitrary files to the filesystem and escalate this into arbitrary native code execution through the normal OpenPLC program compilation process, potentially resulting in code execution as the OpenPLC runtime user. The following versions of OpenPLC v3 are affected: OpenPLC v3 CVSS Vendor Equipment Vulnerabilities v3 9.9 OpenPLC OpenPLC v3 External Control of File Name or Path Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-14480 OpenPLC Runtime v3 contains an authenticated arbitrary file write vulnerability in the legacy web UI program‑upload workflow. The application stores an attacker‑supplied filename (prog_file) directly into the Programs.File database field and later uses this value as the destination path for an uploaded file without validating or restricting the path. Because Python os.path.join() honors attacker‑controlled absolute paths, an authenticated user can write arbitrary files anywhere writable by the OpenPLC webserver process. In the default build pipeline, all C++ source files within the OpenPLC runtime core directory are automatically compiled into the executable runtime binary. By writing a malicious .cpp file into this directory, an authenticated attacker ca",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-09T12:00:00+00:00",
+      "published_ts": 1783598400.0,
+      "cves": [
+        "CVE-2026-14480"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "8ae6b3fc6c2338c1",
+      "title": "New GigaWiper Windows Backdoor Bundles Disk Wiping, Fake Ransomware, and Spyware",
+      "summary": "Microsoft has taken apart a destructive Windows backdoor it calls GigaWiper. What stands out is how it is built: not one tool but three older destructive programs bolted into one, offered as commands the operator can choose from. Each is a different way to break a machine: wipe the whole disk, overwrite the Windows drive, or run fake \"ransomware\" that scrambles files with a key it never saves",
+      "url": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-09T18:08:07+00:00",
+      "published_ts": 1783620487.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7cbb1f3034270656",
+      "title": "ThreatsDay: Cloud Bucket Hijacking, Windows LPE Chain, Global Fraud Bust + 17 More Stories",
+      "summary": "Most security mess starts as admin work. A link gets clicked. A tool gets trusted. A bucket name gets reused. A setting stays loose because nobody wants to touch&nbsp;it. This week is full of that kind of damage. Not loud. Not clever. Just small gaps doing big jobs. The worst part is how normal it all looks until the bill arrives. The full ThreatsDay list is below. Global",
+      "url": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-09T15:09:28+00:00",
+      "published_ts": 1783609768.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "01562463fd6970db",
+      "title": "GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware",
+      "summary": "GigaWiper is a destructive backdoor that combines multiple wiping and ransomware-like capabilities into a single operational platform. This blog analyzes how the malware incorporates code from several previously separate malware families and provides guidance to help defenders detect and defend against similar threats. The post GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/09/gigawiper-anatomy-of-a-destructive-backdoor-assembled-from-multiple-malware/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-07-09T15:00:00+00:00",
+      "published_ts": 1783609200.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "faa3a22c5b181910",
       "title": "Latvian forestry company still restoring systems weeks after ransomware attack",
       "summary": "A foreign, financially motivated group was responsible for a cyberattack on state-owned forestry company Latvijas Valsts Mezi (LVM), officials said.",
@@ -520,59 +602,6 @@
       "sectors": [
         "Energy Resources & Industrials",
         "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2753eedbe141d92b",
-      "title": "Protecting Microsoft at AI speed: How SFI proactively hardens our cloud",
-      "summary": "At Microsoft we encompass these security requirements, along with threat knowledge, and operational frameworks in our Secure Future Initiative (SFI), to guide what a well-defended cloud service looks like. But defining the requirements is only the start. Meeting the requirements means continuously evaluating our live services against them, at AI speed. The post Protecting Microsoft at AI speed: How SFI proactively hardens our cloud appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/08/protecting-microsoft-at-ai-speed-how-sfi-proactively-hardens-our-cloud/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-07-08T17:00:00+00:00",
-      "published_ts": 1783530000.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ab35385572c340fa",
-      "title": "Vidar Infostealer Hammers SMBs via Malvertising Campaign",
-      "summary": "A financially motivated operation uses lures of cracked or pirated software to deliver a two-for-one malware combo for data theft and cryptomining.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/vidar-infostealer-smb-malvertising-campaign",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-08T16:45:54+00:00",
-      "published_ts": 1783529154.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -635,6 +664,57 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6e65097da916bbc8",
+      "title": "WolfSSL, GeoVision, VTK vulnerabilities",
+      "summary": "Cisco Talos&#x2019; Vulnerability Discovery &amp; Research team recently disclosed three vulnerabilities in WolfSSF, fourteen in GeoVision, and one vulnerability in VTK-DICOM. The vulnerabilities mentioned in this blog post have been patched by their respective vendors, in adherence to Cisco&#x2019;s third-party vulnerability disclosure policy .&#xa0; For",
+      "url": "https://blog.talosintelligence.com/wolfssl-vulnerabilities/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-07-09T18:52:29+00:00",
+      "published_ts": 1783623149.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "28606c60e9ae5542",
+      "title": "npm 12 Disables Install Scripts by Default to Reduce Supply Chain Risk",
+      "summary": "GitHub has officially announced the release of npm version 12 with install scripts disabled by default, along with deprecating granular access tokens (GATs) designed to bypass two-factor authentication (2FA). The Microsoft-owned subsidiary noted that the following npm install behaviors that used to run automatically before have been made opt-in&nbsp;- allowScripts defaults to off, meaning",
+      "url": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-09T16:49:02+00:00",
+      "published_ts": 1783615742.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -704,6 +784,30 @@
       "sectors": [
         "Energy Resources & Industrials",
         "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c3547158b4631793",
+      "title": "Schneider Electric Easergy MiCOM Px40 Series",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its Easergy MiCOM Px40 Series products. The [Easergy MiCOM Px40](https://www.se.com/ww/en/product-subcategory/4725-easergy-micom-px40-series/?filter=business-6-medium-voltage-distribution-and-grid-automation) is a protection relay series for Medium Voltage, High Voltage and Extra High Voltage protection. Failure to apply the mitigations provided below may risk unauthorized exposure of basic device identification through the SNMP protocol. The following versions of Schneider Electric Easergy MiCOM Px40 Series are affected: Easergy MiCOM P14x All versions prior to B4A Easergy MiCOM P24x All versions prior to D3A Easergy MiCOM P341 All versions prior to E3F Easergy MiCOM P342, P343, P344, P345 All versions prior to B3F Easergy MiCOM P442, P444 All versions prior to E3A Easergy MiCOM P443, P445, P446, P543, P544, P545, P546 All versions prior to H6A Easergy MiCOM P841 All versions prior to G6A Easergy MiCOM P643 All versions prior to B3F Easergy MiCOM P642, P645 All versions prior to B4A Easergy MiCOM P741, P742, P743 All versions prior to B2A Easergy MiCOM P746 All versions prior to B4E Easergy MiCOM P746 All versions prior to C4E Easergy MiCOM P849 All versions prior to B4A CVSS Vendor Equipment Vulnerabilities v3 5.3 Schneider Electric Schneider Electric Easergy MiCOM Px40 Series Use of Hard-coded Credentials Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems Cou",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-09T12:00:00+00:00",
+      "published_ts": 1783598400.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
@@ -898,15 +1002,15 @@
       "related_sources": []
     },
     {
-      "id": "8593c0be53bdefe1",
-      "title": "AI Coding Agents Found Triggering Endpoint Security Rules Built to Catch Attackers",
-      "summary": "Sophos looked at a week of its own endpoint data and found that AI coding agents such as Claude Code, Cursor, and OpenAI Codex are setting off detection rules written to catch human intruders. The agents are not malicious. They just do a lot of things that, to a behavioral engine, look exactly like an attack. Decrypting browser credentials, listing what sits in Windows' credential store,",
-      "url": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-08T17:02:12+00:00",
-      "published_ts": 1783530132.0,
+      "id": "2753eedbe141d92b",
+      "title": "Protecting Microsoft at AI speed: How SFI proactively hardens our cloud",
+      "summary": "At Microsoft we encompass these security requirements, along with threat knowledge, and operational frameworks in our Secure Future Initiative (SFI), to guide what a well-defended cloud service looks like. But defining the requirements is only the start. Meeting the requirements means continuously evaluating our live services against them, at AI speed. The post Protecting Microsoft at AI speed: How SFI proactively hardens our cloud appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/08/protecting-microsoft-at-ai-speed-how-sfi-proactively-hardens-our-cloud/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-07-08T17:00:00+00:00",
+      "published_ts": 1783530000.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -916,8 +1020,34 @@
         "Unspecified"
       ],
       "products": [
-        "Windows"
+        "Edge"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ab35385572c340fa",
+      "title": "Vidar Infostealer Hammers SMBs via Malvertising Campaign",
+      "summary": "A financially motivated operation uses lures of cracked or pirated software to deliver a two-for-one malware combo for data theft and cryptomining.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/vidar-infostealer-smb-malvertising-campaign",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-08T16:45:54+00:00",
+      "published_ts": 1783529154.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -978,6 +1108,80 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "90c85d77bf46498d",
+      "title": "Winning 54% of the time",
+      "summary": "With Wimbledon's help, Hazel argues against the popular myth that \"Attackers only need to be right once, but defenders need to be right 100% of the time.\"",
+      "url": "https://blog.talosintelligence.com/winning-54-of-the-time/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-07-09T18:00:06+00:00",
+      "published_ts": 1783620006.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f4075ca05f880ffe",
+      "title": "New Helix vishing group emerges in SharePoint data theft attacks",
+      "summary": "A new data-extortion group called Helix is using identity-focused tactics such as voice phishing (vishing), device code phishing, and multi-factor authentication (MFA) abuse to steal data from SharePoint environments. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-09T17:08:29+00:00",
+      "published_ts": 1783616909.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "SharePoint"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "af6278ed00c711d7",
+      "title": "Microsoft expects more Windows security updates from AI-discovered flaws",
+      "summary": "Microsoft says Windows users should expect to see an increase in security updates as the company increasingly relies on artificial intelligence to discover vulnerabilities in its codebase. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-09T17:00:00+00:00",
+      "published_ts": 1783616400.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1251,47 +1455,26 @@
       "related_sources": []
     },
     {
-      "id": "38f04c4ebd96cec1",
-      "title": "Entra passkey enrollment vishing targets Microsoft 365 users",
-      "summary": "A threat actor has been targeting organizations across multiple sectors with voice-based fake security requests that ask Microsoft 365 users to enroll a new Entra passkey. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/entra-passkey-enrollment-vishing-targets-microsoft-365-users/",
-      "source": "BleepingComputer",
+      "id": "8593c0be53bdefe1",
+      "title": "AI Coding Agents Found Triggering Endpoint Security Rules Built to Catch Attackers",
+      "summary": "Sophos looked at a week of its own endpoint data and found that AI coding agents such as Claude Code, Cursor, and OpenAI Codex are setting off detection rules written to catch human intruders. The agents are not malicious. They just do a lot of things that, to a behavioral engine, look exactly like an attack. Decrypting browser credentials, listing what sits in Windows' credential store,",
+      "url": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-08T16:47:25+00:00",
-      "published_ts": 1783529245.0,
+      "published": "2026-07-08T17:02:12+00:00",
+      "published_ts": 1783530132.0,
       "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f28e0bf616a7de37",
-      "title": "New HalluSquatting Attack Could Trick AI Coding Assistants Into Installing Botnet Malware",
-      "summary": "AI coding assistants have a habit of making things up. Ask one to fetch a popular tool, and it will sometimes hand back a real-sounding name for a project that does not exist. New research, which its authors call&nbsp;HalluSquatting, turns that habit into an attack: work out the fake names an AI reliably invents, register them first, and wait for the assistant to fetch your trap on a user's",
-      "url": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-08T15:07:24+00:00",
-      "published_ts": 1783523244.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
+      "products": [
+        "Windows"
       ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1553,30 +1736,6 @@
       "related_sources": []
     },
     {
-      "id": "e39dd2e0cdf5249a",
-      "title": "Siemens Mendix Studio Pro",
-      "summary": "View CSAF Summary Mendix Studio Pro versions before V11.12 are affected by a file parsing vulnerability that could be triggered when the application reads specially crafted malicious project during the build pipeline. This could allow an attacker to execute arbitrary code in the context of that user. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Mendix Studio Pro are affected: Mendix Studio Pro 10.11 vers:all/* Mendix Studio Pro 10.12 vers:all/*&nbsp; Mendix Studio Pro 10.13 vers:all/* Mendix Studio Pro 10.14 vers:all/*&nbsp; Mendix Studio Pro 10.15 vers:all/*&nbsp; Mendix Studio Pro 10.16 vers:all/*&nbsp; Mendix Studio Pro 10.17 vers:all/*&nbsp; Mendix Studio Pro 10.18 vers:all/*&nbsp; Mendix Studio Pro 10.19 vers:all/*&nbsp; Mendix Studio Pro 10.20 vers:all/*&nbsp; Mendix Studio Pro 10.21 vers:all/*&nbsp; Mendix Studio Pro 10.22 vers:all/*&nbsp; Mendix Studio Pro 10.23 vers:all/*&nbsp; Mendix Studio Pro 10.24 vers:intdot/&lt;10.24.21 Mendix Studio Pro 11.0 vers:all/*&nbsp; Mendix Studio Pro 11.1 vers:all/*&nbsp; Mendix Studio Pro 11.10 vers:all/*&nbsp; Mendix Studio Pro 11.11 vers:all/*&nbsp; Mendix Studio Pro 11.2 vers:all/*&nbsp; Mendix Studio Pro 11.3 vers:all/*&nbsp; Mendix Studio Pro 11.4 vers:all/*&nbsp; Mendix Studio Pro 11.5 vers:all/*&nbsp",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-04",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-07T12:00:00+00:00",
-      "published_ts": 1783425600.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "c5c29dd52c910dec",
       "title": "Hydro-Québec Le Circuit Electrique charging station backend",
       "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could lead to privilege escalation, or result in a denial-of-service attack. The following versions of Hydro-Québec Le Circuit Electrique charging station backend are affected: Le Circuit Electrique charging station backend CVSS Vendor Equipment Vulnerabilities v3 9.8 Hydro-Québec Hydro-Québec Le Circuit Electrique charging station backend Improper Access Control, Improper Restriction of Excessive Authentication Attempts, Insufficient Session Expiration Background Critical Infrastructure Sectors: Transportation Systems Countries/Areas Deployed: Canada Company Headquarters Location: Canada Vulnerabilities Expand All + CVE-2026-20744 The charging station websocket endpoint accepts connections without proper authentication, which could lead to privilege escalation. View CVE Details Affected Products Hydro-Québec Le Circuit Electrique charging station backend Vendor: Hydro-Québec Product Version: Hydro-Québec Le Circuit Electrique charging station backend: &lt;June_2026 Product Status: known_affected Remediations Mitigation Hydro-Québec has updated the majority of charging stations to disable OCPP, mitigating the risk of exploitation. Hydro-Québec has also implemented authentication systems to mitigate the issue for certain charging stations which are still reliant on OCPP. Contact Hydro-Québec with any additional questions. Relevant CWE: CWE-284 Improper Access Control Metrics CVSS Version Base Score Base Severit",
@@ -1594,6 +1753,30 @@
       ],
       "regions": [
         "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e39dd2e0cdf5249a",
+      "title": "Siemens Mendix Studio Pro",
+      "summary": "View CSAF Summary Mendix Studio Pro versions before V11.12 are affected by a file parsing vulnerability that could be triggered when the application reads specially crafted malicious project during the build pipeline. This could allow an attacker to execute arbitrary code in the context of that user. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Mendix Studio Pro are affected: Mendix Studio Pro 10.11 vers:all/* Mendix Studio Pro 10.12 vers:all/*&nbsp; Mendix Studio Pro 10.13 vers:all/* Mendix Studio Pro 10.14 vers:all/*&nbsp; Mendix Studio Pro 10.15 vers:all/*&nbsp; Mendix Studio Pro 10.16 vers:all/*&nbsp; Mendix Studio Pro 10.17 vers:all/*&nbsp; Mendix Studio Pro 10.18 vers:all/*&nbsp; Mendix Studio Pro 10.19 vers:all/*&nbsp; Mendix Studio Pro 10.20 vers:all/*&nbsp; Mendix Studio Pro 10.21 vers:all/*&nbsp; Mendix Studio Pro 10.22 vers:all/*&nbsp; Mendix Studio Pro 10.23 vers:all/*&nbsp; Mendix Studio Pro 10.24 vers:intdot/&lt;10.24.21 Mendix Studio Pro 11.0 vers:all/*&nbsp; Mendix Studio Pro 11.1 vers:all/*&nbsp; Mendix Studio Pro 11.10 vers:all/*&nbsp; Mendix Studio Pro 11.11 vers:all/*&nbsp; Mendix Studio Pro 11.2 vers:all/*&nbsp; Mendix Studio Pro 11.3 vers:all/*&nbsp; Mendix Studio Pro 11.4 vers:all/*&nbsp; Mendix Studio Pro 11.5 vers:all/*&nbsp",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-07T12:00:00+00:00",
+      "published_ts": 1783425600.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1683,50 +1866,48 @@
       "related_sources": []
     },
     {
-      "id": "1c521f0c5f75e3d4",
-      "title": "JadePuffer: The First Complete LLM-Driven Ransomware Attack",
-      "summary": "An &quot;agentic threat actor&quot; successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack",
-      "source": "Dark Reading",
+      "id": "8f2ea37a16a2d8d1",
+      "title": "Dormant GitHub Accounts Help Attackers Blend In While Mapping Corporate Orgs",
+      "summary": "Datadog Security Labs is warning of \"several overlapping campaigns\" that are systematically enumerating corporate GitHub organizations, repositories, and user accounts through the GitHub&nbsp;API. \"Operators rely on automated scraping tooling with custom or legitimate-sounding user agents, leveraging GitHub 'ghost' accounts that are often years old, or compromised OAuth tokens and personal",
+      "url": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-06T16:36:50+00:00",
-      "published_ts": 1783355810.0,
+      "published": "2026-07-09T18:38:49+00:00",
+      "published_ts": 1783622329.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "GitHub"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "84a7f708f2b511fe",
-      "title": "5 insights from Frost & Sullivan’s 2025 Frost Radar™ for Cloud Security Posture Management",
-      "summary": "Read five key learnings from the Frost &#038; Sullivan 2025 Frost Radar™ for CSPM to learn how CSPM is evolving from point-in-time compliance to continuous risk management. The post 5 insights from Frost &amp; Sullivan’s 2025 Frost Radar™ for Cloud Security Posture Management appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/06/5-insights-from-frost-sullivans-2025-frost-radar-for-cloud-security-posture-management/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-07-06T16:00:00+00:00",
-      "published_ts": 1783353600.0,
+      "id": "4eeed7e10409fe76",
+      "title": "QIZ Security Raises $17 Million for Cryptographic Governance Platform",
+      "summary": "The Israeli company has developed a cryptographic posture and post-quantum cryptography management platform. The post QIZ Security Raises $17 Million for Cryptographic Governance Platform appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/qiz-security-raises-17-million-for-cryptographic-governance-platform/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-09T15:03:51+00:00",
+      "published_ts": 1783609431.0,
       "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
-        "Unspecified"
+        "Middle East"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1863,37 +2044,6 @@
       "related_sources": []
     },
     {
-      "id": "c41af39ac86d9977",
-      "title": "Unpatched Backdoor in Tenda Firmware Grants Admin Access to Devices",
-      "summary": "Tracked as CVE-2026-11405, the vulnerability allows unauthenticated attackers to access a device's web management interface. The post Unpatched Backdoor in Tenda Firmware Grants Admin Access to Devices appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/unpatched-backdoor-in-tenda-firmware-grants-admin-access-to-devices/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-09T05:00:41+00:00",
-      "published_ts": 1783573241.0,
-      "cves": [
-        "CVE-2026-11405"
-      ],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
-          "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
-          "published": "2026-07-07T06:40:47+00:00"
-        }
-      ]
-    },
-    {
       "id": "c5ac1cedb0e2ec74",
       "title": "Fake 7-Zip Installers Turn Devices Into Residential Proxy Nodes",
       "summary": "Cybersecurity researchers have disclosed details of a new threat actor dubbed Lurking Lizard that has been operating an end-to-end malicious residential proxy business using an infrastructure comprising more than 230 lookalike domains. The activity dates back to at least August 2022, according to DNS threat intelligence firm Infoblox. Once such campaign, observed earlier this year, involved the",
@@ -1961,20 +2111,45 @@
       "related_sources": []
     },
     {
-      "id": "264cc93a46417ffd",
-      "title": "Hackers exploit Roundcube flaw to spy on academic researchers",
-      "summary": "A China-linked threat cluster has been exploiting vulnerable Roundcube servers at U.S. and Canadian universities to steal credentials and deploy backdoor malware. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-roundcube-flaw-to-spy-on-academic-researchers/",
+      "id": "38f04c4ebd96cec1",
+      "title": "Entra passkey enrollment vishing targets Microsoft 365 users",
+      "summary": "A threat actor has been targeting organizations across multiple sectors with voice-based fake security requests that ask Microsoft 365 users to enroll a new Entra passkey. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/entra-passkey-enrollment-vishing-targets-microsoft-365-users/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-08T18:56:02+00:00",
-      "published_ts": 1783536962.0,
+      "published": "2026-07-08T16:47:25+00:00",
+      "published_ts": 1783529245.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
-        "Asia-Pacific",
-        "North America"
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f28e0bf616a7de37",
+      "title": "New HalluSquatting Attack Could Trick AI Coding Assistants Into Installing Botnet Malware",
+      "summary": "AI coding assistants have a habit of making things up. Ask one to fetch a popular tool, and it will sometimes hand back a real-sounding name for a project that does not exist. New research, which its authors call&nbsp;HalluSquatting, turns that habit into an attack: work out the fake names an AI reliably invents, register them first, and wait for the assistant to fetch your trap on a user's",
+      "url": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-08T15:07:24+00:00",
+      "published_ts": 1783523244.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2248,43 +2423,20 @@
       "related_sources": []
     },
     {
-      "id": "a9ed5ab0d02c6a4f",
-      "title": "Iran-Linked Hackers Use New Cavern C2 Framework to Target Israeli Organizations",
-      "summary": "An Iranian hacking group affiliated with Iran's Ministry of Intelligence and Security (MOIS) has been wielding a previously undocumented modular command-and-control (C2) framework dubbed Cavern (aka Cav3rn) targeting Israeli organizations. The activity, which has primarily singled out IT providers and government sectors, has been attributed to a threat cluster tracked by Check Point Research",
-      "url": "https://thehackernews.com/2026/07/iran-linked-hackers-use-new-cavern-c2.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-06T18:34:26+00:00",
-      "published_ts": 1783362866.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Middle East"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9ab5e9aa949ec79e",
-      "title": "Ubiquiti warns of new max severity UniFi OS vulnerability",
-      "summary": "Ubiquiti has released security updates to patch seven critical vulnerabilities in UniFi OS, including a maximum-severity flaw that can be exploited in command injection attacks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/",
+      "id": "264cc93a46417ffd",
+      "title": "Hackers exploit Roundcube flaw to spy on academic researchers",
+      "summary": "A China-linked threat cluster has been exploiting vulnerable Roundcube servers at U.S. and Canadian universities to steal credentials and deploy backdoor malware. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-roundcube-flaw-to-spy-on-academic-researchers/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-08T08:15:20+00:00",
-      "published_ts": 1783498520.0,
+      "published": "2026-07-08T18:56:02+00:00",
+      "published_ts": 1783536962.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2364,25 +2516,23 @@
       "related_sources": []
     },
     {
-      "id": "1d186228ddacefa3",
-      "title": "Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure",
-      "summary": "Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig. The vulnerability in question is CVE-2026-20896 (CVSS score: 9.8), a vulnerability that stems from the DevOps platform trusting the \"X-WEBAUTH-USER\" header from any source IP address, effectively allowing an unauthenticated internet client to get elevated",
-      "url": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
+      "id": "71f5e9cfcbf0af05",
+      "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
+      "summary": "Several versions of firmware released by Chinese network device manufacturer Tenda have been found to embed an undocumented authentication backdoor that enables administrative access to the devices' web management interfaces, the CERT Coordination Center (CERT/CC) warned Monday. \"An attacker can exploit this vulnerability, tracked as CVE-2026-11405, to bypass the password verification process",
+      "url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-06T16:28:59+00:00",
-      "published_ts": 1783355339.0,
+      "published": "2026-07-07T06:40:47+00:00",
+      "published_ts": 1783406447.0,
       "cves": [
-        "CVE-2026-20896"
+        "CVE-2026-11405"
       ],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Docker"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
