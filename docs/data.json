@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-24T08:26:16.041968+00:00",
+  "generated_at": "2026-07-24T13:43:39.373307+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 115,
+    "all": 94,
     "critical": 1,
-    "high": 7,
-    "medium": 17,
-    "low": 90,
-    "actively_exploited": 13,
-    "with_cves": 27
+    "high": 5,
+    "medium": 8,
+    "low": 80,
+    "actively_exploited": 11,
+    "with_cves": 17
   },
   "sources_used": [
     "BleepingComputer",
@@ -17,10 +17,8 @@
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
-    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
-    "Securelist (Kaspersky)",
     "SecurityWeek",
     "SentinelOne Labs",
     "The Hacker News",
@@ -67,32 +65,6 @@
       ]
     },
     {
-      "id": "f5783b40d3e81828",
-      "title": "Hotel Wi-Fi DNS Poisoning Attacks Hijack Microsoft 365 Accounts Without Phishing",
-      "summary": "Adversaries are silently hijacking Microsoft 365 accounts by compromising hotel and conference-center Wi-Fi gateways and poisoning DNS no phishing emails, malicious attachments, or endpoint malware required. ReliaQuest assesses that the tradecraft closely mirrors prior APT28-linked router campaigns, extending them into captive-portal infrastructure used by traveling corporate staff. Since at least June 2026, threat actors have [&#8230;] The post Hotel Wi-Fi DNS Poisoning Attacks Hijack Microsoft 365 Accounts Without Phishing appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/hotel-wi-fi-dns-poisoning-attacks/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T07:43:30+00:00",
-      "published_ts": 1784879010.0,
-      "cves": [],
-      "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
       "id": "8ff06242dda5f753",
       "title": "CVE-2026-16232: Check Point SmartConsole Improper Authentication Vulnerability (Check Point SmartConsole)",
       "summary": "CISA KEV — actively exploited. Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-07-25).",
@@ -119,45 +91,12 @@
       "priority_label": "High",
       "related_sources": [
         {
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/new-check-point-zero-day-vulnerability-exploited-in-the-wild/",
-          "title": "New Check Point Zero-Day Vulnerability Exploited in the Wild",
-          "published": "2026-07-23T09:06:04+00:00"
-        },
-        {
           "source": "The Hacker News",
           "url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
           "title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
           "published": "2026-07-23T06:34:36+00:00"
         }
       ]
-    },
-    {
-      "id": "210ec92992aab41f",
-      "title": "Russian LAUNDRY BEAR Hackers Exploit Zimbra Zero-Day to Steal 90 Days of Emails",
-      "summary": "Russian state-supported threat actors, known as LAUNDRY BEAR, have exploited a zero-day vulnerability in the Zimbra Collaboration Suite to steal up to 909,090 days&#8217; worth of emails from targeted organizations across Western countries. A joint cybersecurity advisory, AA26-204A, issued on July 23, 2026, warns that this espionage-focused group has targeted government, defense, energy, technology, education, [&#8230;] The post Russian LAUNDRY BEAR Hackers Exploit Zimbra Zero-Day to Steal 90 Days of Emails appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/russian-laundry-bear-hackers-exploit-zimbra/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T05:55:48+00:00",
-      "published_ts": 1784872548.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Zimbra"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
     },
     {
       "id": "c55f293bc9605782",
@@ -184,7 +123,7 @@
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 60,
+      "priority_score": 55,
       "priority_label": "High",
       "related_sources": []
     },
@@ -213,6 +152,33 @@
       "related_sources": []
     },
     {
+      "id": "1a90c894239911c9",
+      "title": "Kimi K3 Agents Found Redis Zero-Days and Built RCE Exploit, Researchers Say",
+      "summary": "Redis shipped seven security releases on July 23 after researchers published authenticated RCE PoCs for stock Redis 6.2.22, 7.4.9, 8.6.4, and 8.8.0. All four chains require RESTORE. The Streams chains also need EVAL and XGROUP; the 8.8.0 chain needs EVAL and the bundled RedisBloom module. Redis says the underlying memory flaws may lead to remote code execution. Redis 6.2.23, 7.2.15, and 7.4.10",
+      "url": "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T06:58:27+00:00",
+      "published_ts": 1784876307.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Redis"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "4c27d1b0d97b64fb",
       "title": "Russian Espionage Group Exploited Zimbra Zero-Day to Steal Mail and 2FA Codes",
       "summary": "A Russian state-supported espionage group spent months reading Western mailboxes through a then-unknown flaw in Zimbra's webmail client. The payload goes after the last 90 days of email, the organization's entire email directory, the password saved in the browser and the codes kept for two-factor recovery. Opening the message was enough to start it. The NSA, CISA and partner agencies published",
@@ -232,33 +198,6 @@
       ],
       "products": [
         "Zimbra"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "b796d81f00f391fa",
-      "title": "New msaRAT malware uses Chrome, Edge browsers to route C2 traffic",
-      "summary": "The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T10:00:00+00:00",
-      "published_ts": 1784800800.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Chrome",
-        "Edge"
       ],
       "actively_exploited": true,
       "cvss": null,
@@ -315,28 +254,25 @@
       "related_sources": []
     },
     {
-      "id": "08af8b72f9124a0c",
-      "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
-      "summary": "Attackers have begun to exploit two critical vulnerabilities in WordPress that, when combined together, enable unauthenticated remote code execution (RCE) and complete compromise of vulnerable websites. The two security flaws, tracked as CVE-2026-63030 and CVE-2026-60137, have been codenamed wp2shell. \"By the early hours of Saturday morning (UTC), successful exploitation was already well",
-      "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-      "source": "The Hacker News",
+      "id": "b796d81f00f391fa",
+      "title": "New msaRAT malware uses Chrome, Edge browsers to route C2 traffic",
+      "summary": "The Chaos ransomware gang is using a new backdoor dubbed msaRAT that hides command-and-control (C2) communication by routing it through the Chrome or Edge browsers. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-21T08:59:30+00:00",
-      "published_ts": 1784624370.0,
-      "cves": [
-        "CVE-2026-60137",
-        "CVE-2026-63030"
-      ],
+      "published": "2026-07-23T10:00:00+00:00",
+      "published_ts": 1784800800.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "WordPress"
+        "Chrome",
+        "Edge"
       ],
       "actively_exploited": true,
       "cvss": null,
@@ -416,7 +352,7 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -446,7 +382,7 @@
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -476,369 +412,20 @@
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "36123ed6ae2fa542",
-      "title": "Google Chrome 150 Update Fixes Four High-Severity Security Vulnerabilities",
-      "summary": "Google Chrome version 150.0.7871.186 has addressed four high-severity vulnerabilities that affect core browser components, including Codecs, WebMCP, Blink, and Input. While Google has not reported any evidence indicating that these vulnerabilities are actively being exploited, the company has restricted access to technical bug reports and related information until a majority of Chrome users receive the [&#8230;] The post Google Chrome 150 Update Fixes Four High-Severity Security Vulnerabilities appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/google-chrome-150-update/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "dbf2fadb9f77b74a",
+      "title": "Vatican's Official Prayer App Leaks 700K+ Global Users' PII",
+      "summary": "A porous API endpoint exposes, names, email addresses, location, and site status, all of which can be easily gleaned by anyone with a browser.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/vatican-official-prayer-app-leaks-700k-pii",
+      "source": "Dark Reading",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-24T07:33:09+00:00",
-      "published_ts": 1784878389.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Chrome"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "3fbb23fd14412580",
-      "title": "Attackers Abuse Microsoft Teams to Impersonate IT Support and Steal Corporate Access",
-      "summary": "Attackers are increasingly abusing Microsoft Teams to impersonate internal IT support and trick employees into handing over remote access and corporate credentials, even as traditional email phishing volumes tied to major platforms like Tycoon2FA decline. Microsoft’s recent email threat landscape data for Q2 2026 shows a sharp downstream impact from the March disruption of the [&#8230;] The post Attackers Abuse Microsoft Teams to Impersonate IT Support and Steal Corporate Access appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/microsoft-teams-abused-2/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T06:11:27+00:00",
-      "published_ts": 1784873487.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "1d798c734b7b4804",
-      "title": "Weintek cMT3092X",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a non-privileged user to escalate privileges or view the credentials of other users. The following versions of Weintek cMT3092X are affected: cMT3092X firmware &lt;20210218&nbsp; EasyWeb &lt;v2.1.20 CVSS Vendor Equipment Vulnerabilities v3 8.8 Weintek Weintek cMT3092X Reliance on Cookies without Validation and Integrity Checking in a Security Decision, Incorrect Permission Assignment for Critical Resource, Plaintext Storage of a Password, Incorrect User Management Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Taiwan Vulnerabilities Expand All + CVE-2026-60134 Weintek cMT3092X HMI allows a non-privileged user to modify cookies to gain elevated privileges. View CVE Details Affected Products Weintek cMT3092X Vendor: Weintek Product Version: Weintek cMT3092X firmware: &lt;20210218, Weintek EasyWeb: &lt;v2.1.20 Product Status: known_affected Remediations Vendor fix Weintek recommends users apply the patch package named cmt_typeB_20260316_007.patch, which contains a newer EasyWeb 2.3.17-typeb. This fix will be delivered as a patch-only update; no separate standard firmware release is planned. Users may request the patch directly from Weintek support (https://www.weintek.com/globalw/Support/Knowledge.aspx) or from distributors. https://www.weintek.com/globalw/Support/Knowledge.aspx Mitigation Weintek has published a do",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-60134"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "3c04aa5e44575865",
-      "title": "Johnson Controls XAAP Android",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in an attacker obtaining confidential information from the device. The following versions of Johnson Controls XAAP Android are affected: XAAP Android &lt;1.53 CVSS Vendor Equipment Vulnerabilities v3 3.3 Johnson Controls Johnson Controls XAAP Android Cleartext Storage of Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-34490 A cleartext storage weakness exists in the Fire Solutions Android application, which stores application data locally on the device without encryption. An attacker with physical access to the device and one able to compromise the device through a separate, unrelated flaw, could potentially read this data in plaintext. Exploitation does not require network access and is limited to the local device environment. View CVE Details Affected Products Johnson Controls XAAP Android Vendor: Johnson Controls Product Version: Johnson Controls XAAP Android: &lt;1.53 Product Status: known_affected Remediations Vendor fix Johnson Controls recommends users update the XAAP Android application to version 1.53 or later, which contains the fix for this vulnerability. Mitigation Johnson Controls recommends users restrict physical access to devices running the XAAP Android application. Mitigation Johnson Controls recommends users ensure devices are har",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-02",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-34490"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "8f9e7aafcf1e1b06",
-      "title": "MZ Automation libIEC61850",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an unauthenticated network-adjacent attacker to crash critical IEC 61850 services or execute arbitrary code, disrupting or compromising protection, visibility, and control functions. The following versions of MZ Automation libIEC61850 are affected: libIEC61850 &gt;=v1.0.0|&lt;=v1.6.1&nbsp; CVSS Vendor Equipment Vulnerabilities v3 8.1 MZ Automation MZ Automation libIEC61850 Stack-based Buffer Overflow, Heap-based Buffer Overflow, Improper Handling of Syntactically Invalid Structure, NULL Pointer Dereference Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-50039 The affected product is vulnerable to a stack-based buffer overflow, which may allow an attacker to cause a memory corruption via a ReadRequest. View CVE Details Affected Products MZ Automation libIEC61850 Vendor: MZ Automation Product Version: MZ Automation libIEC61850: &gt;=v1.0.0|&lt;=v1.6.1 Product Status: known_affected Remediations Vendor fix MZ Automation recommends updating to the latest build of the libIEC61850 standard. Documentation can be found at https://github.com/mz-automation/libiec61850. https://github.com/mz-automation/libiec61850 Relevant CWE: CWE-121 Stack-based Buffer Overflow Metrics CVSS Version Base Score Base Severity Vector String 3.1 7.5 HIGH CVSS:3.1/AV:N",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-06",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-50039"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "7fd9998143917a1f",
-      "title": "Johnson Controls C-CURE 9000 and Victor application server",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker with network access to achieve remote code execution. The following versions of Johnson Controls C-CURE 9000 and Victor application server are affected: C-CURE 9000 and victor &lt;=v2.90_v3.0&nbsp; victor Web &lt;=v7.1&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.6 Johnson Controls Johnson Controls C-CURE 9000 and Victor application server Server-Side Request Forgery (SSRF), Execution with Unnecessary Privileges Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-21655 Under certain circumstances, successful exploitation of this vulnerability could allow an unauthenticated attacker on the adjacent network to achieve arbitrary code execution on the C-CURE 9000 or victor application server, as well as connected clients (e.g., workstations of physical security personnel). Such an attack could impact physical security controls. View CVE Details Affected Products Johnson Controls C-CURE 9000 and Victor application server Vendor: Johnson Controls Product Version: Johnson Controls C-CURE 9000 and victor: &lt;=v2.90_v3.0 Product Status: known_affected Remediations Mitigation Johnson Controls recommends the following defensive measures to help reduce the risk of exploitation: (CVE-2026-21655) Upgrade to C-CURE 9000 / victor version 3.20 or later, which addresses the",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-21655"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "d7e809abddf4a49b",
-      "title": "Rockwell Automation 1718-AENTR/1719-AENTR",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow for an attacker to cause a denial-of-service condition on the product. The following versions of Rockwell Automation 1718-AENTR/1719-AENTR are affected: 1718/ 1719 Ex I/O 3.011&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation 1718-AENTR/1719-AENTR Allocation of Resources Without Limits or Throttling Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-9140 A denial-of-service security issue exists in the 1719-AENTR. The security issue stems from improper handling of a UDP unicast network storm, which causes the device to become overloaded and lose communication. A power cycle is required to recover. View CVE Details Affected Products Rockwell Automation 1718-AENTR/1719-AENTR Vendor: Rockwell Automation Product Version: Rockwell Automation 1718/ 1719 Ex I/O: 3.011 Product Status: known_affected Remediations Vendor fix Rockwell Automation recommends users to upgrade to 1718/ 1719 Ex I/O version 3.012 or later. Mitigation Customers using the affected software, who are not able to upgrade to one of the corrected versions, should use Rockwell Automation's security best practices (https://support.rockwellautomation.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight). https://support.rockwellautomation.com/app/answers/answer",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-08",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2026-9140"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "b172332ed24d3689",
-      "title": "Siemens RUGGEDCOM APE1808 with Palo Alto Networks Virtual NGFW",
-      "summary": "View CSAF Summary Palo Alto Networks has published [1] information on vulnerabilities in PAN-OS. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. [1] https://security.paloaltonetworks.com/ The following versions of Siemens RUGGEDCOM APE1808 with Palo Alto Networks Virtual NGFW are affected: RUGGEDCOM APE1808 vers:all/*&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.2 Siemens Siemens RUGGEDCOM APE1808 with Palo Alto Networks Virtual NGFW Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'), Missing Authorization, Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-0266 A cross-site scripting (XSS) vulnerability in Palo Alto Networks PAN-OS® software enables a malicious authenticated administrator to store a JavaScript payload using the web interface. This issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series). Cloud NGFW and Prisma® Access are not affected by this vulnerability. View CVE Details Affected Products Siemens RUGGEDCOM APE1808 with Palo Alto Networks Virtual NGFW Vendor: Siemens Product ",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-02",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2026-0266"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "c45266ac2a78ffb1",
-      "title": "Rockwell Automation 1734 POINT I/O",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow for an attacker to cause a denial-of-service condition on the product. The following versions of Rockwell Automation 1734 POINT I/O are affected: 1734 POINT I/O 3.023&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation 1734 POINT I/O Allocation of Resources Without Limits or Throttling Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-10573 A denial-of-service security issue exists in 1734 POINT I/O module. The security issue stems from improper handling of crafted CIP messages, which can cause the module to enter a faulted state. A restart is required to recover. View CVE Details Affected Products Rockwell Automation 1734 POINT I/O Vendor: Rockwell Automation Product Version: Rockwell Automation 1734 POINT I/O: 3.023 Product Status: known_affected Remediations Mitigation Rockwell Automation recommends users are to migrate to 5034-OB8. Mitigation Customers using the affected software, who are not able to upgrade to one of the corrected versions, should use Rockwell Automation's security best practices (https://support.rockwellautomation.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight). https://support.rockwellautomation.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight Mitigation For more information, ",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-09",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2026-10573"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "1044d0d2d0059831",
-      "title": "Lampion Malware Targets Portuguese Users With Multistage Phishing and 750MB RAT Payload",
-      "summary": "A highly targeted Lampion malware campaign abusing localized phishing lures to compromise users in Portugal. The activity reflects a continued evolution of the Brazilian-origin banking trojan, first documented in 2019, which has consistently focused on Portuguese-speaking victims rather than domestic Brazilian targets. In the latest campaign, attackers leverage convincing financial-themed phishing emails masquerading as routine [&#8230;] The post Lampion Malware Targets Portuguese Users With Multistage Phishing and 750MB RAT Payload appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/lampion-malware-targets-portuguese/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T07:00:08+00:00",
-      "published_ts": 1784876408.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Global",
-        "Latin America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c747a331169d55aa",
-      "title": "Claude Cowork Sandbox Escape Flaw Lets Attackers Access SSH Keys and Cloud Credentials",
-      "summary": "A newly revealed sandbox escape vulnerability affecting Anthropic’s Claude Cowork could allow untrusted content processed by the AI agent to access sensitive files on a macOS host. This includes SSH private keys, cloud credentials, and other data that are available to the logged-in user. Security researcher Oren Yomtov from Accomplish has named this attack path [&#8230;] The post Claude Cowork Sandbox Escape Flaw Lets Attackers Access SSH Keys and Cloud Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/claude-cowork-sandbox-escape-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T06:41:56+00:00",
-      "published_ts": 1784875316.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1d1c38b7f9611bfd",
-      "title": "Top 10 Best 24/7 Security Monitoring Companies in 2026",
-      "summary": "A comprehensive and proactive security posture is non-negotiable for organizations in 2026. With a rapidly evolving threat landscape and a global shortage of cybersecurity talent, relying on an internal team alone to provide round-the-clock protection is often unfeasible. 24/7 security monitoring companies fill this critical gap by serving as an extension of an organization&#8217;s security [&#8230;] The post Top 10 Best 24/7 Security Monitoring Companies in 2026 appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/24-7-security-monitoring-compaines/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T06:11:43+00:00",
-      "published_ts": 1784873503.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e72498fa22b53750",
-      "title": "Hackers Weaponize Notepad++ Plugins to Silently Infect Windows Systems",
-      "summary": "CERT-UA has issued a warning regarding the UAC-0099 threat cluster, which has revised its malware delivery method by exploiting the legitimate Notepad++ application to load a malicious DLL disguised as a plugin. This campaign, observed since mid-summer 2026, introduces two newly identified tools, LUNCHPOKE and BURNYBEAR, along with an updated MATCHBOIL.V2 loader. This activity highlights [&#8230;] The post Hackers Weaponize Notepad++ Plugins to Silently Infect Windows Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/hackers-weaponize-notepad-plugins/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T05:02:07+00:00",
-      "published_ts": 1784869327.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "27210187db1830a9",
-      "title": "Next.js Patches Nine Security Flaws Enabling SSRF, Middleware Bypass, DoS, and Internal Endpoint Disclosure",
-      "summary": "The Next.js team has released security updates that address nine vulnerabilities affecting the App Router, Server Actions, rewrites, image optimization, caching, and middleware deployments. Organizations are urged to upgrade to Next.js versions 15.5.21 or 16.2.11 immediately, as these updates fix high- and moderate-severity flaws that could lead to server-side request forgery (SSRF), authentication bypass, denial [&#8230;] The post Next.js Patches Nine Security Flaws Enabling SSRF, Middleware Bypass, DoS, and Internal Endpoint Disclosure appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/next-js-patches-nine-security-flaws/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T04:38:37+00:00",
-      "published_ts": 1784867917.0,
+      "published": "2026-07-24T13:00:00+00:00",
+      "published_ts": 1784898000.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
@@ -905,27 +492,27 @@
       "related_sources": []
     },
     {
-      "id": "7821c3972327ec35",
-      "title": "Chaos Ransomware Uses msaRAT to Route C2 Traffic Through Headless Chrome and Edge",
-      "summary": "The Chaos ransomware group ran its command-and-control through the victim's own browser. Cisco Talos on Thursday detailed msaRAT, the Rust implant behind it, found on a compromised Windows machine ahead of the encryptor. The implant never opens an outbound connection of its own. Its process talks to 127.0.0.1 and nothing else. It starts Chrome or Edge in headless mode and drives the browser",
-      "url": "https://thehackernews.com/2026/07/chaos-ransomware-uses-msarat-to-route.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T13:11:09+00:00",
-      "published_ts": 1784812269.0,
-      "cves": [],
+      "id": "1d798c734b7b4804",
+      "title": "Weintek cMT3092X",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a non-privileged user to escalate privileges or view the credentials of other users. The following versions of Weintek cMT3092X are affected: cMT3092X firmware &lt;20210218&nbsp; EasyWeb &lt;v2.1.20 CVSS Vendor Equipment Vulnerabilities v3 8.8 Weintek Weintek cMT3092X Reliance on Cookies without Validation and Integrity Checking in a Security Decision, Incorrect Permission Assignment for Critical Resource, Plaintext Storage of a Password, Incorrect User Management Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Taiwan Vulnerabilities Expand All + CVE-2026-60134 Weintek cMT3092X HMI allows a non-privileged user to modify cookies to gain elevated privileges. View CVE Details Affected Products Weintek cMT3092X Vendor: Weintek Product Version: Weintek cMT3092X firmware: &lt;20210218, Weintek EasyWeb: &lt;v2.1.20 Product Status: known_affected Remediations Vendor fix Weintek recommends users apply the patch package named cmt_typeB_20260316_007.patch, which contains a newer EasyWeb 2.3.17-typeb. This fix will be delivered as a patch-only update; no separate standard firmware release is planned. Users may request the patch directly from Weintek support (https://www.weintek.com/globalw/Support/Knowledge.aspx) or from distributors. https://www.weintek.com/globalw/Support/Knowledge.aspx Mitigation Weintek has published a do",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-23T12:00:00+00:00",
+      "published_ts": 1784808000.0,
+      "cves": [
+        "CVE-2026-60134"
+      ],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific",
+        "Global"
       ],
       "products": [
-        "Chrome",
-        "Edge",
-        "Windows"
+        "Edge"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -934,21 +521,80 @@
       "related_sources": []
     },
     {
-      "id": "4e58297d3c7f1716",
-      "title": "Chaos ransomware's msaRAT: Living off the browser to build a covert C2 channel",
-      "summary": "The Chaos ransomware group uses new malware \"msaRAT\" that hijacks browsers. The malware doesn't communicate directly with C2 but connects through the browser. It enables arbitrary command execution while hiding the attacker's IP from victims via WebRTC over TURN.",
-      "url": "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/",
-      "source": "Cisco Talos",
+      "id": "3c04aa5e44575865",
+      "title": "Johnson Controls XAAP Android",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in an attacker obtaining confidential information from the device. The following versions of Johnson Controls XAAP Android are affected: XAAP Android &lt;1.53 CVSS Vendor Equipment Vulnerabilities v3 3.3 Johnson Controls Johnson Controls XAAP Android Cleartext Storage of Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-34490 A cleartext storage weakness exists in the Fire Solutions Android application, which stores application data locally on the device without encryption. An attacker with physical access to the device and one able to compromise the device through a separate, unrelated flaw, could potentially read this data in plaintext. Exploitation does not require network access and is limited to the local device environment. View CVE Details Affected Products Johnson Controls XAAP Android Vendor: Johnson Controls Product Version: Johnson Controls XAAP Android: &lt;1.53 Product Status: known_affected Remediations Vendor fix Johnson Controls recommends users update the XAAP Android application to version 1.53 or later, which contains the fix for this vulnerability. Mitigation Johnson Controls recommends users restrict physical access to devices running the XAAP Android application. Mitigation Johnson Controls recommends users ensure devices are har",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-02",
+      "source": "CISA Alerts",
       "source_trust": 5,
-      "category": "threat",
-      "published": "2026-07-23T10:00:38+00:00",
-      "published_ts": 1784800838.0,
-      "cves": [],
+      "category": "advisory",
+      "published": "2026-07-23T12:00:00+00:00",
+      "published_ts": 1784808000.0,
+      "cves": [
+        "CVE-2026-34490"
+      ],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8f9e7aafcf1e1b06",
+      "title": "MZ Automation libIEC61850",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an unauthenticated network-adjacent attacker to crash critical IEC 61850 services or execute arbitrary code, disrupting or compromising protection, visibility, and control functions. The following versions of MZ Automation libIEC61850 are affected: libIEC61850 &gt;=v1.0.0|&lt;=v1.6.1&nbsp; CVSS Vendor Equipment Vulnerabilities v3 8.1 MZ Automation MZ Automation libIEC61850 Stack-based Buffer Overflow, Heap-based Buffer Overflow, Improper Handling of Syntactically Invalid Structure, NULL Pointer Dereference Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-50039 The affected product is vulnerable to a stack-based buffer overflow, which may allow an attacker to cause a memory corruption via a ReadRequest. View CVE Details Affected Products MZ Automation libIEC61850 Vendor: MZ Automation Product Version: MZ Automation libIEC61850: &gt;=v1.0.0|&lt;=v1.6.1 Product Status: known_affected Remediations Vendor fix MZ Automation recommends updating to the latest build of the libIEC61850 standard. Documentation can be found at https://github.com/mz-automation/libiec61850. https://github.com/mz-automation/libiec61850 Relevant CWE: CWE-121 Stack-based Buffer Overflow Metrics CVSS Version Base Score Base Severity Vector String 3.1 7.5 HIGH CVSS:3.1/AV:N",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-06",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-23T12:00:00+00:00",
+      "published_ts": 1784808000.0,
+      "cves": [
+        "CVE-2026-50039"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7fd9998143917a1f",
+      "title": "Johnson Controls C-CURE 9000 and Victor application server",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker with network access to achieve remote code execution. The following versions of Johnson Controls C-CURE 9000 and Victor application server are affected: C-CURE 9000 and victor &lt;=v2.90_v3.0&nbsp; victor Web &lt;=v7.1&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.6 Johnson Controls Johnson Controls C-CURE 9000 and Victor application server Server-Side Request Forgery (SSRF), Execution with Unnecessary Privileges Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-21655 Under certain circumstances, successful exploitation of this vulnerability could allow an unauthenticated attacker on the adjacent network to achieve arbitrary code execution on the C-CURE 9000 or victor application server, as well as connected clients (e.g., workstations of physical security personnel). Such an attack could impact physical security controls. View CVE Details Affected Products Johnson Controls C-CURE 9000 and Victor application server Vendor: Johnson Controls Product Version: Johnson Controls C-CURE 9000 and victor: &lt;=v2.90_v3.0 Product Status: known_affected Remediations Mitigation Johnson Controls recommends the following defensive measures to help reduce the risk of exploitation: (CVE-2026-21655) Upgrade to C-CURE 9000 / victor version 3.20 or later, which addresses the",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-23T12:00:00+00:00",
+      "published_ts": 1784808000.0,
+      "cves": [
+        "CVE-2026-21655"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -989,169 +635,31 @@
       "related_sources": []
     },
     {
-      "id": "90102df79c87506e",
-      "title": "Siemens SIDIS Secured SmartPlug",
-      "summary": "View CSAF Summary SIDIS Secured SmartPlug before V7.26.0310 is affected by multiple vulnerabilities in the components OpenSSL, OpenSSH, and several other packages as described below. Siemens has released a new version of SIDIS Secured SmartPlug and recommends to update to the latest version. The following versions of Siemens SIDIS Secured SmartPlug are affected: SIDIS Secured SmartPlug vers:intdot/&lt;7.26.0310&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.8 Siemens Siemens SIDIS Secured SmartPlug Improper Enforcement of Message Integrity During Transmission in a Communication Channel, Reusing a Nonce, Key Pair in Encryption, Out-of-bounds Write, Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Integer Overflow or Wraparound, Out-of-bounds Read, Covert Timing Channel, Detection of Error Condition Without Action, Incorrect Authorization Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2022-23303 The implementations of SAE in hostapd before 2.10 and wpa_supplicant before 2.10 are vulnerable to side channel attacks as a result of cache access patterns. NOTE: this issue exists because of an incomplete fix for CVE-2019-9494. View CVE Details Affected Products Siemens SIDIS Secured SmartPlug Vendor: Siemens Product Version: SIDIS Secured SmartPlug &lt; V7.26.0310 Product Status: known_affected Remediations Vendor fix Update to V7.26",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-04",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
+      "id": "0dd4cd1eb16519a3",
+      "title": "Bing Images Flaws Let Crafted SVGs Run Commands as SYSTEM on Microsoft's Servers",
+      "summary": "A crafted SVG submitted to Bing's image search ran commands as NT AUTHORITY\\SYSTEM on Microsoft's production image-processing workers, and as root on the Linux machines in the same fleet. XBOW's testing got the same result on workers across different hosts and network ranges, so the problem sat in Bing's image tier, not on one bad machine. Microsoft issued two critical CVEs, CVE-2026-32194 and",
+      "url": "https://thehackernews.com/2026/07/bing-images-flaws-let-crafted-svgs-run.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T11:45:17+00:00",
+      "published_ts": 1784893517.0,
       "cves": [
-        "CVE-2019-9494",
-        "CVE-2022-23303"
+        "CVE-2026-32194"
       ],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe",
-        "Global"
+        "Unspecified"
       ],
       "products": [
-        "OpenSSL"
+        "Linux"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f84d861c4eb673c7",
-      "title": "Rockwell Automation FactoryTalk Services Platform",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to impersonate an authorized user on the FTSP server, resulting in unauthorized access to system configurations. The following versions of Rockwell Automation FactoryTalk Services Platform are affected: FactoryTalk Directory (FTSP) 6.60&nbsp; CVSS Vendor Equipment Vulnerabilities v3 7.8 Rockwell Automation Rockwell Automation FactoryTalk Services Platform Weak Authentication Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-10714 A security issue exists within FactoryTalk Services Platform (FTSP), allowing an attacker to bypass JWT signature validation during Okta Web Authentication. The vulnerability stems from the application not verifying that the JWT algorithm is configured for RSA, enabling an attacker to set the algorithm to \"none\" and craft forged tokens. This could allow an authenticated low-privilege user to impersonate any authorized user on the FTSP server, resulting in unauthorized access to system configuration and the ability to grant permissions to other systems protected by FTSP. View CVE Details Affected Products Rockwell Automation FactoryTalk Services Platform Vendor: Rockwell Automation Product Version: Rockwell Automation FactoryTalk Directory (FTSP): 6.60 Product Status: known_affected Remediations Mitigation Users using FactoryTalk S",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-07",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2026-10714"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7c6d42580db86cb4",
-      "title": "Rockwell Automation Studio 5000 Logix Designer",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow for a local attacker to execute arbitrary files, alter configurations, or execute arbitrary code. The following versions of Rockwell Automation Studio 5000 Logix Designer are affected: Studio 5000 Logix Designer V36.00 (CVE-2026-9108) Studio 5000 Logix Designer V35.00 (CVE-2026-9108, CVE-2026-9127, CVE-2026-9128) Studio 5000 Logix Designer V35.01 (CVE-2026-9108) Studio 5000 Logix Designer &gt;=V34.00|&lt;=V34.03 (CVE-2026-9108) Studio 5000 Logix Designer &gt;=V33.00|&lt;=V33.03 (CVE-2026-9108) Studio 5000 Logix Designer &gt;=V32.00|&lt;=V32.04 (CVE-2026-9108, CVE-2026-9127, CVE-2026-9128) Studio 5000 Logix Designer V34.00 (CVE-2026-9127) Studio 5000 Logix Designer V34.01 (CVE-2026-9127) Studio 5000 Logix Designer V33.00 (CVE-2026-9127) Studio 5000 Logix Designer V33.02 (CVE-2026-9127) Studio 5000 Logix Designer &gt;=V34.00|&lt;=V34.02 (CVE-2026-9128) Studio 5000 Logix Designer &gt;=V33.00|&lt;=V33.02 (CVE-2026-9128) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation Studio 5000 Logix Designer Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), Incorrect Authorization, Unquoted Search Path or Element Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-9108 A path traversal security issue exists within Studi",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-10",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2026-9108",
-        "CVE-2026-9127",
-        "CVE-2026-9128"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "73dc069362e2a889",
-      "title": "Siemens CADRA",
-      "summary": "View CSAF Summary CADRA is affected by multiple zlib and Foxit vulnerabilities. Siemens has released a new version for CADRA and recommends to update to the latest version. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens CADRA are affected: CADRA vers:intdot/&lt;2511, vers:all/*&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.8 Siemens Siemens CADRA Improper Input Validation, Incorrect Bitwise Shift of Integer, Out-of-bounds Write, Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Integer Overflow or Wraparound, Access of Resource Using Incompatible Type ('Type Confusion') Background Critical Infrastructure Sectors: Chemical, Commercial Facilities, Communications, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2005-2096 zlib 1.2 and later versions allows remote attackers to cause a denial of service (crash) via a crafted compressed stream with an incomplete code description of a length greater than 1, which leads to a buffer overflow, as demonstrated using a crafted PNG file. View CVE Details Affected Products Siemens CADRA Vendor: Siemens Product Version: CADRA &lt; V2511 Product Status: known_affected Remediations Vendor fix Update to V2511 or later version Relevant CWE: CWE-20 Improper Input Validation Metrics CVSS Version Base Score Base Severity Vector String ",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-06",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2005-2096"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2fea571658bcae46",
-      "title": "Siemens Opcenter X",
-      "summary": "View CSAF Summary Opcenter X before V2604 contain an authentication bypass vulnerability that could allow an attacker to gain full unauthorized access to the application. Siemens has released a new version for Opcenter X and recommends to update to the latest version. The following versions of Siemens Opcenter X are affected: Opcenter X vers:intdot/&lt;2604 CVSS Vendor Equipment Vulnerabilities v3 10 Siemens Siemens Opcenter X Improper Verification of Cryptographic Signature Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-56451 Affected applications do not properly validate the algorithm specified in the JSON Web Token (JWT) header. This could allow an unauthenticated remote attacker to forge arbitrary JWT, bypass authentication mechanisms and impersonate any user including administrative accounts, potentially gaining full unauthorized access to the application. View CVE Details Affected Products Siemens Opcenter X Vendor: Siemens Product Version: Opcenter X &lt; V2604 Product Status: known_affected Remediations Vendor fix Update to V2604 or later version https://support.sw.siemens.com/product/206159703/ Relevant CWE: CWE-347 Improper Verification of Cryptographic Signature Metrics CVSS Version Base Score Base Severity Vector String 3.1 10 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H Acknowledgments Siemens ProductCERT reported this vuln",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2026-56451"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "412504a6e0821700",
-      "title": "Tycon Systems TPDIN-Monitor-WEB2",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker accessing sensitive credentials, disrupting connected infrastructure, or manipulating physical equipment, which could present a physical safety risk. The following versions of Tycon Systems TPDIN-Monitor-WEB2 are affected: TPDIN-Monitor-WEB2 2.3.9&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.8 Tycon Systems Tycon Systems TPDIN-Monitor-WEB2 Authentication Bypass Using an Alternate Path or Channel, Cleartext Storage of Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-61884 The web management interface of the affected device does not perform server-side validation of credentials during the login process. By submitting empty values for both credential fields, an unauthenticated remote attacker can bypass the authentication check and establish a valid administrative session. This grants full access to device controls including power relay management, device reboot, remote access service configuration, and network settings, which could allow an attacker to disrupt connected infrastructure or cause physical damage to equipment. View CVE Details Affected Products Tycon Systems TPDIN-Monitor-WEB2 Vendor: Tycon Systems Product Version: Tycon Systems TPDIN-Monitor-WEB2: 2.3.9 Product Status: known_affected Remediations Vendor fix Tyc",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2026-61884"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1201,28 +709,6 @@
       "products": [
         "Windows"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d35191eb4fbe80cd",
-      "title": "136 Malicious RubyGems Packages Deploy XMRig Miner and Spread via SSH",
-      "summary": "A large-scale supply chain attack has flooded RubyGems with 136 trojanized packages that deploy an XMRig Monero miner and self-propagate via SSH, underscoring systemic weaknesses in language ecosystems beyond npm and PyPI. On July 22, 2026, researchers Moe Ghasemisharif, Ruian Duan, Zhanhao Chen, and Daiping Liu documented a coordinated cryptojacking campaign abusing RubyGems as the [&#8230;] The post 136 Malicious RubyGems Packages Deploy XMRig Miner and Spread via SSH appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/136-malicious-rubygems-packages/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-24T04:50:30+00:00",
-      "published_ts": 1784868630.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1281,25 +767,26 @@
       "related_sources": []
     },
     {
-      "id": "4642c24df6d5531f",
-      "title": "China-Nexus JadeProx Uses New TriBack Loader in Government and Healthcare Attacks",
-      "summary": "An exposed Alibaba Cloud server has revealed a China-nexus operation that Group-IB tracks as JadeProx. The cluster has targeted government, healthcare, and education organizations across Asia and Latin America with a previously undocumented Windows loader called TriBack Loader. Group-IB found the server in mid-April 2026 in Alibaba Cloud's Singapore region; it was offline by the time the report",
-      "url": "https://thehackernews.com/2026/07/china-nexus-jadeprox-uses-new-triback.html",
+      "id": "7821c3972327ec35",
+      "title": "Chaos Ransomware Uses msaRAT to Route C2 Traffic Through Headless Chrome and Edge",
+      "summary": "The Chaos ransomware group ran its command-and-control through the victim's own browser. Cisco Talos on Thursday detailed msaRAT, the Rust implant behind it, found on a compromised Windows machine ahead of the encryptor. The implant never opens an outbound connection of its own. Its process talks to 127.0.0.1 and nothing else. It starts Chrome or Edge in headless mode and drives the browser",
+      "url": "https://thehackernews.com/2026/07/chaos-ransomware-uses-msarat-to-route.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-23T12:20:23+00:00",
-      "published_ts": 1784809223.0,
+      "published": "2026-07-23T13:11:09+00:00",
+      "published_ts": 1784812269.0,
       "cves": [],
       "sectors": [
-        "Government & Public Services",
-        "Life Sciences & Health Care"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Asia-Pacific",
-        "Latin America"
+        "Unspecified"
       ],
       "products": [
+        "Chrome",
+        "Edge",
         "Windows"
       ],
       "actively_exploited": false,
@@ -1309,78 +796,17 @@
       "related_sources": []
     },
     {
-      "id": "101b76f1ac9ab788",
-      "title": "New RefluXFS Linux flaw lets attackers gain root privileges",
-      "summary": "A nine-year-old race condition vulnerability in the Linux kernel's XFS filesystem, tracked as CVE-2026-64600, allows local attackers to overwrite protected files and gain root privileges. [...]",
-      "url": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T11:40:16+00:00",
-      "published_ts": 1784806816.0,
-      "cves": [
-        "CVE-2026-64600"
-      ],
-      "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html",
-          "title": "Nine-Year-Old RefluXFS Linux Flaw Gives Local Users Root on Default RHEL Installs",
-          "published": "2026-07-23T08:04:35+00:00"
-        }
-      ]
-    },
-    {
-      "id": "ed41c029ae57bbfe",
-      "title": "Preview: Cisco Talos at Black Hat USA 2026",
-      "summary": "Here’s some of the ways Talos is showing up at Black Hat, alongside our friends at Cisco and Splunk.",
-      "url": "https://blog.talosintelligence.com/preview-cisco-talos-at-black-hat-usa-2026/",
+      "id": "4e58297d3c7f1716",
+      "title": "Chaos ransomware's msaRAT: Living off the browser to build a covert C2 channel",
+      "summary": "The Chaos ransomware group uses new malware \"msaRAT\" that hijacks browsers. The malware doesn't communicate directly with C2 but connects through the browser. It enables arbitrary command execution while hiding the attacker's IP from victims via WebRTC over TURN.",
+      "url": "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/",
       "source": "Cisco Talos",
       "source_trust": 5,
       "category": "threat",
-      "published": "2026-07-23T10:00:14+00:00",
-      "published_ts": 1784800814.0,
+      "published": "2026-07-23T10:00:38+00:00",
+      "published_ts": 1784800838.0,
       "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "828f0ee610bd667d",
-      "title": "Google Adds Selfie Video Recovery for Users Locked Out of Their Accounts",
-      "summary": "Google on Thursday announced a new way for users to sign-in to their accounts by letting them take a selfie video. The selfie for sign-in, per the tech giant, is another option on top of existing recovery methods to log in to an account, including an email address or a phone number. The idea is to use a video selfie as a way to regain access if a user ever gets locked out or doesn't have access",
-      "url": "https://thehackernews.com/2026/07/google-adds-selfie-video-recovery-for.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T10:00:00+00:00",
-      "published_ts": 1784800800.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -1470,34 +896,146 @@
       "related_sources": []
     },
     {
-      "id": "7a6799db2f6e579c",
-      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2021-27137 DD-WRT Stack-Based Buffer Overflow Vulnerability CVE-2026-0770 Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability &nbsp; CVE-2026-63030 WordPress Core Interpretation Conflict Vulnerability &nbsp; CVE-2026-60137 WordPress Core SQL Injection Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CI",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/07/21/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
-      "cves": [
-        "CVE-2021-27137",
-        "CVE-2026-0770",
-        "CVE-2026-60137",
-        "CVE-2026-63030"
-      ],
+      "id": "8dae30f5abcbb694",
+      "title": "AegisAI Raises $36 Million for AI-Powered Email Security",
+      "summary": "The company has raised a total of $49 million in funding, including from Battery Ventures, Accel and Foundation Capital. The post AegisAI Raises $36 Million for AI-Powered Email Security appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/aegisai-raises-36-million-for-ai-powered-email-security/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T12:01:18+00:00",
+      "published_ts": 1784894478.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "WordPress"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "221de8d6e809e1a4",
+      "title": "Seeing AI Agents Is Not Enough. Security Teams Must Enforce What They Can Do",
+      "summary": "AI agent security is moving through a familiar maturity curve: adoption, then visibility, and finally, control. But what we've collectively discovered is that enforcing least privilege for AI agents is harder than we ever imagined. This is why there are so many approaches, from prompt filtering to identity-layer access controls. Where we've collectively landed is that understanding the intent of",
+      "url": "https://thehackernews.com/2026/07/seeing-ai-agents-is-not-enough-security.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T11:30:00+00:00",
+      "published_ts": 1784892600.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b2370cb5e91d2b8a",
+      "title": "Man gets six years for hacking 750 women's Snapchat accounts",
+      "summary": "An Illinois man was sentenced on Tuesday to 76 months in prison and three years of supervised release for hacking the Snapchat accounts of over 750 women to steal nude photos. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/man-gets-six-years-for-hacking-750-womens-snapchat-accounts/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T11:17:19+00:00",
+      "published_ts": 1784891839.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c90d78ffa40e5c54",
+      "title": "Hacker Runs Hermes AI Agent Unattended for Post-Exploitation at Thai Finance Ministry",
+      "summary": "Someone installed a popular AI assistant on a rented server, switched off the setting that makes it ask permission before running risky commands, and pointed it at Thailand's Ministry of Finance, which runs the country's treasury and tax collection. The agent then worked through the ministry's network on its own, checking hosts for ways to gain root access, hunting through file systems, and",
+      "url": "https://thehackernews.com/2026/07/hacker-runs-hermes-ai-agent-unattended.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T10:15:29+00:00",
+      "published_ts": 1784888129.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9f99983987893e58",
+      "title": "Golden Chickens Resurfaces With Four New Malware Families and Modular Implants",
+      "summary": "The threat actors behind the Golden Chickens malware-as-a-service (MaaS) ecosystem have resurfaced with four new malware families, indicating that the operators are showing no signs of stopping despite extensive public disclosures into their inner workings. The malware families in question are: TinyEgg, ChonkyChicken, a modularized variant of ChonkyChicken, and a modified web browser credential",
+      "url": "https://thehackernews.com/2026/07/golden-chickens-resurfaces-with-four.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T10:09:24+00:00",
+      "published_ts": 1784887764.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e687b354a967f3b4",
+      "title": "NodeBB Patches Eight AI-Found Flaws Exposing Admin Access and Private Chats",
+      "summary": "Eight security flaws in NodeBB went public on Wednesday, along with the code to exploit them. Aikido Security rates all eight as high severity and says its AI pentest agents found them in a six-hour review of the forum software's source code. Every version before 4.14.0 is affected. NodeBB has fixed them all, and administrators should be on 4.14.2. The simplest one takes a settings change. A",
+      "url": "https://thehackernews.com/2026/07/nodebb-patches-eight-ai-found-flaws.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T07:41:06+00:00",
+      "published_ts": 1784878866.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1816,23 +1354,27 @@
       "related_sources": []
     },
     {
-      "id": "da4135c51c30641f",
-      "title": "Major Australian energy supplier confirms customer data compromised",
-      "summary": "Origin Energy said it was working to figure out how many Australians were affected by a recent data breach.",
-      "url": "https://therecord.media/australia-origin-energy-data-breach",
-      "source": "The Record",
+      "id": "4642c24df6d5531f",
+      "title": "China-Nexus JadeProx Uses New TriBack Loader in Government and Healthcare Attacks",
+      "summary": "An exposed Alibaba Cloud server has revealed a China-nexus operation that Group-IB tracks as JadeProx. The cluster has targeted government, healthcare, and education organizations across Asia and Latin America with a previously undocumented Windows loader called TriBack Loader. Group-IB found the server in mid-April 2026 in Alibaba Cloud's Singapore region; it was offline by the time the report",
+      "url": "https://thehackernews.com/2026/07/china-nexus-jadeprox-uses-new-triback.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-23T13:20:00+00:00",
-      "published_ts": 1784812800.0,
+      "published": "2026-07-23T12:20:23+00:00",
+      "published_ts": 1784809223.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Government & Public Services",
+        "Life Sciences & Health Care"
       ],
       "regions": [
-        "Asia-Pacific"
+        "Asia-Pacific",
+        "Latin America"
       ],
-      "products": [],
+      "products": [
+        "Windows"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1840,97 +1382,59 @@
       "related_sources": []
     },
     {
-      "id": "9c446e54b5625118",
-      "title": "Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models",
-      "summary": "SentinelOne’s new benchmark, built on the Fast16 case, shows which AI models can sustain a malware investigation and which cannot. The post Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/nuclear-sabotage-malware-benchmark-trips-up-most-frontier-ai-models/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T12:42:12+00:00",
-      "published_ts": 1784810532.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8750a0e761527313",
-      "title": "EU fines Google $1 billion for search, app store antitrust violations",
-      "summary": "The European Commission fined Google €890 million ($1 billion) on Thursday after finding the company had violated the European Union's Digital Markets Act (DMA), which ensures fair online competition. [...]",
-      "url": "https://www.bleepingcomputer.com/news/google/eu-fines-google-1-billion-for-digital-markets-act-breaches-in-search-and-play-store/",
+      "id": "101b76f1ac9ab788",
+      "title": "New RefluXFS Linux flaw lets attackers gain root privileges",
+      "summary": "A nine-year-old race condition vulnerability in the Linux kernel's XFS filesystem, tracked as CVE-2026-64600, allows local attackers to overwrite protected files and gain root privileges. [...]",
+      "url": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-23T12:33:19+00:00",
-      "published_ts": 1784809999.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
+      "published": "2026-07-23T11:40:16+00:00",
+      "published_ts": 1784806816.0,
+      "cves": [
+        "CVE-2026-64600"
       ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b7bd88a8fcc80c92",
-      "title": "Upbound Group Says Data Breach Led to $13 Million in Fraudulent Contract Losses",
-      "summary": "Hackers recently obtained non-sensitive customer information and other documents from the company. The post Upbound Group Says Data Breach Led to $13 Million in Fraudulent Contract Losses appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/upbound-group-says-data-breach-led-to-13-million-in-fraudulent-contract-losses/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T10:49:10+00:00",
-      "published_ts": 1784803750.0,
-      "cves": [],
       "sectors": [
+        "Consumer",
         "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a8a756e52a8f4545",
-      "title": "Microsoft working to fix Exchange Online mailbox quarantine issue",
-      "summary": "Microsoft is working to resolve an ongoing Exchange Online issue that has been mistakenly quarantining customers' mailboxes since Sunday. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T09:20:10+00:00",
-      "published_ts": 1784798410.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "Exchange"
+        "Linux"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html",
+          "title": "Nine-Year-Old RefluXFS Linux Flaw Gives Local Users Root on Default RHEL Installs",
+          "published": "2026-07-23T08:04:35+00:00"
+        }
+      ]
+    },
+    {
+      "id": "ed41c029ae57bbfe",
+      "title": "Preview: Cisco Talos at Black Hat USA 2026",
+      "summary": "Here’s some of the ways Talos is showing up at Black Hat, alongside our friends at Cisco and Splunk.",
+      "url": "https://blog.talosintelligence.com/preview-cisco-talos-at-black-hat-usa-2026/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-07-23T10:00:14+00:00",
+      "published_ts": 1784800814.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1938,22 +1442,22 @@
       "related_sources": []
     },
     {
-      "id": "47db46e167ec3483",
-      "title": "US Warns of Iranian Hackers Targeting Siemens, Schneider, and Rockwell ICS Devices",
-      "summary": "An updated advisory from federal agencies provides information on the techniques used to hack programmable logic controllers. The post US Warns of Iranian Hackers Targeting Siemens, Schneider, and Rockwell ICS Devices appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/us-warns-of-iranian-hackers-targeting-siemens-schneider-and-rockwell-ics-devices/",
-      "source": "SecurityWeek",
+      "id": "828f0ee610bd667d",
+      "title": "Google Adds Selfie Video Recovery for Users Locked Out of Their Accounts",
+      "summary": "Google on Thursday announced a new way for users to sign-in to their accounts by letting them take a selfie video. The selfie for sign-in, per the tech giant, is another option on top of existing recovery methods to log in to an account, including an email address or a phone number. The idea is to use a video selfie as a way to regain access if a user ever gets locked out or doesn't have access",
+      "url": "https://thehackernews.com/2026/07/google-adds-selfie-video-recovery-for.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-23T05:28:50+00:00",
-      "published_ts": 1784784530.0,
+      "published": "2026-07-23T10:00:00+00:00",
+      "published_ts": 1784800800.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Middle East"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2004,29 +1508,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "add6b930e81c7fda",
-      "title": "South Korea discloses data breach impacting diplomats worldwide",
-      "summary": "South Korea disclosed that hackers breached the National Diplomatic Academy's online education system for ten months and stole personal information belonging to current and former employees of the Ministry of Foreign Affairs (MFA), including overseas diplomats. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/south-korea-discloses-data-breach-impacting-diplomats-worldwide/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-22T20:06:54+00:00",
-      "published_ts": 1784750814.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2185,28 +1666,68 @@
       "related_sources": []
     },
     {
-      "id": "c26b387d8eb50646",
-      "title": "Siemens IAM Client",
-      "summary": "View CSAF Summary Multiple Siemens products are affected by unquoted search path vulnerability in IAM Client. This could allow an authenticated local attacker to perform privilege escalation. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available. The following versions of Siemens IAM Client are affected: COMOS V10.4.5 vers:intdot/&lt;10.4.5.0.2&nbsp; COMOS V10.6 vers:intdot/&lt;10.6.1&nbsp; Designcenter NX vers:intdot/&lt;2512.7000&nbsp; Simcenter 3D vers:intdot/&lt;2512.7000&nbsp; Simcenter Femap V2506 vers:intdot/&lt;2506.0003&nbsp; Simcenter Femap V2512 vers:intdot/&lt;2512.0002&nbsp; Simcenter Nastran vers:intdot/&lt;2606&nbsp; Simcenter STAR-CCM+ vers:intdot/&lt;2606&nbsp; Solid Edge SE2025 vers:intdot/&lt;225.0.13.3&nbsp; Solid Edge SE2026 vers:intdot/&lt;226.0.04.003&nbsp; Teamcenter Visualization V2412 vers:intdot/&lt;2412.0012&nbsp; Teamcenter Visualization V2506 vers:intdot/&lt;2506.0009&nbsp; Teamcenter Visualization V2512 vers:intdot/&lt;2512.2605&nbsp; Tecnomatix Plant Simulation V2404 vers:intdot/&lt;2404.0022&nbsp; Tecnomatix Plant Simulation V2504 vers:intdot/&lt;2504.0010&nbsp; Tecnomatix Process Simulate vers:intdot/&lt;2606&nbsp; CVSS Vendor Equipment Vulnerabilities v3 6.7 Siemens Siemens IAM Client Untrusted Search Path Background Critical Infrastructure Sectors: Chemical",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-05",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-21T12:00:00+00:00",
-      "published_ts": 1784635200.0,
+      "id": "ea6b1dd7594c384d",
+      "title": "Europol flags 4,340 URLs for removal in 'The Com' crackdown",
+      "summary": "Europol has flagged 4,340 URLs for removal during a multi-week operation targeting online content linked to \"The Com,\" a loosely organized network of nihilistic violent extremist groups. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/europol-flags-4-340-urls-for-removal-in-the-com-crackdown/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T12:56:53+00:00",
+      "published_ts": 1784897813.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
+      "sectors": [],
+      "regions": [
+        "Europe"
       ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "888ac16818e6f96c",
+      "title": "ChatGPT AgentForger Flaw Could Deploy Rogue Workspace Agents via a Phishing Link",
+      "summary": "Cybersecurity researchers have disclosed a critical vulnerability in OpenAI's ChatGPT Workspace Agents that could have allowed a single phishing link to stealthily build, authorize, and deploy an autonomous artificial intelligence (AI) agent inside a victim's organization. The vulnerability has been codenamed AgentForger by Zenity Labs. The issue has since been addressed by OpenAI as of June 8,",
+      "url": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T11:53:55+00:00",
+      "published_ts": 1784894035.0,
+      "cves": [],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Edge"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a06923ef93cc68db",
+      "title": "Industry Reactions to OpenAI Models Hacking Hugging Face: Feedback Friday",
+      "summary": "Industry professionals debate whether it represents a lab containment failure or an unprecedented agentic capability milestone. The post Industry Reactions to OpenAI Models Hacking Hugging Face: Feedback Friday appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/industry-reactions-to-openai-models-hacking-hugging-face-feedback-friday/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-24T11:19:46+00:00",
+      "published_ts": 1784891986.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2233,44 +1754,21 @@
       "related_sources": []
     },
     {
-      "id": "71b306ac7204e7b9",
-      "title": "Claude Cowork Flaw Could Let AI Agent Escape Its VM and Access Mac Files",
-      "summary": "Cybersecurity researchers have uncovered a sandbox escape vulnerability in Anthropic's Claude Cowork that makes it possible to break out of the confines of a Linux virtual machine (VM) within which the agent runs to read or write files anywhere on the Mac. Accomplish AI, which shared details of the vulnerability with The Hacker News ahead of publication, said about 500,000 macOS users running",
-      "url": "https://thehackernews.com/2026/07/claude-cowork-flaw-could-let-ai-agent.html",
-      "source": "The Hacker News",
+      "id": "da4135c51c30641f",
+      "title": "Major Australian energy supplier confirms customer data compromised",
+      "summary": "Origin Energy said it was working to figure out how many Australians were affected by a recent data breach.",
+      "url": "https://therecord.media/australia-origin-energy-data-breach",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-23T13:27:59+00:00",
-      "published_ts": 1784813279.0,
+      "published": "2026-07-23T13:20:00+00:00",
+      "published_ts": 1784812800.0,
       "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
-      "products": [
-        "Linux",
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "6a7c53340b19fc26",
-      "title": "How Synthetic Identity Fraud is Coming for Machine Identities",
-      "summary": "Most people understand identity theft as an attacker stealing a real person's sensitive information and impersonating them. Synthetic identity fraud is much harder to catch. Instead of stealing a real identity, the attacker manufactures a new one, frankensteining together several real data points with fabricated ones to create a person who doesn't exist. Since no real victim monitors misuse, a",
-      "url": "https://thehackernews.com/2026/07/how-synthetic-identity-fraud-is-coming.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T11:45:00+00:00",
-      "published_ts": 1784807100.0,
-      "cves": [],
-      "sectors": [],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2280,67 +1778,97 @@
       "related_sources": []
     },
     {
-      "id": "109950d0656ebba3",
-      "title": "Attackers Weaponize GitHub Actions Runners to Target cPanel and WHM Servers",
-      "summary": "Cybersecurity researchers have shed light on a large-scale campaign that has turned compromised GitHub repositories into distributed attack infrastructure designed to target cPanel and WebHost Manager (WHM) instances. The activity involves malicious Packagist development versions spanning 10 packages associated with a legitimate PHP and DevOps developer, dinushchathurya, between July 12 and 13,",
-      "url": "https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T11:28:54+00:00",
-      "published_ts": 1784806134.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8ff58c3e0c628baf",
-      "title": "Agentic AI Challenges Progress in Confidential Computing",
-      "summary": "Core issues that slowed down adoption of secure data vaults are being resolved by technology, but artificial intelligence poses new ones. Experts have some answers.",
-      "url": "https://www.darkreading.com/endpoint-security/agentic-ai-challenges-progress-in-confidential-computing",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T11:17:51+00:00",
-      "published_ts": 1784805471.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "96fe1f3645e8d762",
-      "title": "Assaf Keren Appointed New CISO of Meta",
-      "summary": "He replaces Guy Rosen, who announced his retirement from the company after 13 years. The post Assaf Keren Appointed New CISO of Meta appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/assaf-keren-appointed-new-ciso-of-meta/",
+      "id": "9c446e54b5625118",
+      "title": "Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models",
+      "summary": "SentinelOne’s new benchmark, built on the Fast16 case, shows which AI models can sustain a malware investigation and which cannot. The post Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/nuclear-sabotage-malware-benchmark-trips-up-most-frontier-ai-models/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-23T09:53:51+00:00",
-      "published_ts": 1784800431.0,
+      "published": "2026-07-23T12:42:12+00:00",
+      "published_ts": 1784810532.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8750a0e761527313",
+      "title": "EU fines Google $1 billion for search, app store antitrust violations",
+      "summary": "The European Commission fined Google €890 million ($1 billion) on Thursday after finding the company had violated the European Union's Digital Markets Act (DMA), which ensures fair online competition. [...]",
+      "url": "https://www.bleepingcomputer.com/news/google/eu-fines-google-1-billion-for-digital-markets-act-breaches-in-search-and-play-store/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-23T12:33:19+00:00",
+      "published_ts": 1784809999.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b7bd88a8fcc80c92",
+      "title": "Upbound Group Says Data Breach Led to $13 Million in Fraudulent Contract Losses",
+      "summary": "Hackers recently obtained non-sensitive customer information and other documents from the company. The post Upbound Group Says Data Breach Led to $13 Million in Fraudulent Contract Losses appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/upbound-group-says-data-breach-led-to-13-million-in-fraudulent-contract-losses/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-23T10:49:10+00:00",
+      "published_ts": 1784803750.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a8a756e52a8f4545",
+      "title": "Microsoft working to fix Exchange Online mailbox quarantine issue",
+      "summary": "Microsoft is working to resolve an ongoing Exchange Online issue that has been mistakenly quarantining customers' mailboxes since Sunday. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-23T09:20:10+00:00",
+      "published_ts": 1784798410.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Exchange"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -2387,30 +1915,6 @@
       ],
       "regions": [
         "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c135595a60df100b",
-      "title": "Upbound says hack caused $13 million in fraudulent Acima leases",
-      "summary": "The Upbound Group fintech company disclosed that threat actors who stole data from its systems leveraged it to create $13 million in Acima leases. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-22T21:43:39+00:00",
-      "published_ts": 1784756619.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2621,129 +2125,117 @@
       "related_sources": []
     },
     {
-      "id": "7e4308aa0e05b70b",
-      "title": "Zimbra Patches Critical SNMP Command Injection and Four XSS Vulnerabilities",
-      "summary": "Zimbra has rolled out fixes to address multiple critical security issues, including a command injection flaw in the Simple Network Management Protocol (SNMP) monitoring component. As many as nine security vulnerabilities have been patched in Zimbra 10.1.20. Topping the list is a command injection vulnerability in the SNMP monitoring component when SNMP notifications are enabled. Also patched",
-      "url": "https://thehackernews.com/2026/07/zimbra-patches-critical-snmp-command.html",
+      "id": "71b306ac7204e7b9",
+      "title": "Claude Cowork Flaw Could Let AI Agent Escape Its VM and Access Mac Files",
+      "summary": "Cybersecurity researchers have uncovered a sandbox escape vulnerability in Anthropic's Claude Cowork that makes it possible to break out of the confines of a Linux virtual machine (VM) within which the agent runs to read or write files anywhere on the Mac. Accomplish AI, which shared details of the vulnerability with The Hacker News ahead of publication, said about 500,000 macOS users running",
+      "url": "https://thehackernews.com/2026/07/claude-cowork-flaw-could-let-ai-agent.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-21T13:18:31+00:00",
-      "published_ts": 1784639911.0,
+      "published": "2026-07-23T13:27:59+00:00",
+      "published_ts": 1784813279.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "Zimbra"
+        "Linux",
+        "macOS"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "b456cb9b1329d005",
-      "title": "Choose Wisely: AI-Generated Coding Risk Varies, a Lot",
-      "summary": "AI-generated code introduces 15 vulnerabilities on average per codebase, but the actual risk depends on framework pairing more than the model used.",
-      "url": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies",
+      "id": "6a7c53340b19fc26",
+      "title": "How Synthetic Identity Fraud is Coming for Machine Identities",
+      "summary": "Most people understand identity theft as an attacker stealing a real person's sensitive information and impersonating them. Synthetic identity fraud is much harder to catch. Instead of stealing a real identity, the attacker manufactures a new one, frankensteining together several real data points with fabricated ones to create a person who doesn't exist. Since no real victim monitors misuse, a",
+      "url": "https://thehackernews.com/2026/07/how-synthetic-identity-fraud-is-coming.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-23T11:45:00+00:00",
+      "published_ts": 1784807100.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "109950d0656ebba3",
+      "title": "Attackers Weaponize GitHub Actions Runners to Target cPanel and WHM Servers",
+      "summary": "Cybersecurity researchers have shed light on a large-scale campaign that has turned compromised GitHub repositories into distributed attack infrastructure designed to target cPanel and WebHost Manager (WHM) instances. The activity involves malicious Packagist development versions spanning 10 packages associated with a legitimate PHP and DevOps developer, dinushchathurya, between July 12 and 13,",
+      "url": "https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-23T11:28:54+00:00",
+      "published_ts": 1784806134.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8ff58c3e0c628baf",
+      "title": "Agentic AI Challenges Progress in Confidential Computing",
+      "summary": "Core issues that slowed down adoption of secure data vaults are being resolved by technology, but artificial intelligence poses new ones. Experts have some answers.",
+      "url": "https://www.darkreading.com/endpoint-security/agentic-ai-challenges-progress-in-confidential-computing",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-21T13:00:00+00:00",
-      "published_ts": 1784638800.0,
+      "published": "2026-07-23T11:17:51+00:00",
+      "published_ts": 1784805471.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "625240f68080a983",
-      "title": "Open-Source Android AI Agents Could Let Invisible Screen Text Run Code on Host PCs",
-      "summary": "An Android app that can draw over other windows and write to shared storage can slip instructions to the AI agent driving that phone, in text no human eye will ever see. Two more steps, and the same app is running commands on the PC driving the agent. Researchers demonstrated that chain, plus six other attacks, against five open-source mobile agent frameworks: AppAgent, AppAgentX,",
-      "url": "https://thehackernews.com/2026/07/open-source-android-ai-agents-could-let.html",
-      "source": "The Hacker News",
+      "id": "96fe1f3645e8d762",
+      "title": "Assaf Keren Appointed New CISO of Meta",
+      "summary": "He replaces Guy Rosen, who announced his retirement from the company after 13 years. The post Assaf Keren Appointed New CISO of Meta appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/assaf-keren-appointed-new-ciso-of-meta/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-21T11:58:00+00:00",
-      "published_ts": 1784635080.0,
+      "published": "2026-07-23T09:53:51+00:00",
+      "published_ts": 1784800431.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android",
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "bcb9216b41179711",
-      "title": "New Bit2Watt Attack Could Let Cloud Tenants Disrupt Power Grids Without an Exploit",
-      "summary": "A cloud tenant using nothing but ordinary GPU access can push a data center's power draw up and down fast enough to threaten the grid it runs on, with no exploit and no break-in. That is the claim behind Bit2Watt, described by three Zhejiang University researchers in a paper accepted to CHES 2026, the IACR's hardware-security conference, and the evidence splits in two: they measured the power",
-      "url": "https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-21T11:24:50+00:00",
-      "published_ts": 1784633090.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "cdd2514ebc2a5dfe",
-      "title": "New Project CAV3RN module abuses Outlook calendar events for C2 and DNS AAAA records for configuration recovery",
-      "summary": "Kaspersky GReAT experts describe a new Project CAV3RN C2 module. It uses Outlook calendar for communication via Microsoft Graph and has a backup connection via DNS AAAA responses.",
-      "url": "https://securelist.com/project-cav3rn-cyberespionage-framework-using-outlook-and-dns/120757/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-07-21T08:40:47+00:00",
-      "published_ts": 1784623247.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Outlook"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2891,74 +2383,6 @@
       "category": "mixed",
       "published": "2026-07-21T21:27:37+00:00",
       "published_ts": 1784669257.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "88ff2ea6b27b3190",
-      "title": "A new extortion cocktail: office printers, small ransoms, and BitLocker",
-      "summary": "We cover two recent cases of BitLocker extortion using RDP, MSSQL, RMM tools, web shells, and printers. The story includes TTPs and recommendations.",
-      "url": "https://securelist.com/new-extortion-scheme-printers-bitlocker/120718/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-07-21T13:00:29+00:00",
-      "published_ts": 1784638829.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a564967238a78df2",
-      "title": "Iran War Cyber Threat Landscape | A Midyear Assessment on What Matters",
-      "summary": "In April, SentinelLABS’ Tom Hegel published an initial assessment of the first five weeks of the conflict. Three months later, the evidence supports refinement.",
-      "url": "https://www.sentinelone.com/labs/iran-war-cyber-threat-landscape-a-midyear-assessment-on-what-matters/",
-      "source": "SentinelOne Labs",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-07-21T13:00:21+00:00",
-      "published_ts": 1784638821.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Middle East"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3d3397fb21f051cf",
-      "title": "N-day is Becoming N-Hour. Patching Faster Won't Save You.",
-      "summary": "Every patch is a confession. The moment a vendor ships a security fix, the diff between the old code and the new code tells anyone watching exactly what was broken and where. Turn that diff back into a working exploit, and you can hit every system that hasn't updated yet. This is N-day exploitation, and it's always been a race: the vendor patches, the clock starts, and defenders try to deploy",
-      "url": "https://thehackernews.com/2026/07/n-day-is-becoming-n-hour-patching.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-21T11:42:23+00:00",
-      "published_ts": 1784634143.0,
       "cves": [],
       "sectors": [],
       "regions": [
