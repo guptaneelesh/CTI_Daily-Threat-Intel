@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-26T08:24:42.991027+00:00",
+  "generated_at": "2026-07-26T13:19:48.153654+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 74,
+    "all": 67,
     "critical": 0,
     "high": 1,
-    "medium": 7,
-    "low": 66,
+    "medium": 6,
+    "low": 60,
     "actively_exploited": 5,
-    "with_cves": 10
+    "with_cves": 3
   },
   "sources_used": [
     "BleepingComputer",
-    "CISA Alerts",
     "Cisco Talos",
     "Dark Reading",
+    "GBHackers",
     "Microsoft Security Blog",
     "SecurityWeek",
     "The Hacker News",
@@ -23,31 +23,30 @@
   ],
   "items": [
     {
-      "id": "c55f293bc9605782",
-      "title": "Russian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite",
-      "summary": "Russian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite Executive summary &nbsp; A group of Russian state-supported cyber actors has been targeting and compromising various Western government and commercial organizations using the Zimbra Collaboration Suite (ZCS) software since at least July 2025. The Russian state-supported advanced persistent threat (APT) group’s activity is tracked in the cybersecurity community under several names (see Cybersecurity industry tracking ), primarily as “LAUNDRY BEAR,” a name initially coined by the Netherlands General Intelligence and Security Service (AIVD) and Defence Intelligence and Security Service (MIVD) [ 1 ]. LAUNDRY BEAR’s targeting is almost certainly to gather sensitive information for the Russian Federation, with these actors primarily focusing on the covert acquisition of email data. Previous campaigns indicated LAUNDRY BEAR relied on unsophisticated initial access techniques—including password spraying, phishing, and pass-the-cookie—allowing the group to successfully run high-volume operations. The latest campaign targeting ZCS uses a novel exploit that was a zero-day vulnerability when first exploited and continues to be successfully exploited. The vulnerability, Common Vulnerabilities and Exposures (CVE) CVE-2025-66376 , was patched in November 2025. This demonstrates LAUNDRY BEAR’s intent and ability to deploy increasingly sophisticated technical capabilities. Unlike tradi",
-      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2025-66376"
-      ],
+      "id": "c0a17ad0054227a0",
+      "title": "Hackers Exploit Industrial PLCs and Manipulate HMI Displays to Hide Attacks",
+      "summary": "Six federal agencies have updated a joint advisory warning that Iranian-affiliated advanced persistent threat (APT) actors are actively exploiting internet-exposed programmable logic controllers (PLCs) across U.S. critical infrastructure, manipulating human-machine interface (HMI) displays so operators cannot visually detect the intrusion. The advisory, first issued in April 2026 and revised on July 22, 2026, is cosigned [&#8230;] The post Hackers Exploit Industrial PLCs and Manipulate HMI Displays to Hide Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hackers-exploit-industrial-plcs/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-25T06:28:42+00:00",
+      "published_ts": 1784960922.0,
+      "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
         "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe"
+        "Global",
+        "Middle East",
+        "North America"
       ],
-      "products": [
-        "Zimbra"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
+      "priority_score": 65,
       "priority_label": "High",
       "related_sources": []
     },
@@ -154,87 +153,51 @@
       "related_sources": []
     },
     {
-      "id": "d66fec2f7099e062",
-      "title": "Rockwell Automation ThinManager",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an authenticated attacker to write arbitrary files to restricted system directories outside of the application's intended directory. The following versions of Rockwell Automation ThinManager are affected: ThinManager &gt;=13.0.0|&lt;13.0.7, &gt;=13.1.0|&lt;13.1.5, &gt;=13.2.0|&lt;13.2.4, &gt;=14.0.0|&lt;14.0.2 CVSS Vendor Equipment Vulnerabilities v3 8.1 Rockwell Automation Rockwell Automation ThinManager Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') Background Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Energy, Food and Agriculture, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-11917 A path traversal security issue exists within Rockwell Automation ThinManager software due to improper limitation of file save operations within the API. An authenticated attacker could exploit this vulnerability to write arbitrary files to restricted system directories outside of the application's intended directory. View CVE Details Affected Products Rockwell Automation ThinManager Vendor: Rockwell Automation Product Version: Rockwell Automation ThinManager: &gt;=13.0.0|&lt;13.0.7, Rockwell Automation ThinManager: &gt;=13.1.0|&lt;13.1.5, Rockwell Automation ThinManager: &gt;=13.2.0|&lt;13.2.4, Rockwell Automation ThinManager: &gt;=14.0.0|&lt;14.0.2 Product Status: known_a",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-05",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-11917"
-      ],
+      "id": "fe933c1a04c35826",
+      "title": "Hackers Use Stealer Logs to Bypass MFA and Launch Ransomware Attacks",
+      "summary": "Infostealer malware has now become the invisible thread linking petty credential theft to full-blown ransomware campaigns. Attackers no longer bother forcing their way through firewalls when infostealers have already unlocked the front door for them. Documented by DarkOwl, a stealer log archive generated by infostealer malware that silently harvests browser-saved passwords, session cookies, cryptocurrency wallet data, [&#8230;] The post Hackers Use Stealer Logs to Bypass MFA and Launch Ransomware Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hackers-stealer-logs-launch-ransomware-attacks/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-25T08:02:36+00:00",
+      "published_ts": 1784966556.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
+        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Global",
-        "North America"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
+      "priority_score": 30,
       "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "5399ec497a5a47f7",
-      "title": "MZ Automation lib60870",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could cause the parsing process to crash, which will cause a denial of service. The following versions of MZ Automation lib60870 are affected: lib60870 &lt;=2.4.0 CVSS Vendor Equipment Vulnerabilities v3 8.2 MZ Automation MZ Automation lib60870 Out-of-bounds Read Background Critical Infrastructure Sectors: Chemical, Energy, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-16002 The affected product is vulnerable to an Out-of-bounds read, which may allow an attacker to crash the parsing process and cause a denial of service. View CVE Details Affected Products MZ Automation lib60870 Vendor: MZ Automation Product Version: MZ Automation lib60870: &lt;=2.4.0 Product Status: known_affected Remediations Vendor fix MZ automation recommends users update to version 2.4.1 or later. Documentation can be found at https://github.com/mz-automation/lib60870/security/advisories/GHSA-f5xp-w6f3-vvrv. https://github.com/mz-automation/lib60870/security/advisories/GHSA-f5xp-w6f3-vvrv Relevant CWE: CWE-125 Out-of-bounds Read Metrics CVSS Version Base Score Base Severity Vector String 3.1 8.2 HIGH CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H 4.0 8.8 HIGH CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N Acknowledgments Lars Tray reported this vulnerability to CISA Legal Notice and Terms of Use This product is provided subject to this Notif",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-07",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-16002"
-      ],
+      "id": "8563101c02c1b1ef",
+      "title": "Phantom Stealer Campaign Uses JavaScript and PowerShell to Steal Browser Credentials",
+      "summary": "A sophisticated phishing campaign that disguises malware delivery inside routine business communications, ultimately deploying Phantom Stealer v3.5.0 to harvest browser credentials, cookies, payment data, and cryptocurrency wallet information from victims. Documented by Seqrite, the campaign uses two distinct phishing themes that both lead to the same infection chain. One email impersonates UPS Forwarding Hub, referencing fake [&#8230;] The post Phantom Stealer Campaign Uses JavaScript and PowerShell to Steal Browser Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/phantom-stealer-campaign-javascript-powershell/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-25T07:25:13+00:00",
+      "published_ts": 1784964313.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "e4bdc1917303dd9a",
-      "title": "Panduit IntraVUE",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker with access to the IT network to manipulate industrial control devices without requiring physical access, specialized insider knowledge, or advanced tooling. The following versions of Panduit IntraVUE are affected: IntraVUE &lt;=3.2.1a14&nbsp; CVSS Vendor Equipment Vulnerabilities v3 10 Pronetiqs Panduit IntraVUE Plaintext Storage of a Password, Unintended Proxy or Intermediary ('Confused Deputy'), Exposure of Sensitive System Information to an Unauthorized Control Sphere, Inadequate Encryption Strength Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Netherlands Vulnerabilities Expand All + CVE-2026-40430 Pronetiqs IntraVUE Versions 3.2.1a14 and prior have a plaintext storage of a password vulnerability that could expose cleartext credentials through the API. View CVE Details Affected Products Panduit IntraVUE Vendor: Pronetiqs Product Version: Pronetiqs IntraVUE: &lt;=3.2.1a14 Product Status: known_affected Remediations Vendor fix Pronetiqs advises users to update to the latest version of the IntraVUE software, version 3.2.1a16 or later. Mitigation For further questions, please contact Pronetiqs at info@pronetiqs.com. mailto:info@pronetiqs.com Relevant CWE: CWE-256 Plaintext Storage of a Password Metrics CVSS Version Base Score Base Severity Vector",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-04",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-40430"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
+        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe",
         "Global"
       ],
-      "products": [
-        "Edge"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 25,
@@ -270,15 +233,40 @@
       "related_sources": []
     },
     {
-      "id": "9e0a97281121b0c7",
-      "title": "OpenAI confirms ChatGPT is down worldwide",
-      "summary": "ChatGPT, the famous artificial intelligence chatbot that allows users to converse with various personalities and topics, has connectivity issues worldwide. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
+      "id": "2ce7845eff89ab08",
+      "title": "Google Launches Unified Cryptonym-Based Naming System for Threat Actors",
+      "summary": "Google Threat Intelligence Group (GTIG) has introduced a unified cryptonym-based naming system for cyber threat actors, aiming to simplify attribution, improve analyst workflows, and eliminate inconsistencies between legacy tracking conventions used across Google’s security teams. The initiative follows the integration of Mandiant and Google’s Threat Analysis Group (TAG) into GTIG. Before the merger, both organizations [&#8230;] The post Google Launches Unified Cryptonym-Based Naming System for Threat Actors appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/google-launches-unified-cryptonym-based-naming-system/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-07-25T09:31:09+00:00",
-      "published_ts": 1784971869.0,
+      "published": "2026-07-25T07:35:24+00:00",
+      "published_ts": 1784964924.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3e90728f34753b66",
+      "title": "Cl0p Targets Internet-Exposed Windchill Servers in Global Engineering Data-Theft Campaign",
+      "summary": "Cl0p ransomware affiliates are actively exploiting internet-exposed PTC Windchill and FlexPLM deployments in a global data-theft campaign targeting high-value engineering environments. Observed post-exploitation activity includes filesystem enumeration via files such as “flst.txt,” followed by staging and exfiltration of sensitive engineering and product design data. This chaining enables unauthenticated remote code execution, allowing attackers to deploy [&#8230;] The post Cl0p Targets Internet-Exposed Windchill Servers in Global Engineering Data-Theft Campaign appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cl0p-targets-internet-exposed-windchill/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-24T13:04:41+00:00",
+      "published_ts": 1784898281.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
@@ -294,109 +282,23 @@
       "related_sources": []
     },
     {
-      "id": "1d798c734b7b4804",
-      "title": "Weintek cMT3092X",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a non-privileged user to escalate privileges or view the credentials of other users. The following versions of Weintek cMT3092X are affected: cMT3092X firmware &lt;20210218&nbsp; EasyWeb &lt;v2.1.20 CVSS Vendor Equipment Vulnerabilities v3 8.8 Weintek Weintek cMT3092X Reliance on Cookies without Validation and Integrity Checking in a Security Decision, Incorrect Permission Assignment for Critical Resource, Plaintext Storage of a Password, Incorrect User Management Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Taiwan Vulnerabilities Expand All + CVE-2026-60134 Weintek cMT3092X HMI allows a non-privileged user to modify cookies to gain elevated privileges. View CVE Details Affected Products Weintek cMT3092X Vendor: Weintek Product Version: Weintek cMT3092X firmware: &lt;20210218, Weintek EasyWeb: &lt;v2.1.20 Product Status: known_affected Remediations Vendor fix Weintek recommends users apply the patch package named cmt_typeB_20260316_007.patch, which contains a newer EasyWeb 2.3.17-typeb. This fix will be delivered as a patch-only update; no separate standard firmware release is planned. Users may request the patch directly from Weintek support (https://www.weintek.com/globalw/Support/Knowledge.aspx) or from distributors. https://www.weintek.com/globalw/Support/Knowledge.aspx Mitigation Weintek has published a do",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-60134"
-      ],
+      "id": "2afd982e1673b35f",
+      "title": "Illinois Man Pleads Guilty to Phishing 4,500 Snapchat Users to Steal Private Photos",
+      "summary": "An Illinois man has pleaded guilty to a phishing and account-compromise scheme that targeted thousands of Snapchat users, leading to the theft of private images from numerous women. Federal prosecutors stated that Kyle Svara, 27, of Oswego, Illinois, admitted to charges including aggravated identity theft, wire fraud, computer fraud, conspiracy to commit computer fraud, and [&#8230;] The post Illinois Man Pleads Guilty to Phishing 4,500 Snapchat Users to Steal Private Photos appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/illinois-man-pleads-guilty-to-phishing-4500-snapchat-users/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-24T12:57:50+00:00",
+      "published_ts": 1784897870.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Government & Public Services"
       ],
       "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3c04aa5e44575865",
-      "title": "Johnson Controls XAAP Android",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in an attacker obtaining confidential information from the device. The following versions of Johnson Controls XAAP Android are affected: XAAP Android &lt;1.53 CVSS Vendor Equipment Vulnerabilities v3 3.3 Johnson Controls Johnson Controls XAAP Android Cleartext Storage of Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-34490 A cleartext storage weakness exists in the Fire Solutions Android application, which stores application data locally on the device without encryption. An attacker with physical access to the device and one able to compromise the device through a separate, unrelated flaw, could potentially read this data in plaintext. Exploitation does not require network access and is limited to the local device environment. View CVE Details Affected Products Johnson Controls XAAP Android Vendor: Johnson Controls Product Version: Johnson Controls XAAP Android: &lt;1.53 Product Status: known_affected Remediations Vendor fix Johnson Controls recommends users update the XAAP Android application to version 1.53 or later, which contains the fix for this vulnerability. Mitigation Johnson Controls recommends users restrict physical access to devices running the XAAP Android application. Mitigation Johnson Controls recommends users ensure devices are har",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-02",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-34490"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8f9e7aafcf1e1b06",
-      "title": "MZ Automation libIEC61850",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an unauthenticated network-adjacent attacker to crash critical IEC 61850 services or execute arbitrary code, disrupting or compromising protection, visibility, and control functions. The following versions of MZ Automation libIEC61850 are affected: libIEC61850 &gt;=v1.0.0|&lt;=v1.6.1&nbsp; CVSS Vendor Equipment Vulnerabilities v3 8.1 MZ Automation MZ Automation libIEC61850 Stack-based Buffer Overflow, Heap-based Buffer Overflow, Improper Handling of Syntactically Invalid Structure, NULL Pointer Dereference Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-50039 The affected product is vulnerable to a stack-based buffer overflow, which may allow an attacker to cause a memory corruption via a ReadRequest. View CVE Details Affected Products MZ Automation libIEC61850 Vendor: MZ Automation Product Version: MZ Automation libIEC61850: &gt;=v1.0.0|&lt;=v1.6.1 Product Status: known_affected Remediations Vendor fix MZ Automation recommends updating to the latest build of the libIEC61850 standard. Documentation can be found at https://github.com/mz-automation/libiec61850. https://github.com/mz-automation/libiec61850 Relevant CWE: CWE-121 Stack-based Buffer Overflow Metrics CVSS Version Base Score Base Severity Vector String 3.1 7.5 HIGH CVSS:3.1/AV:N",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-06",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-50039"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7fd9998143917a1f",
-      "title": "Johnson Controls C-CURE 9000 and Victor application server",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker with network access to achieve remote code execution. The following versions of Johnson Controls C-CURE 9000 and Victor application server are affected: C-CURE 9000 and victor &lt;=v2.90_v3.0&nbsp; victor Web &lt;=v7.1&nbsp; CVSS Vendor Equipment Vulnerabilities v3 9.6 Johnson Controls Johnson Controls C-CURE 9000 and Victor application server Server-Side Request Forgery (SSRF), Execution with Unnecessary Privileges Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-21655 Under certain circumstances, successful exploitation of this vulnerability could allow an unauthenticated attacker on the adjacent network to achieve arbitrary code execution on the C-CURE 9000 or victor application server, as well as connected clients (e.g., workstations of physical security personnel). Such an attack could impact physical security controls. View CVE Details Affected Products Johnson Controls C-CURE 9000 and Victor application server Vendor: Johnson Controls Product Version: Johnson Controls C-CURE 9000 and victor: &lt;=v2.90_v3.0 Product Status: known_affected Remediations Mitigation Johnson Controls recommends the following defensive measures to help reduce the risk of exploitation: (CVE-2026-21655) Upgrade to C-CURE 9000 / victor version 3.20 or later, which addresses the",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-07-23T12:00:00+00:00",
-      "published_ts": 1784808000.0,
-      "cves": [
-        "CVE-2026-21655"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
+        "Global",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -431,46 +333,21 @@
       "related_sources": []
     },
     {
-      "id": "835476a127d595d3",
-      "title": "Cl0p Affiliates Target Internet-Exposed PTC Windchill and FlexPLM with Unauthenticated RCE",
-      "summary": "Threat actors linked to the Cl0p (aka Chubby Scorpius, FIN11, Graceful Spider, and Lace Tempest) ransomware campaign are exploiting flaws in internet-exposed PTC Windmill and FlexPLM deployments as part of a new data extortion campaign. \"Attackers chain a pre-authentication information disclosure in the FlexPLM WSDL endpoint with a server-side flaw in the Windchill login servlet, enabling",
-      "url": "https://thehackernews.com/2026/07/cl0p-affiliates-target-internet-exposed.html",
-      "source": "The Hacker News",
+      "id": "9e0a97281121b0c7",
+      "title": "OpenAI confirms ChatGPT is down worldwide",
+      "summary": "ChatGPT, the famous artificial intelligence chatbot that allows users to converse with various personalities and topics, has connectivity issues worldwide. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-25T10:14:03+00:00",
-      "published_ts": 1784974443.0,
+      "published": "2026-07-25T09:31:09+00:00",
+      "published_ts": 1784971869.0,
       "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8b9addedfd4d27f6",
-      "title": "Rockwell Patches Code Execution Flaws in Arena Simulation Software",
-      "summary": "A researcher has explained how an attacker could exploit these vulnerabilities to target industrial organizations. The post Rockwell Patches Code Execution Flaws in Arena Simulation Software appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/rockwell-patches-code-execution-flaws-in-arena-simulation-software/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-25T08:30:00+00:00",
-      "published_ts": 1784968200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -558,6 +435,56 @@
       "related_sources": []
     },
     {
+      "id": "14d39cb0a4819189",
+      "title": "SectopRAT Gives Attackers Remote Access to Passwords, Credit Cards, Cookies and Corporate Files",
+      "summary": "SectopRAT is at the center of a highly targeted malvertising campaign abusing Anthropic’s Claude platform to deliver a stealthy, HVNC‑enabled RAT that gives attackers deep, persistent access to victims’ passwords, credit cards, cookies and corporate files. The artifact masqueraded as a genuine Claude Desktop installer but redirected victims to claude.ai.download-app[.]us and then to downloading-api.it[.]com/html/claude/win, where [&#8230;] The post SectopRAT Gives Attackers Remote Access to Passwords, Credit Cards, Cookies and Corporate Files appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/sectoprat-campaign/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-24T11:58:00+00:00",
+      "published_ts": 1784894280.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8b7cfec7bae8942e",
+      "title": "Golden Chickens Launches Four Modular Malware Families to Steal Chrome Credentials and Hijack Browser Sessions",
+      "summary": "Golden Chickens, tracked as TAG-195 and also known as Venom Spider, has launched four new modular malware families designed to enhance credential theft, browser session hijacking, and post-exploitation flexibility. The newly identified families TinyEgg, ChonkyChicken, a modularized ChonkyChicken variant, and ChromEggscalator mark a clear architectural evolution in the group’s malware-as-a-service (MaaS) ecosystem, signaling a shift [&#8230;] The post Golden Chickens Launches Four Modular Malware Families to Steal Chrome Credentials and Hijack Browser Sessions appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/four-modular-malware-families/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-24T10:53:38+00:00",
+      "published_ts": 1784890418.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Chrome"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "cb422a276767db82",
       "title": "International alert spotlights Russia-linked attacks on Zimbra webmail",
       "summary": "A Kremlin-backed group known as Laundry Bear has been using a zero-click phishing technique to break into Zimbra webmail accounts worldwide, the U.S. and other nations said.",
@@ -609,15 +536,39 @@
       "related_sources": []
     },
     {
-      "id": "7821c3972327ec35",
-      "title": "Chaos Ransomware Uses msaRAT to Route C2 Traffic Through Headless Chrome and Edge",
-      "summary": "The Chaos ransomware group ran its command-and-control through the victim's own browser. Cisco Talos on Thursday detailed msaRAT, the Rust implant behind it, found on a compromised Windows machine ahead of the encryptor. The implant never opens an outbound connection of its own. Its process talks to 127.0.0.1 and nothing else. It starts Chrome or Edge in headless mode and drives the browser",
-      "url": "https://thehackernews.com/2026/07/chaos-ransomware-uses-msarat-to-route.html",
+      "id": "835476a127d595d3",
+      "title": "Cl0p Affiliates Target Internet-Exposed PTC Windchill and FlexPLM with Unauthenticated RCE",
+      "summary": "Threat actors linked to the Cl0p (aka Chubby Scorpius, FIN11, Graceful Spider, and Lace Tempest) ransomware campaign are exploiting flaws in internet-exposed PTC Windmill and FlexPLM deployments as part of a new data extortion campaign. \"Attackers chain a pre-authentication information disclosure in the FlexPLM WSDL endpoint with a server-side flaw in the Windchill login servlet, enabling",
+      "url": "https://thehackernews.com/2026/07/cl0p-affiliates-target-internet-exposed.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-23T13:11:09+00:00",
-      "published_ts": 1784812269.0,
+      "published": "2026-07-25T10:14:03+00:00",
+      "published_ts": 1784974443.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8b9addedfd4d27f6",
+      "title": "Rockwell Patches Code Execution Flaws in Arena Simulation Software",
+      "summary": "A researcher has explained how an attacker could exploit these vulnerabilities to target industrial organizations. The post Rockwell Patches Code Execution Flaws in Arena Simulation Software appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/rockwell-patches-code-execution-flaws-in-arena-simulation-software/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-25T08:30:00+00:00",
+      "published_ts": 1784968200.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -626,60 +577,6 @@
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Chrome",
-        "Edge",
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4e58297d3c7f1716",
-      "title": "Chaos ransomware's msaRAT: Living off the browser to build a covert C2 channel",
-      "summary": "The Chaos ransomware group uses new malware \"msaRAT\" that hijacks browsers. The malware doesn't communicate directly with C2 but connects through the browser. It enables arbitrary command execution while hiding the attacker's IP from victims via WebRTC over TURN.",
-      "url": "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-07-23T10:00:38+00:00",
-      "published_ts": 1784800838.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "19b50b797fc0a87a",
-      "title": "Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available",
-      "summary": "Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of the Java process. Tracked as CVE-2026-16723, the vulnerability carries an Alibaba-assigned CVSS score of 9.0. The confirmed chain requires",
-      "url": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-25T12:52:43+00:00",
-      "published_ts": 1784983963.0,
-      "cves": [
-        "CVE-2026-16723"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
@@ -688,71 +585,24 @@
       "related_sources": []
     },
     {
-      "id": "d74a7da701df488f",
-      "title": "Researcher Publishes GitLab RCE PoC Letting Authenticated Users Run Commands as Git",
-      "summary": "Security researchers at&nbsp;depthfirst published working exploit code on July 24 for a GitLab flaw that GitLab patched six weeks earlier, on June 10. It runs commands as git on any self-managed 18.11.3 server that has not taken the update. Any authenticated user who can push to a project can run it. The attacker commits a crafted Jupyter notebook and opens its commit diff, which leaks a heap",
-      "url": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "bd79210066754f81",
+      "title": "Tego AI Discloses Second Claude Flaw in a Week: Hidden Link Silently Sends Files to Attackers",
+      "summary": "Tel Aviv, Israel, July 24th, 2026, CyberNewswire One week after disclosing that Anthropic&#8217;s Claude Tag Slack integration could be driven by plain &#8220;@Claude&#8221; text, Tego AI today published a second piece of research on the Claude ecosystem. This one focuses on Claude Code, Anthropic&#8217;s agentic command-line coding tool. Cloning an ordinary repository and starting Claude [&#8230;] The post Tego AI Discloses Second Claude Flaw in a Week: Hidden Link Silently Sends Files to Attackers appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/tego-ai-discloses-second-claude-flaw-in-a-week-hidden-link-silently-sends-files-to-attackers/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-07-25T10:14:26+00:00",
-      "published_ts": 1784974466.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitLab"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "002f1e203b134b8a",
-      "title": "CTM360 Research Reveals How Insurance Phishing Has Evolved Into Real-Time Account Hijacking",
-      "summary": "For years, phishing campaigns targeting financial institutions followed the same playbook. Victims were tricked into entering usernames and passwords, attackers collected the credentials, and accounts were compromised later when an opportunity arose. That model is changing. Recent investigations into insurance-focused phishing operations reveal a more immediate approach. Instead of harvesting",
-      "url": "https://thehackernews.com/2026/07/ctm360-research-reveals-how-insurance.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-25T10:14:21+00:00",
-      "published_ts": 1784974461.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "6b7116ff9a2d2ddc",
-      "title": "DevMan RaaS Portal Centralizes Payload Builds, Victim Management, and Affiliate Payouts",
-      "summary": "The operators of the DevMan ransomware-as-a-service (RaaS) scheme are maintaining a dedicated web platform that offers affiliates the ability to build payloads, oversee earnings, and manage various aspects related to victims. Swiss cybersecurity company PRODAFT is tracking the centrally administered RaaS operation under the name Funky Mantis. \"The portal combined build generation, finance,",
-      "url": "https://thehackernews.com/2026/07/devman-raas-portal-centralizes-payload.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-25T09:53:41+00:00",
-      "published_ts": 1784973221.0,
+      "published": "2026-07-24T17:20:57+00:00",
+      "published_ts": 1784913657.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Unspecified"
+        "Global",
+        "Middle East"
       ],
-      "products": [],
+      "products": [
+        "Slack"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -776,6 +626,30 @@
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "73728a06da52dc28",
+      "title": "Foxit PDF Reader Flaw Lets Local Attackers Gain SYSTEM Privileges via DLL Sideloading",
+      "summary": "A recently disclosed vulnerability in Foxit PDF Reader may allow a local attacker with existing code execution to elevate their privileges to NT AUTHORITY\\SYSTEM. This issue, tracked as CVE-2026-57239, affects Foxit PDF Reader installations prior to version 2026.2 and arises from the insecure handling of an updater workflow triggered by a user-writable file in the [&#8230;] The post Foxit PDF Reader Flaw Lets Local Attackers Gain SYSTEM Privileges via DLL Sideloading appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/foxit-pdf-reader-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-24T13:15:56+00:00",
+      "published_ts": 1784898956.0,
+      "cves": [
+        "CVE-2026-57239"
+      ],
+      "sectors": [],
+      "regions": [
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -915,83 +789,6 @@
       "related_sources": []
     },
     {
-      "id": "4642c24df6d5531f",
-      "title": "China-Nexus JadeProx Uses New TriBack Loader in Government and Healthcare Attacks",
-      "summary": "An exposed Alibaba Cloud server has revealed a China-nexus operation that Group-IB tracks as JadeProx. The cluster has targeted government, healthcare, and education organizations across Asia and Latin America with a previously undocumented Windows loader called TriBack Loader. Group-IB found the server in mid-April 2026 in Alibaba Cloud's Singapore region; it was offline by the time the report",
-      "url": "https://thehackernews.com/2026/07/china-nexus-jadeprox-uses-new-triback.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T12:20:23+00:00",
-      "published_ts": 1784809223.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Latin America"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ed41c029ae57bbfe",
-      "title": "Preview: Cisco Talos at Black Hat USA 2026",
-      "summary": "Here’s some of the ways Talos is showing up at Black Hat, alongside our friends at Cisco and Splunk.",
-      "url": "https://blog.talosintelligence.com/preview-cisco-talos-at-black-hat-usa-2026/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-07-23T10:00:14+00:00",
-      "published_ts": 1784800814.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "828f0ee610bd667d",
-      "title": "Google Adds Selfie Video Recovery for Users Locked Out of Their Accounts",
-      "summary": "Google on Thursday announced a new way for users to sign-in to their accounts by letting them take a selfie video. The selfie for sign-in, per the tech giant, is another option on top of existing recovery methods to log in to an account, including an email address or a phone number. The idea is to use a video selfie as a way to regain access if a user ever gets locked out or doesn't have access",
-      "url": "https://thehackernews.com/2026/07/google-adds-selfie-video-recovery-for.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T10:00:00+00:00",
-      "published_ts": 1784800800.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "e46979bcb69d3e7a",
       "title": "Steam forum ClickFix attacks infect gamers with XMRig cryptominers",
       "summary": "Steam discussion forums are being abused in ClickFix attacks that pretend to be fixes for game and computer problems but actually infect devices with cryptominers. [...]",
@@ -1023,6 +820,104 @@
       "category": "mixed",
       "published": "2026-07-25T14:16:26+00:00",
       "published_ts": 1784988986.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "19b50b797fc0a87a",
+      "title": "Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available",
+      "summary": "Security firms ThreatBook and Imperva say attackers are targeting a critical flaw in Fastjson, Alibaba's JSON library for Java. In affected Spring Boot applications, a malicious JSON request can execute code without authentication, with the privileges of the Java process. Tracked as CVE-2026-16723, the vulnerability carries an Alibaba-assigned CVSS score of 9.0. The confirmed chain requires",
+      "url": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-25T12:52:43+00:00",
+      "published_ts": 1784983963.0,
+      "cves": [
+        "CVE-2026-16723"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d74a7da701df488f",
+      "title": "Researcher Publishes GitLab RCE PoC Letting Authenticated Users Run Commands as Git",
+      "summary": "Security researchers at&nbsp;depthfirst published working exploit code on July 24 for a GitLab flaw that GitLab patched six weeks earlier, on June 10. It runs commands as git on any self-managed 18.11.3 server that has not taken the update. Any authenticated user who can push to a project can run it. The attacker commits a crafted Jupyter notebook and opens its commit diff, which leaks a heap",
+      "url": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-25T10:14:26+00:00",
+      "published_ts": 1784974466.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitLab"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "002f1e203b134b8a",
+      "title": "CTM360 Research Reveals How Insurance Phishing Has Evolved Into Real-Time Account Hijacking",
+      "summary": "For years, phishing campaigns targeting financial institutions followed the same playbook. Victims were tricked into entering usernames and passwords, attackers collected the credentials, and accounts were compromised later when an opportunity arose. That model is changing. Recent investigations into insurance-focused phishing operations reveal a more immediate approach. Instead of harvesting",
+      "url": "https://thehackernews.com/2026/07/ctm360-research-reveals-how-insurance.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-25T10:14:21+00:00",
+      "published_ts": 1784974461.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6b7116ff9a2d2ddc",
+      "title": "DevMan RaaS Portal Centralizes Payload Builds, Victim Management, and Affiliate Payouts",
+      "summary": "The operators of the DevMan ransomware-as-a-service (RaaS) scheme are maintaining a dedicated web platform that offers affiliates the ability to build payloads, oversee earnings, and manage various aspects related to victims. Swiss cybersecurity company PRODAFT is tracking the centrally administered RaaS operation under the name Funky Mantis. \"The portal combined build generation, finance,",
+      "url": "https://thehackernews.com/2026/07/devman-raas-portal-centralizes-payload.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-25T09:53:41+00:00",
+      "published_ts": 1784973221.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1518,30 +1413,6 @@
       "related_sources": []
     },
     {
-      "id": "9c446e54b5625118",
-      "title": "Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models",
-      "summary": "SentinelOne’s new benchmark, built on the Fast16 case, shows which AI models can sustain a malware investigation and which cannot. The post Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/nuclear-sabotage-malware-benchmark-trips-up-most-frontier-ai-models/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T12:42:12+00:00",
-      "published_ts": 1784810532.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "a927ac1e0d041247",
       "title": "CISOs vs. Boards: Myth or Misunderstanding?",
       "summary": "Escalating threats are forcing boards to prioritize security, but communication gaps persist. Boards and security teams each say they need more support to bridge the divide.",
@@ -1782,74 +1653,6 @@
         "Linux",
         "macOS"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "6a7c53340b19fc26",
-      "title": "How Synthetic Identity Fraud is Coming for Machine Identities",
-      "summary": "Most people understand identity theft as an attacker stealing a real person's sensitive information and impersonating them. Synthetic identity fraud is much harder to catch. Instead of stealing a real identity, the attacker manufactures a new one, frankensteining together several real data points with fabricated ones to create a person who doesn't exist. Since no real victim monitors misuse, a",
-      "url": "https://thehackernews.com/2026/07/how-synthetic-identity-fraud-is-coming.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T11:45:00+00:00",
-      "published_ts": 1784807100.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "109950d0656ebba3",
-      "title": "Attackers Weaponize GitHub Actions Runners to Target cPanel and WHM Servers",
-      "summary": "Cybersecurity researchers have shed light on a large-scale campaign that has turned compromised GitHub repositories into distributed attack infrastructure designed to target cPanel and WebHost Manager (WHM) instances. The activity involves malicious Packagist development versions spanning 10 packages associated with a legitimate PHP and DevOps developer, dinushchathurya, between July 12 and 13,",
-      "url": "https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T11:28:54+00:00",
-      "published_ts": 1784806134.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8ff58c3e0c628baf",
-      "title": "Agentic AI Challenges Progress in Confidential Computing",
-      "summary": "Core issues that slowed down adoption of secure data vaults are being resolved by technology, but artificial intelligence poses new ones. Experts have some answers.",
-      "url": "https://www.darkreading.com/endpoint-security/agentic-ai-challenges-progress-in-confidential-computing",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-23T11:17:51+00:00",
-      "published_ts": 1784805471.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
