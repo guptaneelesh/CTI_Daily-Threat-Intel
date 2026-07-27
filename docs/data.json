@@ -1,24 +1,58 @@
 {
-  "generated_at": "2026-07-27T14:31:59.401717+00:00",
+  "generated_at": "2026-07-27T19:25:47.394989+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 48,
-    "critical": 0,
-    "high": 1,
-    "medium": 0,
-    "low": 47,
-    "actively_exploited": 1,
+    "all": 55,
+    "critical": 1,
+    "high": 2,
+    "medium": 3,
+    "low": 49,
+    "actively_exploited": 5,
     "with_cves": 4
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA KEV",
+    "Check Point Research",
     "Dark Reading",
     "GBHackers",
+    "Microsoft Security Blog",
     "SecurityWeek",
     "The Hacker News",
     "The Record"
   ],
   "items": [
+    {
+      "id": "0fed09bae3259143",
+      "title": "CVE-2025-68686: Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability (Fortinet FortiOS)",
+      "summary": "CISA KEV — actively exploited. Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mechanism observed in some post-exploit cases, via crafted HTTP requests. An attacker would need first to have compromised the product via another vulnerability, at filesystem level. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-08-10).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-07-27T00:00:00+00:00",
+      "published_ts": 1785110400.0,
+      "cves": [
+        "CVE-2025-68686"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "FortiOS",
+        "Fortinet",
+        "iOS"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": []
+    },
     {
       "id": "8a50981f0dcb3f11",
       "title": "Iranian Hackers Exploit Rockwell, Schneider and Siemens PLCs Across U.S. Critical Infrastructure",
@@ -44,6 +78,125 @@
       "cvss": null,
       "priority_score": 65,
       "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "19a239d88c1508f6",
+      "title": "Rethinking security for the age of AI",
+      "summary": "Why security needs a new Cyber Stack&#160;—&#160;Introducing Project Perception The physics of cybersecurity are changing.&#160;Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is falling, while the volume, velocity and complexity of what must be secured continues to grow. The post Rethinking security for the age of AI appeared first on Microsoft Security Blog .",
+      "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-07-27T16:40:00+00:00",
+      "published_ts": 1785170400.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "27d0429a90738aca",
+      "title": "Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw",
+      "summary": "Public exploit details released on July 27 show how an unauthenticated request can reach PHP's eval() function inside vBulletin and execute code on an unpatched forum server. The attack requires no account, administrative access, or interaction from another user. SSD Secure Disclosure lists vBulletin 6.2.1 and earlier, and 6.1.6 and earlier, as affected, but does not give a lower version",
+      "url": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T14:40:00+00:00",
+      "published_ts": 1785163200.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "a1aa3e9089ea888c",
+      "title": "Adversaries Don't Need a Zero-Day — They Read Your Rulebook",
+      "summary": "Confidence in autonomous security tools is declining, and here's why.",
+      "url": "https://www.darkreading.com/threat-intelligence/adversaries-do-not-need-zero-day-they-read-your-rulebook",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T17:31:18+00:00",
+      "published_ts": 1785173478.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "640e4700a725e9e6",
+      "title": "Enhancing AI security through global AI red teaming",
+      "summary": "Microsoft's External Red Team Alliance (EXTRA) is a global AI security initiative designed to advance AI safety research and red teaming. By partnering with universities, researchers, and regional experts, EXTRA helps identify emerging AI risks, improve security testing, and strengthen the resilience of frontier AI systems. The post Enhancing AI security through global AI red teaming appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/27/enhancing-ai-security-through-global-ai-red-teaming/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-07-27T16:25:00+00:00",
+      "published_ts": 1785169500.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "ac244f82a7959e4d",
+      "title": "Security Risk Advisors Named a Finalist in CRN’s 2026 Best of the Channel Awards",
+      "summary": "Philadelphia, Pennsylvania, July 27th, 2026, CyberNewswire Security Risk Advisors is proud to share that CRN, a brand of The Channel Company, has recognized Joe Cicero as a finalist in the second annual CRN Best of the Channel Awards in the Best Channel Visionary of the Year category. As a finalist, Joe is being spotlighted for [&#8230;] The post Security Risk Advisors Named a Finalist in CRN&#8217;s 2026 Best of the Channel Awards appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/security-risk-advisors-named-a-finalist-in-crns-2026-best-of-the-channel-awards/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-07-27T14:57:31+00:00",
+      "published_ts": 1785164251.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -249,30 +402,26 @@
       "related_sources": []
     },
     {
-      "id": "ed191c52fde0c119",
-      "title": "Windows WalletService Flaw Lets Standard Users Gain SYSTEM Privileges",
-      "summary": "Microsoft Windows WalletService is affected by a local privilege escalation vulnerability tracked as CVE-2026-49176. This flaw could allow a standard authenticated user to obtain SYSTEM-level privileges. The vulnerability arises from WalletService’s handling of user-controlled file paths during initialization. An attacker can exploit this by redirecting the service to a maliciously crafted Extensible Storage Engine (ESE) [&#8230;] The post Windows WalletService Flaw Lets Standard Users Gain SYSTEM Privileges appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/windows-walletservice-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-07-27T08:31:46+00:00",
-      "published_ts": 1785141106.0,
-      "cves": [
-        "CVE-2026-49176"
-      ],
+      "id": "5f0b755273e36ad8",
+      "title": "27th July – Threat Intelligence Report",
+      "summary": "For the latest discoveries in cyber research for the week of 27th July, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Nichirei, a Japan-based frozen-food supplier and logistics company, has experienced a ransomware attack that disrupted shipping operations and affected approximately 5,000 customers. KFC Japan warned of possible shortages. Nichirei confirmed personal data theft, [&#8230;] The post 27th July – Threat Intelligence Report appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/27th-july-threat-intelligence-report/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-07-27T16:00:39+00:00",
+      "published_ts": 1785168039.0,
+      "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Global"
+        "Asia-Pacific"
       ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -456,19 +605,17 @@
       "related_sources": []
     },
     {
-      "id": "d5f1964a4c669d64",
-      "title": "Hackers hijack hotel Wi-Fi DNS to steal Microsoft 365 accounts",
-      "summary": "Hackers are changing the DNS settings on Wi-Fi devices at hotels and conference centers to redirect users to fake Microsoft 365 login pages. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/",
+      "id": "c2f02f21c02cf926",
+      "title": "Apple sued over fake App Store crypto wallet app stealing $1.8M in Bitcoin",
+      "summary": "Apple is being sued by three people who claim approximately $1.8 million in Bitcoin was stolen after downloading and using a fraudulent Sparrow Wallet application from the App Store. [...]",
+      "url": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-24T17:50:37+00:00",
-      "published_ts": 1784915437.0,
+      "published": "2026-07-27T17:29:07+00:00",
+      "published_ts": 1785173347.0,
       "cves": [],
       "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -477,7 +624,53 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "20a1b24f0215b444",
+      "title": "Dysphoria IoT Botnet Adds Blockchain C2 and Victim Relays After JackSkid Disruption",
+      "summary": "Dysphoria, an Internet of Things (IoT) botnet line tracked by CNCERT and XLab, has adopted blockchain-based name services and infected-device relays after a March law-enforcement operation against JackSkid infrastructure. The researchers say the design makes the botnet harder to disrupt. CNCERT, China's national computer emergency response team, and XLab, the threat-intelligence lab of Chinese",
+      "url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T17:16:28+00:00",
+      "published_ts": 1785172588.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "85d0b1e00051d02c",
+      "title": "Coca-Cola confirms data theft in Fairlife ransomware attack",
+      "summary": "The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T15:39:51+00:00",
+      "published_ts": 1785166791.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -781,27 +974,92 @@
       "related_sources": []
     },
     {
-      "id": "99b91844b258405d",
-      "title": "'Wrench' attacks against crypto holders appear to be on the rise",
-      "summary": "There are more reports than ever before of strong-arm tactics like home invasions and kidnappings against cryptocurrency holders, researchers say.",
-      "url": "https://therecord.media/wrench-attacks-against-cryptocurrency-holders",
+      "id": "570f0e0fdef16eef",
+      "title": "UK court rejects Bahrain immunity claim in spyware case",
+      "summary": "The alleged hacking by officials in Bahrain “allowed access to and exfiltration of information on the computers, interception of communications conducted using the computers and use of the computers’ microphones and cameras to surveil the respondents,” according to the court opinion.",
+      "url": "https://therecord.media/uk-court-rejects-bahrain-immunity-claim-spyware-case",
       "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-24T15:55:00+00:00",
-      "published_ts": 1784908500.0,
+      "published": "2026-07-27T17:52:00+00:00",
+      "published_ts": 1785174720.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
+      "sectors": [],
+      "regions": [
+        "Europe"
       ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f800559916a7396c",
+      "title": "Health system in South Carolina, Georgia closes offices after malware affects networks",
+      "summary": "On Sunday, AnMed published a statement online saying they were “experiencing a cybersecurity disruption involving malware” and were working to restore systems and determine the scope of the incident.",
+      "url": "https://therecord.media/health-system-south-carolina-georgia-disruptions-malware",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T17:38:00+00:00",
+      "published_ts": 1785173880.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Office"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "28961c24a746ff0f",
+      "title": "Telegram phishing campaign targeted exiled Belarusian activist, Russians and Kazakhstanis",
+      "summary": "Researchers have uncovered a highly personalized phishing campaign that used Telegram to try to hijack the account of an exiled Belarusian activist, as well as users in Russia and Kazakhstan.",
+      "url": "https://therecord.media/telegram-belarus-activist-russia-cyberattack",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T16:00:00+00:00",
+      "published_ts": 1785168000.0,
+      "cves": [],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a0cd10e18f5a7137",
+      "title": "Ernst & Young data breach claimed by ShinyHunters extortion gang",
+      "summary": "The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T15:12:27+00:00",
+      "published_ts": 1785165147.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1016,80 +1274,6 @@
       "related_sources": []
     },
     {
-      "id": "4588efcc02e94096",
-      "title": "Andy Burnham signals continuity on UK cyber policy, reappoints minister despite scrapping ministry",
-      "summary": "The new British prime minister is retaining Liz Lloyd in a cyber policy role, making her one of the few Keir Starmer allies remaining in government.",
-      "url": "https://therecord.media/andy-burnham-liz-lloyd-cyber-policy-uk",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-24T17:14:00+00:00",
-      "published_ts": 1784913240.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2d2925a850f6ff38",
-      "title": "Microsoft blames massive Microsoft 365 outage on maintenance bug",
-      "summary": "Microsoft says a bug in its automated network maintenance request system caused Thursday's massive outage by mistakenly removing IP routes from more devices than intended, disrupting Azure and Microsoft 365 services. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-24T15:41:44+00:00",
-      "published_ts": 1784907704.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c26728b7d517870b",
-      "title": "BlueNoroff Zoom Phishing Kit Profiles Crypto Wallets Before Malware Delivery",
-      "summary": "The North Korean threat actors behind the ClickFix-style campaigns that employ typosquatted Zoom and Microsoft Teams domains have been found to operate an active phishing kit to impersonate the videoconferencing platforms in social engineering campaigns designed to deliver malware. \"BlueNoroff has operationalised trust abuse by combining compromised industry contacts, social engineering, wallet",
-      "url": "https://thehackernews.com/2026/07/bluenoroff-zoom-phishing-kit-profiles.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-24T15:12:35+00:00",
-      "published_ts": 1784905955.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Zoom"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "e46979bcb69d3e7a",
       "title": "Steam forum ClickFix attacks infect gamers with XMRig cryptominers",
       "summary": "Steam discussion forums are being abused in ClickFix attacks that pretend to be fixes for game and computer problems but actually infect devices with cryptominers. [...]",
@@ -1165,28 +1349,6 @@
       "category": "mixed",
       "published": "2026-07-24T19:45:02+00:00",
       "published_ts": 1784922302.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3dc6ca1cd4270c28",
-      "title": "Hermes AI agent used to automate attack on Thai Finance Ministry",
-      "summary": "A threat actor used the open-source Hermes AI agent in unattended \"YOLO\" mode to automate post-exploitation activity during an alleged breach of Thailand's Ministry of Finance. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-24T19:09:09+00:00",
-      "published_ts": 1784920149.0,
       "cves": [],
       "sectors": [],
       "regions": [
