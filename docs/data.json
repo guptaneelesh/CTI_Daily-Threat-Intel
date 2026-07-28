@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-28T14:04:46.263097+00:00",
+  "generated_at": "2026-07-28T19:21:45.601775+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 62,
+    "all": 74,
     "critical": 0,
-    "high": 3,
-    "medium": 9,
-    "low": 50,
-    "actively_exploited": 11,
-    "with_cves": 7
+    "high": 4,
+    "medium": 15,
+    "low": 55,
+    "actively_exploited": 13,
+    "with_cves": 14
   },
   "sources_used": [
     "BleepingComputer",
@@ -91,6 +91,33 @@
       "related_sources": []
     },
     {
+      "id": "08f9cbe23d884c30",
+      "title": "Siemens SIMATIC S7-PLCSIM Advanced",
+      "summary": "View CSAF Summary SIMATIC S7-PLCSIM Advanced contains a vulnerability that could allow an attacker to cause a denial of service condition. Siemens is preparing fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens SIMATIC S7-PLCSIM Advanced are affected: SIMATIC S7-PLCSIM Advanced vers:all/* (CVE-2026-54429) CVSS Vendor Equipment Vulnerabilities v3 7.4 Siemens Siemens SIMATIC S7-PLCSIM Advanced Allocation of Resources Without Limits or Throttling Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-54429 Affected devices do not properly handle high-volume multicast network traffic, which can exhaust available memory resources in the affected application. This could allow an unauthenticated attacker on the local network segment to cause a denial-of-service condition of the affected application. The affected application becomes inaccessible and requires a manual restart; no project data is lost. Successful exploitation requires a specific project configuration to be already active on the targeted instance. View CVE Details Affected Products Siemens SIMATIC S7-PLCSIM Advanced Vendor: Siemens Product Version: SIMATIC S7-PLCSIM Advanced Product Status: known_affected Remediations Mitigation Disable the S7-PLCSIM Virtual Switch binding on the network adapter used by the",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
+      "cves": [
+        "CVE-2026-54429"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "2c393c0e7f943598",
       "title": "IR Trends Q2 2026: Phishing and weaponized remote management tools drive attack chains",
       "summary": "Talos IR's Q2 report highlights a significant surge in phishing-based initial access and the weaponization of legitimate remote management tools. Learn how to sharpen your defenses.",
@@ -113,6 +140,30 @@
       "cvss": null,
       "priority_score": 55,
       "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "08180809c0199341",
+      "title": "vBulletin fixes critical pre-auth RCE flaw with public exploit",
+      "summary": "A critical vulnerability in the vBulletin forum software allows unauthenticated attackers to execute arbitrary PHP code through template rendering. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/vbulletin-fixes-critical-pre-auth-rce-flaw-with-public-exploit/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T18:08:50+00:00",
+      "published_ts": 1785262130.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
@@ -215,30 +266,6 @@
       "related_sources": []
     },
     {
-      "id": "27d0429a90738aca",
-      "title": "Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw",
-      "summary": "Public exploit details released on July 27 show how an unauthenticated request can reach PHP's eval() function inside vBulletin and execute code on an unpatched forum server. The attack requires no account, administrative access, or interaction from another user. SSD Secure Disclosure lists vBulletin 6.2.1 and earlier, and 6.1.6 and earlier, as affected, but does not give a lower version",
-      "url": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T14:40:00+00:00",
-      "published_ts": 1785163200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "70e9fc848355d774",
       "title": "Critical Arista VeloCloud Orchestrator Vulnerability Exploited as Zero-Day",
       "summary": "Impacting on-premises deployments, the OS command injection allows attackers to access privileged internal functionality. The post Critical Arista VeloCloud Orchestrator Vulnerability Exploited as Zero-Day appeared first on SecurityWeek .",
@@ -283,6 +310,30 @@
       "related_sources": []
     },
     {
+      "id": "27d0429a90738aca",
+      "title": "Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw",
+      "summary": "Public exploit details released on July 27 show how an unauthenticated request can reach PHP's eval() function inside vBulletin and execute code on an unpatched forum server. The attack requires no account, administrative access, or interaction from another user. SSD Secure Disclosure lists vBulletin 6.2.1 and earlier, and 6.1.6 and earlier, as affected, but does not give a lower version",
+      "url": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T14:40:00+00:00",
+      "published_ts": 1785163200.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "a1aa3e9089ea888c",
       "title": "Adversaries Don't Need a Zero-Day — They Read Your Rulebook",
       "summary": "Confidence in autonomous security tools is declining, and here's why.",
@@ -300,28 +351,171 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 40,
+      "priority_score": 35,
       "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "640e4700a725e9e6",
-      "title": "Enhancing AI security through global AI red teaming",
-      "summary": "Microsoft's External Red Team Alliance (EXTRA) is a global AI security initiative designed to advance AI safety research and red teaming. By partnering with universities, researchers, and regional experts, EXTRA helps identify emerging AI risks, improve security testing, and strengthen the resilience of frontier AI systems. The post Enhancing AI security through global AI red teaming appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/27/enhancing-ai-security-through-global-ai-red-teaming/",
-      "source": "Microsoft Security Blog",
+      "id": "a6de937214dc39ab",
+      "title": "CI Fortify – Advice for isolating vital systems",
+      "summary": "CI Fortify – Advice for isolating vital systems CISA and the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC), in collaboration with the Federal Bureau of Investigation and international partners, released joint guidance CI Fortify – Advice for isolating vital systems . This guidance contains practical steps for critical infrastructure (CI) organizations to isolate vital operational technology and enabling systems from all other networks in the event of disruption or crisis and operate in isolation for an extended period. Developed to address escalating cyber threats, the guidance outlines key steps for identifying critical systems, mapping connections, and implementing effective separation points. By following these recommendations, organizations can enhance their resilience, minimize disruption, and maintain essential services during cyber incidents or geopolitical crises.&nbsp;",
+      "url": "https://www.cisa.gov/resources-tools/resources/ci-fortify-advice-isolating-vital-systems",
+      "source": "CISA Alerts",
       "source_trust": 5,
-      "category": "threat",
-      "published": "2026-07-27T16:25:00+00:00",
-      "published_ts": 1785169500.0,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
       "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "1d5b38884e7a867a",
+      "title": "ABB KNX Update Tool",
+      "summary": "View CSAF Summary ABB has been contacted by a researcher who identified a vulnerability in one of its products. ABB has been contacted by a researcher who identified a vulnerability in one of its products. The vulnerability report has been shared in responsible disclosure. An attacker who successfully exploited this vulnerability could cause the product to become unusable. ABB confirms the vulnerability but at the same time acknowledges that the issue affects exclusively classic KNX devices that are not supporting the latest KNX Secure standard. Due to a lack of security in legacy KNX devices, the issue cannot be resolved via a software change. In order to actively exploit this vulnerability, an attacker requires physical access to the bus, the affected device is connected to. ABB has no plans of corrective measures. The following versions of ABB KNX Update Tool are affected: KNX Update Tool (ABB) &lt;=2.0.175 (CVE-2026-12705) KNX Update Tool (BJE) &lt;=2.0.175 (CVE-2026-12705) CVSS Vendor Equipment Vulnerabilities v3 6.4 ABB ABB KNX Update Tool Missing Support for Integrity Check Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2026-12705 There is no protection of the integrity of the firmware image. This applies exclusively to legacy KNX products View CVE Details Affected Products ABB KNX Update Tool Vendor: ABB Product Version: KNX Update Tool (",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-07",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
+      "cves": [
+        "CVE-2026-12705"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [
+        "Edge"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "80753f02d2a55f13",
+      "title": "Siemens Mendix Runtime",
+      "summary": "View CSAF Summary Mendix documentation for access rules does not adequately describe the special behavior of the System.User entity, leaving developers without sufficient guidance to configure access rules securely. This documentation gap may lead application developers to unknowingly apply overly permissive access rules to System.User, resulting in unintended exposure of sensitive user data or privilege escalation within deployed Mendix applications. A common misconfiguration identified is with the anonymous user role with a System.User entity to gain access to all stored records, even though no access rights are explicitly configured on that role. Siemens recommends Mendix developers to review their access rules based on updated documentation. The following versions of Siemens Mendix Runtime are affected: Mendix Runtime vers:all/* (CVE-2026-7891) CVSS Vendor Equipment Vulnerabilities v3 9.1 Siemens Siemens Mendix Runtime Insecure Inherited Permissions Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-7891 Mendix documentation for access rules does not adequately describe the special behavior of the System.User entity, leaving developers without sufficient guidance to configure access rules securely. This documentation gap may lead application developers to unknowingly apply overly permissive access rules to System.User, resulting in unintended ex",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
+      "cves": [
+        "CVE-2026-7891"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "2a2b57091e85a4e3",
+      "title": "MikroTik RouterOS and Cloud Hosted Router",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to rapidly guess passwords and gain unauthorized system access. The following versions of MikroTik RouterOS and Cloud Hosted Router are affected: RouterOS vers:all/* (CVE-2026-16347) Cloud Hosted Router vers:all/* (CVE-2026-16347) CVSS Vendor Equipment Vulnerabilities v3 8.8 MikroTik MikroTik RouterOS and Cloud Hosted Router Improper Restriction of Excessive Authentication Attempts Background Critical Infrastructure Sectors: Information Technology, Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Latvia Vulnerabilities Expand All + CVE-2026-16347 MikroTik RouterOS contains a weakness in its API authentication handling that lacks effective safeguards against excessive login attempts. The system does not enforce meaningful rate-limiting, account lockout, or source-based restrictions, allowing repeated authentication failures to proceed without defensive response. In some versions, a fixed per-connection delay is present, but it can be bypassed through concurrent sessions, resulting in continued high-volume attempts. This deficiency increases the risk that an attacker could eventually obtain valid credentials and gain unauthorized access to administrative services. View CVE Details Affected Products MikroTik RouterOS and Cloud Hosted Router Vendor: MikroTik Product Version: MikroTik RouterOS: vers:all/*, MikroTik Cloud Hosted Router: vers:all/* Product St",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
+      "cves": [
+        "CVE-2026-16347"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Global"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "f6f4dfad7a8ca851",
+      "title": "Siemens Desigo CC",
+      "summary": "View CSAF Summary OpenSSL has published a stack based buffer overflow vulnerability that allows a remote attacker to cause a denial of service (DoS) or potentially allow for remote code execution. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Desigo CC are affected: Desigo CC family V7 vers:all/* (CVE-2025-15467) Desigo CC family V8 vers:all/* (CVE-2025-15467) Desigo CC family V9 vers:intdot/&lt;9.0.1 (CVE-2025-15467) CVSS Vendor Equipment Vulnerabilities v3 9.8 Siemens Siemens Desigo CC Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2025-15467 Issue summary: Parsing CMS AuthEnvelopedData message with maliciously crafted AEAD parameters can trigger a stack buffer overflow. Impact summary: A stack buffer overflow may lead to a crash, causing Denial of Service, or potentially remote code execution. When parsing CMS AuthEnvelopedData structures that use AEAD ciphers such as AES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is copied into a fixed-size stack buffer without verifying that its length fits the destination. An attacker can supply a crafted CMS message with an oversized IV, ca",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
+      "cves": [
+        "CVE-2025-15467"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [
+        "OpenSSL"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d3be8b8409b561da",
+      "title": "igloohome Smart Lock Mobile Application",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an unauthorized actor to access functions or backend services. The following versions of igloohome Smart Lock Mobile Application are affected: Smart Lock Mobile Application (Android) 3.2.3 (CVE-2026-16581) CVSS Vendor Equipment Vulnerabilities v3 5.3 igloohome igloohome Smart Lock Mobile Application Inclusion of Sensitive Information in Source Code Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Singapore Vulnerabilities Expand All + CVE-2026-16581 In igloohome Smart Lock Mobile App versions 3.2.3 and prior, an Inclusion of Sensitive Information in Source Code vulnerability could allow an unauthorized actor to access functions or backend services that were not sufficiently protected by authentication controls. View CVE Details Affected Products igloohome Smart Lock Mobile Application Vendor: igloohome Product Version: igloohome Smart Lock Mobile Application (Android): 3.2.3 Product Status: known_affected Remediations Vendor fix igloohome have enhanced the access control mechanisms on backend services to ensure that only properly authenticated and authorized requests can interact with sensitive functionality. No user interaction is needed. Mitigation For more information, contact igloohome (info@igloohome.com). mailto:info@igloohome.com Relevant CWE: CWE-540 Inclusion of Sensitive Information in Source Code Metrics CVS",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-06",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
+      "cves": [
+        "CVE-2026-16581"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 25,
@@ -353,15 +547,65 @@
       "related_sources": []
     },
     {
-      "id": "19a239d88c1508f6",
-      "title": "Rethinking security for the age of AI",
-      "summary": "The physics of cybersecurity are changing. Introducing security's new cyber stack: Project Perception. The post Rethinking security for the age of AI appeared first on Microsoft Security Blog .",
-      "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+      "id": "640e4700a725e9e6",
+      "title": "Enhancing AI security through global AI red teaming",
+      "summary": "Microsoft's External Red Team Alliance (EXTRA) is a global AI security initiative designed to advance AI safety research and red teaming. By partnering with universities, researchers, and regional experts, EXTRA helps identify emerging AI risks, improve security testing, and strengthen the resilience of frontier AI systems. The post Enhancing AI security through global AI red teaming appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/27/enhancing-ai-security-through-global-ai-red-teaming/",
       "source": "Microsoft Security Blog",
       "source_trust": 5,
       "category": "threat",
-      "published": "2026-07-27T16:40:00+00:00",
-      "published_ts": 1785170400.0,
+      "published": "2026-07-27T16:25:00+00:00",
+      "published_ts": 1785169500.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "fb9c4b10a104fe39",
+      "title": "CISA shares advice on isolating vital systems during cyberattacks",
+      "summary": "The U.S. and Australian governments have released new guidance urging critical infrastructure organizations to prepare to isolate vital operational technology systems in the event of a cyberattack or other major disruptions. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-shares-advice-on-isolating-vital-systems-during-cyberattacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T18:41:04+00:00",
+      "published_ts": 1785264064.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "88b2917e5b991190",
+      "title": "Is Your SSO Protected Against Modern Credential Attacks?",
+      "summary": "A compromised SSO login can provide attackers with access to multiple enterprise applications and services. Specops Software explains how stronger passwords, phishing-resistant MFA, and identity hardening help secure modern SSO environments and the applications they protect. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/is-your-sso-protected-against-modern-credential-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T14:00:10+00:00",
+      "published_ts": 1785247210.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -373,7 +617,7 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -407,6 +651,95 @@
       "related_sources": []
     },
     {
+      "id": "bd9b7551ce61dd5a",
+      "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
+      "summary": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the firmware version V3.1.6 for the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP (incl. SIPLUS variant). Siemens is preparing fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP are affected: SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AB0) vers:intdot/&gt;=3.1.6 (CVE-2021-41617, CVE-2023-28531, CVE-2023-51384, CVE-2023-52927, CVE-2024-26783, CVE-2024-27056, CVE-2024-28956, CVE-2024-36903, CVE-2024-36927, CVE-2024-42079, CVE-2024-46786, CVE-2024-47736, CVE-2024-47809, CVE-2024-49968, CVE-2024-49994, CVE-2024-49998, CVE-2024-50014, CVE-2024-50063, CVE-2024-50164, CVE-2024-50298, CVE-2024-53124, CVE-2024-53170, CVE-2024-54458, CVE-2024-56631, CVE-2024-56703, CVE-2024-56719, CVE-2024-57917, CVE-2024-57924, CVE-2024-57973, CVE-2024-57977, CVE-2024-57979, CVE-2024-58011, CVE-2024-58016, CVE-2024-58020, CVE-2024-58056, CVE-2024-58058, CVE-2024-58061, CVE-2024-58086, CVE-2025-21645, CVE-2025-21648, CVE-2025-21655, CVE-2025-21676, CVE-2025-21682, CVE-2025-21702, CVE-2025-21705, CVE-2025-21706, CVE-2025-21707, CVE-2025-21718, CVE-2025-21731, CVE-2025-21745, CVE-2025-21758, CVE-2025-21760, CVE-2025-21764, CVE-2025-21765, CVE-2025-21780, CVE-2025-21795, CVE-2025-21796, CVE-2025-21802, CVE-2025-21814, CVE-2025-21846, CVE-2025-21853, CVE-2025-21861, CVE",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-07-28T12:00:00+00:00",
+      "published_ts": 1785240000.0,
+      "cves": [
+        "CVE-2021-41617",
+        "CVE-2023-28531",
+        "CVE-2023-51384",
+        "CVE-2023-52927",
+        "CVE-2024-26783",
+        "CVE-2024-27056",
+        "CVE-2024-28956",
+        "CVE-2024-36903",
+        "CVE-2024-36927",
+        "CVE-2024-42079",
+        "CVE-2024-46786",
+        "CVE-2024-47736",
+        "CVE-2024-47809",
+        "CVE-2024-49968",
+        "CVE-2024-49994",
+        "CVE-2024-49998",
+        "CVE-2024-50014",
+        "CVE-2024-50063",
+        "CVE-2024-50164",
+        "CVE-2024-50298",
+        "CVE-2024-53124",
+        "CVE-2024-53170",
+        "CVE-2024-54458",
+        "CVE-2024-56631",
+        "CVE-2024-56703",
+        "CVE-2024-56719",
+        "CVE-2024-57917",
+        "CVE-2024-57924",
+        "CVE-2024-57973",
+        "CVE-2024-57977",
+        "CVE-2024-57979",
+        "CVE-2024-58011",
+        "CVE-2024-58016",
+        "CVE-2024-58020",
+        "CVE-2024-58056",
+        "CVE-2024-58058",
+        "CVE-2024-58061",
+        "CVE-2024-58086",
+        "CVE-2025-21645",
+        "CVE-2025-21648",
+        "CVE-2025-21655",
+        "CVE-2025-21676",
+        "CVE-2025-21682",
+        "CVE-2025-21702",
+        "CVE-2025-21705",
+        "CVE-2025-21706",
+        "CVE-2025-21707",
+        "CVE-2025-21718",
+        "CVE-2025-21731",
+        "CVE-2025-21745",
+        "CVE-2025-21758",
+        "CVE-2025-21760",
+        "CVE-2025-21764",
+        "CVE-2025-21765",
+        "CVE-2025-21780",
+        "CVE-2025-21795",
+        "CVE-2025-21796",
+        "CVE-2025-21802",
+        "CVE-2025-21814",
+        "CVE-2025-21846",
+        "CVE-2025-21853",
+        "CVE-2025-21861"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "5f765ae538ef1892",
       "title": "FBI: Breaking Affiliate Trust Sped Along LockBit's Takedown",
       "summary": "An FBI agent explains how the mulitnational law-enforcement Operation Cronos was successful in disrupting the largest ransomware group of its time.",
@@ -431,66 +764,15 @@
       "related_sources": []
     },
     {
-      "id": "77b22f0dc7a21bfc",
-      "title": "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework",
-      "summary": "NVIDIA and 36 other organizations have formed the Open Secure AI Alliance to develop and share open technologies, techniques, and tools for securing software and artificial intelligence (AI) agents. The 37-member group spans cloud, security, enterprise software, and AI companies, including Microsoft, Cisco, Cloudflare, CrowdStrike, Hugging Face, IBM, Palo Alto Networks, Red Hat, and the Linux",
-      "url": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T18:10:05+00:00",
-      "published_ts": 1785175805.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5f0b755273e36ad8",
-      "title": "27th July – Threat Intelligence Report",
-      "summary": "For the latest discoveries in cyber research for the week of 27th July, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Nichirei, a Japan-based frozen-food supplier and logistics company, has experienced a ransomware attack that disrupted shipping operations and affected approximately 5,000 customers. KFC Japan warned of possible shortages. Nichirei confirmed personal data theft, [&#8230;] The post 27th July – Threat Intelligence Report appeared first on Check Point Research .",
-      "url": "https://research.checkpoint.com/2026/27th-july-threat-intelligence-report/",
-      "source": "Check Point Research",
-      "source_trust": 4,
+      "id": "19a239d88c1508f6",
+      "title": "Rethinking security for the age of AI",
+      "summary": "The physics of cybersecurity are changing. Introducing security's new cyber stack: Project Perception. The post Rethinking security for the age of AI appeared first on Microsoft Security Blog .",
+      "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
       "category": "threat",
-      "published": "2026-07-27T16:00:39+00:00",
-      "published_ts": 1785168039.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "88bd74a2ab3f0aeb",
-      "title": "⚡ Weekly Recap: Rogue AI Agents, Check Point Exploit, Slopsquatting, ClickFix Lures and More",
-      "summary": "Monday starts with the usual promise that everything is under control. Then the logs wake up. This week, trusted tools crossed lines, old flaws found new work, exposed systems stayed exposed, and attackers kept hiding inside normal-looking services. Nothing looked strange at first. That helped. That is the mood. Here is the full recap. ⚡ Threat of the Week OpenAI Says Its AI Agent Went Rogue",
-      "url": "https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T14:10:54+00:00",
-      "published_ts": 1785161454.0,
+      "published": "2026-07-27T16:40:00+00:00",
+      "published_ts": 1785170400.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -539,30 +821,129 @@
       "related_sources": []
     },
     {
-      "id": "994247d2a0745846",
-      "title": "Malvertising Sends Malware in Pieces, Then Makes the Browser Build the Executable",
-      "summary": "A malvertising operation dubbed SourTrade is making victims' browsers build the final Windows executable themselves, using a legitimate Bun runtime as its base instead of serving one complete malicious file from a fixed URL. Confiant, which detailed the campaign on July 23, 2026, said it has operated since late 2024 and impersonated TradingView, Solana, and Luno to target retail traders and",
-      "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
-      "source": "The Hacker News",
+      "id": "e03397c78bf35803",
+      "title": "'Certighost' Flaw Haunts Microsoft Active Directory Certificates",
+      "summary": "Microsoft patched a high-severity vulnerability earlier this month that allows a threat actor to escalate privileges and compromise an AD environment.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-25T18:48:44+00:00",
-      "published_ts": 1785005324.0,
+      "published": "2026-07-28T16:38:48+00:00",
+      "published_ts": 1785256728.0,
       "cves": [],
       "sectors": [
-        "Consumer",
-        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "Windows"
+        "Active Directory"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5d6968fa461a7c8f",
+      "title": "Tengu Botnet Reboots Compromised Linux Devices When Defenders Kill Its Process",
+      "summary": "A new Mirai-derived botnet called Tengu can use a compromised Linux device's hardware watchdog to trigger a reboot when defenders kill its main process. If that happens, Tengu's other persistence mechanisms get another chance to relaunch it. Nozomi Networks Labs observed the dropper reaching its honeypots through Telnet credential brute force. Tengu supports 25 distributed denial-of-service (",
+      "url": "https://thehackernews.com/2026/07/tengu-botnet-reboots-compromised-linux.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T15:01:33+00:00",
+      "published_ts": 1785250893.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ac77e9f63144e8ee",
+      "title": "India’s Bank of Baroda confirms cyber incident after hackers claim data theft",
+      "summary": "An employee's email account had been compromised, allowing unauthorized access to \"certain data,\" Bank of Baroda reported.",
+      "url": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T14:45:57+00:00",
+      "published_ts": 1785249957.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6a78faf569dfa66d",
+      "title": "24,650 Internet-Exposed BMCs Disclose IPMI Password Hashes Before Login",
+      "summary": "Cybersecurity researchers have sounded an alert after finding more than 36,000 Baseboard Management Controller (BMC) management interfaces exposing Intelligent Platform Management Interface (IPMI) protocol to the public internet. Of the 36,872 internet-exposed server-management interfaces running IPMI, 24,650 have been found to disclose password-derived authentication hashes before login due to",
+      "url": "https://thehackernews.com/2026/07/24650-internet-exposed-bmcs-disclose.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T14:41:36+00:00",
+      "published_ts": 1785249696.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "92d474f1ba3069e1",
+      "title": "Apple Patches 87 Vulnerabilities in iOS, 155 in macOS Tahoe",
+      "summary": "Apple announced that dozens of vulnerabilities have been patched in each of its operating systems. The post Apple Patches 87 Vulnerabilities in iOS, 155 in macOS Tahoe appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/apple-patches-87-vulnerabilities-in-ios-155-in-macos-tahoe/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T14:19:31+00:00",
+      "published_ts": 1785248371.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "iOS",
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -715,54 +1096,6 @@
       "related_sources": []
     },
     {
-      "id": "dd162390ef556d58",
-      "title": "Origin Energy Data Breach Affects 900,000 Australians",
-      "summary": "The hacker claimed to have stolen the information of 2 million Origin Energy customers after breaching its systems. The post Origin Energy Data Breach Affects 900,000 Australians appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/origin-energy-data-breach-affects-900000-australians/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-28T05:01:05+00:00",
-      "published_ts": 1785214865.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ab7f6a11deae8597",
-      "title": "For Some, So-Called ‘Skynet Day’ Came too Close to Sci-Fi After a Rogue Agent Hacked Into a Startup",
-      "summary": "Decades after it appeared in “The Terminator,” Skynet looks more like a forecast of the cyber incident in which a rogue AI system hacked into another AI company on its own. The post For Some, So-Called ‘Skynet Day’ Came too Close to Sci-Fi After a Rogue Agent Hacked Into a Startup appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/for-some-so-called-skynet-day-came-too-close-to-sci-fi-after-a-rogue-agent-hacked-into-a-startup/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-28T02:28:03+00:00",
-      "published_ts": 1785205683.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "5afed478af1cf4be",
       "title": "AI Agent Drives Espionage Attack on Thai Ministry of Finance",
       "summary": "Attackers used Hermes, an autonomous open source tool, in unrestricted &quot;YOLO mode&quot; to conduct espionage against Thailand's Ministry of Finance.",
@@ -859,47 +1192,26 @@
       "related_sources": []
     },
     {
-      "id": "8615a9badfeed532",
-      "title": "Why Resetting Passwords No Longer Stops Attackers",
-      "summary": "As attackers shift from password theft to session and token theft to bypass multifactor authentication controls, organizations must move beyond login security and protect authenticated sessions.",
-      "url": "https://www.darkreading.com/endpoint-security/why-resetting-passwords-no-longer-stop-attacks",
-      "source": "Dark Reading",
+      "id": "77b22f0dc7a21bfc",
+      "title": "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework",
+      "summary": "NVIDIA and 36 other organizations have formed the Open Secure AI Alliance to develop and share open technologies, techniques, and tools for securing software and artificial intelligence (AI) agents. The 37-member group spans cloud, security, enterprise software, and AI companies, including Microsoft, Cisco, Cloudflare, CrowdStrike, Hugging Face, IBM, Palo Alto Networks, Red Hat, and the Linux",
+      "url": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-27T18:39:50+00:00",
-      "published_ts": 1785177590.0,
+      "published": "2026-07-27T18:10:05+00:00",
+      "published_ts": 1785175805.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c2f02f21c02cf926",
-      "title": "Apple sued over fake App Store crypto wallet app stealing $1.8M in Bitcoin",
-      "summary": "Apple is being sued by three people who claim approximately $1.8 million in Bitcoin was stolen after downloading and using a fraudulent Sparrow Wallet application from the App Store. [...]",
-      "url": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T17:29:07+00:00",
-      "published_ts": 1785173347.0,
-      "cves": [],
-      "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Linux"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -907,15 +1219,15 @@
       "related_sources": []
     },
     {
-      "id": "20a1b24f0215b444",
-      "title": "Dysphoria IoT Botnet Adds Blockchain C2 and Victim Relays After JackSkid Disruption",
-      "summary": "Dysphoria, an Internet of Things (IoT) botnet line tracked by CNCERT and XLab, has adopted blockchain-based name services and infected-device relays after a March law-enforcement operation against JackSkid infrastructure. The researchers say the design makes the botnet harder to disrupt. CNCERT, China's national computer emergency response team, and XLab, the threat-intelligence lab of Chinese",
-      "url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
-      "source": "The Hacker News",
+      "id": "5f0b755273e36ad8",
+      "title": "27th July – Threat Intelligence Report",
+      "summary": "For the latest discoveries in cyber research for the week of 27th July, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Nichirei, a Japan-based frozen-food supplier and logistics company, has experienced a ransomware attack that disrupted shipping operations and affected approximately 5,000 customers. KFC Japan warned of possible shortages. Nichirei confirmed personal data theft, [&#8230;] The post 27th July – Threat Intelligence Report appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/27th-july-threat-intelligence-report/",
+      "source": "Check Point Research",
       "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T17:16:28+00:00",
-      "published_ts": 1785172588.0,
+      "category": "threat",
+      "published": "2026-07-27T16:00:39+00:00",
+      "published_ts": 1785168039.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
@@ -931,17 +1243,20 @@
       "related_sources": []
     },
     {
-      "id": "85d0b1e00051d02c",
-      "title": "Coca-Cola confirms data theft in Fairlife ransomware attack",
-      "summary": "The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
-      "source": "BleepingComputer",
+      "id": "88bd74a2ab3f0aeb",
+      "title": "⚡ Weekly Recap: Rogue AI Agents, Check Point Exploit, Slopsquatting, ClickFix Lures and More",
+      "summary": "Monday starts with the usual promise that everything is under control. Then the logs wake up. This week, trusted tools crossed lines, old flaws found new work, exposed systems stayed exposed, and attackers kept hiding inside normal-looking services. Nothing looked strange at first. That helped. That is the mood. Here is the full recap. ⚡ Threat of the Week OpenAI Says Its AI Agent Went Rogue",
+      "url": "https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-27T15:39:51+00:00",
-      "published_ts": 1785166791.0,
+      "published": "2026-07-27T14:10:54+00:00",
+      "published_ts": 1785161454.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1032,27 +1347,46 @@
       "related_sources": []
     },
     {
-      "id": "87ad61dba7a7724e",
-      "title": "Malicious sites use JavaScript to build malware in browser memory",
-      "summary": "A massive malvertising campaign is using fake Solana, Luno, and TradingView webpages with malicious JavaScript that instructs browsers to assemble malware directly in memory. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
-      "source": "BleepingComputer",
+      "id": "7492863ae2c310b0",
+      "title": "Claude AI Just Cracked a Post-Quantum Test Scheme and Found a Faster 7-Round AES Attack",
+      "summary": "Anthropic says Claude Mythos Preview helped derive an end-to-end key-recovery attack against HAWK-256 and a 200- to 800-fold speedup for an attack on seven-round AES-128. The HAWK attack exploits a previously unused symmetry in the lattice behind the signature scheme. Anthropic's released implementation gives an expected end-to-end runtime of about three hours and 42 minutes on a 96-core server",
+      "url": "https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-25T15:21:09+00:00",
-      "published_ts": 1784992869.0,
+      "published": "2026-07-28T18:59:07+00:00",
+      "published_ts": 1785265147.0,
       "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "28bc79202c31b88e",
+      "title": "Cyera Acquiring Oasis Security in $1 Billion Deal",
+      "summary": "Oasis Security recently raised $120 million in Series B funding for its agentic access management platform. The post Cyera Acquiring Oasis Security in $1 Billion Deal appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/cyera-acquiring-oasis-security-in-1-billion-deal/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-28T14:55:30+00:00",
+      "published_ts": 1785250530.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1243,63 +1577,19 @@
       "related_sources": []
     },
     {
-      "id": "570f0e0fdef16eef",
-      "title": "UK court rejects Bahrain immunity claim in spyware case",
-      "summary": "The alleged hacking by officials in Bahrain “allowed access to and exfiltration of information on the computers, interception of communications conducted using the computers and use of the computers’ microphones and cameras to surveil the respondents,” according to the court opinion.",
-      "url": "https://therecord.media/uk-court-rejects-bahrain-immunity-claim-spyware-case",
-      "source": "The Record",
+      "id": "8615a9badfeed532",
+      "title": "Why Resetting Passwords No Longer Stops Attackers",
+      "summary": "As attackers shift from password theft to session and token theft to bypass multifactor authentication controls, organizations must move beyond login security and protect authenticated sessions.",
+      "url": "https://www.darkreading.com/endpoint-security/why-resetting-passwords-no-longer-stop-attacks",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-27T17:52:00+00:00",
-      "published_ts": 1785174720.0,
+      "published": "2026-07-27T18:39:50+00:00",
+      "published_ts": 1785177590.0,
       "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f800559916a7396c",
-      "title": "Health system in South Carolina, Georgia closes offices after malware affects networks",
-      "summary": "On Sunday, AnMed published a statement online saying they were “experiencing a cybersecurity disruption involving malware” and were working to restore systems and determine the scope of the incident.",
-      "url": "https://therecord.media/health-system-south-carolina-georgia-disruptions-malware",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T17:38:00+00:00",
-      "published_ts": 1785173880.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "28961c24a746ff0f",
-      "title": "Telegram phishing campaign targeted exiled Belarusian activist, Russians and Kazakhstanis",
-      "summary": "Researchers have uncovered a highly personalized phishing campaign that used Telegram to try to hijack the account of an exiled Belarusian activist, as well as users in Russia and Kazakhstan.",
-      "url": "https://therecord.media/telegram-belarus-activist-russia-cyberattack",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T16:00:00+00:00",
-      "published_ts": 1785168000.0,
-      "cves": [],
-      "sectors": [],
       "regions": [
         "Unspecified"
       ],
@@ -1311,15 +1601,63 @@
       "related_sources": []
     },
     {
-      "id": "a0cd10e18f5a7137",
-      "title": "Ernst & Young data breach claimed by ShinyHunters extortion gang",
-      "summary": "The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+      "id": "c2f02f21c02cf926",
+      "title": "Apple sued over fake App Store crypto wallet app stealing $1.8M in Bitcoin",
+      "summary": "Apple is being sued by three people who claim approximately $1.8 million in Bitcoin was stolen after downloading and using a fraudulent Sparrow Wallet application from the App Store. [...]",
+      "url": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-27T15:12:27+00:00",
-      "published_ts": 1785165147.0,
+      "published": "2026-07-27T17:29:07+00:00",
+      "published_ts": 1785173347.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "20a1b24f0215b444",
+      "title": "Dysphoria IoT Botnet Adds Blockchain C2 and Victim Relays After JackSkid Disruption",
+      "summary": "Dysphoria, an Internet of Things (IoT) botnet line tracked by CNCERT and XLab, has adopted blockchain-based name services and infected-device relays after a March law-enforcement operation against JackSkid infrastructure. The researchers say the design makes the botnet harder to disrupt. CNCERT, China's national computer emergency response team, and XLab, the threat-intelligence lab of Chinese",
+      "url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T17:16:28+00:00",
+      "published_ts": 1785172588.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "85d0b1e00051d02c",
+      "title": "Coca-Cola confirms data theft in Fairlife ransomware attack",
+      "summary": "The Coca-Cola Company has confirmed that hackers stole data from its dairy subsidiary, Fairlife, during a ransomware attack earlier this month. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T15:39:51+00:00",
+      "published_ts": 1785166791.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1454,6 +1792,96 @@
       "related_sources": []
     },
     {
+      "id": "570f0e0fdef16eef",
+      "title": "UK court rejects Bahrain immunity claim in spyware case",
+      "summary": "The alleged hacking by officials in Bahrain “allowed access to and exfiltration of information on the computers, interception of communications conducted using the computers and use of the computers’ microphones and cameras to surveil the respondents,” according to the court opinion.",
+      "url": "https://therecord.media/uk-court-rejects-bahrain-immunity-claim-spyware-case",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T17:52:00+00:00",
+      "published_ts": 1785174720.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f800559916a7396c",
+      "title": "Health system in South Carolina, Georgia closes offices after malware affects networks",
+      "summary": "On Sunday, AnMed published a statement online saying they were “experiencing a cybersecurity disruption involving malware” and were working to restore systems and determine the scope of the incident.",
+      "url": "https://therecord.media/health-system-south-carolina-georgia-disruptions-malware",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T17:38:00+00:00",
+      "published_ts": 1785173880.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Office"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "28961c24a746ff0f",
+      "title": "Telegram phishing campaign targeted exiled Belarusian activist, Russians and Kazakhstanis",
+      "summary": "Researchers have uncovered a highly personalized phishing campaign that used Telegram to try to hijack the account of an exiled Belarusian activist, as well as users in Russia and Kazakhstan.",
+      "url": "https://therecord.media/telegram-belarus-activist-russia-cyberattack",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T16:00:00+00:00",
+      "published_ts": 1785168000.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a0cd10e18f5a7137",
+      "title": "Ernst & Young data breach claimed by ShinyHunters extortion gang",
+      "summary": "The ShinyHunters extortion gang has claimed responsibility for a recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the company's systems via a supply-chain attack. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-07-27T15:12:27+00:00",
+      "published_ts": 1785165147.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "0d254162acf9538d",
       "title": "Shadow AI agents are multiplying. Here's how to find and secure them.",
       "summary": "Shadow AI agents are rapidly spreading across enterprise platforms, often without IT or security visibility. Nudge Security explains how organizations can discover, assess, and govern AI agents before unmanaged permissions and autonomous actions create security risks. [...]",
@@ -1476,28 +1904,6 @@
       "related_sources": []
     },
     {
-      "id": "f7bf29fceb7e2b58",
-      "title": "Hackers used autonomous AI agent to spy on Thailand's finance ministry",
-      "summary": "Hackers used an autonomous artificial intelligence agent to carry out a cyber-espionage campaign against Thailand's Ministry of Finance, researchers discovered.",
-      "url": "https://therecord.media/thailand-hackers-ai-finance-ministry",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-27T12:00:00+00:00",
-      "published_ts": 1785153600.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "e46979bcb69d3e7a",
       "title": "Steam forum ClickFix attacks infect gamers with XMRig cryptominers",
       "summary": "Steam discussion forums are being abused in ClickFix attacks that pretend to be fixes for game and computer problems but actually infect devices with cryptominers. [...]",
@@ -1507,28 +1913,6 @@
       "category": "mixed",
       "published": "2026-07-25T22:37:47+00:00",
       "published_ts": 1785019067.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "68d44a3f90168232",
-      "title": "ShinyHunters data leaks fuel $2,000 sextortion email scam",
-      "summary": "Threat actors are using email addresses exposed in data breaches leaked by the ShinyHunters extortion group to send sextortion emails demanding $2,000 in Bitcoin. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-data-leaks-fuel-2-000-sextortion-email-scam/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-25T14:16:26+00:00",
-      "published_ts": 1784988986.0,
       "cves": [],
       "sectors": [],
       "regions": [
