@@ -1,21 +1,22 @@
 {
-  "generated_at": "2026-08-03T14:36:35.956963+00:00",
+  "generated_at": "2026-08-03T19:35:25.208911+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 53,
-    "critical": 1,
-    "high": 5,
-    "medium": 4,
-    "low": 43,
-    "actively_exploited": 6,
-    "with_cves": 6
+    "all": 44,
+    "critical": 2,
+    "high": 3,
+    "medium": 0,
+    "low": 39,
+    "actively_exploited": 5,
+    "with_cves": 3
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA KEV",
     "Check Point Research",
+    "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
-    "GBHackers",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
     "SecurityWeek",
@@ -24,6 +25,52 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "6bc3e39aa17f1240",
+      "title": "CVE-2026-18577: N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability (N-able N-central)",
+      "summary": "CISA KEV — actively exploited. N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-08-06).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18577",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-08-03T00:00:00+00:00",
+      "published_ts": 1785715200.0,
+      "cves": [
+        "CVE-2026-18577"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
+          "title": "N-able warns of N-central auth bypass flaw exploited in attacks",
+          "published": "2026-08-03T17:00:56+00:00"
+        },
+        {
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/",
+          "title": "N‑able Patches Vulnerability Exploited to Hack N-central Servers",
+          "published": "2026-08-03T12:34:06+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/n-able-says-attackers-take-over-n.html",
+          "title": "N-able Says Attackers Take Over N-central Servers After Initial Fix Proves Incomplete",
+          "published": "2026-08-03T06:41:46+00:00"
+        }
+      ]
+    },
     {
       "id": "ebd717caccd44120",
       "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
@@ -78,70 +125,6 @@
       "related_sources": []
     },
     {
-      "id": "b0fa1a9a0d3346ed",
-      "title": "SonicWall SMA Zero-Days Let Attackers Turn One WebSocket Request Into Root Control",
-      "summary": "SonicWall SMA Secure Mobile Access appliances are again at the center of a zero-day storm, with chained flaws that let attackers turn a single crafted WebSocket request into root-level control on internet-facing VPN gateways. The campaign, dissected by Volexity and other researchers, shows how a previously undocumented threat actor, tracked as UTA0533, abused SonicWall’s wsproxy [&#8230;] The post SonicWall SMA Zero-Days Let Attackers Turn One WebSocket Request Into Root Control appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/sonicwall-sma-zero-days/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-03T05:47:58+00:00",
-      "published_ts": 1785736078.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "2f30d2ac2af9b965",
-      "title": "N‑able Patches Vulnerability Exploited to Hack N-central Servers",
-      "summary": "The N‑central vulnerability CVE-2026-18577 has been exploited in the wild after threat actors found a patch bypass. The post N‑able Patches Vulnerability Exploited to Hack N-central Servers appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-03T12:34:06+00:00",
-      "published_ts": 1785760446.0,
-      "cves": [
-        "CVE-2026-18577"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 55,
-      "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/n-able-says-attackers-take-over-n.html",
-          "title": "N-able Says Attackers Take Over N-central Servers After Initial Fix Proves Incomplete",
-          "published": "2026-08-03T06:41:46+00:00"
-        },
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/critical-n-able-n-central-flaw-actively-exploited/",
-          "title": "Critical N-able N-central Flaw Actively Exploited to Gain God-Mode Access to MSP Networks",
-          "published": "2026-08-03T06:55:29+00:00"
-        }
-      ]
-    },
-    {
       "id": "e2f29f9a59af980d",
       "title": "Hijacked Hotel Wi-Fi Pushes Fake Updates to Deliver Surveillance Malware",
       "summary": "A fake browser update served over hijacked hotel Wi-Fi has been used to deliver CornFlake, a remote access trojan (RAT) that can capture webcam images, microphone audio, and keystrokes, Microsoft said in its latest report. Researchers track the operation as CaptiveCrunch and attribute it to Storm-2945. It assesses Storm-2945 to be an operational sub-cluster of Midnight Blizzard, also known as",
@@ -192,139 +175,6 @@
       "related_sources": []
     },
     {
-      "id": "f8a431967c06074d",
-      "title": "CareCloud Data Breach Exposes Patients’ Health, Social Security and Credit Card Data",
-      "summary": "CareCloud has reported a data security incident involving unauthorized access to its Amazon Web Services (AWS) environment that supports the CareCloud Health division. This incident disrupted one of the company’s electronic health record (EHR) systems. It may have exposed a wide range of protected health information (PHI), personally identifiable information (PII), insurance details, and, for [&#8230;] The post CareCloud Data Breach Exposes Patients’ Health, Social Security and Credit Card Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/carecloud-data-breach-exposes-patients-data/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-03T05:55:11+00:00",
-      "published_ts": 1785736511.0,
-      "cves": [],
-      "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Life Sciences & Health Care",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "0b7180d21872f05b",
-      "title": "North Korea Rebuilt Its Antivirus Using ClamAV and Gave It Four Different Names",
-      "summary": "North Korea’s national antivirus appears to have quietly pivoted to ClamAV’s open‑source engine, recompiled it, and shipped it under four different domestic product names underscoring Pyongyang’s reliance on foreign code to secure tightly controlled networks while obscuring the software’s true origin. ClamAV is a widely used open‑source antivirus engine maintained by the Cisco Talos team, [&#8230;] The post North Korea Rebuilt Its Antivirus Using ClamAV and Gave It Four Different Names appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/north-korea-rebuilt-its-antivirus/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-03T11:48:55+00:00",
-      "published_ts": 1785757735.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "f24d293fd26e7589",
-      "title": "Coldcard Firmware Flaw Lets Hackers Steal $70 Million in Bitcoin From 1,196 Addresses",
-      "summary": "Blockchain analysts have linked a rapid series of Bitcoin wallet drains to a reported vulnerability in Coldcard firmware. A total of 1,196 addresses lost a combined 1,082.65 BTC, valued at approximately $70.2 million, in just 41 minutes on July 30, 2026. Galaxy Research stated that its transaction-flow analysis was based on a pattern initially identified [&#8230;] The post Coldcard Firmware Flaw Lets Hackers Steal $70 Million in Bitcoin From 1,196 Addresses appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/coldcard-firmware-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-03T05:26:57+00:00",
-      "published_ts": 1785734817.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "8926241668deaa5c",
-      "title": "XCSSET v40 Infects Xcode Projects to Hijack Chrome and Trojanize Telegram on Macs",
-      "summary": "XCSSET v40 marks a significant escalation in macOS-focused supply chain attacks, weaponizing poisoned Xcode projects to hijack Chrome and Trojanize Telegram while operating almost entirely from memory with aggressive polymorphism and defense evasion. After several months of apparent inactivity, the actors behind the XCSSET malware resurfaced with version 40 (v40), a major re-architecture of the [&#8230;] The post XCSSET v40 Infects Xcode Projects to Hijack Chrome and Trojanize Telegram on Macs appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/xcsset-v40-infects-xcode-projects/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-03T05:04:45+00:00",
-      "published_ts": 1785733485.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Chrome",
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "1c89efbaec3e6b0e",
-      "title": "TP-Link TL-WR940N Router Flaw Lets Unauthenticated Attackers Execute Code Remotely",
-      "summary": "TP-Link has announced a high-severity security vulnerability in its TL-WR940N v6 wireless router that could allow an unauthenticated remote attacker to execute arbitrary code and potentially take full control of the affected device. This vulnerability is tracked as CVE-2026-12935 and has a CVSS v4.0 score of 8.7, categorized as high. TP-Link TL-WR940N Router Flaw According [&#8230;] The post TP-Link TL-WR940N Router Flaw Lets Unauthenticated Attackers Execute Code Remotely appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/tp-link-tl-wr940n-router-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-03T13:18:29+00:00",
-      "published_ts": 1785763109.0,
-      "cves": [
-        "CVE-2026-12935"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "05d7cbae0228c3bb",
       "title": "Russian hackers hijack hotel Wi-Fi networks to spy on travelers, Microsoft says",
       "summary": "Russian state-sponsored hackers have been compromising hotel Wi-Fi networks around the world to steal travelers' login credentials and infect devices with espionage malware, Microsoft said.",
@@ -351,54 +201,104 @@
       "related_sources": []
     },
     {
-      "id": "73c8cf8de7ef0d2b",
-      "title": "Hackers Exploit Critical Arista VeloCloud Flaw to Execute OS Commands",
-      "summary": "Arista Networks has issued a warning about attackers actively exploiting CVE-2026-16812, a critical unauthenticated OS command injection vulnerability in on-premises VeloCloud Orchestrator (VCO) deployments. This flaw carries a CVSS v3.1 and v4.0 severity score of 10.0, allowing a remote attacker with network access to the VCO web interface to access privileged internal functions and potentially [&#8230;] The post Hackers Exploit Critical Arista VeloCloud Flaw to Execute OS Commands appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/hackers-exploit-critical-arista-velocloud-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "2cb2027908daf242",
+      "title": "18 Malicious npm Packages Deliver Cross-Platform RAT to Alibaba Tool Users",
+      "summary": "Cybersecurity researchers have discovered a new set of malicious npm packages that target users of Alibaba developer tools with a cross-platform remote access trojan (RAT) as part of a sophisticated, targeted software supply chain attack targeting Chinese-speaking environments. One of the packages in question is \"lib-mtop,\" an unscoped package with the same name as a private Alibaba package",
+      "url": "https://thehackernews.com/2026/08/18-malicious-npm-packages-deliver-cross.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-03T05:37:19+00:00",
-      "published_ts": 1785735439.0,
-      "cves": [
-        "CVE-2026-16812"
-      ],
+      "published": "2026-08-03T18:43:53+00:00",
+      "published_ts": 1785782633.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Global"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "d8be9eb3a518c424",
-      "title": "SabPaisa Partners with AccuKnox for Zero Trust AI-Powered Cloud Security to Secure Its Payments Platform",
-      "summary": "CALIFORNIA, USA, August 2nd, 2026, CyberNewswire AccuKnox, a leading Zero Trust Security platform, today announced that SabPaisa, an RBI-authorised digital payments company, has selected its AI-powered cloud security platform to ensure robust security of its payments platform. SabPaisa joins a growing roster of financial services leaders using AccuKnox to meet stringent compliance requirements while defending [&#8230;] The post SabPaisa Partners with AccuKnox for Zero Trust AI-Powered Cloud Security to Secure Its Payments Platform appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/sabpaisa-partners-with-accuknox-for-zero-trust-ai-powered-cloud-security-to-secure-its-payments-platform/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "7af73dc11177e706",
+      "title": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
+      "summary": "Malware running as an ordinary user on a Windows machine can sign into a victim's passkey-protected accounts without a fingerprint, a PIN, or anything at all appearing on the victim's screen. Unit 42 detailed three attack paths against Chrome's Google Password Manager cloud authenticator, which it calls Pass-ta-key, Silver Pass-ta-key and Golden Pass-ta-key; the strongest targets the master key",
+      "url": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-02T18:39:49+00:00",
-      "published_ts": 1785695989.0,
+      "published": "2026-08-03T16:24:47+00:00",
+      "published_ts": 1785774287.0,
       "cves": [],
       "sectors": [
-        "Financial Services"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe",
-        "Global",
-        "North America"
+        "Unspecified"
+      ],
+      "products": [
+        "Chrome",
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0974ba8e758e5269",
+      "title": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
+      "summary": "The INC Ransomware operation has emerged as the \"dominant threat actor\" exploiting the recently disclosed security flaws in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances. In a report published over the weekend, Resecurity said it observed the INC Ransomware accelerating its activity since the beginning of August 2026, listing multiple victims on its data leak site. Per",
+      "url": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-03T16:15:13+00:00",
+      "published_ts": 1785773713.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1de7b134669fa3f4",
+      "title": "Visa to Acquire Fraud Intelligence Firm BioCatch for $2.4 Billion",
+      "summary": "The payments giant says BioCatch’s behavioral and device intelligence will help financial institutions combat account takeovers, scams and other forms of digital fraud. The post Visa to Acquire Fraud Intelligence Firm BioCatch for $2.4 Billion appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/visa-to-acquire-fraud-intelligence-firm-biocatch-for-2-4-billion/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-03T15:32:05+00:00",
+      "published_ts": 1785771125.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -479,7 +379,7 @@
     {
       "id": "7b9bfe3d729e2487",
       "title": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
-      "summary": "An unknown Chinese-threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit. Attack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of which are fake Amazon Web Services (AWS) sign-in pages on a domain that also hosts the exploit toolkit. \"",
+      "summary": "An unknown Chinese-speaking threat actor has been observed running a campaign targeting Apple iOS devices by leveraging a publicly leaked version of the DarkSword exploit kit. Attack surface management platform Censys said it identified the threat actor running more than 100 web properties, most of which are fake Amazon Web Services (AWS) sign-in pages on a domain that also hosts the exploit",
       "url": "https://thehackernews.com/2026/08/chinese-threat-actor-uses-leaked.html",
       "source": "The Hacker News",
       "source_trust": 4,
@@ -529,30 +429,6 @@
       "related_sources": []
     },
     {
-      "id": "13e1396c1091c4b1",
-      "title": "Metasploit Exploit Targets Critical Ruby on Rails Active Storage RCE Flaw",
-      "summary": "A new Metasploit Framework module has been submitted for review, targeting the critical Ruby on Rails Active Storage vulnerability, tracked as CVE-2026-66066. This submission poses an increased risk to applications that utilize the Vips image-processing backend. The proposed module is named `exploit/multi/http/rails_activestorage_vips_rce` and was introduced in Rapid7 Metasploit Framework pull request #21733 by contributor jburgess-r7. [&#8230;] The post Metasploit Exploit Targets Critical Ruby on Rails Active Storage RCE Flaw appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/metasploit-exploit-targets-critical-ruby-on-rails/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-03T06:26:49+00:00",
-      "published_ts": 1785738409.0,
-      "cves": [
-        "CVE-2026-66066"
-      ],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "c877e7ff16312216",
       "title": "Hackers Poison Adform Script to Swap Crypto Wallet Addresses Across Customer Sites",
       "summary": "Attackers modified a JavaScript file served by advertising technology company Adform, turning it into a browser-side tool that rewrites cryptocurrency wallet addresses. Adform detected the incident on July 27, 2026, removed the malicious code, notified affected clients, and reported it to authorities. Anyone who visited a site carrying the affected script on July 27 and copied a Bitcoin,",
@@ -575,6 +451,126 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "80cf3ff21aa2a468",
+      "title": "Fake Roblox Xeno script launcher pushes infostealer, RAT malware",
+      "summary": "Fake Xeno Executor installers are infecting unsuspecting Roblox players with malware that provides remote access and steals sensitive information. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-roblox-xeno-script-launcher-pushes-infostealer-rat-malware/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-03T19:25:10+00:00",
+      "published_ts": 1785785110.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9838444df6c8f2c9",
+      "title": "Hackers steal 31,000 records identifying people behind Liechtenstein companies, foundations",
+      "summary": "A cyberattack compromised tens of thousands of records related to companies, foundations and trusts in Liechtenstein, prompting the government to to form a “crisis unit” to address the breach.",
+      "url": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-03T17:36:00+00:00",
+      "published_ts": 1785778560.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ab866792ca4cb144",
+      "title": "[Webinar] Tales from the Frontlines: An exclusive briefing on Q2 incidents",
+      "summary": "Register for an exclusive, unrecorded 30-minute webinar to review the most high-impact incidents Talos IR faced in Q2.",
+      "url": "https://blog.talosintelligence.com/webinar-tales-from-the-frontlines-an-exclusive-briefing-on-q2-incidents/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-08-03T16:00:12+00:00",
+      "published_ts": 1785772812.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e6ca496b22900025",
+      "title": "Black Hat USA 2026 – Summary of Vendor Announcements (Part 1)",
+      "summary": "Many companies are showcasing their products and services this week at the 2026 edition of the Black Hat conference in Las Vegas. The post Black Hat USA 2026 – Summary of Vendor Announcements (Part 1) appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/black-hat-usa-2026-summary-of-vendor-announcements-part-1/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-03T15:50:00+00:00",
+      "published_ts": 1785772200.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "55754737fe82e7a9",
+      "title": "ExfilSquad hackers leak info of over 100,000 UK police officers, staff",
+      "summary": "A cyberattack on the U.K.'s Police National Legal Database (PNLD) has compromised contact data of more than 100,000 police officers and other criminal justice professionals. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/exfilsquad-hackers-leak-info-of-over-100-000-uk-police-officers-staff/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-03T15:04:39+00:00",
+      "published_ts": 1785769479.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [
+        "Office"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -821,105 +817,70 @@
       "related_sources": []
     },
     {
-      "id": "74d7febd9d3aafcb",
-      "title": "Suspected Chinese-Speaking Hackers Target Central Asian Governments With OctLurk and SilkLurk",
-      "summary": "A Chinese-speaking threat actor is suspected to be behind a fresh wave of cyber attacks targeting government organizations mainly located in Central Asia, including Afghanistan, Kyrgyzstan, Tajikistan, Uzbekistan, Kazakhstan, and the Syrian Arab Republic, since January 2025. These targeted organizations operate across several sectors, such as healthcare, research, government offices,",
-      "url": "https://thehackernews.com/2026/08/suspected-chinese-speaking-hackers.html",
-      "source": "The Hacker News",
+      "id": "d00113a5a153878a",
+      "title": "Chinese Actor Weaponizes Deepseek AI Agent to Attack Security Firm",
+      "summary": "Researchers from Jesta intercepted and investigated the model, which was attempting to compromise more than 1,200 hosts for proxyjacking and to launch further attacks",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-deepseek-ai-agent-attack-security-firm",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-31T18:52:04+00:00",
-      "published_ts": 1785523924.0,
+      "published": "2026-08-03T15:42:18+00:00",
+      "published_ts": 1785771738.0,
       "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "523da9e6b4e350e9",
-      "title": "CISA warns of spike in attacks on water systems as Minnesota incidents probed",
-      "summary": "The Cybersecurity and Infrastructure Security Agency said in a public alert on Thursday that facilities should “remove publicly exposed PLCs and other operational technology (OT) from the internet as soon as possible.\"",
-      "url": "https://therecord.media/cisa-warns-of-spike-in-water-system-attacks",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T17:47:00+00:00",
-      "published_ts": 1785520020.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "ec775661a37dc4f1",
-      "title": "CISA warns of cyberattacks disrupting U.S. water utilities",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T16:49:49+00:00",
-      "published_ts": 1785516589.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "05414337c3a2b418",
-      "title": "In Other News: OpenAI Open Source Tool, AWS Links Hacks to North Korea, Mythos Crypto Research",
-      "summary": "Noteworthy stories that might have slipped under the radar: parcel delivery company OnTrac hacked, Adobe patches, UK Department for Education loses 607,000 records. The post In Other News: OpenAI Open Source Tool, AWS Links Hacks to North Korea, Mythos Crypto Research appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/in-other-news-openai-open-source-tool-aws-links-hacks-to-north-korea-mythos-crypto-research/",
+      "id": "137d1a058bb1fe8e",
+      "title": "Cyberattack Hits Liechtenstein’s Register of People Behind Companies and Foundations",
+      "summary": "The list of people behind companies, foundations and trusteeships is part of efforts to combat money laundering and terror financing. The post Cyberattack Hits Liechtenstein’s Register of People Behind Companies and Foundations appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/cyberattack-hits-liechtensteins-register-of-people-behind-companies-and-foundations/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-07-31T15:47:02+00:00",
-      "published_ts": 1785512822.0,
+      "published": "2026-08-03T15:15:00+00:00",
+      "published_ts": 1785770100.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
-        "Asia-Pacific",
-        "Europe"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8b7e11a6842b0c7d",
+      "title": "Inside the Underground Business of the Android BTMOB RAT malware",
+      "summary": "Flare researchers analyzed thousands of underground posts to examine how the BTMOB Android malware operation evolved into a fragmented ecosystem of resellers, source-code vendors, custom versions, and competing sales channels. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/inside-the-underground-business-of-btmob-rat/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-03T14:45:55+00:00",
+      "published_ts": 1785768355.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1064,30 +1025,6 @@
       "related_sources": []
     },
     {
-      "id": "132c4cf5803bd81e",
-      "title": "Ruby on Rails Patches Critical Vulnerability",
-      "summary": "The flaw can be exploited by unauthenticated attackers to read arbitrary files and potentially achieve remote code execution (RCE). The post Ruby on Rails Patches Critical Vulnerability appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ruby-on-rails-patches-critical-vulnerability/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-01T11:15:00+00:00",
-      "published_ts": 1785582900.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "8c8b4eb0baf084be",
       "title": "Amgen says cloud data breach exposed patient health, proprietary info",
       "summary": "Pharmaceutical company Amgen says it suffered a data breach after threat actors stole corporate data and patient information stored in multiple cloud systems operated by third-party service providers. [...]",
@@ -1136,78 +1073,6 @@
       "related_sources": []
     },
     {
-      "id": "48ab46aea126d3a1",
-      "title": "CISA Issues Fresh SBOM Guidance. Did They Get It Right?",
-      "summary": "A couple dozen changes to SBOM fields will make them more comprehensive, but some argue that the framework lacks real risk-management improvements.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/cisa-issues-fresh-sbom-guidance",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T18:13:11+00:00",
-      "published_ts": 1785521591.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "98251d1f6da28cb8",
-      "title": "Cheap Android TV Boxes Pose as Phones and Turn Owners’ Broadband Into Proxies",
-      "summary": "Bitsight says some cheap Android TV boxes have shipped with apps that rewrite their hardware identity to mimic Samsung, Huawei, Xiaomi, or Vivo phones, then click ads on websites run by the same operators. Researchers named the operation Fuyao and attributed it to Zhejiang Fengwo IoT Technology Co., Ltd., a mainland China company founded in 2019. The same apps have a second job. When a box",
-      "url": "https://thehackernews.com/2026/07/cheap-android-tv-boxes-pose-as-phones.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T14:45:01+00:00",
-      "published_ts": 1785509101.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "aadec7282feb3be7",
-      "title": "Balance Theory Raises $19 Million to Help Enterprises Manage Cybersecurity Investments",
-      "summary": "The funding round was led by SYN Ventures, with participation from existing investors DataTribe and TEDCO. The post Balance Theory Raises $19 Million to Help Enterprises Manage Cybersecurity Investments appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/balance-theory-raises-19-million-to-help-enterprises-manage-cybersecurity-investments/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-01T12:30:00+00:00",
-      "published_ts": 1785587400.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "e2bb41be16293269",
       "title": "Adobe Campaign Classic CVSS 10.0 Flaw Could Run Code Without User Interaction",
       "summary": "Adobe has released security updates to address a maximum-severity security flaw in Campaign Classic (ACC), its enterprise-focused marketing automation platform, that could result in arbitrary code execution. The vulnerability, tracked as CVE-2026-48449, carries a severity score of 10.0 on the CVSS scoring system. It has been described as a case of incorrect authorization that could result in",
@@ -1248,98 +1113,6 @@
       ],
       "products": [
         "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d803dc3815b08794",
-      "title": "OpenAI says its new GPT 5.6 models are becoming more cost-efficient",
-      "summary": "OpenAI says it has reduced the price of two GPT-5.6 models, cutting Luna's API price by 80% and Terra's by 20% as it works to make its models more efficient. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-new-gpt-56-models-are-becoming-more-cost-efficient/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T18:52:44+00:00",
-      "published_ts": 1785523964.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0951a2a67f5003ae",
-      "title": "Hacker uses DeepSeek AI to autonomously attack vulnerable servers",
-      "summary": "A Chinese-speaking threat actor is using the DeepSeek AI model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers with limited human involvement. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T17:35:35+00:00",
-      "published_ts": 1785519335.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e694b431720ede22",
-      "title": "Cyber Command plans Silicon Valley office to drive innovation",
-      "summary": "The outpost will have its own director, though no one has yet been named for the post, and support the command’s nascent Cyber Warfare Innovation Center (CIWC).",
-      "url": "https://therecord.media/cyber-command-plans-silicon-valley-office-to-drive-innovation",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T17:35:00+00:00",
-      "published_ts": 1785519300.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "55f2b21497296dea",
-      "title": "HollowFrame Loader Deploys Matryoshka Backdoor in Spear-Phishing Attack on Law Firm",
-      "summary": "Cybersecurity researchers have shed light on a previously undocumented Go-based loader framework called HollowFrame and a Rust-based malware family tracked as Matryoshka. According to Blackpoint Cyber, the intrusion sequence begins with a spear-phishing message containing a link to an encrypted archive, which holds a Windows Shortcut (LNK). Executing the file triggers a multi-stage chain that",
-      "url": "https://thehackernews.com/2026/07/hollowframe-loader-deploys-matryoshka.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-07-31T16:39:31+00:00",
-      "published_ts": 1785515971.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
