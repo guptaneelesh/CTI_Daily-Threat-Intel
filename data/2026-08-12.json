@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-12T01:51:06.130556+00:00",
+  "generated_at": "2026-08-12T07:22:48.798794+00:00",
   "lookback_hours": 72,
   "totals": {
     "all": 90,
     "critical": 2,
-    "high": 8,
-    "medium": 18,
-    "low": 62,
-    "actively_exploited": 17,
-    "with_cves": 11
+    "high": 10,
+    "medium": 17,
+    "low": 61,
+    "actively_exploited": 20,
+    "with_cves": 10
   },
   "sources_used": [
     "BleepingComputer",
@@ -16,6 +16,7 @@
     "CISA KEV",
     "Check Point Research",
     "Cisco Talos",
+    "CrowdStrike Blog",
     "Dark Reading",
     "GBHackers",
     "Krebs on Security",
@@ -53,7 +54,14 @@
       "cvss": null,
       "priority_score": 80,
       "priority_label": "Critical",
-      "related_sources": []
+      "related_sources": [
+        {
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/cisco-patches-firewall-zero-day-exploited-for-dos-attacks/",
+          "title": "Cisco Patches Firewall Zero-Day Exploited for DoS Attacks",
+          "published": "2026-08-12T05:10:47+00:00"
+        }
+      ]
     },
     {
       "id": "81f4cacc49b62301",
@@ -152,6 +160,35 @@
       "related_sources": []
     },
     {
+      "id": "e23a003b087f02c9",
+      "title": "Microsoft Patch Tuesday Update August 2026 Fixes Actively Exploited Windows Zero-Day",
+      "summary": "Microsoft’s August 2026 Patch Tuesday released fixes for hundreds of vulnerabilities across various products, including Windows, Office, SharePoint, Azure, .NET, PowerShell, Visual Studio Code, and other enterprise solutions. A total of 394 distinct flaws were documented in this release. Among these vulnerabilities, three zero-day issues are particularly noteworthy. One of these is a Windows elevation-of-privilege [&#8230;] The post Microsoft Patch Tuesday Update August 2026 Fixes Actively Exploited Windows Zero-Day appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-patch-tuesday-update-august-2026/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-12T05:49:49+00:00",
+      "published_ts": 1786513789.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Office",
+        "SharePoint",
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "b8d30fd485e6d435",
       "title": "CISA: Microsoft SharePoint flaw now exploited in ransomware attacks",
       "summary": "CISA confirmed today that ransomware gangs have begun abusing a high-severity Microsoft SharePoint remote code execution vulnerability, which has been flagged as actively exploited since early July. [...]",
@@ -176,6 +213,30 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "a0640976d5b38b66",
+      "title": "Fake Corporate VPN Test Creates Scheduled Task and Downloads Malware on Windows",
+      "summary": "An advanced recruitment-themed intrusion campaign attributed to UAC-0145, a cluster that includes subcluster UAC-0002, also tracked as Sandworm, APT44 and Seashell Blizzard. The activity, observed since at least May 2026, begins on job-search platforms. Operators review a candidate’s résumé, contact the individual while impersonating an IT company such as ATLAS Business Group, and move the [&#8230;] The post Fake Corporate VPN Test Creates Scheduled Task and Downloads Malware on Windows appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/fake-corporate-vpn-test/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-12T06:38:32+00:00",
+      "published_ts": 1786516712.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
       "priority_label": "High",
       "related_sources": []
     },
@@ -425,6 +486,28 @@
       "related_sources": []
     },
     {
+      "id": "70e8109f9bd48815",
+      "title": "August 2026 Patch Tuesday: One Exploited Zero-Day and 62 Critical Vulnerabilities Among 415 CVEs",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-august-2026/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-08-11T05:00:00+00:00",
+      "published_ts": 1786424400.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "c22c538b9128cf04",
       "title": "Metabase SQL Zero-Day Attacks Could Have Wide Blast Radius",
       "summary": "The maximum-severity vulnerability, which still has no CVE, allows malicious, remote administrator access to the business-analytics platform and its downstream users.",
@@ -492,35 +575,6 @@
       ],
       "regions": [
         "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 35,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "fdeeaf1465da4ed3",
-      "title": "CISA Warns SonicWall SMA1000 Flaws Are Exploited in Ransomware Attacks",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical vulnerability in SonicWall SMA1000 to its Known Exploited Vulnerabilities catalog, noting that the flaw has been used in ransomware campaigns. This vulnerability, tracked as CVE-2026-15409, is a server-side request forgery (SSRF) issue found in the Workplace interface of SonicWall SMA1000 appliances. It has [&#8230;] The post CISA Warns SonicWall SMA1000 Flaws Are Exploited in Ransomware Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/cisa-warns-sonicwall-sma1000-flaws/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-11T09:48:45+00:00",
-      "published_ts": 1786441725.0,
-      "cves": [
-        "CVE-2026-15409"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -732,39 +786,6 @@
       "related_sources": []
     },
     {
-      "id": "b015ca4ac90cca20",
-      "title": "CiscoClamAV Vulnerabilities Let Remote Attackers Crash Antivirus Scanning With Crafted Files",
-      "summary": "Cisco has disclosed seven high-severity vulnerabilities in ClamAV that could allow unauthenticated remote attackers to disrupt antivirus scanning by submitting specially crafted files. These vulnerabilities are tracked as CVE-2026-20337, CVE-2026-20338, CVE-2026-20339, CVE-2026-20345, CVE-2026-20346, CVE-2026-20347, and CVE-2026-20348, and have been assigned a maximum CVSS score of 7.5. ClamAV Vulnerabilities The issues are detailed in the Cisco [&#8230;] The post CiscoClamAV Vulnerabilities Let Remote Attackers Crash Antivirus Scanning With Crafted Files appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/clamav-vulnerabilities/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-11T07:15:18+00:00",
-      "published_ts": 1786432518.0,
-      "cves": [
-        "CVE-2026-20337",
-        "CVE-2026-20338",
-        "CVE-2026-20339",
-        "CVE-2026-20345",
-        "CVE-2026-20346",
-        "CVE-2026-20347",
-        "CVE-2026-20348"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "e4ff70759affaa0b",
       "title": "DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure",
       "summary": "Microsoft Threat Intelligence examines DeadLock ransomware, an emerging financially motivated operation distinguished by its use of decentralized infrastructure to support victim communications, negotiations, and data leak operations alongside double extortion tactics used to pressure victims. The post DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure appeared first on Microsoft Security Blog .",
@@ -788,6 +809,111 @@
       "cvss": null,
       "priority_score": 25,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "f38bd149b76bcc37",
+      "title": "DEF CON Attendees Allegedly Jam Plane Wi‑Fi, Launch ‘Evil Twin’ Phishing Attack",
+      "summary": "A Delta Air Lines flight returning travelers from Las Vegas reportedly became the site of a high-altitude Wi-Fi phishing incident when someone on board allegedly disrupted the aircraft’s official internet service and broadcast a fraudulent wireless network. The incident occurred on Monday aboard Delta Flight 591, a Boeing 757 flying from Las Vegas Harry Reid [&#8230;] The post DEF CON Attendees Allegedly Jam Plane Wi‑Fi, Launch ‘Evil Twin’ Phishing Attack appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/def-con-attendees-allegedly-jam-plane-wi-fi/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-12T05:32:40+00:00",
+      "published_ts": 1786512760.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "17b59b4e207c16b6",
+      "title": "Zoom Zero-Click ‘Zoomsday’ Flaw Lets Meeting Participants Execute Code on Other Users’ Devices",
+      "summary": "Zoom has released security updates to address four vulnerabilities that could expose meeting participants to significant attacks, including a zero-click remote code execution flaw dubbed “Zoomsday.” The most severe issue, tracked as CVE-2026-53413, affects Zoom’s annotation feature, which allows participants to draw, highlight, and add text during screen sharing sessions. Researchers at A Security indicated [&#8230;] The post Zoom Zero-Click ‘Zoomsday’ Flaw Lets Meeting Participants Execute Code on Other Users’ Devices appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/zoom-zero-click-zoomsday-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-12T05:04:51+00:00",
+      "published_ts": 1786511091.0,
+      "cves": [
+        "CVE-2026-53413"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Zoom"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "36c41b43fed51965",
+      "title": "One ClickFix Lure Can Give Hackers a Persistent Remote Shell Through New CNCMachineRMS RAT",
+      "summary": "A ClickFix prompt can end in a remote-access foothold. CNCMachineRMS, an undocumented x64 RAT deployed at the end of a BabaDeda loader chain that turns a user-driven execution event into persistent hands-on-keyboard access. Rather than behaving like a conventional commodity stealer, the 1.14 MB implant is an access platform and second-stage delivery mechanism: its operational [&#8230;] The post One ClickFix Lure Can Give Hackers a Persistent Remote Shell Through New CNCMachineRMS RAT appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cncmachinerms-rat/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-12T05:00:51+00:00",
+      "published_ts": 1786510851.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4f594735dcc9bf32",
+      "title": "Docker CopyEscape Vulnerability Enables Host File Overwrite and Root Code Execution",
+      "summary": "A critical vulnerability in Docker, tracked as CVE-2026-17106 and referred to as “CopyEscape,” allows malicious containers to overwrite files on the host system using the widely utilized `docker cp` command. This flaw can lead to code execution as the local user and, potentially, as root on Linux systems where copy operations are performed with elevated [&#8230;] The post Docker CopyEscape Vulnerability Enables Host File Overwrite and Root Code Execution appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/docker-copyescape-vulnerability/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-12T05:00:17+00:00",
+      "published_ts": 1786510817.0,
+      "cves": [
+        "CVE-2026-17106"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Docker",
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -815,33 +941,6 @@
       "related_sources": []
     },
     {
-      "id": "034fd7c05dffa802",
-      "title": "ErrTraffic Combines WordPress Hacks, Blockchain C2 and Rotating Malware Domains in One Delivery Network",
-      "summary": "An active ErrTraffic malware-as-a-service campaign that combines compromised WordPress sites, ClickFix lures, Polygon blockchain smart contracts and rapidly rotating payload domains to distribute a broad set of Windows malware. ErrTraffic is marketed as a MaaS framework by a forum user known as “LenAI.” Its core feature is a traffic distribution system that routes victims to [&#8230;] The post ErrTraffic Combines WordPress Hacks, Blockchain C2 and Rotating Malware Domains in One Delivery Network appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/errtraffic-combines-wordpress-hacks/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-11T10:20:41+00:00",
-      "published_ts": 1786443641.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows",
-        "WordPress"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "03d5c3ffa44f9acb",
       "title": "Project CAV3RN continues: Google Apps Script as C2 relay and DNS-based C2 channel selection",
       "summary": "Project CAV3RN targets Israel with Google Apps Script C2 relays and DNS-based routing. Modular .NET NativeAOT framework blends C2 traffic with legitimate Google services to evade detection.",
@@ -859,30 +958,6 @@
       ],
       "regions": [
         "Middle East"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4a496c401ccbd40c",
-      "title": "Hackers Pivot Through Private APN to Sabotage Siemens PLCs at Polish Power Plant",
-      "summary": "Threat actors used a private cellular access-point-name (APN) network to pivot from a compromised wind farm into the operational technology environment. A Polish combined heat and power plant, where they disrupted Siemens programmable logic controllers and briefly interrupted cogeneration operations. The December 29, 2025 intrusion affected a CHP facility serving approximately 50,000 residents, forcing a [&#8230;] The post Hackers Pivot Through Private APN to Sabotage Siemens PLCs at Polish Power Plant appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/siemens-plc-network/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-11T08:12:33+00:00",
-      "published_ts": 1786435953.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1266,54 +1341,6 @@
       "products": [
         "Windows"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0dcb57fdeb9fd16e",
-      "title": "Critical Rancher Flaw Lets Authenticated Users Gain Full Admin Access to All Managed Clusters",
-      "summary": "A critical privilege-escalation vulnerability in SUSE Rancher could allow a low-privilege, authenticated user to gain administrative control of the Rancher management plane and every downstream Kubernetes cluster it manages. This issue is tracked as CVE-2026-44945 and GHSA-v584-7w32-jwpq, affecting Rancher releases 2.11.0 through 2.11.15, 2.12.0 through 2.12.11, 2.13.0 through 2.13.7, and 2.14.0 through 2.14.1. Rancher has [&#8230;] The post Critical Rancher Flaw Lets Authenticated Users Gain Full Admin Access to All Managed Clusters appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/critical-rancher-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-11T10:32:45+00:00",
-      "published_ts": 1786444365.0,
-      "cves": [
-        "CVE-2026-44945"
-      ],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Kubernetes"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0bf977625d24f1d8",
-      "title": "GhostJacking Attacks Let Hackers Hijack AI Agents and Steal Cloud Credentials",
-      "summary": "Security researchers have disclosed “GhostJacking,” a new class of attacks that exploits trusted observability and security platforms to manipulate AI agents into making unauthorized infrastructure changes, executing attacker-controlled commands, and exposing cloud credentials. GhostJacking Attacks This research, presented at DEF CON 34, describes how malicious content embedded in logs, alerts, or issue reports can serve [&#8230;] The post GhostJacking Attacks Let Hackers Hijack AI Agents and Steal Cloud Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/ghostjacking-attacks/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-11T10:11:40+00:00",
-      "published_ts": 1786443100.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1796,56 +1823,6 @@
       "related_sources": []
     },
     {
-      "id": "d7f4b1b5efcf70da",
-      "title": "Hackers Breach Polish Power Plant Controls via Private Cellular Network and Shut Turbine",
-      "summary": "Attackers shut down a steam turbine and the process-water treatment system at a Polish combined heat and power plant by coming in over the private cellular network the local grid operator uses to reach remote equipment. The plant supplies heat to roughly 50,000 residents. Recovery began at about 7:30 a.m. while the intruders were still active inside the network, and customers lost neither heat",
-      "url": "https://thehackernews.com/2026/08/hackers-breach-polish-power-plant.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-11T06:55:45+00:00",
-      "published_ts": 1786431345.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c6d6d6d0322cef82",
-      "title": "BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins",
-      "summary": "Cybersecurity researchers have warned of a supply chain compromise impacting WordPress plugin vendor BdThemes, prompting the content management systems (CMS) platform's plugins team to temporarily disable their downloads. \"Unlike traditional software supply chain attacks, zero source code files were modified within the official WordPress.org repository,\" Wordfence researcher Paolo Tresso said.",
-      "url": "https://thehackernews.com/2026/08/bdthemes-supply-chain-attack-poisons.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-11T05:48:44+00:00",
-      "published_ts": 1786427324.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "WordPress"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "3dbfd1884ace940c",
       "title": "The Permanent Threat: Analyzing Aeternum’s Blockchain-Based C2 Operations and Communications",
       "summary": "Analysis of the Aeternum botnet loader, a threat leveraging Polygon blockchain smart contracts for decentralized C2 infrastructure and payload execution. The post The Permanent Threat: Analyzing Aeternum’s Blockchain-Based C2 Operations and Communications appeared first on Unit 42 .",
@@ -2117,21 +2094,49 @@
       "related_sources": []
     },
     {
-      "id": "abd90ef83d5462fc",
-      "title": "OpenAI Unveils New Cybersecurity Model GPT-5.6-Cyber",
-      "summary": "OpenAI has also announced the expansion of its Daybreak platform to give more organizations access to its AI. The post OpenAI Unveils New Cybersecurity Model GPT-5.6-Cyber appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/openai-unveils-new-cybersecurity-model-gpt-5-6-cyber/",
-      "source": "SecurityWeek",
+      "id": "d7f4b1b5efcf70da",
+      "title": "Hackers Breach Polish Power Plant Controls via Private Cellular Network and Shut Turbine",
+      "summary": "Attackers shut down a steam turbine and the process-water treatment system at a Polish combined heat and power plant by coming in over the private cellular network the local grid operator uses to reach remote equipment. The plant supplies heat to roughly 50,000 residents. Recovery began at about 7:30 a.m. while the intruders were still active inside the network, and customers lost neither heat",
+      "url": "https://thehackernews.com/2026/08/hackers-breach-polish-power-plant.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-11T09:45:05+00:00",
-      "published_ts": 1786441505.0,
+      "published": "2026-08-11T06:55:45+00:00",
+      "published_ts": 1786431345.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c6d6d6d0322cef82",
+      "title": "BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins",
+      "summary": "Cybersecurity researchers have warned of a supply chain compromise impacting WordPress plugin vendor BdThemes, prompting the content management systems (CMS) platform's plugins team to temporarily disable their downloads. \"Unlike traditional software supply chain attacks, zero source code files were modified within the official WordPress.org repository,\" Wordfence researcher Paolo Tresso said.",
+      "url": "https://thehackernews.com/2026/08/bdthemes-supply-chain-attack-poisons.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-11T05:48:44+00:00",
+      "published_ts": 1786427324.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
