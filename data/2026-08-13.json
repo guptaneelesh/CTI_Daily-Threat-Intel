@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-13T07:24:59.952122+00:00",
+  "generated_at": "2026-08-13T13:07:27.021350+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 100,
-    "critical": 3,
-    "high": 9,
-    "medium": 18,
-    "low": 70,
-    "actively_exploited": 23,
-    "with_cves": 14
+    "all": 101,
+    "critical": 2,
+    "high": 8,
+    "medium": 22,
+    "low": 69,
+    "actively_exploited": 24,
+    "with_cves": 15
   },
   "sources_used": [
     "BleepingComputer",
@@ -23,11 +23,63 @@
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
     "SecurityWeek",
+    "SentinelOne Labs",
     "The Hacker News",
     "The Record",
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "81f4cacc49b62301",
+      "title": "CVE-2026-68820: Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability (Microsoft Windows Ancillary Function Driver for WinSock )",
+      "summary": "CISA KEV — actively exploited. Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-08-25).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68820",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-08-11T00:00:00+00:00",
+      "published_ts": 1786406400.0,
+      "cves": [
+        "CVE-2026-68820"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global",
+        "North America"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 85,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
+          "title": "Lazarus hackers exploited Windows zero-day to target defense firms",
+          "published": "2026-08-12T15:38:08+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
+          "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
+          "published": "2026-08-11T20:10:55+00:00"
+        },
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/cisa-adds-actively-exploited-windows-winsock-vulnerability/",
+          "title": "CISA Adds Actively Exploited Windows WinSock Vulnerability to KEV Catalog",
+          "published": "2026-08-13T11:08:27+00:00"
+        }
+      ]
+    },
     {
       "id": "de3a5613c960b2e2",
       "title": "CVE-2026-20349: Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability (Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) )",
@@ -83,65 +135,38 @@
         "Government & Public Services"
       ],
       "regions": [
-        "Global",
-        "North America"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 80,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/cisa-warns-critical-metabase-sql-injection-flaw/",
-          "title": "CISA Warns Critical Metabase SQL Injection Flaw Lets Unauthenticated Attackers Gain Admin Access",
-          "published": "2026-08-12T12:02:03+00:00"
-        }
-      ]
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
     },
     {
-      "id": "81f4cacc49b62301",
-      "title": "CVE-2026-68820: Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability (Microsoft Windows Ancillary Function Driver for WinSock )",
-      "summary": "CISA KEV — actively exploited. Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-08-25).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68820",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-08-11T00:00:00+00:00",
-      "published_ts": 1786406400.0,
-      "cves": [
-        "CVE-2026-68820"
-      ],
+      "id": "3174b943262fa3b6",
+      "title": "Wireshark 4.6.8 Released to Patch 28 Security Vulnerabilities",
+      "summary": "Wireshark has released version 4.6.8, which addresses security vulnerabilities in 28 identified issues that could lead to crashes, abnormal exits, memory-safety problems, and denial-of-service conditions when the network protocol analyzer handles specially crafted traffic or capture files. This update is particularly important for security analysts, incident responders, network administrators, and researchers who frequently work with [&#8230;] The post Wireshark 4.6.8 Released to Patch 28 Security Vulnerabilities appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/wireshark-4-6-8-released/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-13T10:53:39+00:00",
+      "published_ts": 1786618419.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Asia-Pacific"
+        "Global"
       ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 75,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
-          "title": "Lazarus hackers exploited Windows zero-day to target defense firms",
-          "published": "2026-08-12T15:38:08+00:00"
-        },
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
-          "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
-          "published": "2026-08-11T20:10:55+00:00"
-        }
-      ]
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
     },
     {
       "id": "5c91f2ae8ac87b76",
@@ -176,40 +201,29 @@
       "related_sources": []
     },
     {
-      "id": "f3ecc4f404f8b896",
-      "title": "ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access",
-      "summary": "The security researcher going by the name Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has released a proof-of-concept (PoC) for a new Microsoft zero-day called ShieldBreak. The vulnerability, rooted in Microsoft Defender for Windows, demonstrates a patch bypass for CVE-2026-50656 (CVSS score: 7.8), otherwise known as RoguePlanet. RoguePlanet has been described",
-      "url": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
-      "source": "The Hacker News",
+      "id": "b7cad660b7eadfc4",
+      "title": "'Jewelbug' APT Balances State Espionage &amp; Cryptocurrency Theft",
+      "summary": "Researchers discovered hackers-for-hire performing cyber espionage and financially motivated heists from the same Web panel.",
+      "url": "https://www.darkreading.com/threat-intelligence/jewelbug-apt-state-espionage-cryptocurrency-theft",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T06:41:38+00:00",
-      "published_ts": 1786516898.0,
-      "cves": [
-        "CVE-2026-50656"
-      ],
+      "published": "2026-08-13T10:00:00+00:00",
+      "published_ts": 1786615200.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Financial Services"
       ],
       "regions": [
-        "Global"
+        "Unspecified"
       ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 55,
       "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/shieldbreak-windows-defender-0-day/",
-          "title": "ShieldBreak Windows Defender 0-Day Lets Attackers Bypass Microsoft Patch and Gain SYSTEM Privileges",
-          "published": "2026-08-12T13:38:42+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
       "id": "b07448459fb3d4e8",
@@ -268,60 +282,6 @@
       "related_sources": []
     },
     {
-      "id": "b25228cc5c6f1c4e",
-      "title": "Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations",
-      "summary": "Two malicious LiteLLM releases sat on PyPI for about 40 minutes in March carrying credential-stealing code capable of harvesting cloud keys, SSH keys, Kubernetes tokens, database passwords, and other secrets from systems that installed them. Threat intelligence firm CloudSEK now says a dataset it obtained, built from roughly 434,000 files the attackers captured, maps potential exposure to more",
-      "url": "https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T08:04:52+00:00",
-      "published_ts": 1786521892.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Kubernetes"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "d09681cca6e17c2f",
-      "title": "SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
-      "summary": "SAP has released patches to address a maximum-severity security flaw impacting Commerce Cloud (Data Hub Adapter) that could result in arbitrary code execution. The vulnerability, assigned the CVE identifier CVE-2026-58231, is rated 10.0 on the CVSS scoring system. It has been described as a case of insufficient authorization checks and input validation. \"SAP Commerce Cloud allows an",
-      "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T07:31:40+00:00",
-      "published_ts": 1786519900.0,
-      "cves": [
-        "CVE-2026-58231"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "SAP"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
       "id": "a7952bb45ab6ac9a",
       "title": "Microsoft Plugs Nearly 400 Security Holes",
       "summary": "Microsoft today released updates to remedy at least 398 security vulnerabilities in its Windows operating systems and supported software, including one weakness that is already being actively exploited and two others that were publicly detailed prior to today.",
@@ -342,32 +302,6 @@
       "products": [
         "Windows"
       ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "5e294aca0fc727e5",
-      "title": "Cisco warns of ASA and FTD VPN flaw exploited to crash devices",
-      "summary": "Cisco is warning that a high-severity denial-of-service vulnerability in Secure Firewall ASA and Threat Defense (FTD) software is being actively exploited in attacks to remotely crash affected devices. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-11T19:45:31+00:00",
-      "published_ts": 1786477531.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 50,
@@ -434,24 +368,24 @@
       ]
     },
     {
-      "id": "cc2c6470a2539158",
-      "title": "Hackers leverage new Microsoft SharePoint exploit in attacks",
-      "summary": "Hackers have already begun using a proof-of-concept (PoC) exploit for a critical Microsoft SharePoint vulnerability, published by cybersecurity company Rapid7 on Tuesday. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/hackers-leverage-new-microsoft-sharepoint-exploit-in-attacks/",
-      "source": "BleepingComputer",
+      "id": "b25228cc5c6f1c4e",
+      "title": "Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations",
+      "summary": "Two malicious LiteLLM releases sat on PyPI for about 40 minutes in March carrying credential-stealing code capable of harvesting cloud keys, SSH keys, Kubernetes tokens, database passwords, and other secrets from systems that installed them. Threat intelligence firm CloudSEK now says a dataset it obtained, built from roughly 434,000 files the attackers captured, maps potential exposure to more",
+      "url": "https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T12:25:37+00:00",
-      "published_ts": 1786537537.0,
+      "published": "2026-08-12T08:04:52+00:00",
+      "published_ts": 1786521892.0,
       "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "SharePoint"
+        "Kubernetes"
       ],
       "actively_exploited": true,
       "cvss": null,
@@ -460,23 +394,56 @@
       "related_sources": []
     },
     {
-      "id": "4397e4203d8a2bb4",
-      "title": "New Microsoft Defender 'ShieldBreak' zero-day grants SYSTEM privileges",
-      "summary": "Nightmare Eclipse has released a new Microsoft Defender zero-day exploit named \"ShieldBreak\" after Microsoft released the August 2026 Patch Tuesday security updates. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldbreak-zero-day-grants-system-privileges/",
-      "source": "BleepingComputer",
+      "id": "d09681cca6e17c2f",
+      "title": "SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
+      "summary": "SAP has released patches to address a maximum-severity security flaw impacting Commerce Cloud (Data Hub Adapter) that could result in arbitrary code execution. The vulnerability, assigned the CVE identifier CVE-2026-58231, is rated 10.0 on the CVSS scoring system. It has been described as a case of insufficient authorization checks and input validation. \"SAP Commerce Cloud allows an",
+      "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T10:15:22+00:00",
-      "published_ts": 1786529722.0,
-      "cves": [],
+      "published": "2026-08-12T07:31:40+00:00",
+      "published_ts": 1786519900.0,
+      "cves": [
+        "CVE-2026-58231"
+      ],
       "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "SAP"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "f3ecc4f404f8b896",
+      "title": "ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access",
+      "summary": "The security researcher going by the name Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has released a proof-of-concept (PoC) for a new Microsoft zero-day called ShieldBreak. The vulnerability, rooted in Microsoft Defender for Windows, demonstrates a patch bypass for CVE-2026-50656 (CVSS score: 7.8), otherwise known as RoguePlanet. RoguePlanet has been described",
+      "url": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T06:41:38+00:00",
+      "published_ts": 1786516898.0,
+      "cves": [
+        "CVE-2026-50656"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 45,
@@ -534,23 +501,73 @@
       "related_sources": []
     },
     {
-      "id": "b145f2db96ceb36a",
-      "title": "Fresh Windows Zero-Day Exploited in North Korean Cyberattacks",
-      "summary": "The bug allowed attackers to gain full control of the victims’ systems and deploy the ForestTiger backdoor. The post Fresh Windows Zero-Day Exploited in North Korean Cyberattacks appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/fresh-windows-zero-day-exploited-in-north-korean-cyberattacks/",
+      "id": "d217588c47eee0f8",
+      "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘ShieldBreak’",
+      "summary": "Dropped on Patch Tuesday, the exploit allows any user to spawn a shell with System privileges. The post Nightmare Eclipse Drops Windows Zero-Day Exploit &#8216;ShieldBreak&#8217; appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-shieldbreak/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T08:45:53+00:00",
-      "published_ts": 1786524353.0,
+      "published": "2026-08-13T08:38:03+00:00",
+      "published_ts": 1786610283.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Asia-Pacific"
+        "Unspecified"
       ],
       "products": [
         "Windows"
       ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "cc2c6470a2539158",
+      "title": "Hackers leverage new Microsoft SharePoint exploit in attacks",
+      "summary": "Hackers have already begun using a proof-of-concept (PoC) exploit for a critical Microsoft SharePoint vulnerability, published by cybersecurity company Rapid7 on Tuesday. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/hackers-leverage-new-microsoft-sharepoint-exploit-in-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T12:25:37+00:00",
+      "published_ts": 1786537537.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "SharePoint"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "4397e4203d8a2bb4",
+      "title": "New Microsoft Defender 'ShieldBreak' zero-day grants SYSTEM privileges",
+      "summary": "Nightmare Eclipse has released a new Microsoft Defender zero-day exploit named \"ShieldBreak\" after Microsoft released the August 2026 Patch Tuesday security updates. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldbreak-zero-day-grants-system-privileges/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T10:15:22+00:00",
+      "published_ts": 1786529722.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 40,
@@ -733,70 +750,17 @@
       "related_sources": []
     },
     {
-      "id": "dc03336f1e32a918",
-      "title": "#StopRansomware: Gunra Ransomware",
-      "summary": "Advisory at a Glance Title #StopRansomware: Gunra Ransomware Original Publication August 10, 2026 Executive Summary Gunra is a ransomware-as-a-service (RaaS) used by affiliates to target government, critical infrastructure, and other organizations. The Gunra ransomware variant first appeared in 2025 and expanded to RaaS operations in 2026. The actors leverage a double-extortion model, both encrypting data and threatening to publish exfiltrated data to a dedicated leak site (DLS) if the ransom is not paid. This advisory provides technical details of the activity, as well as tailored detection and mitigation guidance to protect at-risk organizations from Gunra. Key Actions Prioritize patching known exploited vulnerabilities in internet-facing systems , including virtual private network (VPN) gateways and remote desktop protocol (RDP)-exposed infrastructure. Implement and test offline, immutable backups stored in a physically separate, segmented location to ensure recoverability without ransom payment. Segment networks to restrict lateral movement from an initially compromised device to other systems in the organization. Indicators of Compromise For a downloadable copy of indicators of compromise, see: AA26-222A STIX XML (54 KB) AA26-222A STIX JSON (61 KB) Intended Audience Organizations: Government, Critical Infrastructure Sectors: Healthcare and public health , financial services and insurance, critical manufacturing and construction, transportation systems and logistics, gove",
-      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-222a",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-10T12:00:00+00:00",
-      "published_ts": 1786363200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Government & Public Services",
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "74ec9eb81fa05b97",
-      "title": "Phantom Stealer Uses PNG Steganography and PowerShell Injection to Steal Credentials",
-      "summary": "Phantom Stealer is a .NET-based credential-harvesting malware that combines PNG-backed payload concealment, PowerShell-driven process injection, and telemetry suppression to steal passwords, browser data, cryptocurrency wallets, and sensitive local files. The campaign illustrates how commodity infostealers are increasingly blending stealthy loaders with broad post-compromise collection capabilities. Its modular .NET architecture and accessible tooling make it usable [&#8230;] The post Phantom Stealer Uses PNG Steganography and PowerShell Injection to Steal Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/phantom-stealer-uses-png-steganography/",
+      "id": "9593fb1519c8dd28",
+      "title": "Microsoft Exchange Server Vulnerabilities Allow DoS, Privilege Escalation, and RCE",
+      "summary": "Microsoft has released security updates that address six vulnerabilities in Exchange Server. These vulnerabilities include flaws that could allow remote code execution (RCE), privilege escalation, denial-of-service (DoS), spoofing, and bypass of security features. The vulnerabilities were disclosed on August 11, 2026, with CVE-2026-62913 receiving an update the following day. Microsoft Exchange Server Vulnerabilities The most [&#8230;] The post Microsoft Exchange Server Vulnerabilities Allow DoS, Privilege Escalation, and RCE appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-exchange-server-vulnerabilities-2/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-13T05:52:55+00:00",
-      "published_ts": 1786600375.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "ac7eea5b9a4fb24a",
-      "title": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
-      "summary": "Threat actors have begun to actively exploit a recently patched critical security flaw in Broadcom VMware vCenter, according to new findings from QUIRSO. The vulnerability in question is CVE-2026-59310 (CVSS score: 9.8), a directory-traversal vulnerability in the VMware vCenter server that a malicious actor with network access can exploit to execute arbitrary code. Patches for the flaw were",
-      "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T09:01:54+00:00",
-      "published_ts": 1786525314.0,
+      "published": "2026-08-13T12:58:15+00:00",
+      "published_ts": 1786625895.0,
       "cves": [
-        "CVE-2026-59310"
+        "CVE-2026-62913"
       ],
       "sectors": [
         "Energy Resources & Industrials",
@@ -806,8 +770,87 @@
         "Global"
       ],
       "products": [
-        "VMware vCenter"
+        "Exchange"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "ce3df8e7f21a3afa",
+      "title": "Critical Dell VMware vSphere Client Flaw Lets Remote Attackers Execute Commands as Root",
+      "summary": "Dell has disclosed a significant security vulnerability in its Virtual Storage Integrator (VSI) for VMware vSphere Client. This vulnerability could allow unauthenticated remote attackers to execute arbitrary operating system commands with root privileges. Tracked as CVE-2026-67261, this flaw affects versions of Dell VSI for VMware vSphere Client before 10.11.1.0. Dell has addressed the issue in [&#8230;] The post Critical Dell VMware vSphere Client Flaw Lets Remote Attackers Execute Commands as Root appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/critical-dell-vmware-vsphere-client-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-13T12:39:03+00:00",
+      "published_ts": 1786624743.0,
+      "cves": [
+        "CVE-2026-67261"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "c821a02404cdf455",
+      "title": "Cloudflare Mitigates 23.2 Million DDoS Attacks as 1 Tbps Attacks Surge 519%",
+      "summary": "Cloudflare has mitigated 23.2 million network-layer DDoS attacks and stopped 29.64 trillion HTTP DDoS requests during the first half of 2026. This underscores a significant increase in both the frequency and intensity of Internet-scale attacks. The company&#8217;s latest DDoS Threat Report, produced by its Cloudforce One threat intelligence team, combines data collected from January to [&#8230;] The post Cloudflare Mitigates 23.2 Million DDoS Attacks as 1 Tbps Attacks Surge 519% appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cloudflare-mitigates-23-2-million-ddos-attacks/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-13T10:39:23+00:00",
+      "published_ts": 1786617563.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "9120b52e2a0c95fd",
+      "title": "Hackers exploit critical Adobe Commerce flaw to hijack customer accounts",
+      "summary": "Attempts to exploit a critical vulnerability (CVE-2026-71362) in Adobe's Commerce and Magento e-commerce platforms have been detected, potentially allowing attackers to hijack customer accounts. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-adobe-commerce-flaw-to-hijack-customer-accounts/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T20:54:59+00:00",
+      "published_ts": 1786568099.0,
+      "cves": [
+        "CVE-2026-71362"
+      ],
+      "sectors": [
+        "Consumer",
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 25,
@@ -815,9 +858,9 @@
       "related_sources": [
         {
           "source": "GBHackers",
-          "url": "https://gbhackers.com/hackers-exploit-critical-vmware-vcenter-flaw/",
-          "title": "Hackers Exploit Critical VMware vCenter Flaw to Deploy Reverse SSH Across 47 Countries",
-          "published": "2026-08-12T12:27:22+00:00"
+          "url": "https://gbhackers.com/critical-adobe-commerce-flaw/",
+          "title": "Critical Adobe Commerce Flaw Lets Unauthenticated Attackers Escalate Privileges",
+          "published": "2026-08-13T08:36:18+00:00"
         }
       ]
     },
@@ -885,72 +928,22 @@
       "related_sources": []
     },
     {
-      "id": "6f87201ac9d53cfb",
-      "title": "Gunra Ransomware Uses Up to 100 ChaCha20 Threads to Rapidly Encrypt Linux Systems",
-      "summary": "Gunra ransomware has added a Linux encryptor to its arsenal, giving affiliates control over how they lock enterprise data. The command-line payload can launch up to 100 encryption threads, a design that compresses the time defenders have to detect and interrupt an attack on Linux servers, virtual machines, NAS appliances, and storage. Its operators later [&#8230;] The post Gunra Ransomware Uses Up to 100 ChaCha20 Threads to Rapidly Encrypt Linux Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/gunra-ransomware-attack-2/",
+      "id": "fdbb4bd7efaaf4a5",
+      "title": "Trump Administration Authorizes Cyber Operations Against Foreign Criminal Networks",
+      "summary": "The Trump administration has issued a presidential memorandum that establishes a federal program allowing vetted U.S. private-sector companies to conduct government-directed cyber surveillance and cyber operations against foreign cyber-enabled transnational criminal organizations (CE-TCOs). This initiative expands Executive Order 14390, issued on March 6, 2026, which directed federal agencies to combat cybercrime, fraud, and predatory schemes [&#8230;] The post Trump Administration Authorizes Cyber Operations Against Foreign Criminal Networks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/trump-administration-authorizes-cyber-operations/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-13T07:06:22+00:00",
-      "published_ts": 1786604782.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "6279287e62671101",
-      "title": "Kimwolf v7 Removes Exploitation Code and Leaves Infection to External Loaders",
-      "summary": "A newly identified Kimwolf v7 build shows the Android and IoT botnet shifting from an all-in-one compromise toolkit into a more specialized DDoS and proxy-relay payload. The latest variant removes embedded scanning, exploitation and brute-force logic, suggesting its operators now depend on external loaders to obtain access to vulnerable devices before deploying the bot. Unit [&#8230;] The post Kimwolf v7 Removes Exploitation Code and Leaves Infection to External Loaders appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/kimwolf-v7-removes-exploitation/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-13T06:12:31+00:00",
-      "published_ts": 1786601551.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "17bc9adc2a5d124b",
-      "title": "China-Linked Hackers Use Autonomous AI Agents to Breach Taiwan Government Systems",
-      "summary": "A China-linked threat actor has reportedly utilized a multi-agent artificial intelligence framework to conduct a nearly autonomous intrusion campaign targeting government entities in Taiwan and across Asia. This operation demonstrates how agentic AI can reduce the operational costs and increase the speed of sophisticated cyberattacks. Research from Dream Research Labs outlines an operation carried out [&#8230;] The post China-Linked Hackers Use Autonomous AI Agents to Breach Taiwan Government Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/china-linked-hackers-breach-taiwan-government-systems/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-13T06:09:24+00:00",
-      "published_ts": 1786601364.0,
+      "published": "2026-08-13T12:32:44+00:00",
+      "published_ts": 1786624364.0,
       "cves": [],
       "sectors": [
         "Government & Public Services"
       ],
       "regions": [
-        "Asia-Pacific",
-        "Global"
+        "Global",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -960,25 +953,24 @@
       "related_sources": []
     },
     {
-      "id": "fbd055855a128519",
-      "title": "City-Forum Hackers Target Salesforce and ServiceNow Instances Worldwide for Data Theft",
-      "summary": "A sophisticated threat campaign, referred to as “City-Forum,” is targeting publicly accessible Salesforce Experience Cloud sites and ServiceNow Service Portals, aiming to enumerate and extract data exposed to anonymous users. Security firm Reco, which identified this activity, notes that the operator is using a custom multi-platform toolset instead of relying solely on widely available offensive [&#8230;] The post City-Forum Hackers Target Salesforce and ServiceNow Instances Worldwide for Data Theft appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/city-forum-hackers-target-salesforce-and-servicenow-instances/",
+      "id": "b05053c19f27252d",
+      "title": "Armored Likho Turns Windows Microphones Into Automated Eavesdropping Devices",
+      "summary": "Armored Likho, also tracked as Eagle Werewolf, has expanded its espionage capability with a Rust-based toolkit that can hijack Telegram sessions and transform compromised Windows endpoints into automated audio-surveillance devices. The newly documented May 2026 campaign primarily targets Russian private individuals, corporations, government bodies, IT organizations, and educational institutions through a fraudulent donation-service application. The [&#8230;] The post Armored Likho Turns Windows Microphones Into Automated Eavesdropping Devices appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/likho-hijacks-microphones/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-13T05:30:14+00:00",
-      "published_ts": 1786599014.0,
+      "published": "2026-08-13T10:41:00+00:00",
+      "published_ts": 1786617660.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Government & Public Services"
       ],
       "regions": [
         "Global"
       ],
       "products": [
-        "Salesforce",
-        "ServiceNow"
+        "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -987,27 +979,24 @@
       "related_sources": []
     },
     {
-      "id": "7227c22454d377d9",
-      "title": "Palo Alto GlobalProtect Vulnerabilities Enable SYSTEM and Root-Level Access",
-      "summary": "Palo Alto Networks has released security advisories for multiple vulnerabilities in the GlobalProtect App that could allow a local attacker to elevate their privileges to SYSTEM on Windows or to root on Linux and macOS systems. These advisories were published on August 12, 2026, and the vulnerabilities affect GlobalProtect App versions 6.0, 6.2, and 6.3 [&#8230;] The post Palo Alto GlobalProtect Vulnerabilities Enable SYSTEM and Root-Level Access appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/palo-alto-globalprotect-vulnerabilities/",
+      "id": "0eecfea1af8ece10",
+      "title": "6,330 Internet-Exposed ICS Devices Near U.S. Data Centers Put Cooling and Power Systems at Risk",
+      "summary": "A newly published internet-exposure analysis has identified more than 6,300 high-confidence industrial control system and building automation devices accessible near 1,063 U.S. data centers. Exposing a largely overlooked attack surface around infrastructure responsible for cooling, power conditioning and environmental monitoring. The finding underscores a fundamental security gap: hardened server networks do not necessarily extend to [&#8230;] The post 6,330 Internet-Exposed ICS Devices Near U.S. Data Centers Put Cooling and Power Systems at Risk appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/6330-internet-exposed-ics-devices/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-13T05:10:07+00:00",
-      "published_ts": 1786597807.0,
+      "published": "2026-08-13T10:04:45+00:00",
+      "published_ts": 1786615485.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
       ],
       "regions": [
-        "Global"
+        "Global",
+        "North America"
       ],
-      "products": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
@@ -1015,51 +1004,22 @@
       "related_sources": []
     },
     {
-      "id": "867ff495cfcb0454",
-      "title": "WordPress RCE Vulnerability Lets Authenticated Authors Execute Remote Code",
-      "summary": "WordPress has released version 7.0.4 to address a high-impact authenticated remote code execution (RCE) vulnerability. This flaw could allow users with Author-level privileges or higher to execute code on affected websites. The vulnerability, tracked as CVE-2026-65640 and GHSA-8vr3-7mxf-gx8w, affects WordPress installations that use the Imagick extension alongside Ghostscript to process uploaded files. The security release [&#8230;] The post WordPress RCE Vulnerability Lets Authenticated Authors Execute Remote Code appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/wordpress-rce-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-13T05:00:24+00:00",
-      "published_ts": 1786597224.0,
-      "cves": [
-        "CVE-2026-65640"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "WordPress"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "de63dbc279d8dc7d",
-      "title": "CISA gives federal agencies two weeks to patch Microsoft bug exploited in DPRK campaign",
-      "summary": "Researchers disclosed the bug to Microsoft after examining a long-running campaign by North Korean hackers to exploit the job application process.",
-      "url": "https://therecord.media/cisa-gives-federal-agencies-two-weeks-to-patch-dprk-microsoft-bug",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T12:06:00+00:00",
-      "published_ts": 1786536360.0,
+      "id": "2fd4d3d31023ba8c",
+      "title": "Dissecting the JWR phishing framework",
+      "summary": "Cisco Talos recently identified an undocumented phishing framework, internally branded \"JWR\" by its developer, built to convincingly impersonate checkout and login pages across major payment and shopping platforms.",
+      "url": "https://blog.talosintelligence.com/dissecting-the-jwr-phishing-framework/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-08-13T10:00:35+00:00",
+      "published_ts": 1786615235.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
+        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Asia-Pacific"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1148,24 +1108,22 @@
       "related_sources": []
     },
     {
-      "id": "9120b52e2a0c95fd",
-      "title": "Hackers exploit critical Adobe Commerce flaw to hijack customer accounts",
-      "summary": "Attempts to exploit a critical vulnerability (CVE-2026-71362) in Adobe's Commerce and Magento e-commerce platforms have been detected, potentially allowing attackers to hijack customer accounts. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-adobe-commerce-flaw-to-hijack-customer-accounts/",
-      "source": "BleepingComputer",
+      "id": "b83456a1b617a3d7",
+      "title": "Germany moves to give spy agencies hacking and sabotage powers",
+      "summary": "Germany’s cabinet approved legislation that would let its intelligence agencies hack foreign systems, sabotage adversaries’ supply chains and feed false information to extremists inside Germany, in the biggest overhaul of the country’s spy laws of the postwar era.",
+      "url": "https://therecord.media/germany-spy-agency-powers",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T20:54:59+00:00",
-      "published_ts": 1786568099.0,
-      "cves": [
-        "CVE-2026-71362"
-      ],
+      "published": "2026-08-13T12:45:00+00:00",
+      "published_ts": 1786625100.0,
+      "cves": [],
       "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1175,24 +1133,75 @@
       "related_sources": []
     },
     {
-      "id": "5671464710a4847c",
-      "title": "Walmart's &quot;Trusted Agent&quot; Approach to Purple Teaming",
-      "summary": "Walmart co-locates red and blue teams to build trust and improve security through collaborative purple teaming exercises",
-      "url": "https://www.darkreading.com/cybersecurity-operations/walmart-trusted-agent-approach-purple-teaming",
-      "source": "Dark Reading",
+      "id": "53e2a3661a5588da",
+      "title": "LiteLLM Hack Exposes Secrets From 2,488 Companies Across 118,829 CI Runner Dumps",
+      "summary": "The LiteLLM supply-chain compromise has shifted from a short-lived malicious package incident into a sprawling enterprise exposure event. Analysis of an alleged 153GB attacker archive has linked 118,829 CI runner dumps to 2,488 corporate domains, exposing the depth of secrets accessible inside modern build environments. The campaign, publicly attributed to TeamPCP, began upstream of LiteLLM. [&#8230;] The post LiteLLM Hack Exposes Secrets From 2,488 Companies Across 118,829 CI Runner Dumps appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/litellm-hack-exposes-secrets/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-13T11:58:56+00:00",
+      "published_ts": 1786622336.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "556c8bee5777b01c",
+      "title": "WhatsApp rolls out new feature that flags potential scam messages",
+      "summary": "WhatsApp has begun rolling out a new optional \"Scam Alert\" feature, which uses a local machine learning model to warn users when scammers are targeting them. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/whatsapp-rolls-out-new-feature-that-flags-potential-scam-messages/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T16:28:04+00:00",
-      "published_ts": 1786552084.0,
+      "published": "2026-08-13T11:50:22+00:00",
+      "published_ts": 1786621822.0,
       "cves": [],
       "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "SAP"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bf56d6c76751dff3",
+      "title": "Critical VMware vCenter Vulnerability in Attackers’ Crosshairs",
+      "summary": "Tracked as CVE-2026–59310, the directory traversal bug allows remote attackers to execute arbitrary code. The post Critical VMware vCenter Vulnerability in Attackers&#8217; Crosshairs appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/critical-vmware-vcenter-vulnerability-in-attackers-crosshairs/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-13T09:06:40+00:00",
+      "published_ts": 1786612000.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "VMware vCenter"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1274,99 +1283,23 @@
       "related_sources": []
     },
     {
-      "id": "7eeb1e3005c0bd17",
-      "title": "Walmart Leaders Transform Security Operations Without Going Bananas",
-      "summary": "The big-box giant has scaled its defenses by encouraging trust and innovation. Good communications, transparency, and team spirit are key factors.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/walmart-leaders-transform-security-operations-without-going-bananas",
-      "source": "Dark Reading",
+      "id": "de63dbc279d8dc7d",
+      "title": "CISA gives federal agencies two weeks to patch Microsoft bug exploited in DPRK campaign",
+      "summary": "Researchers disclosed the bug to Microsoft after examining a long-running campaign by North Korean hackers to exploit the job application process.",
+      "url": "https://therecord.media/cisa-gives-federal-agencies-two-weeks-to-patch-dprk-microsoft-bug",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T12:41:03+00:00",
-      "published_ts": 1786538463.0,
-      "cves": [],
-      "sectors": [
-        "Consumer",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "091fc0830188933a",
-      "title": "OpenAI, Anthropic, Google API Flaw Let Weaker AI Models Decode Stronger Models' Reasoning",
-      "summary": "A newly disclosed flaw in the way OpenAI, Anthropic, and Google carried hidden AI reasoning between API calls let researchers recover internal reasoning and secrets from session logs, including API keys and passwords. The weakness affected encrypted reasoning objects used by the providers' reasoning APIs, where a block created in one session could be replayed into another and, during testing,",
-      "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T11:47:38+00:00",
-      "published_ts": 1786535258.0,
+      "published": "2026-08-12T12:06:00+00:00",
+      "published_ts": 1786536360.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
+        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "74f6b6fcf7eed28c",
-      "title": "Ivanti EPM Update Patches Remotely Exploitable Flaws",
-      "summary": "The vulnerabilities could be exploited to leak credentials for external SQL connections or crash an agent service. The post Ivanti EPM Update Patches Remotely Exploitable Flaws appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ivanti-epm-update-patches-remotely-exploitable-flaws/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T08:14:46+00:00",
-      "published_ts": 1786522486.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Ivanti"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8381a6a879ee9388",
-      "title": "ICS Patch Tuesday: Vulnerabilities Fixed by Siemens, Schneider, Phoenix Contact",
-      "summary": "CISA has also published several advisories describing vulnerabilities in ICS and other OT products. The post ICS Patch Tuesday: Vulnerabilities Fixed by Siemens, Schneider, Phoenix Contact appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ics-patch-tuesday-vulnerabilities-fixed-by-siemens-schneider-phoenix-contact-2/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T07:51:55+00:00",
-      "published_ts": 1786521115.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1422,6 +1355,104 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "129a05982b47f145",
+      "title": "The State of Ransomware Q2 2026",
+      "summary": "For the past year, the ransomware conversation has centered on concentration: a handful of dominant RaaS operations controlling most of the damage, and a shrinking pool of active groups fighting over the same territory. The State of Ransomware Q2 2026 report from Check Point Research shows that picture&#160;starting&#160;to shift. The leaders are still winning, but [&#8230;] The post The State of Ransomware Q2 2026 appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/the-state-of-ransomware-q2-2026/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-08-13T12:54:35+00:00",
+      "published_ts": 1786625675.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d31833829dd259ca",
+      "title": "WordPress 7.0.4 Patches Remote Code Execution Vulnerability",
+      "summary": "Attackers with Author-level user or higher permissions could exploit the flaw via malicious Postscript files. The post WordPress 7.0.4 Patches Remote Code Execution Vulnerability appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/wordpress-7-0-4-patches-remote-code-execution-vulnerability/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-13T12:53:56+00:00",
+      "published_ts": 1786625636.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b71894e6c909569d",
+      "title": "Venture Firm Team8 Secures Additional $365 Million",
+      "summary": "The Israeli company has nearly $2 billion in total assets under management since 2014. The post Venture Firm Team8 Secures Additional $365 Million appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/venture-firm-team8-secures-additional-365-million/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-13T11:42:48+00:00",
+      "published_ts": 1786621368.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Middle East"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "021854e00f8d6306",
+      "title": "Fortinet Patches Authentication Flaws in FortiWeb and FortiManager",
+      "summary": "The vulnerabilities could allow attackers to log in with random usernames and passwords or impersonate any FortiGate appliance. The post Fortinet Patches Authentication Flaws in FortiWeb and FortiManager appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/fortinet-patches-authentication-flaws-in-fortiweb-and-fortimanager/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-13T10:40:57+00:00",
+      "published_ts": 1786617657.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Fortinet"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1553,6 +1584,30 @@
       "related_sources": []
     },
     {
+      "id": "5671464710a4847c",
+      "title": "Walmart Takes a 'Trusted Agent' Approach to Purple Teaming",
+      "summary": "Walmart colocates red and blue teams to build trust and improve security through collaborative purple teaming exercises",
+      "url": "https://www.darkreading.com/cybersecurity-operations/walmart-trusted-agent-approach-purple-teaming",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T16:28:04+00:00",
+      "published_ts": 1786552084.0,
+      "cves": [],
+      "sectors": [
+        "Consumer"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "f847fbd11f65781a",
       "title": "Plug and Pwn attack uses fake USB devices for Windows SYSTEM access",
       "summary": "Security researchers have disclosed new \"Plug and Pwn\" attacks that abuse the Windows Plug and Play feature to trigger Windows into installing vulnerable or insecure vendor software and gain SYSTEM privileges. [...]",
@@ -1629,151 +1684,23 @@
       "related_sources": []
     },
     {
-      "id": "a8d26bb9b914e344",
-      "title": "WhatsApp Unveils New Scam Alert Feature",
-      "summary": "Signal has also made a security announcement: an automatic key verification feature to complement its safety number system. The post WhatsApp Unveils New Scam Alert Feature appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/whatsapp-unveils-new-scam-alert-feature/",
-      "source": "SecurityWeek",
+      "id": "7eeb1e3005c0bd17",
+      "title": "Walmart Leaders Transform Security Operations Without Going Bananas",
+      "summary": "The big-box giant has scaled its defenses by encouraging trust and innovation. Good communications, transparency, and team spirit are key factors.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/walmart-leaders-transform-security-operations-without-going-bananas",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T13:00:00+00:00",
-      "published_ts": 1786539600.0,
+      "published": "2026-08-12T12:41:03+00:00",
+      "published_ts": 1786538463.0,
       "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "SAP"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "61a5bd6fc876fd44",
-      "title": "Stealthy ‘City-Forum’ Attacks Target Salesforce and ServiceNow With Custom Toolset",
-      "summary": "Researchers observed the novel campaign exploiting unauthenticated guest access to quietly enumerate and exfiltrate exposed data from both platforms. The post Stealthy ‘City-Forum’ Attacks Target Salesforce and ServiceNow With Custom Toolset appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/stealthy-city-forum-attacks-target-salesforce-and-servicenow-with-custom-toolset/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T13:00:00+00:00",
-      "published_ts": 1786539600.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Salesforce",
-        "ServiceNow"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "90c699ea1989003f",
-      "title": "Three intrusions at UK criminal records office went undetected for two years",
-      "summary": "Unread antivirus alerts and an unpatched content management system exposed Britain's ACRO to three separate data breaches, according to a reprimand notice.",
-      "url": "https://therecord.media/uk-criminal-records-office-acro-data-breaches",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T13:00:00+00:00",
-      "published_ts": 1786539600.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a850822e92d4d4b3",
-      "title": "Microsoft’s massive Patch Tuesday releases continue as AI reshapes bug discovery",
-      "summary": "This month’s update features about five times the volume of patches Microsoft was shipping in a typical month before AI-assisted vulnerability discovery took hold.",
-      "url": "https://therecord.media/microsoft-massive-patch-tuesday-releases-continue-ai",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T12:38:00+00:00",
-      "published_ts": 1786538280.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ac429a934ebfbbe6",
-      "title": "Enterprise Defenses Recovered at the Edge and Collapsed Inside",
-      "summary": "Enterprise defenses are tuned to catch the attacks that make noise. This year's data shows attackers winning by making none. According to Picus Labs' new Blue Report 2026, which measured more than 338 million real attack simulations across actual client production environments in the first half of 2026, defenses are having one of their strongest years yet. Average prevention effectiveness",
-      "url": "https://thehackernews.com/2026/08/enterprise-defenses-recovered-at-edge.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T11:41:34+00:00",
-      "published_ts": 1786534894.0,
-      "cves": [],
-      "sectors": [
+        "Consumer",
         "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "94b55945b4834fbf",
-      "title": "Ceva Logistics Operations Disrupted by Cyberattack",
-      "summary": "Affecting European contract logistics operations at eight Ceva warehouses, the incident caused shipment delays for multiple customers. The post Ceva Logistics Operations Disrupted by Cyberattack appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ceva-logistics-operations-disrupted-by-cyberattack/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T11:37:28+00:00",
-      "published_ts": 1786534648.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
@@ -1782,25 +1709,53 @@
       "related_sources": []
     },
     {
-      "id": "c305581b310642e3",
-      "title": "Adobe Patches Three CVSS 10.0 ColdFusion and Campaign Classic Flaws",
-      "summary": "Adobe has shipped updates to address multiple critical security vulnerabilities impacting ColdFusion, Commerce, and Campaign Classic that, if successfully exploited, could result in arbitrary code execution and privilege escalation. The most severe of the flaws are listed below - CVE-2026-48362 (CVSS score: 10.0) - An operating system command injection vulnerability in ColdFusion that could",
-      "url": "https://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html",
+      "id": "091fc0830188933a",
+      "title": "OpenAI, Anthropic, Google API Flaw Let Weaker AI Models Decode Stronger Models' Reasoning",
+      "summary": "A newly disclosed flaw in the way OpenAI, Anthropic, and Google carried hidden AI reasoning between API calls let researchers recover internal reasoning and secrets from session logs, including API keys and passwords. The weakness affected encrypted reasoning objects used by the providers' reasoning APIs, where a block created in one session could be replayed into another and, during testing,",
+      "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T11:13:03+00:00",
-      "published_ts": 1786533183.0,
-      "cves": [
-        "CVE-2026-48362"
-      ],
+      "published": "2026-08-12T11:47:38+00:00",
+      "published_ts": 1786535258.0,
+      "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ac7eea5b9a4fb24a",
+      "title": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
+      "summary": "Threat actors have begun to actively exploit a recently patched critical security flaw in Broadcom VMware vCenter, according to new findings from QUIRSO. The vulnerability in question is CVE-2026-59310 (CVSS score: 9.8), a directory-traversal vulnerability in the VMware vCenter server that a malicious actor with network access can exploit to execute arbitrary code. Patches for the flaw were",
+      "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T09:01:54+00:00",
+      "published_ts": 1786525314.0,
+      "cves": [
+        "CVE-2026-59310"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "VMware vCenter"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -2140,64 +2095,70 @@
       "related_sources": []
     },
     {
-      "id": "289362cc78e52eef",
-      "title": "TrueConf Server Flaws Exploited to Replace Client Installers with PhantomCore",
-      "summary": "The threat actor known as Head Mare has been observed weaponizing security flaws in unpatched TrueConf servers once again in attacks targeting Russian companies spanning instrumentation, electronics, transport, energy, IT, and software development sectors. Russian cybersecurity vendor Kaspersky said it detected the attacks in July 2026. The activity involves exploiting a vulnerability chain",
-      "url": "https://thehackernews.com/2026/08/head-mare-exploits-trueconf-flaws-to.html",
-      "source": "The Hacker News",
+      "id": "d5c48b51af2dda93",
+      "title": "The Model Is the Malware | What Four Agentic Intrusions Tell Defenders",
+      "summary": "OpenAI, Anthropic and Meta disclosed agents reaching external systems. The tools didn't matter, and that changes the playbook for investigating intrusions.",
+      "url": "https://www.sentinelone.com/labs/the-model-is-the-malware-what-four-agentic-intrusions-tell-defenders/",
+      "source": "SentinelOne Labs",
       "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-10T11:33:41+00:00",
-      "published_ts": 1786361621.0,
+      "category": "threat",
+      "published": "2026-08-13T13:00:40+00:00",
+      "published_ts": 1786626040.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "5118558e2931239f",
-      "title": "IT threat evolution in Q2 2026. Non-mobile statistics",
-      "summary": "The report presents key trends and statistics on malware that targeted personal computers running Windows and macOS, as well as internet of things (IoT) devices, during Q2 2026.",
-      "url": "https://securelist.com/malware-report-q2-2026-pc-iot-statistics/120960/",
-      "source": "Securelist (Kaspersky)",
+      "id": "589e0cbe797e041e",
+      "title": "White House Mobilizes Security Firms for Operations Against Foreign Cybercrime Gangs",
+      "summary": "Contracts may require a $1 million bond, which will be forfeited if a company fails to comply with operational requirements. The post White House Mobilizes Security Firms for Operations Against Foreign Cybercrime Gangs appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/white-house-mobilizes-security-firms-for-operations-against-foreign-cybercrime-gangs/",
+      "source": "SecurityWeek",
       "source_trust": 4,
-      "category": "threat",
-      "published": "2026-08-10T10:00:37+00:00",
-      "published_ts": 1786356037.0,
+      "category": "mixed",
+      "published": "2026-08-13T09:53:04+00:00",
+      "published_ts": 1786614784.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Windows",
-        "macOS"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
-      "related_sources": [
-        {
-          "source": "Securelist (Kaspersky)",
-          "url": "https://securelist.com/malware-report-q2-2026-mobile-statistics/120948/",
-          "title": "IT threat evolution in Q2 2026. Mobile statistics",
-          "published": "2026-08-10T10:00:09+00:00"
-        }
-      ]
+      "related_sources": []
+    },
+    {
+      "id": "b47ff14c206430d4",
+      "title": "Armored Likho expands its cyber-espionage toolkit",
+      "summary": "Kaspersky experts break down a new Armored Likho campaign that poses as a fundraising efforts and delivers a new Still Toolkit aimed at stealing Telegram data and eavesdropping on victims.",
+      "url": "https://securelist.com/armored-likho-still-toolkit/121033/",
+      "source": "Securelist (Kaspersky)",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-08-13T08:00:15+00:00",
+      "published_ts": 1786608015.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
     },
     {
       "id": "099eb790ec7dada3",
@@ -2225,43 +2186,25 @@
       "related_sources": []
     },
     {
-      "id": "553831b88fda9fe0",
-      "title": "Signal adds new security feature to thwart man-in-the-middle attacks",
-      "summary": "​Signal has introduced Automatic Key Verification, a new security feature that gives users a new way to ensure their encrypted chats haven't been intercepted. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/signal-adds-new-security-feature-to-thwart-man-in-the-middle-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-12T11:21:42+00:00",
-      "published_ts": 1786533702.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "38fd46eabb7a3b2a",
-      "title": "Chipmaker Patch Tuesday: Intel, AMD Fix Over 80 Vulnerabilities Combined",
-      "summary": "Intel has informed customers about several high-severity vulnerabilities that can lead to privilege escalation and even code execution. The post Chipmaker Patch Tuesday: Intel, AMD Fix Over 80 Vulnerabilities Combined appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/chipmaker-patch-tuesday-intel-amd-fix-over-80-vulnerabilities-combined/",
+      "id": "a8d26bb9b914e344",
+      "title": "WhatsApp Unveils New Scam Alert Feature",
+      "summary": "Signal has also made a security announcement: an automatic key verification feature to complement its safety number system. The post WhatsApp Unveils New Scam Alert Feature appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/whatsapp-unveils-new-scam-alert-feature/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T10:55:04+00:00",
-      "published_ts": 1786532104.0,
+      "published": "2026-08-12T13:00:00+00:00",
+      "published_ts": 1786539600.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "SAP"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -2269,21 +2212,26 @@
       "related_sources": []
     },
     {
-      "id": "c0c7fc2d06cee706",
-      "title": "Over 2,500 Organizations Impacted by LiteLLM Supply Chain Attack",
-      "summary": "LiteLLM was compromised through the Trivy hack and abused to distribute information-stealing malware to its users. The post Over 2,500 Organizations Impacted by LiteLLM Supply Chain Attack appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/over-2500-organizations-impacted-by-litellm-supply-chain-attack/",
+      "id": "61a5bd6fc876fd44",
+      "title": "Stealthy ‘City-Forum’ Attacks Target Salesforce and ServiceNow With Custom Toolset",
+      "summary": "Researchers observed the novel campaign exploiting unauthenticated guest access to quietly enumerate and exfiltrate exposed data from both platforms. The post Stealthy ‘City-Forum’ Attacks Target Salesforce and ServiceNow With Custom Toolset appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/stealthy-city-forum-attacks-target-salesforce-and-servicenow-with-custom-toolset/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-12T09:55:45+00:00",
-      "published_ts": 1786528545.0,
+      "published": "2026-08-12T13:00:00+00:00",
+      "published_ts": 1786539600.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Salesforce",
+        "ServiceNow"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -2291,18 +2239,96 @@
       "related_sources": []
     },
     {
-      "id": "9f5729bd8b3d7ecc",
-      "title": "NSA installs DHS lawyer as new general counsel",
-      "summary": "Kerianne Tobitsch, who most recently served as a senior lawyer at the Homeland Security Department, is the NSA's new general counsel, sources told Recorded Future News.",
-      "url": "https://therecord.media/kerianne-tobitsch-new-nsa-general-counsel",
+      "id": "90c699ea1989003f",
+      "title": "Three intrusions at UK criminal records office went undetected for two years",
+      "summary": "Unread antivirus alerts and an unpatched content management system exposed Britain's ACRO to three separate data breaches, according to a reprimand notice.",
+      "url": "https://therecord.media/uk-criminal-records-office-acro-data-breaches",
       "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-11T20:00:09+00:00",
-      "published_ts": 1786478409.0,
+      "published": "2026-08-12T13:00:00+00:00",
+      "published_ts": 1786539600.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [
+        "Office"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a850822e92d4d4b3",
+      "title": "Microsoft’s massive Patch Tuesday releases continue as AI reshapes bug discovery",
+      "summary": "This month’s update features about five times the volume of patches Microsoft was shipping in a typical month before AI-assisted vulnerability discovery took hold.",
+      "url": "https://therecord.media/microsoft-massive-patch-tuesday-releases-continue-ai",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T12:38:00+00:00",
+      "published_ts": 1786538280.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ac429a934ebfbbe6",
+      "title": "Enterprise Defenses Recovered at the Edge and Collapsed Inside",
+      "summary": "Enterprise defenses are tuned to catch the attacks that make noise. This year's data shows attackers winning by making none. According to Picus Labs' new Blue Report 2026, which measured more than 338 million real attack simulations across actual client production environments in the first half of 2026, defenses are having one of their strongest years yet. Average prevention effectiveness",
+      "url": "https://thehackernews.com/2026/08/enterprise-defenses-recovered-at-edge.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T11:41:34+00:00",
+      "published_ts": 1786534894.0,
       "cves": [],
       "sectors": [
         "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Edge"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c305581b310642e3",
+      "title": "Adobe Patches Three CVSS 10.0 ColdFusion and Campaign Classic Flaws",
+      "summary": "Adobe has shipped updates to address multiple critical security vulnerabilities impacting ColdFusion, Commerce, and Campaign Classic that, if successfully exploited, could result in arbitrary code execution and privilege escalation. The most severe of the flaws are listed below - CVE-2026-48362 (CVSS score: 10.0) - An operating system command injection vulnerability in ColdFusion that could",
+      "url": "https://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-12T11:13:03+00:00",
+      "published_ts": 1786533183.0,
+      "cves": [
+        "CVE-2026-48362"
+      ],
+      "sectors": [
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -2511,55 +2537,24 @@
       "related_sources": []
     },
     {
-      "id": "f92edbde0d2c33a2",
-      "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
-      "summary": "Three separate research efforts last week demonstrated ways to defeat passkey protections without breaking the cryptography they rest on. Passkeys are designed to replace reusable passwords and resist phishing. The attacks instead reused signed authentication material that Windows had exposed, abused a cloud-synced passkey system from malware already on the victim's machine, and used a&nbsp;",
-      "url": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
-      "source": "The Hacker News",
+      "id": "553831b88fda9fe0",
+      "title": "Signal adds new security feature to thwart man-in-the-middle attacks",
+      "summary": "​Signal has introduced Automatic Key Verification, a new security feature that gives users a new way to ensure their encrypted chats haven't been intercepted. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/signal-adds-new-security-feature-to-thwart-man-in-the-middle-attacks/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-10T12:25:04+00:00",
-      "published_ts": 1786364704.0,
+      "published": "2026-08-12T11:21:42+00:00",
+      "published_ts": 1786533702.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "North America"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d9544b4c8414058b",
-      "title": "Solidity Pro VS Code Extensions Steal Crypto Wallets, API Keys, and Credentials",
-      "summary": "Cybersecurity researchers have flagged a malicious Microsoft Visual Studio Code (VS Code) extension named Solidity Pro (\"solidity-pro\") that has been observed delivering a browser wallet and credential stealer. The names of the extensions are below - helper-beeps.solidity-pro web3devtoolsx.solidity-pro Although neither of the extensions is now available on Open VSX, the GitHub repository",
-      "url": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-10T07:38:23+00:00",
-      "published_ts": 1786347503.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "GitHub"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
