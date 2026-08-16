@@ -1,18 +1,17 @@
 {
-  "generated_at": "2026-08-16T06:37:22.885689+00:00",
+  "generated_at": "2026-08-16T12:36:10.606301+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 69,
+    "all": 51,
     "critical": 0,
-    "high": 2,
-    "medium": 14,
-    "low": 53,
-    "actively_exploited": 7,
-    "with_cves": 16
+    "high": 0,
+    "medium": 7,
+    "low": 44,
+    "actively_exploited": 5,
+    "with_cves": 2
   },
   "sources_used": [
     "BleepingComputer",
-    "CISA Alerts",
     "Check Point Research",
     "Cisco Talos",
     "Dark Reading",
@@ -24,60 +23,6 @@
     "The Record"
   ],
   "items": [
-    {
-      "id": "1956a51bcf87687c",
-      "title": "ANDRITZ HIPASE-250 and 250 SCALA",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to read data from the device or gain access to affected workstations. The following versions of ANDRITZ HIPASE-250 and 250 SCALA are affected: HIPASE-250 &lt;=7.20 (CVE-2026-65309, CVE-2026-65310, CVE-2026-65311, CVE-2026-65313) 250 SCALA &lt;=7.20 (CVE-2026-65309, CVE-2026-65310, CVE-2026-65311, CVE-2026-65313) CVSS Vendor Equipment Vulnerabilities v3 8.1 ANDRITZ ANDRITZ HIPASE-250 and 250 SCALA Storing Passwords in a Recoverable Format, Missing Authentication for Critical Function, Use of Hard-coded Credentials Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Austria Vulnerabilities Expand All + CVE-2026-65309 ANDRITZ HIPASE-250 (formerly 250 SCALA) in affected versions stores and transmits user passwords using a reversible format instead of a one-way password hash. This allows an attacker able to read the credential store or capture network traffic to recover all stored passwords. View CVE Details Affected Products ANDRITZ HIPASE-250 and 250 SCALA Vendor: ANDRITZ Product Version: ANDRITZ HIPASE-250: &lt;=7.20, ANDRITZ 250 SCALA: &lt;=7.20 Product Status: known_affected Remediations Vendor fix ANDRITZ has addressed these issues in version V8.00.00 (released 2024-12) and in version V8.15.00 (released 2026-07) and encourages users to keep their systems updated to the latest version (currently HIPASE-250 Version V8.15.0",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-05",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-65309",
-        "CVE-2026-65310",
-        "CVE-2026-65311",
-        "CVE-2026-65313"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "b7cad660b7eadfc4",
-      "title": "'Jewelbug' APT Balances State Espionage &amp; Cryptocurrency Theft",
-      "summary": "Researchers discovered hackers-for-hire performing cyber espionage and financially motivated heists from the same Web panel.",
-      "url": "https://www.darkreading.com/threat-intelligence/jewelbug-apt-state-espionage-cryptocurrency-theft",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-13T10:00:00+00:00",
-      "published_ts": 1786615200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
     {
       "id": "6e5cd2743eab60b3",
       "title": "Shell investigates 'potential incident' after Clop data theft claims",
@@ -226,146 +171,6 @@
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "7fb3a33e67975bbb",
-      "title": "Johnson Controls Inc. Airwall",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to decrypt sensitive data, bypass authentication controls, gaining unauthorized access to read arbitrary files on the system, or gain unauthorized access to protected system resources. The following versions of Johnson Controls Inc. Airwall are affected: Airwall &lt;=4.0.4 (CVE-2026-64887, CVE-2026-34492) CVSS Vendor Equipment Vulnerabilities v3 6.8 Johnson Controls Inc. Johnson Controls Inc. Airwall Use of Hard-coded Cryptographic Key, External Control of File Name or Path Background Critical Infrastructure Sectors: Critical Manufacturing, Commercial Facilities, Government Services and Facilities, Transportation Systems, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-64887 A hardcoded password or cryptographic key was identified in the Airwall application. A hardcoded credential leads to a significant authentication failure that can be difficult for system or application administrators to detect. Once discovered, it is difficult to remediate without manually modifying or patching the software. The hardcoded key is identical across all installations of the product and across all customer organizations, meaning a single disclosure of the key - common on the internet - grants any knowledgeable attacker access to all affected deployments. An attacker with access to application code or binary files can use the hardcode",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-34492",
-        "CVE-2026-64887"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "ad1dbd7737fafaf6",
-      "title": "Johnson Controls Metasys",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a low-privilege user or attacker to inject a persistent malicious payload via a crafted URL that executes in the context of other users' sessions, including administrators, potentially leading to session hijacking and unauthorized access. The following versions of Johnson Controls Metasys are affected: Metasys 12 vers:all/* (CVE-2026-34491) Metasys 13 vers:all/* (CVE-2026-34491) Metasys 14 Metasys 15 CVSS Vendor Equipment Vulnerabilities v3 8 Johnson Controls Inc Johnson Controls Metasys Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') Background Critical Infrastructure Sectors: Critical Manufacturing, Commercial Facilities, Government Services and Facilities, Transportation Systems, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Ireland Vulnerabilities Expand All + CVE-2026-34491 A low-privilege user can inject a malicious XSS payload into the Metasys UI via a crafted URL. The payload persists across logins and executes in the browser context of other users, including administrators. View CVE Details Affected Products Johnson Controls Metasys Vendor: Johnson Controls Inc Product Version: Johnson Controls Inc Metasys 12: vers:all/*, Johnson Controls Inc Metasys 13: vers:all/*, Johnson Controls Inc Metasys 14: &lt;v14.1.5, Johnson Controls Inc Metasys 15: &lt;v15.0.1 Product Status: known_affected Remediations Mitigation Johnson Controls re",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-14",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-34491"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "5c16ce4ebab2c3c3",
-      "title": "Microsoft Makes Passkeys Default in Entra ID, Retires SMS and Voice Authentication",
-      "summary": "Microsoft will make passkeys the default authentication experience in Entra ID beginning September 1, 2026, and will fully retire its native SMS and voice multifactor authentication (MFA) delivery services on February 1, 2027. According to Microsoft, the transition is part of Microsoft’s broader effort to eliminate phishable credentials as enterprises expand cloud usage, remote access, [&#8230;] The post Microsoft Makes Passkeys Default in Entra ID, Retires SMS and Voice Authentication appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/microsoft-entra-id-makes-passkeys-default/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-15T08:31:17+00:00",
-      "published_ts": 1786782677.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "25a66376fbc5fee7",
-      "title": "Ruby 4.0 Marshal.load RCE Gadget Chain Exposes Critical Deserialization Risk",
-      "summary": "A newly disclosed universal deserialization gadget chain shows how a single unsafe Marshal.load operation can reportedly produce remote command execution in Ruby 4.0.6, underscoring the persistent danger of exposing Ruby’s native serialization mechanism to attacker-controlled data. According to research published by elttam, the chain also works unchanged on Ruby versions as far back as 3.3. [&#8230;] The post Ruby 4.0 Marshal.load RCE Gadget Chain Exposes Critical Deserialization Risk appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/ruby-4-0-marshal-load-rce-gadget-chain/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-15T08:02:08+00:00",
-      "published_ts": 1786780928.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "96ef6de2cad0cd09",
-      "title": "Download More RAM Attack Bypasses Windows VBS, HVCI and Disables Microsoft Defender",
-      "summary": "A newly disclosed Windows attack technique, dubbed “Download More RAM,” can undermine Virtualization-Based Security (VBS), bypass Hypervisor-Protected Code Integrity (HVCI), and disable endpoint protections including Microsoft Defender and third-party EDR products. The attack was presented at USENIX Security 2026 and is tracked by Microsoft as CVE-2026-23670. Unlike a conventional Windows kernel exploit, Download More RAM [&#8230;] The post Download More RAM Attack Bypasses Windows VBS, HVCI and Disables Microsoft Defender appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/download-more-ram-attack-bypasses-windows-vbs/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-15T07:43:27+00:00",
-      "published_ts": 1786779807.0,
-      "cves": [
-        "CVE-2026-23670"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
       "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
@@ -397,59 +202,83 @@
       "related_sources": []
     },
     {
-      "id": "cc3fedea3440bfab",
-      "title": "Siemens Desigo DXR and PXC Controllers",
-      "summary": "View CSAF Summary A vulnerability in Desigo DXR and PXC controllers has been identified that could allow an attacker to cause denial of service conditions by sending malformed BACnet packets. Recovery requires a device reset or reboot to restore normal functionality. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Desigo DXR and PXC Controllers are affected: Desigo DXR2 vers:intdot/&lt;01.21.233.16-7862 (CVE-2026-59693) Desigo PXC3 vers:intdot/&lt;01.21.233.16-7862 (CVE-2026-59693) Desigo PXC4 vers:intdot/&lt;02.21.194.36-2715 (CVE-2026-59693) Desigo PXC5.E003 vers:intdot/&lt;02.21.194.36-2715 (CVE-2026-59693) Desigo PXC5.E24 vers:intdot/&lt;02.21.194.36-2715 (CVE-2026-59693) Desigo PXC7 vers:intdot/&lt;02.21.194.36-2715 (CVE-2026-59693) CVSS Vendor Equipment Vulnerabilities v3 4.3 Siemens Siemens Desigo DXR and PXC Controllers Improper Check for Unusual or Exceptional Conditions Background Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy, Healthcare and Public Health, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-59693 The affected devices are vulnerable to a denial-of-service (DoS) vulnerability. An attacker can exploit this issue by sending a malformed BACnet packet, causing the device to stop responding to BACnet queries. Recovery requires a device rese",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-08",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-59693"
-      ],
+      "id": "5c16ce4ebab2c3c3",
+      "title": "Microsoft Makes Passkeys Default in Entra ID, Retires SMS and Voice Authentication",
+      "summary": "Microsoft will make passkeys the default authentication experience in Entra ID beginning September 1, 2026, and will fully retire its native SMS and voice multifactor authentication (MFA) delivery services on February 1, 2027. According to Microsoft, the transition is part of Microsoft’s broader effort to eliminate phishable credentials as enterprises expand cloud usage, remote access, [&#8230;] The post Microsoft Makes Passkeys Default in Entra ID, Retires SMS and Voice Authentication appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-entra-id-makes-passkeys-default/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-15T08:31:17+00:00",
+      "published_ts": 1786782677.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Life Sciences & Health Care"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe",
-        "Global"
+        "Global",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "23e5ea2dd0469c05",
-      "title": "Flow Neuroscience FL-100",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker within Bluetooth range to manipulate brain stimulation parameters and override safety limits. The following versions of Flow Neuroscience FL-100 are affected: Flow Neuroscience FL-100 Halo Neuroscience FL-100 CVSS Vendor Equipment Vulnerabilities v3 8.1 Flow Neuroscience Flow Neuroscience FL-100 Use of Hard-coded Credentials Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: Sweden Vulnerabilities Expand All + CVE-2026-18164 An undocumented hard-coded credential, shared by all device units, is authorized to bypass authentication. This allows an attacker within Bluetooth range to arbitrarilymanipulate brain stimulation parameters and state. View CVE Details Affected Products Flow Neuroscience FL-100 Vendor: Flow Neuroscience Product Version: Flow Neuroscience Flow Neuroscience FL-100: &lt;July_2026, Flow Neuroscience Halo Neuroscience FL-100: &lt;July_2026 Product Status: known_affected Remediations Mitigation Users are encouraged to install the latest firmware updates provided by Flow Neuroscience via the Flow app. Relevant CWE: CWE-798 Use of Hard-coded Credentials Metrics CVSS Version Base Score Base Severity Vector String 3.1 8.1 HIGH CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H 4.0 7.2 HIGH CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N Acknowledgments A.C. Buglione reported this v",
-      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-225-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-18164"
-      ],
+      "id": "25a66376fbc5fee7",
+      "title": "Ruby 4.0 Marshal.load RCE Gadget Chain Exposes Critical Deserialization Risk",
+      "summary": "A newly disclosed universal deserialization gadget chain shows how a single unsafe Marshal.load operation can reportedly produce remote command execution in Ruby 4.0.6, underscoring the persistent danger of exposing Ruby’s native serialization mechanism to attacker-controlled data. According to research published by elttam, the chain also works unchanged on Ruby versions as far back as 3.3. [&#8230;] The post Ruby 4.0 Marshal.load RCE Gadget Chain Exposes Critical Deserialization Risk appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/ruby-4-0-marshal-load-rce-gadget-chain/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-15T08:02:08+00:00",
+      "published_ts": 1786780928.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Life Sciences & Health Care"
+        "Government & Public Services"
       ],
       "regions": [
-        "Europe",
         "Global"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "96ef6de2cad0cd09",
+      "title": "Download More RAM Attack Bypasses Windows VBS, HVCI and Disables Microsoft Defender",
+      "summary": "A newly disclosed Windows attack technique, dubbed “Download More RAM,” can undermine Virtualization-Based Security (VBS), bypass Hypervisor-Protected Code Integrity (HVCI), and disable endpoint protections including Microsoft Defender and third-party EDR products. The attack was presented at USENIX Security 2026 and is tracked by Microsoft as CVE-2026-23670. Unlike a conventional Windows kernel exploit, Download More RAM [&#8230;] The post Download More RAM Attack Bypasses Windows VBS, HVCI and Disables Microsoft Defender appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/download-more-ram-attack-bypasses-windows-vbs/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-15T07:43:27+00:00",
+      "published_ts": 1786779807.0,
+      "cves": [
+        "CVE-2026-23670"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -559,264 +388,6 @@
       "related_sources": []
     },
     {
-      "id": "92c232431a29b336",
-      "title": "Siemens Parasolid",
-      "summary": "View CSAF Summary Parasolid is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Parasolid are affected: Parasolid V38.0 vers:intdot/&lt;38.0.235 (CVE-2026-64629) Parasolid V38.1 vers:intdot/&lt;38.1.230 (CVE-2026-64629) CVSS Vendor Equipment Vulnerabilities v3 7.8 Siemens Siemens Parasolid Out-of-bounds Read Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-64629 The affected applications contains an out of bounds read vulnerability while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. View CVE Details Affected Products Siemens Parasolid Vendor: Siemens Product Version: Parasolid V38.0 &lt; V38.0.235, Parasolid V38.1 &lt; V38.1.230 Product Status: known_affected Remediations Vendor fix Update to V38.0.235 or later version https://support.sw.siemens.com/product/258316782/ Vendor fix Update to V38.1.230 or later version https://support.sw.siemens.com/product/258316782/ Relevant CWE: CWE-125 Out-of-bounds Read Metrics CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-10",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-64629"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4cbf3e9ed803b941",
-      "title": "Siemens License Server (SLS)",
-      "summary": "View CSAF Summary Siemens License Server is affected by multiple vulnerabilities which could allow an attacker to elevate its privileges and read arbitrary files on the system. Siemens has released a new version for Siemens License Server (SLS) and recommends to update to the latest version. The following versions of Siemens License Server (SLS) are affected: Siemens License Server (SLS) vers:intdot/&lt;5.1, vers:intdot/&lt;5.3 (CVE-2026-69108, CVE-2026-69109) CVSS Vendor Equipment Vulnerabilities v3 7.5 Siemens Siemens License Server (SLS) Incorrect Permission Assignment for Critical Resource, Path Traversal: '.../...//' Background Critical Infrastructure Sectors: Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-69108 The affected application is vulnerable to a local privilege escalation due to an insecure sudoers policy. This could allow an attacker to execute arbitrary commands and plant malicious files as root, leading to full system compromise. View CVE Details Affected Products Siemens License Server (SLS) Vendor: Siemens Product Version: Siemens License Server (SLS) &lt; V5.1 Product Status: known_affected Remediations Vendor fix Update to V5.1 or later version https://support.sw.siemens.com/product/1586485382/ Relevant CWE: CWE-732 Incorrect Permission Assignment for Critical Resource Metrics CVSS Version Base Score Base Severity Vector String 3.1 6 MEDIUM CVSS:3.1/AV:L/AC:L/PR:H/UI",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-07",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-69108",
-        "CVE-2026-69109"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c3eefcd2b1777fa7",
-      "title": "Siemens Siveillance Video",
-      "summary": "View CSAF Summary Siveillance Video Management Servers contains a vulnerability that could allow a Remote Code Execution attack. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Siveillance Video are affected: Siveillance Video V2023 R3 vers:intdot/&lt;23.3.27 (CVE-2026-3014) Siveillance Video V2024 R1 vers:intdot/&lt;24.1.16 (CVE-2026-3014) Siveillance Video V2025 vers:intdot/&lt;25.1.15 (CVE-2026-3014) CVSS Vendor Equipment Vulnerabilities v3 9.1 Siemens Siemens Siveillance Video Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Communications, Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-3014 Milestone has released a new version of XProtect® (and several cumulative patch updates) which fix security vulnerability in Management Server API. The vulnerability causes users with edit permissions to the Management Server to be able to execute arbitrary code in context of the Management Server Service. View CVE Details Affected Products Siemens Siveillance Video Vendor: Siemens Product Version: Siveillance Video V2023 R3 &lt; V23.3.27, Siveillance Video V2024 R1 &lt; V24.1.16, Siveillance Video V2025 &lt; V25.1.15 Product Status: known_affected Remediations Vendor fix Update to V23.3 HotfixRev",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-09",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-3014"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "911b333d557c1037",
-      "title": "Siemens LOGO! Soft Comfort",
-      "summary": "View CSAF Summary Siemens LOGO! Soft Comfort contains multiple vulnerabilities in its project-file encryption and password handling mechanisms. A local attacker could exploit these vulnerabilities to extract the master key, allowing them to decrypt project data or remove project passwords. The lack of password salting enables offline dictionary or brute-force attacks against the password hashes. Successful exploitation could result in unauthorized access to, or modification of, sensitive project logic and configurations. Siemens has released a new version for LOGO! Soft Comfort and recommends to update to the latest version. The following versions of Siemens LOGO! Soft Comfort are affected: LOGO! Soft Comfort vers:intdot/&lt;9 (CVE-2026-57262, CVE-2026-57263) CVSS Vendor Equipment Vulnerabilities v3 6.8 Siemens Siemens LOGO! Soft Comfort Use of Hard-coded Cryptographic Key, Use of a One-Way Hash without a Salt Background Critical Infrastructure Sectors: Commercial Facilities, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-57262 Affected products use a static, hardcoded AES master key to encrypt project files. This could allow a local attacker to extract the master key from the application files or memory and use it to decrypt project files or remove project passwords entirely without knowing the actual user-defined password. View CVE Details Affected Products Siemens LOGO! Soft Comfort Ve",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-13",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-57262",
-        "CVE-2026-57263"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "982a26a26dea3b52",
-      "title": "Siemens Solid Edge",
-      "summary": "View CSAF Summary Solid Edge is affected by multiple file parsing vulnerabilities that could be triggered when the application reads specially crafted files in PAR, PSM or DFT format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Solid Edge are affected: Solid Edge SE2025 vers:intdot/&lt;225.0.15 (CVE-2026-50058, CVE-2026-50059, CVE-2026-50060, CVE-2026-50061, CVE-2026-50062, CVE-2026-50063, CVE-2026-50064) Solid Edge SE2026 vers:intdot/&lt;226.0.7 (CVE-2026-50058, CVE-2026-50059, CVE-2026-50060, CVE-2026-50061, CVE-2026-50062, CVE-2026-50063, CVE-2026-50064) CVSS Vendor Equipment Vulnerabilities v3 7.8 Siemens Siemens Solid Edge Out-of-bounds Read, Out-of-bounds Write, Use After Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-50058 The affected applications contains an out of bounds read vulnerability while parsing specially crafted DFT files. This could allow an attacker to execute code in the context of the current process. View CVE Details Affected Products Siemens Solid Edge Vendor: Siemens Product Version: Solid Edge SE2025 &lt; V225.0.15, Solid Edge SE2026 &lt; V226.0.7 Product Status: known_affected Remediations Vendor fix Update to V225.0 Update 15 or later ",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-12",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-50058",
-        "CVE-2026-50059",
-        "CVE-2026-50060",
-        "CVE-2026-50061",
-        "CVE-2026-50062",
-        "CVE-2026-50063",
-        "CVE-2026-50064"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c3c144d9ed32d777",
-      "title": "Siemens Simcenter Femap",
-      "summary": "View CSAF Summary Simcenter Femap contains two file parsing vulnerabilities that could be triggered when the application reads files in BMP file format. If a user is tricked to open a malicious file with the affected application, this could lead the application to crash or potentially lead to arbitrary code execution. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version. The following versions of Siemens Simcenter Femap are affected: Simcenter Femap vers:intdot/&lt;2606.0001 (CVE-2026-59700, CVE-2026-59701) CVSS Vendor Equipment Vulnerabilities v3 7.8 Siemens Siemens Simcenter Femap Out-of-bounds Read Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-59700 The affected applications contains an out of bounds read vulnerability while parsing specially crafted BMP files. This could allow an attacker to execute code in the context of the current process. View CVE Details Affected Products Siemens Simcenter Femap Vendor: Siemens Product Version: Simcenter Femap &lt; V2606.0001 Product Status: known_affected Remediations Vendor fix Update to V2606.0001 or later version https://support.sw.siemens.com/product/275652363/ Relevant CWE: CWE-125 Out-of-bounds Read Metrics CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H CVE-2026-59701 The affected appl",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-11",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-59700",
-        "CVE-2026-59701"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "09b0af840f0aaa11",
-      "title": "Haiwell IoT Cloud HMI Gateway",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability may allow an attacker to inject and execute arbitrary OS commands with root privileges. The following versions of Haiwell IoT Cloud HMI Gateway are affected: Haiwell IoT Cloud HMI Gateway 3.40.1.12 (CVE-2026-19188) CVSS Vendor Equipment Vulnerabilities v3 10 Haiwell Haiwell IoT Cloud HMI Gateway Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Energy, Critical Manufacturing, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities Expand All + CVE-2026-19188 A critical OS command injection vulnerability has been identified in the Haiwell IoT Cloud HMI Gateway product. The vulnerability exists in the Net Check feature accessible via the /setting endpoint. The cmdPing Socket.io event fails to properly sanitize user-supplied input before passing it to the underlying operating system, allowing an attacker to inject and execute arbitrary OS commands with root privileges View CVE Details Affected Products Haiwell IoT Cloud HMI Gateway Vendor: Haiwell Product Version: Haiwell Haiwell IoT Cloud HMI Gateway: 3.40.1.12 Product Status: known_affected Remediations Mitigation Haiwell has addressed the issue in patch version number Scada-v3.50.1.19, which is available for download on their website: https://en.haiwell.com/app/system/entrance.php?m=include&amp;c=access&amp;a=dodown&amp;lang=e",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-02",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-19188"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d14ef1111f75f726",
-      "title": "AVEVA Enterprise SCADA",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to tamper with serialized data, potentially resulting in code execution during deserialization. The following versions of AVEVA Enterprise SCADA are affected: Enterprise SCADA 2025 (CVE-2025-7639) Enterprise SCADA &gt;=2024|&lt;=2024_SP1_P01 (CVE-2025-7639) Enterprise SCADA &gt;=2023|&lt;=2023_SP1 (CVE-2025-7639) Enterprise SCADA &gt;=2022|&lt;=2022_SP2_P2 (CVE-2025-7639) Enterprise SCADA &lt;=2021_SP2_P5 (CVE-2025-7639) Enterprise SCADA HMI 2024|2024|R2 (CVE-2025-7639) Enterprise SCADA HMI &lt;=2023_P1 (CVE-2025-7639) CVSS Vendor Equipment Vulnerabilities v3 7.1 AVEVA AVEVA Enterprise SCADA Deserialization of Untrusted Data Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United Kingdom Vulnerabilities Expand All + CVE-2025-7639 The vulnerability, if exploited, could allow an authenticated miscreant with \"DNA Authority - Operator\" privilege to tamper with serialized data, potentially resulting in code execution during deserialization under the privilege of Enterprise SCADA security group \"DNA Apps\". View CVE Details Affected Products AVEVA Enterprise SCADA Vendor: AVEVA Product Version: AVEVA Enterprise SCADA: 2025, AVEVA Enterprise SCADA: &gt;=2024|&lt;=2024_SP1_P01, AVEVA Enterprise SCADA: &gt;=2023|&lt;=2023_SP1, AVEVA Enterprise SCADA: &gt;=2022|&lt;=2022_SP2_P2, AVEVA Enterprise SCADA: &lt;=2021_SP2_",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2025-7639"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7440d2acf907ed5f",
-      "title": "Hitachi Energy APM Edge Product",
-      "summary": "View CSAF Summary Hitachi Energy is aware of Dirty Frag vulnerabilities that affect APM Edge product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy APM Edge Product are affected: APM Edge vers:APM_Edge/&lt;=6.10 (CVE-2026-43284, CVE-2026-43500) CVSS Vendor Equipment Vulnerabilities v3 8.8 Hitachi Energy Hitachi Energy APM Edge Product Write-what-where Condition, Out-of-bounds Write Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2026-43284 CWE-123: Write-what-where Condition A vulnerability exists in the IPsec ESP subsystem (esp4, esp6) of the Linux kernel used in APM Edge that allows a local unprivileged user to escalate privileges to root. The flaw exists in how the kernel handles memory pages when processing ESP encrypted network packets. An attacker can craft a packet that causes the kernel to decrypt data directly into memory pages it does not own, including the cached copies of privileged operating system binaries. When one of those binaries is executed, the attacker's injected code runs with root privileges. In APM Edge, the vulnerable kernel modules (esp4, esp6) can be loaded by any local user and",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-04",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-08-13T12:00:00+00:00",
-      "published_ts": 1786622400.0,
-      "cves": [
-        "CVE-2026-43284",
-        "CVE-2026-43500"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Edge",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "42e308088a02b0c1",
       "title": "Investigation of banking hack leads to arrests in Europe, Brazil",
       "summary": "Germany’s federal police agency, the BKA, said three suspects were picked up in Europe and charged with fraud, and Brazil’s federal police said four others were arrested on similar charges.",
@@ -914,31 +485,6 @@
       "products": [
         "Linux"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2fd4d3d31023ba8c",
-      "title": "Dissecting the JWR phishing framework",
-      "summary": "Cisco Talos recently identified an undocumented phishing framework, internally branded \"JWR\" by its developer, built to convincingly impersonate checkout and login pages across major payment and shopping platforms.",
-      "url": "https://blog.talosintelligence.com/dissecting-the-jwr-phishing-framework/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-08-13T10:00:35+00:00",
-      "published_ts": 1786615235.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1485,30 +1031,6 @@
       "related_sources": []
     },
     {
-      "id": "5ae64cfd19b39b36",
-      "title": "Belgium's eID Authentication Opens Citizen Accounts to RCE",
-      "summary": "The trust framework underlying Belgium's electronic ID system was fully compromised by severe vulnerabilities in a key browser extension, showcasing bigger problems with extensions in general.",
-      "url": "https://www.darkreading.com/application-security/belgium-eid-authentication-citizen-accounts-rce",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-13T07:00:00+00:00",
-      "published_ts": 1786604400.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "c36aa441b813da53",
       "title": "Amid AI-Driven Bug-Hunt Tsunami, NIST Looks to … AI",
       "summary": "Driven by AI-augmented research and scanning, vulnerability volumes continue to surge, driving the National Institute of Standards and Technology to ask whether AI could be the answer.",
@@ -1742,28 +1264,6 @@
       "category": "threat",
       "published": "2026-08-13T13:00:40+00:00",
       "published_ts": 1786626040.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b47ff14c206430d4",
-      "title": "Armored Likho expands its cyber-espionage toolkit",
-      "summary": "Kaspersky experts break down a new Armored Likho campaign that poses as a fundraising efforts and delivers a new Still Toolkit aimed at stealing Telegram data and eavesdropping on victims.",
-      "url": "https://securelist.com/armored-likho-still-toolkit/121033/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-08-13T08:00:15+00:00",
-      "published_ts": 1786608015.0,
       "cves": [],
       "sectors": [],
       "regions": [
