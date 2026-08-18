@@ -1,19 +1,20 @@
 {
-  "generated_at": "2026-08-18T06:40:33.896283+00:00",
+  "generated_at": "2026-08-18T12:42:31.603564+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 51,
+    "all": 58,
     "critical": 0,
-    "high": 8,
+    "high": 4,
     "medium": 7,
-    "low": 36,
-    "actively_exploited": 11,
-    "with_cves": 10
+    "low": 47,
+    "actively_exploited": 7,
+    "with_cves": 6
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
     "Check Point Research",
+    "CrowdStrike Blog",
     "Dark Reading",
     "GBHackers",
     "SecurityWeek",
@@ -21,33 +22,6 @@
     "The Record"
   ],
   "items": [
-    {
-      "id": "861cbc540da4e24d",
-      "title": "PoC Exploit Released for Microsoft SCCM Vulnerability Enabling SYSTEM-Level Code Execution",
-      "summary": "A recently disclosed proof-of-concept (PoC) exploit for Microsoft Configuration Manager, previously known as System Center Configuration Manager (SCCM), demonstrates how an authenticated domain user could potentially escalate privileges to SYSTEM on a vulnerable Primary Site Server. This issue, tracked as CVE-2026-47301, was reported by security researcher Omri Baso and is characterized as an exploit chain [&#8230;] The post PoC Exploit Released for Microsoft SCCM Vulnerability Enabling SYSTEM-Level Code Execution appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/poc-exploit-released-for-microsoft-sccm-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-18T05:23:35+00:00",
-      "published_ts": 1787030615.0,
-      "cves": [
-        "CVE-2026-47301"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
     {
       "id": "ae0b31ea196953b6",
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -67,7 +41,8 @@
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global",
+        "North America"
       ],
       "products": [
         "Firefox",
@@ -75,7 +50,7 @@
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 60,
+      "priority_score": 65,
       "priority_label": "High",
       "related_sources": [
         {
@@ -83,89 +58,14 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62593",
           "title": "CVE-2025-62593: Ray-Project Ray Code Injection Vulnerability (Ray-Project Ray)",
           "published": "2026-08-17T00:00:00+00:00"
+        },
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/ray-project-ray-code-injection-vulnerability/",
+          "title": "CISA Warns of Active Exploitation of Ray-Project Ray Code Injection Vulnerability",
+          "published": "2026-08-18T10:49:01+00:00"
         }
       ]
-    },
-    {
-      "id": "8e72468f96c75958",
-      "title": "Misconfigured Microsoft Power Pages Likely Exposed 27 Million Records to ExfilSquad",
-      "summary": "A suspected Microsoft Power Pages configuration failure has been linked to the exposure of roughly 27 million records across 13 organizations, after the data-extortion group ExfilSquad published 382.64 GB of alleged victim data via torrent distribution. Researchers assessing the released material say the evidence points to publicly readable Microsoft Dataverse tables not a zero-day exploit, [&#8230;] The post Misconfigured Microsoft Power Pages Likely Exposed 27 Million Records to ExfilSquad appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/misconfigured-microsoft-power-pages/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-17T09:33:55+00:00",
-      "published_ts": 1786959235.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "cdf1f712a22dfa85",
-      "title": "Malicious Google Apps Script Profiles Crypto Victims Before Delivering Signed Windows Malware",
-      "summary": "A targeted cryptocurrency intrusion has exposed how Google-hosted Apps Script pages can be weaponized to profile prospective victims before delivering signed Windows malware. The campaign used a fake Web3 recruitment process to deploy a three-payload stack: NeedleStealer, an unclassified Rust infostealer, and a custom Go RAT with hidden VNC capabilities. A fake recruiter initiated contact [&#8230;] The post Malicious Google Apps Script Profiles Crypto Victims Before Delivering Signed Windows Malware appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/malicious-google-apps-script-attack/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-17T07:56:42+00:00",
-      "published_ts": 1786953402.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "660a025c052e7b26",
-      "title": "VMware vCenter RCE Gives Attackers a Path From One Appliance to Entire Virtual Infrastructure",
-      "summary": "A critical VMware vCenter vulnerability is being actively exploited in a fast-moving campaign that turns a single exposed management appliance into a launch point for broad virtual-infrastructure compromise. Incident responders at QUIRSO linked the activity to exploitation of CVE-2026-59310, while identifying a separate, possibly unrelated track involving CVE-2026-59309. CVE-2026-59310 is a directory-traversal vulnerability in the [&#8230;] The post VMware vCenter RCE Gives Attackers a Path From One Appliance to Entire Virtual Infrastructure appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/vmware-vcenter-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-18T05:36:08+00:00",
-      "published_ts": 1787031368.0,
-      "cves": [
-        "CVE-2026-59309",
-        "CVE-2026-59310"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "VMware vCenter"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 55,
-      "priority_label": "High",
-      "related_sources": []
     },
     {
       "id": "3e9ad4f690c08c6f",
@@ -196,6 +96,59 @@
       "related_sources": []
     },
     {
+      "id": "0c161109dd79be16",
+      "title": "CISA: Windows Task Host flaw now exploited by ransomware gangs",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has confirmed that ransomware gangs are also exploiting a high-severity Windows Task Host vulnerability that was flagged as actively exploited in April. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T10:32:16+00:00",
+      "published_ts": 1787049136.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "281744950e682bf4",
+      "title": "CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a critical flaw impacting Ray to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Ray is an open-source, Python-native distributed computing framework designed to scale artificial intelligence and machine learning workloads. As of writing, the GitHub project has more than",
+      "url": "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T06:34:20+00:00",
+      "published_ts": 1787034860.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "9038defd6bcfd0e6",
       "title": "Philips and GE investigating Clop ransomware data theft claims",
       "summary": "Tech giants General Electric (GE) and Philips have also confirmed they're investigating claims that the Clop ransomware gang breached their systems and stole data. [...]",
@@ -215,8 +168,8 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
@@ -244,8 +197,8 @@
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
@@ -270,85 +223,56 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 45,
+      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "d6266de278025d19",
-      "title": "Recent macOS Screen Sharing Vulnerability Exploited in Attacks",
-      "summary": "Threat actors gained root access to the vulnerable systems and deployed a Monero miner. The post Recent macOS Screen Sharing Vulnerability Exploited in Attacks appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/recent-macos-screen-sharing-vulnerability-exploited-in-attacks/",
-      "source": "SecurityWeek",
+      "id": "ea8c701906dea6d2",
+      "title": "Ukrainian software developer faces 12 years in Swiss ransomware trial",
+      "summary": "The unnamed 52-year-old is accused of attacking Swiss train manufacturer Stadler Rail alongside other enterprises as part of an international ransomware operation.",
+      "url": "https://therecord.media/ukrainian-software-developer-court-switzerland",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-17T08:47:38+00:00",
-      "published_ts": 1786956458.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "macOS"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "dd25cb992eef265c",
-      "title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-      "summary": "A recently patched security flaw in Apple macOS has come under active exploitation in the wild to deploy a cryptocurrency miner, the Netherlands National Cyber Security Centre (NCSC-NL) has warned. The vulnerability in question is CVE-2026-65400 (CVSS score: 9.8), a critical authentication issue impacting the Screen Sharing component that could allow an attacker already on the network to",
-      "url": "https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-15T07:24:04+00:00",
-      "published_ts": 1786778644.0,
-      "cves": [
-        "CVE-2026-65400"
-      ],
-      "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [
-        "macOS"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "e7f4589ce40e575f",
-      "title": "Shadow hVNC Malware Kit Gives Hackers Hidden Windows Desktop for Covert Remote Control",
-      "summary": "A newly advertised malware-as-a-service toolkit named Shadow hVNC combines browser credential theft, hidden virtual desktop control, reverse proxying, and extensive persistence into a single Windows-focused payload. Marketed by a user known as “RemoteX” in March 2026, the kit gives operators a parallel Win32 desktop where they can browse, run tools, and interact with hijacked sessions [&#8230;] The post Shadow hVNC Malware Kit Gives Hackers Hidden Windows Desktop for Covert Remote Control appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/shadow-hvnc-malware-kit/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-18T06:13:15+00:00",
-      "published_ts": 1787033595.0,
+      "published": "2026-08-17T23:00:00+00:00",
+      "published_ts": 1787007600.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "517ab3c708c98812",
+      "title": "BTMob Uses Custom Phishing Apps to Turn Android Users Into Remote-Controlled Fraud Victims",
+      "summary": "BTMOB has evolved beyond a conventional Android banking trojan into a turnkey fraud platform that lets criminals build branded phishing apps, remotely operate infected phones, and automate theft. Its emergence illustrates how leaked malware source code and low-code tooling are turning mobile fraud into a scalable franchise. The malicious lnat-tv-pro.apk sample connected to server[.]yaarsa[.]com/con over [&#8230;] The post BTMob Uses Custom Phishing Apps to Turn Android Users Into Remote-Controlled Fraud Victims appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/btmob-uses-custom-phishing-apps/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-18T12:36:50+00:00",
+      "published_ts": 1787056610.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
         "Global"
       ],
       "products": [
-        "Windows"
+        "Android"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -357,25 +281,26 @@
       "related_sources": []
     },
     {
-      "id": "ffe109b9e5a8fb58",
-      "title": "Pokémon Center Data Breach Exposes Customers’ Personal and Order Data",
-      "summary": "Pokémon Center has begun notifying customers in the United Kingdom and Germany that personal information from their online orders was exposed following a cyberattack on CEVA Logistics, its third-party fulfillment partner. The retailer clarified that the incident did not originate from Pokémon Center’s own systems or website. Instead, attackers compromised the systems CEVA uses to [&#8230;] The post Pokémon Center Data Breach Exposes Customers’ Personal and Order Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/pokemon-center-data-breach/",
+      "id": "031368335e1b21fc",
+      "title": "Octagon Android Bot Uses Hidden VNC and Accessibility Overlays to Steal Crypto Wallet Credentials",
+      "summary": "Octagon, a previously undocumented Android banking and cryptocurrency fraud platform marketed as malware-as-a-service by a Russian-speaking actor using the handle AndroidKitKat. First advertised on a Russian-language cybercrime forum on June 1, 2026, the toolkit combines abuse of accessibility, stealthy remote control, credential-stealing overlays, SMS interception, and device reconnaissance to enable direct account takeover and cryptocurrency [&#8230;] The post Octagon Android Bot Uses Hidden VNC and Accessibility Overlays to Steal Crypto Wallet Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/octagon-android-bot/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-18T05:15:32+00:00",
-      "published_ts": 1787030132.0,
+      "published": "2026-08-18T09:37:38+00:00",
+      "published_ts": 1787045858.0,
       "cves": [],
       "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Financial Services"
       ],
       "regions": [
-        "Europe",
         "Global"
       ],
-      "products": [],
+      "products": [
+        "Android"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 25,
@@ -410,19 +335,71 @@
       "related_sources": []
     },
     {
-      "id": "215c0fcc707d8529",
-      "title": "ChainDrop Publishes Initial Malware Without Stealing a Long-Lived npm Token",
-      "summary": "The ChainDrop campaign has exposed a gap in modern software supply-chain defenses: malware no longer needs a durable npm publishing token or even an npm install event to spread through developer environments. The self-propagating npm worm, also tracked as a Mini Shai-Hulud variant, turned compromised publisher and CI identities into a distribution mechanism while establishing [&#8230;] The post ChainDrop Publishes Initial Malware Without Stealing a Long-Lived npm Token appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/chaindrop-exploits-npm/",
+      "id": "96f25c42e8a80d32",
+      "title": "Apple Addresses 28 Security Flaws Across macOS, iOS, and iPadOS",
+      "summary": "Apple has released security updates for iPhones, iPads, and Macs to address 28 vulnerabilities across its latest operating systems. These updates, issued on August 17, 2026, include iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, and security fixes for older devices with iOS 18.7.10 and iPadOS 18.7.10. The patches impact a wide range of supported Apple [&#8230;] The post Apple Addresses 28 Security Flaws Across macOS, iOS, and iPadOS appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/apple-addresses-28-security-flaws/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-17T07:13:40+00:00",
-      "published_ts": 1786950820.0,
+      "published": "2026-08-18T11:17:12+00:00",
+      "published_ts": 1787051832.0,
       "cves": [],
       "sectors": [
-        "Government & Public Services",
         "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "iOS",
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9d5c1a9e74ce0bfa",
+      "title": "Asruex Trojan Found Embedded in GEEKOM Mini PC Realtek Ethernet Driver",
+      "summary": "GEEKOM has confirmed that a malware-flagged Realtek LAN driver package was previously accessible through an outdated support page for its mini PCs, raising fresh supply-chain security concerns around vendor-hosted driver downloads. The company said the affected file was confined to a legacy resource, not its current support portal or factory-installed Windows images. The incident came [&#8230;] The post Asruex Trojan Found Embedded in GEEKOM Mini PC Realtek Ethernet Driver appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/realtek-ethernet-driver/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-18T11:08:10+00:00",
+      "published_ts": 1787051290.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "71908d36aa63d9a8",
+      "title": "JWR Phishing-as-a-Service Kit Uses WebSockets and AES to Run Real-Time Banking Fraud",
+      "summary": "JWR, an undocumented phishing-as-a-service (PhaaS) framework that turns conventional credential theft into an operator-led, real-time banking and payment fraud operation. Rather than waiting for a victim to submit a form, JWR streams keystrokes to an attacker over an AES-CTR-encrypted WebSocket channel, allowing the operator to react while card numbers, passwords and one-time codes are still [&#8230;] The post JWR Phishing-as-a-Service Kit Uses WebSockets and AES to Run Real-Time Banking Fraud appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/jwr-phishing-as-a-service/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-18T10:40:28+00:00",
+      "published_ts": 1787049628.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
       ],
       "regions": [
         "Global"
@@ -430,8 +407,34 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2c3aade9beb54d49",
+      "title": "Microsoft Adds Customizable Context Menu to Windows 11 File Explorer",
+      "summary": "Microsoft has introduced a redesigned and customizable context menu for the Windows 11 File Explorer, along with significant improvements in reliability and responsiveness. Announced for Windows Insiders on August 17, this update addresses a common issue in Windows 11: slow and cluttered right-click menus that can be affected by various application extensions and shell integrations. [&#8230;] The post Microsoft Adds Customizable Context Menu to Windows 11 File Explorer appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/customizable-context-menu-to-windows-11-file-explorer/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-18T08:42:00+00:00",
+      "published_ts": 1787042520.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -461,55 +464,71 @@
       "related_sources": []
     },
     {
-      "id": "5c3c2a24dcf1c290",
-      "title": "HoneyMyte Upgrades CoolClient With Windows Kernel Rootkit to Hide Malware and C2 Connections",
-      "summary": "HoneyMyte, the China-aligned espionage group also tracked as Mustang Panda, has upgraded its CoolClient backdoor with a signed Windows kernel-mode rootkit that can conceal malware artifacts and command-and-control infrastructure from security tools. The development marks a notable escalation in the group’s post-compromise tradecraft, moving protection and evasion below the user-mode layer where many endpoint inspection [&#8230;] The post HoneyMyte Upgrades CoolClient With Windows Kernel Rootkit to Hide Malware and C2 Connections appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/honeymyte-upgrades-coolclient/",
+      "id": "823aa2a427c9e62e",
+      "title": "French Tax Authority Cyberattack Exposes Tax Data of 678,000 Individuals and Businesses",
+      "summary": "France’s Directorate General of Public Finances (DGFiP) has reported a cyberattack that resulted in unauthorized access to and extraction of tax and cadastral data for approximately 678,000 individuals and professional entities. According to a press release from the French Ministry of Economy and Finance, issued on August 14, 2026, the intrusions occurred during June and [&#8230;] The post French Tax Authority Cyberattack Exposes Tax Data of 678,000 Individuals and Businesses appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/french-tax-authority-cyberattack/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-17T09:03:51+00:00",
-      "published_ts": 1786957431.0,
+      "published": "2026-08-18T12:22:13+00:00",
+      "published_ts": 1787055733.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
-        "Asia-Pacific",
+        "Europe",
         "Global"
       ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "5a4c736d5ea68b12",
-      "title": "GeoServer Pre-Auth SQL Injection Flaw Lets Attackers Gain Remote Code Execution",
-      "summary": "A newly disclosed SQL injection vulnerability in GeoServer allows remote attackers to execute operating system commands on backend PostgreSQL hosts under high-risk configurations. This flaw, detailed on August 14, 2026, affects the GeoTools code used by GeoServer to translate Common Query Language (CQL) filters into SQL queries for PostGIS-backed data stores. Reports indicate that exploitation [&#8230;] The post GeoServer Pre-Auth SQL Injection Flaw Lets Attackers Gain Remote Code Execution appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/geoserver-pre-auth-sql-injection-flaw/",
+      "id": "81357c9e8b90b6c4",
+      "title": "AI Agents Gain Unintended Internet Access During Cybersecurity Evaluations",
+      "summary": "AI security evaluation firm has disclosed that several frontier AI models unintentionally accessed and acted against real internet-connected systems during controlled cybersecurity testing. This issue, which has since been resolved, stemmed from a single evaluation scenario in which internet access was permitted and a fictional target name overlapped with a real domain. Irregular stated that [&#8230;] The post AI Agents Gain Unintended Internet Access During Cybersecurity Evaluations appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/ai-agents-gain-unintended-internet-access/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-17T07:29:32+00:00",
-      "published_ts": 1786951772.0,
+      "published": "2026-08-18T10:56:15+00:00",
+      "published_ts": 1787050575.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Global"
       ],
-      "products": [
-        "PostgreSQL"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c470eecfad8b1f5f",
+      "title": "Kimsuky Uses Local AI Development Environment to Expand Cyber Espionage Tooling in Operation GitPower",
+      "summary": "North Korean state-backed threat actor Kimsuky is extending its established espionage playbook with locally hosted artificial intelligence tooling, according to new research into an activity cluster tracked as Operation GitPower. The campaign retains familiar phishing-led intrusion chains but shows the operators preparing AI-assisted capabilities for malware development, data analysis, social engineering, and operational automation. The [&#8230;] The post Kimsuky Uses Local AI Development Environment to Expand Cyber Espionage Tooling in Operation GitPower appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/kimsuky-uses-local-ai-development-environment-to-expand-cyber-espionage-tooling-in-operation-gitpower/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-18T10:07:44+00:00",
+      "published_ts": 1787047664.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific",
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -567,94 +586,159 @@
       "related_sources": []
     },
     {
-      "id": "1c37136474b96374",
-      "title": "OpenMatter Network to Take Verification Message to Belgrade Blockchain Week 2026",
-      "summary": "Melbourne, Florida, August 17th, 2026, CyberNewswire Head of Operations and Partnerships Chris Biele to lead sessions on secure scientific collaboration, agentic AI and the need to move from trust to cryptographic proof Continuing its effort to build global awareness of the need to move computing from assumption-based trust to cryptographic proof, OpenMatter Network today announced [&#8230;] The post OpenMatter Network to Take Verification Message to Belgrade Blockchain Week 2026 appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/openmatter-network-belgrade-blockchain-week-2026/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-17T16:50:12+00:00",
-      "published_ts": 1786985412.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d41d4210695a7d55",
-      "title": "Ukraine says cyberattack hit Russian e-commerce giant Wildberries amid drone strikes",
-      "summary": "Ukraine’s military intelligence claimed it disrupted the operations of Russia’s largest online marketplace, Wildberries, in a cyberattack intended to amplify the impact of drone strikes on the company’s infrastructure.",
-      "url": "https://therecord.media/russia-wildberries-cyberattack-ukraine",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-17T12:30:00+00:00",
-      "published_ts": 1786969800.0,
-      "cves": [],
-      "sectors": [
-        "Consumer",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "48a46235478428d5",
-      "title": "Evooo1Bot Linux Botnet Exploits Known Flaws to Turn Edge Devices Into SOCKS5 Proxies",
-      "summary": "Cybersecurity researchers have flagged a previously undocumented Linux botnet family dubbed Evooo1Bot that derives its core functionality from the Mirai botnet source code and is equipped to turn internet-facing devices into SOCKS proxies. \"While the malware reuses the DDoS engine from the publicly leaked Mirai source code, it extends the original framework with numerous capabilities, including",
-      "url": "https://thehackernews.com/2026/08/evooo1bot-linux-botnet-exploits-known.html",
+      "id": "aef1e24a52e4418f",
+      "title": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
+      "summary": "Cybersecurity researchers have flagged a new typosquatting campaign targeting RubyGems users with a Windows-based information stealer. OpenSourceMalware, which discovered the activity on August 15, 2026, is tracking the threat under the moniker StubMaker. The complete list of packages published as part of the campaign is below - ubnuler ubnlder ri18nr reaker rakier orakw joxn",
+      "url": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-17T09:29:55+00:00",
-      "published_ts": 1786958995.0,
+      "published": "2026-08-18T11:40:06+00:00",
+      "published_ts": 1787053206.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe"
+        "Unspecified"
       ],
       "products": [
-        "Edge",
-        "Linux"
+        "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "76c54850c33e3795",
-      "title": "Fortune 500 Companies Hit in Azure Data Theft Campaign",
-      "summary": "A threat actor is claiming the exfiltration of millions of records from McDonald’s, TCS, Vodafone, and other large organizations. The post Fortune 500 Companies Hit in Azure Data Theft Campaign appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/fortune-500-companies-hit-in-azure-data-theft-campaign/",
+      "id": "2845a3b118d1d603",
+      "title": "One Attacker Has Scraped Both Salesforce and ServiceNow Portals Since 2025",
+      "summary": "A single piece of infrastructure has been pulling records out of Salesforce and ServiceNow customer portals across multiple industries for more than a year, according to research published this week by agent security platform Reco. The activity, which Reco has named the City Forum campaign after a domain tied to the attacker's IP address, traces back to one server: 158.220.87.79, hosted on a",
+      "url": "https://thehackernews.com/2026/08/one-attacker-has-scraped-both.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T11:30:00+00:00",
+      "published_ts": 1787052600.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Salesforce",
+        "ServiceNow"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0e6e1e433af8212e",
+      "title": "Microsoft tests faster Windows File Explorer, new context menu",
+      "summary": "Microsoft has started testing a faster File Explorer and a less cluttered and more customizable context menu in Windows 11 preview builds rolling out to Insiders this week. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-faster-windows-explorer-customizable-context-menu/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T11:14:28+00:00",
+      "published_ts": 1787051668.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b0cf5dc0e5474408",
+      "title": "300,000 WordPress Sites Potentially Exposed to Hacking Due to Form Plugin Flaw",
+      "summary": "Tracked as CVE-2026-15748, the arbitrary file upload bug allows unauthenticated attackers to upload executable files. The post 300,000 WordPress Sites Potentially Exposed to Hacking Due to Form Plugin Flaw appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/300000-wordpress-sites-potentially-exposed-to-hacking-due-to-form-plugin-flaw/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-17T06:51:08+00:00",
-      "published_ts": 1786949468.0,
+      "published": "2026-08-18T10:48:23+00:00",
+      "published_ts": 1787050103.0,
+      "cves": [
+        "CVE-2026-15748"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html",
+          "title": "Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads",
+          "published": "2026-08-17T18:22:09+00:00"
+        }
+      ]
+    },
+    {
+      "id": "8f74f739b8bc521a",
+      "title": "Microsoft confirms outage affecting search in Microsoft 365 apps",
+      "summary": "Microsoft says some users are experiencing issues searching in Microsoft 365 apps, including Outlook on the web, Outlook desktop, SharePoint Online, and OneDrive. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-bug-behind-microsoft-365-search-issues/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T09:24:49+00:00",
+      "published_ts": 1787045089.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Outlook",
+        "SharePoint"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "25980dd53eb66ab3",
+      "title": "Heights Finance Data Breach Impacts at Least 1.2 Million Individuals",
+      "summary": "Hackers stole names, addresses, phone numbers, Social Security numbers, and financial information from a third-party platform. The post Heights Finance Data Breach Impacts at Least 1.2 Million Individuals appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/heights-finance-data-breach-impacts-at-least-1-2-million-individuals/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T09:18:34+00:00",
+      "published_ts": 1787044714.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
       ],
       "regions": [
         "Unspecified"
@@ -662,7 +746,57 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ec9b8dff4718d2f6",
+      "title": "SafePal Hardware Wallet Maker Says Flaw Exposed Data of Nearly 40,000 Customers",
+      "summary": "SafePal has disclosed that an authorization flaw in an order-tracking plug-in exposed the names, email addresses, shipping addresses, phone numbers, and purchase details of approximately 39,798 customers. The hardware wallet maker said all affected customers were notified individually by email on August 16 from security@safepal.com, with the subject line \"[Important] Your SafePal Order",
+      "url": "https://thehackernews.com/2026/08/safepal-hardware-wallet-maker-says-flaw.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T09:10:45+00:00",
+      "published_ts": 1787044245.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f7150abef3887629",
+      "title": "Microsoft starts removing WMIC tool used by cybercriminals",
+      "summary": "Microsoft announced that it removed the Windows Management Instrumentation Command-line (WMIC) tool from Windows 11 24H2 and 25H2, as well as from Windows 11 beta builds released this week. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wmic-lolbin-tool-in-windows-11-beta-builds/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T08:12:08+00:00",
+      "published_ts": 1787040728.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -861,164 +995,126 @@
       "related_sources": []
     },
     {
-      "id": "3fec04515d3c153c",
-      "title": "Windows Server 2022 reaches end of mainstream support in 60 days",
-      "summary": "Microsoft has reminded IT administrators that Windows Server 2022 is rapidly approaching its mainstream end date of October 2026, when it will switch to extended support. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-17T12:33:11+00:00",
-      "published_ts": 1786969991.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3e5d73dde2b1f3ff",
-      "title": "How MCP Servers Can Expose Enterprise Secrets",
-      "summary": "MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running. As more organizations adopt AI agents into their systems, that exposure can silently become a major gap in MCP server security. The Model Context Protocol (MCP) allows AI agents to reach the tools and data,",
-      "url": "https://thehackernews.com/2026/08/how-mcp-servers-can-expose-enterprise.html",
+      "id": "48a46235478428d5",
+      "title": "Evooo1Bot Linux Botnet Exploits Known Flaws to Turn Edge Devices Into SOCKS5 Proxies",
+      "summary": "Cybersecurity researchers have flagged a previously undocumented Linux botnet family dubbed Evooo1Bot that derives its core functionality from the Mirai botnet source code and is equipped to turn internet-facing devices into SOCKS proxies. \"While the malware reuses the DDoS engine from the publicly leaked Mirai source code, it extends the original framework with numerous capabilities, including",
+      "url": "https://thehackernews.com/2026/08/evooo1bot-linux-botnet-exploits-known.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-17T11:58:00+00:00",
-      "published_ts": 1786967880.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "cd38b8280699a8a5",
-      "title": "Conflicting Test Goals Pushed Claude Agents to Deploy Self-Replicating Malware",
-      "summary": "Anthropic has been conducting tests to identify issues in how AI agents interact with each other. The post Conflicting Test Goals Pushed Claude Agents to Deploy Self-Replicating Malware appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/conflicting-test-goals-pushed-claude-agents-to-deploy-self-replicating-malware/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-17T11:09:57+00:00",
-      "published_ts": 1786964997.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4ee4ed8508c2770a",
-      "title": "Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access",
-      "summary": "Security researchers at SSD Secure Disclosure have published a two-stage exploit chain that achieves full Android kernel access on devices running Unisoc modem firmware through a VoLTE video call, with no fix from the chipset maker. The&nbsp;advisory, published August 17, 2026, is the second stage of a chain that began in March 2026, when SSD disclosed&nbsp;remote code execution&nbsp;in the",
-      "url": "https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-17T10:52:34+00:00",
-      "published_ts": 1786963954.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "81db4b9d464d64ae",
-      "title": "Critical SAP Commerce Cloud Vulnerability Exploited 3 Days After Disclosure",
-      "summary": "The vulnerability tracked as CVE-2026-58231 can be exploited to execute arbitrary code and compromise internal components. The post Critical SAP Commerce Cloud Vulnerability Exploited 3 Days After Disclosure appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/critical-sap-commerce-cloud-vulnerability-exploited-3-days-after-disclosure/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-17T08:13:07+00:00",
-      "published_ts": 1786954387.0,
-      "cves": [
-        "CVE-2026-58231"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "SAP"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-cve-2026-58231.html",
-          "title": "SAP Commerce Cloud CVE-2026-58231 Targeted in Exploitation Attempts Days After Patch",
-          "published": "2026-08-15T08:38:46+00:00"
-        }
-      ]
-    },
-    {
-      "id": "2d8cffdaaa98bd25",
-      "title": "New AmnesiaStealer macOS malware hijacks browser sessions via remote control",
-      "summary": "A new information-stealing malware called AmnesiaStealer, which targets macOS users via ClickFix attacks, includes a streaming module that allows the attacker to interactively control the victim's web browser. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-16T15:07:44+00:00",
-      "published_ts": 1786892864.0,
+      "published": "2026-08-17T09:29:55+00:00",
+      "published_ts": 1786958995.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Europe"
       ],
       "products": [
-        "macOS"
+        "Edge",
+        "Linux"
       ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1237932ad63333db",
+      "title": "Xpander Raises $7.5 Million for AI Management and Governance",
+      "summary": "Xpander’s platform uses a universal agent harness that executes AI agents as portable workloads and securely renders interfaces on demand. The post Xpander Raises $7.5 Million for AI Management and Governance appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/xpander-raises-7-5-million-for-ai-management-and-governance/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T12:29:08+00:00",
+      "published_ts": 1787056148.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a064aa225519b025",
+      "title": "Fortinet Acquires AI Security Company Virtue AI",
+      "summary": "Fortinet will use Virtue AI technology to enhance its AI security portfolio, including for AI models, applications, and agentic systems. The post Fortinet Acquires AI Security Company Virtue AI appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/fortinet-acquires-ai-security-company-virtue-ai/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T12:06:21+00:00",
+      "published_ts": 1787054781.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Fortinet"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f1c341fc338062ce",
+      "title": "GitLab Patches Critical Code Injection Vulnerability",
+      "summary": "The security defect allows unauthenticated attackers to modify or delete user data and public projects. The post GitLab Patches Critical Code Injection Vulnerability appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/gitlab-patches-critical-code-injection-vulnerability/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T08:51:07+00:00",
+      "published_ts": 1787043067.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitLab"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "35c7b75f2ca4ff5f",
+      "title": "Dozens of WebKit Vulnerabilities Patched With Fresh macOS, iOS Security Updates",
+      "summary": "The bugs could be exploited to crash Safari, corrupt memory, leak sensitive data, escape the sandbox, and exfiltrate data. The post Dozens of WebKit Vulnerabilities Patched With Fresh macOS, iOS Security Updates appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/dozens-of-webkit-vulnerabilities-patched-with-fresh-macos-ios-security-updates/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-18T06:46:22+00:00",
+      "published_ts": 1787035582.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Safari",
+        "iOS",
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1040,32 +1136,6 @@
       "products": [
         "GitHub",
         "Jira"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5cb377c90b53051f",
-      "title": "Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads",
-      "summary": "A critical security flaw has been disclosed in Forminator Forms, a WordPress plugin with more than 600,000 active installations, that could be exploited to achieve arbitrary code execution on susceptible sites. The vulnerability, tracked as CVE-2026-15748, is rated 9.8 out of 10.0 on the CVSS scoring system. It was discovered and reported by a security researcher who goes by the online alias \"",
-      "url": "https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-17T18:22:09+00:00",
-      "published_ts": 1786990929.0,
-      "cves": [
-        "CVE-2026-15748"
-      ],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "WordPress"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1164,39 +1234,45 @@
       "related_sources": []
     },
     {
-      "id": "8442ca5026a45a49",
-      "title": "Irregular Details How a Naming Error Let AI Models Attack a Real Company",
-      "summary": "The AI security testing firm has shared information on a recently disclosed incident involving Anthropic AI models. The post Irregular Details How a Naming Error Let AI Models Attack a Real Company appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/irregular-details-how-a-naming-error-let-ai-models-attack-a-real-company/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-17T12:11:00+00:00",
-      "published_ts": 1786968660.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d98bc0781260070f",
-      "title": "French tax authority data breach affects 678,000 individuals",
-      "summary": "The French Ministry of the Economy and Finance has disclosed a data breach after an attacker accessed the General Directorate of Public Finances (DGFiP) systems and stole data belonging to 678,000 individuals. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/",
+      "id": "3fec04515d3c153c",
+      "title": "Windows Server 2022 reaches end of mainstream support in 60 days",
+      "summary": "Microsoft has reminded IT administrators that Windows Server 2022 is rapidly approaching its mainstream end date of October 2026, when it will switch to extended support. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-17T10:09:48+00:00",
-      "published_ts": 1786961388.0,
+      "published": "2026-08-17T12:33:11+00:00",
+      "published_ts": 1786969991.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3e5d73dde2b1f3ff",
+      "title": "How MCP Servers Can Expose Enterprise Secrets",
+      "summary": "MCP servers can expose enterprise secrets through plaintext configuration files, over-permissioned access and prompt injection, often before security teams even know the server is running. As more organizations adopt AI agents into their systems, that exposure can silently become a major gap in MCP server security. The Model Context Protocol (MCP) allows AI agents to reach the tools and data,",
+      "url": "https://thehackernews.com/2026/08/how-mcp-servers-can-expose-enterprise.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-17T11:58:00+00:00",
+      "published_ts": 1786967880.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1208,15 +1284,65 @@
       "related_sources": []
     },
     {
-      "id": "285e9abfa625aee2",
-      "title": "40,000 Impacted by SafePal Data Breach",
-      "summary": "Hackers exploited a vulnerability in the order-tracking function of a plugin to access SafePal customer information. The post 40,000 Impacted by SafePal Data Breach appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/40000-impacted-by-safepal-data-breach/",
+      "id": "cd38b8280699a8a5",
+      "title": "Conflicting Test Goals Pushed Claude Agents to Deploy Self-Replicating Malware",
+      "summary": "Anthropic has been conducting tests to identify issues in how AI agents interact with each other. The post Conflicting Test Goals Pushed Claude Agents to Deploy Self-Replicating Malware appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/conflicting-test-goals-pushed-claude-agents-to-deploy-self-replicating-malware/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-17T09:37:06+00:00",
-      "published_ts": 1786959426.0,
+      "published": "2026-08-17T11:09:57+00:00",
+      "published_ts": 1786964997.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4ee4ed8508c2770a",
+      "title": "Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access",
+      "summary": "Security researchers at SSD Secure Disclosure have published a two-stage exploit chain that achieves full Android kernel access on devices running Unisoc modem firmware through a VoLTE video call, with no fix from the chipset maker. The&nbsp;advisory, published August 17, 2026, is the second stage of a chain that began in March 2026, when SSD disclosed&nbsp;remote code execution&nbsp;in the",
+      "url": "https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-17T10:52:34+00:00",
+      "published_ts": 1786963954.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "66336d9d58278157",
+      "title": "Teaching AI to Reason Through Detection Triage",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/teaching-ai-to-reason-through-detection-triage/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-08-17T05:00:00+00:00",
+      "published_ts": 1786942800.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1254,28 +1380,68 @@
       "related_sources": []
     },
     {
-      "id": "4bfa4754c396483e",
-      "title": "New Evooo1Bot Linux botnet turns routers into traffic relay nodes",
-      "summary": "A new Mirai-based modular Linux botnet malware called Evooo1Bot has been targeting internet-facing gateway devices, turning them into SOCKS5 traffic relay nodes. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/",
-      "source": "BleepingComputer",
+      "id": "8442ca5026a45a49",
+      "title": "Irregular Details How a Naming Error Let AI Models Attack a Real Company",
+      "summary": "The AI security testing firm has shared information on a recently disclosed incident involving Anthropic AI models. The post Irregular Details How a Naming Error Let AI Models Attack a Real Company appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/irregular-details-how-a-naming-error-let-ai-models-attack-a-real-company/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-15T14:14:38+00:00",
-      "published_ts": 1786803278.0,
+      "published": "2026-08-17T12:11:00+00:00",
+      "published_ts": 1786968660.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Linux"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d98bc0781260070f",
+      "title": "French tax authority data breach affects 678,000 individuals",
+      "summary": "The French Ministry of the Economy and Finance has disclosed a data breach after an attacker accessed the General Directorate of Public Finances (DGFiP) systems and stole data belonging to 678,000 individuals. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-17T10:09:48+00:00",
+      "published_ts": 1786961388.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "285e9abfa625aee2",
+      "title": "40,000 Impacted by SafePal Data Breach",
+      "summary": "Hackers exploited a vulnerability in the order-tracking function of a plugin to access SafePal customer information. The post 40,000 Impacted by SafePal Data Breach appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/40000-impacted-by-safepal-data-breach/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-17T09:37:06+00:00",
+      "published_ts": 1786959426.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
