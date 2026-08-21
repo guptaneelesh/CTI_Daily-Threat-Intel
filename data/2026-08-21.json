@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-21T01:13:41.807609+00:00",
+  "generated_at": "2026-08-21T06:43:17.373198+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 99,
+    "all": 109,
     "critical": 0,
-    "high": 5,
-    "medium": 9,
-    "low": 85,
+    "high": 6,
+    "medium": 13,
+    "low": 90,
     "actively_exploited": 9,
-    "with_cves": 12
+    "with_cves": 13
   },
   "sources_used": [
     "BleepingComputer",
@@ -18,6 +18,7 @@
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Microsoft Security Blog",
     "SecurityWeek",
     "The Hacker News",
@@ -78,6 +79,42 @@
       "priority_score": 70,
       "priority_label": "High",
       "related_sources": []
+    },
+    {
+      "id": "da7c5a3ec2c5163d",
+      "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
+      "summary": "Microsoft on Thursday warned of a maximum-severity security flaw in Entra ID that it said has been exploited in the wild, but noted that no customer action is required. The vulnerability, tracked as CVE-2026-69836 (CVSS score: 10.0), is a case of remote code execution impacting the tech giant's cloud-based identity and access management service. It was previously called Azure Active Directory",
+      "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-21T06:06:11+00:00",
+      "published_ts": 1787292371.0,
+      "cves": [
+        "CVE-2026-69836"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Active Directory"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/microsoft-entra-id-rce-flaw/",
+          "title": "Microsoft Entra ID RCE Flaw Lets Unauthorized Attackers Execute Code Remotely",
+          "published": "2026-08-21T05:30:33+00:00"
+        }
+      ]
     },
     {
       "id": "5d340a002700db9d",
@@ -230,33 +267,6 @@
       "related_sources": []
     },
     {
-      "id": "281744950e682bf4",
-      "title": "CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a critical flaw impacting Ray to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Ray is an open-source, Python-native distributed computing framework designed to scale artificial intelligence and machine learning workloads. As of writing, the GitHub project has more than",
-      "url": "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-18T06:34:20+00:00",
-      "published_ts": 1787034860.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "efef6d171050961a",
       "title": "Critical Zimbra RCE flaw now actively exploited in attacks",
       "summary": "CERT Polska, the Polish Computer Emergency Response Team (CERT), warned that attackers have begun exploiting a critical vulnerability in Zimbra Collaboration Suite (ZCS). [...]",
@@ -277,6 +287,33 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "1a16b21a6a5b8c15",
+      "title": "SilkParasite Uses Google Drive as C2 to Hide RAT Traffic Inside Trusted Cloud Services",
+      "summary": "SilkParasite, a long-running cyberespionage operation targeting government bodies across Central Asia through a compact but highly mature arsenal of remote access trojans. Assessed with medium confidence as China-nexus activity, the campaign stands out for using Google Drive as a command-and-control channel, allowing malware traffic to blend into cloud activity that many enterprises inherently trust. The [&#8230;] The post SilkParasite Uses Google Drive as C2 to Hide RAT Traffic Inside Trusted Cloud Services appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/silkparasite-uses-google-drive/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-21T05:22:13+00:00",
+      "published_ts": 1787289733.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -333,6 +370,114 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "1b24bd91876e0516",
+      "title": "New Manic Android Malware Targets 169 Apps, Steals PINs and Exfiltrates Data via Wi-Fi Mesh",
+      "summary": "A newly discovered Android malware family called Manic, which combines banking fraud functions with advanced spyware and remote device control capabilities. The operation&#8217;s active infrastructure dates back to February 2026, with early wrappers and implants emerging in late May. Manic has rapidly evolved through July, incorporating stronger anti-analysis protections, in-memory DEX loading, lock-screen phishing, and [&#8230;] The post New Manic Android Malware Targets 169 Apps, Steals PINs and Exfiltrates Data via Wi-Fi Mesh appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/new-manic-android-malware-targets-169-apps/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-21T06:27:36+00:00",
+      "published_ts": 1787293656.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "91e7c635cbe3ca33",
+      "title": "Hackers Use Fake Google Gemini Installer to Deploy Vidar Stealer and Steal Browser Credentials",
+      "summary": "Threat actors are exploiting interest in generative AI software to distribute the Vidar information stealer through a fake Google Gemini installer hosted via Google Colab. Darktrace investigated the July 2026 intrusion in an EMEA customer environment, where a user downloaded and executed a malicious file named Download_Google_Gemini_For_Windows.exe The campaign did not rely on a conventional [&#8230;] The post Hackers Use Fake Google Gemini Installer to Deploy Vidar Stealer and Steal Browser Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/fake-google-gemini-installer/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-21T06:22:04+00:00",
+      "published_ts": 1787293324.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d4923dcf33c58193",
+      "title": "Windows Defender Driver Abuse Enables Kernel-Level EDR and Antivirus Bypass",
+      "summary": "Security researcher Jiří Vinopal has published a detailed analysis of BTR.sys, the Microsoft Defender Boot-Time Removal driver. His research reveals how this legitimate, Microsoft-signed component can be exploited to perform file and registry operations under attacker control from kernel mode. This study, titled &#8220;BTR Reforged,&#8221; does not rely on traditional memory-corruption vulnerabilities or the Bring [&#8230;] The post Windows Defender Driver Abuse Enables Kernel-Level EDR and Antivirus Bypass appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/windows-defender-driver/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-21T05:53:19+00:00",
+      "published_ts": 1787291599.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d862d76c388a86e0",
+      "title": "MacSync Stealer Uses 30+ Rotating Domains to Steal macOS Credentials and Exfiltrate Data",
+      "summary": "MacSync Stealer is expanding its macOS-focused theft operation through a rotating network of more than 30 domains, using stable execution and network patterns to steal credentials, browser data, cloud access keys, SSH material, and sensitive user files. Earlier research by RST Cloud identified MacSync infrastructure and observed command-and-control replacement after public disclosure. Microsoft’s subsequent telemetry-led [&#8230;] The post MacSync Stealer Uses 30+ Rotating Domains to Steal macOS Credentials and Exfiltrate Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/macsync-stealer-uses-30-rotating-domains/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-20T13:27:06+00:00",
+      "published_ts": 1787232426.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -440,6 +585,30 @@
       ],
       "regions": [
         "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "26e3d136d76046b8",
+      "title": "New Zombie Card Attack Lets Expired Visa Cards Make Contactless Payments",
+      "summary": "Security researchers have demonstrated a “Zombie Card” attack that can reactivate certain expired Visa contactless cards, allowing them to be used for NFC payments. This attack exploits a vulnerability in Visa’s EMV Kernel 3 regarding the handling of card expiry data. An attacker, positioned between the card and the payment terminal, can modify the expiry [&#8230;] The post New Zombie Card Attack Lets Expired Visa Cards Make Contactless Payments appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/new-zombie-card-attack/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-20T12:52:23+00:00",
+      "published_ts": 1787230343.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
         "Global"
       ],
       "products": [],
@@ -595,6 +764,29 @@
       "related_sources": []
     },
     {
+      "id": "d3ce03e9546fa105",
+      "title": "Compromised Rust Crate With 18,000+ Downloads Steals Source Code During Builds",
+      "summary": "A malicious update to the Rust crate called onering has been discovered, which exfiltrates source code changes from developers&#8217; machines during the build process. Security researchers identified this behavior in version 1.4.1 of the package on June 10, 2026. The onering crate, designed as a high-throughput synchronous queue and channels library, has garnered over 18,000 [&#8230;] The post Compromised Rust Crate With 18,000+ Downloads Steals Source Code During Builds appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/compromised-rust-crate-with-18000-downloads-steals-source-code/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-21T06:07:20+00:00",
+      "published_ts": 1787292440.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "ea6a7d5f1f5bd6e3",
       "title": "What We Missed: Delta Flight Disrupted With Wi-Fi Hack",
       "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, including some scary airplane security risks and the US government's newest &quot;hack back&quot; strategy.",
@@ -645,7 +837,7 @@
     },
     {
       "id": "aad20ab56f4f7097",
-      "title": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit and More",
+      "title": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit, and More",
       "summary": "A lot of this week’s trouble starts with something trusted doing exactly what it was allowed to do. Signed drivers get turned against defenses. Legitimate apps help malware blend in. A weak header check opens a path to code execution. Elsewhere, exposed systems, old bugs, odd hiding tricks, and AI-assisted exploit research keep lowering the effort needed to cause damage. Nothing here needs",
       "url": "https://thehackernews.com/2026/08/threatsday-gogs-100-rce-n8n-workflow-to.html",
       "source": "The Hacker News",
@@ -693,6 +885,28 @@
       "related_sources": []
     },
     {
+      "id": "60fd73608b2efa9b",
+      "title": "New CRLF Desync Attack Lets Hackers Steal HTTPOnly Cookies and Hijack Accounts",
+      "summary": "Security researchers Tom Stacey from PortSwigger and Tobia Righi from TurtleSec have introduced a new category of HTTP request smuggling attacks known as &#8220;CRLF-Powered Desync Attacks.&#8221; This method exploits a frequently overlooked HTTP header injection vulnerability, which can lead to full account takeovers, theft of HTTPOnly cookies, and even the creation of self-propagating desync worms. [&#8230;] The post New CRLF Desync Attack Lets Hackers Steal HTTPOnly Cookies and Hijack Accounts appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/new-crlf-desync-attack/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-20T13:18:20+00:00",
+      "published_ts": 1787231900.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "2472553a384ca836",
       "title": "Citrix urges admins to patch new NetScaler flaws as soon as possible",
       "summary": "Citrix has warned customers to immediately secure their systems against two vulnerabilities affecting NetScaler Gateway secure remote access solutions and NetScaler ADC networking appliances. [...]",
@@ -713,6 +927,28 @@
       "products": [
         "Citrix"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3376ea5cfa6c1ccc",
+      "title": "OpenAI Slows AI Model Development as Astra Approaches Critical Cyber Capabilities",
+      "summary": "OpenAI has temporarily slowed the development of its latest frontier AI models after initial testing suggested that its upcoming Astra system may meet the company’s &#8220;Critical&#8221; cybersecurity capability threshold. This decision follows a recent security incident involving OpenAI and Hugging Face. It reflects growing concerns that advanced models could significantly increase the risks of cyber [&#8230;] The post OpenAI Slows AI Model Development as Astra Approaches Critical Cyber Capabilities appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/openai-slows-ai-model-development/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-20T12:05:43+00:00",
+      "published_ts": 1787227543.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1375,27 +1611,23 @@
       ]
     },
     {
-      "id": "59eceaa1bda4eea6",
-      "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
-      "summary": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution. The vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of unrestricted upload of a file with a dangerous type. \"The flaw lives in the Forms module's File",
-      "url": "https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-20T06:04:34+00:00",
-      "published_ts": 1787205874.0,
-      "cves": [
-        "CVE-2026-32475"
-      ],
+      "id": "e5eff492d44dcd5c",
+      "title": "CrowdStrike Named Strongest Overall Leader in 2026 Frost Radar&trade;: Cloud Workload Protection Platforms",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-strongest-overall-leader-2026-frost-radar-cwpp/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-08-20T05:00:00+00:00",
+      "published_ts": 1787202000.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "WordPress"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -2044,6 +2276,34 @@
       ],
       "products": [
         "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "59eceaa1bda4eea6",
+      "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
+      "summary": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution. The vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of unrestricted upload of a file with a dangerous type. \"The flaw lives in the Forms module's File",
+      "url": "https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-20T06:04:34+00:00",
+      "published_ts": 1787205874.0,
+      "cves": [
+        "CVE-2026-32475"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
       ],
       "actively_exploited": false,
       "cvss": null,
