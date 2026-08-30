@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-30T03:50:45.352739+00:00",
+  "generated_at": "2026-08-30T11:19:37.607700+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 89,
+    "all": 82,
     "critical": 0,
-    "high": 3,
-    "medium": 12,
-    "low": 74,
-    "actively_exploited": 11,
-    "with_cves": 18
+    "high": 4,
+    "medium": 10,
+    "low": 68,
+    "actively_exploited": 12,
+    "with_cves": 17
   },
   "sources_used": [
     "BleepingComputer",
@@ -16,9 +16,7 @@
     "Cisco Talos",
     "Dark Reading",
     "GBHackers",
-    "Krebs on Security",
     "Microsoft Security Blog",
-    "Securelist (Kaspersky)",
     "SecurityWeek",
     "The Hacker News",
     "The Record",
@@ -48,7 +46,33 @@
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 65,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "4674971047d7e4dc",
+      "title": "TerminalFix Uses Fake Cloudflare CAPTCHAs to Deploy Reverse-Tunnel Backdoor",
+      "summary": "Microsoft has disclosed details of a new ClickFix variant, dubbed TerminalFix, that aims to trick users into running a malicious command in Windows Terminal or PowerShell. \"While traditional ClickFix campaigns direct victims to the Windows Run dialog, TerminalFix campaigns apply the same technique but direct users to Windows Terminal or PowerShell instead, increasing the likelihood that complex",
+      "url": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-30T07:36:33+00:00",
+      "published_ts": 1788075393.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
       "priority_label": "High",
       "related_sources": []
     },
@@ -303,61 +327,6 @@
       "related_sources": []
     },
     {
-      "id": "d50f44a53a65cc4a",
-      "title": "Two Alleged ‘TeamPCP’ Hackers Arrested in Australia",
-      "summary": "Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever. In a statement released today, the Australian Federal Police (AFP) said two unnamed suspects from Western Australia, aged 21 and 23, were arrested in connection with a \"sophisticated cybercrime syndicate that allegedly created malicious open-source software to rob thousands of global businesses.\" The AFP did not name the defendants, but KrebsOnSecurity learned the 21-year-old suspect's real identity in June, and has been communicating with him ever since. This story includes interviews with TeamPCP's self-described spokesperson, and examines clues left behind by the TeamPCP leader that likely led to his undoing.",
-      "url": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
-      "source": "Krebs on Security",
-      "source_trust": 5,
-      "category": "mixed",
-      "published": "2026-08-27T11:04:15+00:00",
-      "published_ts": 1787828655.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "1ab063ae2cc7b081",
-      "title": "Critical Gogs Flaw Enables Remote Code Execution Through Path Traversal",
-      "summary": "A critical vulnerability in Gogs, the self-hosted Git service, could allow authenticated attackers to execute commands on the server by abusing path traversal during creation. Tracked as CVE-2026-52813, the flaw was reported by Aikido security researcher Jorian Woltjer and fixed in Gogs version 0.14.3. The issue stems from an API endpoint that accepted unsanitized organization [&#8230;] The post Critical Gogs Flaw Enables Remote Code Execution Through Path Traversal appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/critical-gogs-flaw-enables-remote-code-execution/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-08-29T08:03:29+00:00",
-      "published_ts": 1787990609.0,
-      "cves": [
-        "CVE-2026-52813"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "e4019276723ef0b1",
       "title": "Rockwell Automation OTTO Fleet Manager",
       "summary": "View CSAF Summary Successful exploitation of this vulnerability could reduce the computational cost required for an attacker to perform offline brute-force attacks against stored password hashes. The following versions of Rockwell Automation OTTO Fleet Manager are affected: OTTO Fleet Manager &lt;=V2.36.2 (CVE-2026-75112) CVSS Vendor Equipment Vulnerabilities v3 6.8 Rockwell Automation Rockwell Automation OTTO Fleet Manager Use of Password Hash With Insufficient Computational Effort Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-75112 A security issue exists within OTTO Fleet Manager. The vulnerability stems from the use of an insufficient work factor in the bcrypt password hashing implementation, which could reduce the computational cost required for an attacker to perform offline brute-force attacks against stored password hashes. If an attacker gains access to an unencrypted system backup, the weakly hashed credentials could be more easily compromised. View CVE Details Affected Products Rockwell Automation OTTO Fleet Manager Vendor: Rockwell Automation Product Version: Rockwell Automation OTTO Fleet Manager: &lt;=V2.36.2 Product Status: known_affected Remediations Mitigation Rockwell Automation has addressed this vulnerability in software version 2.36.3. https://file-share.ottomotors.com/login Mitigation Users of",
@@ -451,21 +420,23 @@
       ]
     },
     {
-      "id": "947ca071b70d7cef",
-      "title": "Chinese Hackers Deploy PackClient RAT via Tax-Themed Phishing Attacks to Steal Data",
-      "summary": "A Chinese-speaking threat actor tracked as TA4922 is deploying the PackClient remote access trojan via tax-themed phishing campaigns targeting organizations in mainland China and India. The activity, observed by Proofpoint in May and July 2026, demonstrates the group’s expanding initial-access capabilities and the increasing availability of sophisticated malware on Chinese-language Telegram marketplaces. PackClient is a [&#8230;] The post Chinese Hackers Deploy PackClient RAT via Tax-Themed Phishing Attacks to Steal Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/chinese-hackers-deploy-packclient-rat/",
+      "id": "1ab063ae2cc7b081",
+      "title": "Critical Gogs Flaw Enables Remote Code Execution Through Path Traversal",
+      "summary": "A critical vulnerability in Gogs, the self-hosted Git service, could allow authenticated attackers to execute commands on the server by abusing path traversal during creation. Tracked as CVE-2026-52813, the flaw was reported by Aikido security researcher Jorian Woltjer and fixed in Gogs version 0.14.3. The issue stems from an API endpoint that accepted unsanitized organization [&#8230;] The post Critical Gogs Flaw Enables Remote Code Execution Through Path Traversal appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/critical-gogs-flaw-enables-remote-code-execution/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-29T07:19:08+00:00",
-      "published_ts": 1787987948.0,
-      "cves": [],
+      "published": "2026-08-29T08:03:29+00:00",
+      "published_ts": 1787990609.0,
+      "cves": [
+        "CVE-2026-52813"
+      ],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Government & Public Services"
       ],
       "regions": [
-        "Asia-Pacific",
         "Global"
       ],
       "products": [],
@@ -628,18 +599,21 @@
       "related_sources": []
     },
     {
-      "id": "b3402e17fedd93cd",
-      "title": "Hackers Compromise TanStack Query npm Package to Steal Developer Credentials",
-      "summary": "A supply-chain worm has compromised multiple releases of @7nohe/openapi-react-query-codegen, an npm package that generates type-safe TanStack Query hooks. Aikido Security said it identified 10 malicious versions published within 20 minutes. Because the package records more than 150,000 weekly downloads, the incident poses exposure risk to development teams. The breach exposes developer workstations and CI systems [&#8230;] The post Hackers Compromise TanStack Query npm Package to Steal Developer Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/hackers-compromise-tanstack-query-npm-package/",
+      "id": "947ca071b70d7cef",
+      "title": "Chinese Hackers Deploy PackClient RAT via Tax-Themed Phishing Attacks to Steal Data",
+      "summary": "A Chinese-speaking threat actor tracked as TA4922 is deploying the PackClient remote access trojan via tax-themed phishing campaigns targeting organizations in mainland China and India. The activity, observed by Proofpoint in May and July 2026, demonstrates the group’s expanding initial-access capabilities and the increasing availability of sophisticated malware on Chinese-language Telegram marketplaces. PackClient is a [&#8230;] The post Chinese Hackers Deploy PackClient RAT via Tax-Themed Phishing Attacks to Steal Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/chinese-hackers-deploy-packclient-rat/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-29T08:29:01+00:00",
-      "published_ts": 1787992141.0,
+      "published": "2026-08-29T07:19:08+00:00",
+      "published_ts": 1787987948.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
+        "Asia-Pacific",
         "Global"
       ],
       "products": [],
@@ -760,64 +734,6 @@
       "related_sources": []
     },
     {
-      "id": "a021e9a75f96af5a",
-      "title": "Russian Hackers Phish EU Officials Over Messaging Apps",
-      "summary": "EU governments are trying to move away from popular messaging apps as nation-state threat groups shift their focus from email to Signal and WhatsApp.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-phish-eu-officials-messaging-apps",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-27T11:16:01+00:00",
-      "published_ts": 1787829361.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [
-        "SAP"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c56843d7b845f52a",
-      "title": "CISA Adds Six Exploited Flaws to KEV, Including NetScaler, Linux, and SQL Server Bugs",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added six flaws to its Known Exploited Vulnerabilities (KEV) catalog, including a high-severity security vulnerability impacting Citrix NetScaler ADC and NetScaler Gateway, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2019-1068 - A remote code execution vulnerability in&nbsp;",
-      "url": "https://thehackernews.com/2026/08/cisa-adds-six-exploited-flaws-to-kev.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-27T07:05:28+00:00",
-      "published_ts": 1787814328.0,
-      "cves": [
-        "CVE-2019-1068"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "Citrix",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "781682bd04debe66",
       "title": "Anthropic is cutting Claude Code's current weekly limits by 17%",
       "summary": "Anthropic is permanently increasing Claude Code's standard weekly usage limits by 25% for Pro, Max, Team, and seat-based Enterprise plans, but it's not as good as it sounds. [...]",
@@ -857,6 +773,28 @@
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b3402e17fedd93cd",
+      "title": "Hackers Compromise TanStack Query npm Package to Steal Developer Credentials",
+      "summary": "A supply-chain worm has compromised multiple releases of @7nohe/openapi-react-query-codegen, an npm package that generates type-safe TanStack Query hooks. Aikido Security said it identified 10 malicious versions published within 20 minutes. Because the package records more than 150,000 weekly downloads, the incident poses exposure risk to development teams. The breach exposes developer workstations and CI systems [&#8230;] The post Hackers Compromise TanStack Query npm Package to Steal Developer Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hackers-compromise-tanstack-query-npm-package/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-29T08:29:01+00:00",
+      "published_ts": 1787992141.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1194,104 +1132,6 @@
       ],
       "regions": [
         "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f63a082e333b9831",
-      "title": "Spark RAT Targets Cambodia, Abuses Vulnerable OPSWAT Driver to Disable Security Tools",
-      "summary": "Individuals and organizations in Cambodia have emerged as the target of a new campaign that delivers an open-source remote access trojan (RAT) called Spark RAT. \"The samples employ diverse lure themes, suggesting an effort to appeal to a broad range of potential victims. These include government notices, public health materials, real estate-related content, and other topics,\" Acronis Threat",
-      "url": "https://thehackernews.com/2026/08/spark-rat-targets-cambodia-abuses.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-27T11:00:57+00:00",
-      "published_ts": 1787828457.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ba2cf2f202937820",
-      "title": "Threat landscape for industrial automation systems. Q2 2026",
-      "summary": "The report contains statistics on industrial threats for Q2 2026, including ransomware, miners, spyware and other threats that were detected and blocked on industrial control systems.",
-      "url": "https://securelist.com/industrial-threat-report-q2-2026/121159/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-08-27T10:05:43+00:00",
-      "published_ts": 1787825143.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "30afb32fe48c242f",
-      "title": "JavaScript obfuscation: From party trick to phishing kit",
-      "summary": "Learn the basics of what obfuscation is, why a researcher would try to reverse it, and several ways to approach the problem.",
-      "url": "https://blog.talosintelligence.com/javascript-obfuscation-from-party-trick-to-phishing-kit/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-08-27T10:00:27+00:00",
-      "published_ts": 1787824827.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a138411b94b22dcf",
-      "title": "GoCaracal Malware Uses Ethereum Smart Contract to Fetch Replacement C2 Address",
-      "summary": "Threat actors linked by Arctic Wolf to Dark Caracal with medium confidence deployed a previously undocumented Go-based malware framework, GoCaracal, during a June 2026 intrusion at an unnamed communications organization in Venezuela. GoCaracal provides operators with remote shell access and payload execution, while the extended profile adds browser data theft, keylogging, remote desktop control",
-      "url": "https://thehackernews.com/2026/08/gocaracal-malware-uses-ethereum-smart.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-27T09:33:38+00:00",
-      "published_ts": 1787823218.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1988,30 +1828,6 @@
       "category": "mixed",
       "published": "2026-08-27T11:30:00+00:00",
       "published_ts": 1787830200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8c6b3b3d577c8ef3",
-      "title": "New GPUThor Rowhammer Defeats ECC on NVIDIA RTX A6000 to Gain Host Root Access",
-      "summary": "Academic researchers have disclosed a Rowhammer attack impacting NVIDIA workstation GPUs with GDDR6 memory that defeats error correction codes (ECC), the mitigation NVIDIA recommends against GPU Rowhammer, and enables denial-of-service (DoS) and privilege escalation to a root shell. Dubbed GPUThor, the attack was developed by researchers at the University of Toronto, who hammered four DRAM",
-      "url": "https://thehackernews.com/2026/08/gputhor-rowhammer-defeats-ecc-on-nvidia.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-27T08:13:11+00:00",
-      "published_ts": 1787818391.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
