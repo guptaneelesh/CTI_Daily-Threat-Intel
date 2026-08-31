@@ -1,17 +1,20 @@
 {
-  "generated_at": "2026-08-31T12:48:23.085228+00:00",
+  "generated_at": "2026-08-31T22:30:15.234757+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 59,
-    "critical": 0,
-    "high": 3,
-    "medium": 9,
-    "low": 47,
-    "actively_exploited": 6,
+    "all": 61,
+    "critical": 2,
+    "high": 5,
+    "medium": 8,
+    "low": 46,
+    "actively_exploited": 9,
     "with_cves": 4
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
+    "CISA KEV",
+    "Check Point Research",
     "Dark Reading",
     "GBHackers",
     "Microsoft Security Blog",
@@ -23,21 +26,76 @@
   ],
   "items": [
     {
-      "id": "4a0d3c46206e6ae0",
-      "title": "More Details Emerge on Exploited PaperCut Vulnerabilities",
-      "summary": "PaperCut has released a second emergency patch for the exploited vulnerabilities, which are now tracked as CVE-2026-82078 and CVE-2026-81578. The post More Details Emerge on Exploited PaperCut Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/more-details-emerge-on-exploited-papercut-vulnerabilities/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-31T06:51:31+00:00",
-      "published_ts": 1788159091.0,
+      "id": "c819b3280363f1be",
+      "title": "CVE-2026-82078: PaperCut NG/MF Unsafe Reflection Vulnerability (PaperCut NG/MF)",
+      "summary": "CISA KEV — actively exploited. PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process. This vulnerability can be chained with CVE-2026-81578. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-09-14).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82078",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-08-31T00:00:00+00:00",
+      "published_ts": 1788134400.0,
+      "cves": [
+        "CVE-2026-82078"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": []
+    },
+    {
+      "id": "1753242c18952a67",
+      "title": "CVE-2026-81578: PaperCut NG/MF Missing Authentication for Critical Function Vulnerability (PaperCut NG/MF)",
+      "summary": "CISA KEV — actively exploited. PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-2026-82078. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-09-14).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81578",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-08-31T00:00:00+00:00",
+      "published_ts": 1788134400.0,
+      "cves": [
+        "CVE-2026-81578"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": []
+    },
+    {
+      "id": "b859043da4ad3086",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. &nbsp; CVE-2026-81578 PaperCut NG/MF Missing Authentication for Critical Function Vulnerability&nbsp; CVE-2026-82078 PaperCut NG/MF Unsafe Reflection Vulnerability&nbsp; These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploite",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/08/31/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-08-31T12:00:00+00:00",
+      "published_ts": 1788177600.0,
       "cves": [
         "CVE-2026-81578",
         "CVE-2026-82078"
       ],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Government & Public Services"
       ],
       "regions": [
         "Global"
@@ -45,7 +103,7 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
+      "priority_score": 65,
       "priority_label": "High",
       "related_sources": [
         {
@@ -55,6 +113,87 @@
           "published": "2026-08-31T12:06:08+00:00"
         }
       ]
+    },
+    {
+      "id": "04e68bb142bac076",
+      "title": "Chrome and Edge Extensions Strip CSP and Inject JavaScript to Drain EVM, Solana and Tron Wallets",
+      "summary": "Research identified 19 malicious browser extensions 18 for Google Chrome and 1 for Microsoft Edge that use a modular malware framework to strip website Content Security Policy protections, inject attacker-controlled JavaScript. Socket determined that 14 extensions were created by the threat actor, while five were acquired from legitimate developers and subsequently weaponized. The most consequential [&#8230;] The post Chrome and Edge Extensions Strip CSP and Inject JavaScript to Drain EVM, Solana and Tron Wallets appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/chrome-and-edge-extensions/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-31T12:48:45+00:00",
+      "published_ts": 1788180525.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Chrome",
+        "Edge"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "4555167e6d202f82",
+      "title": "HardBreacher Exploit Targets Kaspersky Endpoint Security Zero-Day for Windows 11 Privilege Escalation",
+      "summary": "A proof of concept called HardBreacher allegedly exploits an unpatched local privilege escalation flaw in Kaspersky Antivirus for Endpoint. This vulnerability allows a local user to control a privileged component. The code was published by a GitHub user named MSNightmare and is being presented as a zero-day vulnerability. However, the vendor has not confirmed it. [&#8230;] The post HardBreacher Exploit Targets Kaspersky Endpoint Security Zero-Day for Windows 11 Privilege Escalation appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hardbreacher-exploit-targets-kaspersky-endpoint-security/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-08-31T13:18:45+00:00",
+      "published_ts": 1788182325.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "GitHub",
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "4eeee9ba299d3b2d",
+      "title": "Microsoft warns of TerminalFix attacks deploying reverse tunnels",
+      "summary": "A new ClickFix variant dubbed TerminalFix uses fake Cloudflare CAPTCHA prompts on compromised websites to trick victims into running malicious PowerShell commands in Windows Terminal. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-terminalfix-attacks-deploying-reverse-tunnels/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T18:51:04+00:00",
+      "published_ts": 1788202264.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
     },
     {
       "id": "8a461d66041c6bde",
@@ -81,31 +220,25 @@
       "related_sources": []
     },
     {
-      "id": "9d8b3b5c1df19523",
-      "title": "In Other News: Log4j RCE Scare, Minimus Shutdown, Iranian Hacker Sanctions",
-      "summary": "Noteworthy stories that might have slipped under the radar: Manchester Airports Group cyberattack, Carhartt breach data was partly fake, U.S. Bank responds to ransomware gang’s claims. The post In Other News: Log4j RCE Scare, Minimus Shutdown, Iranian Hacker Sanctions appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/in-other-news-log4j-rce-scare-minimus-shutdown-iranian-hacker-sanctions/",
-      "source": "SecurityWeek",
+      "id": "895d9ce20d19cae5",
+      "title": "Berlin confirms data theft after Rhysida ransomware attack claims",
+      "summary": "Berlin's city administration has confirmed that cybercriminals are attempting to extort the city after the Rhysida ransomware gang listed it on their data leak site. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/berlin-confirms-data-theft-after-rhysida-ransomware-attack-claims/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-28T15:35:34+00:00",
-      "published_ts": 1787931334.0,
+      "published": "2026-08-31T13:30:01+00:00",
+      "published_ts": 1788183001.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
+      "sectors": [],
       "regions": [
-        "Middle East",
-        "North America"
+        "Unspecified"
       ],
-      "products": [
-        "Log4j"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
@@ -131,56 +264,6 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "085087e4f9210e88",
-      "title": "PaperCut releases second emergency patch for exploited flaws",
-      "summary": "PaperCut has released a second emergency security update for two actively exploited vulnerabilities in its PaperCut NG and MF print management software after researchers discovered multiple ways to bypass the initial fixes. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T19:08:26+00:00",
-      "published_ts": 1787944106.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "df9b53e24f34bbb8",
-      "title": "ownCloud Flaw Exploited to Steal Nuclear Records From Philippine Research Body",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a critical security flaw impacting ownCloud to its Known Exploited Vulnerabilities (KEV) catalog following reports that a Chinese-speaking threat actor weaponized the vulnerability to target a nuclear research body in the Philippines. The vulnerability, tracked as CVE-2023-49105 (CVSS score: 9.8), is a case of",
-      "url": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T15:56:55+00:00",
-      "published_ts": 1787932615.0,
-      "cves": [
-        "CVE-2023-49105"
-      ],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -239,30 +322,29 @@
       "related_sources": []
     },
     {
-      "id": "3ef9bfc2d33399d7",
-      "title": "New Gryxa Toolkit Uses AI-Built Persistence to Fight Back Against Security Teams",
-      "summary": "A financially motivated threat actor using a new Windows toolkit named Gryxa that combines remote monitoring and management abuse, AI-assisted development, browser credential theft, and aggressive persistence designed to survive incomplete remediation. The toolkit’s most unusual feature is its ability to collect evidence of how defenders removed its visible access and send that information back [&#8230;] The post New Gryxa Toolkit Uses AI-Built Persistence to Fight Back Against Security Teams appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/gryxa-toolkit-uses-ai/",
+      "id": "02d3a9cbc933e6f3",
+      "title": "Aurora Ransomware Hackers Use Cursor AI Agent for Hands-On Exploitation and ESXi Attacks",
+      "summary": "Aurora ransomware operators have been observed using Cursor Agent, powered by Claude Sonnet, to support hands-on intrusion activity across ten victim organizations, while deploying a purpose-built Linux encryptor designed to disrupt VMware ESXi environments. The findings show how ransomware affiliates are integrating agentic AI into established post-compromise workflows rather than relying on it as a [&#8230;] The post Aurora Ransomware Hackers Use Cursor AI Agent for Hands-On Exploitation and ESXi Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cursor-ai-powered-ransomware/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-08-31T07:35:53+00:00",
-      "published_ts": 1788161753.0,
+      "published": "2026-08-31T13:33:59+00:00",
+      "published_ts": 1788183239.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Global"
       ],
       "products": [
-        "Windows"
+        "Linux",
+        "VMware ESXi"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -370,52 +452,107 @@
       "related_sources": []
     },
     {
-      "id": "1ee9d52c78c78389",
-      "title": "D-Link DIR-X1860Z Flaws Enable Unauthenticated Admin Password Reset and Wi-Fi Credential Theft",
-      "summary": "D-Link has released a security update for the DIR-X1860Z router after researchers discovered vulnerabilities that could enable an unauthenticated attacker on the local network to reset the administrator password and retrieve wireless configuration information, including Wi-Fi credentials. The vulnerabilities affect the non-US DIR-X1860Z hardware revision A1/V1.0 running firmware version V1.0.2.220120.165402. D-Link addressed these issues in [&#8230;] The post D-Link DIR-X1860Z Flaws Enable Unauthenticated Admin Password Reset and Wi-Fi Credential Theft appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/d-link-dir-x1860z-flaws/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "d721dceefff1e9b5",
+      "title": "Five plead guilty in latest federal ATM jackpotting case",
+      "summary": "Federal law enforcement continued to warn about ATM jackpotting gangs as it announced guilty pleas from five Venezuelan nationals.",
+      "url": "https://therecord.media/kansas-atm-jackpotting-guilty-pleas",
+      "source": "The Record",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-31T08:03:15+00:00",
-      "published_ts": 1788163395.0,
+      "published": "2026-08-31T20:31:00+00:00",
+      "published_ts": 1788208260.0,
       "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials",
+        "Government & Public Services"
       ],
       "regions": [
-        "Global"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "d7a1c19179e7386d",
-      "title": "Composer Path Traversal Flaw Lets Malicious Packages Expose Sensitive Files",
-      "summary": "Composer users are urged to update their software following the disclosure of a path-traversal vulnerability. This flaw could allow a malicious or compromised PHP package to change file permissions outside of its own installation directory. The vulnerability is tracked as CVE-2026-59944 and GHSA-96h3-5x6v-m776, affecting Composer versions 2.3.0 through 2.10.2 and versions 1.0 through 2.2.29. Composer [&#8230;] The post Composer Path Traversal Flaw Lets Malicious Packages Expose Sensitive Files appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/composer-path-traversal-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "0ce3e2df9604237b",
+      "title": "Microsoft Exchange Online outage causes email failures, auth issues",
+      "summary": "Microsoft is investigating a widespread service issue causing authentication issues, email delays and failures, and various other issues for Exchange Online customers. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-31T07:00:20+00:00",
-      "published_ts": 1788159620.0,
-      "cves": [
-        "CVE-2026-59944"
-      ],
+      "published": "2026-08-31T16:56:57+00:00",
+      "published_ts": 1788195417.0,
+      "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Global"
+        "Unspecified"
+      ],
+      "products": [
+        "Exchange"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "60a7b51eece09c60",
+      "title": "Chinese Fire Ant hackers turn Cisco routers into spying platforms",
+      "summary": "The researchers discovered Fire Ant's new tactic after finding an active GRE (Generic Routing Encapsulation) tunnel interface on a Cisco IOS XR router that could not be explained by a running configuration or commit history. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-fire-ant-hackers-turn-cisco-routers-into-spying-platforms/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T14:52:03+00:00",
+      "published_ts": 1788187923.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Cisco IOS",
+        "iOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "53ba43433aa87d13",
+      "title": "Breaking the Seal: Static Deobfuscation of JSCeal’s Compiled V8 Bytecode",
+      "summary": "Research by:&#160;hasherezade Key Points Introduction JSCeal is a stealer delivered as compiled V8 bytecode (.jsc) and executed by a bundled Node.js runtime, targeting cryptocurrency applications (other vendors also tag it with the names WEEVILPROXY or MeadowLocust). Its campaign activity dates back to March 2024 [1]; Check Point Research has been tracking the malware since early [&#8230;] The post Breaking the Seal: Static Deobfuscation of JSCeal’s Compiled V8 Bytecode appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/breaking-the-seal-static-deobfuscation-of-jsceals-compiled-v8-bytecode/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-08-31T13:38:28+00:00",
+      "published_ts": 1788183508.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -519,30 +656,170 @@
       "related_sources": []
     },
     {
-      "id": "c06af1e21d38c607",
-      "title": "Chrome Web Store extensions caught stealing crypto, browser data",
-      "summary": "Multiple extensions for Google Chrome and Microsoft Edge delivered a malware framework that deployed modules to steal cryptocurrency, sensitive data, and browser history, as well as inject ClickFix lures. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/chrome-web-store-extensions-caught-stealing-crypto-browser-data/",
+      "id": "cfbe49f8f82bdca8",
+      "title": "Cronos blockchain restarts after $74 million Tectonic exploit",
+      "summary": "The Cronos blockchain network has resumed trading activity after a price-manipulation attack on the Tectonic cryptocurrency lending platform allowed an attacker to borrow $74 million. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/cronos-blockchain-restarts-after-74-million-tectonic-exploit/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-30T14:17:44+00:00",
-      "published_ts": 1788099464.0,
+      "published": "2026-08-31T20:47:54+00:00",
+      "published_ts": 1788209274.0,
       "cves": [],
       "sectors": [
-        "Financial Services",
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "56ccd32458a96c54",
+      "title": "AI Model Rules Are Not Security Controls",
+      "summary": "OpenAI's Hugging Face attack postmortem shows agents don't care about rules — they need strong controls.",
+      "url": "https://www.darkreading.com/cyber-risk/model-knowing-rules-is-not-security-control",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T17:34:26+00:00",
+      "published_ts": 1788197666.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5887042f7bd7abb0",
+      "title": "North Korean Job Fraud Expands Beyond IT Into Healthcare and Sales",
+      "summary": "Threat actors with ties to the Democratic People's Republic of Korea (aka DPRK or North Korea) have been observed seeking job opportunities beyond the information technology (IT) sector, with recent investigations identifying suspected workers employed in sales and marketing and the medical profession. The ongoing insider threat is part of what has been described as the IT worker scheme,",
+      "url": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T17:24:28+00:00",
+      "published_ts": 1788197068.0,
+      "cves": [],
+      "sectors": [
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b5989949632195b9",
+      "title": "Berlin says it won’t pay ransom after hackers steal government data",
+      "summary": "Governing Mayor Kai Wegner said that Berlin had received an extortion demand following the cyberattack, which was discovered in mid-August.",
+      "url": "https://therecord.media/berlin-says-it-wont-pay-ransom-after-hackers-steal-gov-data",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T14:45:00+00:00",
+      "published_ts": 1788187500.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9670ecf911c1e6cd",
+      "title": "File servers are here to stay. Here’s how to manage them securely",
+      "summary": "File servers remain a critical part of many IT environments, but managing access securely can become complex as permissions accumulate. tenfold Software outlines five best practices for simplifying file server administration and maintaining least-privilege access. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/file-servers-are-here-to-stay-heres-how-to-manage-them-securely/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T14:00:10+00:00",
+      "published_ts": 1788184810.0,
+      "cves": [],
+      "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Chrome",
-        "Edge"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0794762f86649f5e",
+      "title": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
+      "summary": "The boring parts caused most of the trouble. A router shipped ready to listen. A fake check turned the user into the installer. Trusted systems collected traffic and passwords, then cleaned the logs. Old bugs formed new attack chains. Even an AI agent decided its assigned task was optional. Elsewhere, fake apps, helpful support calls, cheap banking kits, exposed systems, and weak defaults kept",
+      "url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T13:50:00+00:00",
+      "published_ts": 1788184200.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "958ee27a14a0fd2b",
+      "title": "Pharmaceutical giant McKesson warns of 'service degradation' following cyberattack",
+      "summary": "The pharmaceutical and healthcare technology company McKesson informed regulators it is in the early stages of investigating a cybersecurity incident involving an unnamed third-party application.",
+      "url": "https://therecord.media/mckesson-cyberattack-ransomware-pharma",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T12:45:00+00:00",
+      "published_ts": 1788180300.0,
+      "cves": [],
+      "sectors": [
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -765,92 +1042,15 @@
       "related_sources": []
     },
     {
-      "id": "c774a2b9b68c51dd",
-      "title": "Berlin Refuses to Pay Hackers Who Stole Data From the City's State Network",
-      "summary": "Berlin's state government has confirmed that it is the target of an extortion attempt following the August compromise of the city's state administrative network, and said it will not meet the extortionists' demands. The same statement disclosed that forensic work had found further data outflows in the portfolio of the Senate Department for Mobility, Transport, Climate Protection and Environment",
-      "url": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html",
-      "source": "The Hacker News",
+      "id": "c06af1e21d38c607",
+      "title": "Chrome Web Store extensions caught stealing crypto, browser data",
+      "summary": "Multiple extensions for Google Chrome and Microsoft Edge delivered a malware framework that deployed modules to steal cryptocurrency, sensitive data, and browser history, as well as inject ClickFix lures. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/chrome-web-store-extensions-caught-stealing-crypto-browser-data/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-28T21:30:52+00:00",
-      "published_ts": 1787952652.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f1eea64bd49ba144",
-      "title": "Attackers Chain Two PaperCut Flaws to Execute Code Without Authentication",
-      "summary": "Malicious actors are exploiting a newly patched security flaw in PaperCut NG and MF to execute arbitrary code on susceptible instances, as the company released a fresh emergency fix with additional hardening. \"This vulnerability gives an unauthenticated attacker remote control over PaperCut's trusted configuration, which could be used to execute arbitrary Java code inside the application's",
-      "url": "https://thehackernews.com/2026/08/attackers-chain-two-papercut-flaws-to.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T17:12:15+00:00",
-      "published_ts": 1787937135.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5974cb92d4c98aaa",
-      "title": "Android 17 Adds OS-Wide ECH to Hide Website Visits From Network Providers",
-      "summary": "Google on Thursday announced new network security protections in Android 17 to bolster connection privacy, address cellular vulnerabilities, and safeguard the privacy of users' home networks. Topping the list is support for Encrypted Client Hello (ECH), a privacy standard that prevents networks from eavesdropping on which websites a user is visiting. \"This new privacy standard works in tandem",
-      "url": "https://thehackernews.com/2026/08/android-17-adds-os-wide-ech-to-hide.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T16:20:46+00:00",
-      "published_ts": 1787934046.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "233c610785a87aad",
-      "title": "19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code",
-      "summary": "Cybersecurity researchers have discovered a cluster of 18 Google Chrome and one Microsoft Edge extensions that were published over the last six months and harbored wallet secret stealing and cryptocurrency draining capabilities. The extensions, per Socket security researcher Karlo Zanki, share similarities in code and tradecraft, with evidence indicating that the campaign may have been active",
-      "url": "https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T15:27:26+00:00",
-      "published_ts": 1787930846.0,
+      "published": "2026-08-30T14:17:44+00:00",
+      "published_ts": 1788099464.0,
       "cves": [],
       "sectors": [
         "Financial Services",
@@ -905,6 +1105,184 @@
       "sectors": [],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7a8bbc5f4bc506ab",
+      "title": "Anthropic Users Hit by Infostealer Attacks, Session Thefts",
+      "summary": "A threat actor used a variety of infostealers to collect session information and access Claude accounts belonging to an unknown number of users.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-users-infostealer-attacks-session-thefts",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T21:08:46+00:00",
+      "published_ts": 1788210526.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "050f3cd6ad8dbd75",
+      "title": "'TerminalFix' Campaign Weaponizes PowerShell for Enterprise Attacks",
+      "summary": "The ClickFix-style campaign features a sophisticated, multistage attack chain that includes reverse tunnels into victim organizations' networks.",
+      "url": "https://www.darkreading.com/threat-intelligence/terminalfix-campaign-weaponizes-powershell-enterprise-attacks",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T20:25:36+00:00",
+      "published_ts": 1788207936.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e9a6b8a1e1974f11",
+      "title": "Fraudsters steal $6 million from Tectonic crypto platform after inflating token price",
+      "summary": "At least $6 million was stolen from crypto platform Tectonic after an attacker manipulated the price of the Tonic coin over the weekend.",
+      "url": "https://therecord.media/crypto-tectonic-hack-cronos",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T19:45:00+00:00",
+      "published_ts": 1788205500.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d8686f07b7185086",
+      "title": "OpenAI confirms ChatGPT outage as users report errors",
+      "summary": "ChatGPT Work is experiencing a partial outage, and users across multiple subscription plans may be unable to start or continue tasks. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-outage-as-users-report-errors/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T16:50:50+00:00",
+      "published_ts": 1788195050.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "357c8c38bf63db17",
+      "title": "Nightmare Eclipse Drops ‘HardBreacher’ Kaspersky Product Exploit",
+      "summary": "Kaspersky told SecurityWeek that it patched the vulnerability affecting its Endpoint Security product. The post Nightmare Eclipse Drops &#8216;HardBreacher&#8217; Kaspersky Product Exploit appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/nightmare-eclipse-drops-hardbreacher-kaspersky-product-exploit/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T14:32:34+00:00",
+      "published_ts": 1788186754.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "28db248ee8cfbed1",
+      "title": "ServiceNow Patches 3 Critical Code Injection Vulnerabilities",
+      "summary": "Attackers could exploit the security defects to execute arbitrary code and access or tamper with data. The post ServiceNow Patches 3 Critical Code Injection Vulnerabilities appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/servicenow-patches-3-critical-code-injection-vulnerabilities/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T13:59:19+00:00",
+      "published_ts": 1788184759.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "ServiceNow"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "fab678472b741fad",
+      "title": "McKesson Confirms Data Breach as Attacker Deadline Looms",
+      "summary": "The ShinyHunters extortion group has claimed the theft of 284 million records from the company’s systems. The post McKesson Confirms Data Breach as Attacker Deadline Looms appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/mckesson-confirms-data-breach-as-attacker-deadline-looms/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-31T13:14:46+00:00",
+      "published_ts": 1788182086.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "654b9d7694da656b",
+      "title": "31th August – Threat Intelligence Report",
+      "summary": "For the latest discoveries in cyber research for the week of 31st August, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Manchester Airports Group, the UK operator of Manchester, London Stansted, and East Midlands airports, has disclosed a cyberattack that exposed data belonging to about 8.7 million customers. The compromised information includes contact details, [&#8230;] The post 31th August – Threat Intelligence Report appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/31th-august-threat-intelligence-report/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-08-31T12:58:42+00:00",
+      "published_ts": 1788181122.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1025,50 +1403,6 @@
       "related_sources": []
     },
     {
-      "id": "7db4afc7fe333e0d",
-      "title": "FulcrumSec claims Manchester Airports hack, theft of 86 GB of data",
-      "summary": "FulcrumSec claims it stole 86 GB of data from Manchester Airports Group. BleepingComputer validated one traveller's record, while samples revealed detailed customer, booking, and travel information beyond what MAG initially disclosed. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fulcrumsec-claims-manchester-airports-hack-theft-of-86-gb-of-data/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-30T15:00:21+00:00",
-      "published_ts": 1788102021.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "03cf586ed0d2c73e",
-      "title": "Anthropic warns infostealer malware is hijacking Claude sessions to drain usage",
-      "summary": "Anthropic is warning some Claude users that infostealer malware on their PCs has stolen active Claude login sessions, allowing attackers to access accounts and consume their usage. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-30T14:30:25+00:00",
-      "published_ts": 1788100225.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "781682bd04debe66",
       "title": "Anthropic is cutting Claude Code's current weekly limits by 17%",
       "summary": "Anthropic is permanently increasing Claude Code's standard weekly usage limits by 25% for Pro, Max, Team, and seat-based Enterprise plans, but it's not as good as it sounds. [...]",
@@ -1145,324 +1479,41 @@
       "related_sources": []
     },
     {
-      "id": "70eea15c093068ae",
-      "title": "McKesson discloses breach after ShinyHunters claims patient data theft",
-      "summary": "Healthcare and pharmaceutical distribution giant McKesson has disclosed a cybersecurity incident involving unauthorized access to third-party applications and data theft, with the ShinyHunters extortion group claiming it stole 284 million patient data records. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft/",
+      "id": "7db4afc7fe333e0d",
+      "title": "FulcrumSec claims Manchester Airports hack, theft of 86 GB of data",
+      "summary": "FulcrumSec claims it stole 86 GB of data from Manchester Airports Group. BleepingComputer validated one traveller's record, while samples revealed detailed customer, booking, and travel information beyond what MAG initially disclosed. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fulcrumsec-claims-manchester-airports-hack-theft-of-86-gb-of-data/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-28T22:40:17+00:00",
-      "published_ts": 1787956817.0,
+      "published": "2026-08-30T15:00:21+00:00",
+      "published_ts": 1788102021.0,
       "cves": [],
-      "sectors": [
-        "Life Sciences & Health Care"
-      ],
+      "sectors": [],
       "regions": [
-        "Europe"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "86fac4d40739d0c4",
-      "title": "Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety",
-      "summary": "New research reveals that AI safety refusal lives in a thin neural layer, highlighting the critical need for external, multi-layered security. The post Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-08-28T22:00:07+00:00",
-      "published_ts": 1787954407.0,
+      "id": "03cf586ed0d2c73e",
+      "title": "Anthropic warns infostealer malware is hijacking Claude sessions to drain usage",
+      "summary": "Anthropic is warning some Claude users that infostealer malware on their PCs has stolen active Claude login sessions, allowing attackers to access accounts and consume their usage. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-08-30T14:30:25+00:00",
+      "published_ts": 1788100225.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Europe",
         "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "aee2373301d79534",
-      "title": "Offensive Security Investments Surge as AI Threats Increase",
-      "summary": "Omdia's Theresa Lanowitz talks with the Dark Reading News Desk about the potential — and risks — of using agentic AI for penetration testing, red teaming, and other practices.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/offensive-security-investments-surge-ai-threats-increase",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T18:25:43+00:00",
-      "published_ts": 1787941543.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "12c58e1d3efbf557",
-      "title": "68-year-old imprisoned after making $1.3 million by pirating IPTV services",
-      "summary": "A 68-year-old has been sentenced in the U.K. to more than six years in prison for operating an illegal IPTV (Internet Protocol Television) service that generated £980,812 ($1.3 million) over three years. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/68-year-old-imprisoned-after-making-13-million-by-pirating-iptv-services/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T16:36:47+00:00",
-      "published_ts": 1787935007.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "51fa89cdbdca435a",
-      "title": "PaperCut warns of hackers using printer management software flaw in attacks",
-      "summary": "PaperCut released an emergency advisory on Thursday evening saying vulnerabilities in their print management software, PaperCut NG and MF, are under active exploitation.",
-      "url": "https://therecord.media/papercut-warns-of-hackers-using-printer-management-vulnerabilities",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T16:30:00+00:00",
-      "published_ts": 1787934600.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "db4e2b955e5f878a",
-      "title": "AI Is Accelerating Vulnerability Discovery. Can Defenders Keep Up?",
-      "summary": "AI is accelerating vulnerability discovery, putting pressure on systems built to enrich, prioritize, and remediate flaws at a slower pace. Action1 explains why defenders increasingly need to correlate multiple intelligence sources and turn vulnerability data into faster remediation. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/ai-is-accelerating-vulnerability-discovery-can-defenders-keep-up/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T14:00:10+00:00",
-      "published_ts": 1787925610.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "29d63b884c96a97f",
-      "title": "You Need Cyber Deception for OT",
-      "summary": "The frustrating reality after an OT cyberattack: no data, no trail, and no history.",
-      "url": "https://www.darkreading.com/ics-ot-security/you-need-cyber-deception-ot",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T14:00:00+00:00",
-      "published_ts": 1787925600.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "33dbe61c6418e875",
-      "title": "Defining an AI Kill Switch Is Hard, but Necessary",
-      "summary": "Proposed legislation could mandate that companies be able to &quot;throttle, suspend, or shut ... down&quot; AI agents, but how and when to do that remain open questions.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/defining-ai-kill-switch-hard-but-necessary",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T13:30:00+00:00",
-      "published_ts": 1787923800.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e8ab5e53b75940d4",
-      "title": "Over 8,300 Gitea servers vulnerable to code execution attacks",
-      "summary": "Over 8,300 Internet-exposed Gitea instances are still unpatched against a critical security flaw exploited in ongoing remote code execution attacks, according to cybersecurity watchdog Shadowserver. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/over-8-300-gitea-servers-vulnerable-to-code-execution-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T12:58:43+00:00",
-      "published_ts": 1787921923.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f9fc05ed4573ac11",
-      "title": "Hasbro Data Breach Exposed Employee Personal Information",
-      "summary": "A cyberattack caused disruptions at the toy and game giant earlier this year and the company is now disclosing a data breach. The post Hasbro Data Breach Exposed Employee Personal Information appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/hasbro-data-breach-exposed-employee-personal-information/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-29T11:55:00+00:00",
-      "published_ts": 1788004500.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "22135e292a6a50ef",
-      "title": "Cosmos EVM Flaw Exploited After Cosmos Labs Knew Every Blockchain Running It Was Vulnerable",
-      "summary": "Cosmos Labs has warned that a critical balance-handling flaw in the shared Cosmos EVM module was exploited to drain funds from six blockchains between August 20 and August 25, 2026. The vulnerability, designated GHSA-7g4w-cg88-2cq2, is rated Critical by Cosmos Labs and was published without a CVE identifier, a weakness classification, or a CVSS score. Affected versions are &lt; 0.6.2 and &gt;=",
-      "url": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T20:38:47+00:00",
-      "published_ts": 1787949527.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "838f9e399774d931",
-      "title": "Hundreds of OpenAI Agents Invaded Hugging Face Servers",
-      "summary": "The Hugging Face incident was bigger and worse than previously thought, with approximately 700 agents collaborating on a sophisticated, multistage attack.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/hundreds-openai-agents-invaded-hugging-face-servers",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T20:19:22+00:00",
-      "published_ts": 1787948362.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b9f977a029f52df1",
-      "title": "GiveWP WordPress donation plugin flaw lets hackers execute server commands",
-      "summary": "A maximum-severity vulnerability in the GiveWP plugin for WordPress allows an unauthenticated attacker to execute arbitrary commands on the hosting server. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/givewp-wordpress-donation-plugin-flaw-lets-hackers-execute-server-commands/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T18:18:55+00:00",
-      "published_ts": 1787941135.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "WordPress"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1050bf0a91b550df",
-      "title": "The Vulnpocalypse Is Repricing the Bug Bounty Economy",
-      "summary": "The surge in AI-powered vulnerability reports is driving down bug bounty prices, and that could spell trouble for independent researchers.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/vulnpocalypse-repricing-bug-bounty-economy",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-28T13:00:00+00:00",
-      "published_ts": 1787922000.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
