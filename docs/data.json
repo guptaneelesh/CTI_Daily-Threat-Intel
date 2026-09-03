@@ -1,22 +1,24 @@
 {
-  "generated_at": "2026-09-03T15:51:03.219857+00:00",
+  "generated_at": "2026-09-03T20:33:03.835594+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 98,
+    "all": 120,
     "critical": 1,
-    "high": 6,
-    "medium": 8,
-    "low": 83,
-    "actively_exploited": 10,
-    "with_cves": 19
+    "high": 8,
+    "medium": 18,
+    "low": 93,
+    "actively_exploited": 12,
+    "with_cves": 29
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
     "CISA KEV",
     "Check Point Research",
+    "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
@@ -264,6 +266,57 @@
       "related_sources": []
     },
     {
+      "id": "fd684ff59865355e",
+      "title": "Pyramid Solutions NetStaX EtherNet/IP Stack",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in memory corruption, a device crash, or a potential remote attack vector without the originating device receiving a CIP error indicating that the request could not be processed. The following versions of Pyramid Solutions NetStaX EtherNet/IP Stack are affected: EtherNet/IP Adapter DLL Kit (EIPA) EtherNet/IP Adapter DLL Kit with CIP Security (EIPA-SECURE) EtherNet/IP Adapter Development Kit (EADK) EtherNet/IP Adapter Development Kit with CIP Security (EADK-SECURE) EtherNet/IP Scanner DLL Kit (EIPS) EtherNet/IP Scanner DLL Kit with CIP Security (EIPS-SECURE) EtherNet/IP Scanner Development Kit (ESDK) EtherNet/IP Scanner Development Kit with CIP Security (ESDK-SECURE) CVSS Vendor Equipment Vulnerabilities v3 9.8 Pyramid Solutions Pyramid Solutions NetStaX EtherNet/IP Stack Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater, Chemical Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-78012 An issue in the NetStaX EtherNet/IP Stack prior to v5.6.1 could allow a large Class 3 explicit-message request to exceed the application-side receive buffer without generating an error or warning. The result could be memory corruption, a device crash, or a potential remote attack vector without the originating device receiving a CIP error indicating that the request could not be",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-07",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-78012"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "56e47a1a89fa1e98",
+      "title": "Avast Antivirus Zero-Day PoC Lets Attackers Dump SAM Database and Gain SYSTEM Shell",
+      "summary": "A public proof-of-concept (PoC) repository has revealed a local privilege escalation zero-day vulnerability in GenDigital’s Avast Antivirus. This vulnerability allows an attacker to dump the Windows Security Account Manager (SAM) database and launch a shell running as NT AUTHORITY\\SYSTEM. The researcher behind the repository, known as MSNightmare, claims that the issue affects fully patched installations [&#8230;] The post Avast Antivirus Zero-Day PoC Lets Attackers Dump SAM Database and Gain SYSTEM Shell appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/avast-antivirus-zero-day-poc/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T11:25:46+00:00",
+      "published_ts": 1788434746.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "ed173d603c2fc57b",
       "title": "Researcher Releases FalconFlank PoC Showing Privilege Escalation in CrowdStrike Falcon",
       "summary": "The security researcher known as Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has dropped a new zero-day dubbed FalconFlank, a privilege escalation flaw impacting Crowdstrike Falcon. \"FalconFlank is a 0day privilege escalation that abuses the office malicious macros remediation in CrowdStrike Falcon Sensor,\" the researcher said in a GitHub README file, adding",
@@ -343,6 +396,122 @@
       "related_sources": []
     },
     {
+      "id": "5ef6a8911a446242",
+      "title": "OPCFoundation OPC UA LocalDiscoveryServer (LDS)",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to take control of a high-privilege terminal during installation and run arbitrary commands. The following versions of OPCFoundation OPC UA LocalDiscoveryServer (LDS) are affected: UA-LDS-Installers &lt;1.04.420 (CVE-2026-77477) CVSS Vendor Equipment Vulnerabilities v3 4.6 OPCFoundation OPCFoundation OPC UA LocalDiscoveryServer (LDS) Execution with Unnecessary Privileges Background Critical Infrastructure Sectors: Chemical, Energy, Food and Agriculture, Water and Wastewater, Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-77477 An attacker can intercept a high-privilege console window launched during installation of the LDS. The attacker must be able to launch an installer with elevated privileges and have access to the keyboard and display while the installation is taking place. View CVE Details Affected Products OPCFoundation OPC UA LocalDiscoveryServer (LDS) Vendor: OPCFoundation Product Version: OPCFoundation UA-LDS-Installers: &lt;1.04.420 Product Status: known_affected Remediations Mitigation OPCFoundation recommends users update to OPC UA LDS Installers 1.04.420 or later. Mitigation For more information about this vulnerability and its mitigation, see the OPCFoundation security advisory. https://github.com/OPCFoundation/OPC-SecurityAdvisories/tree/latest/csaf/2026/009 Relevant CWE: CWE-250 ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-77477"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "7e6e321076109002",
+      "title": "Rockwell Automation ControlFLASH",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could give an attacker the ability to run any commands or code of the attacker's choice on a target machine at the logged-in user's permission level. The following versions of Rockwell Automation ControlFLASH are affected: ControlFLASH &lt;=V15.07 (CVE-2026-12663) CVSS Vendor Equipment Vulnerabilities v3 7.3 Rockwell Automation Rockwell Automation ControlFLASH Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-12663 A security issue exists within ControlFLASH, where the installer grants write permissions to the \"Everyone\" group on a product installation directory. This could allow arbitrary code execution, resulting in an attacker being given the ability to run any commands or code of the attacker's choice on a target machine at the logged-in user's permission level. View CVE Details Affected Products Rockwell Automation ControlFLASH Vendor: Rockwell Automation Product Version: Rockwell Automation ControlFLASH: &lt;=V15.07 Product Status: known_affected Remediations Mitigation Rockwell Automation has corrected this issue in software version 15.08, and encourages all users to update to the newest version. Mitigation Users of the affected software who are not able to upgrade to one of the corrected versions s",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-12663"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "5820cb3515ab6cce",
+      "title": "Rockwell Automation ArmorStart LT",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in a loss of webserver availability or allow an attacker to inject malicious scripts that will be executed when other users access the affected page. The following versions of Rockwell Automation ArmorStart LT are affected: ArmorStart LT &lt;=v2.001 (CVE-2026-19471, CVE-2026-19472) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation ArmorStart LT Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'), Allocation of Resources Without Limits or Throttling Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-19471 Multiple stored cross-site scripting security issues exist within ArmorStart LT. Stored XSS occurs when user input is not properly sanitized and is stored on the server, allowing an attacker to inject malicious scripts that will be executed when other users access the affected page. View CVE Details Affected Products Rockwell Automation ArmorStart LT Vendor: Rockwell Automation Product Version: Rockwell Automation ArmorStart LT: &lt;=v2.001 Product Status: known_affected Remediations Mitigation Rockwell Automation has corrected this issue in firmware version v2.002, and encourages all users to update to the newest version. Mitigation Users of the affected software who are not able to upgrade to one",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-04",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-19471",
+        "CVE-2026-19472"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "71341ad919f416f1",
+      "title": "Microsoft to Automatically Enable Memory Integrity on Windows Devices to Block Kernel Attacks",
+      "summary": "Microsoft will start automatically enabling Memory Integrity protection on eligible Windows devices through quality updates beginning in October 2026. This change aims to strengthen defenses against kernel-level attacks by ensuring that only trusted kernel-mode code and drivers can run on supported systems. Memory Integrity is a security feature built on Virtualization-based Security (VBS), a Windows [&#8230;] The post Microsoft to Automatically Enable Memory Integrity on Windows Devices to Block Kernel Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-to-automatically-enable-memory-integrity/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T11:57:34+00:00",
+      "published_ts": 1788436654.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "3432ec555cc8912e",
       "title": "Communicating Under Pressure: Best Practices for Service Providers",
       "summary": "Developed by CISA, the Federal Bureau of Investigation, and international partners, this guidance describes how organizations can plan and execute clear, timely, accurate, and audience-appropriate communications during IT and operational technology (OT) outages. Whether caused by cyber threat actors, human error, equipment failure, or natural hazards, service outages can create disruption and societal panic even without speculation from end users and the public as added factors. Outages at one organization may cascade across interconnected systems, increasing uncertainty and alarm. The guidance emphasizes clarity, accountability, and transparency as core principles and details key elements of effective crisis messaging to inform affected stakeholders and the public while aligning with legal requirements, operational security, law enforcement, and containment efforts.&nbsp; CISA’s CI Fortify initiative provides information and resources that help critical infrastructure organizations prepare to isolate and recover vital OT systems during a major cyber incident or crisis. Changes in service availability, whether from outages or isolation as a defensive strategy, require transparent and ongoing communication to help end users minimize operational impact, limit speculation, and preserve trust. For emergency planning purposes, critical infrastructure owners and operators should assume that telecommunications services may be disrupted or otherwise unreliable, making it crucial for ",
@@ -399,6 +568,169 @@
       "related_sources": []
     },
     {
+      "id": "879f75acaf6f9c78",
+      "title": "Fake Acquisition Scam Uses Forged NDAs to Demand €626,000 Corporate Payment.",
+      "summary": "Threat actors impersonated Gen executives and major consulting firms in a targeted business email compromise-style operation that used forged non-disclosure agreements to isolate a legal employee and pressure the company into transferring €626,735.45 to a Hong Kong entity. Dubbed Phantom Deal, the campaign shows how financially motivated actors can abuse legitimate M&#38;A processes, corporate history [&#8230;] The post Fake Acquisition Scam Uses Forged NDAs to Demand €626,000 Corporate Payment. appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/fake-acquisition-scam/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T13:34:40+00:00",
+      "published_ts": 1788442480.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "aac4599283bf6f18",
+      "title": "Rockwell Automation 1756-ENBT Module",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could crash the module. The device requires a restart to recover. The following versions of Rockwell Automation 1756-ENBT Module are affected: 1756-ENBT module vers:all/* (CVE-2025-10478) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation 1756-ENBT Module Improper Check for Unusual or Exceptional Conditions Background Critical Infrastructure Sectors: Critical Manufacturing, Food and Agriculture, Transportation Systems, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2025-10478 A denial-of-service security issue exists in the Rockwell Automation 1756-ENBT module which is a ControlLogix EtherNet/IP bridge that enables communication between Logix 5000 controllers and Ethernet devices. An attacker could exploit this vulnerability by sending a crafted CIP packet, causing the module to crash. The device requires a restart to recover. View CVE Details Affected Products Rockwell Automation 1756-ENBT Module Vendor: Rockwell Automation Product Version: Rockwell Automation 1756-ENBT module: vers:all/* Product Status: known_affected Remediations Mitigation Rockwell Automation recommends that users upgrade to 1756-EN2T or 1756-EN4TR. Users who are not able to upgrade should use Rockwell Automation's security best practices. https://support.rockwellautomation.com/app/answers/answer_view/a_id/1085012/loc/en_U",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-05",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2025-10478"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "412504a6e0821700",
+      "title": "Tycon Systems TPDIN-Monitor-WEB2 (Update A)",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker accessing sensitive credentials, disrupting connected infrastructure, or manipulating physical equipment, which could present a physical safety risk. The following versions of Tycon Systems TPDIN-Monitor-WEB2 (Update A) are affected: TPDIN-Monitor-WEB2 &lt;2.4.5 (CVE-2026-61884, CVE-2026-55985) CVSS Vendor Equipment Vulnerabilities v3 9.8 Tycon Systems Tycon Systems TPDIN-Monitor-WEB2 Missing Authentication for Critical Function, Cleartext Storage of Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-61884 The device ships without HTTP credentials configured, intended for an installer to set them on first use. On firmware 2.4.4 and earlier, a unit left in this unconfigured state serves the web management interface without requiring any login. An attacker with network access to such a unit can reach full device controls, including power relay management, device reboot, remote access service configuration, and network settings, which could allow disruption of connected infrastructure or physical damage to equipment. View CVE Details Affected Products Tycon Systems TPDIN-Monitor-WEB2 (Update A) Vendor: Tycon Systems Product Version: Tycon Systems TPDIN-Monitor-WEB2: &lt;2.4.5 Product Status: known_affected Remediations Vendor fix T",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-55985",
+        "CVE-2026-61884"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d0e26a83f293699f",
+      "title": "Inductive Automation Ignition",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow any authenticated user to create projects. The following versions of Inductive Automation Ignition are affected: Ignition &lt;=8.1.53 (CVE-2026-77393) CVSS Vendor Equipment Vulnerabilities v3 8.8 Inductive Automation Inductive Automation Ignition Incorrect Default Permissions Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-77393 In Ignition 8.1.53 and earlier, the Gateway \"Create Project Role(s)\" setting shipped blank, which permitted any authenticated user to create projects (if they can execute gateway scripts). Ignition 8.1.54 restricts project creation to Designer sessions and no longer relies on this setting. The 8.3 series is not affected. View CVE Details Affected Products Inductive Automation Ignition Vendor: Inductive Automation Product Version: Inductive Automation Ignition: &lt;=8.1.53 Product Status: known_affected Remediations Mitigation Inductive Automation has determined that this issue is a default-value configuration, not a flaw in the access control itself. The security control enforces exactly what the \"Create Project Role(s)\" setting specifies; because the setting shipped blank, no role was required to create a project. Populating the setting fully closes the vulnerability. Mitigation Inductive Automation recommend",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-06",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-77393"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "55d7a857b2e7ef42",
+      "title": "Tycon Systems TPDIN-Monitor-WEB3",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow for an attacker to perform a man-in-the-middle (MitM) attack, cause a factory reset, wipe credentials, or retrieve sensitive information. The following versions of Tycon Systems TPDIN-Monitor-WEB3 are affected: TPDIN-Monitor-WEB3 &lt;=2.2.9 (CVE-2026-77847, CVE-2026-82712, CVE-2026-82684) CVSS Vendor Equipment Vulnerabilities v3 8.8 Tycon Systems Tycon Systems TPDIN-Monitor-WEB3 Use of Hard-coded Credentials, Cross-Site Request Forgery (CSRF), Missing Authorization Background Critical Infrastructure Sectors: Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-77847 Tycon Systems TPDIN-Monitor-WEB3 versions 2.2.9 and prior are vulnerable to a Use of Hard-coded Credential vulnerability. This could allow an attacker to intercept sensitive information or credentials. View CVE Details Affected Products Tycon Systems TPDIN-Monitor-WEB3 Vendor: Tycon Systems Product Version: Tycon Systems TPDIN-Monitor-WEB3: &lt;=2.2.9 Product Status: known_affected Remediations Vendor fix Tycon Systems has released TPDIN-Monitor-WEB3 Firmware v2.4.2. Mitigation Units already running v2.4.2, for subsequent updates (signed container):&nbsp; https://firm.tyconsystems.com/tpdin-monitor-web3-v2/TPDIN-MONITOR-WEB3-V2_v2.4.2.tfw Mitigation All units currently in the field, including the v2.2.9 covered by this report (legacy Intel H",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-08",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-77847",
+        "CVE-2026-82684",
+        "CVE-2026-82712"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "2947a20aed18c762",
+      "title": "IXON VPN Client",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to perform remote code execution on the computer running the client with elevated privileges. The following versions of IXON VPN Client are affected: VPN Client &lt;1.4.7 (CVE-2026-75925) CVSS Vendor Equipment Vulnerabilities v3 9.6 IXON IXON VPN Client Improper Neutralization of CRLF Sequences ('CRLF Injection') Background Critical Infrastructure Sectors: Commercial Facilities, Critical Manufacturing, Energy, Information Technology, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: Netherlands Vulnerabilities Expand All + CVE-2026-75925 Improper Neutralization of CRLF Sequences (CWE-93) in IXON VPN Client before version 1.4.7 allows an attacker to execute commands as root or SYSTEM. Configuration values accepted by the local service are written to a file later consumed by a privileged subprocess, without line-ending sequences being neutralised, which allows additional directives to be introduced into that file. The configuration interface accepts changes without authenticating or verifying the origin of the requester (CWE-306, contributing). The injected configuration persists on disk across restarts of the client and the operating system, and the VPN connection continues to function normally, so there is no behavioral change visible to the user. View CVE Details Affected Products IXON VPN Client Vendor: IXON Product Version: IXON VPN Client: &lt;1.4.",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-246-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [
+        "CVE-2026-75925"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "1d976c1719837c00",
       "title": "Breeze Comet Executes Hundreds of Fraudulent Transactions via Brazilian Payment Systems",
       "summary": "Brazilian financial services, retail, and e-commerce organizations have become the target of a financially motivated threat actor dubbed Breeze Comet (formerly UNC5669) since 2024. Google Threat Intelligence Group (GTIG) and Mandiant teams described the threat actor as \"specializing in manipulating payment systems and banking software in Brazil to conduct fraudulent transfers.\" The adversary",
@@ -418,37 +750,6 @@
       ],
       "regions": [
         "Latin America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "82231f80d35d4128",
-      "title": "Rockwell Automation RSLinx Classic",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition on the affected product. The following versions of Rockwell Automation RSLinx Classic are affected: RSLinx Classic &lt;=4.50 (CVE-2026-9621, CVE-2026-9622, CVE-2026-9624, CVE-2026-9625) CVSS Vendor Equipment Vulnerabilities v3 8.6 Rockwell Automation Rockwell Automation RSLinx Classic Integer Overflow or Wraparound, Integer Underflow (Wrap or Wraparound), Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-9621 A denial-of-service security issue exists within RSLinx Classic. The security issue stems from improper handling of a malformed packet. A crafted CIP packet can cause the RSLinx Classic service to crash, requiring a restart of the service to recover. View CVE Details Affected Products Rockwell Automation RSLinx Classic Vendor: Rockwell Automation Product Version: Rockwell Automation RSLinx Classic: &lt;=4.50 Product Status: known_affected Remediations Vendor fix Rockwell Automation has corrected the vulnerabilities in RSLinx Classic version 4.60. Mitigation Users using the affected software, who are not able to upgrade to one of the corrected versions, should use Rockwell Automation's security best practices https://support.rockwellautomati",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-244-01",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-09-01T12:00:00+00:00",
-      "published_ts": 1788264000.0,
-      "cves": [
-        "CVE-2026-9621",
-        "CVE-2026-9622",
-        "CVE-2026-9624",
-        "CVE-2026-9625"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -488,6 +789,112 @@
       "related_sources": []
     },
     {
+      "id": "82231f80d35d4128",
+      "title": "Rockwell Automation RSLinx Classic",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition on the affected product. The following versions of Rockwell Automation RSLinx Classic are affected: RSLinx Classic &lt;=4.50 (CVE-2026-9621, CVE-2026-9622, CVE-2026-9624, CVE-2026-9625) CVSS Vendor Equipment Vulnerabilities v3 8.6 Rockwell Automation Rockwell Automation RSLinx Classic Integer Overflow or Wraparound, Integer Underflow (Wrap or Wraparound), Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-9621 A denial-of-service security issue exists within RSLinx Classic. The security issue stems from improper handling of a malformed packet. A crafted CIP packet can cause the RSLinx Classic service to crash, requiring a restart of the service to recover. View CVE Details Affected Products Rockwell Automation RSLinx Classic Vendor: Rockwell Automation Product Version: Rockwell Automation RSLinx Classic: &lt;=4.50 Product Status: known_affected Remediations Vendor fix Rockwell Automation has corrected the vulnerabilities in RSLinx Classic version 4.60. Mitigation Users using the affected software, who are not able to upgrade to one of the corrected versions, should use Rockwell Automation's security best practices https://support.rockwellautomati",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-244-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-01T12:00:00+00:00",
+      "published_ts": 1788264000.0,
+      "cves": [
+        "CVE-2026-9621",
+        "CVE-2026-9622",
+        "CVE-2026-9624",
+        "CVE-2026-9625"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "9d19592e27beb898",
+      "title": "Fewer attacks, more force: Link11’s European Cyber Report finds new DDoS records for the first half of 2026",
+      "summary": "Frankfurt am Main, Germany, September 3rd, 2026, CyberNewswire Super-botnets and hijacked cloud servers drive new bandwidth and packet-rate records as international law-enforcement pressure pushes attack counts down Link11 has released its European Cyber Report for the first half of 2026, providing an overview of DDoS attack activity targeting European companies. Although the number of DDoS [&#8230;] The post Fewer attacks, more force: Link11&#8217;s European Cyber Report finds new DDoS records for the first half of 2026 appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/fewer-attacks-more-force-link11s-european-cyber-report-finds-new-ddos-records-for-the-first-half-of-2026/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T16:47:51+00:00",
+      "published_ts": 1788454071.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b8075db60e473acb",
+      "title": "Rogue ScreenConnect Clients Spread Worm-Like Malware Across Connected Windows Systems",
+      "summary": "A malicious ScreenConnect campaign in which rogue remote-access clients do more than provide attackers with hands-on control: modified clients can automatically push a multi-stage VBScript malware chain to newly connected Windows endpoints. Once deployed, the clients repeatedly spawned wscript.exe to execute four scripts 1.vbs, 2.vbs, 3.vbs, and 4.vbs from ScreenConnect-related temporary locations. The behavior is [&#8230;] The post Rogue ScreenConnect Clients Spread Worm-Like Malware Across Connected Windows Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/rogue-screenconnect-clients/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T13:15:55+00:00",
+      "published_ts": 1788441355.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "497c9e43b0cb368f",
+      "title": "QR Phishing Hits Record Levels as Attackers Hide Malicious Links Inside QR Codes",
+      "summary": "QR code phishing, widely known as “quishing,” has reached record levels as threat actors increasingly conceal malicious URLs within scannable images rather than placing clickable links directly in emails. The shift is helping attackers bypass traditional secure email gateways and move victims from managed corporate devices to less-protected smartphones. The company recorded an average of [&#8230;] The post QR Phishing Hits Record Levels as Attackers Hide Malicious Links Inside QR Codes appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/qr-codes-attack/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T12:12:02+00:00",
+      "published_ts": 1788437522.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "b611180c1625e2a5",
       "title": "'Breeze Comet' Tears Into Brazilian &amp; Global Financial Systems",
       "summary": "Brazil's most sophisticated threat group is making light work of the country's financial systems, putting money directly into its own pocket.",
@@ -513,6 +920,31 @@
       "related_sources": []
     },
     {
+      "id": "1472a4f4d9616294",
+      "title": "Schneider Electric Easergy, EcoStruxture, PowerLogic, and Saitel Products (Update A)",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in the following products: The Easergy C5 is a scalable and interoperable bay controller, protection and merging unit for large and critical infrastructure electrical distribution systems. The Easergy MiCOM P30 is a family of multifunction protection and control relays designed for medium, high and extra high voltage electrical networks. The Easergy MiCOM P40 is a protection relay series for Medium Voltage, High Voltage and Extra High Voltage protection. The Easergy MiCOM C264 is a modular and compact substation or bay controller, smart RTU and MV one box solution The EcoStruxure Power Automation System Gateway (EPAS=GTW) is a scalable, interoperable, and rugged communication gateway that helps to remotely monitor and operate electrical processes The EcoStruxure Power Automation System User Interface (EPAS-UI) product is an HMI SCADA designed for electrical networks and substations operations. The EcoStruxure Power Automation System Intelligent Power Management System and Fast Load Shedding (iPMFLS) is a range of solutions designed to overcome size and performances constraints. The EcoStruxure Power Operation (EPO) are an on-premises software offers that provides a single platform to monitor and control medium and lower power systems. The PowerLogic P5 is a medium voltage protection relay. The PowerLogic P7 is a protection and control platform designed for complex and advanced electrical network applications. Th",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-07",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-03T12:00:00+00:00",
+      "published_ts": 1788436800.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "b8059c3f9da3aaee",
       "title": "Preparing for the Post-Quantum Era: A Call to Action",
       "summary": "CISA and the Group of Seven (G7) Cyber Security Working Group released Preparing for the Post-Quantum Era: A Call to Action highlighting the urgent need for organizations and governments to begin transitioning to post-quantum cryptography (PQC) to protect sensitive data, authentication systems, and critical assets from emerging quantum computing threats. &nbsp; The G7 Cyber Security Working Group’s call to action outlines five priorities for a successful transition to PQC: Raising awareness of quantum risks and the importance of PQC; Developing national strategies that support PQC adoption and integration; Advancing research and development for quantum-safe technologies; Fostering public-private partnerships to share expertise and resources; and Integrating PQC into cybersecurity requirements and procurement processes.&nbsp; Please share your thoughts! We welcome your feedback. CISA PRODUCT SURVEY",
@@ -529,6 +961,30 @@
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3dbce930e114991b",
+      "title": "HTML-Rendered QR Phishing Evades Image Extraction and OCR-Based Email Scanning",
+      "summary": "QR-code phishing, commonly known as quishing, is evolving beyond image-based payloads. Threat actors are now rendering scannable QR codes directly from HTML tables or text within email bodies, leaving no image attachment, embedded bitmap, or &#60;img&#62; element for traditional email scanners to inspect. The technique targets a structural blind spot in Secure Email Gateways (SEGs). [&#8230;] The post HTML-Rendered QR Phishing Evades Image Extraction and OCR-Based Email Scanning appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/html-rendered-qr-phishing/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T11:14:29+00:00",
+      "published_ts": 1788434069.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -564,6 +1020,67 @@
       "related_sources": []
     },
     {
+      "id": "ece177adbc96dfcd",
+      "title": "Over 3 Million WordPress Sites Affected by Migration Plugin Vulnerability",
+      "summary": "The high-severity SQL injection flaw (CVE-2026-19949) could allow unauthenticated attackers to achieve remote code execution. The post Over 3 Million WordPress Sites Affected by Migration Plugin Vulnerability appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/over-3-million-wordpress-sites-affected-by-migration-plugin-vulnerability/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T10:40:00+00:00",
+      "published_ts": 1788432000.0,
+      "cves": [
+        "CVE-2026-19949"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/wordpress-plugin-flaw-5/",
+          "title": "WordPress Plugin Flaw Lets Attackers Turn SQL Injection Into Complete Site Takeover",
+          "published": "2026-09-03T09:19:04+00:00"
+        }
+      ]
+    },
+    {
+      "id": "40237e1c6fa7f00e",
+      "title": "StreamRAT Abuses Android Accessibility, MediaProjection and HVNC for Full Device Takeover",
+      "summary": "StreamRAT, a newly identified Android banking trojan distributed through fake free-TV streaming advertisements on Meta and TikTok. The campaign, tracked as “Steamtv Esp.,” primarily targeted Spanish-speaking Android users and exposed an estimated 570,000 Meta users between June 11 and July 3, 2026. The operation highlights the continued effectiveness of piracy-themed social engineering. Victims who clicked [&#8230;] The post StreamRAT Abuses Android Accessibility, MediaProjection and HVNC for Full Device Takeover appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/streamrat-abuses-android/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T09:25:46+00:00",
+      "published_ts": 1788427546.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "ec0142881c119ea9",
       "title": "Impersonating IT support: how threat actors turn a remote session into enterprise-wide access",
       "summary": "Microsoft Threat Intelligence observed a human-operated intrusion campaign that abuses Microsoft Teams external collaboration to impersonate IT support, gain remote access, and deploy a Node.js-based implant. Learn how attackers move from social engineering to lateral movement using legitimate tools, and how Microsoft Defender helps detect and disrupt the activity. The post Impersonating IT support: how threat actors turn a remote session into enterprise-wide access appeared first on Microsoft Security Blog .",
@@ -589,32 +1106,6 @@
       "related_sources": []
     },
     {
-      "id": "34a47e48aab267f9",
-      "title": "Google, Anthropic, and OpenAI Unveil Cyber AI Models, Safeguards, and Access Programs",
-      "summary": "Google on Wednesday announced Gemini 3.8 Flash Cyber, which it described as its most capable cybersecurity model, and has made it available to a set of trusted defenders via a new initiative called the Fairwind Program. \"The Fairwind Program gives high-priority defenders (like governments, healthcare providers, and telecommunications services) early access to advanced models that help them",
-      "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T18:27:49+00:00",
-      "published_ts": 1788373669.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Life Sciences & Health Care",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "1ae12b3679f633c2",
       "title": "Rockwell Automation ControlLogix, CompactLogix, CompactLogix 5480, GuardLogix, Compact GuardLogix",
       "summary": "View CSAF Summary The following versions of Rockwell Automation ControlLogix, CompactLogix, CompactLogix 5480, GuardLogix, Compact GuardLogix are affected: ControlLogix 5580 &lt;34.015, &lt;35.014, &lt;36.013, &lt;37.011 (CVE-2021-42260, CVE-2021-42260, CVE-2021-42260, CVE-2021-42260) GuardLogix 5580 &lt;34.015, &lt;35.014, &lt;36.013, &lt;37.011 (CVE-2021-42260, CVE-2021-42260, CVE-2021-42260, CVE-2021-42260) CompactLogix 5380 &lt;34.015, &lt;35.014, &lt;36.013, &lt;37.011 (CVE-2021-42260, CVE-2021-42260, CVE-2021-42260, CVE-2021-42260) Compact GuardLogix 5380 &lt;34.015, &lt;35.014, &lt;36.013, &lt;37.011 (CVE-2021-42260, CVE-2021-42260, CVE-2021-42260, CVE-2021-42260) CompactLogix 5480 &lt;34.015, &lt;35.014, &lt;36.013, &lt;37.011 (CVE-2021-42260, CVE-2021-42260, CVE-2021-42260, CVE-2021-42260) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation ControlLogix, CompactLogix, CompactLogix 5480, GuardLogix, Compact GuardLogix Loop with Unreachable Exit Condition ('Infinite Loop') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2021-42260 A potential denial of service vulnerability exists in the affected products and can be triggered via corrupt crafted data. This could result in a major nonrecoverable fault (MNRF). A program download is required to recover safety controllers. For non-safety controllers, a stage 2",
@@ -626,33 +1117,6 @@
       "published_ts": 1788264000.0,
       "cves": [
         "CVE-2021-42260"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "233fa826d897d554",
-      "title": "Rockwell Automation Logix Platform",
-      "summary": "View CSAF Summary The following versions of Rockwell Automation Logix Platform are affected: ControlLogix 5580 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) CompactLogix 5380 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) GuardLogix 5580 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) Compact GuardLogix 5380 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation Logix Platform Improper Restriction of Operations within the Bounds of a Memory Buffer Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-9637 A denial-of-service vulnerability exists in the affected Logix platforms due to improper validation of input length during CIP message processing. This can result in a major nonrecoverable fault (MNRF), requiring a power cycle to recover. View CVE Details Affected Products Rockwell Automation Logix Platform Vendor: Rockwell Automation Product Version: Rockwell Automation ControlLogix 5580 &lt;=V33, Rockwell Automation ControlLogix 5580 V34.011-V34.014, Rockwell Automation Control",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-244-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-09-01T12:00:00+00:00",
-      "published_ts": 1788264000.0,
-      "cves": [
-        "CVE-2026-9637"
       ],
       "sectors": [
         "Energy Resources & Industrials"
@@ -697,6 +1161,157 @@
       "related_sources": []
     },
     {
+      "id": "233fa826d897d554",
+      "title": "Rockwell Automation Logix Platform",
+      "summary": "View CSAF Summary The following versions of Rockwell Automation Logix Platform are affected: ControlLogix 5580 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) CompactLogix 5380 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) GuardLogix 5580 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) Compact GuardLogix 5380 &lt;=V33, V34.011-V34.014, V35.011-V35.013, V36.011-V36.012 (CVE-2026-9637, CVE-2026-9637, CVE-2026-9637, CVE-2026-9637) CVSS Vendor Equipment Vulnerabilities v3 7.5 Rockwell Automation Rockwell Automation Logix Platform Improper Restriction of Operations within the Bounds of a Memory Buffer Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2026-9637 A denial-of-service vulnerability exists in the affected Logix platforms due to improper validation of input length during CIP message processing. This can result in a major nonrecoverable fault (MNRF), requiring a power cycle to recover. View CVE Details Affected Products Rockwell Automation Logix Platform Vendor: Rockwell Automation Product Version: Rockwell Automation ControlLogix 5580 &lt;=V33, Rockwell Automation ControlLogix 5580 V34.011-V34.014, Rockwell Automation Control",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-244-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-01T12:00:00+00:00",
+      "published_ts": 1788264000.0,
+      "cves": [
+        "CVE-2026-9637"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b00f9837eb73afb5",
+      "title": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories",
+      "summary": "The worst part is how normal these attacks look. A call from IT. A shared file. A trusted app. A simple request to click “Allow.” Why break in when someone might open the door? That idea runs through this edition. Attackers use real tools, fake login pages, old account links, and software guides that point to unsafe downloads. One wrong letter in a web address can be enough. There is also",
+      "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T18:02:47+00:00",
+      "published_ts": 1788458567.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e93175767e64b0b2",
+      "title": "The story behind the intelligence",
+      "summary": "From engaging with cybercriminals to surviving a live Flamin’ Hot Cheetos taste test, Hazel reflects on the latest Beers with Talos with Azim, where they cover the full spectrum of what it takes to gather threat intel.",
+      "url": "https://blog.talosintelligence.com/the-story-behind-the-intelligence/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-03T18:00:13+00:00",
+      "published_ts": 1788458413.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ee2b1a4e8d6d7c5b",
+      "title": "ASCII smuggling crosses over from AI prompt injection to phishing evasion",
+      "summary": "Invisible Unicode characters popularized for hiding instructions from AI models are now being used to obfuscate words before email filters parse them. The post ASCII smuggling crosses over from AI prompt injection to phishing evasion appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/03/ascii-smuggling-crosses-over-from-ai-prompt-injection-to-phishing-evasion/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-03T16:00:00+00:00",
+      "published_ts": 1788451200.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "27a9d0b9663ec427",
+      "title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
+      "summary": "Cisco has released patches to address a critical security flaw affecting 10 Silicon One-based Nexus 9000 switches that could allow an unauthenticated, remote attacker to execute code as root, alongside an IOS XR hardening release bundling 7 umbrella CVEs, 2 of which are rated 9.8, with no workaround for any IOS XR version. The Nexus vulnerability, tracked as CVE-2026-20212 (CVSS score: 9.8), is",
+      "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T15:52:07+00:00",
+      "published_ts": 1788450727.0,
+      "cves": [
+        "CVE-2026-20212"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "iOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "26030fe260abda5d",
+      "title": "New $7 SweepLED Gadget Detects Hidden Cameras With 94% Accuracy in 5 Seconds",
+      "summary": "Researchers have developed SweepLED, a smartphone-based hidden-camera detection system that uses a low-cost LED accessory and computer vision to identify concealed lenses in under five seconds. The system is detailed in the research paper titled &#8220;Hide-and-Sweep: Detecting Concealed Cameras via LED Illumination Sweeps.&#8221; It is designed to help users identify covert cameras hidden in common [&#8230;] The post New $7 SweepLED Gadget Detects Hidden Cameras With 94% Accuracy in 5 Seconds appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/new-7-sweepled-gadget-detects-hidden-cameras/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T11:44:53+00:00",
+      "published_ts": 1788435893.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "3333eb4d3b1922db",
       "title": "Cisco Warns of Unpatched Secure Email Flaws, Patches Critical Switch Vulnerabilities",
       "summary": "Publicly disclosed S/MIME flaws could expose encrypted email content, while critical IOS XR and Nexus bugs could enable remote code execution and authentication bypass. The post Cisco Warns of Unpatched Secure Email Flaws, Patches Critical Switch Vulnerabilities appeared first on SecurityWeek .",
@@ -724,68 +1339,19 @@
       "related_sources": []
     },
     {
-      "id": "f972aa07979ec1ad",
-      "title": "Russian national facing 20 years for malware campaign that infected 80,000 freelancers",
-      "summary": "Searzhudin Tamirlanovich Aktulaev appeared in a San Francisco federal court on Monday after being arrested in Cyprus in May 2025 and extradited to the U.S. last week.",
-      "url": "https://therecord.media/russian-national-facing-20-years-malware-campaign",
-      "source": "The Record",
+      "id": "34a47e48aab267f9",
+      "title": "Google, Anthropic, and OpenAI Unveil Cyber AI Models, Safeguards, and Access Programs",
+      "summary": "Google on Wednesday announced Gemini 3.8 Flash Cyber, which it described as its most capable cybersecurity model, and has made it available to a set of trusted defenders via a new initiative called the Fairwind Program. \"The Fairwind Program gives high-priority defenders (like governments, healthcare providers, and telecommunications services) early access to advanced models that help them",
+      "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T18:43:00+00:00",
-      "published_ts": 1788374580.0,
+      "published": "2026-09-02T18:27:49+00:00",
+      "published_ts": 1788373669.0,
       "cves": [],
       "sectors": [
         "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d93ac4c4befc07db",
-      "title": "Health data of more than 9.5 million people leaked from Aesto record system",
-      "summary": "The healthcare data company Aesto informed federal regulators this week that more than 9.5 million people had sensitive information leaked during a cyberattack last December.",
-      "url": "https://therecord.media/health-data-aesto-cyberattack-leak",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T17:15:00+00:00",
-      "published_ts": 1788369300.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a11460cd53d5545e",
-      "title": "Threat Gang 'Springs' Vishing Attacks on Microsoft Teams Users",
-      "summary": "The &quot;Spring Ring&quot; operation aims to compromise users of the collaboration suite to remotely access their sessions, spread malware, and even take over infrastructure.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/threat-gang-springs-vishing-attacks-microsoft-teams-users",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T16:51:21+00:00",
-      "published_ts": 1788367881.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
+        "Life Sciences & Health Care",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -828,6 +1394,102 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "34e67fca39f647f8",
+      "title": "Coder's registry infrastructure compromised to push malicious modules",
+      "summary": "Attackers compromised Coder's Cloudflare infrastructure and added unauthorized registry servers that delivered malicious Terraform modules containing credential-stealing code. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/coders-registry-infrastructure-compromised-to-push-malicious-modules/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T20:04:24+00:00",
+      "published_ts": 1788465864.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "59f2d9783fbfae01",
+      "title": "What We Missed: Did ShinyHunters 'Breach' ReliaQuest?",
+      "summary": "In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from the latest antics of ShinyHunters to new research about the prevalence (or lack thereof) of AI-generated malware.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/what-we-missed-did-shinyhunters-breach-reliaquest",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T19:42:39+00:00",
+      "published_ts": 1788464559.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "513b8031084c6338",
+      "title": "Large group of Serbian opposition, activist figures targeted with spyware",
+      "summary": "At least 14 Serbians have been targeted with advanced spyware since December, with victims including a member of Parliament, a local opposition politician and student protesters, according to digital forensic researchers.",
+      "url": "https://therecord.media/serbia-spyware-pegasus-europe",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T19:30:41+00:00",
+      "published_ts": 1788463841.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c8d0cb5b495198b8",
+      "title": "HPE patches critical ArubaOS-CX remote code execution flaw",
+      "summary": "Hewlett Packard Enterprise (HPE) has patched a critical vulnerability in the ArubaOS-CX network operating system that could lead to remote code execution. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-critical-arubaos-cx-remote-code-execution-flaw/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T18:28:12+00:00",
+      "published_ts": 1788460092.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -882,6 +1544,31 @@
       "related_sources": []
     },
     {
+      "id": "698e8b6184cb8c98",
+      "title": "Thomson Reuters Court Software Breach May Have Exposed SSNs and Sealed Data",
+      "summary": "Thomson Reuters disclosed on Wednesday that an unauthorized party obtained files from C-Track, the court case management platform sold by its West Publishing Corporation unit, in March 2026, affecting courts in 11 U.S. states, the U.S. Virgin Islands, and Ontario, Canada. West Publishing said it discovered the activity on June 30, 2026. A subset of court records could contain individuals' names",
+      "url": "https://thehackernews.com/2026/09/thomson-reuters-court-software-breach.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T14:39:05+00:00",
+      "published_ts": 1788446345.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "691f1d41f1d25eb2",
       "title": "Microsoft says KB5120998 Windows update resets desktop settings",
       "summary": "Microsoft has confirmed that desktop settings are lost or reset on some Windows devices after installing the KB5120998 August 2026 preview update. [...]",
@@ -925,34 +1612,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ece177adbc96dfcd",
-      "title": "Over 3 Million WordPress Sites Affected by Migration Plugin Vulnerability",
-      "summary": "The high-severity SQL injection flaw (CVE-2026-19949) could allow unauthenticated attackers to achieve remote code execution. The post Over 3 Million WordPress Sites Affected by Migration Plugin Vulnerability appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/over-3-million-wordpress-sites-affected-by-migration-plugin-vulnerability/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-03T10:40:00+00:00",
-      "published_ts": 1788432000.0,
-      "cves": [
-        "CVE-2026-19949"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "WordPress"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1058,7 +1717,7 @@
     },
     {
       "id": "350cdfa11228b14c",
-      "title": "AI’s Vulnerability Surge May Be More Manageable Than First Feared",
+      "title": "AI's Vulnerability Surge May Be More Manageable Than First Feared",
       "summary": "New research suggests the coming Vulnpocalypse may not be so overwhelming for enterprise security teams — if they have the right strategies.",
       "url": "https://www.darkreading.com/application-security/ai-vulnerability-surge-manageable-than-first-feared",
       "source": "Dark Reading",
@@ -1081,18 +1740,44 @@
       "related_sources": []
     },
     {
-      "id": "20a814a17e7a437e",
-      "title": "OpenLeash Adds a Human Check to Risky AI Agent Actions",
-      "summary": "The security tool intercepts potentially dangerous agent actions, blocking clear threats and requesting human approval when intent is uncertain. The post OpenLeash Adds a Human Check to Risky AI Agent Actions appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/openleash-adds-a-human-check-to-risky-ai-agent-actions/",
-      "source": "SecurityWeek",
+      "id": "f972aa07979ec1ad",
+      "title": "Russian national facing 20 years for malware campaign that infected 80,000 freelancers",
+      "summary": "Searzhudin Tamirlanovich Aktulaev appeared in a San Francisco federal court on Monday after being arrested in Cyprus in May 2025 and extradited to the U.S. last week.",
+      "url": "https://therecord.media/russian-national-facing-20-years-malware-campaign",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T19:30:00+00:00",
-      "published_ts": 1788377400.0,
+      "published": "2026-09-02T18:43:00+00:00",
+      "published_ts": 1788374580.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d93ac4c4befc07db",
+      "title": "Health data of more than 9.5 million people leaked from Aesto record system",
+      "summary": "The healthcare data company Aesto informed federal regulators this week that more than 9.5 million people had sensitive information leaked during a cyberattack last December.",
+      "url": "https://therecord.media/health-data-aesto-cyberattack-leak",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T17:15:00+00:00",
+      "published_ts": 1788369300.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services",
+        "Life Sciences & Health Care"
       ],
       "regions": [
         "Unspecified"
@@ -1105,51 +1790,24 @@
       "related_sources": []
     },
     {
-      "id": "0ee0545e52fc0fe8",
-      "title": "WordPress backup plugin flaw exposes millions of sites to takeover attacks",
-      "summary": "An SQL injection vulnerability in the All-in-One WP Migration and Backup plugin for WordPress could allow unauthenticated attackers to execute remote code and take control of affected websites. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/wordpress-backup-plugin-flaw-exposes-millions-of-sites-to-takeover-attacks/",
-      "source": "BleepingComputer",
+      "id": "a11460cd53d5545e",
+      "title": "Threat Gang 'Springs' Vishing Attacks on Microsoft Teams Users",
+      "summary": "The &quot;Spring Ring&quot; operation aims to compromise users of the collaboration suite to remotely access their sessions, spread malware, and even take over infrastructure.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/threat-gang-springs-vishing-attacks-microsoft-teams-users",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T19:28:46+00:00",
-      "published_ts": 1788377326.0,
+      "published": "2026-09-02T16:51:21+00:00",
+      "published_ts": 1788367881.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "WordPress"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ad28237eab338fdb",
-      "title": "Fake Software Installers Disable Windows Update and Weaken Microsoft Defender",
-      "summary": "An active malware campaign is using bogus software-download websites to impersonate trusted vendors and distribute malicious installers. \"The campaign has targeted users looking to download popular software and has resulted in compromises across multiple organizations and industries, primarily affecting China-based operations of multinational organizations and Chinese-speaking users,\" Microsoft",
-      "url": "https://thehackernews.com/2026/09/fake-software-installers-disable.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T16:41:06+00:00",
-      "published_ts": 1788367266.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1579,6 +2237,30 @@
       "related_sources": []
     },
     {
+      "id": "1b142b1806c14a94",
+      "title": "BraZetsu Malware Turns Compromised Windows Hosts Into Criminal Marketplace Inventory",
+      "summary": "Cybersecurity researchers have disclosed details of a sophisticated Python-based Windows malware framework called BraZetsu that fuels an underground marketplace commercializing access to compromised hosts. \"Unlike the standard infostealer model, BraZetsu is a comprehensive master toolkit that empowers Initial Access Brokers (IABs) by turning compromised systems into highly valuable commercial",
+      "url": "https://thehackernews.com/2026/09/brazetsu-malware-turns-compromised.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T15:26:47+00:00",
+      "published_ts": 1788449207.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "e64ee90a01e83d50",
       "title": "OpenAI confirms ChatGPT is down ahead of 'Astra' model launch",
       "summary": "ChatGPT and Codex are experiencing a major outage, with users reporting errors across nearly every major ChatGPT feature. [...]",
@@ -1778,21 +2460,75 @@
       "related_sources": []
     },
     {
-      "id": "7656a8cad897c032",
-      "title": "AI Gives Cybercriminals a Dangerous Time Advantage",
-      "summary": "Former cybercriminal Brett Johnson provides a look inside the mind of a threat actor and discusses where AI provides the most value for attackers.",
-      "url": "https://www.darkreading.com/threat-intelligence/ai-gives-cybercriminals-dangerous-time-advantage",
-      "source": "Dark Reading",
+      "id": "20a814a17e7a437e",
+      "title": "OpenLeash Adds a Human Check to Risky AI Agent Actions",
+      "summary": "The security tool intercepts potentially dangerous agent actions, blocking clear threats and requesting human approval when intent is uncertain. The post OpenLeash Adds a Human Check to Risky AI Agent Actions appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/openleash-adds-a-human-check-to-risky-ai-agent-actions/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T19:46:31+00:00",
-      "published_ts": 1788378391.0,
+      "published": "2026-09-02T19:30:00+00:00",
+      "published_ts": 1788377400.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0ee0545e52fc0fe8",
+      "title": "WordPress backup plugin flaw exposes millions of sites to takeover attacks",
+      "summary": "An SQL injection vulnerability in the All-in-One WP Migration and Backup plugin for WordPress could allow unauthenticated attackers to execute remote code and take control of affected websites. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-backup-plugin-flaw-exposes-millions-of-sites-to-takeover-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T19:28:46+00:00",
+      "published_ts": 1788377326.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ad28237eab338fdb",
+      "title": "Fake Software Installers Disable Windows Update and Weaken Microsoft Defender",
+      "summary": "An active malware campaign is using bogus software-download websites to impersonate trusted vendors and distribute malicious installers. \"The campaign has targeted users looking to download popular software and has resulted in compromises across multiple organizations and industries, primarily affecting China-based operations of multinational organizations and Chinese-speaking users,\" Microsoft",
+      "url": "https://thehackernews.com/2026/09/fake-software-installers-disable.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T16:41:06+00:00",
+      "published_ts": 1788367266.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [
+        "Windows"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1846,30 +2582,6 @@
       "related_sources": []
     },
     {
-      "id": "7b7845ed98c1c93c",
-      "title": "Hackers expose donor data from Russian fundraisers for Ukrainians, political prisoners",
-      "summary": "Hackers reportedly gained access to payment accounts used by two Russian fundraising projects supporting Ukrainians and political prisoners, exposing donor email addresses and limited payment card information.",
-      "url": "https://therecord.media/hackers-russia-fundraisers-ukraine",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T13:00:00+00:00",
-      "published_ts": 1788354000.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "c42a3d2165b9ed33",
       "title": "Rockwell Automation Patches Over a Dozen Vulnerabilities Across Products",
       "summary": "The industrial giant has released advisories for its RSLinx Classic, ArmorStart, ControlFLASH, FactoryTalk, and other products. The post Rockwell Automation Patches Over a Dozen Vulnerabilities Across Products appeared first on SecurityWeek .",
@@ -1887,32 +2599,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "83c8cfbf87a37268",
-      "title": "Microsoft Defender flags legitimate Google search links as malicious",
-      "summary": "Microsoft is investigating an issue causing the Defender for Office 365 security software to mistakenly block access to legitimate Google search links. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-defender-flags-legitimate-google-search-links-as-malicious/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T10:29:39+00:00",
-      "published_ts": 1788344979.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1960,30 +2646,6 @@
       "sectors": [],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "98d5f2a0a1a28322",
-      "title": "US charges Russian for infecting 80,000 freelancers with malware",
-      "summary": "A California federal grand jury has indicted a Russian national for his role in a phishing campaign that infected thousands of freelancers with TVRAT and DarkVNC malware. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/us-charges-russian-for-infecting-80-000-freelancers-with-malware/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T09:06:48+00:00",
-      "published_ts": 1788340008.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2182,74 +2844,24 @@
       "related_sources": []
     },
     {
-      "id": "3daa8ba29d1aa84b",
-      "title": "The Guardrails Debate: Security Researcher Changes His Mind",
-      "summary": "While guardrails are critical, as evidenced by recent high-profile incidents, defenders need help staying ahead of attackers who do not play by the rules.",
-      "url": "https://www.darkreading.com/cyber-risk/the-guardrails-debate-security-researcher-changes-his-mind",
+      "id": "7656a8cad897c032",
+      "title": "AI Gives Cybercriminals a Dangerous Time Advantage",
+      "summary": "Former cybercriminal Brett Johnson provides a look inside the mind of a threat actor and discusses where AI provides the most value for attackers.",
+      "url": "https://www.darkreading.com/threat-intelligence/ai-gives-cybercriminals-dangerous-time-advantage",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-31T20:09:24+00:00",
-      "published_ts": 1788206964.0,
+      "published": "2026-09-02T19:46:31+00:00",
+      "published_ts": 1788378391.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "56ccd32458a96c54",
-      "title": "AI Model Rules Are Not Security Controls",
-      "summary": "OpenAI's Hugging Face attack postmortem shows agents don't care about rules — they need strong controls.",
-      "url": "https://www.darkreading.com/cyber-risk/model-knowing-rules-is-not-security-control",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-31T17:34:26+00:00",
-      "published_ts": 1788197666.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5887042f7bd7abb0",
-      "title": "North Korean Job Fraud Expands Beyond IT Into Healthcare and Sales",
-      "summary": "Threat actors with ties to the Democratic People's Republic of Korea (aka DPRK or North Korea) have been observed seeking job opportunities beyond the information technology (IT) sector, with recent investigations identifying suspected workers employed in sales and marketing and the medical profession. The ongoing insider threat is part of what has been described as the IT worker scheme,",
-      "url": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-31T17:24:28+00:00",
-      "published_ts": 1788197068.0,
-      "cves": [],
-      "sectors": [
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2467,28 +3079,6 @@
       "category": "mixed",
       "published": "2026-08-31T21:08:46+00:00",
       "published_ts": 1788210526.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "050f3cd6ad8dbd75",
-      "title": "'TerminalFix' Campaign Weaponizes PowerShell for Enterprise Attacks",
-      "summary": "The ClickFix-style campaign features a sophisticated, multistage attack chain that includes reverse tunnels into victim organizations' networks.",
-      "url": "https://www.darkreading.com/threat-intelligence/terminalfix-campaign-weaponizes-powershell-enterprise-attacks",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-31T20:25:36+00:00",
-      "published_ts": 1788207936.0,
       "cves": [],
       "sectors": [],
       "regions": [
