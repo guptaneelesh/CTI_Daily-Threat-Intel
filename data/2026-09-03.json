@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-03T03:07:29.687199+00:00",
+  "generated_at": "2026-09-03T10:43:50.126873+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 100,
-    "critical": 1,
-    "high": 7,
-    "medium": 8,
-    "low": 84,
-    "actively_exploited": 11,
-    "with_cves": 19
+    "all": 106,
+    "critical": 2,
+    "high": 6,
+    "medium": 13,
+    "low": 85,
+    "actively_exploited": 12,
+    "with_cves": 22
   },
   "sources_used": [
     "BleepingComputer",
@@ -17,6 +17,7 @@
     "Check Point Research",
     "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
@@ -26,6 +27,54 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "f6db5b58d4e2daf2",
+      "title": "CVE-2026-9586: Sangoma Switchvox SQL Injection Vulnerability (Sangoma Switchvox)",
+      "summary": "CISA KEV — actively exploited. Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-09-05).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9586",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-09-02T00:00:00+00:00",
+      "published_ts": 1788307200.0,
+      "cves": [
+        "CVE-2026-9586"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "PostgreSQL"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 80,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/",
+          "title": "Hackers exploit Sangoma Switchvox flaw to deploy reverse shells",
+          "published": "2026-09-02T21:00:13+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+          "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+          "published": "2026-09-02T07:08:50+00:00"
+        },
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/sangoma-switchvox-rce-flaw/",
+          "title": "Sangoma Switchvox RCE Flaw Actively Exploited in Wild via Unauthenticated SQL Injection",
+          "published": "2026-09-03T09:04:13+00:00"
+        }
+      ]
+    },
     {
       "id": "7a6ed8c84e9a855f",
       "title": "CVE-2026-83548: SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability (SonicWall SMA1000 Appliances)",
@@ -45,7 +94,7 @@
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "North America"
       ],
       "products": [],
       "actively_exploited": true,
@@ -55,51 +104,15 @@
       "related_sources": [
         {
           "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
-          "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
-          "published": "2026-09-02T10:53:49+00:00"
-        }
-      ]
-    },
-    {
-      "id": "f6db5b58d4e2daf2",
-      "title": "CVE-2026-9586: Sangoma Switchvox SQL Injection Vulnerability (Sangoma Switchvox)",
-      "summary": "CISA KEV — actively exploited. Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-09-05).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9586",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-09-02T00:00:00+00:00",
-      "published_ts": 1788307200.0,
-      "cves": [
-        "CVE-2026-9586"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "PostgreSQL"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/",
-          "title": "Hackers exploit Sangoma Switchvox flaw to deploy reverse shells",
-          "published": "2026-09-02T21:00:13+00:00"
+          "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+          "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
+          "published": "2026-09-03T05:19:04+00:00"
         },
         {
           "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
-          "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
-          "published": "2026-09-02T07:08:50+00:00"
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+          "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
+          "published": "2026-09-02T10:53:49+00:00"
         }
       ]
     },
@@ -258,28 +271,60 @@
       "related_sources": []
     },
     {
-      "id": "71a54da4f496f7a6",
-      "title": "SonicWall warns of actively exploited SMA1000 zero-day flaws",
-      "summary": "SonicWall warned customers that threat actors are chaining two new SMA1000 zero-day vulnerabilities in remote code execution attacks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
+      "id": "af9c7f147efe03e5",
+      "title": "CISA Warns SonicWall SMA1000 Flaws Are Actively Exploited in Attacks",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two vulnerabilities affecting SonicWall SMA1000 appliances to its Known Exploited Vulnerabilities (KEV) Catalog, warning that these flaws are actively being exploited in real-world attacks. The vulnerabilities, identified as CVE-2026-83548 and CVE-2026-83549, affect SonicWall’s Secure Mobile Access (SMA1000) remote-access appliances. CISA Warns SonicWall SMA1000 Flaws CISA [&#8230;] The post CISA Warns SonicWall SMA1000 Flaws Are Actively Exploited in Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cisa-warns-sonicwall-sma1000-flaws-2/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-02T06:39:29+00:00",
-      "published_ts": 1788331169.0,
-      "cves": [],
+      "published": "2026-09-03T07:33:13+00:00",
+      "published_ts": 1788420793.0,
+      "cves": [
+        "CVE-2026-83548",
+        "CVE-2026-83549"
+      ],
       "sectors": [
         "Energy Resources & Industrials",
+        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global",
+        "North America"
       ],
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 50,
+      "priority_score": 65,
       "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "ed173d603c2fc57b",
+      "title": "Researcher Releases FalconFlank PoC Showing Privilege Escalation in CrowdStrike Falcon",
+      "summary": "The security researcher known as Chaotic Eclipse (aka INFINITE NIGHTMARE, MSNightmare, and Nightmare-Eclipse) has dropped a new zero-day dubbed FalconFlank, a privilege escalation flaw impacting Crowdstrike Falcon. \"FalconFlank is a 0day privilege escalation that abuses the office malicious macros remediation in CrowdStrike Falcon Sensor,\" the researcher said in a GitHub README file, adding",
+      "url": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T06:26:59+00:00",
+      "published_ts": 1788416819.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub",
+        "Office"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
@@ -309,21 +354,19 @@
       "related_sources": []
     },
     {
-      "id": "b3dedfb2485a7694",
-      "title": "SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks",
-      "summary": "The vulnerabilities CVE-2026-83549 and CVE-2026-83548 can be chained for unauthenticated remote code execution. The post SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/",
-      "source": "SecurityWeek",
+      "id": "71a54da4f496f7a6",
+      "title": "SonicWall warns of actively exploited SMA1000 zero-day flaws",
+      "summary": "SonicWall warned customers that threat actors are chaining two new SMA1000 zero-day vulnerabilities in remote code execution attacks. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T05:04:52+00:00",
-      "published_ts": 1788325492.0,
-      "cves": [
-        "CVE-2026-83548",
-        "CVE-2026-83549"
-      ],
+      "published": "2026-09-02T06:39:29+00:00",
+      "published_ts": 1788331169.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -332,28 +375,6 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "34ec03afda4c913b",
-      "title": "OpenAI’s Astra Crosses ‘Critical’ Cyber Threshold After Finding Zero-Days",
-      "summary": "The designation applies when a model can independently find and exploit zero-day vulnerabilities across many well-defended systems. The post OpenAI’s Astra Crosses ‘Critical’ Cyber Threshold After Finding Zero-Days appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/openais-astra-becomes-first-model-to-cross-critical-cybersecurity-threshold/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T10:38:13+00:00",
-      "published_ts": 1788345493.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -384,6 +405,57 @@
       "related_sources": []
     },
     {
+      "id": "34ec03afda4c913b",
+      "title": "OpenAI’s Astra Crosses ‘Critical’ Cyber Threshold After Finding Zero-Days",
+      "summary": "The designation applies when a model can independently find and exploit zero-day vulnerabilities across many well-defended systems. The post OpenAI’s Astra Crosses ‘Critical’ Cyber Threshold After Finding Zero-Days appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/openais-astra-becomes-first-model-to-cross-critical-cybersecurity-threshold/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T10:38:13+00:00",
+      "published_ts": 1788345493.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 35,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "08a2aeaed960d6cf",
+      "title": "Earth Berberoka-Linked Hackers Target Brazil With Linux Malware and SEO Poisoning",
+      "summary": "A Chinese-speaking cybercrime cluster linked to the Earth Berberoka threat actor has compromised Brazilian government and educational web servers to conduct large-scale SEO poisoning and online-gambling fraud. The operation has been active since mid-2025 and represents a notable shift in Brazil’s threat landscape. Rather than deploying the country’s more familiar banking malware, the attackers are [&#8230;] The post Earth Berberoka-Linked Hackers Target Brazil With Linux Malware and SEO Poisoning appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/earth-berberoka-hits-brazil/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T06:28:50+00:00",
+      "published_ts": 1788416930.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Global",
+        "Latin America"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "14211c6fc77091c1",
       "title": "Rockwell Automation Historian ME",
       "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could crash the device being accessed; an out-of-bounds write condition may allow remote code execution. The following versions of Rockwell Automation Historian ME are affected: Series B 5.202 (CVE-2025-12768, CVE-2026-12661) Series C 7.101 (CVE-2025-12768, CVE-2026-12661) CVSS Vendor Equipment Vulnerabilities v3 8 Rockwell Automation Rockwell Automation Historian ME Out-of-bounds Write, Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Chemical, Critical Manufacturing, Food and Agriculture, Healthcare and Public Health, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CVE-2025-12768 A security issue exists within FactoryTalk® Historian Machine Edition. An attacker with low-level authentication could exploit this vulnerability to achieveremote code execution on the affected device. View CVE Details Affected Products Rockwell Automation Historian ME Vendor: Rockwell Automation Product Version: Rockwell Automation Series B: 5.202, Rockwell Automation Series C: 7.101 Product Status: known_affected Remediations Mitigation Customers using the affected software, who are not able to upgrade to one of the corrected versions, should use Rockwell Automations security best practices found at https://support.rockwellautomation.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight. https://support.rockwe",
@@ -410,6 +482,89 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "1172b91cf8c75026",
+      "title": "Three HP Easy Start Flaws Let Attackers Gain Root Privileges on macOS",
+      "summary": "Three high-severity vulnerabilities in HP Easy Start for macOS could allow both local and network-positioned attackers to disrupt the printer software installation process and, under certain conditions, gain privileged access or modify files with root permissions. These vulnerabilities, tracked as CVE-2026-12554, CVE-2026-12555, and CVE-2026-12556, were discovered by researcher Nir Yehoshua from Cipher Security Labs during [&#8230;] The post Three HP Easy Start Flaws Let Attackers Gain Root Privileges on macOS appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/three-hp-easy-start-flaws/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T08:48:10+00:00",
+      "published_ts": 1788425290.0,
+      "cves": [
+        "CVE-2026-12554",
+        "CVE-2026-12555",
+        "CVE-2026-12556"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d1b86d2a16516f56",
+      "title": "Critical Cisco Nexus 9000 Flaw Lets Remote Attackers Execute Code as Root Without Authentication",
+      "summary": "Cisco has released security updates addressing a critical vulnerability in Nexus 9000 Series switches that could allow unauthenticated remote attackers to execute arbitrary code with root privileges. This vulnerability, tracked as CVE-2026-20212, has a CVSS score of 9.8 and affects Nexus 9000 platforms that are equipped with Cisco Silicon One ASICs. Cisco Nexus 9000 Flaw [&#8230;] The post Critical Cisco Nexus 9000 Flaw Lets Remote Attackers Execute Code as Root Without Authentication appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/critical-cisco-nexus-9000-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T08:30:03+00:00",
+      "published_ts": 1788424203.0,
+      "cves": [
+        "CVE-2026-20212"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "bf0298a932f05e51",
+      "title": "Spring Ring Campaign Uses Teams Vishing, PowerShell RAT and NTLM Relay Attacks",
+      "summary": "A coordinated social-engineering operation tracked as Spring Ring abused Microsoft Teams external accounts to impersonate corporate IT help desks, targeting more than 150 employees across at least 10 organizations between January and April 2026. The campaign demonstrates how attackers can turn trusted collaboration channels into an initial-access route for remote-control tools, custom malware, and attempted [&#8230;] The post Spring Ring Campaign Uses Teams Vishing, PowerShell RAT and NTLM Relay Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/spring-ring-campaign/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T07:16:23+00:00",
+      "published_ts": 1788419783.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -503,6 +658,89 @@
       "related_sources": []
     },
     {
+      "id": "ece177adbc96dfcd",
+      "title": "Over 3 Million WordPress Sites Affected by Migration Plugin Vulnerability",
+      "summary": "The high-severity SQL injection flaw (CVE-2026-19949) could allow unauthenticated attackers to achieve remote code execution. The post Over 3 Million WordPress Sites Affected by Migration Plugin Vulnerability appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/over-3-million-wordpress-sites-affected-by-migration-plugin-vulnerability/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T10:40:00+00:00",
+      "published_ts": 1788432000.0,
+      "cves": [
+        "CVE-2026-19949"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/wordpress-plugin-flaw-5/",
+          "title": "WordPress Plugin Flaw Lets Attackers Turn SQL Injection Into Complete Site Takeover",
+          "published": "2026-09-03T09:19:04+00:00"
+        }
+      ]
+    },
+    {
+      "id": "40237e1c6fa7f00e",
+      "title": "StreamRAT Abuses Android Accessibility, MediaProjection and HVNC for Full Device Takeover",
+      "summary": "StreamRAT, a newly identified Android banking trojan distributed through fake free-TV streaming advertisements on Meta and TikTok. The campaign, tracked as “Steamtv Esp.,” primarily targeted Spanish-speaking Android users and exposed an estimated 570,000 Meta users between June 11 and July 3, 2026. The operation highlights the continued effectiveness of piracy-themed social engineering. Victims who clicked [&#8230;] The post StreamRAT Abuses Android Accessibility, MediaProjection and HVNC for Full Device Takeover appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/streamrat-abuses-android/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T09:25:46+00:00",
+      "published_ts": 1788427546.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f6de807536201caa",
+      "title": "Ransomware Hackers Can Go From Network Access to Encryption in Less Than 24 Hours",
+      "summary": "The Gentlemen ransomware-as-a-service operation can move from confirmed access inside a victim network to encryption in under 24 hours. Demonstrating how rapidly modern affiliates can turn stolen credentials or exposed infrastructure into a full-scale business disruption. Counter Threat Unit researchers tracking the operation as GOLD SHERWOOD found that the Gentlemen affiliates follow a repeatable post-compromise [&#8230;] The post Ransomware Hackers Can Go From Network Access to Encryption in Less Than 24 Hours appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/rapid-ransomware-deployment/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T08:11:20+00:00",
+      "published_ts": 1788423080.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "ec0142881c119ea9",
       "title": "Impersonating IT support: how threat actors turn a remote session into enterprise-wide access",
       "summary": "Microsoft Threat Intelligence observed a human-operated intrusion campaign that abuses Microsoft Teams external collaboration to impersonate IT support, gain remote access, and deploy a Node.js-based implant. Learn how attackers move from social engineering to lateral movement using legitimate tools, and how Microsoft Defender helps detect and disrupt the activity. The post Impersonating IT support: how threat actors turn a remote session into enterprise-wide access appeared first on Microsoft Security Blog .",
@@ -578,30 +816,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1043fbbfc55957f4",
-      "title": "Sality botnet infrastructure dismantled in joint global takedown",
-      "summary": "International law enforcement agencies and private partners have seized Sality malware infrastructure in a joint action aiming to disrupt and take down the peer-to-peer (P2P) botnet. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/sality-botnet-infrastructure-dismantled-in-joint-global-takedown/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T08:00:43+00:00",
-      "published_ts": 1788336043.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -689,6 +903,55 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3333eb4d3b1922db",
+      "title": "Cisco Warns of Unpatched Secure Email Flaws, Patches Critical Switch Vulnerabilities",
+      "summary": "Publicly disclosed S/MIME flaws could expose encrypted email content, while critical IOS XR and Nexus bugs could enable remote code execution and authentication bypass. The post Cisco Warns of Unpatched Secure Email Flaws, Patches Critical Switch Vulnerabilities appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/cisco-warns-of-unpatched-secure-email-flaws-patches-critical-switch-vulnerabilities/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T10:30:00+00:00",
+      "published_ts": 1788431400.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "iOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "decab0f5ac1fd237",
+      "title": "GitSpawn Flaw Enables Arbitrary Code Execution in Claude Code, Codex, Cursor and Grok",
+      "summary": "A newly disclosed vulnerability class, named GitSpawn, reveals a serious weakness in AI coding agents that automatically execute Git commands to understand a developer’s project better. Researchers at Manifold Security discovered that several tools, including Claude Code, OpenAI Codex, Cursor, Grok Build, Goose, Hermes Agent, and Qwen Code, might inadvertently run commands controlled by an [&#8230;] The post GitSpawn Flaw Enables Arbitrary Code Execution in Claude Code, Codex, Cursor and Grok appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/gitspawn-flaw-enables-arbitrary-code-execution/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-03T05:32:32+00:00",
+      "published_ts": 1788413552.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -872,46 +1135,21 @@
       "related_sources": []
     },
     {
-      "id": "bcff569b86b01681",
-      "title": "GeoNetwork Fixes Unauthenticated RCE Chain Affecting Government Geoportal Backends",
-      "summary": "Two vulnerabilities in GeoNetwork can be chained to achieve unauthenticated remote code execution (RCE) on the open-source geospatial metadata catalog, which sits behind many government and agency geoportals. The project shipped fixes in versions 4.4.12 and 4.2.17 on July 8, 2026, and published the vulnerability details on August 31. GeoNetwork originated at the United Nations Food and",
-      "url": "https://thehackernews.com/2026/09/geonetwork-fixes-unauthenticated-rce.html",
-      "source": "The Hacker News",
+      "id": "1043fbbfc55957f4",
+      "title": "Sality botnet infrastructure dismantled in joint global takedown",
+      "summary": "International law enforcement agencies and private partners have seized Sality malware infrastructure in a joint action aiming to disrupt and take down the peer-to-peer (P2P) botnet. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/sality-botnet-infrastructure-dismantled-in-joint-global-takedown/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T09:18:02+00:00",
-      "published_ts": 1788340682.0,
+      "published": "2026-09-02T08:00:43+00:00",
+      "published_ts": 1788336043.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e1fcc659e7e1147a",
-      "title": "CrowdStrike Extends Endpoint Security to Stop Software Supply Chain Attacks",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-extends-endpoint-security-to-stop-supply-chain-attacks/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-02T04:00:00+00:00",
-      "published_ts": 1788321600.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -945,6 +1183,79 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2cb7659feb3c7dcf",
+      "title": "Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America",
+      "summary": "Explore how attackers targeting Latin American entities use AI for data exfiltration and how basic OpSec errors allow defenders to disrupt operations. The post Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-03T10:00:58+00:00",
+      "published_ts": 1788429658.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Latin America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "84dd7ca64cb14cd7",
+      "title": "Microsoft Teams, Outlook fail to launch on ARM-based Windows PCs",
+      "summary": "Microsoft is working to fix a known issue that causes crashes and launch failures for Microsoft Teams and New Outlook users after installing updates released since the August 2026 Patch Tuesday. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-outlook-fail-to-launch-on-arm-based-windows-pcs/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T08:55:25+00:00",
+      "published_ts": 1788425725.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Outlook",
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "408d07e9b4afb913",
+      "title": "Pegasus Zero-Click Spyware Exploit Infects Serbian Student Movement Member's iPhone",
+      "summary": "The iPhone belonging to a member of Serbia's student protest movement was infected with NSO Group's Pegasus spyware, according to new findings from the Citizen Lab in collaboration with the SHARE Foundation. \"Our analysis confirmed that an iMessage zero-click exploit was used to infect the device with NSO Group's Pegasus spyware,\" the Citizen Lab said. \"We found high-confidence indicators of",
+      "url": "https://thehackernews.com/2026/09/pegasus-zero-click-spyware-exploit.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-03T08:43:17+00:00",
+      "published_ts": 1788424997.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1216,197 +1527,22 @@
       "related_sources": []
     },
     {
-      "id": "83c8cfbf87a37268",
-      "title": "Microsoft Defender flags legitimate Google search links as malicious",
-      "summary": "Microsoft is investigating an issue causing the Defender for Office 365 security software to mistakenly block access to legitimate Google search links. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-defender-flags-legitimate-google-search-links-as-malicious/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T10:29:39+00:00",
-      "published_ts": 1788344979.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0f84bc893e91b78b",
-      "title": "Gaming the system: how a Chinese-speaking actor turned Brazilian government sites into an SEO weapon",
-      "summary": "Research by: Amit Yardeni Key Points Introduction Since mid-2025, Check Point Research has tracked a sustained campaign against Brazilian organizations. The tradecraft points to a Chinese-speaking cybercrime group connected to Earth Berberoka, an actor first&#160;documented&#160;targeting gambling sites across Asia. Once inside a victim, the group deploys a broad Linux toolkit: a custom downloader, several backdoors, [&#8230;] The post Gaming the system: how a Chinese-speaking actor turned Brazilian government sites into an SEO weapon appeared first on Check Point Research .",
-      "url": "https://research.checkpoint.com/2026/gaming-the-system-how-a-chinese-speaking-actor-turned-brazilian-government-sites-into-an-seo-weapon/",
-      "source": "Check Point Research",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-09-02T10:16:16+00:00",
-      "published_ts": 1788344176.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Latin America"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e7354c142712cd50",
-      "title": "An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation",
-      "summary": "Using autonomous AI agents, an attacker breached an enterprise network in a matter of hours. Understand how to address and defend against agentic attacks. The post An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-02T10:00:46+00:00",
-      "published_ts": 1788343246.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8de108597db8ac89",
-      "title": "Chrome and Firefox Updates Patch Dozens of Vulnerabilities",
-      "summary": "The browser refreshes fix multiple use-after-free, sandbox escape, and privilege escalation bugs. The post Chrome and Firefox Updates Patch Dozens of Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/chrome-and-firefox-updates-patch-dozens-of-vulnerabilities/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T09:12:29+00:00",
-      "published_ts": 1788340349.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Chrome",
-        "Firefox"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "98d5f2a0a1a28322",
-      "title": "US charges Russian for infecting 80,000 freelancers with malware",
-      "summary": "A California federal grand jury has indicted a Russian national for his role in a phishing campaign that infected thousands of freelancers with TVRAT and DarkVNC malware. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/us-charges-russian-for-infecting-80-000-freelancers-with-malware/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T09:06:48+00:00",
-      "published_ts": 1788340008.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f35ff6d7bb5cdb83",
-      "title": "23-Year-Old Sality P2P Botnet Disrupted",
-      "summary": "The shutdown operation involved peer list manipulation and Sality payload URL takedown. The post 23-Year-Old Sality P2P Botnet Disrupted appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/23-year-old-sality-p2p-botnet-disrupted/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T08:38:00+00:00",
-      "published_ts": 1788338280.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0b0c0786c88635c3",
-      "title": "Researchers Use Claude to Port Pre-Auth RCE Exploit From One PLC Model to Another",
-      "summary": "Forescout Research - Vedere Labs said it used Anthropic's Claude to port a working pre-authentication remote code execution (RCE) exploit from one WAGO programmable logic controller (PLC) to another, executing attacker-supplied ARM shellcode on live hardware. The exploit targets&nbsp;CVE-2021-31886, a stack-based buffer overflow in the Nucleus FTP server's handling of the&nbsp;USER&nbsp;command",
-      "url": "https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html",
+      "id": "bcff569b86b01681",
+      "title": "GeoNetwork Fixes Unauthenticated RCE Chain Affecting Government Geoportal Backends",
+      "summary": "Two vulnerabilities in GeoNetwork can be chained to achieve unauthenticated remote code execution (RCE) on the open-source geospatial metadata catalog, which sits behind many government and agency geoportals. The project shipped fixes in versions 4.4.12 and 4.2.17 on July 8, 2026, and published the vulnerability details on August 31. GeoNetwork originated at the United Nations Food and",
+      "url": "https://thehackernews.com/2026/09/geonetwork-fixes-unauthenticated-rce.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T07:47:13+00:00",
-      "published_ts": 1788335233.0,
-      "cves": [
-        "CVE-2021-31886"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "12bec93b8006d1c6",
-      "title": "Authorities Turn Sality's P2P Network Against Itself, Cutting Off New Malware Payloads",
-      "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the takedown of a long-standing peer-to-peer (P2P) botnet known as Sality as part of a coordinated law enforcement operation. The effort was undertaken on August 31, 2026, by authorities from the U.S., Bulgaria, Hungary, and Romania, in collaboration with private industry partners CrowdStrike and the Shadowserver Foundation. To that",
-      "url": "https://thehackernews.com/2026/09/authorities-turn-salitys-p2p-network.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-02T06:56:30+00:00",
-      "published_ts": 1788332190.0,
+      "published": "2026-09-02T09:18:02+00:00",
+      "published_ts": 1788340682.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Government & Public Services"
       ],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1416,39 +1552,19 @@
       "related_sources": []
     },
     {
-      "id": "536d9f47e85bb209",
-      "title": "CrowdStrike Delivers the Next Evolution of the Agentic SOC",
+      "id": "e1fcc659e7e1147a",
+      "title": "CrowdStrike Extends Endpoint Security to Stop Software Supply Chain Attacks",
       "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-delivers-next-evolution-of-agentic-soc/",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-extends-endpoint-security-to-stop-supply-chain-attacks/",
       "source": "CrowdStrike Blog",
       "source_trust": 5,
       "category": "threat",
       "published": "2026-09-02T04:00:00+00:00",
       "published_ts": 1788321600.0,
       "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
+      "sectors": [
+        "Technology, Media & Telecom"
       ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "55ccaf4989239d99",
-      "title": "CrowdStrike Announces Agentic Identity Provider",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-announces-agentic-identity-provider/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-02T04:00:00+00:00",
-      "published_ts": 1788321600.0,
-      "cves": [],
-      "sectors": [],
       "regions": [
         "Unspecified"
       ],
@@ -1772,56 +1888,6 @@
       "related_sources": []
     },
     {
-      "id": "de8b5f3a3548926d",
-      "title": "Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams",
-      "summary": "Learn how the Spring Ring campaign abuses Microsoft Teams and voice phishing to deploy malware and target enterprise domain controllers. The post Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-08-31T10:00:36+00:00",
-      "published_ts": 1788170436.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e324f987fde3ab8e",
-      "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets, Not Victims",
-      "summary": "The U.S. Department of Justice (DoJ) on Friday corrected a previously issued press statement that several of its agencies were victims of attacks carried out by Chinese threat actors, instead now pointing out that they were among those targeted. Last week, the DoJ said the National Aeronautics and Space Administration, Federal Reserve, Department of Energy, Department of Justice, Department",
-      "url": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-08-31T07:56:53+00:00",
-      "published_ts": 1788163013.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "ebc0d13af5999b9c",
       "title": "[Virtual Event] What Every Enterprise Should Know About Securing Cloud Assets in the Age of AI",
       "summary": "",
@@ -1976,23 +2042,219 @@
       "related_sources": []
     },
     {
-      "id": "05107959e391d4bd",
-      "title": "Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands",
-      "summary": "The U.S. Department of Justice (DoJ) has charged a Russian national, extradited from Cyprus on August 28, with using roughly 255 fake accounts on a freelance platform to send malware-laced Excel attachments to about 80,000 of its users in 2016 and 2017. Searzhudin Tamirlanovich Aktulaev, 40, was arrested in Cyprus in May 2025, the U.S. Attorney's Office for the Northern District of California",
-      "url": "https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html",
-      "source": "The Hacker News",
+      "id": "83c8cfbf87a37268",
+      "title": "Microsoft Defender flags legitimate Google search links as malicious",
+      "summary": "Microsoft is investigating an issue causing the Defender for Office 365 security software to mistakenly block access to legitimate Google search links. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-defender-flags-legitimate-google-search-links-as-malicious/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-02T09:10:23+00:00",
-      "published_ts": 1788340223.0,
+      "published": "2026-09-02T10:29:39+00:00",
+      "published_ts": 1788344979.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
       "products": [
         "Office"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0f84bc893e91b78b",
+      "title": "Gaming the system: how a Chinese-speaking actor turned Brazilian government sites into an SEO weapon",
+      "summary": "Research by: Amit Yardeni Key Points Introduction Since mid-2025, Check Point Research has tracked a sustained campaign against Brazilian organizations. The tradecraft points to a Chinese-speaking cybercrime group connected to Earth Berberoka, an actor first&#160;documented&#160;targeting gambling sites across Asia. Once inside a victim, the group deploys a broad Linux toolkit: a custom downloader, several backdoors, [&#8230;] The post Gaming the system: how a Chinese-speaking actor turned Brazilian government sites into an SEO weapon appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/gaming-the-system-how-a-chinese-speaking-actor-turned-brazilian-government-sites-into-an-seo-weapon/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-09-02T10:16:16+00:00",
+      "published_ts": 1788344176.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Latin America"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e7354c142712cd50",
+      "title": "An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation",
+      "summary": "Using autonomous AI agents, an attacker breached an enterprise network in a matter of hours. Understand how to address and defend against agentic attacks. The post An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-02T10:00:46+00:00",
+      "published_ts": 1788343246.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8de108597db8ac89",
+      "title": "Chrome and Firefox Updates Patch Dozens of Vulnerabilities",
+      "summary": "The browser refreshes fix multiple use-after-free, sandbox escape, and privilege escalation bugs. The post Chrome and Firefox Updates Patch Dozens of Vulnerabilities appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/chrome-and-firefox-updates-patch-dozens-of-vulnerabilities/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T09:12:29+00:00",
+      "published_ts": 1788340349.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Chrome",
+        "Firefox"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "98d5f2a0a1a28322",
+      "title": "US charges Russian for infecting 80,000 freelancers with malware",
+      "summary": "A California federal grand jury has indicted a Russian national for his role in a phishing campaign that infected thousands of freelancers with TVRAT and DarkVNC malware. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/us-charges-russian-for-infecting-80-000-freelancers-with-malware/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T09:06:48+00:00",
+      "published_ts": 1788340008.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0b0c0786c88635c3",
+      "title": "Researchers Use Claude to Port Pre-Auth RCE Exploit From One PLC Model to Another",
+      "summary": "Forescout Research - Vedere Labs said it used Anthropic's Claude to port a working pre-authentication remote code execution (RCE) exploit from one WAGO programmable logic controller (PLC) to another, executing attacker-supplied ARM shellcode on live hardware. The exploit targets&nbsp;CVE-2021-31886, a stack-based buffer overflow in the Nucleus FTP server's handling of the&nbsp;USER&nbsp;command",
+      "url": "https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T07:47:13+00:00",
+      "published_ts": 1788335233.0,
+      "cves": [
+        "CVE-2021-31886"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "12bec93b8006d1c6",
+      "title": "Authorities Turn Sality's P2P Network Against Itself, Cutting Off New Malware Payloads",
+      "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the takedown of a long-standing peer-to-peer (P2P) botnet known as Sality as part of a coordinated law enforcement operation. The effort was undertaken on August 31, 2026, by authorities from the U.S., Bulgaria, Hungary, and Romania, in collaboration with private industry partners CrowdStrike and the Shadowserver Foundation. To that",
+      "url": "https://thehackernews.com/2026/09/authorities-turn-salitys-p2p-network.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-02T06:56:30+00:00",
+      "published_ts": 1788332190.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "536d9f47e85bb209",
+      "title": "CrowdStrike Delivers the Next Evolution of the Agentic SOC",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-delivers-next-evolution-of-agentic-soc/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-02T04:00:00+00:00",
+      "published_ts": 1788321600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "55ccaf4989239d99",
+      "title": "CrowdStrike Announces Agentic Identity Provider",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-announces-agentic-identity-provider/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-02T04:00:00+00:00",
+      "published_ts": 1788321600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -2089,32 +2351,6 @@
         "North America"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3a3c2f31abae4003",
-      "title": "Why Even the Best Edge Security Still Misses High-Risk Sessions",
-      "summary": "Attackers can hide behind residential proxies, VPNs, and other infrastructure that makes malicious sessions appear legitimate to existing edge security controls. Spur explains how session enrichment adds data points that help organizations identify risky sessions and make stronger enforcement decisions. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/why-even-the-best-edge-security-still-misses-high-risk-sessions/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-01T14:01:11+00:00",
-      "published_ts": 1788271271.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Edge"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -2335,52 +2571,26 @@
       "related_sources": []
     },
     {
-      "id": "4f9f29e071fa1018",
-      "title": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs",
-      "summary": "A China-nexus cyber espionage actor tracked as Fire Ant has expanded a long-running campaign beyond VMware hypervisors to compromise Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts used to route, authenticate, and manage high-value networks. Sygnia, the incident response firm that investigated the intrusion, said the actor",
-      "url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+      "id": "05107959e391d4bd",
+      "title": "Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands",
+      "summary": "The U.S. Department of Justice (DoJ) has charged a Russian national, extradited from Cyprus on August 28, with using roughly 255 fake accounts on a freelance platform to send malware-laced Excel attachments to about 80,000 of its users in 2016 and 2017. Searzhudin Tamirlanovich Aktulaev, 40, was arrested in Cyprus in May 2025, the U.S. Attorney's Office for the Northern District of California",
+      "url": "https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-08-31T09:04:55+00:00",
-      "published_ts": 1788167095.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Cisco IOS",
-        "Linux",
-        "iOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "db2fe4e722a986dd",
-      "title": "Agents of Chaos: A New $100K Agentic Security Challenge",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/agents-of-chaos-immersive-ai-security-challenge/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-08-31T04:00:00+00:00",
-      "published_ts": 1788148800.0,
+      "published": "2026-09-02T09:10:23+00:00",
+      "published_ts": 1788340223.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Unspecified"
+        "North America"
       ],
-      "products": [],
+      "products": [
+        "Office"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2532,28 +2742,6 @@
       "sectors": [],
       "regions": [
         "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d6642681a7f535b0",
-      "title": "ValleyRAT masquerading as adware",
-      "summary": "Threat actors are distributing the ValleyRAT backdoor disguised as adware. We analyze the infection chain, from the malicious installer to the final payload.",
-      "url": "https://securelist.com/valleyrat-backdoor-adware/121175/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-08-31T10:00:21+00:00",
-      "published_ts": 1788170421.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
