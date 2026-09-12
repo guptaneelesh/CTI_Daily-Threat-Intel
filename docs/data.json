@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-12T03:17:42.249883+00:00",
+  "generated_at": "2026-09-12T10:09:42.479300+00:00",
   "lookback_hours": 72,
   "totals": {
     "all": 94,
     "critical": 0,
-    "high": 8,
-    "medium": 16,
-    "low": 70,
-    "actively_exploited": 17,
-    "with_cves": 19
+    "high": 11,
+    "medium": 12,
+    "low": 71,
+    "actively_exploited": 16,
+    "with_cves": 17
   },
   "sources_used": [
     "BleepingComputer",
@@ -17,6 +17,7 @@
     "Check Point Research",
     "Cisco Talos",
     "Dark Reading",
+    "GBHackers",
     "Microsoft Security Blog",
     "SecurityWeek",
     "The Hacker News",
@@ -24,6 +25,62 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "84154f00afce151c",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-85706 GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-11T12:00:00+00:00",
+      "published_ts": 1789128000.0,
+      "cves": [
+        "CVE-2026-85706"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [
+        "GitLab"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85706",
+          "title": "CVE-2026-85706: GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability (GitLab Community Edition and Enterprise Edition)",
+          "published": "2026-09-11T00:00:00+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+          "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+          "published": "2026-09-11T16:30:18+00:00"
+        },
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/",
+          "title": "GitLab urges users to patch max severity path traversal flaw",
+          "published": "2026-09-11T11:15:22+00:00"
+        },
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/cisa-warns-of-critical-gitlab-vulnerability-exploited-in-attacks/",
+          "title": "CISA Warns of Critical GitLab Vulnerability Exploited in Attacks",
+          "published": "2026-09-12T05:17:40+00:00"
+        }
+      ]
+    },
     {
       "id": "8335e319fc9c2c4d",
       "title": "CVE-2026-84869: ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability (ConnectWise ScreenConnect)",
@@ -160,17 +217,44 @@
       "related_sources": []
     },
     {
-      "id": "84154f00afce151c",
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-85706 GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "id": "c97c3f06f1062cba",
+      "title": "Hackers Weaponize AI Safety Guardrails to Hide Malware From LLM-Powered Security Scanners",
+      "summary": "Threat actors are adapting malware not only for conventional endpoint defenses and sandboxes, but also for large language model-powered tools increasingly used to triage suspicious code. ESET researchers linked the activity to Russia-aligned threat actor UAC-0099, which used the method during an attack against an organization in Ukraine. The group inserted a safety-sensitive, weapon-related request [&#8230;] The post Hackers Weaponize AI Safety Guardrails to Hide Malware From LLM-Powered Security Scanners appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/ai-safety-guardrails/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-11T10:51:16+00:00",
+      "published_ts": 1789123876.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "2a7a033fc30ec60e",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-67277 MikroTik RouterOS Missing Authentication for Critical Function Vulnerability CVE-2026-86060 MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of ",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/10/cisa-adds-two-known-exploited-vulnerabilities-catalog",
       "source": "CISA Alerts",
       "source_trust": 5,
       "category": "advisory",
-      "published": "2026-09-11T12:00:00+00:00",
-      "published_ts": 1789128000.0,
+      "published": "2026-09-10T12:00:00+00:00",
+      "published_ts": 1789041600.0,
       "cves": [
-        "CVE-2026-85706"
+        "CVE-2026-67277",
+        "CVE-2026-86060"
       ],
       "sectors": [
         "Energy Resources & Industrials",
@@ -178,35 +262,53 @@
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Europe",
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/cisa-adds-exploited-mikrotik-routeros-flaws/",
+          "title": "CISA Adds Exploited MikroTik RouterOS Flaws to Security Alert",
+          "published": "2026-09-11T11:57:40+00:00"
+        }
+      ]
+    },
+    {
+      "id": "debece5138bffc4e",
+      "title": "China-Linked Hackers Chain Chrome Zero-Day With Windows Kernel Flaw in Attacks",
+      "summary": "China-linked threat actors UTA0560 and JungleBamboo chained a Google Chrome zero-day with a Windows kernel privilege-escalation flaw in phishing campaigns targeting NGOs and other victims. Volexity documented the operations, detected on September 1, 2026, as using identical browser-to-kernel exploit components but ultimately installing separate espionage payloads: the GRIMWEDGE JScript backdoor and the LONGTALE credential-stealing Chrome [&#8230;] The post China-Linked Hackers Chain Chrome Zero-Day With Windows Kernel Flaw in Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/china-linked-hackers-chain-chrome-zero-day/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-12T08:04:47+00:00",
+      "published_ts": 1789200287.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
       ],
       "products": [
-        "GitLab"
+        "Chrome",
+        "Edge",
+        "Windows"
       ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 60,
       "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85706",
-          "title": "CVE-2026-85706: GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability (GitLab Community Edition and Enterprise Edition)",
-          "published": "2026-09-11T00:00:00+00:00"
-        },
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
-          "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
-          "published": "2026-09-11T16:30:18+00:00"
-        },
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/",
-          "title": "GitLab urges users to patch max severity path traversal flaw",
-          "published": "2026-09-11T11:15:22+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
       "id": "6ac18429349d2ffe",
@@ -261,52 +363,6 @@
       "related_sources": []
     },
     {
-      "id": "9b7f8a650c3d1488",
-      "title": "Conti ransomware gang member sentenced to 4 years in prison",
-      "summary": "A Ukrainian national has been sentenced to four years in prison for his role in Conti ransomware attacks between 2021 and 2022. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T06:48:37+00:00",
-      "published_ts": 1789109317.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "4b93501e94368ee7",
-      "title": "PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws",
-      "summary": "PaperCut on Thursday released a new security maintenance release that replaces all previously published emergency patches that were pushed to address two security flaws that have come under active exploitation. The software development company said PaperCut NG/MF versions 26.0.5, 25.0.13 and 24.1.10 are now available for customers to download. \"These are Regular Maintenance Releases (MR) that",
-      "url": "https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T06:46:18+00:00",
-      "published_ts": 1789109178.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "b8227aeddd2298e5",
       "title": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers",
       "summary": "Cisco Talos says two recently patched Secure Firewall Management Center (FMC) vulnerabilities have been exploited by three separate threat clusters linked to ransomware and state-sponsored attacks. [...]",
@@ -358,33 +414,6 @@
       "related_sources": []
     },
     {
-      "id": "1a547a4ffee54967",
-      "title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
-      "summary": "The security researcher known as Chaotic Eclipse has dropped a proof-of-concept (PoC) for yet another zero-day in Microsoft Defender. The vulnerability, codenamed ShieldCrash, is assessed to be a patch bypass for CVE-2026-69414 (CVSS score: 7.8), also called ShieldBreak, which the researcher reported last month. \"Microsoft has failed to properly patch ShieldBreak CVE-2026-69414,\" Chaotic",
-      "url": "https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-09T06:47:27+00:00",
-      "published_ts": 1788936447.0,
-      "cves": [
-        "CVE-2026-69414"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "085f3c684b6a246a",
       "title": "How Threat Actors Are Turning Trusted AI Platforms Into an Attack Surface",
       "summary": "Threat actors are abusing trusted AI platforms to host malicious content, poison search results, and trick users into installing malware. Huntress examines campaigns targeting AI users through weaponized Claude Artifacts, shared AI conversations, sponsored search results, and ClickFix-style lures. [...]",
@@ -407,27 +436,21 @@
       "related_sources": []
     },
     {
-      "id": "4176c2ab0cb04691",
-      "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-      "summary": "Google on Tuesday released updates to patch 230 security vulnerabilities, including one that has come under active exploitation in the wild. The medium-severity vulnerability, assigned the CVE identifier CVE-2026-87491 (CVSS score: N/A), has been described as an out-of-bounds bug in V8, Chrome's JavaScript and WebAssembly engine. \"Out-of-bounds write in V8 in Google Chrome prior to",
-      "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
-      "source": "The Hacker News",
+      "id": "9b7f8a650c3d1488",
+      "title": "Conti ransomware gang member sentenced to 4 years in prison",
+      "summary": "A Ukrainian national has been sentenced to four years in prison for his role in Conti ransomware attacks between 2021 and 2022. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-09T09:11:03+00:00",
-      "published_ts": 1788945063.0,
-      "cves": [
-        "CVE-2026-87491"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
+      "published": "2026-09-11T06:48:37+00:00",
+      "published_ts": 1789109317.0,
+      "cves": [],
+      "sectors": [],
       "regions": [
-        "Unspecified"
+        "Europe"
       ],
-      "products": [
-        "Chrome"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 40,
@@ -435,50 +458,21 @@
       "related_sources": []
     },
     {
-      "id": "01942eff5abbe670",
-      "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
-      "summary": "Microsoft on Tuesday broke Patch Tuesday records by addressing an earth-shattering 974 vulnerabilities spanning its software portfolio, including two flaws that it said have been actively exploited in the wild. These include 723 flaws in Windows, 111 in Office and Office 2016, 62 in SQL, and 22 in Developer Tools. Of these, over 110 shortcomings have been assigned a critical severity rating.",
-      "url": "https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html",
+      "id": "4b93501e94368ee7",
+      "title": "PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws",
+      "summary": "PaperCut on Thursday released a new security maintenance release that replaces all previously published emergency patches that were pushed to address two security flaws that have come under active exploitation. The software development company said PaperCut NG/MF versions 26.0.5, 25.0.13 and 24.1.10 are now available for customers to download. \"These are Regular Maintenance Releases (MR) that",
+      "url": "https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-09T04:41:29+00:00",
-      "published_ts": 1788928889.0,
+      "published": "2026-09-11T06:46:18+00:00",
+      "published_ts": 1789109178.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [
-        "Office",
-        "Windows"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "6db37b5bfeb8e049",
-      "title": "N-able N-central Pre-Auth RCE Flaw Exploited in the Wild",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a maximum-severity security flaw impacting N-able N-central to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by September 11, 2026. The vulnerability in question is CVE-2026-86218 (CVSS score: 10.0), which has been described as a",
-      "url": "https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-09T04:27:51+00:00",
-      "published_ts": 1788928071.0,
-      "cves": [
-        "CVE-2026-86218"
-      ],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
       ],
       "products": [],
       "actively_exploited": true,
@@ -516,6 +510,31 @@
       "related_sources": []
     },
     {
+      "id": "fe3315fd2b8a6996",
+      "title": "Threat Actors Use Claude AI Agents to Automate Cyberattacks and Steal Sensitive Data",
+      "summary": "Threat actors are increasingly using Claude-based AI workflows to automate cyberattacks, accelerate data theft, and reduce the technical expertise needed to run complex intrusions. Anthropic&#8217;s report details cyber espionage, financially motivated extortion, supply-chain compromise, and hacktivist activity disrupted between December 2025 and August 2026. Rather than using an AI chatbot only for occasional coding assistance, [&#8230;] The post Threat Actors Use Claude AI Agents to Automate Cyberattacks and Steal Sensitive Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/threat-actors-use-claude-ai-agents-to-automate-cyberattacks-and-steal-sensitive-data/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-12T08:40:16+00:00",
+      "published_ts": 1789202416.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "c5507489bc9482ce",
       "title": "Ukrainian hacker gets four years in US prison over Conti ransomware attacks",
       "summary": "A Ukrainian national was sentenced to four years in a U.S. prison for his role in the notorious Conti ransomware operation, which targeted more than 1,000 victims worldwide before shutting down in 2022.",
@@ -540,44 +559,6 @@
       "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
-    },
-    {
-      "id": "1d1315c92f6895c4",
-      "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
-      "summary": "Cisco has revealed that three distinct threat clusters linked to ransomware and state-sponsored attacks have been exploiting two recently patched Secure Firewall Management Center (FMC) vulnerabilities. The attacks leverage CVE-2026-20079 (CVSS score: 10.0), an authentication bypass vulnerability in the web interface of FMC software that could allow an unauthenticated, remote attacker to bypass",
-      "url": "https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T06:19:59+00:00",
-      "published_ts": 1789107599.0,
-      "cves": [
-        "CVE-2026-20079"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "Citrix",
-        "Fortinet"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
-          "title": "CISA Flags Exploited Cisco, Citrix, Fortinet Flaws, Sets Sept. 12 Federal Patch Deadline",
-          "published": "2026-09-10T10:36:46+00:00"
-        }
-      ]
     },
     {
       "id": "5ab04204a5d13d6e",
@@ -700,6 +681,106 @@
       "related_sources": []
     },
     {
+      "id": "c3f85aed12db08c0",
+      "title": "New Phishing Campaign Abuses Windows Mshta.exe to Steal Credentials and Secrets",
+      "summary": "A newly identified phishing campaign is abusing the legitimate Windows utility mshta.exe to execute malicious HTML Application (HTA) files, conduct system reconnaissance, and potentially deploy payloads designed to steal credentials and local secrets. Fortra’s Intelligence and Research Experts (FIRE) said the activity began in June and remains active, with operators regularly recompiling malware samples to [&#8230;] The post New Phishing Campaign Abuses Windows Mshta.exe to Steal Credentials and Secrets appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/new-phishing-campaign-abuses-windows-mshta-exe/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-12T06:16:51+00:00",
+      "published_ts": 1789193811.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ac49ed8073c28cfb",
+      "title": "OpenAI Agents Flood RubyGems With 2,000 Packages and Exploit Build System for RCE",
+      "summary": "A swarm of AI agents believed to be operated internally by OpenAI uploaded more than 2,000 malicious packages to RubyGems in May 2026, abusing the ecosystem’s documentation build process to execute code remotely and attempting to steal user API keys through a then-undisclosed server-side flaw. Researchers Spencer Kitts, Thomas Larsen, and Sydney Von Arx said [&#8230;] The post OpenAI Agents Flood RubyGems With 2,000 Packages and Exploit Build System for RCE appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/openai-agents-flood-rubygems-with-2000-packages/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-12T06:03:55+00:00",
+      "published_ts": 1789193035.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "18bfc1e7a192124d",
+      "title": "Researchers Uncover 10,000+ Malware Loaders Behind YouTube and SEO Poisoning Campaign",
+      "summary": "A long-running pay-per-install (PPI) operation that used YouTube gaming channels and SEO-poisoned software downloads to distribute malware at scale. The cluster, tracked as CL-CRI-1171, is linked to more than 10,000 distinct samples of a custom loader called OfferLoader, indicating a distribution pipeline far larger than the individual intrusions initially observed. Rather than relying on a [&#8230;] The post Researchers Uncover 10,000+ Malware Loaders Behind YouTube and SEO Poisoning Campaign appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/10000-malware-loaders/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-11T12:24:51+00:00",
+      "published_ts": 1789129491.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "68aaf983f5b627e8",
+      "title": "VLC Media Player Flaws Let Attackers Corrupt Memory and Leak Sensitive Data",
+      "summary": "Two security vulnerabilities in VLC media player versions 3.0.0 through 3.0.23 could allow attackers to exploit heap memory issues. These vulnerabilities can be triggered by processing a malicious PNG file or connecting to attacker-controlled RealRTSP servers. The more severe vulnerability, tracked as CVE-2026-56711, is a heap out-of-bounds write flaw with a CVSS v4 score of [&#8230;] The post VLC Media Player Flaws Let Attackers Corrupt Memory and Leak Sensitive Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/vlc-media-player-flaws/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-11T12:03:52+00:00",
+      "published_ts": 1789128232.0,
+      "cves": [
+        "CVE-2026-56711"
+      ],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "0389b7b741b61e52",
       "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
       "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-42016 JFrog Artifactory Incorrect Authorization Vulnerability&nbsp; CVE-2026-42018 JFrog Artifactory Improper Authentication Vulnerability&nbsp; CVE-2026-84869 ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnera",
@@ -727,6 +808,72 @@
       "priority_score": 20,
       "priority_label": "Low",
       "related_sources": []
+    },
+    {
+      "id": "58697e08de1b84cb",
+      "title": "cPanel Urges Users to Patch ConfigServer Firewall Remote Code Execution Flaw",
+      "summary": "A recently disclosed vulnerability in ConfigServer Security &#38; Firewall (CSF) could allow unauthenticated remote attackers to execute arbitrary commands through the product’s MESSENGER service. This vulnerability, tracked as CVE-2026-65638, affects CSF versions 14.00 through 16.29 and has been addressed in version 16.30 and later. CSF is widely used on Linux servers and in cPanel/WHM environments [&#8230;] The post cPanel Urges Users to Patch ConfigServer Firewall Remote Code Execution Flaw appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cpanel-urges-users-to-patch-configserver-firewall/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-11T11:20:03+00:00",
+      "published_ts": 1789125603.0,
+      "cves": [
+        "CVE-2026-65638"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1d1315c92f6895c4",
+      "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
+      "summary": "Cisco has revealed that three distinct threat clusters linked to ransomware and state-sponsored attacks have been exploiting two recently patched Secure Firewall Management Center (FMC) vulnerabilities. The attacks leverage CVE-2026-20079 (CVSS score: 10.0), an authentication bypass vulnerability in the web interface of FMC software that could allow an unauthenticated, remote attacker to bypass",
+      "url": "https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-11T06:19:59+00:00",
+      "published_ts": 1789107599.0,
+      "cves": [
+        "CVE-2026-20079"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Citrix",
+        "Fortinet"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
+          "title": "CISA Flags Exploited Cisco, Citrix, Fortinet Flaws, Sets Sept. 12 Federal Patch Deadline",
+          "published": "2026-09-10T10:36:46+00:00"
+        }
+      ]
     },
     {
       "id": "f74372c8b491635c",
@@ -1019,31 +1166,6 @@
       "related_sources": []
     },
     {
-      "id": "bfcb9c754543dde2",
-      "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
-      "summary": "Attackers have chained two flaws in JFrog Artifactory, the repository that software build pipelines pull from, to take administrator control of self-hosted servers and plant backdoors, cloud security company Wiz&nbsp;said in a report. Wiz saw the attacks between August 15 and September 8. JFrog had fixed both flaws before then, so only servers that had not been updated were open to them.",
-      "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T07:31:05+00:00",
-      "published_ts": 1789111865.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "7324ce430f80e255",
       "title": "AI-powered attack exploited PaperCut flaws to hack 395 organizations",
       "summary": "A threat actor, likely Russian-speaking, used hundreds of AI agents to develop and launch a global exploitation campaign targeting vulnerable PaperCut NG/MF servers. [...]",
@@ -1068,30 +1190,26 @@
       "related_sources": []
     },
     {
-      "id": "2a7a033fc30ec60e",
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-67277 MikroTik RouterOS Missing Authentication for Critical Function Vulnerability CVE-2026-86060 MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of ",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/09/10/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-09-10T12:00:00+00:00",
-      "published_ts": 1789041600.0,
-      "cves": [
-        "CVE-2026-67277",
-        "CVE-2026-86060"
-      ],
+      "id": "16fa0f17edab58a4",
+      "title": "OpenAI Agents Linked to RubyGems Campaign That Gained RCE on RubyDoc Servers",
+      "summary": "The \"major malicious attack\" that targeted RubyGems in May 2026 was the work of a swarm of OpenAI agents, according to a new report published by researchers Spencer Kitts, Thomas Larsen, and Sydney Von Arx. On May 12, Maciej Mensfeld, senior product manager for software supply chain security at Mend.io, disclosed details of a coordinated cyber attack that targeted the package manager for the",
+      "url": "https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-12T09:07:56+00:00",
+      "published_ts": 1789204076.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1314,26 +1432,24 @@
       "related_sources": []
     },
     {
-      "id": "f065162163b4cbf9",
-      "title": "Microsoft fixes Teams, Outlook launch failures on ARM Windows PCs",
-      "summary": "Microsoft has fixed a bug that prevented Teams and Outlook from launching on ARM-based Windows devices after installing updates released since the August 2026 Patch Tuesday. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-teams-outlook-launch-failures-on-arm-windows-pcs/",
-      "source": "BleepingComputer",
+      "id": "bfcb9c754543dde2",
+      "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
+      "summary": "Attackers have chained two flaws in JFrog Artifactory, the repository that software build pipelines pull from, to take administrator control of self-hosted servers and plant backdoors, cloud security company Wiz&nbsp;said in a report. Wiz saw the attacks between August 15 and September 8. JFrog had fixed both flaws before then, so only servers that had not been updated were open to them.",
+      "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-11T09:39:37+00:00",
-      "published_ts": 1789119577.0,
+      "published": "2026-09-11T07:31:05+00:00",
+      "published_ts": 1789111865.0,
       "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Outlook",
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1668,35 +1784,6 @@
       "related_sources": []
     },
     {
-      "id": "3d7b5a449ec3e6aa",
-      "title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
-      "summary": "SAP has released security updates to address multiple vulnerabilities, including a maximum-severity flaw in SAP Extended Passport (EPP) Processing that could have a severe impact on the confidentiality, integrity, and availability of the application The vulnerability, tracked as CVE-2026-44756 (CVSS score: 10.0), has been described as a case of memory corruption. Discovered and reported by SAP",
-      "url": "https://thehackernews.com/2026/09/sap-patches-cvss-100-kernel-flaw.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-09T06:25:45+00:00",
-      "published_ts": 1788935145.0,
-      "cves": [
-        "CVE-2026-44756"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "SAP"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "ebc0d13af5999b9c",
       "title": "[Virtual Event] What Every Enterprise Should Know About Securing Cloud Assets in the Age of AI",
       "summary": "",
@@ -1875,87 +1962,24 @@
       "related_sources": []
     },
     {
-      "id": "79bf0c81e91e31a4",
-      "title": "Surfshark Systems Targeted by Hackers",
-      "summary": "A misconfigured test server containing engineering material, including internal configurations, was accessed by threat actors. The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/surfshark-systems-targeted-by-hackers/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T09:41:03+00:00",
-      "published_ts": 1789119663.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "bb00c486622bc119",
-      "title": "Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasion",
-      "summary": "Anthropic reveals how criminal groups are increasingly targeting AI vendors' own infrastructure, including to steal a pre-release Claude model. The post Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasion appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/anthropic-says-russian-hackers-used-claude-ai-to-automate-malware-evasion/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T08:47:07+00:00",
-      "published_ts": 1789116427.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c0789bad06727286",
-      "title": "Trezor: 347,000 users targeted in phishing attacks after Brevo breach",
-      "summary": "Trezor has revealed that phishing attacks against its customers earlier this week targeted 347,000 email addresses and affected 2,500 users who clicked an embedded malicious link. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/",
+      "id": "f065162163b4cbf9",
+      "title": "Microsoft fixes Teams, Outlook launch failures on ARM Windows PCs",
+      "summary": "Microsoft has fixed a bug that prevented Teams and Outlook from launching on ARM-based Windows devices after installing updates released since the August 2026 Patch Tuesday. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-teams-outlook-launch-failures-on-arm-windows-pcs/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-11T07:55:15+00:00",
-      "published_ts": 1789113315.0,
+      "published": "2026-09-11T09:39:37+00:00",
+      "published_ts": 1789119577.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "779c41e8eccf2bdb",
-      "title": "China-Linked UNC3569 Exploited Sogou Input Method Flaw to Deploy GRAYRABBIT Backdoor",
-      "summary": "A China-linked hacking group exploited a flaw in Sogou Input Method, one of the most widely used tools for typing Chinese characters on Windows, to install a backdoor on victims' computers, security company Gen Digital said in&nbsp;research published Thursday. The attack started with a crafted link and ended with the attacker able to do anything the logged-in user could do. Tencent, which owns",
-      "url": "https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T07:14:09+00:00",
-      "published_ts": 1789110849.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
       "products": [
+        "Outlook",
         "Windows"
       ],
       "actively_exploited": false,
@@ -2213,15 +2237,15 @@
       "related_sources": []
     },
     {
-      "id": "9ed367c31f6069b2",
-      "title": "Untracked Nightmares: The Threats Hiding Behind Commodity Infrastructure",
-      "summary": "An investigation into how cybercriminals used YouTube gaming lures and SEO poisoning to deliver multi-payload malware to enterprise networks. The post Untracked Nightmares: The Threats Hiding Behind Commodity Infrastructure appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-09T10:00:55+00:00",
-      "published_ts": 1788948055.0,
+      "id": "79bf0c81e91e31a4",
+      "title": "Surfshark Systems Targeted by Hackers",
+      "summary": "A misconfigured test server containing engineering material, including internal configurations, was accessed by threat actors. The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/surfshark-systems-targeted-by-hackers/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-11T09:41:03+00:00",
+      "published_ts": 1789119663.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -2230,56 +2254,75 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "40b8c58df9ba8482",
-      "title": "U.S. Agencies Accuse China AI Firms of Distilling Claude, GPT, Gemini, and Grok",
-      "summary": "U.S. cybersecurity and intelligence agencies have accused China-based artificial intelligence (AI) companies of conducting \"systematic extraction\" of proprietary functionalities and capabilities of American frontier models through distillation attacks. The activity has been described as occurring at an industrial-scale and one that forms the \"core\" of their AI development strategy, according to",
-      "url": "https://thehackernews.com/2026/09/us-agencies-accuse-china-ai-firms-of.html",
-      "source": "The Hacker News",
+      "id": "bb00c486622bc119",
+      "title": "Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasion",
+      "summary": "Anthropic reveals how criminal groups are increasingly targeting AI vendors' own infrastructure, including to steal a pre-release Claude model. The post Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasion appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/anthropic-says-russian-hackers-used-claude-ai-to-automate-malware-evasion/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-09T09:32:26+00:00",
-      "published_ts": 1788946346.0,
+      "published": "2026-09-11T08:47:07+00:00",
+      "published_ts": 1789116427.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "411d689c0aafded4",
-      "title": "New cPanel Flaw Lets a Hosting Account With Mail Privileges Run Code as Root",
-      "summary": "cPanel has patched a flaw that it says lets a single hosting account take control of an entire server. An authenticated account holder with mail-related privileges can create files of their choosing on the server through EmailTrack and, from there, run code as the root user. cPanel published the&nbsp;advisory on September 8&nbsp;and says every supported version of cPanel and WHM is affected.",
-      "url": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-09T08:19:32+00:00",
-      "published_ts": 1788941972.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c0789bad06727286",
+      "title": "Trezor: 347,000 users targeted in phishing attacks after Brevo breach",
+      "summary": "Trezor has revealed that phishing attacks against its customers earlier this week targeted 347,000 email addresses and affected 2,500 users who clicked an embedded malicious link. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-11T07:55:15+00:00",
+      "published_ts": 1789113315.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "779c41e8eccf2bdb",
+      "title": "China-Linked UNC3569 Exploited Sogou Input Method Flaw to Deploy GRAYRABBIT Backdoor",
+      "summary": "A China-linked hacking group exploited a flaw in Sogou Input Method, one of the most widely used tools for typing Chinese characters on Windows, to install a backdoor on victims' computers, security company Gen Digital said in&nbsp;research published Thursday. The attack started with a crafted link and ended with the attacker able to do anything the logged-in user could do. Tencent, which owns",
+      "url": "https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-11T07:14:09+00:00",
+      "published_ts": 1789110849.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2387,30 +2430,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c0dca446f1120cf3",
-      "title": "F5 BIG-IP APM Malware Injects a PHP Web Shell Into Memory, Evading Disk Scans",
-      "summary": "Malware linked to break-ins at F5 BIG-IP Access Policy Manager appliances hides a PHP web shell in memory instead of in a file on disk, Sophos said in an&nbsp;analysis published on September 7. When Apache loads any of the three appliances' own PHP scripts, the malware adds the web shell to the copy held in memory, so a check of the file on disk can come back clean. Those three scripts are",
-      "url": "https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-09T07:36:49+00:00",
-      "published_ts": 1788939409.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Apache"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
