@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-14T17:46:35.453104+00:00",
+  "generated_at": "2026-09-14T21:32:11.544539+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 53,
+    "all": 48,
     "critical": 0,
-    "high": 3,
-    "medium": 3,
-    "low": 47,
-    "actively_exploited": 4,
-    "with_cves": 4
+    "high": 2,
+    "medium": 0,
+    "low": 46,
+    "actively_exploited": 2,
+    "with_cves": 5
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
     "Check Point Research",
     "Dark Reading",
-    "GBHackers",
     "SecurityWeek",
     "The Hacker News",
     "The Record",
@@ -22,64 +22,39 @@
   ],
   "items": [
     {
-      "id": "debece5138bffc4e",
-      "title": "China-Linked Hackers Chain Chrome Zero-Day With Windows Kernel Flaw in Attacks",
-      "summary": "China-linked threat actors UTA0560 and JungleBamboo chained a Google Chrome zero-day with a Windows kernel privilege-escalation flaw in phishing campaigns targeting NGOs and other victims. Volexity documented the operations, detected on September 1, 2026, as using identical browser-to-kernel exploit components but ultimately installing separate espionage payloads: the GRIMWEDGE JScript backdoor and the LONGTALE credential-stealing Chrome [&#8230;] The post China-Linked Hackers Chain Chrome Zero-Day With Windows Kernel Flaw in Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/china-linked-hackers-chain-chrome-zero-day/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-12T08:04:47+00:00",
-      "published_ts": 1789200287.0,
-      "cves": [],
+      "id": "97521093090cfd98",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-76461 Cisco Secure Email Gateway SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/14/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-14T12:00:00+00:00",
+      "published_ts": 1789387200.0,
+      "cves": [
+        "CVE-2026-76461"
+      ],
       "sectors": [
         "Energy Resources & Industrials",
+        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Asia-Pacific",
-        "Global"
+        "Unspecified"
       ],
-      "products": [
-        "Chrome",
-        "Edge",
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
+      "priority_score": 60,
       "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "fad9e6def9a4d392",
-      "title": "CISA Warns of Critical GitLab Vulnerability Exploited in Attacks",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical GitLab flaw, tracked as CVE-2026-85706, to its Known Exploited Vulnerabilities catalog after confirming it was exploited in attacks. The issue affects both GitLab Community Edition and Enterprise Edition and requires urgent mitigation, particularly for internet-accessible GitLab instances. CVE-2026-85706 is a path traversal vulnerability [&#8230;] The post CISA Warns of Critical GitLab Vulnerability Exploited in Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/cisa-warns-of-critical-gitlab-vulnerability-exploited-in-attacks/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-12T05:17:40+00:00",
-      "published_ts": 1789190260.0,
-      "cves": [
-        "CVE-2026-85706"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [
-        "GitLab"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 55,
-      "priority_label": "High",
-      "related_sources": []
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76461",
+          "title": "CVE-2026-76461: Cisco Secure Email Gateway SQL Injection Vulnerability (Cisco Secure Email Gateway)",
+          "published": "2026-09-14T00:00:00+00:00"
+        }
+      ]
     },
     {
       "id": "e3b2cadd4aa8f52a",
@@ -110,164 +85,57 @@
       "related_sources": []
     },
     {
-      "id": "6222123c0841adc0",
-      "title": "SpiderSilk Hunts External Threats With AI-Based Scanner",
-      "summary": "The Dubai-based threat detection startup uses artificial intelligence tools to scan billions of IP addresses to find exposed assets, leaked data, and zero-day vulnerabilities.",
-      "url": "https://www.darkreading.com/endpoint-security/spidersilk-hunts-external-threats-ai-scanning",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T18:27:28+00:00",
-      "published_ts": 1789151248.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 35,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "bfc61916d1256604",
-      "title": "Casbaneiro Banking Trojan Uses Distributed C2 Servers to Evade Detection and Target Bank Users",
-      "summary": "A Casbaneiro banking Trojan campaign targeting users across Latin America, using phishing lures, geofenced delivery infrastructure, and distributed command-and-control (C2) servers to obscure malicious activity. The operation, observed in August 2026, primarily targets victims in Argentina, Peru, Colombia, and Mexico through fake invoice and legal-notice emails carrying links to malicious PDF files. The campaign demonstrates [&#8230;] The post Casbaneiro Banking Trojan Uses Distributed C2 Servers to Evade Detection and Target Bank Users appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/casbaneiro-banking-trojan/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-14T05:56:58+00:00",
-      "published_ts": 1789365418.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Global",
-        "Latin America",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "a03aa4b71cb6f8bd",
-      "title": "AsyncRAT Malware Abuses AutoIt and PowerShell to Hide Inside Legitimate Windows Process",
-      "summary": "A five-stage AsyncRAT campaign that chains a socially engineered batch file, hidden PowerShell execution, AutoIt abuse and process injection to conceal a .NET remote-access trojan inside Microsoft’s legitimate charmap.exe process. The infection begins with a lure named “Right-click to open Invoice Details.bat”, which relies on user interaction to trigger execution. While the precise delivery method [&#8230;] The post AsyncRAT Malware Abuses AutoIt and PowerShell to Hide Inside Legitimate Windows Process appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/asyncrat-in-hides-windows-process/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-14T05:24:48+00:00",
-      "published_ts": 1789363488.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "52c2bc739f354f63",
-      "title": "Sandworm-Linked Cyclops Blink Returns With Network Scanning and Packet-Sniffing Capabilities",
-      "summary": "A newly identified Cyclops Blink variant has resurfaced on compromised Cisco Secure Firewall Management Center (FMC) appliances, adding active internal-network scanning and programmable packet-sniffing capabilities to an already mature modular implant. Assessed with high confidence that the activity has a Russian nexus, with a moderate-confidence link to IRON VIKING also tracked as Sandworm and Seashell [&#8230;] The post Sandworm-Linked Cyclops Blink Returns With Network Scanning and Packet-Sniffing Capabilities appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/cyclops-blink-variant/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-14T09:27:43+00:00",
-      "published_ts": 1789378063.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "dbe7e9f20b508106",
-      "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
-      "summary": "Threat actors linked to a China-aligned espionage group are exploiting a critical vulnerability (CVE-2026-51990) in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
+      "id": "bfce60eea8d84889",
+      "title": "Microsoft releases emergency Windows updates to fix RDS failures",
+      "summary": "Microsoft has released emergency out-of-band Windows updates to fix Remote Desktop Services failures caused by this month's security updates, along with Hyper-V and USB audio problems on some Windows versions. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-windows-updates-to-fix-rds-failures/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-13T14:26:32+00:00",
-      "published_ts": 1789309592.0,
-      "cves": [
-        "CVE-2026-51990"
-      ],
+      "published": "2026-09-14T20:52:18+00:00",
+      "published_ts": 1789419138.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Asia-Pacific",
-        "Global"
+        "Unspecified"
       ],
       "products": [
         "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
-      "related_sources": [
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/grayrabbit-backdoor/",
-          "title": "China-Linked Hackers Exploit Sogou One-Click RCE to Deploy GRAYRABBIT Backdoor",
-          "published": "2026-09-14T08:09:26+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
-      "id": "fe3315fd2b8a6996",
-      "title": "Threat Actors Use Claude AI Agents to Automate Cyberattacks and Steal Sensitive Data",
-      "summary": "Threat actors are increasingly using Claude-based AI workflows to automate cyberattacks, accelerate data theft, and reduce the technical expertise needed to run complex intrusions. Anthropic&#8217;s report details cyber espionage, financially motivated extortion, supply-chain compromise, and hacktivist activity disrupted between December 2025 and August 2026. Rather than using an AI chatbot only for occasional coding assistance, [&#8230;] The post Threat Actors Use Claude AI Agents to Automate Cyberattacks and Steal Sensitive Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/threat-actors-use-claude-ai-agents-to-automate-cyberattacks-and-steal-sensitive-data/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "341cbeda43d65096",
+      "title": "Twitch extension with 30K installs exposes users’ OAuth tokens",
+      "summary": "A browser extension called Twitch Enhanced Viewer | JeetBot, available in the official Chrome and Firefox stores, sends users' Twitch OAuth session tokens to a commercial bot service. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/twitch-extension-with-30k-installs-exposes-users-oauth-tokens/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-12T08:40:16+00:00",
-      "published_ts": 1789202416.0,
+      "published": "2026-09-14T19:03:51+00:00",
+      "published_ts": 1789412631.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Financial Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Global"
+        "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Chrome",
+        "Firefox"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -279,8 +147,8 @@
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-14T16:58:42+00:00",
-      "published_ts": 1789405122.0,
+      "published": "2026-09-14T18:02:13+00:00",
+      "published_ts": 1789408933.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -288,6 +156,31 @@
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8c21d1233f2a0e6a",
+      "title": "Telegram Desktop Flaw Lets Hidden JavaScript Exfiltrate Messages From HTML Exports",
+      "summary": "A flaw in Telegram Desktop let a bot's message plant hidden JavaScript inside chats that users exported to HTML files, security researchers at ExPatch said in a&nbsp;writeup&nbsp;published on September 12. In Telegram, the message looked ordinary, with a link button, and the script ran only when someone opened the export file in a web browser. It could then copy every message in that file to",
+      "url": "https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-14T17:58:16+00:00",
+      "published_ts": 1789408696.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -479,52 +372,78 @@
       "related_sources": []
     },
     {
-      "id": "c3f85aed12db08c0",
-      "title": "New Phishing Campaign Abuses Windows Mshta.exe to Steal Credentials and Secrets",
-      "summary": "A newly identified phishing campaign is abusing the legitimate Windows utility mshta.exe to execute malicious HTML Application (HTA) files, conduct system reconnaissance, and potentially deploy payloads designed to steal credentials and local secrets. Fortra’s Intelligence and Research Experts (FIRE) said the activity began in June and remains active, with operators regularly recompiling malware samples to [&#8230;] The post New Phishing Campaign Abuses Windows Mshta.exe to Steal Credentials and Secrets appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/new-phishing-campaign-abuses-windows-mshta-exe/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "39c7b229e7d525a7",
+      "title": "Japan's Digital Agency says VPN flaw exposed 246,000 personnel records",
+      "summary": "Japan's Digital Agency has discovered a data breach that may have exposed around 246,000 record rows containing personal information of government employees. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/japans-digital-agency-says-vpn-flaw-exposed-246-000-personnel-records/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-12T06:16:51+00:00",
-      "published_ts": 1789193811.0,
+      "published": "2026-09-14T20:36:02+00:00",
+      "published_ts": 1789418162.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Government & Public Services"
       ],
       "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ac49ed8073c28cfb",
-      "title": "OpenAI Agents Flood RubyGems With 2,000 Packages and Exploit Build System for RCE",
-      "summary": "A swarm of AI agents believed to be operated internally by OpenAI uploaded more than 2,000 malicious packages to RubyGems in May 2026, abusing the ecosystem’s documentation build process to execute code remotely and attempting to steal user API keys through a then-undisclosed server-side flaw. Researchers Spencer Kitts, Thomas Larsen, and Sydney Von Arx said [&#8230;] The post OpenAI Agents Flood RubyGems With 2,000 Packages and Exploit Build System for RCE appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/openai-agents-flood-rubygems-with-2000-packages/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-12T06:03:55+00:00",
-      "published_ts": 1789193035.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1929f32c5754d5d6",
+      "title": "Maximum Severity GitLab Flaw Puts Supply Chains at Risk",
+      "summary": "CVE-2026-85706 is a path traversal vulnerability with a 10 out of 10 CVSS score, affecting both GitLab Community Edition and Enterprise Edition instances.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-14T20:19:22+00:00",
+      "published_ts": 1789417162.0,
+      "cves": [
+        "CVE-2026-85706"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitLab"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "fd6cf07e632833b3",
+      "title": "3BB Attacker Used MeshCentral Backdoor for Root Access, Targeted Subscriber Credentials",
+      "summary": "An attacker was operating inside the network of 3BB, one of Thailand's largest broadband providers, and maintained remote control of internal machines using a legitimate management tool called MeshCentral, threat intelligence firm Hunt.io said. The company uncovered the intrusion by examining a server the attacker had left open on the internet, which held the attacker's own tools and a list of",
+      "url": "https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-14T18:01:49+00:00",
+      "published_ts": 1789408909.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -945,58 +864,6 @@
       "related_sources": []
     },
     {
-      "id": "e1dc19ded87a0839",
-      "title": "Hackers abused Claude to extract secrets from 1.8M Android apps",
-      "summary": "Anthropic says multiple threat groups, including the financially motivated and state-sponsored espionage groups linked to Russia and China, tried to abuse its Claude AI model for malicious purposes. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T20:19:09+00:00",
-      "published_ts": 1789157949.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "724102522e074bbc",
-      "title": "CISA Calls for More Guidance, Less Spin, as Cyber Outages Escalate",
-      "summary": "A new joint government advisory signals a regulatory shift, pressing organizations to adopt more transparent breach notification and incident response protocols.",
-      "url": "https://www.darkreading.com/cyber-risk/cisa-calls-for-more-guidance-less-spin-as-cyber-outages-escalate",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T18:44:03+00:00",
-      "published_ts": 1789152243.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "ebc0d13af5999b9c",
       "title": "[Virtual Event] What Every Enterprise Should Know About Securing Cloud Assets in the Age of AI",
       "summary": "",
@@ -1041,9 +908,79 @@
       "related_sources": []
     },
     {
+      "id": "18b5f1db462b21b1",
+      "title": "Homebrew 7.0.0 gets built-in GUI, better security controls",
+      "summary": "Homebrew package manager version 7.0.0 has been released with a built-in vulnerability scanner, stronger security controls, and the full release of its native BrewUI graphical interface. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-14T19:51:04+00:00",
+      "published_ts": 1789415464.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8b1f62dab25efe47",
+      "title": "Members of ‘Black Axe’ cybercriminal group extradited from South Africa",
+      "summary": "Prosecutors unsealed a 2021 indictment accusing the five men of conducting lucrative romance scams that stole thousands of dollars from more than 100 people.",
+      "url": "https://therecord.media/members-of-black-axe-cybercrime-group-extradited-south-africa",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-14T19:40:00+00:00",
+      "published_ts": 1789414800.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Africa",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e5828676e2f60f3b",
+      "title": "Hackers hijack HBO Max Reddit account to push malware in ClickFix ads",
+      "summary": "Hackers compromised HBO Max's official Reddit account and used it to push malicious ads that launched ClickFix attacks to infect Windows and macOS devices with information-stealing malware. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hbo-max-reddit-account-to-push-malware-in-clickfix-ads/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-14T18:34:16+00:00",
+      "published_ts": 1789410856.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows",
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "bddcd2fbb10fe033",
       "title": "Red Heron Exploits Gitea RCE to Compromise 13 Organizations Across Six Countries",
-      "summary": "A Chinese threat actor tracked as Red Heron has been attributed to the rapid exploitation of a recently disclosed security vulnerability in Gitea to compromise internet-facing instances as part of a multi-national campaign. \"Red Heron scanned 1,386 Gitea instances across seven countries and maintained a separate dataset of 477 Taiwan-based systems,\" Acronis Threat Research Unit (TRU) said in an",
+      "summary": "A suspected Chinese threat actor tracked as Red Heron has been attributed to the rapid exploitation of a recently disclosed security vulnerability in Gitea to compromise internet-facing instances as part of a multi-national campaign. \"Red Heron scanned 1,386 Gitea instances across seven countries and maintained a separate dataset of 477 Taiwan-based systems,\" Acronis Threat Research Unit (TRU)",
       "url": "https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html",
       "source": "The Hacker News",
       "source_trust": 4,
@@ -1224,76 +1161,28 @@
       "related_sources": []
     },
     {
-      "id": "f30056c415636b79",
-      "title": "Florida says motor vehicle data breach tied to credentials stolen from officer’s personal device",
-      "summary": "The Florida Department of Motor Vehicles confirmed a data breach claimed by the cybercrime group ShinyHunters, saying it originated with the theft of credentials stored on a police officer's personal device.",
-      "url": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T20:00:00+00:00",
-      "published_ts": 1789156800.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "42d640c9e4dfa788",
-      "title": "Florida confirms DMV database breached via stolen police account",
-      "summary": "The Florida Department of Highway Safety and Motor Vehicles (FLHSMV) has confirmed that its DAVID driver database suffered a data breach, saying the attackers gained access using credentials belonging to a police department employee. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
+      "id": "dbe7e9f20b508106",
+      "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
+      "summary": "Threat actors linked to a China-aligned espionage group are exploiting a critical vulnerability (CVE-2026-51990) in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-11T19:00:29+00:00",
-      "published_ts": 1789153229.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
+      "published": "2026-09-13T14:26:32+00:00",
+      "published_ts": 1789309592.0,
+      "cves": [
+        "CVE-2026-51990"
       ],
+      "sectors": [],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
-      "products": [],
+      "products": [
+        "Windows"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "24d5082a7a74e756",
-      "title": "Why AI Is So Good at Scamming Humans",
-      "summary": "Fred Heiding of Menlo Park Intelligence talks with the Dark Reading News Desk about his research on frontier models, and their ability to influence human behavior and create emotional dependency.",
-      "url": "https://www.darkreading.com/cyber-risk/ai-scamming-humans",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T18:14:06+00:00",
-      "published_ts": 1789150446.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1307,28 +1196,6 @@
       "category": "mixed",
       "published": "2026-09-13T13:27:25+00:00",
       "published_ts": 1789306045.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "865e5370a2f9595d",
-      "title": "Threat Actor Generates 1M Personalized Fraud Emails in 3 Days",
-      "summary": "Cybercriminals behind malicious email campaigns no longer have to compromise volume for credibility, or vice versa, thanks to AI.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-11T19:21:08+00:00",
-      "published_ts": 1789154468.0,
       "cves": [],
       "sectors": [],
       "regions": [
