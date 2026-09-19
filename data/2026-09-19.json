@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-19T03:18:38.032056+00:00",
+  "generated_at": "2026-09-19T10:22:53.553291+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 104,
+    "all": 109,
     "critical": 0,
     "high": 8,
-    "medium": 12,
-    "low": 84,
-    "actively_exploited": 18,
+    "medium": 15,
+    "low": 86,
+    "actively_exploited": 16,
     "with_cves": 21
   },
   "sources_used": [
@@ -18,6 +18,7 @@
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
@@ -101,17 +102,19 @@
       ],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Government & Public Services",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe"
+        "Europe",
+        "North America"
       ],
       "products": [
         "Linux"
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
+      "priority_score": 60,
       "priority_label": "High",
       "related_sources": [
         {
@@ -119,6 +122,12 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39682",
           "title": "CVE-2025-39682: Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability (Linux Kernel)",
           "published": "2026-09-18T00:00:00+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+          "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+          "published": "2026-09-19T06:24:10+00:00"
         }
       ]
     },
@@ -277,15 +286,15 @@
       "related_sources": []
     },
     {
-      "id": "37c46966c715678c",
-      "title": "Critical Orkes Conductor Vulnerability Exploited in Attacks",
-      "summary": "CVE-2026-58138 is an unauthenticated remote code execution vulnerability that attackers can exploit via inline workflow definitions. The post Critical Orkes Conductor Vulnerability Exploited in Attacks appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
-      "source": "SecurityWeek",
+      "id": "cafb6a3cf46ef725",
+      "title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
+      "summary": "A critical vulnerability impacting Orkes Conductor is being actively exploited in the wild, according to Fortinet. The vulnerability in question is CVE-2026-58138 (CVSS v3.1 score: 9.8/CVSS v4 score: 9.3), which relates to a case of unauthenticated remote code execution. \"Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote",
+      "url": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T08:42:18+00:00",
-      "published_ts": 1789720938.0,
+      "published": "2026-09-19T08:18:54+00:00",
+      "published_ts": 1789805934.0,
       "cves": [
         "CVE-2026-58138"
       ],
@@ -295,7 +304,40 @@
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Fortinet"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": [
+        {
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+          "title": "Critical Orkes Conductor Vulnerability Exploited in Attacks",
+          "published": "2026-09-18T08:42:18+00:00"
+        }
+      ]
+    },
+    {
+      "id": "61692ece4a809b41",
+      "title": "CrowdSec Says TanStack npm Attack Led to Copy of 170 Private GitHub Repositories",
+      "summary": "An attacker copied about 170 of CrowdSec's private GitHub repositories on May 22 using the account of an employee who had just left, CrowdSec&nbsp;said on September 18. The French security company had kept his GitHub access open. CrowdSec says his laptop was compromised in May's&nbsp;supply chain attack on TanStack, in which malicious versions of TanStack's npm packages stole credentials from",
+      "url": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-19T07:14:54+00:00",
+      "published_ts": 1789802094.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 45,
@@ -352,32 +394,6 @@
       "related_sources": []
     },
     {
-      "id": "ffbf0a446a1ea549",
-      "title": "Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells",
-      "summary": "Threat actors are exploiting a critical security flaw in WooCommerce Wholesale Lead Capture, a premium WordPress plugin that has more than 6,000 active installs. \"This vulnerability can be leveraged by unauthenticated attackers to upload arbitrary files, including PHP backdoors, and achieve remote code execution,\" Wordfence said. The WordPress security company said it has blocked over",
-      "url": "https://thehackernews.com/2026/09/attackers-exploit-woocommerce-wholesale.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-16T05:48:28+00:00",
-      "published_ts": 1789537708.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "WordPress"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "7276e0f282397c52",
       "title": "AI Threat Landscape Digest: July–August 2026",
       "summary": "The defining development of the period came not from attackers but from the AI labs themselves, whose models broke out of controlled evaluations and reached real systems. In the wild, the criminal and state use of AI continued to mature along the lines tracked in earlier editions: models now act as attack operators, an underground [&#8230;] The post AI Threat Landscape Digest: July–August 2026 appeared first on Check Point Research .",
@@ -417,31 +433,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "5a16fe7228d9b3d0",
-      "title": "NightEagle targets Russian companies",
-      "summary": "Kaspersky GERT experts have uncovered a new campaign by the NightEagle APT, featuring the GhostContainer backdoor and tools hosted on GitHub. The group is also exploiting vulnerabilities in Active Directory and RDP.",
-      "url": "https://securelist.com/tr/nighteagle-apt-ghostcontainer-and-tunneling/121323/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-09-16T10:00:11+00:00",
-      "published_ts": 1789552811.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Active Directory",
-        "GitHub"
-      ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 40,
@@ -497,26 +488,139 @@
       "related_sources": []
     },
     {
-      "id": "70cc75c79fa2426a",
-      "title": "Active Exploitation Attempts Target WSO2 API Manager JWT Bypass With Forged Admin Tokens",
-      "summary": "A critical security flaw in WSO2 API Manager has come under active exploitation in the wild, according to findings from watchTowr. The vulnerability, tracked as CVE-2026-5430 (CVSS score: 9.8/10.0), is a case of improper verification of a cryptographic signature that could result in account takeover. Hacktron Team has been credited with discovering and reporting the flaw. \"JWT authentication",
-      "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "6a6c945b137247df",
+      "title": "Feral Wolf Hackers Exploit Confluence and 1C to Deploy GenieLocker Ransomware",
+      "summary": "Feral Wolf has expanded its ransomware tradecraft by abusing exposed Atlassian Confluence servers and insecure 1C:Enterprise deployments to gain access to Russian corporate networks before deploying GenieLocker ransomware. The campaign, tracked from May through August 2026, targeted organizations in the retail, construction, manufacturing, and IT sectors. BI.ZONE DFIR investigators found that the threat actor combined [&#8230;] The post Feral Wolf Hackers Exploit Confluence and 1C to Deploy GenieLocker Ransomware appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/genielocker-ransomware/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-16T05:18:06+00:00",
-      "published_ts": 1789535886.0,
-      "cves": [
-        "CVE-2026-5430"
+      "published": "2026-09-18T13:02:07+00:00",
+      "published_ts": 1789736527.0,
+      "cves": [],
+      "sectors": [
+        "Consumer",
+        "Energy Resources & Industrials"
       ],
-      "sectors": [],
       "regions": [
-        "Unspecified"
+        "Global"
+      ],
+      "products": [
+        "Confluence"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d95e2ff8353dcd70",
+      "title": "New SETTRA Ransomware Uses MeshAgent RMM and BYOVD to Encrypt Windows Systems",
+      "summary": "A newly observed ransomware operation dubbed SETTRA is abusing the legitimate MeshAgent remote monitoring and management platform for persistence while using recovery-inhibition and defense-evasion techniques to maximize the impact of Windows encryption attacks. Huntress investigated two SETTRA incidents in July and September 2026, uncovering a repeatable operational pattern involving victim-specific ransomware binaries, Windows log clearing, [&#8230;] The post New SETTRA Ransomware Uses MeshAgent RMM and BYOVD to Encrypt Windows Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/settra-ransomware/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-18T12:50:05+00:00",
+      "published_ts": 1789735805.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "61eb469448ded441",
+      "title": "North Korean WaterPlum Hackers Target IT Professionals With Fake Job Interviews to Steal Crypto",
+      "summary": "North Korean threat actors, known as WaterPlum (also referred to as Contagious Interview), have infected at least 30,000 devices in over 100 countries by luring software developers and IT professionals into malicious job interviews. This campaign specifically targets web developers, freelancers, blockchain specialists, and cryptocurrency professionals. The attackers use persuasive recruitment messages that mimic legitimate [&#8230;] The post North Korean WaterPlum Hackers Target IT Professionals With Fake Job Interviews to Steal Crypto appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/north-korean-waterplum-hackers-target-it-professionals/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-19T09:01:16+00:00",
+      "published_ts": 1789808476.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
       ],
       "products": [],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 35,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "ba5026ecb70fd744",
+      "title": "PowerShell Malware Abuses Registry and DNS TXT Records to Deploy XMRig Crypto Miner",
+      "summary": "A sophisticated cryptomining campaign is employing multiple layers of obfuscation to conceal malicious PowerShell payloads and ultimately deploy an XMRig-based cryptocurrency miner. This obfuscation includes Windows Registry entries, DNS TXT records, PNG images, and WAV audio files. The infection was detected after repeated security alerts indicated suspicious PowerShell activity. The initial execution command launched PowerShell [&#8230;] The post PowerShell Malware Abuses Registry and DNS TXT Records to Deploy XMRig Crypto Miner appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/powershell-malware-abuses-registry-and-dns-txt-records/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-19T07:11:04+00:00",
+      "published_ts": 1789801864.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "ee67b600c2c4541a",
+      "title": "Google Chrome 153 Update Fixes 16 Security Flaws, Including Two Critical Vulnerabilities",
+      "summary": "Google has released Chrome version 153 to the Stable desktop channel, addressing 16 security vulnerabilities, including two critical-severity flaws affecting the Dawn graphics component and WebGL. This update is rolling out as version 153.0.8010.52 for Windows and macOS. Linux users will receive version 153.0.8010.52 over the coming days and weeks. Google Chrome 153 Update Fixes [&#8230;] The post Google Chrome 153 Update Fixes 16 Security Flaws, Including Two Critical Vulnerabilities appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/google-chrome-153-update-fixes-16-security-flaws/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-18T10:36:04+00:00",
+      "published_ts": 1789727764.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Chrome",
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -577,6 +681,32 @@
       "related_sources": []
     },
     {
+      "id": "12567f1fd78af943",
+      "title": "AI-Powered RatHat Android Trojan Steals Bank Credentials, PINs and MFA Codes",
+      "summary": "Researchers have identified a new Android banking Trojan called RatHat that utilizes artificial intelligence to automate device compromise and steal financial credentials, PINs, and one-time passcodes. Zimperium’s zLabs researchers analyzed this malware, which represents a significant evolution in Android threats. AI-Powered RatHat Android Trojan Unlike traditional malware that relies on fixed scripts, RatHat offers a [&#8230;] The post AI-Powered RatHat Android Trojan Steals Bank Credentials, PINs and MFA Codes appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/ai-powered-rathat-android-trojan-steals-bank-credentials/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-19T08:29:06+00:00",
+      "published_ts": 1789806546.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "c8a82626dd34c60e",
       "title": "In Other News: Ransomware Developer Sentenced, Plugin4Shell AI Attack, Critical SAP Flaw",
       "summary": "Noteworthy stories that might have slipped under the radar: Mandiant's 2026 AI risk report, PhantomRaven malware used by bug bounty hunter, WordPress plugin bug exploited. The post In Other News: Ransomware Developer Sentenced, Plugin4Shell AI Attack, Critical SAP Flaw appeared first on SecurityWeek .",
@@ -605,6 +735,28 @@
       "related_sources": []
     },
     {
+      "id": "db9e32363b6cf59e",
+      "title": "JADEPUFFER Evolves Agentic Ransomware to Target AI Models and Training Data",
+      "summary": "JADEPUFFER, the agentic threat actor first linked to an autonomous ransomware operation against exposed Langflow infrastructure, has evolved its tooling to target artificial intelligence models, training datasets, and vector data. Its latest payload, ENCFORGE, marks a shift from conventional database extortion toward destruction-focused attacks on high-value AI and machine-learning assets. The group’s ENCFORGE locker targets [&#8230;] The post JADEPUFFER Evolves Agentic Ransomware to Target AI Models and Training Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/agentic-ransomware-to-target-ai-models/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-18T12:23:02+00:00",
+      "published_ts": 1789734182.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "9e48e230bf235987",
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2025-39964 Linux Kernel Race Condition Vulnerability CVE-2026-53266 Linux Kernel Out-of-Bounds Write Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Cat",
@@ -624,6 +776,63 @@
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "dbc300114a7fa31f",
+      "title": "ChatGPT Phishing Campaign Targets Both Work and Personal OpenAI Accounts",
+      "summary": "Threat actors are increasingly impersonating OpenAI’s ChatGPT service in credential-phishing campaigns, exploiting the growing use of generative AI across both enterprise and personal environments. A recently observed campaign uses a fraudulent subscription-payment notice to lure victims into disclosing OpenAI account credentials and potentially payment details through a convincing fake ChatGPT login page. The lure claims [&#8230;] The post ChatGPT Phishing Campaign Targets Both Work and Personal OpenAI Accounts appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/chatgpt-phishing-campaign/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-18T10:22:51+00:00",
+      "published_ts": 1789726971.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "15db7ad3f0a5bdd3",
+      "title": "Linux Kernel Hit by 4 LPE Flaws Enabling Attackers to Gain Root Shell",
+      "summary": "Linux administrators are being urged to patch four newly disclosed local privilege escalation (LPE) vulnerabilities, collectively known as DirtyAH6, TUNderflow, PPPoEject, and DiagSpill. These vulnerabilities can allow attackers to corrupt kernel memory and gain root-level access on affected systems. The vulnerabilities are tracked under the following CVE identifiers: CVE-2026-80844, CVE-2026-81000, CVE-2026-68121, and CVE-2026-74469. They affect [&#8230;] The post Linux Kernel Hit by 4 LPE Flaws Enabling Attackers to Gain Root Shell appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/linux-kernel-hit-by-4-lpe-flaws/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-18T10:22:48+00:00",
+      "published_ts": 1789726968.0,
+      "cves": [
+        "CVE-2026-68121",
+        "CVE-2026-74469",
+        "CVE-2026-80844",
+        "CVE-2026-81000"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
       ],
       "products": [
         "Linux"
@@ -773,6 +982,54 @@
       "related_sources": []
     },
     {
+      "id": "b19baf8b12e622f0",
+      "title": "Google Gemini Broke Into Real Company Systems After Security Test Domain Mix-Up",
+      "summary": "Google's Gemini model has become the latest artificial intelligence (AI) system to access the internet and break into other companies during a cybersecurity evaluation. The development was first reported by The Wall Street Journal. The incidents occurred in May 2026 as part of a test run conducted by Israeli company Irregular. The evaluation partner was also involved in similar hacks disclosed",
+      "url": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-19T07:51:34+00:00",
+      "published_ts": 1789804294.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Middle East"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6fc1b2a6178e2886",
+      "title": "PeckBirdy C2 Traffic Seen Across Enterprise Networks While Hiding Behind Casino Domains",
+      "summary": "China-aligned threat actors are using low-quality Chinese-language casino and adult websites to conceal PeckBirdy command-and-control infrastructure, creating a detection challenge for enterprises that routinely deprioritize gambling-related domains. Infoblox telemetry found that just over 3% of enterprise customers resolved at least one PeckBirdy-related C2 domain, indicating that the infrastructure is appearing well beyond the campaign’s apparent [&#8230;] The post PeckBirdy C2 Traffic Seen Across Enterprise Networks While Hiding Behind Casino Domains appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/casino-domains-hide-c2-traffic/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-18T13:43:38+00:00",
+      "published_ts": 1789739018.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "fc0208642d39022b",
       "title": "Webinar: Which Google Workspace security controls actually matter?",
       "summary": "Fast-growing companies face countless recommendations for securing Google Workspace, but not every control provides the same value. This webinar examines real-world breaches to explore which security controls matter most, which may be overrated, and where lean security teams should focus their resources. [...]",
@@ -789,129 +1046,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7d0433940dfc9511",
-      "title": "NightmareStresser DDoS Service Disrupted in International Operation",
-      "summary": "Active since at least 2022, NightmareStresser was one of the longest-running DDoS-for-hire services in the world. The post NightmareStresser DDoS Service Disrupted in International Operation appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T10:12:33+00:00",
-      "published_ts": 1789726353.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ad7229094e12d290",
-      "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
-      "summary": "Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-18T10:00:36+00:00",
-      "published_ts": 1789725636.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "edd08c122423d48d",
-      "title": "New Check Point flaw lets hackers execute code with root privileges",
-      "summary": "Check Point Software has released security updates to address a critical vulnerability that can let attackers execute code with root privileges on management systems. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T09:34:33+00:00",
-      "published_ts": 1789724073.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b7b6c17027448db9",
-      "title": "Claimed Bug Bounty Hunter Likely Used LLM to Build PhantomRaven npm Stealer",
-      "summary": "A financially motivated threat actor has been linked to the development and distribution of a JavaScript (JS)-based information stealer known as PhantomRaven via the npm package registry. \"The developer likely wrote the malware using a large language model (LLM), an assessment made with high confidence based on verbose comments, placeholder code, and statistical token-analysis patterns,\"",
-      "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T09:18:03+00:00",
-      "published_ts": 1789723083.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "27c1bc1ac54acb9b",
-      "title": "North Korean hackers infect thousands of devices across 100 countries as part of ‘WaterPlum’ campaign",
-      "summary": "The FBI and Defense Department partnered with Japan’s National Police Agency and law enforcement agencies in Australia and Germany on a new advisory about “WaterPlum” — a group of cyber actors allegedly stealing cryptocurrency from job applicants by posing as AI or blockchain companies.",
-      "url": "https://therecord.media/north-korean-hackers-infect-thousands-of-devices-waterplum-scheme",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T04:00:00+00:00",
-      "published_ts": 1789704000.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Europe",
-        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1295,15 +1429,37 @@
       "related_sources": []
     },
     {
-      "id": "ce4da36b9fa651d8",
-      "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
-      "summary": "Hackers used a compromised API key to deploy a Cloudflare worker that injected malicious scripts. The post Brevo Supply Chain Attack Injects Malware Into 100,000 Websites appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
+      "id": "7d0433940dfc9511",
+      "title": "NightmareStresser DDoS Service Disrupted in International Operation",
+      "summary": "Active since at least 2022, NightmareStresser was one of the longest-running DDoS-for-hire services in the world. The post NightmareStresser DDoS Service Disrupted in International Operation appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T09:46:57+00:00",
-      "published_ts": 1789724817.0,
+      "published": "2026-09-18T10:12:33+00:00",
+      "published_ts": 1789726353.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ad7229094e12d290",
+      "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
+      "summary": "Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-18T10:00:36+00:00",
+      "published_ts": 1789725636.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
@@ -1319,17 +1475,18 @@
       "related_sources": []
     },
     {
-      "id": "0dbc3eb162cca7e9",
-      "title": "Microsoft fixes broken copy and paste for Excel 2016 users",
-      "summary": "Microsoft has fixed a known issue that causes copy-and-paste failures for some Excel users after installing the September 2026 KB5002914 security update. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/",
+      "id": "edd08c122423d48d",
+      "title": "New Check Point flaw lets hackers execute code with root privileges",
+      "summary": "Check Point Software has released security updates to address a critical vulnerability that can let attackers execute code with root privileges on management systems. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T07:35:31+00:00",
-      "published_ts": 1789716931.0,
+      "published": "2026-09-18T09:34:33+00:00",
+      "published_ts": 1789724073.0,
       "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -1343,18 +1500,19 @@
       "related_sources": []
     },
     {
-      "id": "8e1ad2fa583c597f",
-      "title": "Check Point, Kaspersky, Tanium Patch Product Vulnerabilities",
-      "summary": "Check Point Security Management and Log Servers are affected by a critical vulnerability that can allow remote code execution with root privileges. The post Check Point, Kaspersky, Tanium Patch Product Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/",
-      "source": "SecurityWeek",
+      "id": "b7b6c17027448db9",
+      "title": "Claimed Bug Bounty Hunter Likely Used LLM to Build PhantomRaven npm Stealer",
+      "summary": "A financially motivated threat actor has been linked to the development and distribution of a JavaScript (JS)-based information stealer known as PhantomRaven via the npm package registry. \"The developer likely wrote the malware using a large language model (LLM), an assessment made with high confidence based on verbose comments, placeholder code, and statistical token-analysis patterns,\"",
+      "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T07:14:04+00:00",
-      "published_ts": 1789715644.0,
+      "published": "2026-09-18T09:18:03+00:00",
+      "published_ts": 1789723083.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Financial Services"
       ],
       "regions": [
         "Unspecified"
@@ -1367,21 +1525,24 @@
       "related_sources": []
     },
     {
-      "id": "7156cc634520a8cb",
-      "title": "AI Agent Breaches Spanish Organization, Modifies Personal Data",
-      "summary": "AI-driven cyberattacks used to be exotic. Soon, it'll be odd if threat actors aren't using agents to do all of their bidding.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
-      "source": "Dark Reading",
+      "id": "27c1bc1ac54acb9b",
+      "title": "North Korean hackers infect thousands of devices across 100 countries as part of ‘WaterPlum’ campaign",
+      "summary": "The FBI and Defense Department partnered with Japan’s National Police Agency and law enforcement agencies in Australia and Germany on a new advisory about “WaterPlum” — a group of cyber actors allegedly stealing cryptocurrency from job applicants by posing as AI or blockchain companies.",
+      "url": "https://therecord.media/north-korean-hackers-infect-thousands-of-devices-waterplum-scheme",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T07:00:00+00:00",
-      "published_ts": 1789714800.0,
+      "published": "2026-09-18T04:00:00+00:00",
+      "published_ts": 1789704000.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Financial Services",
+        "Government & Public Services"
       ],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific",
+        "Europe",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1714,30 +1875,6 @@
       "related_sources": []
     },
     {
-      "id": "2bd2fb9788501c07",
-      "title": "Securing the unpatchable in an age of AI-driven vulnerabilities",
-      "summary": "Advances in AI technology will continue to identify vulnerabilities that in some circumstances are difficult, or effectively impossible, to patch. Appropriate network segmentation, rigorous visibility, and the deployment of NGFW/IPS combinations can provide a powerful compensatory layer.",
-      "url": "https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-16T10:00:36+00:00",
-      "published_ts": 1789552836.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "ffd1e27eb209a3d4",
       "title": "[Virtual Event] Cybersecurity Outlook 2027",
       "summary": "",
@@ -1895,17 +2032,19 @@
       "related_sources": []
     },
     {
-      "id": "fbcac1fc6984b2b8",
-      "title": "MIND Secures $72 Million for AI-Powered DLP",
-      "summary": "The company will use the funding to accelerate platform development and expand its presence in key enterprise markets. The post MIND Secures $72 Million for AI-Powered DLP appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/mind-secures-72-million-for-ai-powered-dlp/",
+      "id": "ce4da36b9fa651d8",
+      "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
+      "summary": "Hackers used a compromised API key to deploy a Cloudflare worker that injected malicious scripts. The post Brevo Supply Chain Attack Injects Malware Into 100,000 Websites appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T07:25:27+00:00",
-      "published_ts": 1789716327.0,
+      "published": "2026-09-18T09:46:57+00:00",
+      "published_ts": 1789724817.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1917,23 +2056,71 @@
       "related_sources": []
     },
     {
-      "id": "d8e87feaadf7b5ba",
-      "title": "RatHat Android Malware Abuses ADB to Retain Shell Access After Uninstall",
-      "summary": "Cybersecurity researchers have flagged a new Android malware called RatHat that's assessed to be operated by China-based threat actors and features an artificial intelligence (AI)-powered system to navigate and control compromised devices. \"Distributed primarily via targeted smishing (SMS/text phishing) and malvertising campaigns leading to deceptive third-party download portals, RatHat uses",
-      "url": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
-      "source": "The Hacker News",
+      "id": "0dbc3eb162cca7e9",
+      "title": "Microsoft fixes broken copy and paste for Excel 2016 users",
+      "summary": "Microsoft has fixed a known issue that causes copy-and-paste failures for some Excel users after installing the September 2026 KB5002914 security update. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T06:17:25+00:00",
-      "published_ts": 1789712245.0,
+      "published": "2026-09-18T07:35:31+00:00",
+      "published_ts": 1789716931.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
-        "Asia-Pacific"
+        "Unspecified"
       ],
-      "products": [
-        "Android"
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8e1ad2fa583c597f",
+      "title": "Check Point, Kaspersky, Tanium Patch Product Vulnerabilities",
+      "summary": "Check Point Security Management and Log Servers are affected by a critical vulnerability that can allow remote code execution with root privileges. The post Check Point, Kaspersky, Tanium Patch Product Vulnerabilities appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-18T07:14:04+00:00",
+      "published_ts": 1789715644.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7156cc634520a8cb",
+      "title": "AI Agent Breaches Spanish Organization, Modifies Personal Data",
+      "summary": "AI-driven cyberattacks used to be exotic. Soon, it'll be odd if threat actors aren't using agents to do all of their bidding.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-18T07:00:00+00:00",
+      "published_ts": 1789714800.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -2406,39 +2593,15 @@
       "related_sources": []
     },
     {
-      "id": "9df8f9c70a85c398",
-      "title": "Atomic macOS (AMOS) Stealer Activity",
-      "summary": "Modern macOS malware uses deceptive setup guides to steal credentials and sensitive user data. Learn how to identify and block these threats. The post Atomic macOS (AMOS) Stealer Activity appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-16T10:00:06+00:00",
-      "published_ts": 1789552806.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4357c07c5736e2ec",
-      "title": "CrowdStrike Accelerates Real-Time Data Classification with On-Device AI",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-accelerates-real-time-data-classification-with-on-device-ai/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-16T05:00:00+00:00",
-      "published_ts": 1789534800.0,
+      "id": "fbcac1fc6984b2b8",
+      "title": "MIND Secures $72 Million for AI-Powered DLP",
+      "summary": "The company will use the funding to accelerate platform development and expand its presence in key enterprise markets. The post MIND Secures $72 Million for AI-Powered DLP appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/mind-secures-72-million-for-ai-powered-dlp/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-18T07:25:27+00:00",
+      "published_ts": 1789716327.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -2447,7 +2610,31 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d8e87feaadf7b5ba",
+      "title": "RatHat Android Malware Abuses ADB to Retain Shell Access After Uninstall",
+      "summary": "Cybersecurity researchers have flagged a new Android malware called RatHat that's assessed to be operated by China-based threat actors and features an artificial intelligence (AI)-powered system to navigate and control compromised devices. \"Distributed primarily via targeted smishing (SMS/text phishing) and malvertising campaigns leading to deceptive third-party download portals, RatHat uses",
+      "url": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-18T06:17:25+00:00",
+      "published_ts": 1789712245.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2547,7 +2734,7 @@
     {
       "id": "d3a4ddfb1209fccb",
       "title": "U.S. Seizes NightmareStresser Domains Linked to Hundreds of Thousands of DDoS Attacks",
-      "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the court-authorized seizure of internet domains associated with a distributed denial-of-service (DDoS)-for-hire service known as NightmareStresser. The domains in question are: nightmare-stresser[.]com and nightmarestresser[.]org. Visitors to the site are now greeted by a seizure banner that states - \"This domain has been seized by the",
+      "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the court-authorized seizure of internet domains associated with a distributed denial-of-service (DDoS)-for-hire service known as NightmareStresser. The domains in question are: nightmare-stresser[.]com and nightmarestresser[.]org. Visitors to the sites are now greeted by a seizure banner that states - \"This domain has been seized by",
       "url": "https://thehackernews.com/2026/09/us-seizes-nightmarestresser-domains.html",
       "source": "The Hacker News",
       "source_trust": 4,
@@ -2603,28 +2790,6 @@
       "regions": [
         "Europe",
         "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "de0ffb256c93f5f7",
-      "title": "Agents at Large | Tracing Illicit OpenAI Agent Activity on Hugging Face",
-      "summary": "Two Hugging Face accounts reveal that OpenAI's agents staged relay code, internal probes and ChatGPT account registration beyond the published timeline.",
-      "url": "https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/",
-      "source": "SentinelOne Labs",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-09-16T10:00:34+00:00",
-      "published_ts": 1789552834.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
