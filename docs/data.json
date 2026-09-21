@@ -1,27 +1,54 @@
 {
-  "generated_at": "2026-09-21T12:05:37.276210+00:00",
+  "generated_at": "2026-09-21T21:43:40.221499+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 56,
+    "all": 62,
     "critical": 0,
-    "high": 2,
-    "medium": 14,
-    "low": 40,
-    "actively_exploited": 10,
-    "with_cves": 5
+    "high": 6,
+    "medium": 11,
+    "low": 45,
+    "actively_exploited": 13,
+    "with_cves": 4
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
     "Dark Reading",
     "GBHackers",
     "Securelist (Kaspersky)",
     "SecurityWeek",
-    "SentinelOne Labs",
     "The Hacker News",
     "The Record",
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "6d6919faaa2fcdc8",
+      "title": "NightEagle Uses BlueKeep and DCSync to Move Toward Active Directory Domain Controllers",
+      "summary": "NightEagle, an espionage-focused threat group also tracked as APT-Q-95, has expanded its operations from Asian targets to Russian organizations, using a layered intrusion chain that culminates in attempts to compromise Active Directory domain controllers. The campaign illustrates a familiar but dangerous enterprise compromise pattern: attackers do not need a novel zero-day exploit when exposed remote [&#8230;] The post NightEagle Uses BlueKeep and DCSync to Move Toward Active Directory Domain Controllers appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/nighteagle-attack-chain/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-21T13:27:36+00:00",
+      "published_ts": 1789997256.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [
+        "Active Directory"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
     {
       "id": "eff04a51adee4565",
       "title": "BigDiskBuster Windows Defender DoS Vulnerability Blocks Platform and Signature Updates",
@@ -51,6 +78,40 @@
       "related_sources": []
     },
     {
+      "id": "70cc9ff898c7774d",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-7273 Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition t",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/21/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-21T12:00:00+00:00",
+      "published_ts": 1789992000.0,
+      "cves": [
+        "CVE-2026-7273"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7273",
+          "title": "CVE-2026-7273: Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability (Zyxel GS1900 Series Switches)",
+          "published": "2026-09-21T00:00:00+00:00"
+        }
+      ]
+    },
+    {
       "id": "c848fa5456937fca",
       "title": "Hackers Weaponize Terraform Lock Files to Infect DevOps Engineers With macOS Backdoors",
       "summary": "North Korea-linked threat actor TraderTraitor has expanded its developer-focused intrusion activity beyond cryptocurrency targets, using weaponized Terraform lock files in fake job-interview repositories to infect DevOps engineers with macOS backdoors. SentinelOne identified an Indian IT services provider compromised with the same FLATROOF and ROOFDECK implants previously linked to the April 2026 KelpDAO-LayerZero attack. The campaign [&#8230;] The post Hackers Weaponize Terraform Lock Files to Infect DevOps Engineers With macOS Backdoors appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
@@ -75,6 +136,79 @@
       "cvss": null,
       "priority_score": 55,
       "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "6feeb2639e2cc611",
+      "title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
+      "summary": "A browser. A plugin. A package. A login screen. Normal stuff. That is basically the problem this week. The trouble keeps showing up inside things people already trust: code that takes a bad turn, old payloads coming back, exposed systems, weak checks, fake fixes, and attack paths that look almost too easy. Even the research side is getting messy, with more findings, more automation, and not",
+      "url": "https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:24:13+00:00",
+      "published_ts": 1790000653.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "a165ab58d32880f1",
+      "title": "ShinyHunters cybercrime gang takes over Cl0p ransomware site, demands extortion payment",
+      "summary": "The ShinyHunters extortion group hijacked the dark web leak site of the prolific Cl0p ransomware gang, according to material posted on the site over the weekend.",
+      "url": "https://therecord.media/shinyhunters-clop-cyberattack-website",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:00:00+00:00",
+      "published_ts": 1789999200.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "12b02459194ee40e",
+      "title": "RatHat Android Trojan Uses AI for Automation",
+      "summary": "The malware relies on AI for real-time device navigation and control, increasing adaptability and evasion. The post RatHat Android Trojan Uses AI for Automation appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/rathat-android-trojan-uses-ai-for-automation/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T12:51:41+00:00",
+      "published_ts": 1789995101.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
@@ -107,55 +241,26 @@
       "related_sources": []
     },
     {
-      "id": "210d1df6c7d547c5",
-      "title": "Public Exploits Released for Four Linux Kernel Flaws That Enable Local Root",
-      "summary": "A security researcher has released working exploit code for four Linux kernel flaws that each let a local user gain root, the highest level of access on a machine. Kernel maintainers have fixed all four over the past few weeks, so a system running an up-to-date kernel is not affected. But the exploit code is now public, and any machine still running an older kernel should be updated. The flaws",
-      "url": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
-      "source": "The Hacker News",
+      "id": "fd95bbe744cf07f1",
+      "title": "WordPress Click2Shell flaw lets hackers execute PHP on the server",
+      "summary": "Technical details and a proof-of-concept exploit have been published for a new WordPress cross-site request forgery (CSRF) vulnerability dubbed 'Click2Shell' that affects the platform's Core component. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-click2shell-flaw-lets-hackers-execute-php-on-the-server/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T18:02:24+00:00",
-      "published_ts": 1789754544.0,
+      "published": "2026-09-21T18:23:11+00:00",
+      "published_ts": 1790014991.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "Linux"
+        "WordPress"
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "94091ca96c3cae99",
-      "title": "Transparent Tribe Deploys New Rust Backdoor Using Private GitHub Repositories for C2",
-      "summary": "The Pakistan-aligned threat group tracked as Transparent Tribe (aka APT36 and Earth Karkaddan) has been attributed to a fresh set of cyber attacks targeting government and defense entities in India and Afghanistan. The attacks, per Zscaler ThreatLabz, involve the use of previously undocumented tools called RUSTYSHADE, RUSTYMOVE, PSNATCH, and BASHNATCH. The activity has been codenamed Operation",
-      "url": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T15:24:16+00:00",
-      "published_ts": 1789745056.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
+      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -257,61 +362,6 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "c0919e18f9e584cf",
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "summary": "The authentication bypass flaw CVE-2026-76460 impacts Cisco's Identity Services Engine (ISE) and received a maximum 10 out of 10 CVSS score.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T19:26:47+00:00",
-      "published_ts": 1789759607.0,
-      "cves": [
-        "CVE-2026-76460"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "d3427398f3f5a855",
-      "title": "New Remus Infostealer Steals OpenAI and Anthropic API Tokens, Passwords and Crypto Wallets",
-      "summary": "A newly tracked Windows infostealer dubbed Remus is expanding its credential-theft playbook by targeting API tokens and local usage data tied to AI platforms, including OpenAI and Anthropic. Researchers at SpyCloud Labs found that recent Remus builds harvest browser data, password-manager and 2FA-extension artifacts, cryptocurrency-wallet files, application credentials, and AI assistant credential folders, potentially exposing [&#8230;] The post New Remus Infostealer Steals OpenAI and Anthropic API Tokens, Passwords and Crypto Wallets appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/remus-infostealer-campaign/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-21T07:19:52+00:00",
-      "published_ts": 1789975192.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -425,19 +475,18 @@
       "related_sources": []
     },
     {
-      "id": "491289b2aaed7814",
-      "title": "Exim Mail Server Hit by 4 Security Flaws Enabling SMTP Smuggling and Heap Corruption",
-      "summary": "Exim maintainers have released version 4.100.1 to address four security vulnerabilities affecting the widely used mail transfer agent. This update resolves issues that could potentially enable SMTP smuggling and heap-memory corruption under certain configurations. The release, announced on September 18, fixes the following vulnerabilities: GCVE-25-2026-09-50-1, GCVE-25-2026-09-51-1, GCVE-25-2026-09-55-1, and GCVE-25-2026-09-56-1. Administrators using vulnerable installations of Exim [&#8230;] The post Exim Mail Server Hit by 4 Security Flaws Enabling SMTP Smuggling and Heap Corruption appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/exim-mail-server-hit-by-4-security-flaws/",
+      "id": "692cfb291aa3a1f1",
+      "title": "10 Malicious npm Packages Linked to Runtime Malware Campaign With Millions of Downloads",
+      "summary": "A sophisticated npm supply-chain campaign has been linked to 10 malicious JavaScript packages that collectively recorded millions of downloads while bypassing npm’s lifecycle-script protections. The operation centers on a counterfeit package named indexed-btree, which impersonates the legitimate sorted-btree library and executes its malware only when an application uses the package at runtime. Unlike conventional npm [&#8230;] The post 10 Malicious npm Packages Linked to Runtime Malware Campaign With Millions of Downloads appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/10-malicious-npm-packages/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-21T06:48:53+00:00",
-      "published_ts": 1789973333.0,
+      "published": "2026-09-21T12:49:50+00:00",
+      "published_ts": 1789994990.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Global"
@@ -445,8 +494,8 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -471,6 +520,208 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9cd3fefd84b4010d",
+      "title": "CISA alerts of active exploitation of three Linux kernel flaws",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that hackers are exploiting three Linux kernel vulnerabilities, one of them rated critical. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T20:12:17+00:00",
+      "published_ts": 1790021537.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "13289ac6ed5c4348",
+      "title": "EU data regulator fines Google more than $460 million for location data violations",
+      "summary": "Ireland’s Data Protection Commission will fine Google more than €403 million ($462 million) over the tech giant’s processing of location data, concluding an inquiry into the company that began in early 2020.",
+      "url": "https://therecord.media/google-europe-location-data-fine",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T19:15:00+00:00",
+      "published_ts": 1790018100.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c8e18fd13d66d8e7",
+      "title": "Fake LastPass Authenticator Installer Abuses Microsoft-Signed Driver to Kill Antivirus and EDR",
+      "summary": "A fake LastPass Authenticator installer offered on GitHub installs a Windows kernel driver that shuts off antivirus and other security software before a password stealer runs if a victim downloads and runs it, researchers at LastPass and Delphos Labs said on September 17. Microsoft's own hardware-compatibility program signs the driver, scored zero detections on VirusTotal when researchers",
+      "url": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T17:31:01+00:00",
+      "published_ts": 1790011861.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub",
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d88e00b1c3cad9b3",
+      "title": "Google Fined €403 Million Over GDPR Violations Tied to Location Data",
+      "summary": "Google has been&nbsp;fined €403 million&nbsp;for breaking the EU's data protection law, the GDPR, in the way three of its features handled people's location data from May 2018 to February 2020. Ireland's Data Protection Commission (DPC), Google's lead regulator in the EU, also ordered the company to make its processing comply with the law within 6 months. The DPC has not said publicly which",
+      "url": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T16:57:31+00:00",
+      "published_ts": 1790009851.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "17e8008946de5464",
+      "title": "Google fined €403 million over location data privacy violations",
+      "summary": "Ireland's Data Protection Commission (DPC) has fined Google €403 million ($463M) for multiple GDPR violations related to processing users' location data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T15:41:22+00:00",
+      "published_ts": 1790005282.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b9d6e32f2b952269",
+      "title": "CISO Conversations: Noopur Davis – The Accidental Global CISO at Comcast",
+      "summary": "Noopur Davis never planned a career in cybersecurity. She was a developer at Intergraph, and for many years that was all she wanted to be. The post CISO Conversations: Noopur Davis – The Accidental Global CISO at Comcast appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/ciso-conversations-noopur-davis-the-accidental-global-ciso-at-comcast/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:30:00+00:00",
+      "published_ts": 1790001000.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "27396d344cd280ac",
+      "title": "Cyberattack hits University of Munich, potentially exposing student financial data",
+      "summary": "The university, commonly known as LMU Munich, said Saturday that an attacker accessed enrollment data stored on one of its IT systems.",
+      "url": "https://therecord.media/cyberattack-hits-university-of-munich-potentially-exposing-data",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:01:00+00:00",
+      "published_ts": 1789999260.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "791e47a286440cbf",
+      "title": "Dragos Completes NetRise and runZero Acquisitions Following Accenture Deal",
+      "summary": "The transaction is part of the $4.1 billion deal in which Accenture acquired a majority stake in Dragos in an OT cybersecurity push. The post Dragos Completes NetRise and runZero Acquisitions Following Accenture Deal appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/dragos-completes-netrise-and-runzero-acquisitions-following-accenture-deal/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:00:13+00:00",
+      "published_ts": 1789999213.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -551,31 +802,6 @@
       "related_sources": []
     },
     {
-      "id": "ced42d72b147e622",
-      "title": "Russia reports thousands of cyberattacks on election infrastructure during vote",
-      "summary": "Claims by officials of cyberattacks against election infrastructure could not be independently verified. Russian officials provided little technical evidence about the attacks or who it claimed who was behind them.",
-      "url": "https://therecord.media/russia-reports-cyberattacks-during-election",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-20T23:00:00+00:00",
-      "published_ts": 1789945200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "0f2ea2e7b8e3e7e1",
       "title": "North Korean WaterPlum hackers infected 30,000 devices worldwide",
       "summary": "A joint law enforcement advisory warns that the North Korean hacking group WaterPlum compromised at least 30,000 devices worldwide from December 2025 through July 2026 and transferred more than $10.7 million in stolen cryptocurrency to North Korea. [...]",
@@ -601,30 +827,244 @@
       "related_sources": []
     },
     {
-      "id": "c8a82626dd34c60e",
-      "title": "In Other News: Ransomware Developer Sentenced, Plugin4Shell AI Attack, Critical SAP Flaw",
-      "summary": "Noteworthy stories that might have slipped under the radar: Mandiant's 2026 AI risk report, PhantomRaven malware used by bug bounty hunter, WordPress plugin bug exploited. The post In Other News: Ransomware Developer Sentenced, Plugin4Shell AI Attack, Critical SAP Flaw appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/",
+      "id": "e31e445e255c8890",
+      "title": "ShinyHunters Hacked Clop. Now What About Clop's Victims?",
+      "summary": "ShinyHunters defaced Clop's Dark Web site and claims to have stolen victim data, potentially exposing organizations that paid ransoms to renewed extortion attempts.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/shinyhunters-hacked-clop-what-about-clops-victims",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T20:07:56+00:00",
+      "published_ts": 1790021276.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "42814a84daf686fc",
+      "title": "Microsoft to retire Microsoft 365 Companion apps in December",
+      "summary": "Microsoft will retire the Calendar, People, and Files Microsoft 365 companion apps on December 16 and has asked admins to remove them from managed devices. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-retire-microsoft-365-companion-apps-in-december/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T17:54:49+00:00",
+      "published_ts": 1790013289.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "71c0692a1293586e",
+      "title": "Google Hit With $463 Million Fine for EU Location Data Rule Breach",
+      "summary": "Google has been fined 403 million euros ($463 million) for breaching the European Union’s strict privacy rules because it mishandled users’ location data. The post Google Hit With $463 Million Fine for EU Location Data Rule Breach appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-18T14:25:00+00:00",
-      "published_ts": 1789741500.0,
+      "published": "2026-09-21T17:19:53+00:00",
+      "published_ts": 1790011193.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9359114c90165cd4",
+      "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
+      "summary": "The North Korean threat actors behind the Contagious Interview campaign have compromised at least 30,000 devices located in more than 100 countries and siphoned funds or account credentials from over 7,000 cryptocurrency wallets, according to a new joint cybersecurity advisory. The primary targets of the campaign are individual web designers, engineers, and specialists in cryptocurrency,",
+      "url": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T17:19:00+00:00",
+      "published_ts": 1790011140.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "06c0c86e928f9bba",
+      "title": "Belgian table tennis, gymnastics federations hit by cyberattacks",
+      "summary": "Belgium’s national table tennis federation is investigating a cyberattack after a hacker claimed to have stolen data on tens of thousands of members.",
+      "url": "https://therecord.media/belgium-table-tennis-cyberattack",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T15:00:00+00:00",
+      "published_ts": 1790002800.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4761973e3c66cf0e",
+      "title": "Microsoft fixes broken Excel copy and paste for all Office users",
+      "summary": "Microsoft has fixed a known issue that causes copy-and-paste failures for Excel users after installing the September 2026 security updates. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-excel-copy-and-paste-for-all-office-users/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:42:37+00:00",
+      "published_ts": 1790001757.0,
+      "cves": [],
+      "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "SAP",
-        "WordPress"
+        "Office"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a049497e9398db11",
+      "title": "TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data",
+      "summary": "Cybersecurity researchers have disclosed details of a new campaign dubbed TASK#STOMP that delivers a PowerShell backdoor designed to harvest sensitive data from compromised hosts. The backdoor \"automatically harvests and exfiltrates business documents, watches the filesystem for new files in real time, steals Wi-Fi passwords and clipboard contents, takes screenshots, and accepts arbitrary",
+      "url": "https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:15:40+00:00",
+      "published_ts": 1790000140.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bf57cf35580fac67",
+      "title": "FBI's CJIS v6.1: What Security Teams Need to Know.",
+      "summary": "The FBI's CJIS Security Policy v6.1 strengthens requirements around encryption and vulnerability scanning while continuing the shift toward more continuous security assessment. Specops explains what changed and how agencies can address password, MFA, and identity requirements as they prepare for upcoming audits. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fbis-cjis-v61-what-security-teams-need-to-know/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:02:12+00:00",
+      "published_ts": 1789999332.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "fcce4936cf0b641f",
+      "title": "Microsoft reminds admins to migrate Entra ID users to passkeys",
+      "summary": "Microsoft has reminded admins to migrate Entra ID users to phishing-resistant authentication methods to avoid sign-in disruptions after it retires SMS first-factor sign-in starting in February 2027. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-admins-to-migrate-entra-id-users-to-passkeys/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T13:16:20+00:00",
+      "published_ts": 1789996580.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5a21347b2a650b33",
+      "title": "LinkedIn wins court order blocking mass scraping of user data",
+      "summary": "The agreement between LinkedIn, ProAPIs and joint business operator Netswift also requires the firms to stop selling and transferring the data, no longer access LinkedIn through fake accounts and delete the data that was scraped, according to a senior LinkedIn executive.",
+      "url": "https://therecord.media/linkedin-wins-court-order-blocking-mass-scraping",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T12:55:00+00:00",
+      "published_ts": 1789995300.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -777,30 +1217,6 @@
       "related_sources": []
     },
     {
-      "id": "a4adae12c0016265",
-      "title": "Malicious npm packages evade install-script defenses at runtime",
-      "summary": "An ongoing npm malware campaign involving the 'indexed-btree' package shows how threat actors bypass supply chain defenses by hiding malicious code in a package's normal runtime behavior rather than in installation scripts. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-20T14:11:21+00:00",
-      "published_ts": 1789913481.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "b19baf8b12e622f0",
       "title": "Google Gemini Broke Into Real Company Systems After Security Test Domain Mix-Up",
       "summary": "Google's Gemini model has become the latest artificial intelligence (AI) system to access the internet and break into other companies during a cybersecurity evaluation. The development was first reported by The Wall Street Journal. The incidents occurred in May 2026 as part of a test run conducted by Israeli company Irregular. The evaluation partner was also involved in similar hacks disclosed",
@@ -817,31 +1233,6 @@
       ],
       "regions": [
         "Middle East"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "fc0208642d39022b",
-      "title": "Webinar: Which Google Workspace security controls actually matter?",
-      "summary": "Fast-growing companies face countless recommendations for securing Google Workspace, but not every control provides the same value. This webinar examines real-world breaches to explore which security controls matter most, which may be overrated, and where lean security teams should focus their resources. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/webinar-which-google-workspace-security-controls-actually-matter/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T13:10:19+00:00",
-      "published_ts": 1789737019.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -868,6 +1259,94 @@
       "products": [
         "Outlook"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "74605f2c4a0daaa5",
+      "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
+      "summary": "Ecommerce platform BigCommerce has alerted multiple merchants to data breaches after attackers compromised credentials for third-party Ribon applications and used them to inject malicious scripts into online stores. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T21:18:49+00:00",
+      "published_ts": 1790025529.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4d7f27a3e960f087",
+      "title": "Cybercriminals Are Hiding New Malware in Torrents for Popular Films",
+      "summary": "Victims have been identified in Africa, including in Kenya and Uganda.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cybercriminals-hiding-new-malware-torrents-popular-films",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T19:11:26+00:00",
+      "published_ts": 1790017886.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Africa"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "dc5e3bcf41245940",
+      "title": "Fake LastPass Installers Push Kernel-Level EDR Killer, ‘Rapuncel’ Stealer",
+      "summary": "The attackers impersonate at least 40 companies and disable 145 security products to deploy infostealer malware. The post Fake LastPass Installers Push Kernel-Level EDR Killer, ‘Rapuncel’ Stealer appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T15:46:58+00:00",
+      "published_ts": 1790005618.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "88e26d1ef85b5c1b",
+      "title": "Rogue Behavior: OpenAI Reveals More Model Misalignment Incidents",
+      "summary": "The AI giant disclosed six examples of concerning model activity and published a new framework for investigating and disclosing such incidents.",
+      "url": "https://www.darkreading.com/cyber-risk/rogue-behavior-openai-more-model-misalignment-incidents",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T14:47:19+00:00",
+      "published_ts": 1790002039.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -919,6 +1398,30 @@
       "related_sources": []
     },
     {
+      "id": "a4adae12c0016265",
+      "title": "Malicious npm packages evade install-script defenses at runtime",
+      "summary": "An ongoing npm malware campaign involving the 'indexed-btree' package shows how threat actors bypass supply chain defenses by hiding malicious code in a package's normal runtime behavior rather than in installation scripts. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-20T14:11:21+00:00",
+      "published_ts": 1789913481.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "da2562d624d78313",
       "title": "Researchers escape OpenAI Codex sandbox to run commands on host",
       "summary": "Researchers escaped OpenAI's Codex sandbox two ways, one running commands on a developer's machine from its most locked-down mode. OpenAI has patched both. [...]",
@@ -955,30 +1458,6 @@
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3004880153f03630",
-      "title": "TigerByte Cyber Emerges From Stealth With $3 Million in Funding",
-      "summary": "The company has secured over $7 million in contracts with US government agencies, including the US Space Force, the US Navy, and DARPA. The post TigerByte Cyber Emerges From Stealth With $3 Million in Funding appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/tigerbyte-cyber-emerges-from-stealth-with-3-million-in-funding/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-19T14:30:00+00:00",
-      "published_ts": 1789828200.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
@@ -1067,228 +1546,6 @@
       "related_sources": []
     },
     {
-      "id": "15b2f02ea685737c",
-      "title": "EY Survey Finds Autonomous AI Implementation Outpaces Oversight",
-      "summary": "A new survey of senior AI execs shows that while organizations are rapidly deploying AI and autonomous systems, their process and controls are not keeping pace.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ey-survey-autonomous-ai-implementation-outpaces-oversight",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T19:23:48+00:00",
-      "published_ts": 1789759428.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c7fe5eee1fc09cb2",
-      "title": "MFA Won't Save You From OAuth Consent Abuse",
-      "summary": "MFA is essential, but it cannot replace OAuth governance, least-privilege scopes, consent monitoring, and rapid revocation.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/mfa-oauth-consent-abuse",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T18:15:20+00:00",
-      "published_ts": 1789755320.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "30c9ca5def4ef519",
-      "title": "Don’t Call Us, We’ll Call Your APIs | TraderTraitor Backdoors Resurface on Victim With No Crypto Ties",
-      "summary": "North Korean operators built a foothold on a DevOps engineer's Mac in a campaign whose job interview lures deliver malware via Terraform lock files.",
-      "url": "https://www.sentinelone.com/labs/dont-call-us-well-call-your-apis-tradertraitor-backdoors-resurface-on-victim-with-no-crypto-ties/",
-      "source": "SentinelOne Labs",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-09-18T17:00:16+00:00",
-      "published_ts": 1789750816.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "52e145317705890b",
-      "title": "New WordPress Click2Shell Flaw Forces Theme Installs, Can Chain to Code Execution",
-      "summary": "WordPress today released patches to fix a new set of vulnerabilities in its core software, one of which could allow a crafted web link, opened by a logged-in administrator, to install a theme from the official WordPress.org directory without anyone clicking Install. The security firm pwn.ai, whose researchers reported the flaw, calls the attack chain Click2Shell. On its own the flaw only",
-      "url": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T16:56:19+00:00",
-      "published_ts": 1789750579.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "WordPress"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c046adbee011c09c",
-      "title": "Fake LastPass Authenticator GitHub repos push new Rapuncel infostealer",
-      "summary": "An ongoing malware campaign uses SEO-optimized GitHub repositories to impersonate well-known software firms to push a previously undocumented information stealer called Rapuncel. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T15:19:06+00:00",
-      "published_ts": 1789744746.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0f12b3982d693b73",
-      "title": "Secure enterprise sharing with access reviews for Microsoft 365",
-      "summary": "Microsoft 365 makes sharing files easy, but access can remain long after its original purpose has ended, leaving organizations with little visibility into who can still reach sensitive data. tenfold Software explains how centralized access governance and owner-driven reviews can help identify and remove unnecessary access. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T14:00:10+00:00",
-      "published_ts": 1789740010.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "fe2019487f2cc963",
-      "title": "Microsoft Teams will let admins block custom file extensions",
-      "summary": "Microsoft Teams will soon let administrators tweak the list of file extensions commonly associated with security threats to meet their company's security requirements. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T13:58:40+00:00",
-      "published_ts": 1789739920.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5f76d0134f105062",
-      "title": "Microsoft Patches CVSS 10.0 Azure AI Foundry Flaw Enabling Unauthorized Privilege Escalation",
-      "summary": "Microsoft has released fixes for a maximum-severity security flaw in Azure AI Foundry that could be exploited to achieve privilege escalation. No customer action is required. The vulnerability, tracked as CVE-2026-85889, carries a CVSS score of 10.0. \"Missing authentication for critical function in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network,\"",
-      "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T12:47:04+00:00",
-      "published_ts": 1789735624.0,
-      "cves": [
-        "CVE-2026-85889"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "cbfb3977d5f5101a",
-      "title": "Microsoft fixes bug behind ‘Defender Antivirus is turned off’ alerts",
-      "summary": "Microsoft has resolved a known issue that causes incorrect alerts warning that Defender Antivirus was turned off after installing recent updates. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-fixes-bug-behind-defender-antivirus-is-turned-off-alerts/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T12:16:32+00:00",
-      "published_ts": 1789733792.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "c441260fd42f69b9",
       "title": "Identity Visibility in 2026: The Foundation of Identity Security",
       "summary": "Identity visibility is a starting point for modern identity security, because stolen and misused credentials are among the most frequently reported initial access vectors in breach research, including Verizon's annual Data Breach Investigations Report. This article explains what identity visibility means in IAM, why cloud and multicloud environments complicate it, which capabilities matter in",
@@ -1298,117 +1555,6 @@
       "category": "mixed",
       "published": "2026-09-19T13:28:41+00:00",
       "published_ts": 1789824521.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "57c48f86e479bc30",
-      "title": "Vectra AI Launches Ascent to Help Address New Era of AI-Driven Attacks",
-      "summary": "The new program expands Vectra AI's partner strategy as increasingly complex security environments and the growing use of AI create demand for broader AI expertise, services, and security outcomes.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/vectra-ai-launches-ascent-new-era-ai-driven-attacks",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T20:24:51+00:00",
-      "published_ts": 1789763091.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b5fbc15a547e12b1",
-      "title": "Gyazo server flaw exploited to steal 23.6 million user records",
-      "summary": "The Gyazo image-sharing platform has confirmed it suffered a data breach after hackers exploited a server vulnerability that allowed them to steal 23.6 million user records. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T16:00:38+00:00",
-      "published_ts": 1789747238.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a0ab821d290c9147",
-      "title": "Nations take action on North Korean IT workers after UN report",
-      "summary": "A report published Wednesday said that as of July, Vietnam, Laos, Pakistan and Argentina took meaningful steps to respond to allegations involving North Korea listed in an October study.",
-      "url": "https://therecord.media/nations-take-action-on-north-korean-it-worker-schemes",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T14:29:00+00:00",
-      "published_ts": 1789741740.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific",
-        "Latin America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b340923fa09f2cc7",
-      "title": "Hacking group ‘NightEagle’ targeting China’s high-tech sector expands operations to Russia",
-      "summary": "Over the past year, Russian cybersecurity firm Kaspersky said it investigated several incidents involving the group at Russian businesses.",
-      "url": "https://therecord.media/hacking-group-nighteagle-expands-russia-china",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T13:24:00+00:00",
-      "published_ts": 1789737840.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "230b407a22207b54",
-      "title": "AI-Built Exploit and Sign-In Flaw Opened Path to Internal OpenAI Code",
-      "summary": "Hacktron researchers earned a bug bounty after demonstrating access to OpenAI employee accounts. The post AI-Built Exploit and Sign-In Flaw Opened Path to Internal OpenAI Code appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ai-built-exploit-and-sign-in-flaw-opened-path-to-internal-openai-code/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-18T12:45:24+00:00",
-      "published_ts": 1789735524.0,
       "cves": [],
       "sectors": [],
       "regions": [
