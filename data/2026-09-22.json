@@ -1,19 +1,20 @@
 {
-  "generated_at": "2026-09-22T03:29:29.170052+00:00",
+  "generated_at": "2026-09-22T11:01:21.252092+00:00",
   "lookback_hours": 72,
   "totals": {
     "all": 64,
     "critical": 0,
     "high": 6,
-    "medium": 11,
-    "low": 47,
-    "actively_exploited": 13,
-    "with_cves": 4
+    "medium": 7,
+    "low": 51,
+    "actively_exploited": 11,
+    "with_cves": 5
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
     "Check Point Research",
+    "Cisco Talos",
     "Dark Reading",
     "GBHackers",
     "Securelist (Kaspersky)",
@@ -23,61 +24,6 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
-    {
-      "id": "6d6919faaa2fcdc8",
-      "title": "NightEagle Uses BlueKeep and DCSync to Move Toward Active Directory Domain Controllers",
-      "summary": "NightEagle, an espionage-focused threat group also tracked as APT-Q-95, has expanded its operations from Asian targets to Russian organizations, using a layered intrusion chain that culminates in attempts to compromise Active Directory domain controllers. The campaign illustrates a familiar but dangerous enterprise compromise pattern: attackers do not need a novel zero-day exploit when exposed remote [&#8230;] The post NightEagle Uses BlueKeep and DCSync to Move Toward Active Directory Domain Controllers appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/nighteagle-attack-chain/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-21T13:27:36+00:00",
-      "published_ts": 1789997256.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [
-        "Active Directory"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "eff04a51adee4565",
-      "title": "BigDiskBuster Windows Defender DoS Vulnerability Blocks Platform and Signature Updates",
-      "summary": "A recently published proof-of-concept project named BigDiskBuster claims to prevent Microsoft Defender from completing its platform and security intelligence signature updates. This could create a potential denial-of-service condition, leaving Windows endpoints operating with outdated anti-malware protection. The project, published on GitHub by the user “MSNightmare,” is described as a &#8220;Windows Defender Update Denial of Service [&#8230;] The post BigDiskBuster Windows Defender DoS Vulnerability Blocks Platform and Signature Updates appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/bigdiskbuster-windows-defender-dos-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-21T11:01:28+00:00",
-      "published_ts": 1789988488.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "GitHub",
-        "Windows"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
     {
       "id": "70cc9ff898c7774d",
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -93,15 +39,17 @@
       ],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Government & Public Services",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global",
+        "North America"
       ],
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
+      "priority_score": 70,
       "priority_label": "High",
       "related_sources": [
         {
@@ -109,33 +57,100 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7273",
           "title": "CVE-2026-7273: Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability (Zyxel GS1900 Series Switches)",
           "published": "2026-09-21T00:00:00+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
+          "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
+          "published": "2026-09-22T05:31:59+00:00"
+        },
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/cisa-flags-actively-exploited-flaw/",
+          "title": "CISA Flags Actively Exploited Flaw in Zyxel GS1900 Switches",
+          "published": "2026-09-22T08:37:34+00:00"
         }
       ]
     },
     {
-      "id": "c848fa5456937fca",
-      "title": "Hackers Weaponize Terraform Lock Files to Infect DevOps Engineers With macOS Backdoors",
-      "summary": "North Korea-linked threat actor TraderTraitor has expanded its developer-focused intrusion activity beyond cryptocurrency targets, using weaponized Terraform lock files in fake job-interview repositories to infect DevOps engineers with macOS backdoors. SentinelOne identified an Indian IT services provider compromised with the same FLATROOF and ROOFDECK implants previously linked to the April 2026 KelpDAO-LayerZero attack. The campaign [&#8230;] The post Hackers Weaponize Terraform Lock Files to Infect DevOps Engineers With macOS Backdoors appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/terraform-lock-files/",
+      "id": "0254487271616c3a",
+      "title": "Chinese APT Clones Legitimate Websites to Deliver Chrome and Windows Zero-Day Exploits",
+      "summary": "A third Chinese threat actor has been linked to phishing campaigns that cloned trusted websites and chained Chrome and Windows zero-day exploits to deploy a previously undocumented backdoor. The activity occurred on September 3 and 4, 2026, while the targeted vulnerabilities remained unpatched in Google Chrome. It followed Volexity’s September 9 disclosure that UTA0560 and [&#8230;] The post Chinese APT Clones Legitimate Websites to Deliver Chrome and Windows Zero-Day Exploits appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/apt-exploits-chrome-and-windows/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-21T08:53:58+00:00",
-      "published_ts": 1789980838.0,
+      "published": "2026-09-22T09:01:14+00:00",
+      "published_ts": 1790067674.0,
       "cves": [],
       "sectors": [
-        "Financial Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Asia-Pacific",
         "Global"
       ],
       "products": [
-        "macOS"
+        "Chrome",
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "f499dc30ecba42b3",
+      "title": "D-Link DIR-822A Router Vulnerability Scores CVSS 10.0 With Public PoC Available",
+      "summary": "D-Link has announced a critical stack-based buffer overflow vulnerability affecting the non-US DIR-822A router, identified as CVE-2026-86296. This vulnerability has received a maximum CVSS v3.1 score of 10.0 and a CVSS v4.0 score of 10.0. Furthermore, a public proof-of-concept (PoC) exploit is reportedly available. The company published advisory SAP10516 on September 18 and updated it [&#8230;] The post D-Link DIR-822A Router Vulnerability Scores CVSS 10.0 With Public PoC Available appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/d-link-dir-822a-router-vulnerability/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-22T08:58:31+00:00",
+      "published_ts": 1790067511.0,
+      "cves": [
+        "CVE-2026-86296"
+      ],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "SAP"
       ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "73e0761ed3130b35",
+      "title": "New Windows Defender zero-day blocks Microsoft antivirus updates",
+      "summary": "Over the weekend, security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) released another Microsoft Defender zero-day exploit that blocks antivirus updates. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-22T09:55:11+00:00",
+      "published_ts": 1790070911.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
       "priority_label": "High",
       "related_sources": []
     },
@@ -189,6 +204,29 @@
       "related_sources": []
     },
     {
+      "id": "c0c2b019485b038a",
+      "title": "Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+      "summary": "The US, Japan, Germany and Australia have published a joint report detailing the scope of North Korea’s WaterPlum campaign. The post Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-22T08:37:06+00:00",
+      "published_ts": 1790066226.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific",
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "12b02459194ee40e",
       "title": "RatHat Android Trojan Uses AI for Automation",
       "summary": "The malware relies on AI for real-time device navigation and control, increasing adaptability and evasion. The post RatHat Android Trojan Uses AI for Automation appeared first on SecurityWeek .",
@@ -213,31 +251,24 @@
       "related_sources": []
     },
     {
-      "id": "f190d6a808076ed2",
-      "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added three security flaws impacting the Linux kernel to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2025-39682 (CVSS score: 9.8) - An improper check for unusual or exceptional conditions vulnerability in the TLS receive path",
-      "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+      "id": "ca15673405cd2858",
+      "title": "One Hidden Meta Muse Setting Could Let Attackers Turn the AI Assistant Into a Backdoor",
+      "summary": "Malware already running on a Mac can quietly take over Meta's Muse assistant and use the broad access its owner granted the app, security researcher Patrick Wardle has shown in a&nbsp;proof-of-concept&nbsp;released on September 21. It works by changing a hidden setting so that when the user taps the microphone and dictates a prompt, the words go to the attacker instead of Meta. The flaw is in",
+      "url": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-19T06:24:10+00:00",
-      "published_ts": 1789799050.0,
-      "cves": [
-        "CVE-2025-39682"
-      ],
-      "sectors": [
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
+      "published": "2026-09-22T06:33:57+00:00",
+      "published_ts": 1790058837.0,
+      "cves": [],
+      "sectors": [],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
-      "products": [
-        "Linux"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 45,
+      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -293,201 +324,151 @@
       "related_sources": []
     },
     {
-      "id": "bc76558aaf276dd9",
-      "title": "ShinyHunters hacks Clop leak site, threatens to extort ransomware gang",
-      "summary": "The ShinyHunters extortion gang breached the Clop (aka Cl0p) ransomware operation's data leak site, defacing the Tor site and allegedly stealing server data and the private keys for its onion service. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacks-clop-leak-site-threatens-to-extort-ransomware-gang/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
+      "id": "2bf53dbea7ac1601",
+      "title": "Hackers Abuse Stolen BigCommerce App Key to Steal Master of Malt Customer Data",
+      "summary": "Master of Malt reported a customer data breach after attackers allegedly compromised an application key linked to Ribon, a third-party BigCommerce app managed by Be A Part Of that identifies itself as a Fastr brand. BigCommerce notified the retailer of the incident on September 18, 2026, prompting Master of Malt to reach out to affected [&#8230;] The post Hackers Abuse Stolen BigCommerce App Key to Steal Master of Malt Customer Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hackers-abuse-stolen-bigcommerce-app-key/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-19T13:48:32+00:00",
-      "published_ts": 1789825712.0,
+      "published": "2026-09-22T09:11:59+00:00",
+      "published_ts": 1790068319.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Consumer",
+        "Energy Resources & Industrials"
+      ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 40,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "cafb6a3cf46ef725",
-      "title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
-      "summary": "A critical vulnerability impacting Orkes Conductor is being actively exploited in the wild, according to Fortinet. The vulnerability in question is CVE-2026-58138 (CVSS v3.1 score: 9.8/CVSS v4 score: 9.3), which relates to a case of unauthenticated remote code execution. \"Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote",
-      "url": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "2cb25e267dea8651",
+      "title": "Windows 11 26H1 Security Update Expands Secure Boot Certificate Protection",
+      "summary": "Microsoft has released the cumulative security update for September 2026 for Windows 11 version 26H1. This update expands the range of systems that can automatically receive new Secure Boot certificates. KB5124012, released on September 8, brings devices to OS Build 28000.2954. It includes enhanced, high-confidence device-targeting data to improve certificate deployment coverage across supported PCs [&#8230;] The post Windows 11 26H1 Security Update Expands Secure Boot Certificate Protection appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/windows-11-26h1-security-update/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-19T08:18:54+00:00",
-      "published_ts": 1789805934.0,
-      "cves": [
-        "CVE-2026-58138"
+      "published": "2026-09-22T06:39:57+00:00",
+      "published_ts": 1790059197.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "241f6143a65f33e1",
+      "title": "Linux BambooToken Malware Uses MQTT C2 for Remote Shell Access and File Exfiltration",
+      "summary": "A Linux variant of the BambooToken backdoor uses MQTT as its command-and-control channel, enabling operators to profile compromised hosts, execute shell commands, and transfer files through broker-mediated topics. Analysis of a statically linked x86-64 ELF sample shows that its configuration, task routing, and network payloads are obfuscated with separate XOR routines. The examined sample, SHA-256 [&#8230;] The post Linux BambooToken Malware Uses MQTT C2 for Remote Shell Access and File Exfiltration appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/linux-bambootoken-malware/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-22T10:46:11+00:00",
+      "published_ts": 1790073971.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [
-        "Fortinet"
+        "Linux"
       ],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "61692ece4a809b41",
-      "title": "CrowdSec Says TanStack npm Attack Led to Copy of 170 Private GitHub Repositories",
-      "summary": "An attacker copied about 170 of CrowdSec's private GitHub repositories on May 22 using the account of an employee who had just left, CrowdSec&nbsp;said on September 18. The French security company had kept his GitHub access open. CrowdSec says his laptop was compromised in May's&nbsp;supply chain attack on TanStack, in which malicious versions of TanStack's npm packages stole credentials from",
-      "url": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "6d9df7791c27207d",
+      "title": "Hackers Compromise 65 GitHub Repositories and Poison npm Package With Hidden Backdoor",
+      "summary": "Threat actors have compromised at least 65 public GitHub repositories in a software supply-chain campaign that abused npm trusted publishing to distribute a stealthy backdoor through a legitimate package. The malicious package was identified as @dforge-core/dforge-mcp, an MCP-related npm package whose maintainer account was abused for roughly 105 minutes on September 9. Attackers initially pushed [&#8230;] The post Hackers Compromise 65 GitHub Repositories and Poison npm Package With Hidden Backdoor appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/65-github-repositories/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-19T07:14:54+00:00",
-      "published_ts": 1789802094.0,
+      "published": "2026-09-22T08:35:52+00:00",
+      "published_ts": 1790066152.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [
         "GitHub"
       ],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "548fda89febe7842",
-      "title": "New Rapuncel Infostealer Abuses Microsoft-Signed Driver to Disable 145 Security Tools",
-      "summary": "A newly identified information-stealing campaign, tracked as Rapuncel, is exploiting a Microsoft-attested kernel driver to terminate up to 145 antivirus (AV) and endpoint detection and response (EDR) processes. This allows attackers to steal browser credentials, cryptocurrency wallet data, chat tokens, and Windows credentials. Researchers from the LastPass Threat Intelligence, Mitigation, and Escalation team, in collaboration [&#8230;] The post New Rapuncel Infostealer Abuses Microsoft-Signed Driver to Disable 145 Security Tools appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/new-rapuncel-infostealer-abuses-microsoft-signed-driver/",
+      "id": "837d28bc27df4dbc",
+      "title": "Hackers Exploit WordPress CVE-2026-63030 and CVE-2026-60137 to Steal Government Data",
+      "summary": "A suspected Chinese-speaking threat actor has exploited the critical WordPress “wp2shell” vulnerability chain to compromise government and small-business targets across 29 countries, stealing at least 18,566 sensitive records from one Western government organization. GreyNoise linked the activity to a malicious cyber actor (MCA) it has tracked through its Global Observation Grid since early June. The [&#8230;] The post Hackers Exploit WordPress CVE-2026-63030 and CVE-2026-60137 to Steal Government Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/wordpress-vulnerability-exploitation/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-21T11:36:46+00:00",
-      "published_ts": 1789990606.0,
-      "cves": [],
+      "published": "2026-09-22T06:40:37+00:00",
+      "published_ts": 1790059237.0,
+      "cves": [
+        "CVE-2026-60137",
+        "CVE-2026-63030"
+      ],
       "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
+        "Government & Public Services"
       ],
       "regions": [
         "Global"
       ],
       "products": [
-        "Windows"
+        "WordPress"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "5fe1785b6d58a1a8",
-      "title": "Hackers Abuse Microsoft Teams to Pose as IT Support and Steal Employee Passwords",
-      "summary": "Threat actors are increasingly abusing Microsoft Teams&#8217; external chat capabilities to impersonate corporate IT help desks. They trick employees into installing malware, granting remote access, and stealing Windows credentials. These attacks exploit a simple vulnerability: employees tend to distrust suspicious emails but often do not apply the same caution to collaboration platforms like Teams. Attackers [&#8230;] The post Hackers Abuse Microsoft Teams to Pose as IT Support and Steal Employee Passwords appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/hackers-abuse-microsoft-teams/",
+      "id": "038a330f26190a32",
+      "title": "Microsoft to Disable SMS as Primary Entra ID Sign-In Method in 2027",
+      "summary": "Microsoft will turn off SMS as a primary sign-in method for Microsoft Entra ID workforce tenants on February 1, 2027, accelerating its transition to phishing-resistant authentication. This change affects workers who currently use a registered phone number and a one-time SMS code as their initial sign-in credential, a passwordless flow utilized by frontline organizations. Microsoft [&#8230;] The post Microsoft to Disable SMS as Primary Entra ID Sign-In Method in 2027 appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-to-disable-sms-as-primary-entra-id/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-21T09:09:24+00:00",
-      "published_ts": 1789981764.0,
+      "published": "2026-09-22T06:31:19+00:00",
+      "published_ts": 1790058679.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "30720e352a5ec7c7",
-      "title": "New Cache Key Injection Attack Lets Hackers Bypass Access Controls and Poison Nginx Caches",
-      "summary": "Security researchers have unveiled a cache poisoning technique called cache key injection that lets attackers bypass access controls, expose cached sensitive pages, trigger denial-of-service conditions, and potentially execute stored cross-site scripting (XSS) attacks against vulnerable Nginx deployments. Research by YesWeHack researcher Alex Brumen highlights flaws that occur when web caches create cache keys by directly [&#8230;] The post New Cache Key Injection Attack Lets Hackers Bypass Access Controls and Poison Nginx Caches appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/new-cache-key-injection-attack/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-21T08:58:08+00:00",
-      "published_ts": 1789981088.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Nginx"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "d8c827ebc13b9f03",
-      "title": "HEIF Heist Image Flaws Let Attackers Gain RCE Across Meta, Slack and GitHub Enterprise",
-      "summary": "“HEIF Heist,” a broad class of image-processing attack paths that could allow threat actors to turn malicious HEIF, HEIC, and AVIF uploads into remote code execution, sensitive-data exposure, and account compromise across major technology and enterprise platforms. The research, published by Hacktron, highlights a familiar but increasingly dangerous supply-chain weakness: applications often trust native image-decoding [&#8230;] The post HEIF Heist Image Flaws Let Attackers Gain RCE Across Meta, Slack and GitHub Enterprise appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/heif-heist-image-flaws/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-21T08:17:05+00:00",
-      "published_ts": 1789978625.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "GitHub",
-        "Slack"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "692cfb291aa3a1f1",
-      "title": "10 Malicious npm Packages Linked to Runtime Malware Campaign With Millions of Downloads",
-      "summary": "A sophisticated npm supply-chain campaign has been linked to 10 malicious JavaScript packages that collectively recorded millions of downloads while bypassing npm’s lifecycle-script protections. The operation centers on a counterfeit package named indexed-btree, which impersonates the legitimate sorted-btree library and executes its malware only when an application uses the package at runtime. Unlike conventional npm [&#8230;] The post 10 Malicious npm Packages Linked to Runtime Malware Campaign With Millions of Downloads appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/10-malicious-npm-packages/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-21T12:49:50+00:00",
-      "published_ts": 1789994990.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
       ],
       "regions": [
         "Global"
@@ -500,27 +481,77 @@
       "related_sources": []
     },
     {
-      "id": "1998d577ad8bb01f",
-      "title": "PAYLOAD Ransomware Abuses Active Directory Group Policy to Disrupt Entire Windows Domain",
-      "summary": "A ransomware incident in which attackers used Active Directory Group Policy to disrupt operations without deploying a Windows encryptor or leaving malware running on endpoints. In April 2026, the attackers accessed a FortiGate SSL VPN using compromised domain credentials, then gained domain-admin-equivalent rights. PAYLOAD Ransomware On April 13, Kaspersky’s Global Emergency Response Team (GERT) created [&#8230;] The post PAYLOAD Ransomware Abuses Active Directory Group Policy to Disrupt Entire Windows Domain appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/payload-ransomware-abuses-active-directory-group-policy/",
+      "id": "3a6d198722b91543",
+      "title": "Critical MaxKB AI Agent Flaw Lets Prompt Injection Execute System Commands",
+      "summary": "A critical vulnerability in the MaxKB AI knowledge-base platform could let attackers exploit prompt injection and run operating system commands on vulnerable deployments, including directly on the underlying host in some configurations. This flaw, tracked as CVE-2026-77521 and GHSA-f36j-f34j-h3rx, affects MaxKB versions up to and including 2.10.3-lts. The issue has received a maximum CVSS v3.1 [&#8230;] The post Critical MaxKB AI Agent Flaw Lets Prompt Injection Execute System Commands appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/critical-maxkb-ai-agent-flaw/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-21T11:54:18+00:00",
-      "published_ts": 1789991658.0,
-      "cves": [],
+      "published": "2026-09-22T10:43:40+00:00",
+      "published_ts": 1790073820.0,
+      "cves": [
+        "CVE-2026-77521"
+      ],
       "sectors": [],
       "regions": [
         "Global"
       ],
       "products": [
-        "Active Directory",
-        "Windows"
+        "Edge"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "22388a854fc27c03",
+      "title": "The Closed Quorum: Inside the first reported autonomous AI C2 implant",
+      "summary": "CLOSEDQUORUM, a malware binary discovered through Cisco Talos’ CAIRN project, exhibits fully autonomous command and control (C2). It represents a shift in effort displacement for attackers, in which expanding portions of the attack chain can be executed without operator involvement.",
+      "url": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-22T10:00:58+00:00",
+      "published_ts": 1790071258.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "481eb48b214e3dae",
+      "title": "SideCopy Broadens India Targeting to Academia With ReverseRAT Spear-Phishing",
+      "summary": "The threat actor known as SideCopy has been observed using spear-phishing lures to target academic institutions in India, expanding their strategic focus beyond government entities. \"SideCopy campaign operations typically initiate through spear-phishing campaigns that leverage the abuse of mshta.exe to execute malicious scripts and circumvent standard security protocols,\" Trellix researchers",
+      "url": "https://thehackernews.com/2026/09/sidecopy-broadens-india-targeting-to.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-22T07:52:03+00:00",
+      "published_ts": 1790063523.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -727,82 +758,6 @@
       "related_sources": []
     },
     {
-      "id": "dcbf3d7c46f647dd",
-      "title": "From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies",
-      "summary": "We explore how AWS neutralizes exposed IAM credentials using managed policies, detailing GitHub secret scanning and CloudTrail monitoring strategies. The post From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-21T10:00:13+00:00",
-      "published_ts": 1789984813.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "661a4f58123b6f64",
-      "title": "North Korea’s Hangro VPN Certificate Exposes Internal Network and Russia-Linked Infrastructure",
-      "summary": "North Korea’s Hangro VPN and mail platform has deployed a new certificate hierarchy that exposes an apparent cross-border management environment spanning systems in Pyongyang and Russia’s Far East. The certificate’s Subject Alternative Name field lists the platform’s publicly exposed servers alongside a carrier-grade NAT address, offering an unusual glimpse into how the service may be [&#8230;] The post North Korea’s Hangro VPN Certificate Exposes Internal Network and Russia-Linked Infrastructure appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/hangro-vpn-exposure/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-21T09:33:25+00:00",
-      "published_ts": 1789983205.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7bd678b2130ba543",
-      "title": "ClickFix Lures Deploy ChainScript RAT Using Polygon to Rotate C2 Infrastructure",
-      "summary": "Threat actors are leveraging ClickFix-like lures to deliver a previously undocumented remote access trojan (RAT) called ChainScript. \"ChainScript has appeared under multiple build names, including ComponentTask33, UpdateDigital, HostShared, and OrchidViolet66, while presenting itself as Spotify, Zoom Workplace, and Microsoft Teams software,\" Blackpoint Adversary Pursuit Group (APG)",
-      "url": "https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-21T08:39:38+00:00",
-      "published_ts": 1789979978.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Zoom"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "0f2ea2e7b8e3e7e1",
       "title": "North Korean WaterPlum hackers infected 30,000 devices worldwide",
       "summary": "A joint law enforcement advisory warns that the North Korean hacking group WaterPlum compromised at least 30,000 devices worldwide from December 2025 through July 2026 and transferred more than $10.7 million in stolen cryptocurrency to North Korea. [...]",
@@ -824,6 +779,102 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "65cf34eee1f5876b",
+      "title": "WordPress Patches ‘Click2Shell’ Vulnerability",
+      "summary": "The bug lets attackers automatically install and preview themes and could lead to remote code execution. The post WordPress Patches &#8216;Click2Shell&#8217; Vulnerability appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/wordpress-patches-click2shell-vulnerability/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-22T10:22:27+00:00",
+      "published_ts": 1790072547.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "56896f8409d7f373",
+      "title": "Introducing CAIRN: Frontier tracking for AI-integrated malware",
+      "summary": "Talos is releasing CAIRN, a research toolkit for hunting, classifying, and tracking emerging AI-integrated malware.",
+      "url": "https://blog.talosintelligence.com/introducing-cairn-frontier-tracking-for-ai-integrated-malware/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-22T10:00:25+00:00",
+      "published_ts": 1790071225.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "51ce77ab07aad38b",
+      "title": "Malicious npm Package indexed-btree Hid Its Loader in Runtime Code Before Removal",
+      "summary": "A malicious npm package named \"indexed-btree\" has been observed hiding its malicious behavior within application code rather than using lifecycle scripts, indicating that threat actors are likely shifting tactics in response to recent security controls. \"Indexed-btree is a malicious npm package mimicking the legit sorted-btree package, an ordinary B-tree/indexing utility,\" Checkmarx said. \"",
+      "url": "https://thehackernews.com/2026/09/malicious-npm-package-indexed-btree-hid.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-22T09:38:18+00:00",
+      "published_ts": 1790069898.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5da3c7f851f47bff",
+      "title": "CISA orders feds to patch Zyxel flaw exploited for data theft",
+      "summary": "​Attackers are now actively exploiting a high-severity vulnerability in Zyxel GS1900 series switches, according to the U.S. Cybersecurity and Infrastructure Security Agency (CISA). [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-zyxel-flaw-by-thursday/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-22T08:53:09+00:00",
+      "published_ts": 1790067189.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1120,72 +1171,24 @@
       "related_sources": []
     },
     {
-      "id": "0fdcafc3ad43411f",
-      "title": "Colorado Water Utilities Hit by Cyberattacks Targeting OT Systems",
-      "summary": "The hackers changed equipment settings, disabled remote access and alarms, and altered pumping cycles, officials said. The post Colorado Water Utilities Hit by Cyberattacks Targeting OT Systems appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/colorado-water-utilities-hit-by-cyberattacks-targeting-ot-systems/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-21T10:03:44+00:00",
-      "published_ts": 1789985024.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c550e1228b51f986",
-      "title": "Group Policy hijacked: PAYLOAD ransomware weaponizes Active Directory GPO",
-      "summary": "Kaspersky GERT experts dive into the technical incident analysis of PAYLOAD ransomware: an encryptionless, binary-less operation that abused Active Directory mechanisms for managing Group Policy Objects.",
-      "url": "https://securelist.com/tr/payload-ransomware-via-group-policy/121335/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
+      "id": "dcbf3d7c46f647dd",
+      "title": "From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies",
+      "summary": "We explore how AWS neutralizes exposed IAM credentials using managed policies, detailing GitHub secret scanning and CloudTrail monitoring strategies. The post From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
       "category": "threat",
-      "published": "2026-09-21T10:00:40+00:00",
-      "published_ts": 1789984840.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Active Directory"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "053f7bf172a61bfa",
-      "title": "Organizations Warned of 3 Exploited Linux Kernel Vulnerabilities",
-      "summary": "Attackers could exploit the flaws to cause denial-of-service conditions, disclose memory, or modify memory. The post Organizations Warned of 3 Exploited Linux Kernel Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-21T09:31:12+00:00",
-      "published_ts": 1789983072.0,
+      "published": "2026-09-21T10:00:13+00:00",
+      "published_ts": 1789984813.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Europe"
       ],
       "products": [
-        "Linux"
+        "GitHub"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1194,48 +1197,26 @@
       "related_sources": []
     },
     {
-      "id": "c82b318c45e163ba",
-      "title": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
-      "summary": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based \"much smaller organization\" in the information technology (IT) services industry, once again highlighting how the adversary continues to target developers to breach target networks. Cybersecurity company SentinelOne, which disclosed details of the activity, said it involved the use of Apple",
-      "url": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html",
+      "id": "7bd678b2130ba543",
+      "title": "ClickFix Lures Deploy ChainScript RAT Using Polygon to Rotate C2 Infrastructure",
+      "summary": "Threat actors are leveraging ClickFix-like lures to deliver a previously undocumented remote access trojan (RAT) called ChainScript. \"ChainScript has appeared under multiple build names, including ComponentTask33, UpdateDigital, HostShared, and OrchidViolet66, while presenting itself as Spotify, Zoom Workplace, and Microsoft Teams software,\" Blackpoint Adversary Pursuit Group (APG)",
+      "url": "https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-21T06:06:44+00:00",
-      "published_ts": 1789970804.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b19baf8b12e622f0",
-      "title": "Google Gemini Broke Into Real Company Systems After Security Test Domain Mix-Up",
-      "summary": "Google's Gemini model has become the latest artificial intelligence (AI) system to access the internet and break into other companies during a cybersecurity evaluation. The development was first reported by The Wall Street Journal. The incidents occurred in May 2026 as part of a test run conducted by Israeli company Irregular. The evaluation partner was also involved in similar hacks disclosed",
-      "url": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-19T07:51:34+00:00",
-      "published_ts": 1789804294.0,
+      "published": "2026-09-21T08:39:38+00:00",
+      "published_ts": 1789979978.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Middle East"
+        "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Zoom"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1259,6 +1240,32 @@
       ],
       "products": [
         "Outlook"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "94570df47b0c4140",
+      "title": "WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session",
+      "summary": "A new flaw in WordPress core let an anonymous visitor leave a comment that planted a hidden script on the page. If a logged-in administrator later opened that page, the script could run code on the site's server. WordPress fixed the flaw, tracked as&nbsp;CVE-2026-93485&nbsp;and dubbed \"Comment2Shell,\" on September 17 in&nbsp;version 7.1.1&nbsp;and told site owners to update right away. The",
+      "url": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-22T06:03:14+00:00",
+      "published_ts": 1790056994.0,
+      "cves": [
+        "CVE-2026-93485"
+      ],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1422,19 +1429,45 @@
       "related_sources": []
     },
     {
-      "id": "2b44f3e6f9cc49c5",
-      "title": "CrowdSec Confirms Source Code Stolen in Supply Chain Attack",
-      "summary": "The cybersecurity firm believes the data breach was the result of the May 2026 TanStack supply chain attack. The post CrowdSec Confirms Source Code Stolen in Supply Chain Attack appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/crowdsec-confirms-source-code-stolen-in-supply-chain-attack/",
-      "source": "SecurityWeek",
+      "id": "c550e1228b51f986",
+      "title": "Group Policy hijacked: PAYLOAD ransomware weaponizes Active Directory GPO",
+      "summary": "Kaspersky GERT experts dive into the technical incident analysis of PAYLOAD ransomware: an encryptionless, binary-less operation that abused Active Directory mechanisms for managing Group Policy Objects.",
+      "url": "https://securelist.com/tr/payload-ransomware-via-group-policy/121335/",
+      "source": "Securelist (Kaspersky)",
       "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-21T10:55:46+00:00",
-      "published_ts": 1789988146.0,
+      "category": "threat",
+      "published": "2026-09-21T10:00:40+00:00",
+      "published_ts": 1789984840.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
+      ],
+      "products": [
+        "Active Directory"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c82b318c45e163ba",
+      "title": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
+      "summary": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based \"much smaller organization\" in the information technology (IT) services industry, once again highlighting how the adversary continues to target developers to breach target networks. Cybersecurity company SentinelOne, which disclosed details of the activity, said it involved the use of Apple",
+      "url": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-21T06:06:44+00:00",
+      "published_ts": 1789970804.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1540,54 +1573,24 @@
       "related_sources": []
     },
     {
-      "id": "74632ac954d4ec7b",
-      "title": "Viral AI actress' hotline face-scans every caller, watches their mood",
-      "summary": "AI actress Tilly Norwood went viral after glitching into Chinese on Piers Morgan Uncensored last night. Her \"Talking Tilly\" video call service face-scans every caller for an 18+ age check, senses callers' moods during calls, and shuts down permanently on September 27. We tried it and read the fine print. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/viral-ai-actress-hotline-face-scans-every-caller-watches-their-mood/",
-      "source": "BleepingComputer",
+      "id": "2b44f3e6f9cc49c5",
+      "title": "CrowdSec Confirms Source Code Stolen in Supply Chain Attack",
+      "summary": "The cybersecurity firm believes the data breach was the result of the May 2026 TanStack supply chain attack. The post CrowdSec Confirms Source Code Stolen in Supply Chain Attack appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/crowdsec-confirms-source-code-stolen-in-supply-chain-attack/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-19T11:38:20+00:00",
-      "published_ts": 1789817900.0,
+      "published": "2026-09-21T10:55:46+00:00",
+      "published_ts": 1789988146.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "804d87f722977ec5",
-      "title": "SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE",
-      "summary": "SolarWinds has released security updates to address a high-severity flaw in Access Rights Manager (ARM) that, if successfully exploited, could lead to an unauthenticated remote code execution vulnerability. The vulnerability, tracked as CVE-2026-28326, is rated 8.8 out of 10.0 on the CVSS scoring system. The issue affects all versions of Access Rights Manager 2026.2 and prior. \"SolarWinds",
-      "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-19T09:31:17+00:00",
-      "published_ts": 1789810277.0,
-      "cves": [
-        "CVE-2026-28326"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "SolarWinds"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
