@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-26T03:43:21.268350+00:00",
+  "generated_at": "2026-09-26T10:52:15.810943+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 101,
+    "all": 90,
     "critical": 2,
-    "high": 7,
-    "medium": 7,
-    "low": 85,
-    "actively_exploited": 14,
-    "with_cves": 18
+    "high": 6,
+    "medium": 4,
+    "low": 78,
+    "actively_exploited": 11,
+    "with_cves": 13
   },
   "sources_used": [
     "BleepingComputer",
@@ -17,7 +17,6 @@
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
-    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
@@ -27,56 +26,6 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
-    {
-      "id": "737281dec5566054",
-      "title": "CVE-2026-5430: WSO2 Multiple Products Path Traversal Vulnerability  (WSO2 Multiple Products)",
-      "summary": "CISA KEV — actively exploited. WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-09-27).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5430",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-09-24T00:00:00+00:00",
-      "published_ts": 1790208000.0,
-      "cves": [
-        "CVE-2026-5430"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [
-        "SharePoint"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 85,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
-          "title": "CISA warns of Sharepoint, WSO2, Adobe Commerce flaws exploited in attacks",
-          "published": "2026-09-25T17:24:20+00:00"
-        },
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
-          "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
-          "published": "2026-09-25T04:46:34+00:00"
-        },
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/cisa-flags-wso2-security-flaw/",
-          "title": "CISA Flags WSO2 Security Flaw Under Active Exploitation",
-          "published": "2026-09-25T10:14:50+00:00"
-        }
-      ]
-    },
     {
       "id": "c5b7ca22266b8ab1",
       "title": "CVE-2026-65660: Microsoft SharePoint Code Injection Vulnerability (Microsoft SharePoint)",
@@ -96,7 +45,45 @@
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "North America"
+      ],
+      "products": [
+        "Office",
+        "SharePoint"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+          "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+          "published": "2026-09-26T08:49:53+00:00"
+        }
+      ]
+    },
+    {
+      "id": "737281dec5566054",
+      "title": "CVE-2026-5430: WSO2 Multiple Products Path Traversal Vulnerability  (WSO2 Multiple Products)",
+      "summary": "CISA KEV — actively exploited. WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-09-27).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5430",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-09-24T00:00:00+00:00",
+      "published_ts": 1790208000.0,
+      "cves": [
+        "CVE-2026-5430"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
       ],
       "products": [
         "SharePoint"
@@ -105,7 +92,20 @@
       "cvss": null,
       "priority_score": 75,
       "priority_label": "Critical",
-      "related_sources": []
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
+          "title": "CISA warns of Sharepoint, WSO2, Adobe Commerce flaws exploited in attacks",
+          "published": "2026-09-25T17:24:20+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+          "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
+          "published": "2026-09-25T04:46:34+00:00"
+        }
+      ]
     },
     {
       "id": "713dd4f9657f317e",
@@ -178,32 +178,6 @@
       ],
       "regions": [
         "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "972788b503ca8eec",
-      "title": "CISA Adds Multiple Check Point Product Flaws to Exploited Vulnerabilities List",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two critical vulnerabilities affecting multiple Check Point products to its Known Exploited Vulnerabilities (KEV) catalog. CISA warns that these flaws are being actively exploited in the wild. Federal civilian agencies must address these vulnerabilities by September 25, 2026, under Binding Operational Directive (BOD) 26-04. The [&#8230;] The post CISA Adds Multiple Check Point Product Flaws to Exploited Vulnerabilities List appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/cisa-adds-multiple-check-point-product-flaws/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T10:05:49+00:00",
-      "published_ts": 1790330749.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
       ],
       "products": [],
       "actively_exploited": true,
@@ -359,7 +333,7 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 40,
+      "priority_score": 35,
       "priority_label": "Medium",
       "related_sources": [
         {
@@ -369,63 +343,6 @@
           "published": "2026-09-25T06:57:40+00:00"
         }
       ]
-    },
-    {
-      "id": "82f3109544e3b87a",
-      "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
-      "summary": "Attackers are exploiting a critical flaw in F5 BIG-IP Access Policy Manager (APM) that lets them run code on a BIG-IP system without logging in, F5 says. The flaw,&nbsp;CVE-2026-94127, affects only systems in which APM serves as an OAuth authorization server, issuing access tokens to applications. F5 disclosed it in&nbsp;an advisory&nbsp;on September 22 and has released engineering hotfixes.",
-      "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-23T08:29:48+00:00",
-      "published_ts": 1790152188.0,
-      "cves": [
-        "CVE-2026-94127"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "91c5fabcddf493d1",
-      "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
-      "summary": "A Chinese threat actor codenamed UTA0565 has been observed exploiting the recently disclosed Google Chrome-Microsoft Windows exploit chain as zero-days through fake websites. The attacks, detected on September 3 and 4, 2026, involved the chaining of two vulnerabilities in Chrome (CVE-2026-85046, CVE-2026-87491) and one impacting Windows Advanced Local Procedure Call (CVE-2026-85880) to break",
-      "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-23T08:29:24+00:00",
-      "published_ts": 1790152164.0,
-      "cves": [
-        "CVE-2026-85046",
-        "CVE-2026-85880",
-        "CVE-2026-87491"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Chrome",
-        "Windows"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
     },
     {
       "id": "93e7899940177966",
@@ -448,32 +365,6 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 35,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "7432184daeb66211",
-      "title": "Salmon Introduces Execution Verification Infrastructure (EVI) for Securing AI Agents and Autonomous Systems",
-      "summary": "San Francisco, USA, September 25th, 2026, CyberNewswire Archipelo today announced Salmon, Execution Verification Infrastructure (EVI) for AI agents and autonomous systems, powered by a cryptographic protocol designed to make execution history verifiable. Salmon establishes verifiable execution history and state lineage across humans, AI agents, and automation. The launch follows the OpenAI–Hugging Face incident, in which [&#8230;] The post Salmon Introduces Execution Verification Infrastructure (EVI) for Securing AI Agents and Autonomous Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/salmon-introduces-execution-verification-infrastructure-evi-for-securing-ai-agents-and-autonomous-systems/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T13:37:32+00:00",
-      "published_ts": 1790343452.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -525,170 +416,6 @@
       ],
       "regions": [
         "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "95e6f5fa500f4cb7",
-      "title": "14-Year-Old Linux Kernel Vulnerability Enables Root Access and Docker Escape",
-      "summary": "A vulnerability in the Linux kernel’s AF_ALG cryptographic interface, which has existed for 14 years, can let an unprivileged local attacker gain root access and escape a Docker container by exploiting a race condition in concurrent socket writes. This flaw, tracked as CVE-2025-39964, was discovered in 2025 by STAR Labs researcher Muhammad Alifa Ramdhan, with [&#8230;] The post 14-Year-Old Linux Kernel Vulnerability Enables Root Access and Docker Escape appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/14-year-old-linux-kernel-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T12:48:13+00:00",
-      "published_ts": 1790340493.0,
-      "cves": [
-        "CVE-2025-39964"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Docker",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2ded35825a049c2d",
-      "title": "ServiceNow Security Flaws Allow Attackers to Execute SQL and Modify Instance Data",
-      "summary": "ServiceNow has disclosed five vulnerabilities affecting its AI Platform, including two critical flaws that could allow unauthenticated attackers to execute arbitrary SQL commands, extract sensitive instance data, modify records, and escalate privileges. The security advisory, published in September 2026 and tracked as KB3159623 on September 24, details the following vulnerabilities: CVE-2026-86857, CVE-2026-86858, CVE-2026-13016, CVE-2026-86859, and [&#8230;] The post ServiceNow Security Flaws Allow Attackers to Execute SQL and Modify Instance Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/servicenow-security-flaws/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T10:58:04+00:00",
-      "published_ts": 1790333884.0,
-      "cves": [
-        "CVE-2026-13016",
-        "CVE-2026-86857",
-        "CVE-2026-86858",
-        "CVE-2026-86859"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "ServiceNow"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ddddfc1d12fdb774",
-      "title": "Rogue AI Agents Tried to Hack Public Websites After Data Retrieval Failed",
-      "summary": "Research from Transluce shows that autonomous AI agents shifted from standard web data collection to probing for vulnerabilities in three public-facing services after traditional data retrieval methods failed. This activity targeted an Australian government health data platform, Data USA, and the University of New Mexico&#8217;s digital library. Rogue AI Tried to Hack Public Websites Transluce [&#8230;] The post Rogue AI Agents Tried to Hack Public Websites After Data Retrieval Failed appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/rogue-ai-agents-tried-to-hack-public-websites/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T10:41:35+00:00",
-      "published_ts": 1790332895.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "661241e9488028ee",
-      "title": "Salesforce Agentforce Flaw Enables 0-Click Data Exfiltration via Prompt Injection",
-      "summary": "Security researchers have revealed a vulnerability chain known as “SalesBleed,” associated with Salesforce&#8217;s Agentforce. This vulnerability could allow attackers to extract sensitive CRM data through an indirect prompt injection embedded in a public Web-to-Lead form. The attack does not require a Salesforce login or a click from the victim and could leak data via DNS [&#8230;] The post Salesforce Agentforce Flaw Enables 0-Click Data Exfiltration via Prompt Injection appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/salesforce-agentforce-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T07:47:45+00:00",
-      "published_ts": 1790322465.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Salesforce"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ac8133e526b76408",
-      "title": "Sudo Vulnerability Lets Attackers Bypass Time-Based Authorization Controls",
-      "summary": "A recently disclosed high-severity vulnerability in Sudo could allow local, unprivileged Linux users to manipulate time-based authorization restrictions in sudoers policies. Tracked as CVE-2026-96512, this vulnerability arises from how Sudo handles the attacker-controlled TZ environment variable when evaluating NOTBEFORE and NOTAFTER constraints. Red Hat is monitoring this flaw under Bug 2539327, which is currently categorized [&#8230;] The post Sudo Vulnerability Lets Attackers Bypass Time-Based Authorization Controls appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/sudo-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T07:26:40+00:00",
-      "published_ts": 1790321200.0,
-      "cves": [
-        "CVE-2026-96512"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "78355f9b9baadb82",
-      "title": "Duelbits Hot Wallet Hack Drains $7 Million, Forces Platform Offline",
-      "summary": "Crypto casino Duelbits has confirmed a cybersecurity breach that drained approximately $7 million from its hot wallets. In response, the company has taken its platform offline while it investigates the incident. Co-founder Joe said they are still determining “exactly what happened and how,” while assuring customers their funds are safe. Multi-Chain Wallet Drain The incident [&#8230;] The post Duelbits Hot Wallet Hack Drains $7 Million, Forces Platform Offline appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/duelbits-hot-wallet-hack-drains-7-million/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T06:16:34+00:00",
-      "published_ts": 1790316994.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -911,108 +638,6 @@
       "related_sources": []
     },
     {
-      "id": "57b7a39b063771d0",
-      "title": "Bitget Says Suspected North Korean Hackers Stole $351.6M After Backend Compromise",
-      "summary": "Cryptocurrency exchange Bitget said suspected North Korean threat actors have stolen $351.6 million from its hot and warm wallets.&nbsp; \"At 18:31 UTC on September 24, 2026, Bitget's security systems identified unauthorized transfers involving a limited number of hot wallets,\" BitGet said in a post shared on X. \"Bitget's cold wallets and the overwhelming majority of platform assets remain",
-      "url": "https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-25T10:35:55+00:00",
-      "published_ts": 1790332555.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Exchange"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "348406ad8b05e793",
-      "title": "Hackers steal $351.6 million in Bitget crypto exchange hack",
-      "summary": "​Cryptocurrency exchange Bitget disclosed today that suspected North Korean hackers have stolen $351.6 million from its hot and warm wallets. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-25T08:33:44+00:00",
-      "published_ts": 1790325224.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Exchange"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8327d9883e2fb733",
-      "title": "Attackers Drain Payy Network After Exploiting Ethereum Bridge Contract",
-      "summary": "Payy Network has confirmed that an attacker exploited its Ethereum bridge contract and drained its entire balance. As a result, the network and wallet services were immediately suspended. This incident affected users&#8217; non-custodial deposits held within the Payy Network and Payy Wallet bridge infrastructure. The exploit occurred around 04:21 UTC on September 24, 2026. Payy [&#8230;] The post Attackers Drain Payy Network After Exploiting Ethereum Bridge Contract appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/attackers-drain-payy-network/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T06:09:53+00:00",
-      "published_ts": 1790316593.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ca17f1bfdb379577",
-      "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
-      "summary": "A flaw in Cloudflare Containers let a paying customer read data that other customers' containers had left behind on the same server, Cloudflare and the researchers who found it said on Thursday. The data came from disk space that earlier containers had used and given up, not from any live workload, and an attacker could not choose whose data they got,&nbsp;according to Cloudflare. The company",
-      "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-25T04:49:22+00:00",
-      "published_ts": 1790311762.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "3d0fededc333d622",
       "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
       "summary": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment. The post Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments appeared first on Microsoft Security Blog .",
@@ -1136,6 +761,54 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "178b91db849ef3c1",
+      "title": "OpenAI Says Its Models Engaged With US Government Websites in New Model Misbehavior Disclosure",
+      "summary": "OpenAI’s CEO said there is an “extensive and ongoing review related to our agents’ use of internet access during training and evaluation.” The post OpenAI Says Its Models Engaged With US Government Websites in New Model Misbehavior Disclosure appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-26T10:15:41+00:00",
+      "published_ts": 1790417741.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d2e32d37f84c9808",
+      "title": "Kiteworks Urges Customers to Shut Down Systems for 9 Hours Over Possible Cyber Attack",
+      "summary": "Kiteworks (formerly Accellion) is urging customers to shut down their systems as a precautionary measure for nine hours over the weekend after it received threat intelligence about an imminent cyber attack. \"Kiteworks received credible threat intelligence from federal intelligence authorities indicating that a threat actor may attempt to target some Kiteworks systems,\" said Frank Balonis, Chief",
+      "url": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-26T07:48:33+00:00",
+      "published_ts": 1790408913.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1310,24 +983,52 @@
       "related_sources": []
     },
     {
-      "id": "e335d987a1d66b5e",
-      "title": "Microsoft: Recent Windows updates cause desktop loading issues",
-      "summary": "Microsoft has confirmed that some users may experience desktop loading issues, including black screens, after installing the August 2026 preview updates and subsequent updates. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-desktop-loading-issues/",
+      "id": "57b7a39b063771d0",
+      "title": "Bitget Says Suspected North Korean Hackers Stole $351.6M After Backend Compromise",
+      "summary": "Cryptocurrency exchange Bitget said suspected North Korean threat actors have stolen $351.6 million from its hot and warm wallets.&nbsp; \"At 18:31 UTC on September 24, 2026, Bitget's security systems identified unauthorized transfers involving a limited number of hot wallets,\" BitGet said in a post shared on X. \"Bitget's cold wallets and the overwhelming majority of platform assets remain",
+      "url": "https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-25T10:35:55+00:00",
+      "published_ts": 1790332555.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [
+        "Exchange"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "348406ad8b05e793",
+      "title": "Hackers steal $351.6 million in Bitget crypto exchange hack",
+      "summary": "​Cryptocurrency exchange Bitget disclosed today that suspected North Korean hackers have stolen $351.6 million from its hot and warm wallets. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-25T10:30:38+00:00",
-      "published_ts": 1790332238.0,
+      "published": "2026-09-25T08:33:44+00:00",
+      "published_ts": 1790325224.0,
       "cves": [],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials",
+        "Financial Services"
       ],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
       "products": [
-        "Windows"
+        "Exchange"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1336,47 +1037,22 @@
       "related_sources": []
     },
     {
-      "id": "3778a592d8254d6b",
-      "title": "‘SalesBleed’ Flaws in Salesforce Agentforce Enabled Zero-Click Data Exfiltration",
-      "summary": "Three vulnerabilities in Salesforce Agentforce allowed hackers to hijack trusted agents, steal data, and launch phishing attacks. The post &#8216;SalesBleed&#8217; Flaws in Salesforce Agentforce Enabled Zero-Click Data Exfiltration appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/",
-      "source": "SecurityWeek",
+      "id": "ca17f1bfdb379577",
+      "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
+      "summary": "A flaw in Cloudflare Containers let a paying customer read data that other customers' containers had left behind on the same server, Cloudflare and the researchers who found it said on Thursday. The data came from disk space that earlier containers had used and given up, not from any live workload, and an attacker could not choose whose data they got,&nbsp;according to Cloudflare. The company",
+      "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-25T09:27:51+00:00",
-      "published_ts": 1790328471.0,
+      "published": "2026-09-25T04:49:22+00:00",
+      "published_ts": 1790311762.0,
       "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [
-        "Salesforce"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3770976396de5039",
-      "title": "Russia's Hybrid Cyber-Physical War in Europe Heats Up",
-      "summary": "A storm is raging in the form of cyber sabotage, disinformation, and drone attacks on European nations, particularly those that provide material support to Ukraine.",
-      "url": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-25T07:00:00+00:00",
-      "published_ts": 1790319600.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1608,6 +1284,30 @@
       ],
       "products": [
         "Outlook"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f0f74b3cc2b4701d",
+      "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
+      "summary": "Details have emerged about a high-severity security flaw in the Elementor Website Builder WordPress plugin that could be exploited by an unauthenticated attacker to create rogue administrator accounts and take control of a site. The cross-site request forgery (CSRF) vulnerability, which has yet to be assigned a CVE identifier, carries a CVSS score of 8.8 out of 10.0. It only affects versions",
+      "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-26T09:55:22+00:00",
+      "published_ts": 1790416522.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1864,6 +1564,82 @@
       "related_sources": []
     },
     {
+      "id": "e335d987a1d66b5e",
+      "title": "Microsoft: Recent Windows updates cause desktop loading issues",
+      "summary": "Microsoft has confirmed that some users may experience desktop loading issues, including black screens, after installing the August 2026 preview updates and subsequent updates. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-desktop-loading-issues/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-25T10:30:38+00:00",
+      "published_ts": 1790332238.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3778a592d8254d6b",
+      "title": "‘SalesBleed’ Flaws in Salesforce Agentforce Enabled Zero-Click Data Exfiltration",
+      "summary": "Three vulnerabilities in Salesforce Agentforce allowed hackers to hijack trusted agents, steal data, and launch phishing attacks. The post &#8216;SalesBleed&#8217; Flaws in Salesforce Agentforce Enabled Zero-Click Data Exfiltration appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-25T09:27:51+00:00",
+      "published_ts": 1790328471.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Salesforce"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3770976396de5039",
+      "title": "Russia's Hybrid Cyber-Physical War in Europe Heats Up",
+      "summary": "A storm is raging in the form of cyber sabotage, disinformation, and drone attacks on European nations, particularly those that provide material support to Ukraine.",
+      "url": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-25T07:00:00+00:00",
+      "published_ts": 1790319600.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "40ebf93e1920c908",
       "title": "Autonomous AI Hacks Raise Thorny Questions of Legal Accountability",
       "summary": "The prospect of legal accountability is unclear. Lawsuits are a possibility, but some legal experts believe any criminal investigations would face an extremely high burden. The post Autonomous AI Hacks Raise Thorny Questions of Legal Accountability appeared first on SecurityWeek .",
@@ -1951,30 +1727,6 @@
       "sectors": [],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1769f6590649e36d",
-      "title": "OpenAI Agents Probed Websites for Vulnerabilities While Fetching Public Data",
-      "summary": "Australia disclosed that an OpenAI agent gained unauthorized access to non-public government information. The post OpenAI Agents Probed Websites for Vulnerabilities While Fetching Public Data appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/openai-agents-probed-websites-for-vulnerabilities-while-fetching-public-data/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-24T14:43:13+00:00",
-      "published_ts": 1790260993.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2278,54 +2030,6 @@
       "products": [
         "Linux"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b8852b36c86bee9c",
-      "title": "Critical Next.js ImageResponse Flaw Can Lead to Server Code Execution via Crafted SVG Input",
-      "summary": "A new security vulnerability in Next.js could allow attackers to run code on a server via&nbsp;ImageResponse, the feature that generates Open Graph and other social preview images, Vercel said. The risk applies when an app puts values an attacker controls, such as text read from the request URL, into the image. Vercel, which develops Next.js,&nbsp;fixed the flaw&nbsp;on September 22 in version",
-      "url": "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-23T07:04:40+00:00",
-      "published_ts": 1790147080.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "268f24fb1fbfbd06",
-      "title": "ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants",
-      "summary": "The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency. \"We have compromised the FBI. We hold very sensitive data on almost ALL FBI Agents and individuals who filed an application with the FBI for a job,\" the group said in a statement posted on their dark",
-      "url": "https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-23T05:30:09+00:00",
-      "published_ts": 1790141409.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
