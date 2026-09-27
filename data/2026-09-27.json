@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-27T16:27:53.199524+00:00",
+  "generated_at": "2026-09-27T20:56:27.757831+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 57,
+    "all": 65,
     "critical": 1,
-    "high": 6,
+    "high": 10,
     "medium": 5,
-    "low": 45,
-    "actively_exploited": 12,
-    "with_cves": 7
+    "low": 49,
+    "actively_exploited": 16,
+    "with_cves": 12
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
     "CISA KEV",
-    "Cisco Talos",
     "Dark Reading",
+    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "SecurityWeek",
@@ -96,6 +96,80 @@
       "related_sources": []
     },
     {
+      "id": "41f821d0cb813f79",
+      "title": "Critical Zero-Day Vulnerabilities Exploited in Citrix NetScaler ADC, Gateway",
+      "summary": "CISA is amplifying Citrix’s disclosure of eight new vulnerabilities affecting Citrix NetScaler ADC and Citrix NetScaler Gateway products: CVE-2026-88771 , CVE-2026-88772 , CVE-2026-88773 , CVE-2026-88774 , CVE-2026-88775 , CVE-2026-88776 , CVE-2026-88777 , and CVE-2026-88778 .&nbsp; CISA has added CVE-2026-88771 and CVE-2026-88772 to its Known Exploited Vulnerabilities (KEV) Catalog . Both are critical, zero-day vulnerabilities that can independently enable remote code execution. CISA has received reports and partner threat intelligence confirming that threat actors are actively exploiting these vulnerabilities globally. Because updating Citrix NetScaler appliances can be complex and may require downtime, CISA is issuing this Alert to help organizations assess exposure, prioritize mitigation, and account for these vulnerabilities into their risk-management activities.&nbsp; Given the potential consequences of successful exploitation and the fact that malicious actors are exploiting at least some of these vulnerabilities, CISA urges users and administrators to review Citrix’s advisories. If possible, users are encouraged to check for indication of compromise prior to patching. Citrix has made indicators of compromise available through NetScaler Console and published additional guidance in their recent publication, Security Bulletin for CVE-2026-88771 through CVE-2026-88778 , to support organizations in assessing potential compromise. Should your organization suspect compromise",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-27T12:00:00+00:00",
+      "published_ts": 1790510400.0,
+      "cves": [
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2026-88773",
+        "CVE-2026-88774",
+        "CVE-2026-88775",
+        "CVE-2026-88776",
+        "CVE-2026-88777",
+        "CVE-2026-88778"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Citrix"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "5d50d4a5c76eb49e",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-88771 Citrix NetScaler Improper Input Validation Vulnerability CVE-2026-88772 Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of&nbsp; KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the&nbsp; specified criteria . A",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-09-27T12:00:00+00:00",
+      "published_ts": 1790510400.0,
+      "cves": [
+        "CVE-2026-88771",
+        "CVE-2026-88772"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Citrix"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+          "title": "Citrix confirms two NetScaler RCE zero-days exploited in attacks",
+          "published": "2026-09-27T16:02:37+00:00"
+        }
+      ]
+    },
+    {
       "id": "3a685a037bfc7763",
       "title": "ShinyHunters uses WAF bypass trick in Oracle PeopleSoft attacks",
       "summary": "The ShinyHunters extortion gang is using a URL-encoding trick to bypass web application firewall rules that mitigate the Oracle PeopleSoft CVE-2026-35273 flaw, allowing the threat actors to resume widespread exploitation of a flaw on vulnerable servers. [...]",
@@ -118,7 +192,7 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 60,
+      "priority_score": 55,
       "priority_label": "High",
       "related_sources": [
         {
@@ -128,6 +202,32 @@
           "published": "2026-09-26T11:46:40+00:00"
         }
       ]
+    },
+    {
+      "id": "8dcbe7f516c23eec",
+      "title": "Uncensored Local AI Model Bypasses EDR to Dump Windows LSASS Credentials",
+      "summary": "A new demonstration shows how a locally hosted, uncensored AI model can help generate a Windows LSASS credential-dumping utility that reportedly evaded endpoint detection and response products during laboratory testing. The finding highlights how accessible local models can reduce the time and expertise needed to adapt offensive tooling after an attacker gains administrative access. Eddie [&#8230;] The post Uncensored Local AI Model Bypasses EDR to Dump Windows LSASS Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/uncensored-local-ai-model-bypasses-edr/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-26T07:28:09+00:00",
+      "published_ts": 1790407689.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
     },
     {
       "id": "60dd7cfabf277cdb",
@@ -157,7 +257,7 @@
     {
       "id": "d55d1889edd9f9cc",
       "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
-      "summary": "Two new unpatched zero-day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway appliances that allow remote code execution are being actively exploited in the wild, security firm watchTowr said on September 26. Citrix has not confirmed the flaws or published a fix. Some administrators say they have taken appliances offline rather than wait for one to be available. NetScaler ADC and",
+      "summary": "Two critical vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway that allow remote code execution have been exploited in the wild, Citrix confirmed on September 27. It released fixes for both, along with six other flaws. One of the two affects every deployment on an affected version, including those in the default configuration. The bulletin came a day after security firm watchTowr",
       "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
       "source": "The Hacker News",
       "source_trust": 4,
@@ -182,21 +282,49 @@
       "related_sources": []
     },
     {
-      "id": "8d26bf08185fcb7e",
-      "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
-      "summary": "The Psychedelic Stealer malware distributed via compromised Ukrainian websites using ClickFix-style Cloudflare verification checks is part of a wider malware-as-a-service (MaaS) platform called Lunex. The new findings come from Ontinue, which described the activity as a four-stage attack chain aimed at targeting Ukrainian-speaking users. \"The attack chain begins with a fake CAPTCHA page and",
-      "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "b844a09badb34d55",
+      "title": "Red Heron Exploits Critical Gitea Flaw to Steal Repositories and Deploy Linux Rootkit",
+      "summary": "A threat actor tracked as Red Heron has exploited the critical Gitea remote code execution vulnerability CVE-2026-60004 to steal source-code repositories, establish persistent access, and deploy a covert Linux toolset consisting of the JITTERLY implant and SIXZUT LD_PRELOAD rootkit. Acronis reported that the actor rapidly weaponized the flaw against internet-exposed Gitea environments, turning initial access [&#8230;] The post Red Heron Exploits Critical Gitea Flaw to Steal Repositories and Deploy Linux Rootkit appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/red-heron-exploits-critical-gitea-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-26T18:22:52+00:00",
-      "published_ts": 1790446972.0,
-      "cves": [],
+      "published": "2026-09-26T08:15:11+00:00",
+      "published_ts": 1790410511.0,
+      "cves": [
+        "CVE-2026-60004"
+      ],
       "sectors": [
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Europe"
+        "Global"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "329a358ed03237da",
+      "title": "Kiteworks Warns Users to Take Systems Offline Amid Suspected Zero-Day Threat",
+      "summary": "Kiteworks has urged customers worldwide to temporarily shut down their servers after receiving credible law-enforcement intelligence that a threat actor may target Kiteworks deployments over the weekend. The emergency advisory is preventive, but the company said the potential activity may involve an unknown zero-day vulnerability. The secure file-sharing and managed content communications provider asked organizations [&#8230;] The post Kiteworks Warns Users to Take Systems Offline Amid Suspected Zero-Day Threat appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/kiteworks-systems-offline-amid-suspected-zero-day/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-26T07:45:21+00:00",
+      "published_ts": 1790408721.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
       ],
       "products": [],
       "actively_exploited": true,
@@ -242,25 +370,23 @@
       ]
     },
     {
-      "id": "95daec587a0ec65b",
-      "title": "Citrix admins warned to shut down NetScalers over 2 exploited zero-days",
-      "summary": "Two unpatched Citrix NetScaler zero-day vulnerabilities are reportedly being exploited in attacks, with cybersecurity agencies, security researchers, and IT providers privately warning organizations about the flaws ahead of patches expected next week. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
-      "source": "BleepingComputer",
+      "id": "8d26bf08185fcb7e",
+      "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+      "summary": "The Psychedelic Stealer malware distributed via compromised Ukrainian websites using ClickFix-style Cloudflare verification checks is part of a wider malware-as-a-service (MaaS) platform called Lunex. The new findings come from Ontinue, which described the activity as a four-stage attack chain aimed at targeting Ukrainian-speaking users. \"The attack chain begins with a fake CAPTCHA page and",
+      "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-27T16:02:37+00:00",
-      "published_ts": 1790524957.0,
+      "published": "2026-09-26T18:22:52+00:00",
+      "published_ts": 1790446972.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Europe"
       ],
-      "products": [
-        "Citrix"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 45,
@@ -374,6 +500,59 @@
       "related_sources": []
     },
     {
+      "id": "9f9dcac02dd2ccbc",
+      "title": "Windows 11 Update Causes Black Screen and Desktop Loading Issues After Sign-In",
+      "summary": "Microsoft has confirmed a Windows 11 issue that can leave users with a black screen after sign-in or prevent the desktop from loading automatically. The problem affects devices that installed the August 2026 non-security preview updates and potentially later cumulative updates, with Azure Virtual Desktop environments using FSLogix profile containers most frequently affected. The issue [&#8230;] The post Windows 11 Update Causes Black Screen and Desktop Loading Issues After Sign-In appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/windows-11-update-causes-black-screen/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-26T08:02:06+00:00",
+      "published_ts": 1790409726.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7432184daeb66211",
+      "title": "Salmon Introduces Execution Verification Infrastructure (EVI) for Securing AI Agents and Autonomous Systems",
+      "summary": "San Francisco, USA, September 25th, 2026, CyberNewswire Archipelo today announced Salmon, Execution Verification Infrastructure (EVI) for AI agents and autonomous systems, powered by a cryptographic protocol designed to make execution history verifiable. Salmon establishes verifiable execution history and state lineage across humans, AI agents, and automation. The launch follows the OpenAI–Hugging Face incident, in which [&#8230;] The post Salmon Introduces Execution Verification Infrastructure (EVI) for Securing AI Agents and Autonomous Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/salmon-introduces-execution-verification-infrastructure-evi-for-securing-ai-agents-and-autonomous-systems/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-25T13:37:32+00:00",
+      "published_ts": 1790343452.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "50bd12a5ea2f6520",
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-65660 Microsoft SharePoint Code Injection Vulnerability CVE-2026-67279 Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerabilit",
@@ -430,6 +609,54 @@
       "related_sources": []
     },
     {
+      "id": "5a55e2df17a2a9e4",
+      "title": "Storm-3168 Hackers Abuse Compromised Service Principals to Destroy Azure Cloud Resources",
+      "summary": "Microsoft has uncovered a destructive Azure campaign linked to Storm-3168, also known as JADEPUFFER, in which attackers abused compromised service principals to map cloud environments, delete critical resources, target recovery safeguards, and obtain storage-account credentials. The activity shows how a single exposed workload identity can give attackers the automation and permissions needed to cause rapid [&#8230;] The post Storm-3168 Hackers Abuse Compromised Service Principals to Destroy Azure Cloud Resources appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/storm-3168-hackers-abuse-compromised-service-principals/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-26T07:09:54+00:00",
+      "published_ts": 1790406594.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ff5efd1a55de52b4",
+      "title": "OpenAI Says Misaligned AI Agents Hacked Hugging Face and Bypassed Security Controls",
+      "summary": "OpenAI has disclosed that autonomous AI agents compromised portions of Hugging Face’s infrastructure during internal cybersecurity evaluations after pursuing misaligned strategies to complete difficult tasks. The company said the event was not simply a platform-security failure, but its most severe identified example of model-driven cyber activity and a warning that advanced agents can pursue objectives [&#8230;] The post OpenAI Says Misaligned AI Agents Hacked Hugging Face and Bypassed Security Controls appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/openai-says-misaligned-ai-agents-hacked-hugging-face/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-26T06:54:16+00:00",
+      "published_ts": 1790405656.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "43e9c0aed6ca7bd4",
       "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
       "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&#038;T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
@@ -455,26 +682,88 @@
       "related_sources": []
     },
     {
-      "id": "7ecce420a1cd7f90",
-      "title": "China and US Agree to Establish AI Safety Channel and Continue Trade and Military Talks",
-      "summary": "The US and China agreed to set up a communication mechanism for artificial intelligence-related incidents. The post China and US Agree to Establish AI Safety Channel and Continue Trade and Military Talks appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
+      "id": "95e6f5fa500f4cb7",
+      "title": "14-Year-Old Linux Kernel Vulnerability Enables Root Access and Docker Escape",
+      "summary": "A vulnerability in the Linux kernel’s AF_ALG cryptographic interface, which has existed for 14 years, can let an unprivileged local attacker gain root access and escape a Docker container by exploiting a race condition in concurrent socket writes. This flaw, tracked as CVE-2025-39964, was discovered in 2025 by STAR Labs researcher Muhammad Alifa Ramdhan, with [&#8230;] The post 14-Year-Old Linux Kernel Vulnerability Enables Root Access and Docker Escape appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/14-year-old-linux-kernel-vulnerability/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-26T18:09:28+00:00",
-      "published_ts": 1790446168.0,
+      "published": "2026-09-25T12:48:13+00:00",
+      "published_ts": 1790340493.0,
+      "cves": [
+        "CVE-2025-39964"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Docker",
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2ded35825a049c2d",
+      "title": "ServiceNow Security Flaws Allow Attackers to Execute SQL and Modify Instance Data",
+      "summary": "ServiceNow has disclosed five vulnerabilities affecting its AI Platform, including two critical flaws that could allow unauthenticated attackers to execute arbitrary SQL commands, extract sensitive instance data, modify records, and escalate privileges. The security advisory, published in September 2026 and tracked as KB3159623 on September 24, details the following vulnerabilities: CVE-2026-86857, CVE-2026-86858, CVE-2026-13016, CVE-2026-86859, and [&#8230;] The post ServiceNow Security Flaws Allow Attackers to Execute SQL and Modify Instance Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/servicenow-security-flaws/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-25T10:58:04+00:00",
+      "published_ts": 1790333884.0,
+      "cves": [
+        "CVE-2026-13016",
+        "CVE-2026-86857",
+        "CVE-2026-86858",
+        "CVE-2026-86859"
+      ],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "ServiceNow"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ddddfc1d12fdb774",
+      "title": "Rogue AI Agents Tried to Hack Public Websites After Data Retrieval Failed",
+      "summary": "Research from Transluce shows that autonomous AI agents shifted from standard web data collection to probing for vulnerabilities in three public-facing services after traditional data retrieval methods failed. This activity targeted an Australian government health data platform, Data USA, and the University of New Mexico&#8217;s digital library. Rogue AI Tried to Hack Public Websites Transluce [&#8230;] The post Rogue AI Agents Tried to Hack Public Websites After Data Retrieval Failed appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/rogue-ai-agents-tried-to-hack-public-websites/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-09-25T10:41:35+00:00",
+      "published_ts": 1790332895.0,
       "cves": [],
       "sectors": [
         "Government & Public Services"
       ],
       "regions": [
-        "Asia-Pacific"
+        "Asia-Pacific",
+        "Global",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -491,6 +780,31 @@
       "cves": [],
       "sectors": [
         "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8343ba453676ecb7",
+      "title": "How the CISO CFO Relationship is a Key to Cybersecurity Success",
+      "summary": "Building a financial bridge: Organizations where CISOs and CFOs align on cybersecurity strategy to protect assets, manage risk and enable business growth are better prepared to face today's threat landscape.",
+      "url": "https://www.darkreading.com/cyber-risk/how-to-manage-ciso-cfo-relationship-cybersecurity-success",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-25T20:28:10+00:00",
+      "published_ts": 1790368090.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
       ],
       "regions": [
         "Unspecified"
@@ -661,33 +975,6 @@
       "related_sources": []
     },
     {
-      "id": "45fdffb74bcbd861",
-      "title": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions",
-      "summary": "A OnePlus 15 running the latest OxygenOS can be rooted by a malicious app the owner installs, one that asks for no special permissions. A researcher, Rasmus Moorats,&nbsp;chained two flaws in OnePlus's own software&nbsp;to gain root access, the highest level of control over an Android phone. OnePlus told him the same flaws affect many more of its own devices and those of OPPO, though it has not",
-      "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-24T18:10:18+00:00",
-      "published_ts": 1790273418.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "ffd1e27eb209a3d4",
       "title": "[Virtual Event] Cybersecurity Outlook 2027",
       "summary": "",
@@ -725,6 +1012,30 @@
       "sectors": [],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7ecce420a1cd7f90",
+      "title": "China and US Agree to Establish AI Safety Channel and Continue Trade and Military Talks",
+      "summary": "The US and China agreed to set up a communication mechanism for artificial intelligence-related incidents. The post China and US Agree to Establish AI Safety Channel and Continue Trade and Military Talks appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-26T18:09:28+00:00",
+      "published_ts": 1790446168.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1019,52 +1330,6 @@
       ],
       "regions": [
         "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ccfd592d440d8832",
-      "title": "SectopRAT Returns, Hiding Inside a Legitimate Application",
-      "summary": "The latest activity from the remote access Trojan (RAT) shows why organizations should monitor the behavior of applications rather than blindly trusting them, experts say.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-24T20:32:50+00:00",
-      "published_ts": 1790281970.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "63c4c7f67d82aa21",
-      "title": "Trust and the enticing consultancy offer",
-      "summary": "In this week’s newsletter Martin muses over a very suspicious elicitation over social media and the true value of trust within the cyber ecosystem. Hubris might be the real vulnerability that the cyber industry must worry about.",
-      "url": "https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-24T18:00:37+00:00",
-      "published_ts": 1790272837.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1432,28 +1697,6 @@
         "Salesforce",
         "Slack"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9a9b553cd45068f4",
-      "title": "ThreatsDay: AI Search Poisoning, AI Coding Tool Leaking Repos, One-Click Code Execution and 13 More Stories",
-      "summary": "This week, the dangerous stuff keeps arriving dressed as something boring. An update. A login box. A search answer. A coding tool. A link you have clicked a hundred times before. That is the thread running through the pile. Trusted paths get poisoned. Old bugs find new jobs. AI tools leak more than expected. Fake prompts look real enough. And some attacks barely need an exploit at all — just",
-      "url": "https://thehackernews.com/2026/09/threatsday-ai-search-poisoning-ai.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-24T17:52:43+00:00",
-      "published_ts": 1790272363.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
