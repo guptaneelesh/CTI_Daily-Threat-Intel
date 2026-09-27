@@ -1,26 +1,23 @@
 {
-  "generated_at": "2026-09-27T03:52:30.661494+00:00",
+  "generated_at": "2026-09-27T11:28:28.767088+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 85,
+    "all": 70,
     "critical": 1,
-    "high": 9,
-    "medium": 5,
-    "low": 70,
-    "actively_exploited": 14,
-    "with_cves": 14
+    "high": 7,
+    "medium": 4,
+    "low": 58,
+    "actively_exploited": 12,
+    "with_cves": 11
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
     "CISA KEV",
     "Cisco Talos",
-    "CrowdStrike Blog",
     "Dark Reading",
-    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
-    "Securelist (Kaspersky)",
     "SecurityWeek",
     "The Hacker News",
     "The Record",
@@ -57,6 +54,12 @@
       "priority_score": 75,
       "priority_label": "Critical",
       "related_sources": [
+        {
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
+          "title": "Microsoft SharePoint Flaw CVE-2026-65660 Now Exploited in Attacks",
+          "published": "2026-09-27T09:23:09+00:00"
+        },
         {
           "source": "The Hacker News",
           "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
@@ -127,84 +130,6 @@
       ]
     },
     {
-      "id": "8dcbe7f516c23eec",
-      "title": "Uncensored Local AI Model Bypasses EDR to Dump Windows LSASS Credentials",
-      "summary": "A new demonstration shows how a locally hosted, uncensored AI model can help generate a Windows LSASS credential-dumping utility that reportedly evaded endpoint detection and response products during laboratory testing. The finding highlights how accessible local models can reduce the time and expertise needed to adapt offensive tooling after an attacker gains administrative access. Eddie [&#8230;] The post Uncensored Local AI Model Bypasses EDR to Dump Windows LSASS Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/uncensored-local-ai-model-bypasses-edr/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-26T07:28:09+00:00",
-      "published_ts": 1790407689.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "b844a09badb34d55",
-      "title": "Red Heron Exploits Critical Gitea Flaw to Steal Repositories and Deploy Linux Rootkit",
-      "summary": "A threat actor tracked as Red Heron has exploited the critical Gitea remote code execution vulnerability CVE-2026-60004 to steal source-code repositories, establish persistent access, and deploy a covert Linux toolset consisting of the JITTERLY implant and SIXZUT LD_PRELOAD rootkit. Acronis reported that the actor rapidly weaponized the flaw against internet-exposed Gitea environments, turning initial access [&#8230;] The post Red Heron Exploits Critical Gitea Flaw to Steal Repositories and Deploy Linux Rootkit appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/red-heron-exploits-critical-gitea-flaw/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-26T08:15:11+00:00",
-      "published_ts": 1790410511.0,
-      "cves": [
-        "CVE-2026-60004"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 55,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "329a358ed03237da",
-      "title": "Kiteworks Warns Users to Take Systems Offline Amid Suspected Zero-Day Threat",
-      "summary": "Kiteworks has urged customers worldwide to temporarily shut down their servers after receiving credible law-enforcement intelligence that a threat actor may target Kiteworks deployments over the weekend. The emergency advisory is preventive, but the company said the potential activity may involve an unknown zero-day vulnerability. The secure file-sharing and managed content communications provider asked organizations [&#8230;] The post Kiteworks Warns Users to Take Systems Offline Amid Suspected Zero-Day Threat appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/kiteworks-systems-offline-amid-suspected-zero-day/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-26T07:45:21+00:00",
-      "published_ts": 1790408721.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 55,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
       "id": "60dd7cfabf277cdb",
       "title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
       "summary": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially imminent cyberattack. [...]",
@@ -226,6 +151,33 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "d55d1889edd9f9cc",
+      "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
+      "summary": "Two new unpatched zero-day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway appliances that allow remote code execution are being actively exploited in the wild, security firm watchTowr said on September 26. Citrix has not confirmed the flaws or published a fix. Some administrators say they have taken appliances offline rather than wait for one to be available. NetScaler ADC and",
+      "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-27T07:47:57+00:00",
+      "published_ts": 1790495277.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Citrix"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
       "priority_label": "High",
       "related_sources": []
     },
@@ -286,12 +238,6 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87902",
           "title": "CVE-2026-87902: WordPress Core Remote File Inclusion Vulnerability (WordPress Core)",
           "published": "2026-09-25T00:00:00+00:00"
-        },
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
-          "title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
-          "published": "2026-09-24T05:36:18+00:00"
         }
       ]
     },
@@ -438,114 +384,6 @@
       "cvss": null,
       "priority_score": 35,
       "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/",
-          "title": "Roundcube Webmail Vulnerability in Attackers’ Crosshairs",
-          "published": "2026-09-25T06:57:40+00:00"
-        }
-      ]
-    },
-    {
-      "id": "9f9dcac02dd2ccbc",
-      "title": "Windows 11 Update Causes Black Screen and Desktop Loading Issues After Sign-In",
-      "summary": "Microsoft has confirmed a Windows 11 issue that can leave users with a black screen after sign-in or prevent the desktop from loading automatically. The problem affects devices that installed the August 2026 non-security preview updates and potentially later cumulative updates, with Azure Virtual Desktop environments using FSLogix profile containers most frequently affected. The issue [&#8230;] The post Windows 11 Update Causes Black Screen and Desktop Loading Issues After Sign-In appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/windows-11-update-causes-black-screen/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-26T08:02:06+00:00",
-      "published_ts": 1790409726.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "5a55e2df17a2a9e4",
-      "title": "Storm-3168 Hackers Abuse Compromised Service Principals to Destroy Azure Cloud Resources",
-      "summary": "Microsoft has uncovered a destructive Azure campaign linked to Storm-3168, also known as JADEPUFFER, in which attackers abused compromised service principals to map cloud environments, delete critical resources, target recovery safeguards, and obtain storage-account credentials. The activity shows how a single exposed workload identity can give attackers the automation and permissions needed to cause rapid [&#8230;] The post Storm-3168 Hackers Abuse Compromised Service Principals to Destroy Azure Cloud Resources appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/storm-3168-hackers-abuse-compromised-service-principals/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-26T07:09:54+00:00",
-      "published_ts": 1790406594.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ff5efd1a55de52b4",
-      "title": "OpenAI Says Misaligned AI Agents Hacked Hugging Face and Bypassed Security Controls",
-      "summary": "OpenAI has disclosed that autonomous AI agents compromised portions of Hugging Face’s infrastructure during internal cybersecurity evaluations after pursuing misaligned strategies to complete difficult tasks. The company said the event was not simply a platform-security failure, but its most severe identified example of model-driven cyber activity and a warning that advanced agents can pursue objectives [&#8230;] The post OpenAI Says Misaligned AI Agents Hacked Hugging Face and Bypassed Security Controls appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/openai-says-misaligned-ai-agents-hacked-hugging-face/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-26T06:54:16+00:00",
-      "published_ts": 1790405656.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7432184daeb66211",
-      "title": "Salmon Introduces Execution Verification Infrastructure (EVI) for Securing AI Agents and Autonomous Systems",
-      "summary": "San Francisco, USA, September 25th, 2026, CyberNewswire Archipelo today announced Salmon, Execution Verification Infrastructure (EVI) for AI agents and autonomous systems, powered by a cryptographic protocol designed to make execution history verifiable. Salmon establishes verifiable execution history and state lineage across humans, AI agents, and automation. The launch follows the OpenAI–Hugging Face incident, in which [&#8230;] The post Salmon Introduces Execution Verification Infrastructure (EVI) for Securing AI Agents and Autonomous Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/salmon-introduces-execution-verification-infrastructure-evi-for-securing-ai-agents-and-autonomous-systems/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T13:37:32+00:00",
-      "published_ts": 1790343452.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -662,92 +500,6 @@
       "related_sources": []
     },
     {
-      "id": "95e6f5fa500f4cb7",
-      "title": "14-Year-Old Linux Kernel Vulnerability Enables Root Access and Docker Escape",
-      "summary": "A vulnerability in the Linux kernel’s AF_ALG cryptographic interface, which has existed for 14 years, can let an unprivileged local attacker gain root access and escape a Docker container by exploiting a race condition in concurrent socket writes. This flaw, tracked as CVE-2025-39964, was discovered in 2025 by STAR Labs researcher Muhammad Alifa Ramdhan, with [&#8230;] The post 14-Year-Old Linux Kernel Vulnerability Enables Root Access and Docker Escape appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/14-year-old-linux-kernel-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T12:48:13+00:00",
-      "published_ts": 1790340493.0,
-      "cves": [
-        "CVE-2025-39964"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Docker",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2ded35825a049c2d",
-      "title": "ServiceNow Security Flaws Allow Attackers to Execute SQL and Modify Instance Data",
-      "summary": "ServiceNow has disclosed five vulnerabilities affecting its AI Platform, including two critical flaws that could allow unauthenticated attackers to execute arbitrary SQL commands, extract sensitive instance data, modify records, and escalate privileges. The security advisory, published in September 2026 and tracked as KB3159623 on September 24, details the following vulnerabilities: CVE-2026-86857, CVE-2026-86858, CVE-2026-13016, CVE-2026-86859, and [&#8230;] The post ServiceNow Security Flaws Allow Attackers to Execute SQL and Modify Instance Data appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/servicenow-security-flaws/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T10:58:04+00:00",
-      "published_ts": 1790333884.0,
-      "cves": [
-        "CVE-2026-13016",
-        "CVE-2026-86857",
-        "CVE-2026-86858",
-        "CVE-2026-86859"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "ServiceNow"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ddddfc1d12fdb774",
-      "title": "Rogue AI Agents Tried to Hack Public Websites After Data Retrieval Failed",
-      "summary": "Research from Transluce shows that autonomous AI agents shifted from standard web data collection to probing for vulnerabilities in three public-facing services after traditional data retrieval methods failed. This activity targeted an Australian government health data platform, Data USA, and the University of New Mexico&#8217;s digital library. Rogue AI Tried to Hack Public Websites Transluce [&#8230;] The post Rogue AI Agents Tried to Hack Public Websites After Data Retrieval Failed appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/rogue-ai-agents-tried-to-hack-public-websites/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-25T10:41:35+00:00",
-      "published_ts": 1790332895.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "3d0fededc333d622",
       "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
       "summary": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment. The post Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments appeared first on Microsoft Security Blog .",
@@ -791,56 +543,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "38408d9fde41943c",
-      "title": "17,000 URLs Reveal How ClickFix Turns Trusted Websites Into Malware Traps: Report by CTM360",
-      "summary": "ClickFix has become the most common way attackers get into enterprise networks, and it does it without an exploit, an attachment, or a file on disk. Our new global threat report traces the technique from a novelty in late 2023 to a subscription product with on-chain infrastructure and a state-sponsored user base, and explains why blocking malicious domains is no longer a useful defense. Read",
-      "url": "https://thehackernews.com/2026/09/17000-urls-reveal-how-clickfix-turns.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-24T09:14:21+00:00",
-      "published_ts": 1790241261.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "cb0559220179a1fe",
-      "title": "TeamFiltration Campaign Compromises Seven Microsoft 365 Accounts Using Default Passwords",
-      "summary": "Cybersecurity researchers have disclosed details of an active TeamFiltration campaign codenamed UNK_CondorFiltration that has targeted over 5,700 accounts across 28 Microsoft 365 tenants. According to Proofpoint, the activity has primarily focused on Chilean retail and financial institutions. It originated from 1,487 unique AWS EC2 source IP addresses. \"The campaign compromised 7 accounts –",
-      "url": "https://thehackernews.com/2026/09/teamfiltration-compromises-seven.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-24T06:32:03+00:00",
-      "published_ts": 1790231523.0,
-      "cves": [],
-      "sectors": [
-        "Consumer",
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Latin America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -919,54 +621,6 @@
       "products": [
         "Windows"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "178b91db849ef3c1",
-      "title": "OpenAI Says Its Models Engaged With US Government Websites in New Model Misbehavior Disclosure",
-      "summary": "OpenAI’s CEO said there is an “extensive and ongoing review related to our agents’ use of internet access during training and evaluation.” The post OpenAI Says Its Models Engaged With US Government Websites in New Model Misbehavior Disclosure appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-26T10:15:41+00:00",
-      "published_ts": 1790417741.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d2e32d37f84c9808",
-      "title": "Kiteworks Urges Customers to Shut Down Systems for 9 Hours Over Possible Cyber Attack",
-      "summary": "Kiteworks (formerly Accellion) is urging customers to shut down their systems as a precautionary measure for nine hours over the weekend after it received threat intelligence about an imminent cyber attack. \"Kiteworks received credible threat intelligence from federal intelligence authorities indicating that a threat actor may attempt to target some Kiteworks systems,\" said Frank Balonis, Chief",
-      "url": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-26T07:48:33+00:00",
-      "published_ts": 1790408913.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1285,31 +939,6 @@
       "related_sources": []
     },
     {
-      "id": "7f7fa064f1476ad9",
-      "title": "OpenAI Agent Bypassed Australian Medicare Portal Controls to Access Non-Public Files",
-      "summary": "An AI agent on an internal OpenAI research task bypassed access controls on an Australian government Medicare statistics portal in June, Prime Minister&nbsp;Anthony Albanese said. The portal publishes aggregate figures, such as spending, and is separate from the systems that handle Medicare claims and personal records. The agent reached files on it that were not public, but no personal",
-      "url": "https://thehackernews.com/2026/09/openai-agent-bypassed-australian.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-24T07:07:25+00:00",
-      "published_ts": 1790233645.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "ffd1e27eb209a3d4",
       "title": "[Virtual Event] Cybersecurity Outlook 2027",
       "summary": "",
@@ -1402,17 +1031,19 @@
       "related_sources": []
     },
     {
-      "id": "09e6feecfc9ff16d",
-      "title": "Zero Trust for AI Agents Starts With Fixing Zero Visibility",
-      "summary": "The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much productivity they could promise, a string of recent incidents, including a widely discussed intrusion at Hugging Face during an evaluation of OpenAI agents, has spurred organizations to",
-      "url": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
-      "source": "The Hacker News",
+      "id": "178b91db849ef3c1",
+      "title": "OpenAI Says Its Models Engaged With US Government Websites in New Model Misbehavior Disclosure",
+      "summary": "OpenAI’s CEO said there is an “extensive and ongoing review related to our agents’ use of internet access during training and evaluation.” The post OpenAI Says Its Models Engaged With US Government Websites in New Model Misbehavior Disclosure appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-26T10:30:00+00:00",
-      "published_ts": 1790418600.0,
+      "published": "2026-09-26T10:15:41+00:00",
+      "published_ts": 1790417741.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1424,23 +1055,23 @@
       "related_sources": []
     },
     {
-      "id": "f0f74b3cc2b4701d",
-      "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
-      "summary": "Details have emerged about a high-severity security flaw in the Elementor Website Builder WordPress plugin that could be exploited by an unauthenticated attacker to create rogue administrator accounts and take control of a site. The cross-site request forgery (CSRF) vulnerability, which has yet to be assigned a CVE identifier, carries a CVSS score of 8.8 out of 10.0. It only affects versions",
-      "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+      "id": "d2e32d37f84c9808",
+      "title": "Kiteworks Urges Customers to Shut Down Systems for 9 Hours Over Possible Cyber Attack",
+      "summary": "Kiteworks (formerly Accellion) is urging customers to shut down their systems as a precautionary measure for nine hours over the weekend after it received threat intelligence about an imminent cyber attack. \"Kiteworks received credible threat intelligence from federal intelligence authorities indicating that a threat actor may attempt to target some Kiteworks systems,\" said Frank Balonis, Chief",
+      "url": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-26T09:55:22+00:00",
-      "published_ts": 1790416522.0,
+      "published": "2026-09-26T07:48:33+00:00",
+      "published_ts": 1790408913.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "WordPress"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1790,39 +1421,15 @@
       "related_sources": []
     },
     {
-      "id": "778fc6e4d28394ed",
-      "title": "Secrets Sprawl Is an Identity Problem That AI Just Made Impossible to Ignore",
-      "summary": "AI coding agents are changing how quickly developers can build and ship software as well as how quickly credentials can become exposed. According to GitGuardian’s 2026 State of Secrets Sprawl Report, commits identified as AI-assisted are leaking secrets at approximately twice the rate of human-written ones. Most of the fastest-growing categories of leaked credentials are now connected to AI",
-      "url": "https://thehackernews.com/2026/09/secrets-sprawl-is-identity-problem-that.html",
+      "id": "09e6feecfc9ff16d",
+      "title": "Zero Trust for AI Agents Starts With Fixing Zero Visibility",
+      "summary": "The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much productivity they could promise, a string of recent incidents, including a widely discussed intrusion at Hugging Face during an evaluation of OpenAI agents, has spurred organizations to",
+      "url": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-24T11:00:00+00:00",
-      "published_ts": 1790247600.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ea70e8f09cbe8c8d",
-      "title": "CrowdStrike Named a Leader in The Forrester Wave&trade;: Proactive Security Platforms, Q3 2026",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-forrester-wave-proactive-security-platforms-q3-2026/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-24T05:00:00+00:00",
-      "published_ts": 1790226000.0,
+      "published": "2026-09-26T10:30:00+00:00",
+      "published_ts": 1790418600.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1831,7 +1438,31 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f0f74b3cc2b4701d",
+      "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
+      "summary": "Details have emerged about a high-severity security flaw in the Elementor Website Builder WordPress plugin that could be exploited by an unauthenticated attacker to create rogue administrator accounts and take control of a site. The cross-site request forgery (CSRF) vulnerability, which has yet to be assigned a CVE identifier, carries a CVSS score of 8.8 out of 10.0. It only affects versions",
+      "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-26T09:55:22+00:00",
+      "published_ts": 1790416522.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2170,30 +1801,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "48de25f999b19fb3",
-      "title": "MacSync under the microscope: new delivery methods and a new payload",
-      "summary": "We look at a new version of the MacSync macOS stealer with a backdoor module that targets crypto enthusiasts and developers.",
-      "url": "https://securelist.com/macsync-new-version/121383/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-09-24T10:00:21+00:00",
-      "published_ts": 1790244021.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "macOS"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
