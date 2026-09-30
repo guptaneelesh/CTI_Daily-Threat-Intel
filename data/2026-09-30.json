@@ -1,24 +1,22 @@
 {
-  "generated_at": "2026-09-30T17:56:36.480874+00:00",
+  "generated_at": "2026-09-30T21:59:17.028308+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 96,
-    "critical": 1,
+    "all": 91,
+    "critical": 0,
     "high": 4,
-    "medium": 15,
+    "medium": 11,
     "low": 76,
-    "actively_exploited": 10,
-    "with_cves": 15
+    "actively_exploited": 11,
+    "with_cves": 13
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
-    "CISA KEV",
     "Check Point Research",
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
-    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "SecurityWeek",
@@ -28,15 +26,15 @@
   ],
   "items": [
     {
-      "id": "38351ee40a77b219",
-      "title": "CVE-2026-76504: Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability (Cisco Catalyst SD-WAN Manager)",
-      "summary": "CISA KEV — actively exploited. Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-03).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504",
-      "source": "CISA KEV",
+      "id": "5eeb3495d8b3bbf3",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-76504 Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/30/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA Alerts",
       "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-09-30T00:00:00+00:00",
-      "published_ts": 1790726400.0,
+      "category": "advisory",
+      "published": "2026-09-30T12:00:00+00:00",
+      "published_ts": 1790769600.0,
       "cves": [
         "CVE-2026-76504"
       ],
@@ -51,9 +49,15 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 80,
-      "priority_label": "Critical",
+      "priority_score": 60,
+      "priority_label": "High",
       "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504",
+          "title": "CVE-2026-76504: Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability (Cisco Catalyst SD-WAN Manager)",
+          "published": "2026-09-30T00:00:00+00:00"
+        },
         {
           "source": "The Hacker News",
           "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
@@ -65,48 +69,6 @@
           "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
           "title": "Cisco warns of new SD-WAN zero-day exploited in attacks",
           "published": "2026-09-30T14:46:40+00:00"
-        }
-      ]
-    },
-    {
-      "id": "3245a5f0b4c5be77",
-      "title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
-      "summary": "Cybersecurity researchers have disclosed technical details of a recently patched critical security flaw in Citrix NetScaler ADC and Gateway that has come under active exploitation in the wild. The vulnerability, tracked as CVE-2026-88772 (CVSS score: 9.5), has been described as a memory overflow bug in the Datagram Transport Layer Security (DTLS) protocol handling that's rooted in the NetScaler",
-      "url": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-30T05:30:30+00:00",
-      "published_ts": 1790746230.0,
-      "cves": [
-        "CVE-2026-88772"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Citrix"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 60,
-      "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/",
-          "title": "Hackers exploit Citrix NetScaler zero-day to deploy web shells",
-          "published": "2026-09-29T18:37:12+00:00"
-        },
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/hackers-exploit-citrix-netscaler-zero-day/",
-          "title": "Hackers Exploit Citrix NetScaler Zero-Day to Gain Root Access and Deploy Web Shells",
-          "published": "2026-09-30T09:47:33+00:00"
         }
       ]
     },
@@ -293,6 +255,41 @@
       "related_sources": []
     },
     {
+      "id": "3245a5f0b4c5be77",
+      "title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
+      "summary": "Cybersecurity researchers have disclosed technical details of a recently patched critical security flaw in Citrix NetScaler ADC and Gateway that has come under active exploitation in the wild. The vulnerability, tracked as CVE-2026-88772 (CVSS score: 9.5), has been described as a memory overflow bug in the Datagram Transport Layer Security (DTLS) protocol handling that's rooted in the NetScaler",
+      "url": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T05:30:30+00:00",
+      "published_ts": 1790746230.0,
+      "cves": [
+        "CVE-2026-88772"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Citrix"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/",
+          "title": "Hackers exploit Citrix NetScaler zero-day to deploy web shells",
+          "published": "2026-09-29T18:37:12+00:00"
+        }
+      ]
+    },
+    {
       "id": "4146036875e8326c",
       "title": "Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild",
       "summary": "Unit 42 is aware of possible 0-day activity against NetScaler devices. Citrix reports CVE-2026-88771, CVE-2026-88772 have been exploited in the wild. The post Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild appeared first on Unit 42 .",
@@ -329,6 +326,28 @@
       ]
     },
     {
+      "id": "65bdeb6c1091875b",
+      "title": "DIVD says Zammad zero-days enabled AI-driven network breach",
+      "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) says that the breach of its network was possible by exploiting a chain of two zero-day vulnerabilities in the open-source Zammad ticketing system. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T19:49:15+00:00",
+      "published_ts": 1790797755.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "4750a0c6f4c11e2f",
       "title": "Dual NetScaler Zero-Days Trigger Chaos for Citrix Customers",
       "summary": "The critical vulnerabilities, which impact default configurations of NetScaler products, essentially give attackers a skeleton key to customers' networks.",
@@ -349,142 +368,6 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 35,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "977e70a880a1059d",
-      "title": "RedFlick Uses Scheduled Tasks and Password-Protected Archives to Deploy CosmicPulse Backdoor",
-      "summary": "Russian state-linked threat actor Star Blizzard has expanded its cyberespionage operations in 2026 with a phishing and malware-delivery technique tracked by Microsoft as RedFlick. Microsoft Threat Intelligence reported that the group, which CISA attributes to Russia’s Federal Security Service (FSB) Center 18, conducted at least 13 phishing campaigns between January and August 2026. The activity [&#8230;] The post RedFlick Uses Scheduled Tasks and Password-Protected Archives to Deploy CosmicPulse Backdoor appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/redflick-backdoor/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T13:38:39+00:00",
-      "published_ts": 1790775519.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "b1711fc3f5f08cba",
-      "title": "PaperPhone Cluster Shows How One Bot Operator Can Look Like Thousands of Mobile Users",
-      "summary": "A large-scale scraping cluster dubbed PaperPhone, exposing how one operator can manufacture the appearance of tens of thousands of legitimate mobile users across dozens of countries. The operation used roughly 75,000 IP addresses across 230 address blocks in 43 countries. However, browser-fingerprinting and network-analysis signals pointed to a centrally coordinated infrastructure rather than a genuinely [&#8230;] The post PaperPhone Cluster Shows How One Bot Operator Can Look Like Thousands of Mobile Users appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/paperphone-cluster/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T12:31:57+00:00",
-      "published_ts": 1790771517.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "0c979c1353eac2ce",
-      "title": "Attackers Target Developer Credentials to Expand Supply Chain Intrusions Beyond Source Code",
-      "summary": "Software supply chain attacks are increasingly evolving into cloud identity breaches, as attackers weaponize trusted packages to steal credentials from developer workstations and CI/CD environments before an application is ever executed. The result is a dangerous pivot: a routine dependency installation can give threat actors access to cloud accounts, source-code repositories, container platforms, secrets-management systems, [&#8230;] The post Attackers Target Developer Credentials to Expand Supply Chain Intrusions Beyond Source Code appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/supply-chain-intrusions/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T12:00:47+00:00",
-      "published_ts": 1790769647.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "131653f2f05cd3e1",
-      "title": "Google Chrome 154 Update Fixes 32 Security Flaws Including Critical ANGLE Bug",
-      "summary": "Google has released Chrome version 154 for desktop platforms, addressing 32 security vulnerabilities, including a critical buffer overflow flaw in the ANGLE graphics translation layer. This update is being rolled out as version 154.0.8037.92/.93 for Windows and macOS, and version 154.0.8037.92 for Linux. Google Chrome 154 Update The most severe issue, tracked as CVE-2026-102331, is [&#8230;] The post Google Chrome 154 Update Fixes 32 Security Flaws Including Critical ANGLE Bug appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/google-chrome-154-update/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T11:43:52+00:00",
-      "published_ts": 1790768632.0,
-      "cves": [
-        "CVE-2026-102331"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Chrome",
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "5cd62f388d049ba1",
-      "title": "Hackers Abuse MSP360 and ScreenConnect RMM Tools for Persistent Access and Credential Theft",
-      "summary": "The phishing campaigns that weaponize legitimate remote monitoring and management software to establish persistent access and support credential theft on Windows systems. The campaign demonstrates a recurring operational trend: rather than exploit a vulnerability or deploy obvious custom malware, attackers are abusing trusted administrative platforms already designed to execute commands, transfer files, deploy applications, and [&#8230;] The post Hackers Abuse MSP360 and ScreenConnect RMM Tools for Persistent Access and Credential Theft appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/msp360-and-rmm-abuse/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T10:25:40+00:00",
-      "published_ts": 1790763940.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -517,40 +400,6 @@
       "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
-    },
-    {
-      "id": "48f2cc6d49a8d62b",
-      "title": "MikroTik RouterOS",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to achieve remote code execution or cause a denial of service. The following versions of MikroTik RouterOS are affected: RouterOS &lt;7.24 (CVE-2026-84411) CVSS Vendor Equipment Vulnerabilities v3 9.8 MikroTik MikroTik RouterOS Integer Underflow (Wrap or Wraparound) Background Critical Infrastructure Sectors: Communications, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Latvia Vulnerabilities Expand All + CVE-2026-84411 The web management service in affected RouterOS versions contains an integer underflow in its HTTP request body handling that is reachable before authentication. This can be leveraged by an unauthenticated network attacker to achieve arbitrary code execution as root, or to cause a denial of service, using a single crafted request. View CVE Details Affected Products MikroTik RouterOS Vendor: MikroTik Product Version: MikroTik RouterOS: &lt;7.24 Product Status: known_affected Remediations Vendor fix MikroTik recommends users update RouterOS to version 7.24 or later. The upgrade can be downloaded from the MikroTik website. https://mikrotik.com/download Relevant CWE: CWE-191 Integer Underflow (Wrap or Wraparound) Metrics CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N Acknowledgments An ano",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-06",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-09-29T12:00:00+00:00",
-      "published_ts": 1790683200.0,
-      "cves": [
-        "CVE-2026-84411"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/critical-mikrotik-routeros-vulnerability/",
-          "title": "Critical MikroTik RouterOS Vulnerability Exposes Devices to Remote Code Execution",
-          "published": "2026-09-30T12:02:10+00:00"
-        }
-      ]
     },
     {
       "id": "b6442c7484ed3b60",
@@ -642,21 +491,22 @@
       "related_sources": []
     },
     {
-      "id": "2db946e3a80cd1f1",
-      "title": "Claude Compliance API Lets Security Teams Monitor Chats, Files and Agent Activity",
-      "summary": "Anthropic has enhanced enterprise security visibility for its AI assistant, Claude, with the Compliance API. This feature lets organizations extract data on activity, conversations, files, projects, and agent sessions into their existing governance and security operations platforms. The Compliance API is available to both Claude Enterprise and Claude Platform customers, although the breadth of accessible [&#8230;] The post Claude Compliance API Lets Security Teams Monitor Chats, Files and Agent Activity appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/claude-compliance-api/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T12:29:20+00:00",
-      "published_ts": 1790771360.0,
+      "id": "5703fb73a8499105",
+      "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
+      "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what&#8217;s next: Your guide to Microsoft Security at Microsoft Ignite 2026 appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-30T19:31:00+00:00",
+      "published_ts": 1790796660.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Global"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -717,22 +567,23 @@
       "related_sources": []
     },
     {
-      "id": "763a9c64934c1137",
-      "title": "Phishing Abuses RMM Tools for Persistent Access",
-      "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
-      "source": "Microsoft Security Blog",
+      "id": "48f2cc6d49a8d62b",
+      "title": "MikroTik RouterOS",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to achieve remote code execution or cause a denial of service. The following versions of MikroTik RouterOS are affected: RouterOS &lt;7.24 (CVE-2026-84411) CVSS Vendor Equipment Vulnerabilities v3 9.8 MikroTik MikroTik RouterOS Integer Underflow (Wrap or Wraparound) Background Critical Infrastructure Sectors: Communications, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Latvia Vulnerabilities Expand All + CVE-2026-84411 The web management service in affected RouterOS versions contains an integer underflow in its HTTP request body handling that is reachable before authentication. This can be leveraged by an unauthenticated network attacker to achieve arbitrary code execution as root, or to cause a denial of service, using a single crafted request. View CVE Details Affected Products MikroTik RouterOS Vendor: MikroTik Product Version: MikroTik RouterOS: &lt;7.24 Product Status: known_affected Remediations Vendor fix MikroTik recommends users update RouterOS to version 7.24 or later. The upgrade can be downloaded from the MikroTik website. https://mikrotik.com/download Relevant CWE: CWE-191 Integer Underflow (Wrap or Wraparound) Metrics CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N Acknowledgments An ano",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-06",
+      "source": "CISA Alerts",
       "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-29T21:39:27+00:00",
-      "published_ts": 1790717967.0,
-      "cves": [],
+      "category": "advisory",
+      "published": "2026-09-29T12:00:00+00:00",
+      "published_ts": 1790683200.0,
+      "cves": [
+        "CVE-2026-84411"
+      ],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -845,6 +696,31 @@
       "related_sources": []
     },
     {
+      "id": "363a0ff16c560ad6",
+      "title": "Malicious Custom GPTs Turn ChatGPT Into RAT Delivery Lure",
+      "summary": "In yet another ClickFix-style campaign, threat actors abuse legitimate domains from OpenAI and Google to fool unsuspecting users.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/malicious-custom-gpts-chatgpt-rat-delivery-lure",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T21:25:47+00:00",
+      "published_ts": 1790803547.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "c47090ded2a9a736",
       "title": "Attackers Abuse MSP360 to Deploy ScreenConnect in Dual-RMM Phishing Attacks",
       "summary": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content. \"Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected",
@@ -945,32 +821,6 @@
       "related_sources": []
     },
     {
-      "id": "2340f81237d565e7",
-      "title": "Docker CopyEscape CVE-2026-17106 Lets Malicious Containers Overwrite Host Files",
-      "summary": "A critical Docker vulnerability tracked as CVE-2026-17106, also known as CopyEscape, could allow a malicious container to overwrite files on the host machine when a user runs the `docker cp` command. This vulnerability affects copy-out operations, where Docker retrieves data from a container and extracts it onto the system running the Docker Command Line Interface [&#8230;] The post Docker CopyEscape CVE-2026-17106 Lets Malicious Containers Overwrite Host Files appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/docker-copyescape-cve-2026-17106/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T12:42:59+00:00",
-      "published_ts": 1790772179.0,
-      "cves": [
-        "CVE-2026-17106"
-      ],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Docker"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "5f00dac6e317db9a",
       "title": "TeamViewer urges users to patch severe flaws “as soon as possible”",
       "summary": "Remote access software company TeamViewer warned customers on Tuesday to immediately patch a set of high-severity vulnerabilities affecting its client and host software. [...]",
@@ -1024,37 +874,15 @@
       "related_sources": []
     },
     {
-      "id": "208b1b52d003b60b",
-      "title": "12 Best IGA Tools in 2026: The Ranked Buyer’s Guide",
-      "summary": "Identity governance and administration has become essential as organizations manage employees, contractors, service accounts, machine identities, and AI agents across increasingly complex environments. The best IGA tools help security teams answer three critical questions: Who has access? Why do they have it? Should they continue to have it? Modern IGA platforms go beyond periodic access [&#8230;] The post 12 Best IGA Tools in 2026: The Ranked Buyer&#8217;s Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/best-iga-tools/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-09-30T11:59:48+00:00",
-      "published_ts": 1790769588.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2aa0991f6d4b7c44",
-      "title": "Custom ChatGPTs push ClickFix attacks to deploy RAT malware",
-      "summary": "Custom variants of OpenAI's ChatGPT promoted in sponsored Google results are directing unsuspecting users to malicious sites that use ClickFix attacks to deliver malware. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T20:59:39+00:00",
-      "published_ts": 1790715579.0,
+      "id": "763a9c64934c1137",
+      "title": "Phishing Abuses RMM Tools for Persistent Access",
+      "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-09-29T21:39:27+00:00",
+      "published_ts": 1790717967.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -1064,33 +892,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5186e9698944cb87",
-      "title": "OpenAI apologizes for agents breaching Australian government websites without authorization",
-      "summary": "The artificial intelligence giant acknowledged it botched its response to the incidents and should have done more to promptly notify and work with the Australian government in the days after it discovered the breaches.",
-      "url": "https://therecord.media/openai-apologizes-australia-medicare-breach",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T19:48:00+00:00",
-      "published_ts": 1790711280.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Edge"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1198,6 +999,78 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a56f9528e3120ed9",
+      "title": "Trump, Tech Giants Strike Voluntary AI Safety Accord",
+      "summary": "The new White House Accord on so-called &quot;Super Intelligence&quot; calls on companies to implement greater controls and oversight over AI safety.",
+      "url": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T20:51:15+00:00",
+      "published_ts": 1790801475.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e086876282facfff",
+      "title": "After reports on suicide deaths, Pentagon puts Cyber Command on notice",
+      "summary": "An August 31 memo obtained by Recorded Future News shows that the Pentagon's assistant secretary for cyber policy made specific demands of U.S. Cyber Command leadership after reports of a cluster of suicide deaths.",
+      "url": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T19:35:00+00:00",
+      "published_ts": 1790796900.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b85246ecc1429cd0",
+      "title": "Google: Vulnerability disclosures double to 10,000 per month as AI fuels exploitation",
+      "summary": "Vulnerability disclosures continue to skyrocket, doubling over the course of the year to more than 10,000 each month, Google researchers warned.",
+      "url": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T19:00:00+00:00",
+      "published_ts": 1790794800.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1399,159 +1272,15 @@
       "related_sources": []
     },
     {
-      "id": "2b907b8f1d9a6830",
-      "title": "Unsloth Studio Flaw Turns Routine Model Inspection Into Code Execution",
-      "summary": "A patched Unsloth Studio vulnerability allows malicious AI models to execute arbitrary Python code during inspection, via the trust_remote_code setting.",
-      "url": "https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T21:08:42+00:00",
-      "published_ts": 1790716122.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1127d7f1ef87dd1c",
-      "title": "US Air Force members given over 6 years in prison for cyber theft of more than $2 million",
-      "summary": "According to court documents, both men pleaded guilty to wire fraud, identity theft and access device fraud charges in June.",
-      "url": "https://therecord.media/us-air-force-members-given-6-year-sentence-cyber",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T21:01:00+00:00",
-      "published_ts": 1790715660.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "90f5db3871a909cd",
-      "title": "Controversial spyware firm Paragon to go public by end of year",
-      "summary": "The company plans to close the deal around the end of the year at which point Paragon will begin trading on Nasdaq under the REDLattice umbrella.",
-      "url": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T20:35:00+00:00",
-      "published_ts": 1790714100.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ac378ba45d371a70",
-      "title": "OpenAI CEO Announces New AI Agent and Avoids Mention of Security Concerns at Developer Conference",
-      "summary": "Altman made a slew of product announcements and updates, including the company’s new agents, called Dots. The post OpenAI CEO Announces New AI Agent and Avoids Mention of Security Concerns at Developer Conference appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T20:14:44+00:00",
-      "published_ts": 1790712884.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "49ded0a4f29cd42f",
-      "title": "FBI tells ShinyHunters members to turn themselves in after recent arrest",
-      "summary": "The FBI is warning members of the ShinyHunters extortion group to turn themselves in after Dutch police arrested a man the bureau described as one of the group's alleged leaders. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
+      "id": "2aa0991f6d4b7c44",
+      "title": "Custom ChatGPTs push ClickFix attacks to deploy RAT malware",
+      "summary": "Custom variants of OpenAI's ChatGPT promoted in sponsored Google results are directing unsuspecting users to malicious sites that use ClickFix attacks to deliver malware. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-29T20:09:55+00:00",
-      "published_ts": 1790712595.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "43e08630377d44cd",
-      "title": "Former US Air Force members sent to prison over BEC attacks",
-      "summary": "Two former members of the United States Air Force were sentenced to a combined 189 months in federal prison for their roles in a multi-year series of business email compromise (BEC) scams and phishing campaigns. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/former-us-air-force-members-sent-to-prison-over-bec-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T18:09:39+00:00",
-      "published_ts": 1790705379.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d37f044bd4a7508b",
-      "title": "Windows 11 2026 Update released, here's everything you need to know",
-      "summary": "Microsoft has started rolling out Windows 11 26H2 to everyone, and while it's this year's big annual feature update, you probably won't notice a massive difference after installing it. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-2026-update-released-heres-everything-you-need-to-know/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T17:37:40+00:00",
-      "published_ts": 1790703460.0,
+      "published": "2026-09-29T20:59:39+00:00",
+      "published_ts": 1790715579.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -1560,9 +1289,7 @@
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1715,22 +1442,90 @@
       "related_sources": []
     },
     {
-      "id": "ffd1e27eb209a3d4",
-      "title": "[Virtual Event] Cybersecurity Outlook 2027",
-      "summary": "",
-      "url": "https://www.darkreading.com/events/virtual-event-cybersecurity-outlook-2027",
+      "id": "871526e2e6c071d4",
+      "title": "Russian state hackers use new RedFlick technique to push malware",
+      "summary": "The Russian state actor Star Blizzard has been using a new malware installation tactic dubbed \"RedFlick\" to deploy its signature CosmicPulse backdoor. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T20:34:01+00:00",
+      "published_ts": 1790800441.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bf8e6dc773ec6493",
+      "title": "Automakers routinely share personally identifiable connected-car data with third parties, report says",
+      "summary": "A new study reveals fresh details about how drivers are exposed to a web of large corporations participating in the advertising ecosystem.",
+      "url": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T20:32:00+00:00",
+      "published_ts": 1790800320.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e9755819a3a4b968",
+      "title": "As AI Reshapes the SOC Career Ladder, Satisfaction Rises for 91%, but Entry Gets Harder for Nearly Half",
+      "summary": "New Swimlane research underscores a paradox: While AI detection and response is essential to giving defenders an edge, one in four security pros say AI limits their skill development.",
+      "url": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-12-03T16:00:00+00:00",
-      "published_ts": 1796313600.0,
+      "published": "2026-09-30T18:56:56+00:00",
+      "published_ts": 1790794616.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "Outlook"
+        "Edge"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f6ef7d60ebac0fc2",
+      "title": "Over 543,000 valid credentials exposed in public GitHub repositories",
+      "summary": "More than 543,000 credentials exposed in public GitHub repositories were still valid in July despite the platform's security measures to prevent accidental leaks of sensitive data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-30T18:08:34+00:00",
+      "published_ts": 1790791714.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1854,27 +1649,95 @@
       "related_sources": []
     },
     {
-      "id": "f68f04861f4a03a9",
-      "title": "Signal adds encypted local backup support to iOS, desktop apps",
-      "summary": "Signal, the secure messaging app, released version 8.30, completing the rollout of its secure backups feature across all supported operating systems (Android, iOS, Linux, macOS, and Windows). [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
-      "source": "BleepingComputer",
+      "id": "2b907b8f1d9a6830",
+      "title": "Unsloth Studio Flaw Turns Routine Model Inspection Into Code Execution",
+      "summary": "A patched Unsloth Studio vulnerability allows malicious AI models to execute arbitrary Python code during inspection, via the trust_remote_code setting.",
+      "url": "https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-29T21:30:08+00:00",
-      "published_ts": 1790717408.0,
+      "published": "2026-09-29T21:08:42+00:00",
+      "published_ts": 1790716122.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Android",
-        "Linux",
-        "Windows",
-        "iOS",
-        "macOS"
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ac378ba45d371a70",
+      "title": "OpenAI CEO Announces New AI Agent and Avoids Mention of Security Concerns at Developer Conference",
+      "summary": "Altman made a slew of product announcements and updates, including the company’s new agents, called Dots. The post OpenAI CEO Announces New AI Agent and Avoids Mention of Security Concerns at Developer Conference appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-29T20:14:44+00:00",
+      "published_ts": 1790712884.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "49ded0a4f29cd42f",
+      "title": "FBI tells ShinyHunters members to turn themselves in after recent arrest",
+      "summary": "The FBI is warning members of the ShinyHunters extortion group to turn themselves in after Dutch police arrested a man the bureau described as one of the group's alleged leaders. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-29T20:09:55+00:00",
+      "published_ts": 1790712595.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "43e08630377d44cd",
+      "title": "Former US Air Force members sent to prison over BEC attacks",
+      "summary": "Two former members of the United States Air Force were sentenced to a combined 189 months in federal prison for their roles in a multi-year series of business email compromise (BEC) scams and phishing campaigns. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/former-us-air-force-members-sent-to-prison-over-bec-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-09-29T18:09:39+00:00",
+      "published_ts": 1790705379.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1926,32 +1789,6 @@
       ],
       "products": [
         "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5435bd005abcbcfc",
-      "title": "New Spectre v2 attack variant leaks Linux root password hash in minutes",
-      "summary": "A new Branch Target Reuse (BTR) attack has been devised that can recover root password hashes on Intel computers running Linux in 3-5 minutes on average. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-29T17:10:11+00:00",
-      "published_ts": 1790701811.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [
-        "Linux"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -2400,21 +2237,27 @@
       "related_sources": []
     },
     {
-      "id": "a211f028e58a462c",
-      "title": "Automated AI agent used to breach cybersecurity nonprofit DIVD",
-      "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) suffered an AI-driven cyberattack that the organization described as \"loud and very, very messy.\" [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/",
+      "id": "f68f04861f4a03a9",
+      "title": "Signal adds encypted local backup support to iOS, desktop apps",
+      "summary": "Signal, the secure messaging app, released version 8.30, completing the rollout of its secure backups feature across all supported operating systems (Android, iOS, Linux, macOS, and Windows). [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-29T15:39:19+00:00",
-      "published_ts": 1790696359.0,
+      "published": "2026-09-29T21:30:08+00:00",
+      "published_ts": 1790717408.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Android",
+        "Linux",
+        "Windows",
+        "iOS",
+        "macOS"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
