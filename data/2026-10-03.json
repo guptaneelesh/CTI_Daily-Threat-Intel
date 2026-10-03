@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-03T11:09:55.055581+00:00",
+  "generated_at": "2026-10-03T15:46:07.638107+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 82,
+    "all": 89,
     "critical": 0,
     "high": 7,
-    "medium": 12,
-    "low": 63,
-    "actively_exploited": 15,
-    "with_cves": 16
+    "medium": 15,
+    "low": 67,
+    "actively_exploited": 14,
+    "with_cves": 17
   },
   "sources_used": [
     "BleepingComputer",
@@ -17,6 +17,7 @@
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Microsoft Security Blog",
     "SecurityWeek",
     "The Hacker News",
@@ -108,45 +109,56 @@
       "related_sources": []
     },
     {
-      "id": "5eeb3495d8b3bbf3",
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-76504 Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/09/30/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-09-30T12:00:00+00:00",
-      "published_ts": 1790769600.0,
-      "cves": [
-        "CVE-2026-76504"
-      ],
+      "id": "11ef4bdd4803f1d1",
+      "title": "Microsoft Warns ClickFix Attacks Use Fake CAPTCHA Lures to Execute Malicious Commands",
+      "summary": "Microsoft Threat Intelligence has identified a ClickFix campaign in which compromised websites use fake CAPTCHA-style verification prompts to trick Windows users into executing malicious commands. The operation stages its payload inside the browser cache before the victim runs the command, helping attackers evade conventional download-based detection and work around Windows Run dialog character limits. The [&#8230;] The post Microsoft Warns ClickFix Attacks Use Fake CAPTCHA Lures to Execute Malicious Commands appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-warns-clickfix-attacks-use-fake-captcha/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T06:27:23+00:00",
+      "published_ts": 1791008843.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "North America"
+        "Global"
       ],
-      "products": [],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "405c9ac987a90eb9",
+      "title": "Citrix NetScaler Appliances Reboot Repeatedly After 0-Day Security Update",
+      "summary": "Citrix NetScaler administrators report repeated appliance crashes and forced reboots after deploying emergency updates for recently disclosed zero-day vulnerabilities, with the disruption now linked to a newly observed issue affecting SAML authentication deployments. The reports involve internet-facing NetScaler ADC and Gateway systems running patched releases, including version 14.1-73.37, which Citrix previously designated as a fixed [&#8230;] The post Citrix NetScaler Appliances Reboot Repeatedly After 0-Day Security Update appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/citrix-netscaler-appliances-reboot/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T05:51:55+00:00",
+      "published_ts": 1791006715.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Citrix"
+      ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 55,
       "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-          "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-          "published": "2026-10-01T10:33:16+00:00"
-        },
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-          "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
-          "published": "2026-09-30T15:24:54+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
       "id": "22728687d4d0c51c",
@@ -226,42 +238,6 @@
       ]
     },
     {
-      "id": "74ddeae47e3f6fc8",
-      "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
-      "summary": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-09-30T14:00:00+00:00",
-      "published_ts": 1790776800.0,
-      "cves": [
-        "CVE-2026-73570"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Zimbra"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-          "title": "Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets",
-          "published": "2026-09-30T16:46:29+00:00"
-        }
-      ]
-    },
-    {
       "id": "d9740706211ec73e",
       "title": "Kiteworks &amp; Citrix Incidents Show Challenges of Zero-Day Response",
       "summary": "One company told customers to power down its data-protection platform during a nine-hour window, while the other remained mum on reported attacks prior to releasing a patch for its product.",
@@ -317,23 +293,28 @@
       "related_sources": []
     },
     {
-      "id": "f142a4ebff32e4f5",
-      "title": "Russia's Star Blizzard Ditches ClickFix to Widen Phishing Net",
-      "summary": "The APT actor is using a new tactic, dubbed &quot;RedFlick,&quot; against Ukrainian-linked targets such as NGOs, think tanks, and journalists to deploy its CosmicPulse backdoor.",
-      "url": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
-      "source": "Dark Reading",
+      "id": "362d13ee1b37780f",
+      "title": "Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets",
+      "summary": "Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team. The attack exploits CVE-2026-73570 (CVSS score: 8.9), an unauthenticated operating system command injection flaw that can lead to remote code execution when Simple Network Management Protocol",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-30T15:02:25+00:00",
-      "published_ts": 1790780545.0,
-      "cves": [],
+      "published": "2026-09-30T16:46:29+00:00",
+      "published_ts": 1790786789.0,
+      "cves": [
+        "CVE-2026-73570"
+      ],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe"
+        "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Zimbra"
+      ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 45,
@@ -440,26 +421,28 @@
       "related_sources": []
     },
     {
-      "id": "d5c9b356b6637069",
-      "title": "Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures",
-      "summary": "Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware. Huntress, which observed the activity in late September 2026, said it marks the abuse of yet another feature in trusted artificial intelligence (AI) platforms. Prior campaigns have weaponized shared",
-      "url": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "0e5a4a8c9c4037b6",
+      "title": "AWS AI Agent Vulnerabilities Let Attackers Bypass Authentication and Steal Credentials",
+      "summary": "AWS has released security fixes for four vulnerabilities affecting its open-source Loom AI agent orchestration platform and Amazon SageMaker Unified Studio. The flaws could allow attackers to bypass authentication, steal OAuth2 tokens and temporary cloud credentials, access internal services, and execute arbitrary code in another user’s SageMaker environment. AWS disclosed the issues in security bulletins [&#8230;] The post AWS AI Agent Vulnerabilities Let Attackers Bypass Authentication and Steal Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/aws-ai-agent-vulnerabilities/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-09-30T15:00:15+00:00",
-      "published_ts": 1790780415.0,
+      "published": "2026-10-03T06:04:52+00:00",
+      "published_ts": 1791007492.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Consumer",
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 40,
+      "priority_score": 30,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -494,6 +477,59 @@
       "related_sources": []
     },
     {
+      "id": "19ddcfcb5b3335f7",
+      "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
+      "summary": "The suspected China-linked threat actor known as Warlock is still continuing to weaponize Microsoft SharePoint vulnerabilities, likely both old and new, in attacks targeting organizations in Portuguese- and Spanish-speaking countries. The activity, observed by the Symantec and Carbon Black Threat Hunter Team, has hit critical infrastructure, government, and education organizations. \"In the",
+      "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-03T14:36:33+00:00",
+      "published_ts": 1791038193.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [
+        "SharePoint"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "49d9b73c8f581ee4",
+      "title": "Cling Malware Masquerades as Google STUN Traffic to Control Compromised IoT Devices",
+      "summary": "A newly identified IoT botnet, Cling, disguises its command-and-control communications as legitimate STUN traffic, including packets that appear to originate from Google’s public STUN infrastructure. The technique enables attackers to manage compromised internet-facing devices while blending activity into routine NAT-traversal traffic used by real-time communications platforms. Nozomi Networks Labs discovered the campaign while investigating a [&#8230;] The post Cling Malware Masquerades as Google STUN Traffic to Control Compromised IoT Devices appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cling-malware-masquerades-as-google-stun-traffic/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T07:48:49+00:00",
+      "published_ts": 1791013729.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "5850b595f70f1198",
       "title": "Warlock ransomware breach SharePoint in water, telecom operator attacks",
       "summary": "The China-linked ransomware group Warlock targeted a water utility, a telecom provider, a regional government body, and a university by exploiting SharePoint vulnerabilities to gain initial access. [...]",
@@ -520,6 +556,41 @@
       "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
+    },
+    {
+      "id": "bb29b0b061c8cb98",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-102489 Zammad GmbH Zammad Session Fixation Vulnerability CVE-2026-102490 Zammad GmbH Zammad Improper Privilege Management Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not curren",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-02T12:00:00+00:00",
+      "published_ts": 1790942400.0,
+      "cves": [
+        "CVE-2026-102489",
+        "CVE-2026-102490"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/zammad-vulnerabilities/",
+          "title": "Zammad Vulnerabilities Let Attackers Execute Code and Escalate Privileges to Root",
+          "published": "2026-10-02T12:44:08+00:00"
+        }
+      ]
     },
     {
       "id": "44bc0f2055d6e4c2",
@@ -580,50 +651,22 @@
       "related_sources": []
     },
     {
-      "id": "3b21880bd237b349",
-      "title": "In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
-      "summary": "Noteworthy stories that might have slipped under the radar: Kiteworks patches over 100 vulnerabilities, Microsoft publishes 2026 Digital Defense Report, AI finds 24 Android app flaws. The post In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
+      "id": "f63804d983bdf12b",
+      "title": "Exposed Hacker Server Reveals Toolkit Used in Viva Aerobus-Linked Intrusion",
+      "summary": "A publicly exposed attacker staging server has provided a rare, detailed view of a Microsoft SQL Server-focused intrusion linked to a Viva Aerobus-side environment. The server, hosted at 151.243.232.123, functioned as both a tool-delivery point and a repository for stolen material. It was left accessible without authentication, allowing unrelated internet hosts to enumerate its directories [&#8230;] The post Exposed Hacker Server Reveals Toolkit Used in Viva Aerobus-Linked Intrusion appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/viva-aerobus-intrusion/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-02T14:30:00+00:00",
-      "published_ts": 1790951400.0,
+      "published": "2026-10-02T11:55:20+00:00",
+      "published_ts": 1790942120.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "449ef5d2fddd4a61",
-      "title": "Mississippi mayor says ransomware incident led city to shut down systems",
-      "summary": "Government services were temporarily disrupted by ransomware in Vicksburg, Mississippi. Mayor Willis Thompson said the FBI and other authorities are investigating.",
-      "url": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T14:06:00+00:00",
-      "published_ts": 1790949960.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -633,25 +676,22 @@
       "related_sources": []
     },
     {
-      "id": "bb29b0b061c8cb98",
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-102489 Zammad GmbH Zammad Session Fixation Vulnerability CVE-2026-102490 Zammad GmbH Zammad Improper Privilege Management Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not curren",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-10-02T12:00:00+00:00",
-      "published_ts": 1790942400.0,
-      "cves": [
-        "CVE-2026-102489",
-        "CVE-2026-102490"
-      ],
+      "id": "be5cd6a4626eefe1",
+      "title": "Multiple cPanel & WHM Vulnerabilities Enable Root Code Execution and Admin Session Hijacking",
+      "summary": "cPanel has released security updates to address three vulnerabilities in cPanel &#38; WHM that could allow attackers to hijack WHM administrator sessions or execute commands as the root user. Organizations using affected deployments should prioritize upgrades, as these flaws affect all supported versions of cPanel &#38; WHM before the newly released fixed versions. cPanel &#38; [&#8230;] The post Multiple cPanel &amp; WHM Vulnerabilities Enable Root Code Execution and Admin Session Hijacking appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/multiple-cpanel-whm-vulnerabilities/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-02T11:26:54+00:00",
+      "published_ts": 1790940414.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -748,6 +788,32 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "edffa68b79c742b5",
+      "title": "Critical GitLab AI Gateway Flaw Lets Attackers Execute Arbitrary Commands",
+      "summary": "GitLab has issued emergency security updates for a critical vulnerability in its Self-Hosted AI Gateway that could allow authenticated attackers to execute arbitrary commands on vulnerable AI Gateway deployments. The flaw, tracked as CVE-2026-90970, carries a CVSS severity score of 9.9 out of 10. The company released GitLab AI Gateway versions 19.2.4, 19.3.2, and 19.4.1 [&#8230;] The post Critical GitLab AI Gateway Flaw Lets Attackers Execute Arbitrary Commands appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/critical-gitlab-ai-gateway-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T06:14:55+00:00",
+      "published_ts": 1791008095.0,
+      "cves": [
+        "CVE-2026-90970"
+      ],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "GitLab"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -908,24 +974,26 @@
       "related_sources": []
     },
     {
-      "id": "f182f289fb5bf5e1",
-      "title": "'Warlock' ransomware used in attacks on critical infrastructure in Portuguese, Spanish-speaking countries",
-      "summary": "The group is exploiting a variety of vulnerabilities impacting Microsoft SharePoint, according to a new report from Symantec Threat Hunter Team.",
-      "url": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
-      "source": "The Record",
+      "id": "3b21880bd237b349",
+      "title": "In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
+      "summary": "Noteworthy stories that might have slipped under the radar: Kiteworks patches over 100 vulnerabilities, Microsoft publishes 2026 Digital Defense Report, AI finds 24 Android app flaws. The post In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T14:05:00+00:00",
-      "published_ts": 1790949900.0,
+      "published": "2026-10-02T14:30:00+00:00",
+      "published_ts": 1790951400.0,
       "cves": [],
       "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "SharePoint"
+        "Android"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -934,19 +1002,19 @@
       "related_sources": []
     },
     {
-      "id": "08ec630e453ffd9a",
-      "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
-      "summary": "Browser-based attacks can steal sessions, abuse extensions, or manipulate users without creating the endpoint artifacts EDR is designed to detect. NordLayer explains three ways attacks can evade endpoint telemetry and why browser-level controls can help close the gap. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
-      "source": "BleepingComputer",
+      "id": "449ef5d2fddd4a61",
+      "title": "Mississippi mayor says ransomware incident led city to shut down systems",
+      "summary": "Government services were temporarily disrupted by ransomware in Vicksburg, Mississippi. Mayor Willis Thompson said the FBI and other authorities are investigating.",
+      "url": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T14:00:10+00:00",
-      "published_ts": 1790949610.0,
+      "published": "2026-10-02T14:06:00+00:00",
+      "published_ts": 1790949960.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
@@ -959,24 +1027,50 @@
       "related_sources": []
     },
     {
-      "id": "118bedb9e8209a2b",
-      "title": "Crypto Scammers Hijack Microsoft’s Official X Account",
-      "summary": "Hackers used the account, which has 13 million followers, to amplify a Clippy-themed cryptocurrency account. The post Crypto Scammers Hijack Microsoft&#8217;s Official X Account appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
+      "id": "b9bda5ff01a174eb",
+      "title": "Sony PS5 Relapse Jailbreak Exploit Uses JSC Memory Corruption and Kernel UAF",
+      "summary": "A newly released PlayStation 5 jailbreak chain, called Relapse, targets PS5 and PS5 Pro consoles running firmware versions 7.00 through 13.60. This jailbreak combines a browser-based JavaScriptCore memory corruption technique with a kernel use-after-free race condition. The project&#8217;s source code and documentation outline a two-stage chain that ultimately provides kernel read/write access, allowing affected systems [&#8230;] The post Sony PS5 Relapse Jailbreak Exploit Uses JSC Memory Corruption and Kernel UAF appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/sony-ps5-relapse-jailbreak-exploit-uses/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-02T11:46:10+00:00",
-      "published_ts": 1790941570.0,
+      "published": "2026-10-02T13:40:08+00:00",
+      "published_ts": 1790948408.0,
       "cves": [],
       "sectors": [
-        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "365c9967159cfdb8",
+      "title": "Safari History Database Tags Can Reveal Users’ Browsing Themes in Forensic Investigations",
+      "summary": "Safari&#8217;s History database contains a lesser-known tagging artifact that can help investigators infer a user’s browsing themes. While this feature is not definitive evidence of intent, when correlated with URLs, visit times, cache data, downloads, and network telemetry, it can provide useful context for macOS forensic timelines. Safari History Tags and Browsing Themes Safari&#8217;s History.db [&#8230;] The post Safari History Database Tags Can Reveal Users’ Browsing Themes in Forensic Investigations appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/safari-history-database-tags-can-reveal-users-browsing-themes/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-02T12:35:11+00:00",
+      "published_ts": 1790944511.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Safari",
+        "macOS"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1110,6 +1204,34 @@
       "related_sources": []
     },
     {
+      "id": "246fdfcef5fd1a24",
+      "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a critical authentication bypass flaw impacting Cisco Catalyst SD-WAN Manager to its Known Exploited Vulnerabilities (KEV), following reports of active exploitation. The vulnerability, tracked as CVE-2026-76504 (CVSS score: 9.8), could allow an unauthenticated, remote attacker to access an affected system with",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-01T10:33:16+00:00",
+      "published_ts": 1790850796.0,
+      "cves": [
+        "CVE-2026-76504"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "5703fb73a8499105",
       "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
       "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what&#8217;s next: Your guide to Microsoft Security at Microsoft Ignite 2026 appeared first on Microsoft Security Blog .",
@@ -1131,6 +1253,30 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "899b6f87534836ec",
+      "title": "MI5 Says China’s MSS Funded Research Involving 100+ U.K.-Linked Academics",
+      "summary": "The U.K.'s domestic intelligence and security agency has warned that more than 100 academics have helped China boost its intelligence gathering efforts on behalf of Beijing's state security service. In a \"Security Service Espionage Alert\" issued on September 30, 2026, MI5 said the \"primary purpose of the China General Technology Research Institute (CGTRI) 中国通用技术研究院 is to fund research that",
+      "url": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-03T14:38:46+00:00",
+      "published_ts": 1791038326.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1159,66 +1305,15 @@
       "related_sources": []
     },
     {
-      "id": "a1726b67dc2caf36",
-      "title": "US sanctions Tren de Aragua gang members in ATM hacks crackdown",
-      "summary": "The U.S. Treasury Department has sanctioned eight members of the Venezuelan gang Tren de Aragua (TdA) for their role in the theft of millions of dollars in ATM jackpotting attacks across the United States. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/",
-      "source": "BleepingComputer",
+      "id": "f182f289fb5bf5e1",
+      "title": "'Warlock' ransomware used in attacks on critical infrastructure in Portuguese, Spanish-speaking countries",
+      "summary": "The group is exploiting a variety of vulnerabilities impacting Microsoft SharePoint, according to a new report from Symantec Threat Hunter Team.",
+      "url": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T15:20:53+00:00",
-      "published_ts": 1790954453.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ca9c8609a9d361c0",
-      "title": "Malicious Linux Implants Mimic Asian Mail Security Products",
-      "summary": "A trio of newly discovered backdoors walk and quack like legitimate edge solutions, so it's hard to tell they're not.",
-      "url": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T13:00:00+00:00",
-      "published_ts": 1790946000.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Edge",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1137ad1cc73cef32",
-      "title": "Dell asks admins to patch max severity CSM flaws as soon as possible",
-      "summary": "Dell has patched two maximum severity vulnerabilities in the Container Storage Modules (CSM) that connect Dell enterprise storage arrays to Kubernetes environments. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T12:37:40+00:00",
-      "published_ts": 1790944660.0,
+      "published": "2026-10-02T14:05:00+00:00",
+      "published_ts": 1790949900.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
@@ -1227,7 +1322,7 @@
         "Unspecified"
       ],
       "products": [
-        "Kubernetes"
+        "SharePoint"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1236,18 +1331,19 @@
       "related_sources": []
     },
     {
-      "id": "b68d9eee01857ac4",
-      "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
-      "summary": "OpenAI has parted ways with three members of its safety team after they leaked private information in violation of company policies, The Wall Street Journal reported. \"We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information,\" a spokesperson for the company was quoted as saying. \"Our investigation confirmed that these",
-      "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
-      "source": "The Hacker News",
+      "id": "08ec630e453ffd9a",
+      "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
+      "summary": "Browser-based attacks can steal sessions, abuse extensions, or manipulate users without creating the endpoint artifacts EDR is designed to detect. NordLayer explains three ways attacks can evade endpoint telemetry and why browser-level controls can help close the gap. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T12:23:15+00:00",
-      "published_ts": 1790943795.0,
+      "published": "2026-10-02T14:00:10+00:00",
+      "published_ts": 1790949610.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -1260,21 +1356,22 @@
       "related_sources": []
     },
     {
-      "id": "1c9bc60c5ba8d359",
-      "title": "In Rare Move, Alleged Iranian State Hacker Extradited to US",
-      "summary": "Amir Barati, an alleged member of the Mabna Institute, was indicted for targeting universities, private organizations, and government entities in the US and abroad. The post In Rare Move, Alleged Iranian State Hacker Extradited to US appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
+      "id": "118bedb9e8209a2b",
+      "title": "Crypto Scammers Hijack Microsoft’s Official X Account",
+      "summary": "Hackers used the account, which has 13 million followers, to amplify a Clippy-themed cryptocurrency account. The post Crypto Scammers Hijack Microsoft&#8217;s Official X Account appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
       "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T11:14:34+00:00",
-      "published_ts": 1790939674.0,
+      "published": "2026-10-02T11:46:10+00:00",
+      "published_ts": 1790941570.0,
       "cves": [],
       "sectors": [
-        "Government & Public Services"
+        "Financial Services",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Middle East"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1371,31 +1468,6 @@
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b49561bc468876c3",
-      "title": "Hackers stole Pentagon personnel records of over 3 million people",
-      "summary": "The Pentagon's Defense Manpower Data Center (DMDC) is notifying millions of military service members that hackers stole their data after breaching the Pentagon's human resources management system in October 2025. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-01T09:44:28+00:00",
-      "published_ts": 1790847868.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
@@ -1534,6 +1606,72 @@
       "related_sources": []
     },
     {
+      "id": "a49da230cd75c24a",
+      "title": "Danish university DTU breach exposes data of up to 200,000 people",
+      "summary": "The Technical University of Denmark (DTU) says information belonging to up to 200,000 users may have been exposed after hackers accessed its identity and access management system and downloaded a large amount of data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-03T14:35:20+00:00",
+      "published_ts": 1791038120.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "21c096c6a919b1e4",
+      "title": "doxx.net Raises $38 Million to Prevent AI Agent-on-the-Internet Misadventures",
+      "summary": "doxx.net’s new ADN platform prevents agentic misadventure while the agent is operating under the user’s authority. The post doxx.net Raises $38 Million to Prevent AI Agent-on-the-Internet Misadventures appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-03T11:45:00+00:00",
+      "published_ts": 1791027900.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "18f73aa249e48a4f",
+      "title": "Fortra Patches Critical Vulnerabilities in BoKS",
+      "summary": "The bugs could lead to authentication bypass, shell command execution, and memory corruption. The post Fortra Patches Critical Vulnerabilities in BoKS appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-03T11:34:00+00:00",
+      "published_ts": 1791027240.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "77e5e041c008198e",
       "title": "The State of Cybersecurity in 2026: Key Segments, Insights, and Innovations",
       "summary": "Featuring: Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, distributed systems, and increasingly complex digital environments. As organizations manage more identities, devices, data, and internet-facing infrastructure, security is shifting toward continuous visibility, control, and the ability to respond to risk at scale. This report examines how core areas of",
@@ -1648,19 +1786,21 @@
       "related_sources": []
     },
     {
-      "id": "036fc2e5ff7840c3",
-      "title": "Vulnerability Backlogs Are an Ownership Problem",
-      "summary": "Organizations don't need better vulnerability scanners; they need to know who owns their assets and has the authority and capacity to actually fix them.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
-      "source": "Dark Reading",
+      "id": "a1726b67dc2caf36",
+      "title": "US sanctions Tren de Aragua gang members in ATM hacks crackdown",
+      "summary": "The U.S. Treasury Department has sanctioned eight members of the Venezuelan gang Tren de Aragua (TdA) for their role in the theft of millions of dollars in ATM jackpotting attacks across the United States. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T14:00:00+00:00",
-      "published_ts": 1790949600.0,
+      "published": "2026-10-02T15:20:53+00:00",
+      "published_ts": 1790954453.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
-        "Asia-Pacific"
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1670,23 +1810,25 @@
       "related_sources": []
     },
     {
-      "id": "0975a349c5e713d3",
-      "title": "macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor",
-      "summary": "The dropper “carries a complete universal Mach-O inside itself, roughly 756 KB in the development build, and extracts it at runtime. The post macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
-      "source": "SecurityWeek",
+      "id": "ca9c8609a9d361c0",
+      "title": "Malicious Linux Implants Mimic Asian Mail Security Products",
+      "summary": "A trio of newly discovered backdoors walk and quack like legitimate edge solutions, so it's hard to tell they're not.",
+      "url": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T13:15:00+00:00",
-      "published_ts": 1790946900.0,
+      "published": "2026-10-02T13:00:00+00:00",
+      "published_ts": 1790946000.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
       "products": [
-        "Zoom",
-        "macOS"
+        "Edge",
+        "Linux"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -1695,19 +1837,71 @@
       "related_sources": []
     },
     {
-      "id": "5245baa4a55582ac",
-      "title": "Why CISOs Struggle to Answer the Board's Three Hardest Questions, and How to Fix the Report",
-      "summary": "The quarterly board meeting is two weeks out. The security team is pulling exports from the identity provider, the cloud posture tool, the vulnerability scanner, the SIEM and the EDR console. Someone is building a spreadsheet to reconcile them. Someone else is turning that spreadsheet into slides. Then a board member asks three questions: How secure is the organization, overall? What is",
-      "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
+      "id": "1137ad1cc73cef32",
+      "title": "Dell asks admins to patch max severity CSM flaws as soon as possible",
+      "summary": "Dell has patched two maximum severity vulnerabilities in the Container Storage Modules (CSM) that connect Dell enterprise storage arrays to Kubernetes environments. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-02T12:37:40+00:00",
+      "published_ts": 1790944660.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Kubernetes"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b68d9eee01857ac4",
+      "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
+      "summary": "OpenAI has parted ways with three members of its safety team after they leaked private information in violation of company policies, The Wall Street Journal reported. \"We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information,\" a spokesperson for the company was quoted as saying. \"Our investigation confirmed that these",
+      "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T11:30:00+00:00",
-      "published_ts": 1790940600.0,
+      "published": "2026-10-02T12:23:15+00:00",
+      "published_ts": 1790943795.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1c9bc60c5ba8d359",
+      "title": "In Rare Move, Alleged Iranian State Hacker Extradited to US",
+      "summary": "Amir Barati, an alleged member of the Mabna Institute, was indicted for targeting universities, private organizations, and government entities in the US and abroad. The post In Rare Move, Alleged Iranian State Hacker Extradited to US appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-02T11:14:34+00:00",
+      "published_ts": 1790939674.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Middle East"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1776,30 +1970,6 @@
       "published_ts": 1790877652.0,
       "cves": [],
       "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "31e166d75e2961ce",
-      "title": "Osavul Lands $10 Million to Spot Hostile Intent Across Cyber, Physical Domains",
-      "summary": "Hybrid risk intelligence company Osavul has raised $10 million in a Series A funding round led by 33N Ventures. The post Osavul Lands $10 Million to Spot Hostile Intent Across Cyber, Physical Domains appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-01T17:16:41+00:00",
-      "published_ts": 1790875001.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
       "regions": [
         "Unspecified"
       ],
@@ -1907,52 +2077,71 @@
       "related_sources": []
     },
     {
-      "id": "39df2674558254ee",
-      "title": "Know Your Enemy: Browser-Based Attack Techniques in 2026",
-      "summary": "Given that the browser is where business apps are accessed and used, it makes sense that attacks are happening there too. Most breaches today begin in a browser session. Often, they never leave it, with the entire attack chain from initial access to exfiltration playing out in the browser. Here are the six most dangerous techniques that should be on every security team's radar in 2026. 1.",
-      "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
+      "id": "036fc2e5ff7840c3",
+      "title": "Vulnerability Backlogs Are an Ownership Problem",
+      "summary": "Organizations don't need better vulnerability scanners; they need to know who owns their assets and has the authority and capacity to actually fix them.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-02T14:00:00+00:00",
+      "published_ts": 1790949600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0975a349c5e713d3",
+      "title": "macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor",
+      "summary": "The dropper “carries a complete universal Mach-O inside itself, roughly 756 KB in the development build, and extracts it at runtime. The post macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-02T13:15:00+00:00",
+      "published_ts": 1790946900.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Zoom",
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5245baa4a55582ac",
+      "title": "Why CISOs Struggle to Answer the Board's Three Hardest Questions, and How to Fix the Report",
+      "summary": "The quarterly board meeting is two weeks out. The security team is pulling exports from the identity provider, the cloud posture tool, the vulnerability scanner, the SIEM and the EDR console. Someone is building a spreadsheet to reconcile them. Someone else is turning that spreadsheet into slides. Then a board member asks three questions: How secure is the organization, overall? What is",
+      "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-09-30T11:58:00+00:00",
-      "published_ts": 1790769480.0,
+      "published": "2026-10-02T11:30:00+00:00",
+      "published_ts": 1790940600.0,
       "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7ec5df7a2909c4e8",
-      "title": "AI Coding Agents Exposed 13,000 Internal Images, Including Billing Records, on GitHub",
-      "summary": "AI coding agents asked to share screenshots of code changes for review have put internal company images in public GitHub repositories, security company Glow said. Its researchers found more than 13,000 internal images from developers at over 300 organizations, including customer billing records and screens of features not yet released. In most cases, they sat under developers' personal accounts",
-      "url": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-09-30T11:30:00+00:00",
-      "published_ts": 1790767800.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2042,30 +2231,6 @@
       ],
       "products": [
         "WordPress"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "68cc325462ce0c94",
-      "title": "Hacker Conversations: Rob Juncker, a Knock at the Door and a Moral Compass",
-      "summary": "Rob Juncker is chief product and technology officer at Mimecast. Is he a hacker? “Unequivocally yes,” he says. The post Hacker Conversations: Rob Juncker, a Knock at the Door and a Moral Compass appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-01T14:30:00+00:00",
-      "published_ts": 1790865000.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
       ],
       "actively_exploited": false,
       "cvss": null,
