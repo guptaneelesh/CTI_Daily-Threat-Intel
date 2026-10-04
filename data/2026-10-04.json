@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-10-04T16:29:47.970058+00:00",
+  "generated_at": "2026-10-04T20:54:20.734041+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 53,
+    "all": 57,
     "critical": 0,
-    "high": 2,
-    "medium": 3,
+    "high": 5,
+    "medium": 4,
     "low": 48,
-    "actively_exploited": 5,
-    "with_cves": 5
+    "actively_exploited": 7,
+    "with_cves": 7
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
     "CISA KEV",
-    "Cisco Talos",
     "Dark Reading",
+    "GBHackers",
     "SecurityWeek",
     "The Hacker News",
     "The Record"
@@ -72,6 +72,94 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "b9247d5a1821a5ee",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-88779 Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of&nbsp; KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the&nbsp; specified criteria . Aware of an exploited vulnerability not currently listed in the KEV Catalog? S",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-04T12:00:00+00:00",
+      "published_ts": 1791115200.0,
+      "cves": [
+        "CVE-2026-88779"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Citrix"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779",
+          "title": "CVE-2026-88779: Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability (Citrix NetScaler)",
+          "published": "2026-10-04T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "11ef4bdd4803f1d1",
+      "title": "Microsoft Warns ClickFix Attacks Use Fake CAPTCHA Lures to Execute Malicious Commands",
+      "summary": "Microsoft Threat Intelligence has identified a ClickFix campaign in which compromised websites use fake CAPTCHA-style verification prompts to trick Windows users into executing malicious commands. The operation stages its payload inside the browser cache before the victim runs the command, helping attackers evade conventional download-based detection and work around Windows Run dialog character limits. The [&#8230;] The post Microsoft Warns ClickFix Attacks Use Fake CAPTCHA Lures to Execute Malicious Commands appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-warns-clickfix-attacks-use-fake-captcha/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T06:27:23+00:00",
+      "published_ts": 1791008843.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "405c9ac987a90eb9",
+      "title": "Citrix NetScaler Appliances Reboot Repeatedly After 0-Day Security Update",
+      "summary": "Citrix NetScaler administrators report repeated appliance crashes and forced reboots after deploying emergency updates for recently disclosed zero-day vulnerabilities, with the disruption now linked to a newly observed issue affecting SAML authentication deployments. The reports involve internet-facing NetScaler ADC and Gateway systems running patched releases, including version 14.1-73.37, which Citrix previously designated as a fixed [&#8230;] The post Citrix NetScaler Appliances Reboot Repeatedly After 0-Day Security Update appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/citrix-netscaler-appliances-reboot/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T05:51:55+00:00",
+      "published_ts": 1791006715.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Citrix"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
       "priority_label": "High",
       "related_sources": []
     },
@@ -143,28 +231,65 @@
       ]
     },
     {
-      "id": "a1801e46438b449b",
-      "title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
-      "summary": "This week, the useful words are boring ones: inspect, cache, compile, store, trust. Each sounds harmless. Each can become an attack path when a system does a little more than people expect. A model check can run code. A cache can mix up requests. A public secret can stay useful for years. That is the lesson running through the list. Attackers do not always need a brilliant new trick. They can",
-      "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "0e5a4a8c9c4037b6",
+      "title": "AWS AI Agent Vulnerabilities Let Attackers Bypass Authentication and Steal Credentials",
+      "summary": "AWS has released security fixes for four vulnerabilities affecting its open-source Loom AI agent orchestration platform and Amazon SageMaker Unified Studio. The flaws could allow attackers to bypass authentication, steal OAuth2 tokens and temporary cloud credentials, access internal services, and execute arbitrary code in another user’s SageMaker environment. AWS disclosed the issues in security bulletins [&#8230;] The post AWS AI Agent Vulnerabilities Let Attackers Bypass Authentication and Steal Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/aws-ai-agent-vulnerabilities/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-01T16:45:38+00:00",
-      "published_ts": 1790873138.0,
+      "published": "2026-10-03T06:04:52+00:00",
+      "published_ts": 1791007492.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Consumer",
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 40,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
+    },
+    {
+      "id": "bb29b0b061c8cb98",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-102489 Zammad GmbH Zammad Session Fixation Vulnerability CVE-2026-102490 Zammad GmbH Zammad Improper Privilege Management Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not curren",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-02T12:00:00+00:00",
+      "published_ts": 1790942400.0,
+      "cves": [
+        "CVE-2026-102489",
+        "CVE-2026-102490"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/zammad-vulnerabilities/",
+          "title": "Zammad Vulnerabilities Let Attackers Execute Code and Escalate Privileges to Root",
+          "published": "2026-10-02T12:44:08+00:00"
+        }
+      ]
     },
     {
       "id": "19ddcfcb5b3335f7",
@@ -188,6 +313,31 @@
       "products": [
         "SharePoint"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "49d9b73c8f581ee4",
+      "title": "Cling Malware Masquerades as Google STUN Traffic to Control Compromised IoT Devices",
+      "summary": "A newly identified IoT botnet, Cling, disguises its command-and-control communications as legitimate STUN traffic, including packets that appear to originate from Google’s public STUN infrastructure. The technique enables attackers to manage compromised internet-facing devices while blending activity into routine NAT-traversal traffic used by real-time communications platforms. Nozomi Networks Labs discovered the campaign while investigating a [&#8230;] The post Cling Malware Masquerades as Google STUN Traffic to Control Compromised IoT Devices appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cling-malware-masquerades-as-google-stun-traffic/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T07:48:49+00:00",
+      "published_ts": 1791013729.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
@@ -223,27 +373,52 @@
       "related_sources": []
     },
     {
-      "id": "65811087aa9354f9",
-      "title": "ShinyHunters hacker reportedly detained in Jordan, aiding FBI",
-      "summary": "A suspected ShinyHunters hacking group member known online as \"Rey\" has reportedly been detained in Jordan and is cooperating with the FBI to help locate other members of the extortion group. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
+      "id": "f63804d983bdf12b",
+      "title": "Exposed Hacker Server Reveals Toolkit Used in Viva Aerobus-Linked Intrusion",
+      "summary": "A publicly exposed attacker staging server has provided a rare, detailed view of a Microsoft SQL Server-focused intrusion linked to a Viva Aerobus-side environment. The server, hosted at 151.243.232.123, functioned as both a tool-delivery point and a repository for stolen material. It was left accessible without authentication, allowing unrelated internet hosts to enumerate its directories [&#8230;] The post Exposed Hacker Server Reveals Toolkit Used in Viva Aerobus-Linked Intrusion appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/viva-aerobus-intrusion/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-03T19:09:38+00:00",
-      "published_ts": 1791054578.0,
+      "published": "2026-10-02T11:55:20+00:00",
+      "published_ts": 1790942120.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "be5cd6a4626eefe1",
+      "title": "Multiple cPanel & WHM Vulnerabilities Enable Root Code Execution and Admin Session Hijacking",
+      "summary": "cPanel has released security updates to address three vulnerabilities in cPanel &#38; WHM that could allow attackers to hijack WHM administrator sessions or execute commands as the root user. Organizations using affected deployments should prioritize upgrades, as these flaws affect all supported versions of cPanel &#38; WHM before the newly released fixed versions. cPanel &#38; [&#8230;] The post Multiple cPanel &amp; WHM Vulnerabilities Enable Root Code Execution and Admin Session Hijacking appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/multiple-cpanel-whm-vulnerabilities/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-02T11:26:54+00:00",
+      "published_ts": 1790940414.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -301,27 +476,50 @@
       "related_sources": []
     },
     {
-      "id": "bb29b0b061c8cb98",
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-102489 Zammad GmbH Zammad Session Fixation Vulnerability CVE-2026-102490 Zammad GmbH Zammad Improper Privilege Management Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not curren",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-10-02T12:00:00+00:00",
-      "published_ts": 1790942400.0,
-      "cves": [
-        "CVE-2026-102489",
-        "CVE-2026-102490"
-      ],
+      "id": "b9bda5ff01a174eb",
+      "title": "Sony PS5 Relapse Jailbreak Exploit Uses JSC Memory Corruption and Kernel UAF",
+      "summary": "A newly released PlayStation 5 jailbreak chain, called Relapse, targets PS5 and PS5 Pro consoles running firmware versions 7.00 through 13.60. This jailbreak combines a browser-based JavaScriptCore memory corruption technique with a kernel use-after-free race condition. The project&#8217;s source code and documentation outline a two-stage chain that ultimately provides kernel read/write access, allowing affected systems [&#8230;] The post Sony PS5 Relapse Jailbreak Exploit Uses JSC Memory Corruption and Kernel UAF appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/sony-ps5-relapse-jailbreak-exploit-uses/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-02T13:40:08+00:00",
+      "published_ts": 1790948408.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "365c9967159cfdb8",
+      "title": "Safari History Database Tags Can Reveal Users’ Browsing Themes in Forensic Investigations",
+      "summary": "Safari&#8217;s History database contains a lesser-known tagging artifact that can help investigators infer a user’s browsing themes. While this feature is not definitive evidence of intent, when correlated with URLs, visit times, cache data, downloads, and network telemetry, it can provide useful context for macOS forensic timelines. Safari History Tags and Browsing Themes Safari&#8217;s History.db [&#8230;] The post Safari History Database Tags Can Reveal Users’ Browsing Themes in Forensic Investigations appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/safari-history-database-tags-can-reveal-users-browsing-themes/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-02T12:35:11+00:00",
+      "published_ts": 1790944511.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Safari",
+        "macOS"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -471,6 +669,57 @@
       ],
       "products": [
         "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "65811087aa9354f9",
+      "title": "ShinyHunters hacker reportedly detained in Jordan, aiding FBI",
+      "summary": "A suspected ShinyHunters hacking group member known online as \"Rey\" has reportedly been detained in Jordan and is cooperating with the FBI to help locate other members of the extortion group. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-03T19:09:38+00:00",
+      "published_ts": 1791054578.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "edffa68b79c742b5",
+      "title": "Critical GitLab AI Gateway Flaw Lets Attackers Execute Arbitrary Commands",
+      "summary": "GitLab has issued emergency security updates for a critical vulnerability in its Self-Hosted AI Gateway that could allow authenticated attackers to execute arbitrary commands on vulnerable AI Gateway deployments. The flaw, tracked as CVE-2026-90970, carries a CVSS severity score of 9.9 out of 10. The company released GitLab AI Gateway versions 19.2.4, 19.3.2, and 19.4.1 [&#8230;] The post Critical GitLab AI Gateway Flaw Lets Attackers Execute Arbitrary Commands appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/critical-gitlab-ai-gateway-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-03T06:14:55+00:00",
+      "published_ts": 1791008095.0,
+      "cves": [
+        "CVE-2026-90970"
+      ],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "GitLab"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -736,31 +985,6 @@
       "related_sources": []
     },
     {
-      "id": "a7e4f8bb3e683bc5",
-      "title": "Autonomous AI agents tried to hack US, Canadian government websites",
-      "summary": "Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-01T20:52:50+00:00",
-      "published_ts": 1790887970.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "a7e4d2d8ab0a3867",
       "title": "Anthropic asks Claude users to share voice data for AI model training",
       "summary": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]",
@@ -971,74 +1195,6 @@
       ],
       "regions": [
         "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d761d44cb22619d3",
-      "title": "Microsoft says threat actors are ahead in the early AI race",
-      "summary": "Microsoft says cyberattackers are currently benefiting from artificial intelligence faster than defenders, allowing threat actors to speed up vulnerability discovery, malware development, and post-compromise activity while security teams struggle to keep pace. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-01T19:32:47+00:00",
-      "published_ts": 1790883167.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "fe7661086e3a6f06",
-      "title": "Give yourself room to be human",
-      "summary": "In this week’s edition, Amy reflects on the importance of prioritizing family and personal well-being over the pressure to remain constantly productive.",
-      "url": "https://blog.talosintelligence.com/give-yourself-room-to-be-human/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-01T18:00:52+00:00",
-      "published_ts": 1790877652.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "499504b72827899d",
-      "title": "Police Arrest 16-Year-Old Suspected of Running KillSec, Seize Ransomware Leak Site and Servers",
-      "summary": "Police in Spain have arrested a 16-year-old whom investigators suspect of running the KillSec ransomware group. KillSec is accused of stealing data from organizations and threatening to publish it on its leak site unless they paid. The 16-year-old was one of 3 people arrested on September 30, when police also took control of that site. Investigators identified him as KillSec's suspected",
-      "url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-01T16:55:57+00:00",
-      "published_ts": 1790873757.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1314,29 +1470,6 @@
       "products": [
         "SharePoint"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "487cb15ae211d220",
-      "title": "Iranian accused of hacking American universities extradited from Montenegro",
-      "summary": "An Iranian national accused by the U.S. of taking part in dozens of breaches involving the theft of academic data and intellectual property has been extradited from Montenegro.",
-      "url": "https://therecord.media/iran-montenegro-hacker-extradition",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-01T20:15:00+00:00",
-      "published_ts": 1790885700.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Middle East",
-        "North America"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
