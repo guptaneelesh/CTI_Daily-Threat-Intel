@@ -1,63 +1,78 @@
 {
-  "generated_at": "2026-10-05T04:15:37.291203+00:00",
+  "generated_at": "2026-10-05T13:42:41.309129+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 45,
-    "critical": 0,
-    "high": 1,
-    "medium": 2,
-    "low": 42,
-    "actively_exploited": 3,
-    "with_cves": 4
+    "all": 56,
+    "critical": 1,
+    "high": 0,
+    "medium": 4,
+    "low": 51,
+    "actively_exploited": 2,
+    "with_cves": 3
   },
   "sources_used": [
     "BleepingComputer",
-    "CISA Alerts",
+    "CISA KEV",
     "Dark Reading",
+    "GBHackers",
     "SecurityWeek",
     "The Hacker News",
     "The Record"
   ],
   "items": [
     {
-      "id": "b9247d5a1821a5ee",
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-88779 Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of&nbsp; KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the&nbsp; specified criteria . Aware of an exploited vulnerability not currently listed in the KEV Catalog? S",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/04/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "source": "CISA Alerts",
+      "id": "cfab48d6152470bb",
+      "title": "CVE-2026-88779: Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability (Citrix NetScaler)",
+      "summary": "CISA KEV — actively exploited. Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-07).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779",
+      "source": "CISA KEV",
       "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-10-04T12:00:00+00:00",
-      "published_ts": 1791115200.0,
+      "category": "vuln",
+      "published": "2026-10-04T00:00:00+00:00",
+      "published_ts": 1791072000.0,
       "cves": [
         "CVE-2026-88779"
       ],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Government & Public Services",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global",
+        "North America"
       ],
       "products": [
         "Citrix"
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
-      "priority_label": "High",
+      "priority_score": 85,
+      "priority_label": "Critical",
       "related_sources": [
         {
-          "source": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779",
-          "title": "CVE-2026-88779: Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability (Citrix NetScaler)",
-          "published": "2026-10-04T00:00:00+00:00"
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
+          "title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
+          "published": "2026-10-05T06:40:19+00:00"
+        },
+        {
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
+          "title": "Exploitation of Citrix NetScaler Zero-Day Hits Appliances Patched Days Earlier",
+          "published": "2026-10-05T05:14:48+00:00"
         },
         {
           "source": "BleepingComputer",
           "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
           "title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
           "published": "2026-10-04T21:58:01+00:00"
+        },
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/cisa-flags-citrix-netscaler-flaw/",
+          "title": "CISA Flags Citrix NetScaler Flaw Exploited in Ongoing Attacks",
+          "published": "2026-10-05T10:46:28+00:00"
         }
       ]
     },
@@ -88,39 +103,232 @@
       "related_sources": []
     },
     {
-      "id": "4c4f8ee17e489f3f",
-      "title": "Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action",
-      "summary": "CVE-2026-104286 is a critical-severity path traversal vulnerability that could allow attackers to write arbitrary files to the system. The post Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
+      "id": "b7dae696b007ebea",
+      "title": "New RemoveMacAI Tool Removes Apple Intelligence Models and Reclaims Mac Storage",
+      "summary": "A new open-source command-line utility called RemoveMacAI lets Apple silicon Mac users running macOS 27 disable Apple Intelligence, remove downloaded on-device AI models, and prevent the operating system from automatically downloading them again. Developed by Om Lahore and released under the MIT license, RemoveMacAI addresses storage and manageability concerns for users who have disabled Apple [&#8230;] The post New RemoveMacAI Tool Removes Apple Intelligence Models and Reclaims Mac Storage appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/new-removemacai-tool-removes-apple-intelligence-models/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-02T08:07:33+00:00",
-      "published_ts": 1790928453.0,
-      "cves": [
-        "CVE-2026-104286"
-      ],
+      "published": "2026-10-05T13:13:52+00:00",
+      "published_ts": 1791206032.0,
+      "cves": [],
       "sectors": [
-        "Government & Public Services"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "North America"
+        "Global"
       ],
       "products": [
-        "Fortinet"
+        "macOS"
       ],
-      "actively_exploited": true,
+      "actively_exploited": false,
       "cvss": null,
-      "priority_score": 40,
+      "priority_score": 25,
       "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
-          "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
-          "published": "2026-10-02T05:49:50+00:00"
-        }
-      ]
+      "related_sources": []
+    },
+    {
+      "id": "2e2a67539925e516",
+      "title": "Google Gemini to Gain Full Computer Access With New Permission",
+      "summary": "Google is reportedly testing a new Gemini Desktop feature that could give its AI agent extensive control over a user’s Mac. This includes access to files, interaction with installed applications, and network communication, all with fewer prompts requiring user approval for each action. Currently, Google has not publicly released this capability, and it has not [&#8230;] The post Google Gemini to Gain Full Computer Access With New Permission appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/google-gemini-to-gain-full-computer-access/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T12:51:39+00:00",
+      "published_ts": 1791204699.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "675410395f581ccb",
+      "title": "MediaTek Fixes 31 Security Flaws Affecting Modem, Video and AI Components",
+      "summary": "MediaTek has released its October 2026 Product Security Bulletin, which addresses 31 vulnerabilities across modem, video, AI processing, display, trusted execution, and system components used in a wide range of its chipsets. The fixes include two critical modem out-of-bounds write vulnerabilities and nine high-severity flaws that could potentially lead to memory corruption, privilege escalation, or [&#8230;] The post MediaTek Fixes 31 Security Flaws Affecting Modem, Video and AI Components appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/mediatek-fixes-31-security-flaws/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T10:00:37+00:00",
+      "published_ts": 1791194437.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "63c825cad8b7e00e",
+      "title": "Apple Strengthens macOS Privacy Controls as AI Agents Become More Autonomous",
+      "summary": "Apple has announced plans to strengthen macOS controls for Full Disk Access, citing concerns that increasingly autonomous AI agents could raise privacy and security risks by giving applications extensive access to users&#8217; devices. In a developer update on October 2, Apple stated it will introduce additional controls for macOS Full Disk Access, a powerful permission [&#8230;] The post Apple Strengthens macOS Privacy Controls as AI Agents Become More Autonomous appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/apple-strengthens-macos-privacy-controls/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T13:03:18+00:00",
+      "published_ts": 1791205398.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "macOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "57a5f041d140bea3",
+      "title": "Critical libheif Vulnerability Could Enable Remote Code Execution Through WordPress Image Uploads",
+      "summary": "A critical heap-buffer-overflow vulnerability in libheif could allow authenticated WordPress users to achieve remote code execution by uploading a specially crafted HEIC image through the standard Media Library workflow. The issue, tracked as GHSA-x8r2-mggj-j6wr, affects the library’s uncompressed-image (unci) decoder and has been fixed in libheif 1.23.3. In affected WordPress deployments, uploaded HEIC files can [&#8230;] The post Critical libheif Vulnerability Could Enable Remote Code Execution Through WordPress Image Uploads appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/libheif-vulnerability/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T12:38:38+00:00",
+      "published_ts": 1791203918.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "384cd7ad62baa6bf",
+      "title": "Japanese Police Impersonation Scam Operation Dismantled as 16 Suspects Detained in Timor-Leste",
+      "summary": "Timor-Leste investigators have dismantled a suspected cross-border telecom fraud operation in Dili, detaining 16 individuals accused of impersonating Japanese police officers to defraud victims in Japan. The raid exposed a professionally staged social-engineering setup that included counterfeit law-enforcement props, Japanese-language call scripts and infrastructure designed to lend credibility to “digital arrest” scams. Authorities said the [&#8230;] The post Japanese Police Impersonation Scam Operation Dismantled as 16 Suspects Detained in Timor-Leste appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/japanese-police-impersonation/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T11:38:39+00:00",
+      "published_ts": 1791200319.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [
+        "Office"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ad493a8047c8568b",
+      "title": "Denmark Confirms Major Security Incident Exposing 8.8 Million Citizen Records",
+      "summary": "Denmark has confirmed a serious cybersecurity incident involving unauthorized access to personal information in its Central Person Register (CPR), affecting about 8.8 million registered individuals. The exposed records include names, residential addresses, CPR numbers, and potentially other information held in the country’s national civil registration system. The breach&#8217;s impact exceeds Denmark’s current population because the [&#8230;] The post Denmark Confirms Major Security Incident Exposing 8.8 Million Citizen Records appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/denmark-confirms-major-security-incident/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T10:55:15+00:00",
+      "published_ts": 1791197715.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "988eb181386f402b",
+      "title": "Google Tightens Open-Source Bug Bounty Rules After Surge in AI-Generated Vulnerability Reports",
+      "summary": "Google has stopped accepting new &#8220;product vulnerability&#8221; reports through its Open Source Software Vulnerability Reward Program (OSS VRP) due to a significant increase in automated submissions that are predominantly invalid. This restriction took effect on October 1, 2026, and Google plans to provide an update regarding this part of the program in the first quarter [&#8230;] The post Google Tightens Open-Source Bug Bounty Rules After Surge in AI-Generated Vulnerability Reports appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/google-tightens-open-source-bug-bounty-rules/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T09:52:59+00:00",
+      "published_ts": 1791193979.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0c709f905dd21ec2",
+      "title": "AWS Fixes AI Agent Flaws Enabling Authentication Bypass and Credential Theft",
+      "summary": "AWS released security updates for three vulnerabilities in its open-source Loom platform, used for AI agent orchestration. These vulnerabilities could allow unauthenticated administrative takeover, disclosure of OAuth2 credentials, and access to internal services. The company strongly urges users to upgrade all Loom deployments and forks to version 1.7.0. AWS announced these issues in Security Bulletin [&#8230;] The post AWS Fixes AI Agent Flaws Enabling Authentication Bypass and Credential Theft appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/aws-fixes-ai-agent-flaws/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-05T09:39:58+00:00",
+      "published_ts": 1791193198.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
     },
     {
       "id": "19ddcfcb5b3335f7",
@@ -179,6 +387,108 @@
       "related_sources": []
     },
     {
+      "id": "3c02646d3df82f43",
+      "title": "tenfold CE: Our free Identity Governance tool just got 2 new features",
+      "summary": "tenfold has added shared content governance and real-time event auditing to its free Community Edition for organizations with under 150 users. The new features help teams manage Microsoft 365 sharing and investigate suspicious identity activity. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T13:33:42+00:00",
+      "published_ts": 1791207222.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "233305a0b36ef165",
+      "title": "Linux Backdoor Abuses STUN Protocol, Exploits Dozens of Flaws",
+      "summary": "ClingSTUN operates as a back-connect proxy backdoor, sets up persistence, and contains exploits for self-propagation. The post Linux Backdoor Abuses STUN Protocol, Exploits Dozens of Flaws appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/linux-backdoor-abuses-stun-protocol-exploits-dozens-of-flaws/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T13:00:00+00:00",
+      "published_ts": 1791205200.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2980000450b32ec0",
+      "title": "Realtek Jungle SDK Exploit Attempts Deliver Cling Botnet With STUN-Based C2",
+      "summary": "Threat actors have been observed attempting to exploit a now-patched critical security flaw impacting the Realtek Jungle software development kit (SDK) to deploy a botnet malware called Cling. \"Cling is notable not because it introduces a new propagation technique, but because it repurposes ordinary STUN behavior into a practical command-and-control channel,\" Nozomi Networks said in a report",
+      "url": "https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T11:46:25+00:00",
+      "published_ts": 1791200785.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1463cd69f89e6228",
+      "title": "Alleged ShinyHunters Leader Arrested in Jordan",
+      "summary": "Known as Rey, the suspect is reportedly helping the FBI identify and locate other members of the extortion group. The post Alleged ShinyHunters Leader Arrested in Jordan appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/alleged-shinyhunters-leader-arrested-in-jordan/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T07:16:53+00:00",
+      "published_ts": 1791184613.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "3b21880bd237b349",
       "title": "In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
       "summary": "Noteworthy stories that might have slipped under the radar: Kiteworks patches over 100 vulnerabilities, Microsoft publishes 2026 Digital Defense Report, AI finds 24 Android app flaws. The post In Other News: $15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats appeared first on SecurityWeek .",
@@ -232,22 +542,42 @@
       "related_sources": []
     },
     {
-      "id": "bb29b0b061c8cb98",
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-102489 Zammad GmbH Zammad Session Fixation Vulnerability CVE-2026-102490 Zammad GmbH Zammad Improper Privilege Management Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not curren",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-10-02T12:00:00+00:00",
-      "published_ts": 1790942400.0,
-      "cves": [
-        "CVE-2026-102489",
-        "CVE-2026-102490"
-      ],
+      "id": "36c89594e7330111",
+      "title": "Alleged dev of Ploutus ATM malware appears in US court after arrest",
+      "summary": "The U.S. Department of Justice has announced the arrest of the alleged developer of Ploutus malware, used to steal millions of dollars in ATM jackpotting attacks across the United States. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T13:01:45+00:00",
+      "published_ts": 1791205305.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a7417d5c3c7173a3",
+      "title": "250,000 Impacted by Data Breaches at New Jersey, Texas Healthcare Firms",
+      "summary": "Hackers stole patient information from Clover Health Investments and AngMar Management Services in July. The post 250,000 Impacted by Data Breaches at New Jersey, Texas Healthcare Firms appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T12:35:15+00:00",
+      "published_ts": 1791203715.0,
+      "cves": [],
+      "sectors": [
+        "Life Sciences & Health Care"
       ],
       "regions": [
         "Unspecified"
@@ -255,35 +585,132 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "2cca9a13030aac13",
-      "title": "Android 17 Advanced Protection Locks Accessibility Services to Verified Accessibility Tools",
-      "summary": "Google has announced a new security measure that limits access to Android's accessibility services to verified applications classified as Accessibility Tools when Advanced Protection is enabled. With malicious Android applications abusing the API serving as the main conduit for malware and financial fraud, the tech giant said the move would block a major attack pathway. Advanced Protection is a",
-      "url": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+      "id": "84d28c26b7a4880c",
+      "title": "The Credential Layer Is Expanding Faster Than Security Teams Can See It",
+      "summary": "Every modern enterprise depends on credentials. This is how humans, systems, and now AI, all connect to data, services, and each other securely. GitGuardian helps secure that credential layer through three connected capabilities: Detect, Remediate, and Prevent. The journey starts with detection, because organizations first need to understand what credentials exist, where they live, and what they",
+      "url": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T08:01:30+00:00",
-      "published_ts": 1790928090.0,
+      "published": "2026-10-05T11:55:00+00:00",
+      "published_ts": 1791201300.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "85d42c41a140fb34",
+      "title": "Senate Passes Bipartisan Bill to Strengthen Healthcare Cybersecurity",
+      "summary": "More than 730 cyber breaches affected over 270 million Americans last year, costing an average of $10 million per breach. The post Senate Passes Bipartisan Bill to Strengthen Healthcare Cybersecurity appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/senate-passes-bipartisan-bill-to-strengthen-healthcare-cybersecurity/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T10:42:19+00:00",
+      "published_ts": 1791196939.0,
+      "cves": [],
+      "sectors": [
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d9ad338810dd8d93",
+      "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
+      "summary": "Apple has announced that it's taking steps to tighten controls around a macOS setting called Full Disk Access (FDA) due to security risks posed by artificial intelligence (AI) agents. \"Some developers are using Full Disk Access in ways that could put users at risk, exposing everything on their systems—including files, mail, messages, and even browsing history – without users' full knowledge",
+      "url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T10:38:50+00:00",
+      "published_ts": 1791196730.0,
+      "cves": [],
+      "sectors": [
         "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "Android"
+        "Edge",
+        "macOS"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2c7ae0ba756663f1",
+      "title": "Microsoft: Windows KB5124010 update crashes some games and apps",
+      "summary": "Microsoft confirmed over the weekend that some games and applications using AC-3 (Dolby Digital) audio decoding will crash after installing the September 2026 KB5124010 Windows 11 preview update. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5124010-update-crashes-some-games-and-apps/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T09:37:56+00:00",
+      "published_ts": 1791193076.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "706a1eb99e8d55f4",
+      "title": "Google halts open-source bug bounty program amid AI spam surge",
+      "summary": "Google has now suspended submissions to its Open Source Software Vulnerability Rewards Program (OSS VRP) after being flooded by AI-generated reports. [...]",
+      "url": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T08:27:46+00:00",
+      "published_ts": 1791188866.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -303,56 +730,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4607b73dacd85973",
-      "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
-      "summary": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter. Rey, whose real name is Saif ‌al-Din Khader, is said to have been brought into custody on September 29, 2026, cooperating with the U.S. Federal Bureau of Investigation (FBI) and",
-      "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-04T07:22:05+00:00",
-      "published_ts": 1791098525.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Europe",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "85e2576525770d2f",
-      "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
-      "summary": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations. The campaigns have impersonated prominent economists and AI policymakers, as well as a prominent Anthropic employee, to single out an AI policy expert at a",
-      "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-04T07:20:32+00:00",
-      "published_ts": 1791098432.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -543,32 +920,6 @@
       "related_sources": []
     },
     {
-      "id": "f182f289fb5bf5e1",
-      "title": "'Warlock' ransomware used in attacks on critical infrastructure in Portuguese, Spanish-speaking countries",
-      "summary": "The group is exploiting a variety of vulnerabilities impacting Microsoft SharePoint, according to a new report from Symantec Threat Hunter Team.",
-      "url": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T14:05:00+00:00",
-      "published_ts": 1790949900.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "SharePoint"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "08ec630e453ffd9a",
       "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
       "summary": "Browser-based attacks can steal sessions, abuse extensions, or manipulate users without creating the endpoint artifacts EDR is designed to detect. NordLayer explains three ways attacks can evade endpoint telemetry and why browser-level controls can help close the gap. [...]",
@@ -594,69 +945,166 @@
       "related_sources": []
     },
     {
-      "id": "118bedb9e8209a2b",
-      "title": "Crypto Scammers Hijack Microsoft’s Official X Account",
-      "summary": "Hackers used the account, which has 13 million followers, to amplify a Clippy-themed cryptocurrency account. The post Crypto Scammers Hijack Microsoft&#8217;s Official X Account appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
-      "source": "SecurityWeek",
+      "id": "c134d802a048abff",
+      "title": "Japanese media group Nikkei discloses cyberattack targeting journalistic sources",
+      "summary": "The Japanese media giant Nikkei disclosed a cyber incident involving an employee email account that may have compromised journalistic sources.",
+      "url": "https://therecord.media/nikkei-cyberattack-japan-data",
+      "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T11:46:10+00:00",
-      "published_ts": 1790941570.0,
+      "published": "2026-10-05T13:15:00+00:00",
+      "published_ts": 1791206100.0,
       "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "f407267a13264402",
-      "title": "Microsoft’s X account hacked in crypto pump-and-dump scheme",
-      "summary": "On Thursday, unknown attackers hijacked the official Microsoft account on X, which has over 13 million followers, in what appeared to be a pump-and-dump scheme promoting a crypto token. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/",
-      "source": "BleepingComputer",
+      "id": "88aaae97922b7477",
+      "title": "Need for Speed: AI-Driven Attacks Are Changing Security Strategies",
+      "summary": "AI-powered attacks are fast, relentless, and automated. How security teams can keep up is top of mind, according to the latest Dark Reading reader poll.",
+      "url": "https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T09:29:56+00:00",
-      "published_ts": 1790933396.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a7e4d2d8ab0a3867",
-      "title": "Anthropic asks Claude users to share voice data for AI model training",
-      "summary": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-04T10:53:21+00:00",
-      "published_ts": 1791111201.0,
+      "published": "2026-10-05T13:00:00+00:00",
+      "published_ts": 1791205200.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e2738d4c54ef3ebf",
+      "title": "Data breach at Denmark’s national population register exposes 8.8 million people",
+      "summary": "Denmark is investigating a data breach affecting approximately 8.8 million people after unauthorized users gained access to its national population register.",
+      "url": "https://therecord.media/denmark-breach-register-cyberattack",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T12:00:00+00:00",
+      "published_ts": 1791201600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "77a9e3d5a5e69edc",
+      "title": "Exploitation Hits Rejetto HFS Vulnerability Discovered by AI",
+      "summary": "CVE-2026-61500 allows attackers to recover the session-cookie signing key and gain administrative access and RCE. The post Exploitation Hits Rejetto HFS Vulnerability Discovered by AI appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T11:00:05+00:00",
+      "published_ts": 1791198005.0,
+      "cves": [
+        "CVE-2026-61500"
+      ],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
+          "title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+          "published": "2026-10-05T08:09:23+00:00"
+        }
+      ]
+    },
+    {
+      "id": "b3aac51974c6e5e2",
+      "title": "OpenAI will show visual ads in ChatGPT while you generate images",
+      "summary": "OpenAI is expanding ads in ChatGPT, and one of the first new formats will show visual ads while you're generating images. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-will-show-visual-ads-in-chatgpt-while-you-generate-images/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-05T10:28:45+00:00",
+      "published_ts": 1791196125.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4607b73dacd85973",
+      "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
+      "summary": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter. Rey, whose real name is Saif ‌al-Din Khader, is said to have been brought into custody on September 29, 2026, and cooperating with the U.S. Federal Bureau of Investigation (FBI)",
+      "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-04T07:22:05+00:00",
+      "published_ts": 1791098525.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Europe",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "85e2576525770d2f",
+      "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+      "summary": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations. The campaigns have impersonated prominent economists and AI policymakers, as well as a prominent Anthropic employee, to single out an AI policy expert at a",
+      "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-04T07:20:32+00:00",
+      "published_ts": 1791098432.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -764,127 +1212,24 @@
       "related_sources": []
     },
     {
-      "id": "ca9c8609a9d361c0",
-      "title": "Malicious Linux Implants Mimic Asian Mail Security Products",
-      "summary": "A trio of newly discovered backdoors walk and quack like legitimate edge solutions, so it's hard to tell they're not.",
-      "url": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T13:00:00+00:00",
-      "published_ts": 1790946000.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Edge",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1137ad1cc73cef32",
-      "title": "Dell asks admins to patch max severity CSM flaws as soon as possible",
-      "summary": "Dell has patched two maximum severity vulnerabilities in the Container Storage Modules (CSM) that connect Dell enterprise storage arrays to Kubernetes environments. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
+      "id": "a7e4d2d8ab0a3867",
+      "title": "Anthropic asks Claude users to share voice data for AI model training",
+      "summary": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-02T12:37:40+00:00",
-      "published_ts": 1790944660.0,
+      "published": "2026-10-04T10:53:21+00:00",
+      "published_ts": 1791111201.0,
       "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Kubernetes"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b68d9eee01857ac4",
-      "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
-      "summary": "OpenAI has parted ways with three members of its safety team after they leaked private information in violation of company policies, The Wall Street Journal reported. \"We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information,\" a spokesperson for the company was quoted as saying. \"Our investigation confirmed that these",
-      "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T12:23:15+00:00",
-      "published_ts": 1790943795.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1c9bc60c5ba8d359",
-      "title": "In Rare Move, Alleged Iranian State Hacker Extradited to US",
-      "summary": "Amir Barati, an alleged member of the Mabna Institute, was indicted for targeting universities, private organizations, and government entities in the US and abroad. The post In Rare Move, Alleged Iranian State Hacker Extradited to US appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T11:14:34+00:00",
-      "published_ts": 1790939674.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Middle East"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0ad521adc27846f2",
-      "title": "AI Agents Aimed SQL Injection at US and Canadian Government Sites",
-      "summary": "The attacks targeted the US Department of Education and Library and Archives Canada, and researchers linked some agents to OpenAI. The post AI Agents Aimed SQL Injection at US and Canadian Government Sites appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T08:38:46+00:00",
-      "published_ts": 1790930326.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1084,77 +1429,6 @@
         "Asia-Pacific"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0975a349c5e713d3",
-      "title": "macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor",
-      "summary": "The dropper “carries a complete universal Mach-O inside itself, roughly 756 KB in the development build, and extracts it at runtime. The post macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T13:15:00+00:00",
-      "published_ts": 1790946900.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Zoom",
-        "macOS"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5245baa4a55582ac",
-      "title": "Why CISOs Struggle to Answer the Board's Three Hardest Questions, and How to Fix the Report",
-      "summary": "The quarterly board meeting is two weeks out. The security team is pulling exports from the identity provider, the cloud posture tool, the vulnerability scanner, the SIEM and the EDR console. Someone is building a spreadsheet to reconcile them. Someone else is turning that spreadsheet into slides. Then a board member asks three questions: How secure is the organization, overall? What is",
-      "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T11:30:00+00:00",
-      "published_ts": 1790940600.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "675ed786b9228cc6",
-      "title": "Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks",
-      "summary": "The China-based hacking group has been exploiting SharePoint vulnerabilities since July 2025. The post Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-02T09:34:41+00:00",
-      "published_ts": 1790933681.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "SharePoint"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
