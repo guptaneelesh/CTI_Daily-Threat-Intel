@@ -1,25 +1,59 @@
 {
-  "generated_at": "2026-10-13T13:38:07.705356+00:00",
+  "generated_at": "2026-10-13T22:18:40.928652+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 55,
-    "critical": 0,
-    "high": 2,
-    "medium": 7,
-    "low": 46,
-    "actively_exploited": 3,
-    "with_cves": 3
+    "all": 73,
+    "critical": 1,
+    "high": 4,
+    "medium": 10,
+    "low": 58,
+    "actively_exploited": 9,
+    "with_cves": 9
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
+    "CISA KEV",
     "Check Point Research",
+    "Cisco Talos",
     "Dark Reading",
     "GBHackers",
     "SecurityWeek",
     "The Hacker News",
-    "The Record"
+    "The Record",
+    "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "e269df431e17c2f6",
+      "title": "CVE-2026-96951: Microsoft Windows Command Injection Vulnerability (Microsoft Windows)",
+      "summary": "CISA KEV — actively exploited. Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-16).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-10-13T00:00:00+00:00",
+      "published_ts": 1791849600.0,
+      "cves": [
+        "CVE-2026-96951"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 80,
+      "priority_label": "Critical",
+      "related_sources": []
+    },
     {
       "id": "15eb4a3e8277a09f",
       "title": "Hackers Exploit Citrix NetScaler Zero-Days to Deploy Modified Platypus Backdoor",
@@ -48,6 +82,150 @@
       "related_sources": []
     },
     {
+      "id": "d36a85e90d9ac6c8",
+      "title": "Two arrested as DOJ takes down laptop farms responsible for $3 million in North Korean revenue",
+      "summary": "More than 40 residences in Texas were the target of a federal operation in September to clamp down on remote worker scams that feed money back to the North Korean regime.",
+      "url": "https://therecord.media/north-korea-laptop-farms-worker-scams-doj-raids-texas",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T20:55:00+00:00",
+      "published_ts": 1791924900.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "8522dd270553b260",
+      "title": "CISA Urges Patching Newly Exploited Vulnerability in Ivanti Connect Secure",
+      "summary": "CISA is aware of Ivanti’s disclosure of a newly exploited vulnerability, CVE-2026-104935 , affecting Ivanti Connect Secure versions 25.1.1.1 and prior, 25.1.2.2 and prior, and 22.8R2.4 and prior. CISA is aware of cyber threat actors exploiting this zero-day authentication bypass vulnerability, which allows remote, unauthenticated execution of arbitrary commands, to conduct credential theft and data exfiltration. CISA added CVE-2026-104935 to its Known Exploited Vulnerabilities (KEV) Catalog on Oct. 13, 2026.&nbsp; CISA urges organizations with affected Ivanti Connect Secure appliances and deployments to immediately update to the latest version, as outlined in Ivanti’s Security Advisory Ivanti Connect Secure (CVE-2026-104935) . Organizations should also review the Ivanti Connect Secure 25.x Upgrade and Migration Compatibility Guide for detailed patching guidance for hardware and virtual appliance deployments. Ivanti Connect Secure version 22.8 reaches end of life on Jan. 31, 2027.&nbsp;&nbsp; Organizations seeking to determine whether they were compromised will need to conduct network and memory forensics to identify evidence of exploitation. Note: Ivanti’s Integrity Checker Tool may not detect evidence of exploitation of CVE-2026-104935 because threat actor commands execute in memory.&nbsp;&nbsp; If your organization suspects a compromise, CISA recommends implementing the following actions from Ivanti Connect Secure Recovery Procedures :&nbsp; Create a backup of the appliance",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-urges-patching-newly-exploited-vulnerability-ivanti-connect-secure",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-13T12:00:00+00:00",
+      "published_ts": 1791892800.0,
+      "cves": [
+        "CVE-2026-104935"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Ivanti"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+          "title": "CVE-2026-104935: Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability (Ivanti Connect Secure)",
+          "published": "2026-10-13T00:00:00+00:00"
+        },
+        {
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
+          "title": "Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN",
+          "published": "2026-10-13T18:43:43+00:00"
+        }
+      ]
+    },
+    {
+      "id": "ba6bea64bd06e22b",
+      "title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
+      "summary": "An attacker chained three zero-day flaws in Ivanti Connect Secure, a VPN appliance, to run commands as root without logging in, security firm&nbsp;Volexity said&nbsp;on October 13. Ivanti has released fixes for two of the flaws and told customers on affected versions to \"act immediately.\" A fix for the third is still pending, according to Volexity. Volexity, which reported the flaws to Ivanti,",
+      "url": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T17:33:11+00:00",
+      "published_ts": 1791912791.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Ivanti"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "fd662a34cc57dae1",
+      "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+      "summary": "Today is Microsoft's October 2026 Patch Tuesday, with security updates addressing a record-breaking 1,411 flaws, including one actively exploited and two publicly disclosed zero-day vulnerabilities. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T19:56:09+00:00",
+      "published_ts": 1791921369.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "564d44948d9a7e1e",
+      "title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
+      "summary": "Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T15:45:50+00:00",
+      "published_ts": 1791906350.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Ivanti"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "55fd59f90806867e",
       "title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
       "summary": "Some meetings last longer than it took attackers to jump on a newly disclosed security flaw this week. Within hours, they were already testing it. That's not much time to read the warning, let alone do something about it. But speed is only part of the problem. A secure connection didn't always mean a safe destination. People offering to fix a ransomware mess had questions to answer themselves.",
@@ -67,20 +245,20 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "f1b0f9ed4746ee64",
-      "title": "Bricksforge WordPress Plugin Vulnerability Exploited in the Wild",
-      "summary": "The vulnerability tracked as CVE-2026-85097 can allow threat actors to take control of the targeted WordPress websites. The post Bricksforge WordPress Plugin Vulnerability Exploited in the Wild appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
-      "source": "SecurityWeek",
+      "id": "b3ca60c1641fbe63",
+      "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
+      "summary": "A maximum-severity security flaw impacting the Bricksforge plugin for WordPress has come under active exploitation in the wild, according to Patchstack. The critical vulnerability in question is CVE-2026-85097 (CVSS score: 10.0), which allows unauthenticated attackers to upload and execute arbitrary PHP code on vulnerable WordPress websites, resulting in remote code execution (RCE). The",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-12T13:14:37+00:00",
-      "published_ts": 1791810877.0,
+      "published": "2026-10-12T09:02:14+00:00",
+      "published_ts": 1791795734.0,
       "cves": [
         "CVE-2026-85097"
       ],
@@ -97,14 +275,7 @@
       "cvss": null,
       "priority_score": 40,
       "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-          "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-          "published": "2026-10-12T09:02:14+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
       "id": "84534db897e7bfed",
@@ -120,32 +291,6 @@
       "sectors": [
         "Energy Resources & Industrials",
         "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 30,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "b8a344a2504b7854",
-      "title": "Amazon Fire TV Cube Security Flaws Allow Bootloader Unlocking and Permanent Root Access",
-      "summary": "A recently released exploit package lets the third-generation Amazon Fire TV Cube gain an unlocked bootloader and persistent root access on firmware version PS7717 or earlier. Developed by XDA developer Pro-me3us, the project targets devices codenamed “gazelle”. It combines temporary privilege escalation with a separate bootloader vulnerability to enable lasting system modifications. This release includes [&#8230;] The post Amazon Fire TV Cube Security Flaws Allow Bootloader Unlocking and Permanent Root Access appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/amazon-fire-tv-cube-security-flaws-allow-bootloader-unlocking-and-permanent-root-access/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-13T10:30:08+00:00",
-      "published_ts": 1791887408.0,
-      "cves": [],
-      "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -241,6 +386,38 @@
       "related_sources": []
     },
     {
+      "id": "df0b4892ca8bba53",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-96951 Microsoft Windows Command Injection Vulnerability CVE-2026-104935 Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploited vulnerability not",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-13T12:00:00+00:00",
+      "published_ts": 1791892800.0,
+      "cves": [
+        "CVE-2026-104935",
+        "CVE-2026-96951"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Ivanti",
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "c78e2ada40d9f64a",
       "title": "Researchers Discover 253 Security Vulnerabilities Across 343 AI Agent Tools in MCP Servers",
       "summary": "Researchers have identified 253 verified security vulnerabilities affecting 343 AI agent tools across 118 Model Context Protocol (MCP) servers. These vulnerabilities expose weaknesses in how software processes arguments generated by large language models (LLMs). The findings are based on an evaluation of 273 open-source MCP servers containing 3,405 tools, using a new fuzzing framework called [&#8230;] The post Researchers Discover 253 Security Vulnerabilities Across 343 AI Agent Tools in MCP Servers appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
@@ -263,6 +440,106 @@
       "cvss": null,
       "priority_score": 25,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "d38244c6467a3885",
+      "title": "The Noise Inside the Network: How an Unsophisticated Attack Exposed a Third-Party Risk",
+      "summary": "Unit 42 dissects a cyberattack targeting a European bank's IT infrastructure, delivering concrete defense strategies to help organizations detect and counter comparable threats. The post The Noise Inside the Network: How an Unsophisticated Attack Exposed a Third-Party Risk appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-13T22:00:04+00:00",
+      "published_ts": 1791928804.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "08aa1209b3f4060a",
+      "title": "North Korean hackers target Ukrainian experts for possible intelligence on Russia's war",
+      "summary": "North Korean hackers have been targeting Ukrainian experts in diplomacy, security and international policy amid Pyongyang’s growing military cooperation with Russia.",
+      "url": "https://therecord.media/north-korea-hackers-russia-ukraine",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T15:15:00+00:00",
+      "published_ts": 1791904500.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "984fa297cd1aee10",
+      "title": "Criminal IP to Showcase Threat Intelligence and AITEM at Security Days Fall 2026 Tokyo",
+      "summary": "Torrance, California, October 13th, 2026, CyberNewswire Criminal IP, developed by AI SPERA, will participate in Security Days Fall 2026 Tokyo, taking place October 21–23, 2026, at the TAKANAWA GATEWAY Convention Center. At booth B20, Criminal IP will showcase Criminal IP Threat Intelligence (Criminal IP TI) and Criminal IP AITEM (AI-Powered Threat Exposure Management) through live [&#8230;] The post Criminal IP to Showcase Threat Intelligence and AITEM at Security Days Fall 2026 Tokyo appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/criminal-ip-to-showcase-threat-intelligence-and-aitem-at-security-days-fall-2026-tokyo/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-13T13:58:30+00:00",
+      "published_ts": 1791899910.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bf01d32f03b38d98",
+      "title": "G2A.COM Reports 35% Growth in Security Software Orders, Outpacing VPN Growth",
+      "summary": "Amsterdam, Netherlands, October 13th, 2026, CyberNewswire Antivirus and security software orders grow more than twice as fast as VPN orders, accounting for 43% of cybersecurity purchases on the marketplace&#160; G2A.COM, a digital marketplace that serves more than 35 million users across 180 countries, reports a 35% year-on-year surge in antivirus and security software orders, outpacing [&#8230;] The post G2A.COM Reports 35% Growth in Security Software Orders, Outpacing VPN Growth appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/g2a-com-reports-35-growth-in-security-software-orders-outpacing-vpn-growth/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-13T13:56:25+00:00",
+      "published_ts": 1791899785.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -317,22 +594,23 @@
       "related_sources": []
     },
     {
-      "id": "430f6bdfdf73a887",
-      "title": "Critical Ghostscript Vulnerability Lets Malicious PDFs Trigger Remote Code Execution",
-      "summary": "A critical vulnerability in Ghostscript could allow attackers to execute code on vulnerable servers by uploading a specially crafted PDF containing a malicious JPEG 2000 image. Tracked as CVE-2026-39919, the vulnerability is a heap-based buffer overflow rated 9.8 out of 10 under CVSS v3.1 and 9.3 under CVSS v4.0, reflecting a worst-case unauthenticated, network-reachable remote [&#8230;] The post Critical Ghostscript Vulnerability Lets Malicious PDFs Trigger Remote Code Execution appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/ghostscript-vulnerability/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-13T10:38:28+00:00",
-      "published_ts": 1791887908.0,
+      "id": "fa0419c869f90639",
+      "title": "Swann Communications SWIFI-SE2KIC",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to view video information without authentication. The following versions of Swann Communications SWIFI-SE2KIC are affected: SWIFI-SE2KIC firmware &lt;=2.0.22 (CVE-2026-107605, CVE-2026-107606, CVE-2026-107607) CVSS Vendor Equipment v3 6.2 Swann Communications SWIFI-SE2KIC firmware 1 Vulnerability Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Australia Vulnerabilities Expand All + CVE-2026-107605 SWIFI-SE2KIC firmware versions 2.0.22 and prior are vulnerable to a Missing Authentication for Critical Function vulnerability that could allow an attacker on the local network to view live video feed without authentication. Read More 1 Affected Product Swann Communications SWIFI-SE2KIC firmware: &lt;=2.0.22 Product Status: known_affected Remediations Mitigation Swann Communications has provided the following interim security measures. For more information, contact Swann Communications https://support.swann.com/hc/en-us/requests/new. Mitigation Keep the camera behind a secured router and firewall. Mitigation Avoid exposing RTSP services to the internet through port forwarding, DMZ configurations, or direct public IP access. Mitigation Ensure the router and associated accounts use strong, unique passwords. Mitigation Keep device firmware updated when new releases bec",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-13T12:00:00+00:00",
+      "published_ts": 1791892800.0,
       "cves": [
-        "CVE-2026-39919"
+        "CVE-2026-107605",
+        "CVE-2026-107606",
+        "CVE-2026-107607"
       ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
+        "Asia-Pacific",
         "Global"
       ],
       "products": [],
@@ -343,22 +621,98 @@
       "related_sources": []
     },
     {
-      "id": "593b64dc5e70b9fe",
-      "title": "South African clothing retailer Foschini Group investigating cyberattack on British fashion brands",
-      "summary": "The South African retail giant The Foschini Group (TFG) disclosed a cyberattack that disrupted IT systems at three of its British fashion brands, leaving some services unavailable.",
-      "url": "https://therecord.media/foschini-group-south-africa-cyber",
-      "source": "The Record",
+      "id": "d51e1c29d5cd7fb5",
+      "title": "Anthropic warns self-replicating AI could spread to your smart devices",
+      "summary": "Anthropic is warning that small AI models could soon be able to self-replicate across consumer IoT devices, from Android TV boxes to smart ovens, creating distributed botnets capable of running AI workloads without relying on data centers. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-13T13:00:00+00:00",
-      "published_ts": 1791896400.0,
+      "published": "2026-10-13T21:16:34+00:00",
+      "published_ts": 1791926194.0,
       "cves": [],
       "sectors": [
         "Consumer",
         "Energy Resources & Industrials"
       ],
       "regions": [
-        "Africa"
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6a0cd7630f5a3ea5",
+      "title": "Microsoft Patch Tuesday for October 2026 — Snort rules and prominent vulnerabilities",
+      "summary": "Blog post covering the vulnerabilities disclosed during Microsoft Patch Tuesday.",
+      "url": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-13T20:37:58+00:00",
+      "published_ts": 1791923878.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bd9b0aa9e0b87d79",
+      "title": "Adobe Patches 140 Vulnerabilities Across 10 Products",
+      "summary": "The flaws affect products such as Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker and Bridge. The post Adobe Patches 140 Vulnerabilities Across 10 Products appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T17:14:42+00:00",
+      "published_ts": 1791911682.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3a370842da426107",
+      "title": "Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
+      "summary": "The Norwegian Data Protection Authority (DPA) has fined Xandr, an advertising unit owned by Microsoft, €8.6 million ($9.62 million) for illegally relaying ​Grindr users' sensitive data to advertisers. The administrative penalty is the largest issued by the data protection watchdog, arguing the case merited a high fine because of the \"very serious\" nature of the breach. The infringements",
+      "url": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T13:12:32+00:00",
+      "published_ts": 1791897152.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -418,19 +772,20 @@
       "related_sources": []
     },
     {
-      "id": "c5043e20ee772e55",
-      "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
-      "summary": "Norway's Data Protection Authority (Datatilsynet) has fined Microsoft-owned advertising company Xandr NOK 92 million ($9.6M) for unlawfully processing and sharing sensitive data belonging to Grindr users in the country. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+      "id": "5bda8a34f3651762",
+      "title": "Ghostscript flaw lets hackers hijack servers via PDF uploads",
+      "summary": "A critical heap buffer overflow vulnerability (CVE-2026-39919) in the Ghostscript interpreter and rendering engine could allow remote code execution through specially crafted PDF files. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-12T20:13:52+00:00",
-      "published_ts": 1791836032.0,
-      "cves": [],
+      "published": "2026-10-13T21:33:26+00:00",
+      "published_ts": 1791927206.0,
+      "cves": [
+        "CVE-2026-39919"
+      ],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
@@ -438,20 +793,20 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "d21ef2ac9c16215c",
-      "title": "Prominent Ransomware Negotiator Faces Extortion Charges",
-      "summary": "Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.",
-      "url": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+      "id": "5ca24f6332b4abc2",
+      "title": "Anthropic Finds Ingredients for Future AI Worms",
+      "summary": "Anthropic's latest study combined IoT and network tests to explore AI self-replication, which researchers said would be &quot;challenging&quot; to shut down.",
+      "url": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-12T20:00:53+00:00",
-      "published_ts": 1791835253.0,
+      "published": "2026-10-13T20:35:23+00:00",
+      "published_ts": 1791923723.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
@@ -462,29 +817,53 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "49d7abf8b0090b0d",
-      "title": "Ledger says hardware implant in cryptocurrency wallets stole recovery phrases",
-      "summary": "Ledger cryptocurrency wallets sold through a Southeast Asian reseller had an implant allowing outsiders to drain funds, the company said.",
-      "url": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
+      "id": "29a59a6dea7255fc",
+      "title": "FTC: Company netted at least $60 million charging sextortion victims for help it didn’t provide",
+      "summary": "An Ohio-based company charged individuals thousands of dollars to fight sextortion scams, but the operation itself was fraudulent, according to a Federal Trade Commission complaint.",
+      "url": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint",
       "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-13T13:18:00+00:00",
-      "published_ts": 1791897480.0,
+      "published": "2026-10-13T20:12:00+00:00",
+      "published_ts": 1791922320.0,
       "cves": [],
       "sectors": [
-        "Financial Services"
+        "Government & Public Services"
       ],
       "regions": [
-        "Asia-Pacific"
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c9392232cafd39e0",
+      "title": "Microsoft releases Windows 10 KB5126657 extended security update",
+      "summary": "Microsoft released the Windows 10 KB5126657 extended security update, which includes this month's record-breaking October 2026 Patch Tuesday fixes and a few bug fixes and changes. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T19:47:30+00:00",
+      "published_ts": 1791920850.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [
-        "Edge"
+        "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -493,24 +872,285 @@
       "related_sources": []
     },
     {
-      "id": "5e45dd1f951a50a5",
-      "title": "Cyber incident hits grocery stores in US, Netherlands and Belgium",
-      "summary": "Ahold Delhaize, the Dutch multinational retailer, announced it was taking precautionary measures following a cybersecurity incident, with stores in the U.S., Netherlands and Belgium reportedly impacted.",
-      "url": "https://therecord.media/cyberattack-groceru-ahold-delhaize",
-      "source": "The Record",
+      "id": "4d01e28e74379fc9",
+      "title": "Microsoft: Windows 11 24H2 Home and Pro reached end of support",
+      "summary": "Microsoft announced today that devices running Windows 11 24H2 Home and Pro editions have reached the end of support and will no longer receive monthly security and non-security preview updates. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-13T12:00:00+00:00",
-      "published_ts": 1791892800.0,
+      "published": "2026-10-13T19:04:38+00:00",
+      "published_ts": 1791918278.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "33350a5b3a1b30cc",
+      "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
+      "summary": "Small artificial intelligence (AI) models may be months away from developing capabilities to self-replicate on IoT devices like smart ovens and off-brand Android TV boxes, according to a warning from Anthropic. The frontier AI lab said small AI models could form autonomous, self-propagating worm botnets that are \"challenging to shut down,\" since \"there's no centralized point to shut off.\"",
+      "url": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T18:20:57+00:00",
+      "published_ts": 1791915657.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1708f466e35c8d25",
+      "title": "Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another",
+      "summary": "A flaw in Docker Hub, the registry where container images are published and downloaded, let one user push, pull, or delete images as another user. Docker fixed the flaw on September 30 and says it found no evidence that anyone exploited it. The flaw was in the feature that&nbsp;converts a personal account&nbsp;into an organization, Docker said in a&nbsp;security advisory&nbsp;on October 12.",
+      "url": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T18:03:18+00:00",
+      "published_ts": 1791914598.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Docker"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e28776b4fa7b5458",
+      "title": "Windows 11 KB5127648 & KB5126653 cumulative updates released",
+      "summary": "Microsoft has released the Patch Tuesday Windows 11 KB5127648 and KB5126653 cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T17:49:38+00:00",
+      "published_ts": 1791913778.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b61eb856b273271e",
+      "title": "SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft",
+      "summary": "A flaw in SAP's&nbsp;Cloud SDK for Python&nbsp;can send an application's OAuth2 client credentials to a server an attacker controls, SAP said in a&nbsp;security advisory&nbsp;on October 13. The flaw affects multi-tenant applications on SAP Business Technology Platform (BTP) that use the SDK, SAP's official Python client for BTP services. An attacker must be able to control the tenant subdomain,",
+      "url": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T17:28:50+00:00",
+      "published_ts": 1791912530.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "SAP"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e6c72a5d21f5cf70",
+      "title": "Google Partially Reverses Chrome Bug Bounty Cuts",
+      "summary": "Google is restructuring bug bounty rewards with a focus on complex memory safety vulnerabilities. The post Google Partially Reverses Chrome Bug Bounty Cuts appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T17:00:00+00:00",
+      "published_ts": 1791910800.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Chrome"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "93a9367317f553db",
+      "title": "TFG London cyberattack disrupts systems at Hobbs and Whistles retailers",
+      "summary": "TFG London detected a cybersecurity incident that impacted IT systems used by the Phase Eight, Hobbs, and Whistles premium fashion brands. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T16:44:18+00:00",
+      "published_ts": 1791909858.0,
       "cves": [],
       "sectors": [
         "Consumer"
       ],
       "regions": [
-        "Europe",
-        "North America"
+        "Unspecified"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d8318ff128eaeaed",
+      "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
+      "summary": "GitHub has taken the step of expiring unvalidated npm trusted publishing configurations 48 hours after creation after researchers found that it was possible for an attacker to push new versions of a different user's package without having to steal their credentials. \"Your configuration becomes validated and exempt from expiry after its first successful publish,\" the Microsoft-owned subsidiary",
+      "url": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T16:18:18+00:00",
+      "published_ts": 1791908298.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "fab0fade8f9a377b",
+      "title": "Docker Hub flaw let attackers impersonate users, tamper with images",
+      "summary": "Docker has disclosed a critical vulnerability (CVE-2026-105445) in Docker Hub that let attackers access another user's container repositories using a personal access token (PAT). [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T15:20:20+00:00",
+      "published_ts": 1791904820.0,
+      "cves": [
+        "CVE-2026-105445"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Docker"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6a4553fa1830cbeb",
+      "title": "The MFA Gaps Attackers are Still Exploiting",
+      "summary": "Attackers continue exploiting gaps in MFA coverage, using stolen credentials to access VPNs, RDP, and Windows systems that still rely on passwords alone. Specops explains why protecting cloud applications isn't enough and how organizations can close these authentication gaps. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T14:01:11+00:00",
+      "published_ts": 1791900071.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "997b976ccfa315bf",
+      "title": "SAP warns of maximum severity OAuth2 SSRF security flaw",
+      "summary": "SAP has addressed 20 security flaws across multiple products in its October 2026 security updates, including a maximum-severity vulnerability in the Cloud SDK for Python. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T13:51:02+00:00",
+      "published_ts": 1791899462.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "SAP"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -714,188 +1354,15 @@
       "related_sources": []
     },
     {
-      "id": "330a16773677ae6d",
-      "title": "Anthropic takes risky AI tests offline after models breach govt sites",
-      "summary": "Anthropic announced that its internal AI models undergoing \"high-risk and cybersecurity evaluations\" no longer have internet access following incidents involving U.S. government websites at the federal, state, and local levels. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+      "id": "c5043e20ee772e55",
+      "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
+      "summary": "Norway's Data Protection Authority (Datatilsynet) has fined Microsoft-owned advertising company Xandr NOK 92 million ($9.6M) for unlawfully processing and sharing sensitive data belonging to Grindr users in the country. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-12T18:51:59+00:00",
-      "published_ts": 1791831119.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4a252d63a79f668f",
-      "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
-      "summary": "Ledger has confirmed that some of its devices distributed through Southeast Asian reseller CryptoBilis were compromised with a hardware implant that drained users' cryptocurrency wallets. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T16:27:23+00:00",
-      "published_ts": 1791822443.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "69f9a98e13902ef5",
-      "title": "Cyberattack shuts down refrigerators at French supermarkets",
-      "summary": "Attackers remotely defrosted refrigerators at multiple French supermarket chains overnight in a cyberattack that reportedly targeted Danfoss refrigeration controllers. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T15:23:34+00:00",
-      "published_ts": 1791818614.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "226b74492e61993d",
-      "title": "12th October – Threat Intelligence Report",
-      "summary": "For the latest discoveries in cyber research for the week of 12th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Denmark&#8217;s government has disclosed a breach involving its Central Register of Persons after unauthorized individuals exploited access provided to a private supplier. The incident reportedly exposed personal information, including names, addresses, and [&#8230;] The post 12th October – Threat Intelligence Report appeared first on Check Point Research .",
-      "url": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/",
-      "source": "Check Point Research",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-10-12T14:51:31+00:00",
-      "published_ts": 1791816691.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2a76cc3e2f147ec5",
-      "title": "Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption",
-      "summary": "A new Windows malware loader called AvisLoader uses encrypted peer-to-peer communications to make command-and-control infrastructure harder to disrupt. Varonis researchers explain how the malware uses ClickFix delivery, shortcut-based persistence, and remote command execution capabilities. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T14:00:10+00:00",
-      "published_ts": 1791813610.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5b67c2ddbcebbb24",
-      "title": "Retail giant Ahold Delhaize takes systems offline after cyberattack",
-      "summary": "Retail giant Ahold Delhaize, one of the world's largest food retail chains, confirmed today that it had to take some systems offline in response to a \"cybersecurity incident\" affecting its network. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T13:51:07+00:00",
-      "published_ts": 1791813067.0,
-      "cves": [],
-      "sectors": [
-        "Consumer"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "4b5d3c58e1b15a35",
-      "title": "Ukraine strikes third Yandex data center, disrupting digital services across Russia",
-      "summary": "A third Yandex data center in Russia was hit by Ukrainian drones over the weekend, forcing it to shut down and causing further disruptions to cloud services, payments, deliveries and other online services across the country.",
-      "url": "https://therecord.media/ukraine-strikes-third-yandex-data-center",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T12:00:00+00:00",
-      "published_ts": 1791806400.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d365e6ca11c0ebf6",
-      "title": "Microsoft: Windows 11 23H2 reaches end of support in 30 days",
-      "summary": "Microsoft has reminded customers that systems running Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will stop receiving security updates next month. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T11:58:33+00:00",
-      "published_ts": 1791806313.0,
+      "published": "2026-10-12T20:13:52+00:00",
+      "published_ts": 1791836032.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -904,9 +1371,31 @@
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Windows"
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d21ef2ac9c16215c",
+      "title": "Prominent Ransomware Negotiator Faces Extortion Charges",
+      "summary": "Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.",
+      "url": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-12T20:00:53+00:00",
+      "published_ts": 1791835253.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -966,19 +1455,135 @@
       "related_sources": []
     },
     {
-      "id": "01a2934fdde25ee6",
-      "title": "Russian internet provider SkyNet reports outages after cyberattack claimed by Ukrainian hackers",
-      "summary": "One of St. Petersburg's major internet providers said its network had been under a distributed denial-of-service (DDoS) attack since October 6, affecting services including online gaming, voice calls and video conferencing.",
-      "url": "https://therecord.media/russian-internet-provider-skynet-reports-outages-ddos",
-      "source": "The Record",
+      "id": "48ddb2c25babc470",
+      "title": "North Korea Phishes Ukrainians for War Intel",
+      "summary": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-13T13:20:00+00:00",
-      "published_ts": 1791897600.0,
+      "published": "2026-10-13T21:24:45+00:00",
+      "published_ts": 1791926685.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific",
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c32538940ef8a5e9",
+      "title": "UK Housing Ombudsman Service investigates 'security incident'",
+      "summary": "The U.K. Housing Ombudsman Service is investigating a third-party IT security incident that impacted its case management system on Tuesday. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T18:19:44+00:00",
+      "published_ts": 1791915584.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d3534709bf17e69e",
+      "title": "Sandbox vulnerability gives rogue AI agents a path to escape and leak data, research says",
+      "summary": "The new research, published by AI security startup AIR, found that a network filtering flaw in Vercel Sandbox — a tool used to run code in isolated environments — could allow agents to exploit certificate validation processes to transmit data outside approved networks.",
+      "url": "https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T16:18:00+00:00",
+      "published_ts": 1791908280.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7c8bb6c03312543e",
+      "title": "West African scam compounds raided, more than 100 suspected trafficking victims ‘rescued’",
+      "summary": "More than two dozen people were arrested by police in Ghana and Nigeria as part of a U.K.-hosted operation that also included tech companies.",
+      "url": "https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T16:05:00+00:00",
+      "published_ts": 1791907500.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Africa"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8b3816a27a742c6f",
+      "title": "Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach",
+      "summary": "Most of the affected individuals are Meta employees in the United States and they are being offered credit monitoring services. The post Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-13T16:01:00+00:00",
+      "published_ts": 1791907260.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e6d8b8bed3656cd4",
+      "title": "When LLM Gateways Go Wrong: Findings from LiteLLM",
+      "summary": "TL;DR; Our security assessment of LiteLLM (v1.77.7), a widely used open-source LLM gateway, uncovered multiple high-impact vulnerabilities (tracked as CVE-2026-35029, CVE-2026-59823) which have been resolved as of LiteLLM version 1.83.9. The most significant issues stemmed from a missing authorization check on the /config/update endpoint, which allowed any authenticated user (including low-privileged accounts) to modify the [&#8230;] The post When LLM Gateways Go Wrong: Findings from LiteLLM appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/when-llm-gateways-go-wrong-findings-from-litellm/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-10-13T14:30:26+00:00",
+      "published_ts": 1791901826.0,
+      "cves": [
+        "CVE-2026-35029",
+        "CVE-2026-59823"
+      ],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1056,113 +1661,47 @@
       "related_sources": []
     },
     {
-      "id": "d5dde41541b257e5",
-      "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
-      "summary": "Attackers are currently targeting a critical vulnerability in SMA 1000 appliances, putting SonicWall customers in a familiar yet unenviable position.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T21:42:42+00:00",
-      "published_ts": 1791841362.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "fc6d127c31691068",
-      "title": "Yandex confirms service outage as users lose access to cloud files",
-      "summary": "Russian cloud services provider Yandex announced that drone attacks damaged three of its data centers, forcing it to shut down two facilities and partially disable a third. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+      "id": "330a16773677ae6d",
+      "title": "Anthropic takes risky AI tests offline after models breach govt sites",
+      "summary": "Anthropic announced that its internal AI models undergoing \"high-risk and cybersecurity evaluations\" no longer have internet access following incidents involving U.S. government websites at the federal, state, and local levels. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-12T19:23:01+00:00",
-      "published_ts": 1791832981.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "bc6d737c1ba88c00",
-      "title": "No Identity, No Recovery: Cyber Resilience Starts With IAM",
-      "summary": "The proliferation of enterprise apps and the centrality of cloud identity providers requires an identity security rethink.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T18:27:25+00:00",
-      "published_ts": 1791829645.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "735e64cb9cbed8e3",
-      "title": "IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion",
-      "summary": "The all-stock deal brings Elisity’s least-privilege access technology into IonQ’s security portfolio. The post IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T14:25:00+00:00",
-      "published_ts": 1791815100.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "92e86018ee655b7a",
-      "title": "GitLab warns of max severity code execution vulnerability",
-      "summary": "GitLab warned users today to immediately patch a maximum-severity vulnerability in the CI/CD Regular Expression Compiler that could let remote attackers run arbitrary code on targeted instances. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T13:09:09+00:00",
-      "published_ts": 1791810549.0,
+      "published": "2026-10-12T18:51:59+00:00",
+      "published_ts": 1791831119.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "226b74492e61993d",
+      "title": "12th October – Threat Intelligence Report",
+      "summary": "For the latest discoveries in cyber research for the week of 12th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Denmark&#8217;s government has disclosed a breach involving its Central Register of Persons after unauthorized individuals exploited access provided to a private supplier. The incident reportedly exposed personal information, including names, addresses, and [&#8230;] The post 12th October – Threat Intelligence Report appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-10-12T14:51:31+00:00",
+      "published_ts": 1791816691.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "GitLab"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1248,50 +1787,68 @@
       "related_sources": []
     },
     {
-      "id": "7a0525a75a517592",
-      "title": "Cyber exec arrested in case allegedly tied to ShinyHunters hackers",
-      "summary": "Canadian cybersecurity executive Edward Dubrovsky has been arrested in Pennsylvania in connection with alleged extortion activity that multiple reports have linked to the FBI's ongoing crackdown on the ShinyHunters hacking group. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
-      "source": "BleepingComputer",
+      "id": "d5dde41541b257e5",
+      "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
+      "summary": "Attackers are currently targeting a critical vulnerability in SMA 1000 appliances, putting SonicWall customers in a familiar yet unenviable position.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-10T15:07:54+00:00",
-      "published_ts": 1791644874.0,
+      "published": "2026-10-12T21:42:42+00:00",
+      "published_ts": 1791841362.0,
       "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "3b6f8a2c642cabaa",
-      "title": "ARTEX AI, Claude agents used in cyberattacks on South Korean banks",
-      "summary": "The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese hacker using the ARTEX AI penetration testing suite and Claude agents. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
+      "id": "fc6d127c31691068",
+      "title": "Yandex confirms service outage as users lose access to cloud files",
+      "summary": "Russian cloud services provider Yandex announced that drone attacks damaged three of its data centers, forcing it to shut down two facilities and partially disable a third. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-10T14:16:17+00:00",
-      "published_ts": 1791641777.0,
+      "published": "2026-10-12T19:23:01+00:00",
+      "published_ts": 1791832981.0,
       "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
+      "sectors": [],
       "regions": [
-        "Asia-Pacific"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bc6d737c1ba88c00",
+      "title": "No Identity, No Recovery: Cyber Resilience Starts With IAM",
+      "summary": "The proliferation of enterprise apps and the centrality of cloud identity providers requires an identity security rethink.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-12T18:27:25+00:00",
+      "published_ts": 1791829645.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1309,72 +1866,6 @@
       "sectors": [],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f9ba6d2b4a752769",
-      "title": "Canonical Websites Disrupted in Second DDoS Attack This Year",
-      "summary": "The outage hit the main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal. The post Canonical Websites Disrupted in Second DDoS Attack This Year appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T11:58:39+00:00",
-      "published_ts": 1791806319.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ae63b5a02b9c13f0",
-      "title": "Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US",
-      "summary": "Oleg Korniev was a leader of YMCO, a sophisticated network of money mules that helped hackers move funds outside the US. The post Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-12T11:24:50+00:00",
-      "published_ts": 1791804290.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e83fdff603c3ee86",
-      "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
-      "summary": "Daiichi Kosho, a major Japanese entertainment system maker, disclosed that a malware infection at its contractor, Nippon Columbia, exposed more than 8.7 million customer and employee records. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-11T14:23:46+00:00",
-      "published_ts": 1791728626.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
