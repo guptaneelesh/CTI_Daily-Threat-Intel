@@ -1,24 +1,22 @@
 {
-  "generated_at": "2026-10-22T21:13:36.369510+00:00",
+  "generated_at": "2026-10-23T03:32:10.014586+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 143,
-    "critical": 2,
-    "high": 10,
-    "medium": 26,
-    "low": 105,
-    "actively_exploited": 18,
-    "with_cves": 32
+    "all": 131,
+    "critical": 0,
+    "high": 6,
+    "medium": 22,
+    "low": 103,
+    "actively_exploited": 12,
+    "with_cves": 27
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
-    "CISA KEV",
     "Check Point Research",
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
-    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
@@ -28,193 +26,6 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
-    {
-      "id": "2c782a23f7160991",
-      "title": "Siemens Software Center",
-      "summary": "View CSAF Summary The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Siemens has released a new version for Siemens Software Center and recommends to update to the latest version. Please refer to our blog post for additional information about current known active exploitation and how to detect it. The following versions of Siemens Software Center are affected: Siemens Software Center vers:intdot/&lt;4.0.9.8 (CVE-2026-110936) CVSS Vendor Equipment v3 6.7 Siemens Siemens Software Center 1 Vulnerability Uncontrolled Search Path Element Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-110936 The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Read More 1 Affected Product Siemens Software Center &lt; V4.0.9.8 Product Status: known_affected Remedi",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-10-22T12:00:00+00:00",
-      "published_ts": 1792670400.0,
-      "cves": [
-        "CVE-2026-110936"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Government & Public Services",
-        "Life Sciences & Health Care",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 80,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
-          "title": "CVE-2026-110936: Siemens Software Center Uncontrolled Search Path Element Vulnerability (Siemens Software Center)",
-          "published": "2026-10-20T00:00:00+00:00"
-        },
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-          "published": "2026-10-20T07:11:45+00:00"
-        }
-      ]
-    },
-    {
-      "id": "681d14c8756d1a44",
-      "title": "CVE-2026-96652: Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability (Plex Media Server)",
-      "summary": "CISA KEV — actively exploited. Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-03).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-20T00:00:00+00:00",
-      "published_ts": 1792454400.0,
-      "cves": [
-        "CVE-2026-96652"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 75,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-          "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-          "published": "2026-10-21T07:26:49+00:00"
-        }
-      ]
-    },
-    {
-      "id": "92691bff47a750df",
-      "title": "CVE-2026-106931: EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability (EG Secure Solutions SiteGuard Server Edition)",
-      "summary": "CISA KEV — actively exploited. EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-23).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-20T00:00:00+00:00",
-      "published_ts": 1792454400.0,
-      "cves": [
-        "CVE-2026-106931"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "aaed5fb6d99caab4",
-      "title": "CVE-2026-96656: Plex Media Server External Control of File Name or Path Vulnerability (Plex Media Server)",
-      "summary": "CISA KEV — actively exploited. Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-23).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-20T00:00:00+00:00",
-      "published_ts": 1792454400.0,
-      "cves": [
-        "CVE-2026-96656"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "552ee3f9bbd6da0b",
-      "title": "CVE-2026-96655: Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability (Plex Media Server)",
-      "summary": "CISA KEV — actively exploited. Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-03).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-20T00:00:00+00:00",
-      "published_ts": 1792454400.0,
-      "cves": [
-        "CVE-2026-96655"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "db468cb7a057f9db",
-      "title": "CVE-2026-96654: Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability (Plex Media Server)",
-      "summary": "CISA KEV — actively exploited. Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-23).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-20T00:00:00+00:00",
-      "published_ts": 1792454400.0,
-      "cves": [
-        "CVE-2026-96654"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": []
-    },
     {
       "id": "73c9af8c2bed15f8",
       "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
@@ -412,6 +223,44 @@
       "priority_score": 45,
       "priority_label": "Medium",
       "related_sources": []
+    },
+    {
+      "id": "2c782a23f7160991",
+      "title": "Siemens Software Center",
+      "summary": "View CSAF Summary The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Siemens has released a new version for Siemens Software Center and recommends to update to the latest version. Please refer to our blog post for additional information about current known active exploitation and how to detect it. The following versions of Siemens Software Center are affected: Siemens Software Center vers:intdot/&lt;4.0.9.8 (CVE-2026-110936) CVSS Vendor Equipment v3 6.7 Siemens Siemens Software Center 1 Vulnerability Uncontrolled Search Path Element Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-110936 The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Read More 1 Affected Product Siemens Software Center &lt; V4.0.9.8 Product Status: known_affected Remedi",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-22T12:00:00+00:00",
+      "published_ts": 1792670400.0,
+      "cves": [
+        "CVE-2026-110936"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Government & Public Services",
+        "Life Sciences & Health Care",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+          "published": "2026-10-20T07:11:45+00:00"
+        }
+      ]
     },
     {
       "id": "5f823b9dcd28a778",
@@ -838,33 +687,6 @@
       "related_sources": []
     },
     {
-      "id": "6dcf62f6a584cc1a",
-      "title": "Scammers Exploit Dell and Staples Order Emails to Bypass Traditional Phishing Detection",
-      "summary": "Scammers are abusing legitimate Dell and Staples order notifications to deliver callback phishing lures, embedding fraudulent helpline numbers inside transactional emails that pass authentication checks. Cisco Talos observed roughly 1,400 messages across two campaigns, highlighting how trusted retail infrastructure can carry attacker-controlled instructions without relying on spoofed senders or malicious links. The activity extends a [&#8230;] The post Scammers Exploit Dell and Staples Order Emails to Bypass Traditional Phishing Detection appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/dell-and-staples-emails-exploited/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T12:10:15+00:00",
-      "published_ts": 1792671015.0,
-      "cves": [],
-      "sectors": [
-        "Consumer",
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 35,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "4e226ab31adf7319",
       "title": "InterSystems Corporation InterSystems IRIS for Health",
       "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to view transmitted data and use that data to log into the device. The following versions of InterSystems Corporation InterSystems IRIS for Health are affected: InterSystems IRIS for Health 2026.2.0.221, 2026.1.0.235, 2025.3.0.226 (CVE-2026-111594, CVE-2026-111594, CVE-2026-111594) CVSS Vendor Equipment v3 8.1 InterSystems Corporation InterSystems IRIS for Health 1 Vulnerability Cleartext Transmission of Sensitive Information Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-111594 InterSystems IRIS for Health has TLS/SSL encryption turned off by default, which may enable an attacker to view transmitted data and use that data to log into the device. Read More 3 Affected Products InterSystems Corporation InterSystems IRIS for Health: 2026.2.0.221 Product Status: known_affected Remediations Mitigation InterSystems recommends users configure IRIS superserver to require SSL/TLS: https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=ROARS_gsecuring_checklist Note that there are three settings: \"Disabled\", which means that client communications do not use TLS. \"Enabled\", which means that client communications may use TLS (but they also may not) and \"Required\", which forces all client communications to use TLS. Mitigation InterSystems documentatio",
@@ -912,7 +734,6 @@
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe",
         "Global"
       ],
       "products": [],
@@ -938,67 +759,8 @@
           "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
           "title": "PHP ships emergency patches for critical PHP2Shell flaws",
           "published": "2026-10-21T14:07:05+00:00"
-        },
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/",
-          "title": "Gcore Makes Enterprise Security Bundle Free for Public Agencies Until End of the Year",
-          "published": "2026-10-22T16:13:17+00:00"
         }
       ]
-    },
-    {
-      "id": "06af9f30dca211e4",
-      "title": "Cybercriminals Used Claude and Grok to Launch Automated Attacks Against Banks",
-      "summary": "Cybercriminals used a multi-agent system called CARLIY0S to coordinate attacks against more than 400 financial institutions and payment providers across Latin America. The system combined commercial AI models including Anthropic’s Claude, xAI’s Grok and Moonshot AI’s Kimi with automation and shared operational infrastructure. Straiker says its findings came from artifacts in the group’s working environment, [&#8230;] The post Cybercriminals Used Claude and Grok to Launch Automated Attacks Against Banks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/claude-and-grok-exploited/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T13:37:13+00:00",
-      "published_ts": 1792676233.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Global",
-        "Latin America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "3db35ae00ff35807",
-      "title": "Critical Cisco Expressway Flaw Lets Attackers Execute Commands as Root",
-      "summary": "Cisco has released security updates to address a critical vulnerability in its Expressway Series. This flaw, tracked as CVE-2026-76466, could allow unauthenticated remote attackers to execute arbitrary operating system commands with root privileges. It has a CVSS v3.1 base score of 9.8 and affects vulnerable Expressway deployments configured in a cluster. The advisory was published [&#8230;] The post Critical Cisco Expressway Flaw Lets Attackers Execute Commands as Root appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/critical-cisco-expressway-flaw-2/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T12:32:18+00:00",
-      "published_ts": 1792672338.0,
-      "cves": [
-        "CVE-2026-76466"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
     },
     {
       "id": "f264b6220590cc54",
@@ -1030,60 +792,6 @@
         "Global"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "66be6208cf395501",
-      "title": "Hackers Used AI-Generated Scripts to Break Into Government Linux Servers and Hunt for Secrets",
-      "summary": "Hackers used apparently AI-generated scripts to compromise government Linux infrastructure, harvest credentials and pursue sensitive databases and official mailboxes in a campaign tracked as CL-UNK-1211. The investigation, published October 15, linked the operation to government entities and state-affiliated infrastructure. Attribution remains unresolved: under Unit 42’s attribution framework, the UNK designation means researchers have not established [&#8230;] The post Hackers Used AI-Generated Scripts to Break Into Government Linux Servers and Hunt for Secrets appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/ai-generated-scripts/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T10:58:41+00:00",
-      "published_ts": 1792666721.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "350e01ff39587346",
-      "title": "Hackers Use Fake App Updates to Replace Legitimate Banking Apps With Malicious Versions",
-      "summary": "Hirudo, an Android banking remote-access trojan (RAT) that can steal credentials and remotely control an infected phone. Its most unusual feature is the ability to replace selected genuine banking apps with modified copies designed to interfere with security checks from inside the app itself. Hirudo uses a two-app setup. Victims first install a convincing shopping [&#8230;] The post Hackers Use Fake App Updates to Replace Legitimate Banking Apps With Malicious Versions appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/banking-app-hijacking/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T10:16:56+00:00",
-      "published_ts": 1792664216.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Android"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 25,
@@ -1156,52 +864,6 @@
       "related_sources": []
     },
     {
-      "id": "2ef0d183339732c1",
-      "title": "K0T Hackers Target FortiGate, FortiWeb and Palo Alto GlobalProtect in Credential Theft Campaign",
-      "summary": "A widespread campaign targeting FortiGate, FortiWeb, and Palo Alto GlobalProtect appliances to steal credentials, establish persistent access, and exfiltrate corporate data. The investigation associates the activity with an operator known as k0t and identifies more than 70,000 exposed credentials across network-device records, LDAP dumps and other operational artifacts. Researchers identified potential connections to the FortiBleed [&#8230;] The post K0T Hackers Target FortiGate, FortiWeb and Palo Alto GlobalProtect in Credential Theft Campaign appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/k0t-credential-theft/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T13:03:31+00:00",
-      "published_ts": 1792674211.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3918983db6de293f",
-      "title": "New ScarlettGroup Extortion Gang Threatens to Leak Company Data Using Dark Web Countdown Timers",
-      "summary": "An emerging cyber-extortion operation named ScarlettGroup is using a Tor-based leak site and public countdown timers to pressure organizations over allegedly compromised data. Threat-monitoring records described in Foresiet’s research place its emergence around September 2026, with visibility increasing during October as alleged victim listings and underground forum activity attracted attention. Unlike conventional ransomware campaigns, ScarlettGroup’s [&#8230;] The post New ScarlettGroup Extortion Gang Threatens to Leak Company Data Using Dark Web Countdown Timers appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/scarlettgroup-extortion-campaign/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T12:29:20+00:00",
-      "published_ts": 1792672160.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "28828ebff512ffe5",
       "title": "Siemens SIMATIC S7 PLCs Web Server",
       "summary": "View CSAF Summary SIMATIC S7-1500 devices contain multiple vulnerabilities in the web server that could allow an attacker to execute malicious code in an authorized user’s browser session and perform PLC operations within the scope of that user’s authorization. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7 PLCs Web Server are affected: SIMATIC Drive Controller CPU 1504D TF (6ES7615-4DF10-0AB0) vers:all/* (CVE-2026-63350, CVE-2026-63351, CVE-2026-63352, CVE-2026-63353, CVE-2026-63354, CVE-2026-63355, CVE-2026-63356, CVE-2026-63357) SIMATIC Drive Controller CPU 1507D TF (6ES7615-7DF10-0AB0) vers:all/* (CVE-2026-63350, CVE-2026-63351, CVE-2026-63352, CVE-2026-63353, CVE-2026-63354, CVE-2026-63355, CVE-2026-63356, CVE-2026-63357) SIMATIC ET 200SP CPU 1510SP F-1 PN (6ES7510-1SJ01-0AB0) vers:all/* (CVE-2026-63350, CVE-2026-63351, CVE-2026-63352, CVE-2026-63353, CVE-2026-63354, CVE-2026-63355, CVE-2026-63356, CVE-2026-63357) SIMATIC ET 200SP CPU 1510SP F-1 PN (6ES7510-1SK03-0AB0) vers:all/* (CVE-2026-63350, CVE-2026-63351, CVE-2026-63352, CVE-2026-63353, CVE-2026-63354, CVE-2026-63355, CVE-2026-63356, CVE-2026-63357) SIMATIC ET 200SP CPU 1510SP-1 PN (6ES7510-1DJ01-0AB0) vers:all/* (CVE-2026-63350, CVE-2026-63351, CVE-2026-63352, CVE-2026-63353, CVE-2026-63354, CVE-2026-63355, CVE-2026-63356, CVE-2026-63357) SIMATIC ET 200SP CPU 1510SP-1 PN (6ES7510-1DK03-0AB0) vers:al",
@@ -1229,35 +891,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a5e0833a54df772a",
-      "title": "Fortinet Releases Critical Security Updates for FortiOS, FortiManager, and FortiAnalyzer",
-      "summary": "Fortinet has announced coordinated security hardening updates for FortiOS, FortiManager, and FortiAnalyzer, scheduled for October 22, 2026. These updates aim to address critical and high-severity vulnerabilities. The company urges customers to prioritize updating internet-facing systems and treat these upgrades as urgent, not routine maintenance. In an announcement on October 21, Fortinet&#8217;s Chief Information Security Officer, [&#8230;] The post Fortinet Releases Critical Security Updates for FortiOS, FortiManager, and FortiAnalyzer appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/fortinet-releases-critical-security-updates/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T11:26:55+00:00",
-      "published_ts": 1792668415.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "FortiOS",
-        "Fortinet",
-        "Office",
-        "iOS"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
@@ -1736,28 +1369,6 @@
       "related_sources": []
     },
     {
-      "id": "0ceddd4941d12d30",
-      "title": "Samsung and Vizio Smart TVs Continue Sending Viewing Data Even After Users Opt Out",
-      "summary": "Samsung and Vizio smart TVs continued sending traffic consistent with automatic content recognition (ACR) even after researchers disabled the feature. This raises concerns about how reliable privacy controls are at preventing surveillance of viewing. However, encrypted connections made it impossible for researchers to confirm whether those transmissions contained viewing data or whether manufacturers retained them. [&#8230;] The post Samsung and Vizio Smart TVs Continue Sending Viewing Data Even After Users Opt Out appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/samsung-and-vizio-smart-tvs-continue-sending-viewing-data/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-22T11:13:22+00:00",
-      "published_ts": 1792667602.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "d243be037a3714e3",
       "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
       "summary": "Node.js released&nbsp;security updates&nbsp;on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could run code of their choosing on the affected system. Each supported line has one fixed version:&nbsp;",
@@ -1801,33 +1412,6 @@
         "Asia-Pacific"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9326452604c12685",
-      "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
-      "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-21T22:16:26+00:00",
-      "published_ts": 1792620986.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Chrome"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
@@ -1907,6 +1491,78 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "074ae00c97120e7b",
+      "title": "State Bank of India Suffers a Customer PII Data Leak",
+      "summary": "Relatively small data breaches in India can turn quite serious, thanks to a sophisticated underground market for trading PII.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T03:30:00+00:00",
+      "published_ts": 1792726200.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "fac1341965ddf541",
+      "title": "Railway warns devs to rotate secrets after potential breach",
+      "summary": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-22T21:25:31+00:00",
+      "published_ts": 1792704331.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "cf50806dd6156bb0",
+      "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
+      "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-22T20:42:17+00:00",
+      "published_ts": 1792701737.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2321,6 +1977,33 @@
       "related_sources": []
     },
     {
+      "id": "9326452604c12685",
+      "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
+      "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks. [...]",
+      "url": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-21T22:16:26+00:00",
+      "published_ts": 1792620986.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Chrome"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "4e4aafd7cbc6a60f",
       "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server. [...]",
@@ -2385,31 +2068,6 @@
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f8f191ee2b49cf9b",
-      "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-      "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines how these attacks evade traditional defenses and why AI tools have become increasingly effective lures. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-21T14:00:10+00:00",
-      "published_ts": 1792591210.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
@@ -2544,6 +2202,33 @@
       "products": [
         "Exchange"
       ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b2352815ce17d9d4",
+      "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that's collectively called Plex2Shell. The vulnerabilities are listed below - CVE-2026-96652 (CVSS score: 5.3) - Plex Media Server Server-Side Request Forgery (SSRF)",
+      "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-21T07:26:49+00:00",
+      "published_ts": 1792567609.0,
+      "cves": [
+        "CVE-2026-96652"
+      ],
+      "sectors": [
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -2981,50 +2666,6 @@
       "related_sources": []
     },
     {
-      "id": "9858be3d438b8bc6",
-      "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
-      "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-21T21:43:27+00:00",
-      "published_ts": 1792619007.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "402d96d1f7f0bc62",
-      "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
-      "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
-      "url": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-21T21:15:39+00:00",
-      "published_ts": 1792617339.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "1760a795fc34e94a",
       "title": "Marvell, Microsoft &amp; Oracle Work to Standardize Data Center Hardware Security",
       "summary": "The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure.",
@@ -3433,26 +3074,46 @@
       "related_sources": []
     },
     {
-      "id": "f4e9a45e4e385856",
-      "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
-      "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
-      "url": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
-      "source": "Dark Reading",
+      "id": "9858be3d438b8bc6",
+      "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
+      "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-19T21:13:41+00:00",
-      "published_ts": 1792444421.0,
+      "published": "2026-10-21T21:43:27+00:00",
+      "published_ts": 1792619007.0,
       "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
-        "North America"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "402d96d1f7f0bc62",
+      "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
+      "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+      "url": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-21T21:15:39+00:00",
+      "published_ts": 1792617339.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
