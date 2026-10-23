@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-23T03:32:10.014586+00:00",
+  "generated_at": "2026-10-23T11:04:37.264700+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 131,
+    "all": 137,
     "critical": 0,
     "high": 6,
-    "medium": 22,
+    "medium": 28,
     "low": 103,
-    "actively_exploited": 12,
-    "with_cves": 27
+    "actively_exploited": 17,
+    "with_cves": 30
   },
   "sources_used": [
     "BleepingComputer",
@@ -17,6 +17,7 @@
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Krebs on Security",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
@@ -27,28 +28,88 @@
   ],
   "items": [
     {
-      "id": "73c9af8c2bed15f8",
-      "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
-      "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches. \"The exploit attempt originated from an IP address associated with a commercial anonymization network,",
-      "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T06:34:10+00:00",
-      "published_ts": 1792650850.0,
-      "cves": [],
+      "id": "ac4052d5dcb80dc7",
+      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619",
+      "summary": "CVE-2026-109618 and CVE-2026-109619 are Critical vulnerabilities in PHP, a scripting language used globally for web servers and CMS systems. The post Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-21T16:30:34+00:00",
+      "published_ts": 1792600234.0,
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
       "sectors": [
-        "Consumer",
         "Energy Resources & Industrials",
+        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA Alerts",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+          "title": "Critical Vulnerabilities in PHP Require Immediate Patching",
+          "published": "2026-10-21T12:00:00+00:00"
+        },
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "published": "2026-10-23T07:40:45+00:00"
+        },
+        {
+          "source": "Securelist (Kaspersky)",
+          "url": "https://securelist.com/tr/php2shell-critical-vulnerabilities-in-php/121596/",
+          "title": "Critical RCE vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619)",
+          "published": "2026-10-21T15:18:04+00:00"
+        },
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "published": "2026-10-21T14:07:05+00:00"
+        },
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/php-rce-vulnerabilities/",
+          "title": "PoC Exploit Released for Two Critical PHP RCE Vulnerabilities as Hackers Launch Attacks",
+          "published": "2026-10-23T09:41:13+00:00"
+        }
+      ]
+    },
+    {
+      "id": "57809302da977e35",
+      "title": "Suspected Chinese APT41 Hackers Use BlackX Bootkit to Bypass Windows Secure Boot",
+      "summary": "Suspected Chinese APT41 hackers have deployed BlackX, a UEFI bootkit, against diplomatic organizations in Tajikistan, Uzbekistan, and Turkmenistan. Researchers attribute the operation to APT41 with medium confidence. BlackX closely resembles BlackLotus, the bootkit advertised on underground forums for $5,000 in October 2022. ESET confirmed its capabilities in March 2023, demonstrating exploitation of Baton Drop, tracked [&#8230;] The post Suspected Chinese APT41 Hackers Use BlackX Bootkit to Bypass Windows Secure Boot appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/apt41-linked-bootkit-attack/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T08:36:15+00:00",
+      "published_ts": 1792744575.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 60,
       "priority_label": "High",
       "related_sources": []
     },
@@ -105,48 +166,23 @@
       "related_sources": []
     },
     {
-      "id": "8813c22050119c43",
-      "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
-      "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO&nbsp;disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP headers that expands in memory to a much larger set, the attacker can force the server to use thousands of times more memory than it received, enough to run a default server",
-      "url": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
+      "id": "73c9af8c2bed15f8",
+      "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+      "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches. \"The exploit attempt originated from an IP address associated with a commercial anonymization network,",
+      "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-22T06:38:31+00:00",
-      "published_ts": 1792651111.0,
+      "published": "2026-10-22T06:34:10+00:00",
+      "published_ts": 1792650850.0,
       "cves": [],
       "sectors": [
+        "Consumer",
         "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "b38af69946219ff6",
-      "title": "How APT41 revived the BlackLotus bootkit to attack diplomatic organizations in Central Asia",
-      "summary": "Kaspersky GReAT experts discovered a new UEFI bootkit, BlackX. It exploits the Baton Drop vulnerability (CVE-2022-21894) and is similar to the BlackLotus bootkit.",
-      "url": "https://securelist.com/uefi-bootkit-blackx/121539/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-10-22T06:00:48+00:00",
-      "published_ts": 1792648848.0,
-      "cves": [
-        "CVE-2022-21894"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": true,
@@ -178,6 +214,50 @@
       "cvss": null,
       "priority_score": 50,
       "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "e4142bd50eeb433c",
+      "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
+      "summary": "The state-sponsored hackers targeted hundreds of organizations and gained privileged access to some environments. The post China APT Uses AI Pentest Tool Artex in ConnectWise Attacks appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T10:31:16+00:00",
+      "published_ts": 1792751476.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "0552bdf1686fae1c",
+      "title": "Iran’s Prince of Persia APT Hosts C&C in US for First Time Since 2016",
+      "summary": "After a three-month lull, Prince of Persia hid a Tornado C&#038;C server on US shared hosting, its first US-based server since 2016. The post Iran&#8217;s Prince of Persia APT Hosts C&#038;C in US for First Time Since 2016 appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T06:39:29+00:00",
+      "published_ts": 1792737569.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Middle East"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
       "related_sources": []
     },
     {
@@ -223,44 +303,6 @@
       "priority_score": 45,
       "priority_label": "Medium",
       "related_sources": []
-    },
-    {
-      "id": "2c782a23f7160991",
-      "title": "Siemens Software Center",
-      "summary": "View CSAF Summary The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Siemens has released a new version for Siemens Software Center and recommends to update to the latest version. Please refer to our blog post for additional information about current known active exploitation and how to detect it. The following versions of Siemens Software Center are affected: Siemens Software Center vers:intdot/&lt;4.0.9.8 (CVE-2026-110936) CVSS Vendor Equipment v3 6.7 Siemens Siemens Software Center 1 Vulnerability Uncontrolled Search Path Element Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-110936 The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Read More 1 Affected Product Siemens Software Center &lt; V4.0.9.8 Product Status: known_affected Remedi",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-10-22T12:00:00+00:00",
-      "published_ts": 1792670400.0,
-      "cves": [
-        "CVE-2026-110936"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Government & Public Services",
-        "Life Sciences & Health Care",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Europe",
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-          "published": "2026-10-20T07:11:45+00:00"
-        }
-      ]
     },
     {
       "id": "5f823b9dcd28a778",
@@ -328,6 +370,110 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "2c782a23f7160991",
+      "title": "Siemens Software Center",
+      "summary": "View CSAF Summary The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Siemens has released a new version for Siemens Software Center and recommends to update to the latest version. Please refer to our blog post for additional information about current known active exploitation and how to detect it. The following versions of Siemens Software Center are affected: Siemens Software Center vers:intdot/&lt;4.0.9.8 (CVE-2026-110936) CVSS Vendor Equipment v3 6.7 Siemens Siemens Software Center 1 Vulnerability Uncontrolled Search Path Element Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-110936 The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Read More 1 Affected Product Siemens Software Center &lt; V4.0.9.8 Product Status: known_affected Remedi",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-22T12:00:00+00:00",
+      "published_ts": 1792670400.0,
+      "cves": [
+        "CVE-2026-110936"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Government & Public Services",
+        "Life Sciences & Health Care",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "8813c22050119c43",
+      "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
+      "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO&nbsp;disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP headers that expands in memory to a much larger set, the attacker can force the server to use thousands of times more memory than it received, enough to run a default server",
+      "url": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-22T06:38:31+00:00",
+      "published_ts": 1792651111.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "b38af69946219ff6",
+      "title": "How APT41 revived the BlackLotus bootkit to attack diplomatic organizations in Central Asia",
+      "summary": "Kaspersky GReAT experts discovered a new UEFI bootkit, BlackX. It exploits the Baton Drop vulnerability (CVE-2022-21894) and is similar to the BlackLotus bootkit.",
+      "url": "https://securelist.com/uefi-bootkit-blackx/121539/",
+      "source": "Securelist (Kaspersky)",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-10-22T06:00:48+00:00",
+      "published_ts": 1792648848.0,
+      "cves": [
+        "CVE-2022-21894"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "136b84a8ab06c7e8",
+      "title": "Attackers Exploit Third VeloCloud Orchestrator Zero-Day in Four Months",
+      "summary": "The critical-severity SQL injection flaw allows attackers to access privileged internal functionality and gain operator privileges. The post Attackers Exploit Third VeloCloud Orchestrator Zero-Day in Four Months appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T09:58:34+00:00",
+      "published_ts": 1792749514.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -687,6 +833,35 @@
       "related_sources": []
     },
     {
+      "id": "19c80df0091da67f",
+      "title": "SBI Notifies Customers Affected by Recent Cybersecurity Incident",
+      "summary": "The State Bank of India (SBI) has individually notified customers whose data was involved in a recent cybersecurity incident. In an update focused on customer safety, the bank confirmed it contacted affected individuals via email and/or WhatsApp. They reassured customers that their account balances and funds are safe. This announcement follows an earlier communication about [&#8230;] The post SBI Notifies Customers Affected by Recent Cybersecurity Incident appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/sbi-notifies-customers-affected-by-recent-cybersecurity-incident/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T10:48:47+00:00",
+      "published_ts": 1792752527.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [
+        "SAP"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "4e226ab31adf7319",
       "title": "InterSystems Corporation InterSystems IRIS for Health",
       "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to view transmitted data and use that data to log into the device. The following versions of InterSystems Corporation InterSystems IRIS for Health are affected: InterSystems IRIS for Health 2026.2.0.221, 2026.1.0.235, 2025.3.0.226 (CVE-2026-111594, CVE-2026-111594, CVE-2026-111594) CVSS Vendor Equipment v3 8.1 InterSystems Corporation InterSystems IRIS for Health 1 Vulnerability Cleartext Transmission of Sensitive Information Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-111594 InterSystems IRIS for Health has TLS/SSL encryption turned off by default, which may enable an attacker to view transmitted data and use that data to log into the device. Read More 3 Affected Products InterSystems Corporation InterSystems IRIS for Health: 2026.2.0.221 Product Status: known_affected Remediations Mitigation InterSystems recommends users configure IRIS superserver to require SSL/TLS: https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=ROARS_gsecuring_checklist Note that there are three settings: \"Disabled\", which means that client communications do not use TLS. \"Enabled\", which means that client communications may use TLS (but they also may not) and \"Required\", which forces all client communications to use TLS. Mitigation InterSystems documentatio",
@@ -715,23 +890,19 @@
       "related_sources": []
     },
     {
-      "id": "ac4052d5dcb80dc7",
-      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619",
-      "summary": "CVE-2026-109618 and CVE-2026-109619 are Critical vulnerabilities in PHP, a scripting language used globally for web servers and CMS systems. The post Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-21T16:30:34+00:00",
-      "published_ts": 1792600234.0,
-      "cves": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
+      "id": "80f5363194ae0760",
+      "title": "12 Tokenization Solutions: The 2026 Buyer’s Verdict Guide",
+      "summary": "Tokenization wins by subtraction: swap sensitive values for worthless tokens and whole systems exit breach-impact and audit scope at once. The 2026 market splits by what you’re subtracting PCI scope (payment-rooted vaults and P2PE), privacy risk (PII vaults with developer APIs), analytics exposure (format-preserving engines living in warehouses) and by architecture: vaulted versus vaultless, proxy [&#8230;] The post 12 Tokenization Solutions: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/tokenization-solutions-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T08:32:01+00:00",
+      "published_ts": 1792744321.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
+        "Financial Services"
       ],
       "regions": [
         "Global"
@@ -739,28 +910,9 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "CISA Alerts",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
-          "title": "Critical Vulnerabilities in PHP Require Immediate Patching",
-          "published": "2026-10-21T12:00:00+00:00"
-        },
-        {
-          "source": "Securelist (Kaspersky)",
-          "url": "https://securelist.com/tr/php2shell-critical-vulnerabilities-in-php/121596/",
-          "title": "Critical RCE vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619)",
-          "published": "2026-10-21T15:18:04+00:00"
-        },
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "published": "2026-10-21T14:07:05+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
       "id": "f264b6220590cc54",
@@ -861,6 +1013,131 @@
       "cvss": null,
       "priority_score": 25,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "ecac473e80a877eb",
+      "title": "11 Data Classification Tools: The 2026 Buyer’s Verdict Guide",
+      "summary": "Data classification is the keystone control everything downstream borrows: DLP policies, access reviews, retention rules, and now Copilot-era AI governance all inherit whatever labels exist or don’t. The 2026 field splits into estate-native labelers, discovery-engine classifiers, user-driven labeling veterans, and AI-semantic challengers. One roster note: our sheet listed Fortra twice (Titus and Boldon James both [&#8230;] The post 11 Data Classification Tools: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/data-classification-tools-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T08:35:17+00:00",
+      "published_ts": 1792744517.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d21a46d91de90516",
+      "title": "12 Encryption & Key Management Solutions: The 2026 Buyer’s Verdict Guide",
+      "summary": "Key management is where encryption programs succeed or quietly rot: ciphers are commodities, but custody who holds keys, how they rotate, what survives an outage or a quantum decade is architecture. The 2026 field spans cloud-native KMS floors, enterprise custody platforms, secrets-engine standards, in-path protectors, and the HSM-rooted institutions, with post-quantum readiness newly promoted from [&#8230;] The post 12 Encryption &amp; Key Management Solutions: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/encryption-key-management-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T08:29:03+00:00",
+      "published_ts": 1792744143.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "45b9a675809cf45d",
+      "title": "12 Data Loss Prevention (DLP) Software: The 2026 Buyer’s Verdict Guide",
+      "summary": "DLP software earned its mixed reputation honestly a decade of false-positive floods taught teams to distrust the acronym and the 2026 field answers with distinct architectures: bundle-native floors, SSE-woven inline enforcement, endpoint-forensic depth, ML-first SaaS scanning, and renewal-lane veterans whose roadmaps deserve questions. This verdict guide reviews twelve options with the distinctions that decide outcomes: [&#8230;] The post 12 Data Loss Prevention (DLP) Software: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/dlp-software-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T08:24:51+00:00",
+      "published_ts": 1792743891.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "57d54b56fb2c3d0a",
+      "title": "Critical Citrix NetScaler RCE Vulnerability Under Active Attack as Hackers Deliver FreeBSD Malware",
+      "summary": "Citrix NetScaler ADC and Gateway appliances are under active attack via CVE-2026-88771, a critical, unauthenticated remote code execution vulnerability that requires no optional features to be enabled. ThreatLabz observed attackers poisoning logs to trigger command execution, planting web shells and attempting to deploy a FreeBSD x64 implant. Citrix disclosed the vulnerability on September 27, 2026, [&#8230;] The post Critical Citrix NetScaler RCE Vulnerability Under Active Attack as Hackers Deliver FreeBSD Malware appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/citrix-netscaler-rce-vulnerability/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T07:56:16+00:00",
+      "published_ts": 1792742176.0,
+      "cves": [
+        "CVE-2026-88771"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Citrix"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c24994d09e087da3",
+      "title": "North Korea Hit by Multiple Waves of DDoS Attacks, Knocking Over 40 Websites Offline",
+      "summary": "Multiple waves of DDoS attacks disrupted North Korea’s internet infrastructure this week, intermittently knocking over 40 official websites offline for about 32 hours. Network monitoring company Kentik linked the outages to synchronized surges of inbound traffic that began on October 20, 2026. Doug Madory, Kentik’s director of internet analysis, noted that aggregate traffic data showed [&#8230;] The post North Korea Hit by Multiple Waves of DDoS Attacks, Knocking Over 40 Websites Offline appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/north-korea-hit-by-multiple-waves-of-ddos-attacks/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T07:13:48+00:00",
+      "published_ts": 1792739628.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -1017,6 +1294,53 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "381fd90ee6f75f81",
+      "title": "Quest Diagnostics Reports Cyber Breach Affecting ‘Certain Patient Records’",
+      "summary": "In a regulatory filing, Quest Diagnostics reported unauthorized access to its Quanum Lab Services Manager, a platform where certain clients can place test orders. The post Quest Diagnostics Reports Cyber Breach Affecting &#8216;Certain Patient Records&#8217; appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T08:25:06+00:00",
+      "published_ts": 1792743906.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "926297c54208a679",
+      "title": "12 Malware Analysis Tools: The 2026 Buyer’s Verdict Guide",
+      "summary": "Malware analysis tooling spans a spectrum the acronyms hide: interactive sandboxes where analysts click alongside the malware, evasion-hardened hypervisor rigs for the samples that detect everything else, reputation oceans answering “has anyone seen this?”, binary-similarity engines, and the open standards (YARA above all) the whole field writes in. This verdict guide reviews twelve names across [&#8230;] The post 12 Malware Analysis Tools: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/malware-analysis-tools-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-23T08:18:28+00:00",
+      "published_ts": 1792743508.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1369,56 +1693,6 @@
       "related_sources": []
     },
     {
-      "id": "d243be037a3714e3",
-      "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
-      "summary": "Node.js released&nbsp;security updates&nbsp;on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could run code of their choosing on the affected system. Each supported line has one fixed version:&nbsp;",
-      "url": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T07:47:22+00:00",
-      "published_ts": 1792655242.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ab53d1c973605d88",
-      "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
-      "summary": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application. During the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source in the wake of its abuse in cyber attacks targeting South Korean financial institutions, to speed",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T04:21:26+00:00",
-      "published_ts": 1792642886.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "eee21d32acb2cb6e",
       "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
       "summary": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments. The post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog .",
@@ -1491,6 +1765,82 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "10fa09c2b65b49d3",
+      "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+      "summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have&nbsp;demonstrated. Their \"Node2Shell\" proof of concept ran code on the official Node.js 24.22.0 image for Linux arm64, with no debugger or custom build, by feeding crafted data to the bundled Brotli decoder (CVE-2026-111497). Node.js disclosed the flaw",
+      "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T08:40:43+00:00",
+      "published_ts": 1792744843.0,
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bba788901deac6b8",
+      "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
+      "summary": "AI agents paying for API calls with the&nbsp;x402 SDKs&nbsp;could sign a payment for their full balance of a supported token if a malicious API asked for it,&nbsp;security firm V12 said&nbsp;on October 22. The cause was the SDKs' default client, which set no spending limit until releases on August 18 added one. The risk was limited to agents who automatically signed payments and whose apps set",
+      "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T08:35:45+00:00",
+      "published_ts": 1792744545.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7fda4f704e5b3de1",
+      "title": "Atlassian Patches 75 Flaws in Data Center and Server Products",
+      "summary": "Atlassian’s October bulletin lists 176 vulnerability entries, including 14 critical-severity issues, all in third-party components. The post Atlassian Patches 75 Flaws in Data Center and Server Products appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T07:54:47+00:00",
+      "published_ts": 1792742087.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1735,30 +2085,6 @@
       "related_sources": []
     },
     {
-      "id": "7b951c7899537991",
-      "title": "Tech and Security Companies Respond to PHP2Shell Vulnerabilities",
-      "summary": "Vendors are checking their products for PHP2Shell, security firms are shipping detections, and governments are urging immediate patching. The post Tech and Security Companies Respond to PHP2Shell Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T12:20:23+00:00",
-      "published_ts": 1792671623.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "9d1d8e69cf667813",
       "title": "South Carolina officials offer assistance after state capital hit with cyberattack",
       "summary": "The systems impacted by the attack include the MyColaSC platform that citizens use to pay utility bills, report non-emergency issues and access other city services.",
@@ -1833,43 +2159,18 @@
       "related_sources": []
     },
     {
-      "id": "8c91601a28b4ec3b",
-      "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
-      "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers to add outside tools, and such code would run with the developer's own access. Anomaly, the company behind OpenCode, fixed the flaw in&nbsp;version 1.18.33&nbsp;on September",
-      "url": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
+      "id": "d243be037a3714e3",
+      "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
+      "summary": "Node.js released&nbsp;security updates&nbsp;on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could run code of their choosing on the affected system. Each supported line has one fixed version:&nbsp;",
+      "url": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-22T10:44:05+00:00",
-      "published_ts": 1792665845.0,
+      "published": "2026-10-22T07:47:22+00:00",
+      "published_ts": 1792655242.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d80757092edd39e4",
-      "title": "Cisco Patches 34 Vulnerabilities Across Multiple Products",
-      "summary": "Critical-severity security defects could lead to command execution, authentication bypass, and XSS attacks. The post Cisco Patches 34 Vulnerabilities Across Multiple Products appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T10:05:21+00:00",
-      "published_ts": 1792663521.0,
-      "cves": [],
-      "sectors": [
+        "Energy Resources & Industrials",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -1883,91 +2184,22 @@
       "related_sources": []
     },
     {
-      "id": "78cdf7c224e72e2a",
-      "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
-      "summary": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
-      "source": "BleepingComputer",
+      "id": "ab53d1c973605d88",
+      "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+      "summary": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application. During the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source in the wake of its abuse in cyber attacks targeting South Korean financial institutions, to speed",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-22T08:27:11+00:00",
-      "published_ts": 1792657631.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Africa"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1d48630b5eeb6ed5",
-      "title": "Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU",
-      "summary": "Nearly 100 vulnerabilities have been assigned a critical severity rating and Fusion Middleware received the most patches. The post Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T07:38:14+00:00",
-      "published_ts": 1792654694.0,
+      "published": "2026-10-22T04:21:26+00:00",
+      "published_ts": 1792642886.0,
       "cves": [],
       "sectors": [
+        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "dce364f2f500a7fb",
-      "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
-      "summary": "The $25 billion award far exceeds a $5 billion fine the Federal Trade Commission levied against Facebook in 2019. The post Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T07:26:54+00:00",
-      "published_ts": 1792654014.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "659d1df879fb8a67",
-      "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
-      "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-22T05:00:00+00:00",
-      "published_ts": 1792645200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Middle East"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2022,33 +2254,6 @@
         "North America"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "be65e3c0ad2984df",
-      "title": "Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections",
-      "summary": "Protections have been added against scams and social engineering, including new site warnings and server-side Gemini analysis. The post Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-21T17:00:00+00:00",
-      "published_ts": 1792602000.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Chrome"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -2453,30 +2658,73 @@
       "related_sources": []
     },
     {
-      "id": "2769e9b646bb8283",
-      "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
-      "summary": "A U.S. court on Monday granted the U.S. government's request to detain a former OpenAI engineer accused of planting a recording device in an executive conference room at the company's San Francisco office to allegedly steal sensitive secrets. In a new court filing Sunday, prosecutors revealed that Abdulrahman Alfozan, a 35-year-old Saudi national, was \"in frequent communications via WhatsApp",
-      "url": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
+      "id": "50204c8e25dad0e9",
+      "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+      "summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. The flaw,&nbsp;CVE-2026-112900, is in the way Pillow handles EPS images, which it opens by passing the file's name to Ghostscript, a separate program it runs to turn the image into pixels, without checking the name first.",
+      "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-20T05:53:16+00:00",
-      "published_ts": 1792475596.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services",
-        "Technology, Media & Telecom"
+      "published": "2026-10-23T09:36:00+00:00",
+      "published_ts": 1792748160.0,
+      "cves": [
+        "CVE-2026-112900"
       ],
+      "sectors": [],
       "regions": [
-        "North America"
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "54ccc7102fd487cb",
+      "title": "11 Million Impacted by Capcom Data Breach",
+      "summary": "The hackers stole 11 million email addresses from CAPCOM ID and changed the login passwords for 196 accounts. The post 11 Million Impacted by Capcom Data Breach appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T08:34:14+00:00",
+      "published_ts": 1792744454.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "91be8f9a26f2a67c",
+      "title": "LiteLLM Compromised in Fresh Supply Chain Attack",
+      "summary": "Hackers used compromised GitHub CLI OAuth tokens to push and approve malicious packages on PyPI and Docker. The post LiteLLM Compromised in Fresh Supply Chain Attack appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-23T08:10:46+00:00",
+      "published_ts": 1792743046.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
       ],
       "products": [
-        "Office",
-        "SAP"
+        "Docker",
+        "GitHub"
       ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2595,22 +2843,24 @@
       "related_sources": []
     },
     {
-      "id": "1754e3f69f4144b6",
-      "title": "Splunk, SolarWinds Release Fresh Security Updates",
-      "summary": "Patched vulnerabilities could allow attackers to execute code, elevate privileges, and leak sensitive information. The post Splunk, SolarWinds Release Fresh Security Updates appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/splunk-solarwinds-release-fresh-security-updates/",
-      "source": "SecurityWeek",
+      "id": "8c91601a28b4ec3b",
+      "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
+      "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers to add outside tools, and such code would run with the developer's own access. Anomaly, the company behind OpenCode, fixed the flaw in&nbsp;version 1.18.33&nbsp;on September",
+      "url": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-22T10:45:24+00:00",
-      "published_ts": 1792665924.0,
+      "published": "2026-10-22T10:44:05+00:00",
+      "published_ts": 1792665845.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "SolarWinds"
+        "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -2619,19 +2869,19 @@
       "related_sources": []
     },
     {
-      "id": "95b348e435d51f1c",
-      "title": "PHP2Shell Exploitation Started Days Before Patches",
-      "summary": "Initial attempts were observed on October 17, and mass activity began shortly after patches were released. The post PHP2Shell Exploitation Started Days Before Patches appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
-      "source": "SecurityWeek",
+      "id": "78cdf7c224e72e2a",
+      "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
+      "summary": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-22T09:48:58+00:00",
-      "published_ts": 1792662538.0,
+      "published": "2026-10-22T08:27:11+00:00",
+      "published_ts": 1792657631.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Unspecified"
+        "Africa"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2641,24 +2891,23 @@
       "related_sources": []
     },
     {
-      "id": "efb1838184b7f08f",
-      "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
-      "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor. On October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub registry and the Python Package Index (PyPI) repository. The incident took place around 4:00 a.m.",
-      "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
-      "source": "The Hacker News",
+      "id": "659d1df879fb8a67",
+      "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+      "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-22T08:28:48+00:00",
-      "published_ts": 1792657728.0,
+      "published": "2026-10-22T05:00:00+00:00",
+      "published_ts": 1792645200.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
-        "Unspecified"
+        "Middle East"
       ],
-      "products": [
-        "Docker",
-        "GitHub"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -3004,72 +3253,27 @@
       "related_sources": []
     },
     {
-      "id": "6505fa0c4016e754",
-      "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
-      "summary": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a security incident that led to unauthorized access to application identities associated with Cloud Backup. The company said it has completed the following actions since it began",
-      "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+      "id": "efb1838184b7f08f",
+      "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
+      "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor. On October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub registry and the Python Package Index (PyPI) repository. The incident took place around 4:00 a.m.",
+      "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-20T10:56:08+00:00",
-      "published_ts": 1792493768.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9ded93dc94e16405",
-      "title": "CrowdStrike Achieves NCSC CIR Enhanced Level Assurance",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-achieves-uk-ncsc-cir-enhanced-level-assurance/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-20T05:00:00+00:00",
-      "published_ts": 1792472400.0,
+      "published": "2026-10-22T08:28:48+00:00",
+      "published_ts": 1792657728.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Docker",
+        "GitHub"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "61a7a52bf0cd3f93",
-      "title": "Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware",
-      "summary": "Cybersecurity researchers have disclosed details of a ClickFix delivery platform called ROMULUS that's being used to distribute malware such as Legion Loader. According to Forescout Research - Vedere Labs, ROMULUS is akin to a malware delivery service that employs ClickFix-style lures on bogus landing pages to trick unsuspecting users into running malicious commands and infecting their own",
-      "url": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-20T04:05:58+00:00",
-      "published_ts": 1792469158.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -3372,52 +3576,6 @@
       "category": "mixed",
       "published": "2026-10-20T11:33:04+00:00",
       "published_ts": 1792495984.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a64086c3c4fe9392",
-      "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
-      "summary": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, the cloud provider says. They were live on GitHub for up to 94 minutes, from 12:47 to 14:21 UTC,",
-      "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-20T08:21:29+00:00",
-      "published_ts": 1792484489.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c711dd3aa96e911c",
-      "title": "The journey of a paper unicorn: adventures inside a modern warehouse",
-      "summary": "Kaspersky experts explain the security issues affecting warehouse environments. We break down initial access vectors specific to warehouses, and discuss the impact of a compromise.",
-      "url": "https://securelist.com/paper-unicorn-warehouse-security/121537/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-10-20T07:00:45+00:00",
-      "published_ts": 1792479645.0,
       "cves": [],
       "sectors": [],
       "regions": [
