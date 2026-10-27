@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-27T17:31:25.752242+00:00",
+  "generated_at": "2026-10-27T21:51:00.364762+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 77,
-    "critical": 1,
+    "all": 83,
+    "critical": 3,
     "high": 7,
-    "medium": 6,
-    "low": 63,
-    "actively_exploited": 10,
-    "with_cves": 9
+    "medium": 7,
+    "low": 66,
+    "actively_exploited": 13,
+    "with_cves": 11
   },
   "sources_used": [
     "BleepingComputer",
@@ -24,6 +24,70 @@
     "The Record"
   ],
   "items": [
+    {
+      "id": "0f9de447219dc3d5",
+      "title": "CVE-2026-111497: Google Brotli Unchecked Return Value Vulnerability (Google Brotli)",
+      "summary": "CISA KEV — actively exploited. Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-10).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-10-27T00:00:00+00:00",
+      "published_ts": 1793059200.0,
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 80,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+          "published": "2026-10-26T17:45:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "bd455519b88bde3e",
+      "title": "CVE-2026-48356: Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability (Adobe Commerce and Magento)",
+      "summary": "CISA KEV — actively exploited. Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-10).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-10-27T00:00:00+00:00",
+      "published_ts": 1793059200.0,
+      "cves": [
+        "CVE-2026-48356"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": []
+    },
     {
       "id": "4b06c62cca6731f6",
       "title": "CVE-2026-109618: PHP Memory Corruption Vulnerability (PHP Group PHP)",
@@ -249,6 +313,28 @@
       "related_sources": []
     },
     {
+      "id": "5ed2155448bc311f",
+      "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
+      "summary": "Main bombing sis getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
+      "url": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T20:42:40+00:00",
+      "published_ts": 1793133760.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "a02f70971100c24b",
       "title": "This is Fine: What NetScaler Zero-Days Tell Us About the New Normal",
       "summary": "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon. The post This is Fine: What NetScaler Zero-Days Tell Us About the New Normal appeared first on SecurityWeek .",
@@ -357,6 +443,35 @@
       "related_sources": []
     },
     {
+      "id": "a058cc75f667bd27",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploit",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-27T12:00:00+00:00",
+      "published_ts": 1793102400.0,
+      "cves": [
+        "CVE-2026-111497",
+        "CVE-2026-48356"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "ff3ff87bf64514a3",
       "title": "Hackers Use Google Ads to Push Fake Claude Downloads Hosted on Real Claude.ai Domain",
       "summary": "Hackers are buying Google Ads to promote fake Claude download pages hosted on Anthropic’s legitimate claude.ai domain, exploiting content-sharing features to distribute malware. The operation does not require compromising Anthropic’s infrastructure. Attackers publish malicious instructions through Shared Chats and public Artifacts, borrowing the platform’s domain and branding while persuading visitors to execute commands themselves. The [&#8230;] The post Hackers Use Google Ads to Push Fake Claude Downloads Hosted on Real Claude.ai Domain appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
@@ -382,30 +497,53 @@
       "related_sources": []
     },
     {
-      "id": "560d14980b9f4dde",
-      "title": "9 Managed File Transfer (MFT) Solutions: The 2026 Buyer’s Verdict Guide",
-      "summary": "MFT buying is posture-first now the category’s mass-exploitation years made exposure architecture and patch velocity selection criteria ahead of any scheduler. Roster honesty first: our sheet’s twelve rows resolve to nine vendors and eleven products Progress owns both MOVEit and WS_FTP, Fortra owns both GoAnywhere and Globalscape EFT, and ExaVault was acquired by Files.com years [&#8230;] The post 9 Managed File Transfer (MFT) Solutions: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/mft-solutions-buyers-guide/",
-      "source": "GBHackers",
-      "source_trust": 3,
+      "id": "9e21bc945494c547",
+      "title": "Hackers hijack Convertr analytics script to steal payment card data",
+      "summary": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-27T08:17:16+00:00",
-      "published_ts": 1793089036.0,
+      "published": "2026-10-27T20:57:25+00:00",
+      "published_ts": 1793134645.0,
       "cves": [],
       "sectors": [
+        "Consumer",
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "07a2b4683c08c80e",
+      "title": "US indicts Malaysian national after Madagascar scam operation uncovered",
+      "summary": "DOJ action against five foreign nationals — plus a sting in Madagascar — highlight the expanding global reach of the scam center industry.",
+      "url": "https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T19:30:00+00:00",
+      "published_ts": 1793129400.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Global"
       ],
-      "products": [
-        "MOVEit"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -456,6 +594,56 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e9e41b1a0105806c",
+      "title": "Microsoft releases Windows OOB updates to distrust eMudhra certificates",
+      "summary": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T18:20:28+00:00",
+      "published_ts": 1793125228.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bd1a6a59683a0762",
+      "title": "Criminal IP Joins INTERPOL’s Gateway Initiative to Support Global Cybercrime Efforts",
+      "summary": "Torrance, United States / California, October 27th, 2026, CyberNewswire AI SPERA, the company behind the cyber threat intelligence and attack surface management platform Criminal IP, has signed a cooperation agreement with the International Criminal Police Organization (INTERPOL) under its Gateway initiative. The agreement establishes a framework for sharing information and technical expertise relevant to cybercrime [&#8230;] The post Criminal IP Joins INTERPOL’s Gateway Initiative to Support Global Cybercrime Efforts appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/criminal-ip-joins-interpols-gateway-initiative-to-support-global-cybercrime-efforts/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-27T17:45:49+00:00",
+      "published_ts": 1793123149.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -759,6 +947,76 @@
       "related_sources": []
     },
     {
+      "id": "4d58d6f09736fea6",
+      "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
+      "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
+      "url": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T21:15:03+00:00",
+      "published_ts": 1793135703.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ba321680ea9b037d",
+      "title": "Nefilim, Hive ransomware operator given five-year-plus sentence after guilty plea",
+      "summary": "Ukrainian national Artem Stryzhak, 36, had pleaded guilty last year to charges related to participating in at least two well-known ransomware groups.",
+      "url": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T20:40:00+00:00",
+      "published_ts": 1793133600.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "bfe6cf130fdbcb51",
+      "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
+      "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T17:43:07+00:00",
+      "published_ts": 1793122987.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "6b3281b9ad431c5d",
       "title": "Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws",
       "summary": "Tailscale is preparing a patch for Tailscale SSH flaws whose details went public over the weekend, before any fixes had been released. The post Tailscale Rushes Patches After Uncoordinated Disclosure of &#8216;Tailworm&#8217; Flaws appeared first on SecurityWeek .",
@@ -845,54 +1103,6 @@
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f1b0dda687b829b1",
-      "title": "Moscow faces internet disruptions as foreign leaders gather for summits",
-      "summary": "The restrictions will be in place from October 27 to 29, coinciding with the Gas Exporting Countries Forum summit and the Russia-Africa summit, Russia's Ministry of Digital Development said Monday.",
-      "url": "https://therecord.media/moscow-faces-internet-disruptions-as-foreign-leaders-gather",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-27T13:20:00+00:00",
-      "published_ts": 1793107200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Africa"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0c30ef57d1984d2a",
-      "title": "CISA warns of PHP bug exploitation attempts, gives federal agencies days to patch",
-      "summary": "CISA added the widely publicized PHP vulnerabilities to the KEV, but didn't specify what kind of exploitation it was observing.",
-      "url": "https://therecord.media/php-vulnerabilities-cisa-kev",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-27T13:16:00+00:00",
-      "published_ts": 1793106960.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
@@ -1103,58 +1313,6 @@
       "related_sources": []
     },
     {
-      "id": "0179284bcbfa7f9d",
-      "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
-      "summary": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by unsuspecting users, serves malicious JavaScript loader code through Magento CMS blocks. \"When you",
-      "url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T18:12:22+00:00",
-      "published_ts": 1793038342.0,
-      "cves": [],
-      "sectors": [
-        "Consumer"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "451dbd8472358798",
-      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-      "summary": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code. PHP says the flaw can be reached through the cURL extension when the extension decompresses HTTP responses automatically. cURL leaves that off by default, but",
-      "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T17:45:57+00:00",
-      "published_ts": 1793036757.0,
-      "cves": [
-        "CVE-2026-111497"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "10fa39948993a13e",
       "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
       "summary": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware. \"A consistent pattern of attacker behavior has emerged across these incidents: the use of the same throwaway tenants, the same 'IT",
@@ -1300,6 +1458,28 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e8d3e9d2b45e095a",
+      "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+      "summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator. TrendAI, which analyzed three exposed server environments used by threat actors to conduct the malicious cyber operations, described them as distinct from previously published",
+      "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T18:26:46+00:00",
+      "published_ts": 1793125606.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1526,133 +1706,23 @@
       "related_sources": []
     },
     {
-      "id": "86526c12df4c37fa",
-      "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
-      "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
-      "url": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
-      "source": "Dark Reading",
+      "id": "0179284bcbfa7f9d",
+      "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
+      "summary": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by unsuspecting users, serves malicious JavaScript loader code through Magento CMS blocks. \"When you",
+      "url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-26T21:44:33+00:00",
-      "published_ts": 1793051073.0,
+      "published": "2026-10-26T18:12:22+00:00",
+      "published_ts": 1793038342.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Consumer"
+      ],
       "regions": [
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a3b2570d09c262bd",
-      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
-      "summary": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T21:08:28+00:00",
-      "published_ts": 1793048908.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f11f11bff8a17912",
-      "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
-      "summary": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
-      "url": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T20:59:26+00:00",
-      "published_ts": 1793048366.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "6e0de9cc46336f7b",
-      "title": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing",
-      "summary": "OpenAI has launched GPT-6.1 Terra, a new model focused on computer use, visual reasoning, coding, and everyday work, while costing significantly less than its larger models. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T20:46:49+00:00",
-      "published_ts": 1793047609.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "061a99a41dc06975",
-      "title": "DreamHost forces password resets in ongoing \"incident\"",
-      "summary": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T19:26:20+00:00",
-      "published_ts": 1793042780.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "635081e2852bc8a0",
-      "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
-      "summary": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T18:01:40+00:00",
-      "published_ts": 1793037700.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "GitHub"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1732,31 +1802,6 @@
       "related_sources": []
     },
     {
-      "id": "846ebedc7437bba2",
-      "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
-      "summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from 174 victims in the United States. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/chinese-man-extradited-for-role-in-36-million-cryptocurrency-scam/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T13:56:44+00:00",
-      "published_ts": 1793023004.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Europe",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "fe5594b2a9b15c36",
       "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
       "summary": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm&nbsp;Forever Security said&nbsp;in a report published last week. The company caught the attempt on a real customer's machine and stopped the agent before any code ran. It could not determine how the file got into the folder. The file",
@@ -1781,6 +1826,140 @@
       "related_sources": []
     },
     {
+      "id": "86526c12df4c37fa",
+      "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
+      "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
+      "url": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-26T21:44:33+00:00",
+      "published_ts": 1793051073.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a3b2570d09c262bd",
+      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
+      "summary": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-26T21:08:28+00:00",
+      "published_ts": 1793048908.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f11f11bff8a17912",
+      "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
+      "summary": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
+      "url": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-26T20:59:26+00:00",
+      "published_ts": 1793048366.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6e0de9cc46336f7b",
+      "title": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing",
+      "summary": "OpenAI has launched GPT-6.1 Terra, a new model focused on computer use, visual reasoning, coding, and everyday work, while costing significantly less than its larger models. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-26T20:46:49+00:00",
+      "published_ts": 1793047609.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "061a99a41dc06975",
+      "title": "DreamHost forces password resets in ongoing \"incident\"",
+      "summary": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-26T19:26:20+00:00",
+      "published_ts": 1793042780.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "635081e2852bc8a0",
+      "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
+      "summary": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-26T18:01:40+00:00",
+      "published_ts": 1793037700.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "6420b9a9b1c999e4",
       "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
       "summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all events together into one coordinated view. SOC teams often first see the shape of an intrusion",
@@ -1796,30 +1975,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "02430771dd478b42",
-      "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
-      "summary": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...]",
-      "url": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T10:26:52+00:00",
-      "published_ts": 1793010412.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Linux"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
