@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-29T12:21:31.275995+00:00",
+  "generated_at": "2026-10-29T22:28:05.619023+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 110,
-    "critical": 2,
-    "high": 9,
-    "medium": 14,
-    "low": 85,
-    "actively_exploited": 18,
-    "with_cves": 17
+    "all": 124,
+    "critical": 4,
+    "high": 12,
+    "medium": 16,
+    "low": 92,
+    "actively_exploited": 23,
+    "with_cves": 23
   },
   "sources_used": [
     "BleepingComputer",
@@ -29,6 +29,78 @@
   ],
   "items": [
     {
+      "id": "7c5d4a5d8acfc3c1",
+      "title": "CVE-2026-76418: Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability (Cisco Secure Firewall ASA Software and Cisco Secure FTD Software)",
+      "summary": "CISA KEV — actively exploited. Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-01).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-10-29T00:00:00+00:00",
+      "published_ts": 1793232000.0,
+      "cves": [
+        "CVE-2026-76418"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 80,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+          "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+          "published": "2026-10-29T10:44:46+00:00"
+        }
+      ]
+    },
+    {
+      "id": "f0a04024b90d6401",
+      "title": "CVE-2026-97229: GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability (GitLab Community Edition and Enterprise Edition)",
+      "summary": "CISA KEV — actively exploited. GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-01).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-10-29T00:00:00+00:00",
+      "published_ts": 1793232000.0,
+      "cves": [
+        "CVE-2026-97229"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitLab",
+        "Linux"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+          "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+          "published": "2026-10-29T09:05:39+00:00"
+        }
+      ]
+    },
+    {
       "id": "9a8705998e3cd65c",
       "title": "CVE-2026-41709: Broadcom VMWare ESX Insufficient Logging Vulnerability (Broadcom VMware ESX)",
       "summary": "CISA KEV — actively exploited. Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-11).",
@@ -48,34 +120,19 @@
       ],
       "regions": [
         "Asia-Pacific",
-        "Global",
         "North America"
       ],
-      "products": [
-        "VMware ESXi"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 85,
+      "priority_score": 75,
       "priority_label": "Critical",
       "related_sources": [
-        {
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
-          "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
-          "published": "2026-10-29T08:01:05+00:00"
-        },
         {
           "source": "The Hacker News",
           "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
           "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
           "published": "2026-10-29T06:22:33+00:00"
-        },
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/cisa-adds-actively-exploited-vmware-esxi-logging-flaw/",
-          "title": "CISA Adds Actively Exploited VMware ESXi Logging Flaw to KEV Catalog",
-          "published": "2026-10-29T08:30:09+00:00"
         }
       ]
     },
@@ -100,9 +157,7 @@
       "regions": [
         "North America"
       ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 75,
@@ -113,12 +168,6 @@
           "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
           "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
           "published": "2026-10-28T05:42:26+00:00"
-        },
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-          "published": "2026-10-26T17:45:57+00:00"
         }
       ]
     },
@@ -179,6 +228,33 @@
       "related_sources": []
     },
     {
+      "id": "2278752ff8b7a27c",
+      "title": "Siemens Mendix SAML Module",
+      "summary": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Mendix SAML Module are affected: Mendix SAML (Mendix 10 compatible) vers:intdot/&lt;4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 11 compatible) vers:intdot/&lt;4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 9 compatible) vers:intdot/&lt;3.6.29 (CVE-2026-89209) CVSS Vendor Equipment v3 6.8 Siemens Mendix SAML (Mendix 10 compatible) 1 Vulnerability Authentication Bypass by Capture-replay Background Critical Infrastructure Sectors: Critical Manufacturing, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-89209 Affected versions of the module do not properly protect against SAML assertion replay in IdP-initiated authentication flows. This could allow unauthenticated remote attackers to gain unauthorized access to the application by replaying a valid SAML response. Read More 3 Affected Products Mendix SAML (Mendix 10 compatible) &lt; V4.2.4 Product Status: known_affected Remediations Mitigation Disable IdP-initiated SSO Vendor fix Update to V4.2.4 or later version Mendix SAML (Mendix 11 compatible) &lt; V4.2.4 Product Status: known_affecte",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-29T12:00:00+00:00",
+      "published_ts": 1793275200.0,
+      "cves": [
+        "CVE-2026-89209"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "ca3178a550cbdbb8",
       "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
       "summary": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices. [...]",
@@ -205,21 +281,19 @@
       "related_sources": []
     },
     {
-      "id": "5653a51864d0f324",
-      "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-      "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system. Successful exploitation could allow an unauthenticated, remote attacker to cause the",
-      "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+      "id": "6c2f36423a397bfa",
+      "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+      "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familiar apps, websites, and AI tools. Some are using AI to speed things up. Others are leaving their",
+      "url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-29T10:44:46+00:00",
-      "published_ts": 1793270686.0,
-      "cves": [
-        "CVE-2026-76418"
-      ],
+      "published": "2026-10-29T19:11:58+00:00",
+      "published_ts": 1793301118.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services",
+        "Financial Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -228,7 +302,36 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 60,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "073e31c59ae18219",
+      "title": "Chinese Hackers Exploit VMware ESXi Zero-Day to Target Law Firms in Cyber Espionage Attacks",
+      "summary": "Chinese state-linked hackers have exploited a zero-day vulnerability in VMware ESXi during espionage operations aimed at U.S. law firms, according to CrowdStrike&#8217;s latest assessment of threats affecting the legal sector. The activity is attributed to WARP PANDA, a China-nexus adversary that deployed malware in victims&#8217; VMware vCenter environments. This series of intrusions, which continued into [&#8230;] The post Chinese Hackers Exploit VMware ESXi Zero-Day to Target Law Firms in Cyber Espionage Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/chinese-hackers-exploit-vmware-esxi-zero-day/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-29T12:30:51+00:00",
+      "published_ts": 1793277051.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global",
+        "North America"
+      ],
+      "products": [
+        "VMware ESXi",
+        "VMware vCenter"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
       "priority_label": "High",
       "related_sources": []
     },
@@ -258,28 +361,29 @@
       "related_sources": []
     },
     {
-      "id": "5d3eebfa7e75543e",
-      "title": "Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN",
-      "summary": "Talos has identified UAT-11473, a highly sophisticated APT, who exploited CVE-2026-20127, an authentication bypass vulnerability in Cisco SD-WAN Catalyst Controller instances to bypass authentication and gain unauthorized access to affected systems to deploy KeyDrift.",
-      "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
-      "source": "Cisco Talos",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-28T21:32:02+00:00",
-      "published_ts": 1793223122.0,
-      "cves": [
-        "CVE-2026-20127"
-      ],
+      "id": "b7b64bd856881817",
+      "title": "CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the PHP2Shell flaws in the wild. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T13:59:48+00:00",
+      "published_ts": 1793282388.0,
+      "cves": [],
       "sectors": [
+        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "North America"
       ],
-      "products": [],
+      "products": [
+        "Linux"
+      ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 55,
+      "priority_score": 50,
       "priority_label": "High",
       "related_sources": []
     },
@@ -357,6 +461,39 @@
       "related_sources": []
     },
     {
+      "id": "5d3eebfa7e75543e",
+      "title": "Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN",
+      "summary": "Talos has identified UAT-11473, a highly sophisticated APT, who exploited CVE-2026-20127, an authentication bypass vulnerability in Cisco SD-WAN Catalyst Controller instances to bypass authentication and gain unauthorized access to affected systems to deploy KeyDrift.",
+      "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-28T21:32:02+00:00",
+      "published_ts": 1793223122.0,
+      "cves": [
+        "CVE-2026-20127"
+      ],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
+          "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
+          "published": "2026-10-29T18:38:26+00:00"
+        }
+      ]
+    },
+    {
       "id": "eafcd44edda6e888",
       "title": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network",
       "summary": "Cisco Talos linked SD-WAN key-stealing malware to infrastructure overlapping Volt Typhoon’s Silent Train network, which Lumen detailed. The post Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon&#8217;s &#8216;Silent Train&#8217; Network appeared first on SecurityWeek .",
@@ -369,54 +506,6 @@
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "148b25bd255c4373",
-      "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
-      "summary": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure,\" Lumen Technologies Black Lotus Labs said in a report shared",
-      "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T18:08:33+00:00",
-      "published_ts": 1793210913.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "08d7f93c409cb6d3",
-      "title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
-      "summary": "Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks targeting high-value systems. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T16:00:00+00:00",
-      "published_ts": 1793203200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
@@ -511,6 +600,54 @@
       "related_sources": []
     },
     {
+      "id": "148b25bd255c4373",
+      "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+      "summary": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure,\" Lumen Technologies Black Lotus Labs said in a report shared",
+      "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-28T18:08:33+00:00",
+      "published_ts": 1793210913.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "08d7f93c409cb6d3",
+      "title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
+      "summary": "Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks targeting high-value systems. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-28T16:00:00+00:00",
+      "published_ts": 1793203200.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 40,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "5ed2155448bc311f",
       "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
       "summary": "Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
@@ -533,20 +670,18 @@
       "related_sources": []
     },
     {
-      "id": "aec1450a0f2b1c5f",
-      "title": "Alleged Wagyu Leak Contains 4,580 Completed Crypto Swaps Linking Monero Wallets to IP Addresses",
-      "summary": "An alleged leak from cryptocurrency swap service Wagyu.xyz contains 4,580 completed cross-chain swaps linking incoming transaction hashes, Monero receiving addresses, and client IP addresses. The dataset reportedly includes 38,628 order records from July 18–October 26, 2026, plus an activity index covering 10,139 distinct IP addresses. Hudson Rock has not independently authenticated the files’ alleged breach [&#8230;] The post Alleged Wagyu Leak Contains 4,580 Completed Crypto Swaps Linking Monero Wallets to IP Addresses appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/alleged-wagyu-data-breach/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-29T08:47:44+00:00",
-      "published_ts": 1793263664.0,
+      "id": "b5f796dee7581816",
+      "title": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
+      "summary": "IDC has named Microsoft a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises. The post IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-29T16:00:00+00:00",
+      "published_ts": 1793289600.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services",
-        "Government & Public Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Global"
@@ -554,42 +689,34 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "dde47861efc95b8d",
-      "title": "Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison",
-      "summary": "Artem Stryzhak was sentenced to 70 months in prison after pleading guilty to using Nefilim ransomware in attacks. The post Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
+      "id": "c00026fab43b9f77",
+      "title": "Cisco Talos Uncovers KeyDrift Malware Targeting SD-WAN Controllers to Steal Network Encryption Keys",
+      "summary": "UAT-11473, an advanced persistent threat actor deploying KeyDrift, a custom malware framework targeting Cisco Catalyst SD-WAN controllers. The framework embeds inside legitimate control-plane processes to maintain access, intercept decrypted communications, and extract sensitive network encryption material. Observed targets span space and satellite services, defense and aerospace technology, and policy research. Talos assesses with high confidence [&#8230;] The post Cisco Talos Uncovers KeyDrift Malware Targeting SD-WAN Controllers to Steal Network Encryption Keys appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/sd-wan-controllers-targeted/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-28T15:05:06+00:00",
-      "published_ts": 1793199906.0,
+      "published": "2026-10-29T13:27:51+00:00",
+      "published_ts": 1793280471.0,
       "cves": [],
       "sectors": [
         "Government & Public Services",
-        "Life Sciences & Health Care"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Europe",
         "Global"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 30,
+      "priority_score": 25,
       "priority_label": "Medium",
-      "related_sources": [
-        {
-          "source": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
-          "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
-          "published": "2026-10-28T09:43:15+00:00"
-        }
-      ]
+      "related_sources": []
     },
     {
       "id": "b1c7ceccfd8f2a5e",
@@ -605,6 +732,92 @@
       "sectors": [
         "Energy Resources & Industrials",
         "Government & Public Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "f8083071e082044d",
+      "title": "Hitachi Energy CoreTec Product",
+      "summary": "View CSAF Summary Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy CoreTec Product are affected: CoreTec5 vers:CoreTec5/&lt;=3.4.0, 5.0.0 (CVE-2026-13162, CVE-2026-43284) CoreTec4 vers:CoreTec4/&lt;=3.4.0 (CVE-2026-13162) CVSS Vendor Equipment v3 8.8 Hitachi Energy CoreTec5 2 Vulnerabilities Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Write-what-where Condition Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2026-13162 An OS command vulnerability exists in CoreTec product that allows authenticated users with certain roles to execute arbitrary system commands with full control over the device. The vulnerability exists in the configuration daemon's time synchronization handler, which is responsible for setting the system timezone. When processing timezone configuration updates, the daemon constructs a shell command by concatenating user-supplied input without any sanitization or validation. Read More 2 Affected Products CoreTec5 versions 3.4.0 and prior Pro",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-29T12:00:00+00:00",
+      "published_ts": 1793275200.0,
+      "cves": [
+        "CVE-2026-13162",
+        "CVE-2026-43284"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "5e3ac4cdc917d6a8",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabi",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-29T12:00:00+00:00",
+      "published_ts": 1793275200.0,
+      "cves": [
+        "CVE-2026-76418",
+        "CVE-2026-97229"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitLab"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "90e5c4ef9bb0e85c",
+      "title": "Hitachi Energy TRO600 series products",
+      "summary": "View CSAF Summary Hitachi Energy is aware of multiple vulnerabilities that affect the TRO600 series product versions listed in this document. These vulnerabilities can be exploited for remote code execution (RCE) to carry out further attacks and disclosure of sensitive information. Please refer to the Recommended Immediate Actions section for information about the mitigation/remediation. The following versions of Hitachi Energy TRO600 series products are affected: TRO600 vers:TRO600/&lt;=9.2.1.6, vers:TRO600/&lt;=9.1.1.0, 9.2.2.1, 9.1.2.0 (CVE-2026-10756, CVE-2026-106087) CVSS Vendor Equipment v3 7.5 Hitachi Energy TRO600 2 Vulnerabilities Improper Restriction of Communication Channel to Intended Endpoints, Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2026-10756 TRO600 contains a vulnerability that allows an authenticated attacker to bypass network access restrictions and access services intended to be reachable only from localhost. By leveraging port forwarding, an attacker can interact with locally bound ports and services, resulting in unauthorized access to sensitive functionality and confidential information, and causing availability impact. Read More 1 Affected Product TRO600 version 9.2.1.6 and prior Product Status: fixed, known_affected, recommended Remediations Vendor fix Update to version 9.2.2.1 Additiona",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-29T12:00:00+00:00",
+      "published_ts": 1793275200.0,
+      "cves": [
+        "CVE-2026-106087",
+        "CVE-2026-10756"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Global"
@@ -697,20 +910,45 @@
       "related_sources": []
     },
     {
-      "id": "6928c9254bc376ea",
-      "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
-      "summary": "As AI and agents reshape the enterprise, CISOs face two critical priorities: enabling innovation with the right identity and data guardrails, and modernizing defense to keep pace with AI-powered threats. Aarti Borkar shares how security leaders can approach both. The post The CISO’s evolving role: Protecting and defending in the agentic era appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
-      "source": "Microsoft Security Blog",
+      "id": "ac4052d5dcb80dc7",
+      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
+      "summary": "CVE-2026-109618 and CVE-2026-109619 are Critical vulnerabilities in PHP, a scripting language used globally for web servers and CMS systems. The post Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29) appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+      "source": "Unit 42 (Palo Alto)",
       "source_trust": 5,
       "category": "threat",
-      "published": "2026-10-28T16:00:00+00:00",
-      "published_ts": 1793203200.0,
+      "published": "2026-10-29T18:00:34+00:00",
+      "published_ts": 1793296834.0,
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f7843fe36c60ec03",
+      "title": "Cyberattack disrupts Belgian tax services before filing deadline",
+      "summary": "The Federal Public Service Finance (FPS Finance), which oversees taxation and other financial administration, said Wednesday that it was investigating the extent of the attack and had temporarily suspended access to MyMinfin, the country's main online platform for managing tax and financial affairs.",
+      "url": "https://therecord.media/cyberattack-disrupts-belgian-tax-services-before-deadline",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T13:31:00+00:00",
+      "published_ts": 1793280660.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
+        "Financial Services",
+        "Government & Public Services"
       ],
       "regions": [
         "Unspecified"
@@ -718,8 +956,8 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 25,
-      "priority_label": "Medium",
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -749,42 +987,20 @@
       "related_sources": []
     },
     {
-      "id": "3a4eb6ac368047c2",
-      "title": "11 User & Entity Behavior Analytics (UEBA) Tools: The 2026 Buyer’s Verdict Guide",
-      "summary": "UEBA earns its keep on attacks that look like logins stolen credentials used plausibly, insiders drifting toward exits and fails on unexplainable scores nobody acts on. Roster honesty first: our sheet listed Exabeam and LogRhythm separately, but their merger makes them one company, so this is an eleven-vendor verdict guide spanning SIEM-embedded analytics, standalone timelines, [&#8230;] The post 11 User &amp; Entity Behavior Analytics (UEBA) Tools: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/ueba-tools-buyers-guide/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-29T08:35:47+00:00",
-      "published_ts": 1793262947.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "9ccd532f5cd1f60f",
-      "title": "Unwrapping Retail Peak Season Cyber Threats",
-      "summary": "Unit 42 explores key peak shopping season retail cyber threats, from ransomware to AI attacks, and shares how to defend operations and customer trust. The post Unwrapping Retail Peak Season Cyber Threats appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
-      "source": "Unit 42 (Palo Alto)",
+      "id": "6928c9254bc376ea",
+      "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
+      "summary": "As AI and agents reshape the enterprise, CISOs face two critical priorities: enabling innovation with the right identity and data guardrails, and modernizing defense to keep pace with AI-powered threats. Aarti Borkar shares how security leaders can approach both. The post The CISO’s evolving role: Protecting and defending in the agentic era appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
+      "source": "Microsoft Security Blog",
       "source_trust": 5,
       "category": "threat",
-      "published": "2026-10-28T18:00:10+00:00",
-      "published_ts": 1793210410.0,
+      "published": "2026-10-28T16:00:00+00:00",
+      "published_ts": 1793203200.0,
       "cves": [],
       "sectors": [
-        "Consumer"
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -856,6 +1072,35 @@
       "related_sources": []
     },
     {
+      "id": "a058cc75f667bd27",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploit",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-10-27T12:00:00+00:00",
+      "published_ts": 1793102400.0,
+      "cves": [
+        "CVE-2026-111497",
+        "CVE-2026-48356"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "71d5cbfb7c7977c3",
       "title": "EPICS Base",
       "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release &lt;=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598) CVSS Vendor Equipment v3 9.8 The EPICS Community EPICS Base release 3 Vulnerabilities Integer Overflow or Wraparound, Improper Handling of Length Parameter Inconsistency, Access of Resource Using Incompatible Type ('Type Confusion') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Global Vulnerabilities Expand All + CVE-2026-114595 In EPICS Base release 7.0.10 and prior, an integer overflow in network request processing can cause memory to be allocated with an incorrect size. Subsequent handling of attacker supplied data may result in memory corruption, denial of service, or potential remote code execution. Read More 1 Affected Product The EPICS Community EPICS Base release: &lt;=7.0.10 Product Status: known_affected Remediations Mitigation The EPICS Community has made available updates to the epics-base GitHub repositories. Affected users should update to the 7.0.11 release. For more information, users should contact the EPICS Controls team https://epics-controls.org/support/. Mitigation https://github.com/epics-base/epics-base/p",
@@ -887,21 +1132,288 @@
       "related_sources": []
     },
     {
-      "id": "a058cc75f667bd27",
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .&nbsp; Aware of an exploit",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "source": "CISA Alerts",
-      "source_trust": 5,
-      "category": "advisory",
-      "published": "2026-10-27T12:00:00+00:00",
-      "published_ts": 1793102400.0,
-      "cves": [
-        "CVE-2026-111497",
-        "CVE-2026-48356"
-      ],
+      "id": "0b2a2567485bbeb3",
+      "title": "Limited reports of PHP bug exploitation emerge",
+      "summary": "One cyber firm listed a half-dozen exploitations of the PHP2Shell bugs, and another identified a well targeted, suspected Chinese campaign that breached U.S. \"government affiliated\" servers.",
+      "url": "https://therecord.media/php2shell-successful-exploitation-reports-emerge",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T20:01:25+00:00",
+      "published_ts": 1793304085.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6593d8d17d2e160d",
+      "title": "GM settles with 36 states for selling driver data, agrees to $220 million fine and reforms",
+      "summary": "General Motors agreed to pay $220 million to settle a lawsuit filed by a coalition of 36 state attorneys general who alleged the company unlawfully sold information about driver behavior to outside parties.",
+      "url": "https://therecord.media/general-motors-lawsuit-privacy",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T19:45:00+00:00",
+      "published_ts": 1793303100.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0b0aedab59f5f15d",
+      "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
+      "summary": "A fake cryptocurrency trading app called Padre Terminal, previously available on the Apple App Store for iOS devices, has been linked to the theft of approximately $23,000 from 27 Solana wallets. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T19:23:41+00:00",
+      "published_ts": 1793301821.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "iOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "03431dc020bbd32e",
+      "title": "Federal bankruptcy courts contractor says no data stolen during cyber intrusion",
+      "summary": "\"No data was extracted,” a spokesperson for BAE Systems, a federal contractor, told Recorded Future News about its probe into a cyberattack against its systems for federal bankruptcy courts.",
+      "url": "https://therecord.media/us-bankruptcy-courts-it-contractor-says-no-data-stolen-cyberattack",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T16:13:00+00:00",
+      "published_ts": 1793290380.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9ec3e4962b606907",
+      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
+      "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are utilizing AI across their operations, reflecting a broader trend of threat actors incorporating AI into their attack chains. The post Tracking AI adoption in North Korean threat actor tradecraft appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-29T16:00:00+00:00",
+      "published_ts": 1793289600.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "952de7b98430833b",
+      "title": "Coruna iOS Exploit Kit Hidden Behind Malicious Ads Targets Crypto Seed Phrases, ADEX Reports",
+      "summary": "Malicious iOS scripts have become a leading cause of ad platform suspensions. They accounted for about one in five suspensions in Q3 2026, according to the State of Ad Fraud 2026: ADEX Trust &#38; Safety Report from anti-fraud firm ADEX. The report examines one scheme in detail. It was built on the Coruna exploit kit [&#8230;] The post Coruna iOS Exploit Kit Hidden Behind Malicious Ads Targets Crypto Seed Phrases, ADEX Reports appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/coruna-ios-exploit-kit-hidden-behind-malicious-ads-targets-crypto-seed-phrases-adex-reports/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-29T15:09:14+00:00",
+      "published_ts": 1793286554.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "iOS"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "47924e564541f768",
+      "title": "How Secure Are US Elections? Voting Machine Risks and the Growing Threat of AI",
+      "summary": "Unpatched voting machines, unverifiable QR-coded ballots, and AI-driven influence campaigns leave US elections short of secure. The post How Secure Are US Elections? Voting Machine Risks and the Growing Threat of AI appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/how-secure-are-us-elections-voting-machine-risks-and-the-growing-threat-of-ai/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T15:00:00+00:00",
+      "published_ts": 1793286000.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "918ea3ee5817e17c",
+      "title": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
+      "summary": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T14:35:40+00:00",
+      "published_ts": 1793284540.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "edf774d0e52a62bb",
+      "title": "IR trends Q3 2026: Actors impersonate IT help desks in vishing attacks as ransomware activity increases",
+      "summary": "Phishing remained the leading initial access technique, while percentage of ransomware and pre-ransomware cases increased. Finance and public administration tied as the top-targeted industries.",
+      "url": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-29T14:00:00+00:00",
+      "published_ts": 1793282400.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "67cc4147f904074c",
+      "title": "AppViewX Expands Quantum Trust Hub with Cryptographic Discovery, Posture Management, and Remediation",
+      "summary": "New York, New York, October 29th, 2026, CyberNewswire Now available as a standalone solution, Quantum Trust Hub delivers cryptographic posture management and agility for enterprises to uncover risk exposure, drive remediation at scale, and accelerate quantum readiness.&#160;&#160; AppViewX, the leading identity security company built for the AI-powered and post-quantum enterprise, today announced new capabilities for [&#8230;] The post AppViewX Expands Quantum Trust Hub with Cryptographic Discovery, Posture Management, and Remediation appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/appviewx-expands-quantum-trust-hub-with-cryptographic-discovery-posture-management-and-remediation/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-29T13:56:26+00:00",
+      "published_ts": 1793282186.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "601f63c2472a8a96",
+      "title": "FTC to probe major companies over personalized pricing and pay",
+      "summary": "The Federal Trade Commission ordered nine food delivery, airline and ride-sharing companies to turn over detailed information on how they harness personal data to set individual consumer prices and employee compensation.",
+      "url": "https://therecord.media/ftc-rideshare-airlines-data",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T13:45:00+00:00",
+      "published_ts": 1793281500.0,
+      "cves": [],
+      "sectors": [
+        "Consumer",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ef823b0b14ff4947",
+      "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
+      "summary": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities. \"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and",
+      "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T13:42:40+00:00",
+      "published_ts": 1793281360.0,
+      "cves": [],
+      "sectors": [
         "Government & Public Services",
         "Technology, Media & Telecom"
       ],
@@ -911,7 +1423,32 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8f3f2d6e7a0176c9",
+      "title": "BAE Says No Data Extracted in Incident Hitting Bankruptcy Courts",
+      "summary": "BAE Systems says no data was extracted and no PII was breached in the incident that disrupted US bankruptcy court notices for weeks. The post BAE Says No Data Extracted in Incident Hitting Bankruptcy Courts appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/bae-says-no-data-extracted-in-incident-hitting-bankruptcy-courts/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T13:26:49+00:00",
+      "published_ts": 1793280409.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -932,28 +1469,6 @@
       ],
       "regions": [
         "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d321cd8183b912d4",
-      "title": "12 Cyber Threat Intelligence (CTI) Feeds & Services: The 2026 Buyer’s Verdict Guide",
-      "summary": "CTI services answer different sentences who targets us, what’s leaked about us, which alerts are noise, whose infrastructure is that and no provider owns them all. This verdict guide maps twelve feeds and services to the sentences they answer best, spanning frontline-IR intel, noise-filtering specialists, preemptive infrastructure hunting, underground depth, and the regional players with [&#8230;] The post 12 Cyber Threat Intelligence (CTI) Feeds &amp; Services: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/cti-feeds-buyers-guide/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-29T08:33:46+00:00",
-      "published_ts": 1793262826.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -988,95 +1503,18 @@
       "related_sources": []
     },
     {
-      "id": "d88a93f4e30cda84",
-      "title": "Court strikes down West Virginia law barring disclosure of public officials’ personal data",
-      "summary": "A federal appellate court panel said West Virginia's version of Daniel's Law — meant to shield the personal data of police and other officials — is unconstitutional.",
-      "url": "https://therecord.media/west-virginia-daniels-law-struck-down-appellate-court",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T20:50:00+00:00",
-      "published_ts": 1793220600.0,
+      "id": "9ccd532f5cd1f60f",
+      "title": "Unwrapping Retail Peak Season Cyber Threats",
+      "summary": "Unit 42 explores key peak shopping season retail cyber threats, from ransomware to AI attacks, and shares how to defend operations and customer trust. The post Unwrapping Retail Peak Season Cyber Threats appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-28T18:00:10+00:00",
+      "published_ts": 1793210410.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e433268a9d72cf12",
-      "title": "Moldova investigates possible foreign involvement in major government cyberattack",
-      "summary": "Prime Minister Vasile Tofan said the incident may be part of a broader campaign targeting both citizens' personal data and government digital infrastructure, according to local media reports.",
-      "url": "https://therecord.media/moldova-investigates-possible-foreign-involvement-cyberattacks",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T16:37:00+00:00",
-      "published_ts": 1793205420.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "102e3b75c36aba10",
-      "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
-      "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root",
-      "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T16:02:45+00:00",
-      "published_ts": 1793203365.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Asia-Pacific",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7e236eec5c60e4df",
-      "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
-      "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T14:00:00+00:00",
-      "published_ts": 1793196000.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
+        "Consumer"
       ],
       "regions": [
         "Unspecified"
@@ -1113,6 +1551,332 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4f74cd756ea1057a",
+      "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
+      "summary": "A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times. Separately, a fake Solana starter kit on GitHub is positioned to trick AI coding agents into installing a NetSupport RAT. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T22:09:24+00:00",
+      "published_ts": 1793311764.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "dc1be425bbb9a0a7",
+      "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+      "summary": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T21:47:25+00:00",
+      "published_ts": 1793310445.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7472c9aafff56242",
+      "title": "Rethinking Cybersecurity Awareness in the AI Era",
+      "summary": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
+      "url": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T20:15:37+00:00",
+      "published_ts": 1793304937.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "930735aa9d7e8b02",
+      "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
+      "summary": "An unreleased version of the AI model has found and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux, Anthropic says.",
+      "url": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T18:15:59+00:00",
+      "published_ts": 1793297759.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android",
+        "Chrome",
+        "Linux",
+        "Safari",
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f8d6294063426556",
+      "title": "A quiet week in infosec <.<",
+      "summary": "In this edition of the Threat Source newsletter, William explores how PHP has taken over the conversation, Node.js has joined in, but underneath it all, there are still good people doing good work.",
+      "url": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/",
+      "source": "Cisco Talos",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-29T18:00:00+00:00",
+      "published_ts": 1793296800.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5ddd91b5ce712a97",
+      "title": "When Risk Becomes Personal: What Security Leaders Can Learn From a Cancer Diagnosis",
+      "summary": "Risk managers are trained to spot weak signals, plan for disruption and make hard decisions under uncertainty. But the discipline looks different when the risk is not a system or an enterprise, but you. The post When Risk Becomes Personal: What Security Leaders Can Learn From a Cancer Diagnosis appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/when-risk-becomes-personal-what-security-leaders-can-learn-from-a-cancer-diagnosis/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T16:30:00+00:00",
+      "published_ts": 1793291400.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d4de3b80026ff676",
+      "title": "Chrome extensions with 13.4 million installs caught hijacking searches",
+      "summary": "A massive search-hijacking campaign involving 319 Chrome extensions with a combined 13.4 million reported installations redirected users' searches through tracking servers to generate advertising revenue from Bing and Yahoo. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/chrome-extensions-with-134-million-installs-caught-hijacking-searches/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T16:10:31+00:00",
+      "published_ts": 1793290231.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Chrome"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ff382e19cf452d99",
+      "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+      "summary": "A flaw in the Linux kernel's TCP code, tracked as&nbsp;CVE-2026-98432, affects Ubuntu, Red Hat Enterprise Linux (RHEL), and other Linux distributions. The kernel's own CVE team rates it 9.8 out of 10 on the CVSS scale. Anthropic said&nbsp;on October 27 that its AI model wrote an exploit that uses the flaw to let a remote attacker with no credentials run commands as root on Linux servers with a",
+      "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T15:57:05+00:00",
+      "published_ts": 1793289425.0,
+      "cves": [
+        "CVE-2026-98432"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "aa877f02988d47d9",
+      "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+      "summary": "Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and OpenAI ChatGPT as part of a campaign dubbed Yoba. The activity involves creating fake GitHub projects that claim to be desktop applications like GPT-5.6 Sol, GPT-6 Astra, and Claude Opus, only to deliver a malware family called",
+      "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T15:20:29+00:00",
+      "published_ts": 1793287229.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9310d5490e6223e2",
+      "title": "Google Touts Powerful Cybersecurity Capabilities in Gemini 4 Carbon Model",
+      "summary": "Google’s new frontier model scored 88.2% on SEC-bench Pro and is rolling out first to vetted cyber defenders via its Fairwind Program. The post Google Touts Powerful Cybersecurity Capabilities in Gemini 4 Carbon Model appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T15:01:00+00:00",
+      "published_ts": 1793286060.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "14eaf1bc507eaf54",
+      "title": "Cisco Open Sources Quarry to Catch AI Agent Attacks Hidden in Harmless Steps",
+      "summary": "Cisco open sourced Project Quarry, a rule language for detecting AI agent attacks that only emerge across sequences of benign actions. The post Cisco Open Sources Quarry to Catch AI Agent Attacks Hidden in Harmless Steps appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/cisco-open-sources-quarry-to-catch-ai-agent-attacks-hidden-in-harmless-steps/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T14:18:03+00:00",
+      "published_ts": 1793283483.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ce20853fcc24eeac",
+      "title": "3 Ways AI Agents Already Operate in Your Browser",
+      "summary": "AI agents can control authenticated browsers, interact with corporate applications, and access sensitive data while appearing to act as legitimate employees. Keep Aware examines three ways agents operate inside browsers and why traditional security tools may struggle to distinguish their activity from human users. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/3-ways-ai-agents-already-operate-in-your-browser/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T14:00:10+00:00",
+      "published_ts": 1793282410.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "95f3a01d4b38b041",
+      "title": "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+      "summary": "The flaws could lead to arbitrary code execution, authorization bypasses, and privilege escalation. The post Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/adobe-veeam-juniper-networks-patch-critical-vulnerabilities/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T13:42:52+00:00",
+      "published_ts": 1793281372.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1160,6 +1924,32 @@
         "Unspecified"
       ],
       "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e22d7f74044f6f55",
+      "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
+      "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec&nbsp;disclosed it on October 29. Combined with an",
+      "url": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T11:39:18+00:00",
+      "published_ts": 1793273958.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -1241,219 +2031,17 @@
       "related_sources": []
     },
     {
-      "id": "632b741c18170bc8",
-      "title": "Japan Airlines warns of data breach as country grapples with multiple cyber incidents",
-      "summary": "Hackers stole passport numbers, frequent flyer numbers, email addresses and phone numbers for about 2,000 customers.",
-      "url": "https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T20:33:00+00:00",
-      "published_ts": 1793219580.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b6427a6aecbb158e",
-      "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
-      "summary": "Third-party Android app stores can now apply to Google for permission to install apps with one tap, without Android's usual confirmation screens, and to update them in the background. To qualify, a store must pass identity checks and send Google&nbsp;its full catalog, along with every new app and update, for ongoing malware scanning. Approved stores get the features from December 1, but only on",
-      "url": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T17:08:09+00:00",
-      "published_ts": 1793207289.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "abd00bef8d5fbcde",
-      "title": "Sony ISP subsidiary data breach exposes 2.5 million customer records",
-      "summary": "Sony Network Communications has confirmed a data breach that compromised approximately 2.5 million records containing current and former customers' personal information. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T16:45:47+00:00",
-      "published_ts": 1793205947.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b40de9b2b5941263",
-      "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
-      "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at the&nbsp;Pwn2Own Berlin contest&nbsp;in May. Microsoft fixed the Edge bugs the day after the contest,",
-      "url": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T16:23:34+00:00",
-      "published_ts": 1793204614.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Edge",
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d417e21fbb1ed638",
-      "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
-      "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T14:48:32+00:00",
-      "published_ts": 1793198912.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "baa21da0eed4c9be",
-      "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
-      "summary": "The threat actor lurked behind bots posing as agents from OpenAI, Anthropic, Meta, and others to find exposed data.",
-      "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T14:37:52+00:00",
-      "published_ts": 1793198272.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ae33742b470c722b",
-      "title": "Chrome and Firefox Updates Patch Over 200 Vulnerabilities",
-      "summary": "The Chrome 156 update fixes 52 bugs, while Firefox 159 was rolled out with 167 security patches. The post Chrome and Firefox Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/chrome-and-firefox-updates-patch-over-200-vulnerabilities/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T13:39:35+00:00",
-      "published_ts": 1793194775.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Chrome",
-        "Firefox"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1b1f45dd202861c6",
-      "title": "TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices",
-      "summary": "FoxIO disclosed three GoAhead TLS bugs that can let revoked certificates through or expose some encrypted sessions to eavesdroppers. The post TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/tls-flaws-found-in-goahead-web-server-used-in-hundreds-of-millions-of-devices/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T13:10:34+00:00",
-      "published_ts": 1793193034.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d738e18c7ab3aaea",
-      "title": "LABScon26 Replay | Keynote: A Sober Analysis of AI Impact",
-      "summary": "Harvard Professor James Mickens weighs the promises of AI against its potential harms, arguing for hardware-based mechanisms to isolate frontier models.",
-      "url": "https://www.sentinelone.com/labs/labscon26-replay-keynote-a-sober-analysis-of-ai-impact/",
-      "source": "SentinelOne Labs",
-      "source_trust": 4,
+      "id": "d7ecbaec5191ed38",
+      "title": "New Prompt Injection Techniques Cover Agent-Planning Attacks",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/new-prompt-injection-techniques-cover-agent-planning-attacks/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
       "category": "threat",
-      "published": "2026-10-28T13:00:00+00:00",
-      "published_ts": 1793192400.0,
+      "published": "2026-10-29T05:00:00+00:00",
+      "published_ts": 1793250000.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
@@ -1465,48 +2053,48 @@
       "related_sources": []
     },
     {
-      "id": "40569a911572f8af",
-      "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
-      "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical",
-      "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+      "id": "102e3b75c36aba10",
+      "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+      "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root",
+      "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T12:48:03+00:00",
-      "published_ts": 1793191683.0,
-      "cves": [
-        "CVE-2026-101767"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "6825b5a317122615",
-      "title": "China-Linked Hackers Exploit PHP2Shell to Root Firewalls",
-      "summary": "The attackers chained PHP2Shell and Fragnesia exploits and hacked two servers of a US government-affiliated organization. The post China-Linked Hackers Exploit PHP2Shell to Root Firewalls appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/china-linked-hackers-exploit-php2shell-to-root-firewalls/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T12:00:59+00:00",
-      "published_ts": 1793188859.0,
+      "published": "2026-10-28T16:02:45+00:00",
+      "published_ts": 1793203365.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
         "Government & Public Services"
       ],
       "regions": [
-        "Asia-Pacific"
+        "Asia-Pacific",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "432bb2563aa31373",
+      "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
+      "summary": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-28T15:29:06+00:00",
+      "published_ts": 1793201346.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1566,31 +2154,6 @@
       "related_sources": []
     },
     {
-      "id": "9591ec598fbf4ae2",
-      "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
-      "summary": "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T10:46:23+00:00",
-      "published_ts": 1793184383.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "c1d2226dc87264d8",
       "title": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers",
       "summary": "Tailscale has released&nbsp;version 1.104.4&nbsp;to fix flaws in its built-in SSH server that could let an attacker reach services and files on other servers that only the&nbsp;root&nbsp;user should be able to touch. The flaws are in how&nbsp;Tailscale SSH&nbsp;forwards network connections, a job the Tailscale background process carries out with root privileges. To use them, an attacker must",
@@ -1607,30 +2170,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "28d9080aee7e2f08",
-      "title": "UNM Health ransomware attack disrupts patient care, surgeries",
-      "summary": "The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-27T22:07:34+00:00",
-      "published_ts": 1793138854.0,
-      "cves": [],
-      "sectors": [
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "North America"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1668,8 +2207,8 @@
     },
     {
       "id": "786ac657b7636e5b",
-      "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz are affected: Mitsubishi Electric GENESIS64 &gt;=10.97|&lt;=10.97.2 (CVE-2023-4863) Mitsubishi Electric ICONICS Suite &gt;=10.97|&lt;=10.97.2 (CVE-2023-4863) Mitsubishi Electric GENESIS &lt;=11.03 (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric GENESIS64 &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric ICONICS Suite &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric Hyper Historian &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric AnalytiX &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric MobileHMI &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric IoTWorX &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric MC Works64 vers:all/* (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric GENESIS32 vers:all/* (CVE-2026-16436, CVE-2026-16437) Mitsubish",
+      "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32, BizViz, Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, GENESIS32 and BizViz are affected: Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS64 &gt;=10.97|&lt;=10.97.2 (CVE-2023-4863) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions ICONICS Suite &gt;=10.97|&lt;=10.97.2 (CVE-2023-4863) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS &lt;=11.03 (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS64 &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions ICONICS Suite &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions Hyper Historian &lt;=10.97.3 (CVE-2026-16436, CVE-2026-16437, CV",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
       "source": "CISA Alerts",
       "source_trust": 5,
@@ -1745,97 +2284,110 @@
       "related_sources": []
     },
     {
-      "id": "10fa39948993a13e",
-      "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
-      "summary": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware. \"A consistent pattern of attacker behavior has emerged across these incidents: the use of the same throwaway tenants, the same 'IT",
-      "url": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
-      "source": "The Hacker News",
+      "id": "781628e403999676",
+      "title": "Japan Airlines suffers third-party data breach exposing passenger info",
+      "summary": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-26T15:52:40+00:00",
-      "published_ts": 1793029960.0,
+      "published": "2026-10-29T22:08:04+00:00",
+      "published_ts": 1793311684.0,
       "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
-        "Unspecified"
+        "Asia-Pacific",
+        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "ba0eb2f4cc04c877",
-      "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
-      "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with. And that's not even the full story. A leaked key led to a software supply-chain",
-      "url": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T14:06:13+00:00",
-      "published_ts": 1793023573.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a5ce223b66d29119",
-      "title": "10 Software Security Practices Built for the Next 250 Years",
-      "summary": "This Cybersecurity Awareness Month's theme, &quot;Securing the Next 250,&quot; asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for generations.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/10-software-security-practices-built-250-years",
+      "id": "365b0f5665054d87",
+      "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
+      "summary": "Obvious phishing emails with numerous red flags are somehow getting past some of the industry-leading secure email gateway (SEG) products.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-26T14:00:00+00:00",
-      "published_ts": 1793023200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e22d7f74044f6f55",
-      "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
-      "summary": "A flaw in Telegram for Android allowed an attacker to run code on a victim's phone via a voice call once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec&nbsp;disclosed it on October 29. The flaw can be triggered in every version from",
-      "url": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-29T11:39:18+00:00",
-      "published_ts": 1793273958.0,
+      "published": "2026-10-29T21:21:56+00:00",
+      "published_ts": 1793308916.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "Android"
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b3096dd9a865431c",
+      "title": "Threat Modeling With 4 Simple Questions on a White Board",
+      "summary": "A four-question exercise that CISOs can use to create a threat model that promises results, without a big spend.",
+      "url": "https://www.darkreading.com/cyber-risk/threat-modeling-4-simple-questions",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T15:44:04+00:00",
+      "published_ts": 1793288644.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
       ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "082ad78988ff7f14",
+      "title": "Cohere’s Qwen Story: Looks More Like Model Jaggedness",
+      "summary": "Key findings On October 26, Cohere reported a puzzling incident involving Qwen3.8-Flash-Next, an open-weight model from Alibaba. The task was straightforward: write a detection rule for suspicious curl downloads followed by bash execution. Instead, the model produced a shell command that inspected its environment and attempted to send a test string to an Alibaba Cloud [&#8230;] The post Cohere&#8217;s Qwen Story: Looks More Like Model Jaggedness appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/coheres-qwen-story-looks-more-like-model-jaggedness/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-10-29T14:08:46+00:00",
+      "published_ts": 1793282926.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e9a3196430e05a97",
+      "title": "Over 41,000 DHS Employee Records Leaked Online",
+      "summary": "The personal and work information was allegedly stolen from an Okta single sign-on system earlier this year. The post Over 41,000 DHS Employee Records Leaked Online appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/over-41000-dhs-employee-records-leaked-online/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-29T12:54:14+00:00",
+      "published_ts": 1793278454.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1887,58 +2439,9 @@
       "related_sources": []
     },
     {
-      "id": "7c733054ffcd4718",
-      "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-      "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab&nbsp;released a fix, Alpine Linux&nbsp;said&nbsp;on 28 October. The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
-      "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-29T09:05:39+00:00",
-      "published_ts": 1793264739.0,
-      "cves": [
-        "CVE-2026-97229"
-      ],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitLab",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "65bfae0bdf0b2857",
-      "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
-      "summary": "Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications. The post HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-29T08:27:16+00:00",
-      "published_ts": 1793262436.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "941f40f7ccd557dd",
       "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
-      "summary": "Researchers can't quite explain why cyber threats look so different in Italy compared to everywhere else.",
+      "summary": "Researchers can't quite explain why cyber threats look so different in Italy compared with everywhere else.",
       "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
       "source": "Dark Reading",
       "source_trust": 4,
@@ -1958,19 +2461,47 @@
       "related_sources": []
     },
     {
-      "id": "a0fa2c43d6cef03f",
-      "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
-      "summary": "U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+      "id": "b6427a6aecbb158e",
+      "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
+      "summary": "Third-party Android app stores can now apply to Google for permission to install apps with one tap, without Android's usual confirmation screens, and to update them in the background. To qualify, a store must pass identity checks and send Google&nbsp;its full catalog, along with every new app and update, for ongoing malware scanning. Approved stores get the features from December 1, but only on",
+      "url": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-28T17:08:09+00:00",
+      "published_ts": 1793207289.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "abd00bef8d5fbcde",
+      "title": "Sony ISP subsidiary data breach exposes 2.5 million customer records",
+      "summary": "Sony Network Communications has confirmed a data breach that compromised approximately 2.5 million records containing current and former customers' personal information. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T20:47:22+00:00",
-      "published_ts": 1793220442.0,
+      "published": "2026-10-28T16:45:47+00:00",
+      "published_ts": 1793205947.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1980,22 +2511,25 @@
       "related_sources": []
     },
     {
-      "id": "5274a585eb79985b",
-      "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
-      "summary": "The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.",
-      "url": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
-      "source": "Dark Reading",
+      "id": "b40de9b2b5941263",
+      "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
+      "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at the&nbsp;Pwn2Own Berlin contest&nbsp;in May. Microsoft fixed the Edge bugs the day after the contest,",
+      "url": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T19:39:00+00:00",
-      "published_ts": 1793216340.0,
+      "published": "2026-10-28T16:23:34+00:00",
+      "published_ts": 1793204614.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
       "regions": [
         "Unspecified"
       ],
       "products": [
-        "GitHub"
+        "Edge",
+        "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
@@ -2004,17 +2538,19 @@
       "related_sources": []
     },
     {
-      "id": "c1f525db1b987d0b",
-      "title": "Discord to let search engines index public server messages",
-      "summary": "Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
-      "source": "BleepingComputer",
+      "id": "baa21da0eed4c9be",
+      "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
+      "summary": "The threat actor lurked behind bots posing as agents from OpenAI, Anthropic, Meta, and others to find exposed data.",
+      "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T18:44:16+00:00",
-      "published_ts": 1793213056.0,
+      "published": "2026-10-28T14:37:52+00:00",
+      "published_ts": 1793198272.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -2026,62 +2562,19 @@
       "related_sources": []
     },
     {
-      "id": "cebe47444a679c16",
-      "title": "European digital rights nonprofit noyb sues Scale AI for ‘invasive’ worker surveillance",
-      "summary": "Noyb alleges the platform in some cases records freelancers’ mouse clicks and keystrokes every few seconds and claims the collected information can be used to generate video documenting freelancers’ entire workday.",
-      "url": "https://therecord.media/noyb-sues-scale-ai-for-worker-surveillance",
-      "source": "The Record",
+      "id": "d738e18c7ab3aaea",
+      "title": "LABScon26 Replay | Keynote: A Sober Analysis of AI Impact",
+      "summary": "Harvard Professor James Mickens weighs the promises of AI against its potential harms, arguing for hardware-based mechanisms to isolate frontier models.",
+      "url": "https://www.sentinelone.com/labs/labscon26-replay-keynote-a-sober-analysis-of-ai-impact/",
+      "source": "SentinelOne Labs",
       "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T18:02:00+00:00",
-      "published_ts": 1793210520.0,
+      "category": "threat",
+      "published": "2026-10-28T13:00:00+00:00",
+      "published_ts": 1793192400.0,
       "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "eb0b9ed93156af82",
-      "title": "US sanctions Russians, North Koreans for laundering IT worker earnings",
-      "summary": "The U.S. Treasury Department sanctioned Russian and North Korean nationals for allegedly laundering the earnings of illicit IT workers on behalf of Pyongyang.",
-      "url": "https://therecord.media/north-korea-russia-sanctions",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T17:45:00+00:00",
-      "published_ts": 1793209500.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "cfc46638ee86f102",
-      "title": "Upwind Security Raises $400 Million at $3.8 Billion Valuation",
-      "summary": "The massive funding round comes just days after reports emerged that Upwind had attracted acquisition interest from several companies, including Datadog The post Upwind Security Raises $400 Million at $3.8 Billion Valuation appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/upwind-security-raises-400-million-at-3-8-billion-valuation/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T13:56:50+00:00",
-      "published_ts": 1793195810.0,
-      "cves": [],
-      "sectors": [],
       "regions": [
         "Unspecified"
       ],
@@ -2093,38 +2586,18 @@
       "related_sources": []
     },
     {
-      "id": "300775d621b123f5",
-      "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
-      "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
-      "source": "BleepingComputer",
+      "id": "40569a911572f8af",
+      "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+      "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical",
+      "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T13:50:59+00:00",
-      "published_ts": 1793195459.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
+      "published": "2026-10-28T12:48:03+00:00",
+      "published_ts": 1793191683.0,
+      "cves": [
+        "CVE-2026-101767"
       ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5df1c75a199c0151",
-      "title": "Hackers now scanning systems for recently-patched Oracle flaw",
-      "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T12:19:57+00:00",
-      "published_ts": 1793189997.0,
-      "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
       ],
@@ -2189,28 +2662,6 @@
       "related_sources": []
     },
     {
-      "id": "d40a698c8ede8c14",
-      "title": "CrowdStrike 2026 Legal Threat Landscape Report: eCrime Leads Attacks, China Activity Intensifies",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-28T05:00:00+00:00",
-      "published_ts": 1793163600.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "1e61a97ffd2ea171",
       "title": "When AI Guardrails Expose Vulnerabilities",
       "summary": "",
@@ -2233,43 +2684,19 @@
       "related_sources": []
     },
     {
-      "id": "ac022e334a66cdfc",
-      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
-      "summary": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-27T23:35:51+00:00",
-      "published_ts": 1793144151.0,
+      "id": "d40a698c8ede8c14",
+      "title": "CrowdStrike 2026 Legal Threat Landscape Report: eCrime Leads Attacks, China Activity Intensifies",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-28T05:00:00+00:00",
+      "published_ts": 1793163600.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3344480289d8f3df",
-      "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
-      "summary": "OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-27T22:43:27+00:00",
-      "published_ts": 1793141007.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -2479,50 +2906,70 @@
       "related_sources": []
     },
     {
-      "id": "0179284bcbfa7f9d",
-      "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
-      "summary": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by unsuspecting users, serves malicious JavaScript loader code through Magento CMS blocks. \"When you",
-      "url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
-      "source": "The Hacker News",
+      "id": "a0fa2c43d6cef03f",
+      "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
+      "summary": "U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-26T18:12:22+00:00",
-      "published_ts": 1793038342.0,
+      "published": "2026-10-28T20:47:22+00:00",
+      "published_ts": 1793220442.0,
       "cves": [],
-      "sectors": [
-        "Consumer"
+      "sectors": [],
+      "regions": [
+        "North America"
       ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5274a585eb79985b",
+      "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
+      "summary": "The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.",
+      "url": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-28T19:39:00+00:00",
+      "published_ts": 1793216340.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "GitHub"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c1f525db1b987d0b",
+      "title": "Discord to let search engines index public server messages",
+      "summary": "Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-28T18:44:16+00:00",
+      "published_ts": 1793213056.0,
+      "cves": [],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2eadaa5f832c9804",
-      "title": "26th October – Threat Intelligence Report",
-      "summary": "For the latest discoveries in cyber research for the week of 26th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Japanese cloud hosting provider Onamae Desktop Cloud has confirmed a cyberattack in which intruders compromised its infrastructure and installed malware on customer servers. More than 26,000 servers were potentially affected. The provider [&#8230;] The post 26th October – Threat Intelligence Report appeared first on Check Point Research .",
-      "url": "https://research.checkpoint.com/2026/26th-october-threat-intelligence-report/",
-      "source": "Check Point Research",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-10-26T16:12:38+00:00",
-      "published_ts": 1793031158.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2706,7 +3153,7 @@
     },
     {
       "id": "616c7921ada3e919",
-      "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
+      "title": "So Many AI Security Benchmarks, but None Tell the Whole Story",
       "summary": "Measuring AI model security gets complex, fast, thanks to a growing patchwork of benchmarks targeting different variables in the equation. But none replace testing against your own code and workflows.",
       "url": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
       "source": "Dark Reading",
@@ -2720,74 +3167,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "86526c12df4c37fa",
-      "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
-      "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
-      "url": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T21:44:33+00:00",
-      "published_ts": 1793051073.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f11f11bff8a17912",
-      "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
-      "summary": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
-      "url": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T20:59:26+00:00",
-      "published_ts": 1793048366.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "635081e2852bc8a0",
-      "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
-      "summary": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-26T18:01:40+00:00",
-      "published_ts": 1793037700.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "GitHub"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
