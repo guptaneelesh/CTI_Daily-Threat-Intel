@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-28T22:13:35.123065+00:00",
+  "generated_at": "2026-10-29T04:33:10.404721+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 97,
-    "critical": 4,
+    "all": 105,
+    "critical": 2,
     "high": 5,
-    "medium": 9,
-    "low": 79,
-    "actively_exploited": 14,
+    "medium": 13,
+    "low": 85,
+    "actively_exploited": 12,
     "with_cves": 17
   },
   "sources_used": [
@@ -18,6 +18,7 @@
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
     "SecurityWeek",
@@ -49,35 +50,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 80,
-      "priority_label": "Critical",
-      "related_sources": []
-    },
-    {
-      "id": "78060b5c0c65accf",
-      "title": "CVE-2026-46300: Linux Kernel Missing Initialization of a Variable Vulnerability (Linux Kernel)",
-      "summary": "CISA KEV — actively exploited. Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-31).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-28T00:00:00+00:00",
-      "published_ts": 1793145600.0,
-      "cves": [
-        "CVE-2026-46300"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Linux"
-      ],
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 75,
@@ -128,39 +100,33 @@
       ]
     },
     {
-      "id": "4b06c62cca6731f6",
-      "title": "CVE-2026-109618: PHP Memory Corruption Vulnerability (PHP Group PHP)",
-      "summary": "CISA KEV — actively exploited. PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-29).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+      "id": "78060b5c0c65accf",
+      "title": "CVE-2026-46300: Linux Kernel Missing Initialization of a Variable Vulnerability (Linux Kernel)",
+      "summary": "CISA KEV — actively exploited. Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-31).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
       "source": "CISA KEV",
       "source_trust": 5,
       "category": "vuln",
-      "published": "2026-10-26T00:00:00+00:00",
-      "published_ts": 1792972800.0,
+      "published": "2026-10-28T00:00:00+00:00",
+      "published_ts": 1793145600.0,
       "cves": [
-        "CVE-2026-109618"
+        "CVE-2026-46300"
       ],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
+        "Government & Public Services"
       ],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Linux"
+      ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 75,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
-          "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
-          "published": "2026-10-27T04:37:59+00:00"
-        }
-      ]
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
     },
     {
       "id": "bd455519b88bde3e",
@@ -174,33 +140,6 @@
       "published_ts": 1793059200.0,
       "cves": [
         "CVE-2026-48356"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "df31f60c91fc25a3",
-      "title": "CVE-2026-109619: PHP Stale Internal Request-State Vulnerability (PHP Group PHP)",
-      "summary": "CISA KEV — actively exploited. PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-10-29).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-26T00:00:00+00:00",
-      "published_ts": 1792972800.0,
-      "cves": [
-        "CVE-2026-109619"
       ],
       "sectors": [
         "Energy Resources & Industrials",
@@ -452,6 +391,62 @@
       ]
     },
     {
+      "id": "b45c253190268e0c",
+      "title": "Hackers Use Fake Phantom, Jupiter, and Bitget Firefox Extensions to Target Cryptocurrency Wallets",
+      "summary": "Three malicious Firefox extensions impersonating Phantom, Jupiter, and Bitget to steal cryptocurrency wallet recovery phrases and private keys. The campaign combines deceptive branding, bundled credential stealers, and remotely delivered JavaScript, with stolen information routed through infrastructure under bonto[.]io. All three listings were removed before Socket published its findings on October 27, 2026. Phantom’s impersonator advertised [&#8230;] The post Hackers Use Fake Phantom, Jupiter, and Bitget Firefox Extensions to Target Cryptocurrency Wallets appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cryptocurrency-wallets-targeted/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T13:14:13+00:00",
+      "published_ts": 1793193253.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Firefox"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "658ad1549569a134",
+      "title": "Microsoft Whistleblower Claims Foreign Engineers Can Access Sensitive U.S. Government Cloud Systems",
+      "summary": "An alleged Microsoft whistleblower has raised concerns regarding overseas engineers accessing U.S. government cloud information through the company’s &#8220;escort&#8221; support process. Screenshots mentioned in an October 28 post by the X account Conspiracookie allegedly show approval for an engineer based in India to view logs associated with Microsoft’s Government Community Cloud (GCC). However, these claims [&#8230;] The post Microsoft Whistleblower Claims Foreign Engineers Can Access Sensitive U.S. Government Cloud Systems appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/microsoft-whistleblower-claims-foreign-engineers/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T11:12:02+00:00",
+      "published_ts": 1793185922.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific",
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "6928c9254bc376ea",
       "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
       "summary": "As AI and agents reshape the enterprise, CISOs face two critical priorities: enabling innovation with the right identity and data guardrails, and modernizing defense to keep pace with AI-powered threats. Aarti Borkar shares how security leaders can approach both. The post The CISO’s evolving role: Protecting and defending in the agentic era appeared first on Microsoft Security Blog .",
@@ -509,6 +504,35 @@
       "related_sources": []
     },
     {
+      "id": "d321341bc695432e",
+      "title": "Critical Veeam Backup & Replication Flaw Allows Unauthenticated Attackers to Bypass Authorization",
+      "summary": "Veeam has released security updates to address a critical authorization bypass vulnerability in Backup &#38; Replication. This flaw, tracked as CVE-2026-108142, allows an unauthenticated attacker to bypass authorization on the CDP Coordinator Service. The vulnerability has a CVSS v4.0 score of 9.1 and affects both Windows deployments and the Veeam Software Appliance. The company disclosed [&#8230;] The post Critical Veeam Backup &amp; Replication Flaw Allows Unauthenticated Attackers to Bypass Authorization appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/critical-veeam-backup-replication-flaw-2/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T11:23:39+00:00",
+      "published_ts": 1793186619.0,
+      "cves": [
+        "CVE-2026-108142"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
       "id": "e3557a6f0eb37571",
       "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
       "summary": "Japan's GMO Internet Group is&nbsp;offering up to $1 million in total&nbsp;for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand. The reward program opened on October 28 and pays only if a tip helps lead to an arrest or an international wanted notice. The service&nbsp;hosts Windows desktops&nbsp;used for FX trading,",
@@ -537,6 +561,42 @@
       "related_sources": []
     },
     {
+      "id": "acbb547fedece9e4",
+      "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog. The PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate unauthenticated remote code execution on affected deployments - CVE-2026-109618 - An out-of-memory",
+      "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T04:37:59+00:00",
+      "published_ts": 1793075879.0,
+      "cves": [
+        "CVE-2026-109618"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
+          "title": "OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery",
+          "published": "2026-10-28T17:56:42+00:00"
+        }
+      ]
+    },
+    {
       "id": "9ccd532f5cd1f60f",
       "title": "Unwrapping Retail Peak Season Cyber Threats",
       "summary": "Unit 42 explores key peak shopping season retail cyber threats, from ransomware to AI attacks, and shares how to defend operations and customer trust. The post Unwrapping Retail Peak Season Cyber Threats appeared first on Unit 42 .",
@@ -552,6 +612,162 @@
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7137c83cd2438e8a",
+      "title": "Hackers Reuse XWorm Malware Loader Across Phishing Campaigns Targeting Colombia and the UK",
+      "summary": "A judicial-themed phishing campaign targeting Colombian organizations that delivers XWorm through obfuscated scripts, encrypted PowerShell, and a reusable .NET loader. The recovered loader is binary-identical to one documented in a September 10, 2026, UK-linked case, connecting otherwise differently packaged delivery chains. The overlap establishes loader reuse, not common attribution. Different payload hashes, execution targets, and [&#8230;] The post Hackers Reuse XWorm Malware Loader Across Phishing Campaigns Targeting Colombia and the UK appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/xworm-malware-loader/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T12:51:55+00:00",
+      "published_ts": 1793191915.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global",
+        "Latin America",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0e0f483cb37b0e5b",
+      "title": "Anthropic’s Claude Chains One-Click and Zero-Click Exploits to Bypass Chrome, Android and Linux Security",
+      "summary": "Anthropic announced that an unreleased research model called Claude successfully developed working exploit chains for Chrome, Safari, Android, Windows, and Linux. The company’s Frontier Red Team shared these findings on October 27, 2026. Many exploit chains required minimal or no user interaction, and the team reported every identified flaw to the respective vendor before publication. [&#8230;] The post Anthropic&#8217;s Claude Chains One-Click and Zero-Click Exploits to Bypass Chrome, Android and Linux Security appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/anthropics-claude-chains-one-click-and-zero-click-exploits/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T12:51:03+00:00",
+      "published_ts": 1793191863.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Android",
+        "Chrome",
+        "Linux",
+        "Safari",
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6a2029cb4c2c2382",
+      "title": "OWASP Warns AI Agents Are Making Cyberattacks Easier for Less-Skilled Hackers",
+      "summary": "OWASP has issued a warning that AI agents and chatbots are reducing the skills required for certain aspects of cyberattacks, particularly in areas like target discovery and vulnerability research. Their latest research indicates that beginners can advance by utilizing AI guidance; however, human expertise remains essential when tools fail or when dealing with complex attacks. [&#8230;] The post OWASP Warns AI Agents Are Making Cyberattacks Easier for Less-Skilled Hackers appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/owasp-warns-ai-agents-are-making-cyberattacks-easier/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T12:38:49+00:00",
+      "published_ts": 1793191129.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4aee666b490e5629",
+      "title": "Microsoft Releases Emergency Windows Updates to Revoke Trust in Compromised eMudhra Certificates",
+      "summary": "Microsoft has released an emergency Windows update to remove trust in certificates associated with compromised eMudhra certificate authority keys. The out-of-band update, issued on October 26, 2026, eliminates seven certificates from the Windows trust list. Following this, the same removals were applied to Microsoft Edge on October 27, as stated by the Microsoft Security Response [&#8230;] The post Microsoft Releases Emergency Windows Updates to Revoke Trust in Compromised eMudhra Certificates appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/windows-updates-to-revoke-trust-in-compromised-emudhra-certificates/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T12:29:17+00:00",
+      "published_ts": 1793190557.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Edge",
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "abd422d1fad293d4",
+      "title": "FortiBleed 2.0 Exposes 40,573 FortiGate Secrets Across 975 Previously Unlisted Domains",
+      "summary": "Hudson Rock’s FortiBleed 2.0 investigation found 40,573 records with cleartext secrets in FortiGate configuration reports, exposing passwords and service credentials that could help attackers move beyond the firewall. Published on October 27, 2026, the research also identifies 975 domain labels missing from the earlier FortiBleed dataset. These labels do not represent 975 newly confirmed company [&#8230;] The post FortiBleed 2.0 Exposes 40,573 FortiGate Secrets Across 975 Previously Unlisted Domains appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/fortibleed-2-0-exposes-40573-fortigate-secrets/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T12:19:24+00:00",
+      "published_ts": 1793189964.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e6969cc659f53e46",
+      "title": "Sony Data Breach Exposes 2.58 Million Customer Records and 54,401 Email Credentials",
+      "summary": "Sony Network Communications disclosed a data breach that exposed 2,585,481 customer records linked to its So-net and Plala (S Course) internet services. The breach, announced on October 27, 2026, compromised passwords for 54,401 email addresses. However, it did not affect primary membership passwords or credit card information. The compromised database contained 2,141,986 records from So-net [&#8230;] The post Sony Data Breach Exposes 2.58 Million Customer Records and 54,401 Email Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/sony-data-breach-exposes-2-58-million-customer-records/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-28T11:56:34+00:00",
+      "published_ts": 1793188594.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1327,52 +1543,6 @@
       "related_sources": []
     },
     {
-      "id": "ac022e334a66cdfc",
-      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
-      "summary": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-27T23:35:51+00:00",
-      "published_ts": 1793144151.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3344480289d8f3df",
-      "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
-      "summary": "OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems. [...]",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-27T22:43:27+00:00",
-      "published_ts": 1793141007.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "28d9080aee7e2f08",
       "title": "UNM Health ransomware attack disrupts patient care, surgeries",
       "summary": "The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]",
@@ -1886,6 +2056,52 @@
       "sectors": [],
       "regions": [
         "Africa"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ac022e334a66cdfc",
+      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+      "summary": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T23:35:51+00:00",
+      "published_ts": 1793144151.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3344480289d8f3df",
+      "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
+      "summary": "OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-27T22:43:27+00:00",
+      "published_ts": 1793141007.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
