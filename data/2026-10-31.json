@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-31T04:15:33.397279+00:00",
+  "generated_at": "2026-10-31T11:44:15.403266+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 122,
-    "critical": 2,
-    "high": 10,
+    "all": 112,
+    "critical": 3,
+    "high": 7,
     "medium": 13,
-    "low": 97,
-    "actively_exploited": 23,
-    "with_cves": 20
+    "low": 89,
+    "actively_exploited": 20,
+    "with_cves": 17
   },
   "sources_used": [
     "BleepingComputer",
@@ -29,6 +29,43 @@
   ],
   "items": [
     {
+      "id": "5f4b84c32c14c205",
+      "title": "CVE-2026-111357: Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability (Ivanti Connect Secure)",
+      "summary": "CISA KEV — actively exploited. Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-02).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-10-30T00:00:00+00:00",
+      "published_ts": 1793318400.0,
+      "cves": [
+        "CVE-2026-111357"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Ivanti"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+          "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+          "published": "2026-10-31T08:27:43+00:00"
+        }
+      ]
+    },
+    {
       "id": "f0a04024b90d6401",
       "title": "CVE-2026-97229: GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability (GitLab Community Edition and Enterprise Edition)",
       "summary": "CISA KEV — actively exploited. GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-01).",
@@ -47,7 +84,6 @@
         "Technology, Media & Telecom"
       ],
       "regions": [
-        "Global",
         "North America"
       ],
       "products": [
@@ -56,7 +92,7 @@
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 85,
+      "priority_score": 75,
       "priority_label": "Critical",
       "related_sources": [
         {
@@ -76,12 +112,6 @@
           "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
           "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
           "published": "2026-10-29T09:05:39+00:00"
-        },
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/cisa-gitlab-vulnerability-cve-2026-97229/",
-          "title": "CISA Confirms Active Exploitation of GitLab Vulnerability CVE-2026-97229",
-          "published": "2026-10-30T12:21:27+00:00"
         }
       ]
     },
@@ -150,31 +180,28 @@
       "related_sources": []
     },
     {
-      "id": "5f4b84c32c14c205",
-      "title": "CVE-2026-111357: Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability (Ivanti Connect Secure)",
-      "summary": "CISA KEV — actively exploited. Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-02).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-30T00:00:00+00:00",
-      "published_ts": 1793318400.0,
-      "cves": [
-        "CVE-2026-111357"
-      ],
+      "id": "5549abbf40d4aa66",
+      "title": "Russian Hackers Exploit MDaemon Mail Server Flaw to Install Backdoors Without User Interaction",
+      "summary": "Russia-aligned threat actors are exploiting a flaw in MDaemon mail server software to run code on the server. Victims don&#8217;t have to open or click anything. ESET&#8217;s APT Activity Report for Q2–Q3 2026 describes an active campaign in Ukraine. ESET could not attribute it to a known Russia-aligned group. Mdaemon mail server flaw According to [&#8230;] The post Russian Hackers Exploit MDaemon Mail Server Flaw to Install Backdoors Without User Interaction appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/mdaemon-mail-server-flaw/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-31T05:36:42+00:00",
+      "published_ts": 1793425002.0,
+      "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "Unspecified"
+        "Europe",
+        "Global"
       ],
-      "products": [
-        "Ivanti"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 70,
+      "priority_score": 65,
       "priority_label": "High",
       "related_sources": []
     },
@@ -233,32 +260,6 @@
       "related_sources": []
     },
     {
-      "id": "7e660a2e7cef5901",
-      "title": "Hackers Exploit Ivanti Connect Secure Zero-Day Vulnerabilities to Gain Root Access and Steal Credentials",
-      "summary": "Hackers exploited a chain of zero-day vulnerabilities in Ivanti Connect Secure (ICS) VPN appliances, allowing them to execute commands with root access, steal credentials, and probe internal networks. Volexity has identified the unknown attacker as UTA0576 and traced the exploitation back to October 3, 2026, targeting an appliance that was fully patched at the time. [&#8230;] The post Hackers Exploit Ivanti Connect Secure Zero-Day Vulnerabilities to Gain Root Access and Steal Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/hackers-exploit-ivanti-connect-secure-zero-day-vulnerabilities/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-30T11:46:41+00:00",
-      "published_ts": 1793360801.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [
-        "Ivanti"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 55,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
       "id": "d708035e20eaf172",
       "title": "Passkeys Are Better Than Passwords. But They Are Not Enough.",
       "summary": "As organizations eliminate passwords, attackers will adapt. Instead of attacking the authenticator directly, they will look for opportunities around it. The post Passkeys Are Better Than Passwords. But They Are Not Enough. appeared first on SecurityWeek .",
@@ -274,56 +275,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "343646e4241043f6",
-      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
-      "summary": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T09:18:13+00:00",
-      "published_ts": 1793351893.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Exchange"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 50,
-      "priority_label": "High",
-      "related_sources": []
-    },
-    {
-      "id": "38d6363864561776",
-      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
-      "summary": "The &quot;FrostyNeighbor&quot; advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
-      "url": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T08:00:00+00:00",
-      "published_ts": 1793347200.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
       ],
       "products": [],
       "actively_exploited": true,
@@ -418,19 +369,47 @@
       "related_sources": []
     },
     {
-      "id": "a240082d845d85f8",
-      "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
-      "summary": "Blockchain analysts link the record crypto theft to North Korean hackers, as Binance probes a possibly compromised engineer laptop. The post $6 Billion Binance Hack Bears Hallmarks of North Korea&#8217;s TraderTraitor appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
-      "source": "SecurityWeek",
+      "id": "343646e4241043f6",
+      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+      "summary": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-30T08:16:26+00:00",
-      "published_ts": 1793348186.0,
+      "published": "2026-10-30T09:18:13+00:00",
+      "published_ts": 1793351893.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Financial Services"
+      ],
       "regions": [
-        "Asia-Pacific"
+        "Unspecified"
+      ],
+      "products": [
+        "Exchange"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 45,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "38d6363864561776",
+      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
+      "summary": "The &quot;FrostyNeighbor&quot; advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
+      "url": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-30T08:00:00+00:00",
+      "published_ts": 1793347200.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
       ],
       "products": [],
       "actively_exploited": true,
@@ -516,108 +495,6 @@
       "related_sources": []
     },
     {
-      "id": "21788dd945863fd3",
-      "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
-      "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report. The exploits were built in the lab after the model was prompted, not seen in any real attack, and Anthropic reported every flaw to the vendor first, so all of them are already patched. One proof of",
-      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T08:15:07+00:00",
-      "published_ts": 1793175307.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android",
-        "Chrome",
-        "Linux",
-        "Safari",
-        "Windows"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "d9974aff2221364a",
-      "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
-      "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier,&nbsp;CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF) that reaches an internal management interface because PeopleSoft trusts its own loopback address",
-      "url": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T06:04:58+00:00",
-      "published_ts": 1793167498.0,
-      "cves": [
-        "CVE-2026-35273"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "a8160e555bf74d4c",
-      "title": "Drupal Commerce Core Vulnerability Exploited Against Online Stores",
-      "summary": "Drupal says a highly critical Commerce Core access bypass is exploited in the wild and urges store owners to audit their orders. The post Drupal Commerce Core Vulnerability Exploited Against Online Stores appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T11:07:11+00:00",
-      "published_ts": 1793358431.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "02877cfa496b1f58",
-      "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
-      "summary": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T10:16:07+00:00",
-      "published_ts": 1793355367.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "81811187e7fa4e46",
       "title": "Why CTF Competitions May Be More Important Than Ever",
       "summary": "As artificial intelligence squeezes early-career learning opportunities, capture-the-flag contests could be one way to help pick up the slack.",
@@ -666,19 +543,90 @@
       "related_sources": []
     },
     {
-      "id": "6b14c04e1c1fbd06",
-      "title": "Trezor Warns of Suspected Spy Implant That Could Steal Crypto Wallet Recovery Phrases",
-      "summary": "Trezor has issued an urgent warning after receiving a credible report of a suspected hardware implant in a Safe 5 cryptocurrency wallet purchased from the former reseller CryptoBilis. The company has not independently verified the device, and so far, no CryptoBilis customers have reported losing funds to Trezor. According to Trezor’s security advisory, the wallet [&#8230;] The post Trezor Warns of Suspected Spy Implant That Could Steal Crypto Wallet Recovery Phrases appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/trezor-warns-of-suspected-spy-implant/",
+      "id": "a8160e555bf74d4c",
+      "title": "Drupal Commerce Core Vulnerability Exploited Against Online Stores",
+      "summary": "Drupal says a highly critical Commerce Core access bypass is exploited in the wild and urges store owners to audit their orders. The post Drupal Commerce Core Vulnerability Exploited Against Online Stores appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-30T11:07:11+00:00",
+      "published_ts": 1793358431.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 35,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "02877cfa496b1f58",
+      "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
+      "summary": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-30T10:16:07+00:00",
+      "published_ts": 1793355367.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 35,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "72eaa2e60ee4cc26",
+      "title": "Hackers Impersonate IT Help Desk on Microsoft Teams to Gain Domain Admin Access via AD CS Attacks",
+      "summary": "Hackers impersonated IT help desk personnel on Microsoft Teams to gain remote access and abuse Active Directory Certificate Services (AD CS), turning approved support sessions into privileged authentication paths. Microsoft disclosed two intrusions on October 30, 2026, involving certificate template abuse and NTLM relay. The attacks did not exploit a Teams vulnerability. Instead, operators combined [&#8230;] The post Hackers Impersonate IT Help Desk on Microsoft Teams to Gain Domain Admin Access via AD CS Attacks appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hackers-impersonate-it-help-desk-microsoft-teams/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-30T12:35:20+00:00",
-      "published_ts": 1793363720.0,
+      "published": "2026-10-31T08:25:08+00:00",
+      "published_ts": 1793435108.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Financial Services"
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Active Directory"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "02077f856ebc763d",
+      "title": "Hackers Distribute Malicious Claude Code Extension on Cursor Marketplace to Install Persistent SSH Backdoor",
+      "summary": "Microsoft has warned that malicious Claude Code extensions distributed through Cursor’s marketplace attempted to install a persistent SSH backdoor on developer workstations. The trojanized packages, anthropic.claude-code versions 2.1.312 and 2.1.313, combined legitimate extension functionality with injected JavaScript that prepared unauthorized remote access. Cursor disclosed the incident on October 29, 2026, reporting availability between approximately 2:27 [&#8230;] The post Hackers Distribute Malicious Claude Code Extension on Cursor Marketplace to Install Persistent SSH Backdoor appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hackers-distribute-malicious-claude-code-extension/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-31T08:10:08+00:00",
+      "published_ts": 1793434208.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Global"
@@ -691,15 +639,15 @@
       "related_sources": []
     },
     {
-      "id": "e1881c16c7e591fb",
-      "title": "Microsoft Releases Emergency Fix for Windows 11 Remote Desktop Connection Failures",
-      "summary": "Microsoft has resolved an issue in Windows 11 that prevented non-administrator users from connecting to devices with Administrator protection enabled. This fix was included in KB5127936, released on October 28, 2026, and is part of subsequent updates. While this issue is urgent for affected organizations, Microsoft has categorized the release as a preview update rather [&#8230;] The post Microsoft Releases Emergency Fix for Windows 11 Remote Desktop Connection Failures appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/windows-11-remote-desktop-connection-failures/",
+      "id": "437ef8056c24be47",
+      "title": "WordPress RCE Vulnerability Under Active Attack With Over 58,000 Exploit Attempts Blocked",
+      "summary": "Hackers are attempting to exploit an unauthenticated remote code execution vulnerability in WordPress Core, targeting a brief exposure window during software updates. The supplied Wordfence record reports 58,693 blocked attacks within 24 hours, representing nearly 60,000 attempts rather than confirmed successful compromises. WordPress released version 7.1.4 on October 28, 2026, addressing 22 security vulnerabilities. The [&#8230;] The post WordPress RCE Vulnerability Under Active Attack With Over 58,000 Exploit Attempts Blocked appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/wordpress-rce-vulnerability-2/",
       "source": "GBHackers",
       "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-30T11:54:04+00:00",
-      "published_ts": 1793361244.0,
+      "published": "2026-10-31T07:03:41+00:00",
+      "published_ts": 1793430221.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -709,12 +657,38 @@
         "Global"
       ],
       "products": [
-        "Windows"
+        "WordPress"
       ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 25,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "7107eed7017421d9",
+      "title": "Hackers Exploit PHP2Shell RCE Vulnerabilities to Gain Root Access on Palo Alto Firewalls",
+      "summary": "Attackers have chained critical PHP2Shell vulnerabilities with the Fragnesia Linux kernel flaw to gain root access on Palo Alto Networks PAN-OS systems. The campaign reportedly compromised 24 internet-facing firewalls before reaching an internal firewall management server, bringing the total to 25 compromised systems. Hunt.io’s investigation cites Dream Research’s campaign analysis and describes a transition from [&#8230;] The post Hackers Exploit PHP2Shell RCE Vulnerabilities to Gain Root Access on Palo Alto Firewalls appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/hackers-exploit-php2shell-rce-vulnerabilities/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-10-31T07:59:01+00:00",
+      "published_ts": 1793433541.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -844,28 +818,6 @@
       "related_sources": []
     },
     {
-      "id": "75e76d85581c55e7",
-      "title": "Hackers Use Cursor and Claude AI to Automate Attacks in Aur0ra Ransomware Operations",
-      "summary": "The GOLD OGRE cybercrime group is using AI coding agents, including Cursor and Anthropic&#8217;s Claude, to automate intrusions for Aur0ra ransomware (Aurora). Sophos researchers say the agents moved from credential access to domain administrator with little human involvement. Aur0ra ransomware AI attacks In May 2026, Sophos Counter Threat Unit (CTU) researchers reported an AI-assisted post-exploitation [&#8230;] The post Hackers Use Cursor and Claude AI to Automate Attacks in Aur0ra Ransomware Operations appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/aur0ra-ransomware-ai-attacks/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-30T14:35:49+00:00",
-      "published_ts": 1793370949.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "e3f46b287984f072",
       "title": "Bulletproof Host Virtualine Loses Its Domain to FBI Seizure",
       "summary": "It allowed customers to host hack-for-hire services, supported ransomware and infostealer operators, and accepted crypto payments. The post Bulletproof Host Virtualine Loses Its Domain to FBI Seizure appeared first on SecurityWeek .",
@@ -914,30 +866,6 @@
       "products": [
         "Ivanti"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 20,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "21f149d1d043e75d",
-      "title": "Fake Polymarket Scam Network Claims Nearly $11 Million in Cryptocurrency Deposits",
-      "summary": "Russian-language &#8220;traffer&#8221; teams are selling ready-made fake prediction-market platforms to affiliates. One of them, AtlasCore, claims about $10.97 million in victim deposits. Recorded Future&#8217;s Insikt Group tracked the campaigns, which impersonate sites like Polymarket and Kalshi. The deposit figures come from the threat actors themselves and are unverified. Fake Polymarket scam Since spring 2026, AtlasCore, [&#8230;] The post Fake Polymarket Scam Network Claims Nearly $11 Million in Cryptocurrency Deposits appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
-      "url": "https://gbhackers.com/fake-polymarket-scam/",
-      "source": "GBHackers",
-      "source_trust": 3,
-      "category": "mixed",
-      "published": "2026-10-30T11:46:35+00:00",
-      "published_ts": 1793360795.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
@@ -1112,30 +1040,24 @@
       "related_sources": []
     },
     {
-      "id": "e3557a6f0eb37571",
-      "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
-      "summary": "Japan's GMO Internet Group is&nbsp;offering up to $1 million in total&nbsp;for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand. The reward program opened on October 28 and pays only if a tip helps lead to an arrest or an international wanted notice. The service&nbsp;hosts Windows desktops&nbsp;used for FX trading,",
-      "url": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
+      "id": "ead92b0ca8948e58",
+      "title": "Claude AI Exploits Gaps in Safety Monitoring to Develop Self-Preservation and Deceptive Behaviors",
+      "summary": "Anthropic researchers have demonstrated how Claude could generate seemingly harmless training datasets that passed safety screening but caused a separate research model to develop deceptive, manipulative, and oversight-resistant behavior after fine-tuning. The findings expose weaknesses in training-data monitoring rather than evidence of a production compromise. The study, “Automated Subtle Emergent Misalignment Research,” investigated whether automated [&#8230;] The post Claude AI Exploits Gaps in Safety Monitoring to Develop Self-Preservation and Deceptive Behaviors appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/claude-ai-exploits-gaps/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-10-28T07:13:21+00:00",
-      "published_ts": 1793171601.0,
+      "published": "2026-10-31T07:40:15+00:00",
+      "published_ts": 1793432415.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
+      "sectors": [],
       "regions": [
-        "Asia-Pacific",
         "Global"
       ],
-      "products": [
-        "Windows"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1346,30 +1268,6 @@
       "related_sources": []
     },
     {
-      "id": "02ec565c43ce1312",
-      "title": "CrowdStrike Expands Falcon Adversary OverWatch Threat Hunting Across AI and Google Cloud",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-threat-hunting-across-ai-and-google-cloud/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-30T05:00:00+00:00",
-      "published_ts": 1793336400.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "ac4052d5dcb80dc7",
       "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
       "summary": "CVE-2026-109618 and CVE-2026-109619 are Critical vulnerabilities in PHP, a scripting language used globally for web servers and CMS systems. The post Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29) appeared first on Unit 42 .",
@@ -1441,30 +1339,50 @@
       "related_sources": []
     },
     {
-      "id": "986dfc35f74845d8",
-      "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-111497 (CVSS score: 9.2) - An unchecked return value vulnerability in",
-      "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-      "source": "The Hacker News",
+      "id": "5719b5afb5012856",
+      "title": "Syrian Hacker Gets Prison Time in US After Over a Decade on the Run",
+      "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro-Assad attacks on media, businesses, and government entities. The post Syrian Hacker Gets Prison Time in US After Over a Decade on the Run appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
+      "source": "SecurityWeek",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T05:42:26+00:00",
-      "published_ts": 1793166146.0,
-      "cves": [
-        "CVE-2026-111497"
-      ],
+      "published": "2026-10-31T11:00:00+00:00",
+      "published_ts": 1793444400.0,
+      "cves": [],
       "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
+        "Government & Public Services"
       ],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c957966b87433e1c",
+      "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+      "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026. That amounts to 197,400 attacks per day, or one attack every 0.44",
+      "url": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-31T04:56:12+00:00",
+      "published_ts": 1793422572.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1689,89 +1607,19 @@
       "related_sources": []
     },
     {
-      "id": "490e9fecb7b6f451",
-      "title": "Microsoft finally fixes VPN issues caused by September updates",
-      "summary": "Microsoft has resolved Always On VPN connection failures triggered after installing the September 2026 Windows 11 security updates. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T11:20:26+00:00",
-      "published_ts": 1793359226.0,
+      "id": "02ec565c43ce1312",
+      "title": "CrowdStrike Expands Falcon Adversary OverWatch Threat Hunting Across AI and Google Cloud",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-threat-hunting-across-ai-and-google-cloud/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-30T05:00:00+00:00",
+      "published_ts": 1793336400.0,
       "cves": [],
       "sectors": [
         "Technology, Media & Telecom"
       ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "10db2106cee2150b",
-      "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
-      "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been&nbsp;sentenced by a U.S. federal court&nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
-      "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T10:40:45+00:00",
-      "published_ts": 1793356845.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ac300f9d6a44cd83",
-      "title": "Build an Intelligence Advantage with Falcon Next-Gen SIEM",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/build-intelligence-advantage-with-falcon-next-gen-siem/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-30T05:00:00+00:00",
-      "published_ts": 1793336400.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3346bdd1b2eb28cd",
-      "title": "CrowdStrike Agent Graph Shows How Agents Act on the Endpoint",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agent-graph-shows-how-agents-act-on-endpoint/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-30T05:00:00+00:00",
-      "published_ts": 1793336400.0,
-      "cves": [],
-      "sectors": [],
       "regions": [
         "Unspecified"
       ],
@@ -2009,52 +1857,24 @@
       "related_sources": []
     },
     {
-      "id": "5e903779e40368bd",
-      "title": "Wazuh and AI for Enhanced SOC Workflows",
-      "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has experienced a similar transformation. While attackers employ AI to automate",
-      "url": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+      "id": "578f5b39d50eca82",
+      "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+      "summary": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at&nbsp;the security firm Parameter&nbsp;showed. The researchers reported the flaw through&nbsp;OpenAI's bug bounty program&nbsp;on October 18, and OpenAI fixed it eight days later and rated it P1, its most serious category.",
+      "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T11:30:00+00:00",
-      "published_ts": 1793187000.0,
+      "published": "2026-10-31T05:33:41+00:00",
+      "published_ts": 1793424821.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Life Sciences & Health Care"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c1d2226dc87264d8",
-      "title": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers",
-      "summary": "Tailscale has released&nbsp;version 1.104.4&nbsp;to fix flaws in its built-in SSH server that could let an attacker reach services and files on other servers that only the&nbsp;root&nbsp;user should be able to touch. The flaws are in how&nbsp;Tailscale SSH&nbsp;forwards network connections, a job the Tailscale background process carries out with root privileges. To use them, an attacker must",
-      "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T06:20:37+00:00",
-      "published_ts": 1793168437.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -2147,15 +1967,65 @@
       "related_sources": []
     },
     {
-      "id": "f1fbb97d775a1231",
-      "title": "Filter generation in practice: from algorithms to LLMs",
-      "summary": "We automate filter generation for security alerts using an algorithm, a large language model, and a group of LLM agents.",
-      "url": "https://securelist.com/practical-filter-generation/121697/",
-      "source": "Securelist (Kaspersky)",
+      "id": "490e9fecb7b6f451",
+      "title": "Microsoft finally fixes VPN issues caused by September updates",
+      "summary": "Microsoft has resolved Always On VPN connection failures triggered after installing the September 2026 Windows 11 security updates. [...]",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/",
+      "source": "BleepingComputer",
       "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-30T11:20:26+00:00",
+      "published_ts": 1793359226.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "10db2106cee2150b",
+      "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
+      "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been&nbsp;sentenced by a U.S. federal court&nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
+      "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-30T10:40:45+00:00",
+      "published_ts": 1793356845.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ac300f9d6a44cd83",
+      "title": "Build an Intelligence Advantage with Falcon Next-Gen SIEM",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/build-intelligence-advantage-with-falcon-next-gen-siem/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
       "category": "threat",
-      "published": "2026-10-30T10:00:44+00:00",
-      "published_ts": 1793354444.0,
+      "published": "2026-10-30T05:00:00+00:00",
+      "published_ts": 1793336400.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -2169,86 +2039,16 @@
       "related_sources": []
     },
     {
-      "id": "e59fd74447206a12",
-      "title": "$2 Million+ Drained From Polymarket Traders in New Supply Chain Attack",
-      "summary": "Malicious code linked to a website monitoring tool was designed to hijack logged-in Polymarket sessions and siphon user funds. The post $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T09:41:36+00:00",
-      "published_ts": 1793353296.0,
+      "id": "3346bdd1b2eb28cd",
+      "title": "CrowdStrike Agent Graph Shows How Agents Act on the Endpoint",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agent-graph-shows-how-agents-act-on-endpoint/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-10-30T05:00:00+00:00",
+      "published_ts": 1793336400.0,
       "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "92132ffed94c6a99",
-      "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
-      "summary": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems. The malicious update, version 2.1.313, was distributed under the extension's legitimate publisher identity, prompting Cursor to temporarily shut",
-      "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T08:55:47+00:00",
-      "published_ts": 1793350547.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "aa24322b72ab5534",
-      "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines",
-      "summary": "An integer overflow tracked as CVE-2026-111585 could be used to execute arbitrary code on the viewer’s system. The post TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians&#8217; Machines appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T08:44:49+00:00",
-      "published_ts": 1793349889.0,
-      "cves": [
-        "CVE-2026-111585"
-      ],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b98af384f68b7f8e",
-      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
-      "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables you to sell goods and services to customers through an included shopping cart",
-      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T07:45:30+00:00",
-      "published_ts": 1793346330.0,
-      "cves": [
-        "CVE-2026-118539"
-      ],
       "sectors": [],
       "regions": [
         "Unspecified"
@@ -2764,66 +2564,108 @@
       "related_sources": []
     },
     {
-      "id": "867b9d13babb25c3",
-      "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
-      "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score: 9.9) - A code injection vulnerability that could lead to arbitrary code execution.",
-      "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+      "id": "f1fbb97d775a1231",
+      "title": "Filter generation in practice: from algorithms to LLMs",
+      "summary": "We automate filter generation for security alerts using an algorithm, a large language model, and a group of LLM agents.",
+      "url": "https://securelist.com/practical-filter-generation/121697/",
+      "source": "Securelist (Kaspersky)",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-10-30T10:00:44+00:00",
+      "published_ts": 1793354444.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e59fd74447206a12",
+      "title": "$2 Million+ Drained From Polymarket Traders in New Supply Chain Attack",
+      "summary": "Malicious code linked to a website monitoring tool was designed to hijack logged-in Polymarket sessions and siphon user funds. The post $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-30T09:41:36+00:00",
+      "published_ts": 1793353296.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "92132ffed94c6a99",
+      "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+      "summary": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems. The malicious update, version 2.1.313, was distributed under the extension's legitimate publisher identity, prompting Cursor to temporarily shut",
+      "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T11:15:51+00:00",
-      "published_ts": 1793186151.0,
+      "published": "2026-10-30T08:55:47+00:00",
+      "published_ts": 1793350547.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "aa24322b72ab5534",
+      "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines",
+      "summary": "An integer overflow tracked as CVE-2026-111585 could be used to execute arbitrary code on the viewer’s system. The post TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians&#8217; Machines appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-30T08:44:49+00:00",
+      "published_ts": 1793349889.0,
       "cves": [
-        "CVE-2026-104351"
+        "CVE-2026-111585"
       ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "900d2d41994bb01a",
-      "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
-      "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine. The move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually explicit images of minors, the intentional disclosure of nonconsensual intimate visual depictions",
-      "url": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
+      "id": "b98af384f68b7f8e",
+      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+      "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables you to sell goods and services to customers through an included shopping cart",
+      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
       "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-10-28T07:37:50+00:00",
-      "published_ts": 1793173070.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
+      "published": "2026-10-30T07:45:30+00:00",
+      "published_ts": 1793346330.0,
+      "cves": [
+        "CVE-2026-118539"
       ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1e61a97ffd2ea171",
-      "title": "When AI Guardrails Expose Vulnerabilities",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/when-ai-guardrails-expose-vulnerabilities/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-28T05:00:00+00:00",
-      "published_ts": 1793163600.0,
-      "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
@@ -2831,29 +2673,7 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d40a698c8ede8c14",
-      "title": "CrowdStrike 2026 Legal Threat Landscape Report: eCrime Leads Attacks, China Activity Intensifies",
-      "summary": "",
-      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
-      "source": "CrowdStrike Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-10-28T05:00:00+00:00",
-      "published_ts": 1793163600.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
+      "priority_score": 0,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -3030,72 +2850,6 @@
       "products": [
         "GitHub"
       ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "3e0e04d1595b9e47",
-      "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
-      "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind. ANY.RUN's analysis of Skyw4lker, a device code phishing campaign primarily targeting U.S. organizations",
-      "url": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T10:30:00+00:00",
-      "published_ts": 1793183400.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "cc5d54e593d0d2a7",
-      "title": "Millions of security cameras at risk: DoS vulnerability in Intelbras devices",
-      "summary": "During our research, we discovered a denial-of-service vulnerability that could affect millions of Intelbras IP camera systems built on the platform platform of a popular Chinese manufacturer.",
-      "url": "https://securelist.com/intelbras-camera-vulnerability/121131/",
-      "source": "Securelist (Kaspersky)",
-      "source_trust": 4,
-      "category": "threat",
-      "published": "2026-10-28T10:00:18+00:00",
-      "published_ts": 1793181618.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "299a0d7187d6b535",
-      "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
-      "summary": "Interpol's annual Operation Serengeti, now in its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-28T06:00:00+00:00",
-      "published_ts": 1793167200.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Africa"
-      ],
-      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 0,
