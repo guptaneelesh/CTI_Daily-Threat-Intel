@@ -1,19 +1,18 @@
 {
-  "generated_at": "2026-11-01T21:43:57.210203+00:00",
+  "generated_at": "2026-11-02T04:38:31.865007+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 71,
-    "critical": 1,
+    "all": 69,
+    "critical": 0,
     "high": 2,
     "medium": 7,
-    "low": 61,
-    "actively_exploited": 10,
-    "with_cves": 6
+    "low": 60,
+    "actively_exploited": 9,
+    "with_cves": 5
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
-    "CISA KEV",
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
@@ -25,72 +24,6 @@
     "The Record"
   ],
   "items": [
-    {
-      "id": "5f4b84c32c14c205",
-      "title": "CVE-2026-111357: Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability (Ivanti Connect Secure)",
-      "summary": "CISA KEV — actively exploited. Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-02).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-30T00:00:00+00:00",
-      "published_ts": 1793318400.0,
-      "cves": [
-        "CVE-2026-111357"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [
-        "Ivanti"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 75,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-          "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-          "published": "2026-10-31T08:27:43+00:00"
-        }
-      ]
-    },
-    {
-      "id": "2fe26d428226bf0b",
-      "title": "CVE-2026-118527: Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability (Ivanti Connect Secure)",
-      "summary": "CISA KEV — actively exploited. Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-13).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-10-30T00:00:00+00:00",
-      "published_ts": 1793318400.0,
-      "cves": [
-        "CVE-2026-118527"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Ivanti"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": []
-    },
     {
       "id": "5549abbf40d4aa66",
       "title": "Russian Hackers Exploit MDaemon Mail Server Flaw to Install Backdoors Without User Interaction",
@@ -114,6 +47,36 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 60,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "511006b920d2f4df",
+      "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS score: 8.8) - A missing authentication for a critical function vulnerability that could allow a",
+      "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-10-31T08:27:43+00:00",
+      "published_ts": 1793435263.0,
+      "cves": [
+        "CVE-2026-111357"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [
+        "Ivanti"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
       "priority_label": "High",
       "related_sources": []
     },
@@ -1502,32 +1465,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1d48c97013a71221",
-      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
-      "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far.&nbsp; Tether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The",
-      "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-10-30T04:14:59+00:00",
-      "published_ts": 1793333699.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Exchange"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
