@@ -1,17 +1,18 @@
 {
-  "generated_at": "2026-11-03T13:41:23.209366+00:00",
+  "generated_at": "2026-11-03T22:56:07.638365+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 74,
+    "all": 91,
     "critical": 0,
-    "high": 2,
-    "medium": 11,
-    "low": 61,
-    "actively_exploited": 7,
-    "with_cves": 3
+    "high": 3,
+    "medium": 10,
+    "low": 78,
+    "actively_exploited": 6,
+    "with_cves": 6
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
     "Check Point Research",
     "CrowdStrike Blog",
     "Dark Reading",
@@ -20,11 +21,48 @@
     "Microsoft Security Blog",
     "Securelist (Kaspersky)",
     "SecurityWeek",
+    "SentinelOne Labs",
     "The Hacker News",
     "The Record",
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "1e082f997c3ea81f",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of&nbsp; KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the&nbsp; specified criteria . Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential ",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-11-03T12:00:00+00:00",
+      "published_ts": 1793707200.0,
+      "cves": [
+        "CVE-2026-119977"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "WordPress"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
+          "title": "CVE-2026-119977: WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability (WordPress WordPress Core)",
+          "published": "2026-11-03T00:00:00+00:00"
+        }
+      ]
+    },
     {
       "id": "375ab5d653c01b0c",
       "title": "2nd November – Threat Intelligence Report",
@@ -47,26 +85,26 @@
       ],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 60,
+      "priority_score": 55,
       "priority_label": "High",
       "related_sources": []
     },
     {
-      "id": "1002291a2862b02d",
-      "title": "Michigan State cyber incident claimed by ransomware gang behind recent hospital attack",
-      "summary": "A recent post by the BYOD gang appears to line up with a security incident that prompted campus-wide action at Michigan State University. BYOD drew attention in October for an attack on the University of New Mexico.",
-      "url": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
-      "source": "The Record",
+      "id": "d34c136fcb39cc8f",
+      "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+      "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through phishing, source code leaks, misconfigured environments, or exposed client-side code",
+      "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-02T19:54:00+00:00",
-      "published_ts": 1793649240.0,
+      "published": "2026-11-03T15:41:53+00:00",
+      "published_ts": 1793720513.0,
       "cves": [],
       "sectors": [
-        "Life Sciences & Health Care"
+        "Technology, Media & Telecom"
       ],
       "regions": [
-        "North America"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": true,
@@ -119,59 +157,6 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "ac7365a24cded03d",
-      "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
-      "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T09:33:26+00:00",
-      "published_ts": 1793612006.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Ivanti"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 45,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
-      "id": "38f9cb990551d10b",
-      "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
-      "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T12:47:00+00:00",
-      "published_ts": 1793623620.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitLab"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
       "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
@@ -195,6 +180,35 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 35,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "73b8b9bc04226e1d",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 &lt;=5.29.x (CVE-2026-63017) PowerSYSTEM Center 2024 &gt;=6.0.x|&lt;=6.2.x (CVE-2026-63017, CVE-2026-63774) PowerSYSTEM Center 2026 &gt;=7.0.x|&lt;=7.1.x (CVE-2026-63017, CVE-2026-63774) CVSS Vendor Equipment v3 9 Subnet Solutions PowerSYSTEM Center 2 Vulnerabilities Incorrect Authorization, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Canada Vulnerabilities Expand All + CVE-2026-63017 Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators. Read More 3 Affected Products Subnet Solutions PowerSYSTEM Center 2024 &gt;=6.0.x|&lt;=6.2.x Product Status: known_affected Remediations Mitigation For users who are currently using PowerSYSTEM Center 2024, Subnet Solutions recommends users upgrade to PowerSYSTEM Center 2026 Update 1.1. For assistance in upgrading, users should contact the Subnet Solutions System Integration team or customer support team at (403) 270-8885 or by email at support@subnet.com. If unable to update to the latest version, Subnet S",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-11-03T12:00:00+00:00",
+      "published_ts": 1793707200.0,
+      "cves": [
+        "CVE-2026-63017",
+        "CVE-2026-63774"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -493,15 +507,15 @@
       "related_sources": []
     },
     {
-      "id": "a45c4359e6cb1bac",
-      "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
-      "summary": "Real-world exploitation concentrates in a small, high-impact subset of CVEs. Learn how defenders can prioritize vulnerabilities based on exploitation likelihood, exposure, and potential blast radius. The post What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks appeared first on Microsoft Security Blog .",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-      "source": "Microsoft Security Blog",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-11-02T20:20:59+00:00",
-      "published_ts": 1793650859.0,
+      "id": "e30a77f1d2893cbf",
+      "title": "Google dismantles massive botnet hidden in Android TV boxes",
+      "summary": "The overwhelming majority of the infected devices in the X.CPE botnet are Android TV set-top boxes, Google said, adding that they observed a number of other infected Android-based IoT devices, including telehealth devices, karaoke machines and digital signage devices.",
+      "url": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T19:48:00+00:00",
+      "published_ts": 1793735280.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
@@ -510,27 +524,28 @@
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Android"
+      ],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "58701184b242df69",
-      "title": "Microsoft's AI Risk Report Misses This Key Detail",
-      "summary": "The latest &quot;Digital Defense Report&quot; identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
-      "source": "Dark Reading",
+      "id": "90eef3e51288b8ef",
+      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
+      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+      "source": "The Hacker News",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-02T15:00:00+00:00",
-      "published_ts": 1793631600.0,
+      "published": "2026-11-03T18:46:38+00:00",
+      "published_ts": 1793731598.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Government & Public Services",
         "Technology, Media & Telecom"
       ],
       "regions": [
@@ -539,7 +554,134 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 20,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "50141c6e235d5de4",
+      "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
+      "summary": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session. The post Fake-download campaign uses trojanized installers to deliver monetization payloads appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-11-03T17:32:47+00:00",
+      "published_ts": 1793727167.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "29546a3b6421aa19",
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms",
+      "summary": "Read why Gartner named Microsoft a Leader in the inaugural 2026 Magic Quadrant for AI Agent Management Platforms. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-11-03T17:00:00+00:00",
+      "published_ts": 1793725200.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6fe9c0602d3dc6a8",
+      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers. \"It was not a single isolated breach or a simple phishing incident,\"",
+      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T16:55:58+00:00",
+      "published_ts": 1793724958.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Exchange"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "91790a5f1eece2b2",
+      "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+      "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection vulnerability, have been assigned the CVE identifiers CVE-2026-116606 (CVSS score: 9.3)",
+      "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T15:59:19+00:00",
+      "published_ts": 1793721559.0,
+      "cves": [
+        "CVE-2026-116606"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "55a10e9c4273ea4e",
+      "title": "Barracuda warns of critical flaws allowing root access to devices",
+      "summary": "Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T15:06:16+00:00",
+      "published_ts": 1793718376.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -664,126 +806,19 @@
       "related_sources": []
     },
     {
-      "id": "f4538c6d2eee1699",
-      "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
-      "summary": "Google and industry partners have dismantled the XCPE malware botnet consisting of more than 1.3 million Android TV streaming TV boxes that Google says its manufacturer intentionally infected with malware to generate revenue through cybercrime activities. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T18:16:34+00:00",
-      "published_ts": 1793643394.0,
+      "id": "a45c4359e6cb1bac",
+      "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
+      "summary": "Real-world exploitation concentrates in a small, high-impact subset of CVEs. Learn how defenders can prioritize vulnerabilities based on exploitation likelihood, exposure, and potential blast radius. The post What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-11-02T20:20:59+00:00",
+      "published_ts": 1793650859.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
         "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "aa9d3a3b5eb264c3",
-      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T16:57:56+00:00",
-      "published_ts": 1793638676.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ce0a1167c3061947",
-      "title": "Russia's statistics agency confirms cyberattack claimed by Belarusian and Ukrainian hackers",
-      "summary": "An alliance of Belarusian and pro-Ukrainian hackers claimed to have taken out Russia's federal statistics agency, Rosstat, and stolen vast amounts of sensitive government data in a cyberattack.",
-      "url": "https://therecord.media/hackers-ukraine-belarus-russia",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T16:30:00+00:00",
-      "published_ts": 1793637000.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e9006c38dc358e57",
-      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
-      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T15:50:26+00:00",
-      "published_ts": 1793634626.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "430175d3825ddfd2",
-      "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
-      "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T15:03:07+00:00",
-      "published_ts": 1793631787.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
       ],
       "regions": [
         "Unspecified"
@@ -796,19 +831,20 @@
       "related_sources": []
     },
     {
-      "id": "c2a7a3975d488755",
-      "title": "Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk",
-      "summary": "The Florida Department of Education says SSNs and other personal data may have been exposed in a breach of its financial aid website. The post Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
-      "source": "SecurityWeek",
+      "id": "58701184b242df69",
+      "title": "Microsoft's AI Risk Report Misses This Key Detail",
+      "summary": "The latest &quot;Digital Defense Report&quot; identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-02T14:44:18+00:00",
-      "published_ts": 1793630658.0,
+      "published": "2026-11-02T15:00:00+00:00",
+      "published_ts": 1793631600.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
-        "Financial Services"
+        "Government & Public Services",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Unspecified"
@@ -873,6 +909,272 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c18e4c13cf8a1857",
+      "title": "Fresh European Fridge Attacks Put Cold-Chain Security in Focus",
+      "summary": "Beyond food storage, the same combination of Internet connectivity, remote access, and inadequate security practices can put temperature-controlled infrastructure across other critical sectors at risk.",
+      "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T22:16:49+00:00",
+      "published_ts": 1793744209.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5ae1e30d3191de44",
+      "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
+      "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T21:57:12+00:00",
+      "published_ts": 1793743032.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6b134c0edc87ddc9",
+      "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+      "summary": "Cryptocurrency exchange Binance says North Korean hackers used a fake job interview to trick an employee into installing malware that ultimately let them compromise the company's wallet infrastructure and steal about $6.34 billion in digital assets. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T20:05:50+00:00",
+      "published_ts": 1793736350.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [
+        "Exchange"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "ced9eb58dee7119e",
+      "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
+      "summary": "Large language model hijacking attacks, also known as LLMjacking, are generating large fraudulent cloud charges, with some organizations losing more than $100,000 per day. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T18:51:04+00:00",
+      "published_ts": 1793731864.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a878114811f5f808",
+      "title": "Several German lawmakers and foreign policy staff received Apple warnings on spyware",
+      "summary": "Members of Germany's political elite were among the spyware targets in 99 countries that Apple personally warned recently.",
+      "url": "https://therecord.media/german-officials-among-apple-spyware-warning-recipients",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T18:44:00+00:00",
+      "published_ts": 1793731440.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d9448caa53ba7542",
+      "title": "British businesses caught in Europe-wide supermarket fridge attacks",
+      "summary": "Supermarket and grocery store refrigerator controls across Europe were hacked in the early hours of Monday in the second such wave of attacks in recent weeks — following a first wave in France — with unidentified perpetrators defrosting fridges and causing stock to spoil.",
+      "url": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T17:43:00+00:00",
+      "published_ts": 1793727780.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "cca9f0d32072a504",
+      "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
+      "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits that help reduce enterprise risk.",
+      "url": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T15:38:20+00:00",
+      "published_ts": 1793720300.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d6c6a50d9eb55c29",
+      "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
+      "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. The attacker has since taken some of that data. cPGuard 5.88.25 and later versions",
+      "url": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T15:16:32+00:00",
+      "published_ts": 1793718992.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "03a2f094f8934596",
+      "title": "Frontline Education Data Breach Impacts Over 1.3 Million",
+      "summary": "Hackers exploited a flaw in third-party software and stole the personal information of school district staff and students. The post Frontline Education Data Breach Impacts Over 1.3 Million appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T14:32:38+00:00",
+      "published_ts": 1793716358.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "a5137fe20274b753",
+      "title": "UK school estate hit by 3AM ransomware in suspected AI-assisted attack",
+      "summary": "A 3AM ransomware affiliate targeted a school estate in the UK and successfully encrypted around 37 of nearly 50 machines reached from an unmanaged host. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T14:00:00+00:00",
+      "published_ts": 1793714400.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "477bce8564c34d6b",
+      "title": "Free the Model, Sell the Gateway: Prompt Adware hidden in Jailbreak Bundles",
+      "summary": "Key Points Free the Model, Sell the Gateway: Prompt Adware hidden in Jailbreak Bundles Check Point Research found a misconfigured webserver of a threat actor operating the Cobalt Strike framework. Besides an open Cobalt Strike server, whose logs showed the actor compromising various private computers of Chinese speaking individuals, other tools from the toolkit of [&#8230;] The post Free the Model, Sell the Gateway: Prompt Adware hidden in Jailbreak Bundles appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-11-03T13:57:04+00:00",
+      "published_ts": 1793714224.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1187,193 +1489,126 @@
       "related_sources": []
     },
     {
-      "id": "b51905babccd3c33",
-      "title": "Largest crypto exchange in Brazil confirms cyberattack as millions flow out of platform",
-      "summary": "Blockchain security companies said more than $46 million left the Mercado Bitcoin platform.",
-      "url": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T21:42:00+00:00",
-      "published_ts": 1793655720.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Latin America"
-      ],
-      "products": [
-        "Exchange"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d29eb617fe9447b0",
-      "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
-      "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+      "id": "f4538c6d2eee1699",
+      "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
+      "summary": "Google and industry partners have dismantled the XCPE malware botnet consisting of more than 1.3 million Android TV streaming TV boxes that Google says its manufacturer intentionally infected with malware to generate revenue through cybercrime activities. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-02T19:00:45+00:00",
-      "published_ts": 1793646045.0,
-      "cves": [],
-      "sectors": [
-        "Financial Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d540e4c8a7fd0239",
-      "title": "Polymarket pledges to give $3.9 million back to victims after site compromise",
-      "summary": "In a post-mortem about an October 29 incident, prediction market Polymarket said it will pay people back what they lost, as well as compensate them for the site's downtime.",
-      "url": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T17:05:20+00:00",
-      "published_ts": 1793639120.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Edge"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "1c9752f077fb09f6",
-      "title": "Your Mobile Carrier Stores Your Call Logs for Years",
-      "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T15:01:11+00:00",
-      "published_ts": 1793631671.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f8711412a5c4e95c",
-      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
-      "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T14:46:05+00:00",
-      "published_ts": 1793630765.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Middle East"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "215dbbde4bb771d1",
-      "title": "Hackers disrupt refrigeration systems at European supermarkets",
-      "summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T14:28:39+00:00",
-      "published_ts": 1793629719.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "ac836f760a3d6f38",
-      "title": "Microsoft fixes Smart App Control broken by October Windows update",
-      "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T13:57:29+00:00",
-      "published_ts": 1793627849.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "35615b16ef7633ca",
-      "title": "Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward",
-      "summary": "The top payout is for high-impact architectural research demonstrating full administrative control. The post Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T13:25:11+00:00",
-      "published_ts": 1793625911.0,
+      "published": "2026-11-02T18:16:34+00:00",
+      "published_ts": 1793643394.0,
       "cves": [],
       "sectors": [
         "Energy Resources & Industrials",
         "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "aa9d3a3b5eb264c3",
+      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T16:57:56+00:00",
+      "published_ts": 1793638676.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android",
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e9006c38dc358e57",
+      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
+      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T15:50:26+00:00",
+      "published_ts": 1793634626.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "430175d3825ddfd2",
+      "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+      "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T15:03:07+00:00",
+      "published_ts": 1793631787.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c2a7a3975d488755",
+      "title": "Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk",
+      "summary": "The Florida Department of Education says SSNs and other personal data may have been exposed in a breach of its financial aid website. The post Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T14:44:18+00:00",
+      "published_ts": 1793630658.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Financial Services"
       ],
       "regions": [
         "Unspecified"
@@ -1413,27 +1648,222 @@
       "related_sources": []
     },
     {
-      "id": "c9e8facc0b6e8adf",
-      "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
-      "summary": "The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist on record. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+      "id": "7010799f9205290c",
+      "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+      "summary": "Attackers have compromised the update infrastructure for the cPGuard web security suite to distribute a backdoor and a data-stealing script. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-01T19:57:53+00:00",
-      "published_ts": 1793563073.0,
+      "published": "2026-11-03T22:18:50+00:00",
+      "published_ts": 1793744330.0,
       "cves": [],
-      "sectors": [
-        "Financial Services",
-        "Government & Public Services"
+      "sectors": [],
+      "regions": [
+        "Unspecified"
       ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "816385f3c6d6bd93",
+      "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+      "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T21:28:44+00:00",
+      "published_ts": 1793741324.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "dffe5908bac1f2f9",
+      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker gained unauthorized access to part of",
+      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T18:16:19+00:00",
+      "published_ts": 1793729779.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "67e54c0e07720219",
+      "title": "Binance CEO says ‘months-long campaign’ led to $6.3 billion theft as N. Korea denies responsibility",
+      "summary": "North Korean attackers \"combined a range of techniques, including social engineering by fake recruitment interviews,\" Binance said about the multibillion-dollar crypto heist it discovered in October.",
+      "url": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T16:42:00+00:00",
+      "published_ts": 1793724120.0,
+      "cves": [],
+      "sectors": [],
       "regions": [
         "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c986e5328c0dd458",
+      "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
+      "summary": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
+      "url": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T15:35:50+00:00",
+      "published_ts": 1793720150.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9a8df074ee152dc3",
+      "title": "Gartner Predicts SOCs Will Have 50% More Engineers Than Analysts by 2028",
+      "summary": "Gartner predicts that security operations centers will have 50% more engineers than analysts by 2028 as AI agents take over routine alert handling. Prophet Security examines how AI is reshaping SOC roles, from analyst responsibilities and detection engineering to threat hunting and exposure management. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T15:00:10+00:00",
+      "published_ts": 1793718010.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2d99b33b5cd30a5a",
+      "title": "Defrost and Disrupt | An Assessment of Europe’s Refrigeration Attacks",
+      "summary": "Store fridges and freezers warmed overnight in six countries on November 2-3. Russian-aligned groups are credible suspects, but attribution remains open.",
+      "url": "https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/",
+      "source": "SentinelOne Labs",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-11-03T14:57:27+00:00",
+      "published_ts": 1793717847.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "d50e86a99c5625e2",
+      "title": "CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode",
+      "summary": "The acquisitions will add AI agent observability and automated AI security testing capabilities to the CrowdStrike Falcon platform. The post CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T14:12:44+00:00",
+      "published_ts": 1793715164.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3c4f0ec24eaf90cd",
+      "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
+      "summary": "Evidence suggests a model may have generated and revised commands during the ransom gang's breach, though researchers stopped short of claiming full automation.",
+      "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T14:00:00+00:00",
+      "published_ts": 1793714400.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2a66d8f9cbc1b91b",
+      "title": "Russia dismantles infrastructure of VasyGrek cybercrime group, detains three suspects",
+      "summary": "Russia's Interior Ministry said Monday that police had dismantled the group's infrastructure and identified its suspected members following an investigation conducted with assistance from cybersecurity firm Kaspersky.",
+      "url": "https://therecord.media/russia-dismantles-vasygrek-infrastructure-detains-three",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-03T13:50:00+00:00",
+      "published_ts": 1793713800.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1527,111 +1957,69 @@
       "related_sources": []
     },
     {
-      "id": "1aaf4c12e2b4e51c",
-      "title": "UK faces ‘unprecedented rise’ in cyberattacks in coming months, warns cyber chief",
-      "summary": "\"[V]ulnerabilities that have been tolerated for far too long can now be discovered and exploited at a scale that was once unimaginable,\" the NCSC's chief will warn in releasing the agency's annual report.",
-      "url": "https://therecord.media/uk-ncsc-predicts-rise-cyberattacks-coming-months",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-03T00:01:00+00:00",
-      "published_ts": 1793664060.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "23bf6ffbed05d560",
-      "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
-      "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+      "id": "d29eb617fe9447b0",
+      "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+      "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-02T21:40:14+00:00",
-      "published_ts": 1793655614.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "0a0ea7f3221646ce",
-      "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
-      "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. The post Cybersecurity M&#038;A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T15:01:11+00:00",
-      "published_ts": 1793631671.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f42a903306046058",
-      "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
-      "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T14:00:00+00:00",
-      "published_ts": 1793628000.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8d83cc5220091ecb",
-      "title": "Revolve Data Breach Impacts at Least 200,000 People",
-      "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 200,000 People appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T13:35:21+00:00",
-      "published_ts": 1793626521.0,
+      "published": "2026-11-02T19:00:45+00:00",
+      "published_ts": 1793646045.0,
       "cves": [],
       "sectors": [
         "Financial Services"
       ],
       "regions": [
         "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1c9752f077fb09f6",
+      "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+      "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T15:01:11+00:00",
+      "published_ts": 1793631671.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f8711412a5c4e95c",
+      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
+      "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T14:46:05+00:00",
+      "published_ts": 1793630765.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Middle East"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1656,28 +2044,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "89cd7f8785c38897",
-      "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
-      "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-02T11:28:42+00:00",
-      "published_ts": 1793618922.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1787,23 +2153,66 @@
       "related_sources": []
     },
     {
-      "id": "2070c22e1ea3d03a",
-      "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
-      "summary": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+      "id": "23bf6ffbed05d560",
+      "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+      "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-01T15:11:21+00:00",
-      "published_ts": 1793545881.0,
+      "published": "2026-11-02T21:40:14+00:00",
+      "published_ts": 1793655614.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "0a0ea7f3221646ce",
+      "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
+      "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. The post Cybersecurity M&#038;A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T15:01:11+00:00",
+      "published_ts": 1793631671.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 0,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f42a903306046058",
+      "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
+      "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-02T14:00:00+00:00",
+      "published_ts": 1793628000.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific"
+      ],
       "products": [
-        "GitLab",
-        "Linux"
+        "Windows"
       ],
       "actively_exploited": false,
       "cvss": null,
