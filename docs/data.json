@@ -1,26 +1,145 @@
 {
-  "generated_at": "2026-11-09T15:18:04.754748+00:00",
+  "generated_at": "2026-11-10T01:12:36.186326+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 51,
+    "all": 63,
     "critical": 0,
-    "high": 2,
-    "medium": 9,
-    "low": 40,
-    "actively_exploited": 4,
-    "with_cves": 2
+    "high": 9,
+    "medium": 10,
+    "low": 44,
+    "actively_exploited": 11,
+    "with_cves": 6
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
+    "CISA KEV",
+    "Check Point Research",
     "Dark Reading",
     "GBHackers",
     "Microsoft Security Blog",
     "SecurityWeek",
     "The Hacker News",
-    "The Record",
-    "Unit 42 (Palo Alto)"
+    "The Record"
   ],
   "items": [
+    {
+      "id": "8443ae499c13e962",
+      "title": "CVE-2026-123158: OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability (OpenBSD OpenSSH)",
+      "summary": "CISA KEV — actively exploited. OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-12).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-09T00:00:00+00:00",
+      "published_ts": 1794182400.0,
+      "cves": [
+        "CVE-2026-123158"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
+          "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
+          "published": "2026-11-09T16:04:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "637e2d96c381f957",
+      "title": "CVE-2026-102895: GPUStack Improper Authentication Vulnerability (GPUStack GPUStack)",
+      "summary": "CISA KEV — actively exploited. GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-12).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-09T00:00:00+00:00",
+      "published_ts": 1794182400.0,
+      "cves": [
+        "CVE-2026-102895"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "1382c992c5a381f9",
+      "title": "CVE-2026-116779: SignalWire FreeSwitch Code Injection Vulnerability (SignalWire FreeSwitch)",
+      "summary": "CISA KEV — actively exploited. SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-12).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-09T00:00:00+00:00",
+      "published_ts": 1794182400.0,
+      "cves": [
+        "CVE-2026-116779"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "fbfe264ee5485fe4",
+      "title": "CVE-2026-123218: IBM Aspera Faspex Incorrect Authorization Vulnerability (IBM Aspera Faspex)",
+      "summary": "CISA KEV — actively exploited. IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-12).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-09T00:00:00+00:00",
+      "published_ts": 1794182400.0,
+      "cves": [
+        "CVE-2026-123218"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
     {
       "id": "a80b9d58faf31c82",
       "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
@@ -63,6 +182,80 @@
       ]
     },
     {
+      "id": "5e549e646cdbd10d",
+      "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+      "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T21:38:20+00:00",
+      "published_ts": 1794260300.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "0ac8b0ffcdf1920e",
+      "title": "PwC's CISO on AI, Robots &amp; What's Next for Security",
+      "summary": "As AI accelerates change across the enterprise, PwC's James Shira explains why security teams must rethink their approach to risk and adapt their strategies.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T17:17:23+00:00",
+      "published_ts": 1794244643.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "6cbaa9c9d5d05543",
+      "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+      "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said. \"Its capabilities include command execution, file",
+      "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T14:31:29+00:00",
+      "published_ts": 1794234689.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [
+        "Fortinet"
+      ],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "74847e25efd5c677",
       "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
       "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic, stealing credentials from network devices, and finding new uses for exposed",
@@ -87,15 +280,15 @@
       "related_sources": []
     },
     {
-      "id": "261b61badb1a09b3",
-      "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
-      "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+      "id": "abac9ef19d15c8e1",
+      "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+      "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-07T00:00:55+00:00",
-      "published_ts": 1794009655.0,
+      "published": "2026-11-09T23:52:12+00:00",
+      "published_ts": 1794268332.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -104,31 +297,29 @@
       "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 35,
+      "priority_score": 45,
       "priority_label": "Medium",
       "related_sources": []
     },
     {
-      "id": "375bdf227ab16f6d",
-      "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-      "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The researcher advises blocking web access to the",
-      "url": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-      "source": "The Hacker News",
+      "id": "5f28ff3653b9ca4d",
+      "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+      "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+      "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-06T16:08:38+00:00",
-      "published_ts": 1793981318.0,
+      "published": "2026-11-09T21:26:25+00:00",
+      "published_ts": 1794259585.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [
-        "WordPress"
-      ],
+      "products": [],
       "actively_exploited": true,
       "cvss": null,
-      "priority_score": 35,
+      "priority_score": 40,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -157,6 +348,32 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 30,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "998100177cad6740",
+      "title": "Data breach at hearing aid giant Amplifon impacts thousands",
+      "summary": "The U.S arm of international hearing aid company Amplifon has been notifying customers about a data breach early this year that included medical information.",
+      "url": "https://therecord.media/amplifon-hearing-aid-company-data-breach",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T20:44:00+00:00",
+      "published_ts": 1794257040.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Life Sciences & Health Care"
+      ],
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
       "priority_label": "Medium",
       "related_sources": []
     },
@@ -317,6 +534,31 @@
       "related_sources": []
     },
     {
+      "id": "e878922aeeebf735",
+      "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+      "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees. The post FORGE Lab uses agentic tools to identify memory safety issues in Rust appeared first on Microsoft Security Blog .",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+      "source": "Microsoft Security Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-11-09T20:17:31+00:00",
+      "published_ts": 1794255451.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "8ca16032730fd370",
       "title": "US bans MEXC crypto exchange over sanctions evasion, cybercrime links",
       "summary": "The US Department of the Treasury has cut off the MEXC Global crypto exchange from the US financial system over sanctions evasion and links with cybercrime gangs. [...]",
@@ -358,6 +600,36 @@
       ],
       "regions": [
         "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "da349f67e99c35db",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.&nbsp; CVE-2026-102895 GPUStack Improper Authentication Vulnerability&nbsp; CVE-2026-116779 SignalWire FreeSwitch Code Injection Vulnerability&nbsp; CVE-2026-123158 OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability&nbsp; CVE-2026-123218 IBM Aspera Faspex Incorrect Authorization Vulnerability&nbsp; These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.&nbsp; Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.&nbsp; While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of ",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-11-09T12:00:00+00:00",
+      "published_ts": 1794225600.0,
+      "cves": [
+        "CVE-2026-102895",
+        "CVE-2026-116779",
+        "CVE-2026-123158",
+        "CVE-2026-123218"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
@@ -447,6 +719,83 @@
       "related_sources": []
     },
     {
+      "id": "a9b774ac62263c11",
+      "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
+      "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T20:19:56+00:00",
+      "published_ts": 1794255596.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "products": [
+        "Edge",
+        "Exchange"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "aa708a62332c218c",
+      "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+      "summary": "France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers, saying the attacks caused food losses and sparked at least 15 fires. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T18:32:42+00:00",
+      "published_ts": 1794249162.0,
+      "cves": [],
+      "sectors": [
+        "Consumer",
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Middle East"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "153ecc574c365ef6",
+      "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+      "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those credentials has not been disclosed. Qubole, a data lake platform owned by Idera,",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T17:51:21+00:00",
+      "published_ts": 1794246681.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "1b389a794e5cd7f1",
       "title": "FBI agent stole $2.5 million in crypto from hackers under investigation",
       "summary": "A former FBI agent has pleaded guilty to stealing nearly $2.5 million from the wallets of fraud victims and nation-state hackers under investigation. [...]",
@@ -462,31 +811,6 @@
       ],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "e600d624492c8c36",
-      "title": "Pro-Russian hackers target European officials, offer rewards for personal information",
-      "summary": "Pro-Russian hackers published the personal information of Italian Foreign Minister Antonio Tajani and other senior European officials on the dark web, offering cryptocurrency rewards for additional details about them and their families.",
-      "url": "https://therecord.media/hackers-russia-italy-noname",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-09T13:15:00+00:00",
-      "published_ts": 1794230100.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Financial Services"
-      ],
-      "regions": [
-        "Europe"
       ],
       "products": [],
       "actively_exploited": false,
@@ -568,19 +892,70 @@
       "related_sources": []
     },
     {
-      "id": "20fd99ac0105353e",
-      "title": "FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers",
-      "summary": "Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative squad to steal more than $2.4 million in cryptocurrency to cover his debts.",
-      "url": "https://therecord.media/fbi-agent-pleads-guilty-to-stealing-from-nation-state-hackers",
+      "id": "b5cc65135b179ae6",
+      "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
+      "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
+      "url": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T21:12:24+00:00",
+      "published_ts": 1794258744.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Windows"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "914420d2496bbde3",
+      "title": "France blames Iran for fridge cyberattacks, says some caused fires",
+      "summary": "In the first attribution since the October attacks, the French authorities identified the perpetrators as part of Shahid Kaveh, an IRGC cyber unit previously linked to attacks on industrial controllers at U.S. water utilities.",
+      "url": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks",
       "source": "The Record",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-06T16:53:00+00:00",
-      "published_ts": 1793983980.0,
+      "published": "2026-11-09T18:45:00+00:00",
+      "published_ts": 1794249900.0,
       "cves": [],
       "sectors": [
-        "Financial Services",
-        "Government & Public Services"
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe",
+        "Middle East",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "048eb0b52306beea",
+      "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+      "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the stored password that unlocks it. The code is also built to install a backdoor",
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T17:36:28+00:00",
+      "published_ts": 1794245788.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
@@ -588,7 +963,55 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "30549e58a3f94f10",
+      "title": "9th November – Threat Intelligence Report",
+      "summary": "For the latest discoveries in cyber research for the week of 9th November, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Queens Public Library, a New York City public library system serving approximately 2.3 million residents, was struck by a ransomware attack that encrypted its systems. The incident disrupted public computers, Wi-Fi, checkout [&#8230;] The post 9th November – Threat Intelligence Report appeared first on Check Point Research .",
+      "url": "https://research.checkpoint.com/2026/9th-november-threat-intelligence-report/",
+      "source": "Check Point Research",
+      "source_trust": 4,
+      "category": "threat",
+      "published": "2026-11-09T16:15:41+00:00",
+      "published_ts": 1794240941.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1a699baef6f1a4a1",
+      "title": "Binance denies data breach after alleged ShinyHunters claims",
+      "summary": "Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T16:12:39+00:00",
+      "published_ts": 1794240759.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Exchange"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -786,51 +1209,159 @@
       "related_sources": []
     },
     {
-      "id": "f6bd23d66c4feb4c",
-      "title": "Turning Up the Heat: Inside the Attacks on Europe’s Refrigeration System",
-      "summary": "Unit 42 examines recent cyberattacks targeting European refrigeration systems and outlines defense and mitigation strategies. The post Turning Up the Heat: Inside the Attacks on Europe’s Refrigeration System appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-11-06T21:15:09+00:00",
-      "published_ts": 1793999709.0,
+      "id": "4c6bad67ade63e91",
+      "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
+      "summary": "Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T22:09:33+00:00",
+      "published_ts": 1794262173.0,
       "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
+      "sectors": [],
       "regions": [
-        "Europe"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
     {
-      "id": "746ef1e480e1eb8a",
-      "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
-      "summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
+      "id": "e02eb7fde64802d7",
+      "title": "York University breach exposed personal information dating to 2007",
+      "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-06T15:25:31+00:00",
-      "published_ts": 1793978731.0,
+      "published": "2026-11-09T21:22:31+00:00",
+      "published_ts": 1794259351.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
         "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 10,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3bcfbe775cb0f954",
+      "title": "Vanderbilt cybersecurity incident impacting campus devices and systems",
+      "summary": "Vanderbilt University announced a cyberattack, warning students and employees that campus devices and systems may be impacted by the incident.",
+      "url": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T18:30:00+00:00",
+      "published_ts": 1794249000.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "387513c0241b9dcd",
+      "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
+      "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
+      "url": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T18:08:30+00:00",
+      "published_ts": 1794247710.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Linux",
+        "Office"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9ec694930eee3582",
+      "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+      "summary": "A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T17:50:32+00:00",
+      "published_ts": 1794246632.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8b6428206c503e47",
+      "title": "NIST: Solo Shouldn't Mean Less Secure",
+      "summary": "New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T15:46:10+00:00",
+      "published_ts": 1794239170.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "74a431f28769f8af",
+      "title": "Ukraine arrests four in $5 million crypto scam targeting Germans",
+      "summary": "Ukraine's cyber police said the four arrested men included the alleged leader of the scam call centers.",
+      "url": "https://therecord.media/ukraine-arrests-scam-call-centers-germany",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-09T15:24:00+00:00",
+      "published_ts": 1794237840.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -967,28 +1498,6 @@
       "related_sources": []
     },
     {
-      "id": "4d38f1805a0a865b",
-      "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
-      "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-08T15:43:08+00:00",
-      "published_ts": 1794152588.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "1b0ea928d23bd4c4",
       "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
       "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek .",
@@ -1063,212 +1572,19 @@
       "related_sources": []
     },
     {
-      "id": "5b1ad581a5e55aba",
-      "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
-      "summary": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+      "id": "4d38f1805a0a865b",
+      "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+      "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-06T20:24:19+00:00",
-      "published_ts": 1793996659.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Firefox",
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "42af6c035e532566",
-      "title": "Medical services company settles with 4 states over 2023 hack of sensitive patient records",
-      "summary": "The case, brought by AGs in Connecticut, New Jersey, New York and Michigan, targeted the medical transcription, coding and imaging subsidiaries of the Nevada-based Perry Johnson Companies.",
-      "url": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T19:06:00+00:00",
-      "published_ts": 1793991960.0,
-      "cves": [],
-      "sectors": [
-        "Life Sciences & Health Care"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f9b1f7db5e8ba751",
-      "title": "Certificate authority DigiCert reports data breach involving business customer info",
-      "summary": "DigiCert explained that over the summer, an internal business system was \"externally accessible when that was not intended,\" and someone had created an unauthorized account.",
-      "url": "https://therecord.media/digicert-certificate-authority-reports-data-breach",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T18:56:00+00:00",
-      "published_ts": 1793991360.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "23556257ae482054",
-      "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
-      "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH on the musl C library with Pluggable Authentication Modules (PAM) disabled,",
-      "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T15:21:49+00:00",
-      "published_ts": 1793978509.0,
-      "cves": [
-        "CVE-2026-123158"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Linux"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "5d371f27169c192c",
-      "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
-      "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T22:27:25+00:00",
-      "published_ts": 1794004045.0,
+      "published": "2026-11-08T15:43:08+00:00",
+      "published_ts": 1794152588.0,
       "cves": [],
       "sectors": [],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a27126edbfcea480",
-      "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-      "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T21:27:36+00:00",
-      "published_ts": 1794000456.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "84b3cc67607fdf52",
-      "title": "Fake security tools on GitHub push backdoors and infostealers",
-      "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T18:46:52+00:00",
-      "published_ts": 1793990812.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "GitHub"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c76171885f6821b5",
-      "title": "AI Gave Your Incident Archive a Second Job",
-      "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
-      "url": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T18:27:30+00:00",
-      "published_ts": 1793989650.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f2d9923223d992f0",
-      "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
-      "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-06T17:04:23+00:00",
-      "published_ts": 1793984663.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
+        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
