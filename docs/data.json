@@ -1,19 +1,18 @@
 {
-  "generated_at": "2026-11-15T22:30:37.925107+00:00",
+  "generated_at": "2026-11-16T04:55:51.604044+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 58,
-    "critical": 1,
+    "all": 56,
+    "critical": 0,
     "high": 2,
     "medium": 4,
-    "low": 51,
-    "actively_exploited": 4,
+    "low": 50,
+    "actively_exploited": 3,
     "with_cves": 4
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
-    "CISA KEV",
     "Cisco Talos",
     "CrowdStrike Blog",
     "Dark Reading",
@@ -25,75 +24,6 @@
     "The Record"
   ],
   "items": [
-    {
-      "id": "72180106795208f2",
-      "title": "CVE-2026-123039: Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability (Check Point Multiple Products)",
-      "summary": "CISA KEV — actively exploited. Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-16).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-11-13T00:00:00+00:00",
-      "published_ts": 1794528000.0,
-      "cves": [
-        "CVE-2026-123039"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Global"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 80,
-      "priority_label": "Critical",
-      "related_sources": [
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/cisa-check-point-zero-day-vulnerability/",
-          "title": "CISA Warns of Actively Exploited Check Point Zero-Day Vulnerability Allowing Attackers to Gain Root Access",
-          "published": "2026-11-14T07:27:07+00:00"
-        }
-      ]
-    },
-    {
-      "id": "46004557289dc6f3",
-      "title": "CVE-2026-114713: UnrealIRCd Improper Neutralization of Delimiters Vulnerability (UnrealIRCd UnrealIRCd)",
-      "summary": "CISA KEV — actively exploited. UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-16).",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-      "source": "CISA KEV",
-      "source_trust": 5,
-      "category": "vuln",
-      "published": "2026-11-13T00:00:00+00:00",
-      "published_ts": 1794528000.0,
-      "cves": [
-        "CVE-2026-114713"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Europe",
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 70,
-      "priority_label": "High",
-      "related_sources": [
-        {
-          "source": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-          "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-          "published": "2026-11-14T12:38:35+00:00"
-        }
-      ]
-    },
     {
       "id": "cac09f62e51e0def",
       "title": "Hackers Use Stolen LLM API Keys to Power ARTEX AI Agents and Continue Credential Theft",
@@ -117,6 +47,33 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 65,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "04e46fc67891efba",
+      "title": "CISA Warns of Actively Exploited Check Point Zero-Day Vulnerability Allowing Attackers to Gain Root Access",
+      "summary": "CISA has reportedly added CVE-2026-123039, a Check Point Gaia OS permission flaw, to its Known Exploited Vulnerabilities catalog following active exploitation. The entry supplied for this report lists November 13, 2026, as the addition date and November 16 as the remediation deadline. Check Point exploitation reporting nevertheless identifies compromised customers and a practical route from [&#8230;] The post CISA Warns of Actively Exploited Check Point Zero-Day Vulnerability Allowing Attackers to Gain Root Access appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/cisa-check-point-zero-day-vulnerability/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-14T07:27:07+00:00",
+      "published_ts": 1794641227.0,
+      "cves": [
+        "CVE-2026-123039"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
       "priority_label": "High",
       "related_sources": []
     },
@@ -862,6 +819,33 @@
       "related_sources": []
     },
     {
+      "id": "d32d6050d975610d",
+      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-14T12:38:35+00:00",
+      "published_ts": 1794659915.0,
+      "cves": [
+        "CVE-2026-114713"
+      ],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Europe",
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "ee2d73cd5d28b60f",
       "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
       "summary": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure Exclaves Shield Camera and Microphone Data appeared first on SecurityWeek .",
@@ -1413,50 +1397,6 @@
       "category": "mixed",
       "published": "2026-11-13T11:52:31+00:00",
       "published_ts": 1794570751.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "d708c9ef46346b79",
-      "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
-      "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-12T22:53:10+00:00",
-      "published_ts": 1794523990.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "acfd62ca2d10d400",
-      "title": "Getting Past the Post-Quantum Cryptography Discovery Phase",
-      "summary": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC).",
-      "url": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-12T22:46:05+00:00",
-      "published_ts": 1794523565.0,
       "cves": [],
       "sectors": [],
       "regions": [
