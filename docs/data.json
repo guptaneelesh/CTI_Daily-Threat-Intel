@@ -1,28 +1,89 @@
 {
-  "generated_at": "2026-11-23T17:30:27.009653+00:00",
+  "generated_at": "2026-11-24T03:50:37.155901+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 60,
+    "all": 62,
     "critical": 0,
-    "high": 8,
-    "medium": 7,
-    "low": 45,
-    "actively_exploited": 10,
-    "with_cves": 9
+    "high": 10,
+    "medium": 6,
+    "low": 46,
+    "actively_exploited": 11,
+    "with_cves": 10
   },
   "sources_used": [
     "BleepingComputer",
+    "CISA Alerts",
+    "CISA KEV",
     "Check Point Research",
     "Dark Reading",
     "GBHackers",
-    "Krebs on Security",
     "Securelist (Kaspersky)",
     "SecurityWeek",
     "The Hacker News",
-    "The Record",
-    "Unit 42 (Palo Alto)"
+    "The Record"
   ],
   "items": [
+    {
+      "id": "0f36b31fc220ee49",
+      "title": "CVE-2026-134624: N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability (N-able MailAssure)",
+      "summary": "CISA KEV — actively exploited. N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-26).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-23T00:00:00+00:00",
+      "published_ts": 1795392000.0,
+      "cves": [
+        "CVE-2026-134624"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+          "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+          "published": "2026-11-23T12:28:09+00:00"
+        }
+      ]
+    },
+    {
+      "id": "546a0dc7629cb93d",
+      "title": "CVE-2026-133968: Project MONAI MONAI Label Path Traversal Vulnerability (Project MONAI MONAI Label)",
+      "summary": "CISA KEV — actively exploited. Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-26).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-23T00:00:00+00:00",
+      "published_ts": 1795392000.0,
+      "cves": [
+        "CVE-2026-133968"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
     {
       "id": "d452360b4350646e",
       "title": "Hackers Exploit Cisco Expressway CVE-2026-76466 After Public PoC Release to Gain Root Privileges",
@@ -271,32 +332,6 @@
       "related_sources": []
     },
     {
-      "id": "8750e70f6362831d",
-      "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
-      "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-20T21:03:27+00:00",
-      "published_ts": 1795208607.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
-      ],
-      "products": [
-        "VMware vCenter"
-      ],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "a5d0f5b3ef48129e",
       "title": "CrowdStrike Acquires Zscaler in $43.9 Billion Deal to Combine Endpoint and Network Security",
       "summary": "CrowdStrike has agreed to acquire Zscaler in an all-stock transaction valued at approximately $43.9 billion, bringing together two distinct security layers, software that monitors endpoints and cloud workloads, and a cloud service that inspects their connections. The companies announced the definitive agreement on November 23, 2026. It has not yet closed. Under the terms outlined [&#8230;] The post CrowdStrike Acquires Zscaler in $43.9 Billion Deal to Combine Endpoint and Network Security appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
@@ -441,35 +476,107 @@
       "related_sources": []
     },
     {
-      "id": "9fe37ba9bfbf6e7b",
-      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-      "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-22T18:45:37+00:00",
-      "published_ts": 1795373137.0,
-      "cves": [],
+      "id": "81feea1c1b1f9c94",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability &nbsp; CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of an exploited vulnerabil",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-11-23T12:00:00+00:00",
+      "published_ts": 1795435200.0,
+      "cves": [
+        "CVE-2026-133968",
+        "CVE-2026-134624"
+      ],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Government & Public Services"
       ],
       "regions": [
-        "Global"
+        "Unspecified"
       ],
       "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
       "priority_label": "Low",
-      "related_sources": [
-        {
-          "source": "GBHackers",
-          "url": "https://gbhackers.com/hackers-exploit-gl-inet-cloud-security-flaw/",
-          "title": "Hackers Exploit GL.iNet Cloud Security Flaw to Infect Routers and KVM Devices With Malware",
-          "published": "2026-11-23T09:33:56+00:00"
-        }
-      ]
+      "related_sources": []
+    },
+    {
+      "id": "b6503e45a99bbea1",
+      "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+      "summary": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T19:42:20+00:00",
+      "published_ts": 1795462940.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "9639a5ec6ed64fbb",
+      "title": "Signal blocks screenshots by Apple, Google operating systems to protect data from AI agents",
+      "summary": "Google’s Gemini Intelligence and Apple's Siri AI \"are changing this environment in a way that’s making it increasingly hostile to privacy,\" Signal said.",
+      "url": "https://therecord.media/signal-no-screenshots-by-apple-google-operating-systems",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T18:37:00+00:00",
+      "published_ts": 1795459020.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f956f629ee6f2e0f",
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
+      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T17:45:15+00:00",
+      "published_ts": 1795455915.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
     },
     {
       "id": "2820486b14426f10",
@@ -624,45 +731,49 @@
       "related_sources": []
     },
     {
-      "id": "879bb4f00c0ddef8",
-      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-      "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
-      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-      "source": "Krebs on Security",
-      "source_trust": 5,
+      "id": "9fe37ba9bfbf6e7b",
+      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-21T00:36:39+00:00",
-      "published_ts": 1795221399.0,
+      "published": "2026-11-22T18:45:37+00:00",
+      "published_ts": 1795373137.0,
       "cves": [],
       "sectors": [
-        "Government & Public Services"
+        "Energy Resources & Industrials"
       ],
       "regions": [
-        "Unspecified"
+        "Global"
       ],
-      "products": [
-        "Office"
-      ],
+      "products": [],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
       "priority_label": "Low",
-      "related_sources": []
+      "related_sources": [
+        {
+          "source": "GBHackers",
+          "url": "https://gbhackers.com/hackers-exploit-gl-inet-cloud-security-flaw/",
+          "title": "Hackers Exploit GL.iNet Cloud Security Flaw to Infect Routers and KVM Devices With Malware",
+          "published": "2026-11-23T09:33:56+00:00"
+        }
+      ]
     },
     {
-      "id": "4b203a791361e19c",
-      "title": "Dialing for Data: Inside the Com’s High-Profile Heists",
-      "summary": "Our analysis of Com affiliate vishing attacks, cloud data theft and extortion campaigns targeting healthcare and finance, with actionable defense guidance. The post Dialing for Data: Inside the Com’s High-Profile Heists appeared first on Unit 42 .",
-      "url": "https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/",
-      "source": "Unit 42 (Palo Alto)",
-      "source_trust": 5,
-      "category": "threat",
-      "published": "2026-11-20T22:00:25+00:00",
-      "published_ts": 1795212025.0,
+      "id": "c2b0a1c15acaef31",
+      "title": "Industrial Serial Gateways Broadcast That They're Insecure",
+      "summary": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't.",
+      "url": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T22:02:46+00:00",
+      "published_ts": 1795471366.0,
       "cves": [],
       "sectors": [
-        "Government & Public Services",
-        "Life Sciences & Health Care"
+        "Energy Resources & Industrials"
       ],
       "regions": [
         "Unspecified"
@@ -670,7 +781,127 @@
       "products": [],
       "actively_exploited": false,
       "cvss": null,
-      "priority_score": 15,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "af1f4e9003c2bb34",
+      "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
+      "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents.",
+      "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T21:21:42+00:00",
+      "published_ts": 1795468902.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7f6fdc065caac6f6",
+      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+      "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T20:54:51+00:00",
+      "published_ts": 1795467291.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2f546f89344e466f",
+      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+      "summary": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T18:38:40+00:00",
+      "published_ts": 1795459120.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8ad51b11070fc204",
+      "title": "FBI reportedly facing second data breach involving National Crime Information Center",
+      "summary": "The FBI is reportedly investigating a data breach involving the National Crime Information Center, a database used by U.S. law enforcement agencies that contains information on criminals, fugitives and missing people.",
+      "url": "https://therecord.media/fbi-cyberattack-data-breach",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T18:30:00+00:00",
+      "published_ts": 1795458600.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "609abd442a5f934b",
+      "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
+      "summary": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T17:45:52+00:00",
+      "published_ts": 1795455952.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Edge"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -852,31 +1083,6 @@
       "related_sources": []
     },
     {
-      "id": "737f98cf5c0e837f",
-      "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
-      "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities.",
-      "url": "https://therecord.media/west-virginia-legislature-cyberattack",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-20T21:34:36+00:00",
-      "published_ts": 1795210476.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "69024d0a7f34e264",
       "title": "Hackers breach Austrian Foreign Ministry website, access diplomats' contact details",
       "summary": "Austria's Foreign Ministry said late last week that hackers breached one of its websites and accessed the names and official contact information of employees at its Vienna headquarters and at Austria’s diplomatic missions abroad.",
@@ -886,6 +1092,50 @@
       "category": "mixed",
       "published": "2026-11-24T00:00:00+00:00",
       "published_ts": 1795478400.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "6e03dc8e76108db4",
+      "title": "US Cyber Director Pick Signals Shift Toward Expertise",
+      "summary": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T20:13:48+00:00",
+      "published_ts": 1795464828.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "cf87c72a8cfc9ce4",
+      "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+      "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T20:00:20+00:00",
+      "published_ts": 1795464020.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -936,30 +1186,6 @@
         "Unspecified"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f392d620841aad49",
-      "title": "'Overwhelming' support leads Trump to lock in Davies for national cyber czar",
-      "summary": "The Pentagon's chief information officer, who has filled in as the acting national cyber director, is the president's likely pick for the full nomination.",
-      "url": "https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T15:14:00+00:00",
-      "published_ts": 1795446840.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Office"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1068,30 +1294,6 @@
       "published_ts": 1795437664.0,
       "cves": [
         "CVE-2026-84869"
-      ],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "506c9fe62e046d09",
-      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
-      "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the",
-      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T12:28:09+00:00",
-      "published_ts": 1795436889.0,
-      "cves": [
-        "CVE-2026-134624"
       ],
       "sectors": [],
       "regions": [
@@ -1295,56 +1497,6 @@
       "related_sources": []
     },
     {
-      "id": "82822d596c39efe0",
-      "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
-      "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-21T15:17:27+00:00",
-      "published_ts": 1795274247.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "b52a698c9f5969af",
-      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
-      "summary": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-21T14:26:04+00:00",
-      "published_ts": 1795271164.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "b695241aa377097f",
       "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
       "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a laboratory demonstration, not an attack on real users, and it stayed inside the individual user's",
@@ -1422,83 +1574,6 @@
       "related_sources": []
     },
     {
-      "id": "e0d2f2ef417cccc3",
-      "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-      "summary": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-20T18:51:43+00:00",
-      "published_ts": 1795200703.0,
-      "cves": [],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "a4bd42e8c5a1e24d",
-      "title": "In Security, Words Matter as Much as Tools, Maybe More",
-      "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-20T18:35:40+00:00",
-      "published_ts": 1795199740.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "afb7da804c85b58e",
-      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
-      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4.",
-      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-20T17:57:20+00:00",
-      "published_ts": 1795197440.0,
-      "cves": [
-        "CVE-2026-23871"
-      ],
-      "sectors": [
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Android",
-        "SAP"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "7ca0393bd54b3dd5",
       "title": "President Trump Taps Kirsten Davies as National Cyber Director",
       "summary": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
@@ -1508,28 +1583,6 @@
       "category": "mixed",
       "published": "2026-11-21T13:00:00+00:00",
       "published_ts": 1795266000.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c6f21e1fbb0cdaf5",
-      "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
-      "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
-      "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-21T01:31:23+00:00",
-      "published_ts": 1795224683.0,
       "cves": [],
       "sectors": [],
       "regions": [
