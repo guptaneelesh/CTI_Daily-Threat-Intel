@@ -1,21 +1,23 @@
 {
-  "generated_at": "2026-11-24T17:00:09.062808+00:00",
+  "generated_at": "2026-11-25T01:56:03.700711+00:00",
   "lookback_hours": 72,
   "totals": {
-    "all": 62,
-    "critical": 1,
-    "high": 2,
+    "all": 81,
+    "critical": 2,
+    "high": 6,
     "medium": 5,
-    "low": 54,
-    "actively_exploited": 6,
-    "with_cves": 11
+    "low": 68,
+    "actively_exploited": 10,
+    "with_cves": 16
   },
   "sources_used": [
     "BleepingComputer",
     "CISA Alerts",
     "CISA KEV",
     "Check Point Research",
+    "CrowdStrike Blog",
     "Dark Reading",
+    "GBHackers",
     "Securelist (Kaspersky)",
     "SecurityWeek",
     "The Hacker News",
@@ -23,6 +25,34 @@
     "Unit 42 (Palo Alto)"
   ],
   "items": [
+    {
+      "id": "797140d773e919a1",
+      "title": "CVE-2026-132224: Optimizely Web Experimentation External Control of Critical State Data Vulnerability (Optimizely Web Experimentation)",
+      "summary": "CISA KEV — actively exploited. Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-27).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-24T00:00:00+00:00",
+      "published_ts": 1795478400.0,
+      "cves": [
+        "CVE-2026-132224"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 75,
+      "priority_label": "Critical",
+      "related_sources": []
+    },
     {
       "id": "0f36b31fc220ee49",
       "title": "CVE-2026-134624: N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability (N-able MailAssure)",
@@ -65,6 +95,67 @@
       ]
     },
     {
+      "id": "0befb1a9207baa80",
+      "title": "CVE-2026-131914: Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability (Idunno AntiCsrf)",
+      "summary": "CISA KEV — actively exploited. Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-27).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-24T00:00:00+00:00",
+      "published_ts": 1795478400.0,
+      "cves": [
+        "CVE-2026-131914"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": [
+        {
+          "source": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+          "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+          "published": "2026-11-23T09:11:56+00:00"
+        }
+      ]
+    },
+    {
+      "id": "5468086e908aba86",
+      "title": "CVE-2026-132165: Drupal Core Remote Code Execution Vulnerability (Drupal Core)",
+      "summary": "CISA KEV — actively exploited. Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-27).",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+      "source": "CISA KEV",
+      "source_trust": 5,
+      "category": "vuln",
+      "published": "2026-11-24T00:00:00+00:00",
+      "published_ts": 1795478400.0,
+      "cves": [
+        "CVE-2026-132165"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
       "id": "546a0dc7629cb93d",
       "title": "CVE-2026-133968: Project MONAI MONAI Label Path Traversal Vulnerability (Project MONAI MONAI Label)",
       "summary": "CISA KEV — actively exploited. Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. (due 2026-11-26).",
@@ -88,6 +179,52 @@
       "actively_exploited": true,
       "cvss": null,
       "priority_score": 70,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "3d5a65b2fc4c3dc5",
+      "title": "12 Dark Web Monitoring Services: The 2026 Buyer’s Verdict Guide",
+      "summary": "Dark web monitoring is only as good as two things: how deep the collection reaches into closed forums, Telegram channels, and criminal marketplaces, and whether the alerts are actionable intelligence or noise about data already everywhere. This verdict guide judges twelve services, declaring each one’s lane, because broad criminal intelligence, recaptured-credential depth, and investigation tooling [&#8230;] The post 12 Dark Web Monitoring Services: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/dark-web-monitoring-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T08:08:51+00:00",
+      "published_ts": 1795507731.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 55,
+      "priority_label": "High",
+      "related_sources": []
+    },
+    {
+      "id": "be49311f168d57ae",
+      "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
+      "summary": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders.",
+      "url": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T21:48:06+00:00",
+      "published_ts": 1795556886.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": true,
+      "cvss": null,
+      "priority_score": 50,
       "priority_label": "High",
       "related_sources": []
     },
@@ -173,35 +310,9 @@
       "related_sources": []
     },
     {
-      "id": "3ff15cbda3df159e",
-      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T09:11:56+00:00",
-      "published_ts": 1795425116.0,
-      "cves": [
-        "CVE-2026-131914"
-      ],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": true,
-      "cvss": null,
-      "priority_score": 40,
-      "priority_label": "Medium",
-      "related_sources": []
-    },
-    {
       "id": "a031a866d2ddbd2a",
       "title": "Danfoss AK-SM 8xxA Series",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA &lt;=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Series controller allows remote attackers to send specially crafted HTTP/S POST requests, leading to memory corruption, webserver restart and hypothetically potential arbitrary code execution with webserver privileges. Authentication is not required to exploit this vulnerability. Read More 1 Affected Product Danfoss AK-SM8xxA &lt;=5.4.0 Product Status: known_affected Remediations Mitigation This vulnerability will be addressed in an upcoming Danfoss AK-SM 800A Series software release (version 5.5.x). Mitigation In addition, Danfoss will remove the ability for users to disable Strict Mode in future software releases. Additional Metrics Relevant CWE: CWE-121 Stack-based Buffer Overflow CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Det",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA &lt;=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Series controller allows remote attackers to send specially crafted HTTP/S POST requests, leading to memory corruption, webserver restart and hypothetically potential arbitrary code execution with webserver privileges. Authentication is not required to exploit this vulnerability. Read More 1 Affected Product Danfoss AK-SM8xxA &lt;=5.4.0 Product Status: known_affected Remediations Mitigation This vulnerability will be addressed in an upcoming Danfoss AK-SM 800A Series software release (version 5.5.x). In addition, Danfoss will remove the ability for users to disable Strict Mode in future software releases. Mitigation Until a software update is available, Danfoss recommends the following mitigations: * Follow the guidance provided in the product documentation and do not expose devices directly to the Internet or assign them public IP addresses. * Restrict remote access to affected devices ",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
       "source": "CISA Alerts",
       "source_trust": 5,
@@ -228,7 +339,7 @@
     {
       "id": "c62f59198aba7651",
       "title": "AutomationDirect C-More EA9 Programming Software",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software &lt;=V6.80 (CVE-2026-127280) CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-127280 C-More EA9 Programming Software V6.80 does not adequately validate data read from a project file before using it in heap memory operations. A crafted file causes a heap buffer overrun during file open, resulting in heap corruption and instability within the application. An attacker can exploit this vulnerability by convincing a user to open a malicious project file delivered through common distribution channels such as email, file sharing, or removable media. Read More 1 Affected Product AutomationDirect C-More EA9 Programming Software &lt;=V6.80 Product Status: known_affected Remediations Vendor fix Update C-More EA9 Programming Software to V6.81: https://www.automationdirect.com/support/software-downloads Additional Metrics Relevant CWE: CWE-122 Heap-",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software &lt;=V6.80 (CVE-2026-127280) CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-127280 C-More EA9 Programming Software V6.80 does not adequately validate data read from a project file before using it in heap memory operations. A crafted file causes a heap buffer overrun during file open, resulting in heap corruption and instability within the application. An attacker can exploit this vulnerability by convincing a user to open a malicious project file delivered through common distribution channels such as email, file sharing, or removable media. Read More 1 Affected Product AutomationDirect C-More EA9 Programming Software &lt;=V6.80 Product Status: known_affected Remediations Vendor fix Update C-More EA9 Programming Software to V6.81: https://www.automationdirect.com/support/software-downloads Mitigation If you cannot update to the latest ",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
       "source": "CISA Alerts",
       "source_trust": 5,
@@ -251,6 +362,139 @@
       "cvss": null,
       "priority_score": 30,
       "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "866eb08f2db6a7df",
+      "title": "12 Fraud Detection Software: The 2026 Buyer’s Verdict Guide",
+      "summary": "Fraud detection is a tightrope with a knife’s edge: too slack and the losses pile up, too strict and you turn away good customers and choke your revenue. This guide weighs twelve platforms and names each one’s vertical, because ecommerce chargebacks, payments and fintech, identity fraud and new-account abuse are truly different purchases the top [&#8230;] The post 12 Fraud Detection Software: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/fraud-detection-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T08:27:33+00:00",
+      "published_ts": 1795508853.0,
+      "cves": [],
+      "sectors": [
+        "Financial Services",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Edge",
+        "Slack"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 25,
+      "priority_label": "Medium",
+      "related_sources": []
+    },
+    {
+      "id": "7d6b195fdeea4277",
+      "title": "AI-Powered Hackers Deploy Stealthy ZQAgent Malware to Keep Control of Compromised Linux Servers",
+      "summary": "An LLM-driven intrusion tool has deployed a persistent Linux backdoor, which is unusual for this class of attack. LLM-driven intrusions have mostly been fast, noisy smash-and-grab operations. They rarely leave footholds beyond staged credentials, so defenders can usually contain them by isolating the initial-access vector and revoking credentials. ZQAgent breaks that pattern. NVISO believes the [&#8230;] The post AI-Powered Hackers Deploy Stealthy ZQAgent Malware to Keep Control of Compromised Linux Servers appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/zqagent-malware-attack/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T13:16:03+00:00",
+      "published_ts": 1795526163.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Linux"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "5e2ac7792792c2b3",
+      "title": "New Android Camera Attack Lets Hackers Eavesdrop on Speech Without Microphone Access",
+      "summary": "Security researchers have demonstrated that an Android app with camera permission can recover parts of speech played through a phone’s built-in loudspeaker without accessing the microphone. The attack, dubbed CAMEAR, uses motion data exposed by Android’s Camera2 interface rather than video frames or audio recordings. The findings reveal a gap between what Android’s permission prompts [&#8230;] The post New Android Camera Attack Lets Hackers Eavesdrop on Speech Without Microphone Access appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/new-android-camera-attack/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T13:05:52+00:00",
+      "published_ts": 1795525552.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4cc211c3d5bc66e6",
+      "title": "EvilTokens Phishing Infrastructure Resurfaces After Microsoft Takedown With New Device-Code Attack Hosts",
+      "summary": "Phishing infrastructure tied to the EvilTokens kit is active again, about two months after Microsoft disrupted the service. The kit hijacks Microsoft 365 accounts by abusing the OAuth device authorization grant. Microsoft says it compromised more than 12,000 inboxes across over 10,000 organizations. The lure page asks Microsoft to start a device-code flow and receives [&#8230;] The post EvilTokens Phishing Infrastructure Resurfaces After Microsoft Takedown With New Device-Code Attack Hosts appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/eviltokens-phishing-infrastructure/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T12:07:06+00:00",
+      "published_ts": 1795522026.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "204c19d12a5e04c8",
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability&nbsp; CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability&nbsp; CVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability&nbsp; These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabi",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "source": "CISA Alerts",
+      "source_trust": 5,
+      "category": "advisory",
+      "published": "2026-11-24T12:00:00+00:00",
+      "published_ts": 1795521600.0,
+      "cves": [
+        "CVE-2026-131914",
+        "CVE-2026-132165",
+        "CVE-2026-132224"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
       "related_sources": []
     },
     {
@@ -277,6 +521,155 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "3aaed95eccac6a56",
+      "title": "Hackers Could Suddenly Apply Trailer Brakes at Highway Speeds Through Bluetooth Vulnerability",
+      "summary": "Researchers have found that anyone within Bluetooth range of an unpatched Elecbrakes trailer brake controller can apply the trailer&#8217;s brakes with any force. The attacker needs no pairing, PIN or authentication. The flaw is tracked as CVE-2026-96805 and scored CVSS 9.6 (Critical). They decompiled the Elecbrakes Android app with AI assistance and mapped 47 Bluetooth [&#8230;] The post Hackers Could Suddenly Apply Trailer Brakes at Highway Speeds Through Bluetooth Vulnerability appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/bluetooth-vulnerability/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T09:16:35+00:00",
+      "published_ts": 1795511795.0,
+      "cves": [
+        "CVE-2026-96805"
+      ],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Android"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b37fddbbfbcdec63",
+      "title": "12 Brand Protection & Anti-Impersonation Tools: The 2026 Buyer’s Verdict Guide",
+      "summary": "“Brand protection” splits into two very different jobs depending on who’s at the table. Security teams picture spoofed domains, credential-harvesting pages and impersonated executives that burn customers and staff. Legal and ecommerce teams picture knock-off goods, unauthorised resellers and trademark abuse that bleed the top line. This verdict guide judges twelve tools, declaring each one’s [&#8230;] The post 12 Brand Protection &amp; Anti-Impersonation Tools: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/brand-protection-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T08:25:04+00:00",
+      "published_ts": 1795508704.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "63c08347f716f675",
+      "title": "12 Digital Risk Protection (DRP) Solutions: The 2026 Buyer’s Verdict Guide",
+      "summary": "Digital risk protection keeps watch over everything about your organisation that sits beyond the perimeter look-alike domains, leaked data, spoofed social accounts, exposed assets, brand abuse and, crucially, acts on it. The question that defines the category isn’t how wide the monitoring reaches, but whether a platform can actually pull the fake domain down instead [&#8230;] The post 12 Digital Risk Protection (DRP) Solutions: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/digital-risk-protection-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T08:18:36+00:00",
+      "published_ts": 1795508316.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "e3932d339bcc66b7",
+      "title": "Hackers Use AI Agents to Hijack Kubernetes Clusters and Steal Sensitive Cloud Credentials",
+      "summary": "Hackers are using AI offensive agents to compromise Kubernetes clusters, harvest cloud credentials, and exploit trust relationships across development infrastructure. Investigations describe opportunistic campaigns and targeted intrusions in which automated agents connect stolen identities, excessive permissions, and exposed secrets into multistage attacks. However, researchers caution that not every disclosed breach has sufficient evidence to establish [&#8230;] The post Hackers Use AI Agents to Hijack Kubernetes Clusters and Steal Sensitive Cloud Credentials appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/kubernetes-clusters-hijacking/",
+      "source": "GBHackers",
+      "source_trust": 3,
+      "category": "mixed",
+      "published": "2026-11-24T07:57:17+00:00",
+      "published_ts": 1795507037.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Global"
+      ],
+      "products": [
+        "Kubernetes"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 20,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "b826ec0f0fc67b02",
+      "title": "New Inception extortion gang launches large-scale vishing campaign",
+      "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T20:21:20+00:00",
+      "published_ts": 1795551680.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Global"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "1d30af4dfbb0ae70",
+      "title": "California privacy agency director Kemp to leave after two-year tenure",
+      "summary": "The director of the trailblazing California Privacy Protection Agency announced his departure following implementation of a first-in-the-nation platform allowing consumers to easily opt out of data sharing.",
+      "url": "https://therecord.media/california-privacy-agency-kemp",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T19:30:00+00:00",
+      "published_ts": 1795548600.0,
+      "cves": [],
+      "sectors": [
+        "Consumer",
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 15,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -562,47 +955,19 @@
       "related_sources": []
     },
     {
-      "id": "b6503e45a99bbea1",
-      "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
-      "summary": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
+      "id": "2905a86fb2ae7d91",
+      "title": "12 Post-Quantum / Quantum-Safe Cryptography Solutions: The 2026 Buyer’s Verdict Guide",
+      "summary": "What drives post-quantum cryptography isn’t a machine that’s already here it’s “harvest now, decrypt later”: attackers hoovering up encrypted data today to crack open the moment a cryptographically useful quantum computer shows up. Now that NIST’s PQC standards are locked, the job has moved from research to migration, and the thorniest part is discovery most [&#8230;] The post 12 Post-Quantum / Quantum-Safe Cryptography Solutions: The 2026 Buyer’s Verdict Guide appeared first on GBHackers Security | #1 Globally Trusted Cyber Security News Platform .",
+      "url": "https://gbhackers.com/post-quantum-cryptography-buyers-guide/",
+      "source": "GBHackers",
+      "source_trust": 3,
       "category": "mixed",
-      "published": "2026-11-23T19:42:20+00:00",
-      "published_ts": 1795462940.0,
+      "published": "2026-11-24T08:00:32+00:00",
+      "published_ts": 1795507232.0,
       "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
+      "sectors": [],
       "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 15,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f956f629ee6f2e0f",
-      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
-      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-      "source": "The Hacker News",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T17:45:15+00:00",
-      "published_ts": 1795455915.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Asia-Pacific"
+        "Global"
       ],
       "products": [],
       "actively_exploited": false,
@@ -636,6 +1001,154 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 15,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "72d9d604a6877f4d",
+      "title": "NGINX HTTP/2 Use-After-Free: CVE-2026-123633",
+      "summary": "Technical analysis of CVE-2026-123633, an NGINX HTTP/2 use-after-free flaw, with details on affected versions, sanitizer tests, and patch guidance. The post NGINX HTTP/2 Use-After-Free: CVE-2026-123633 appeared first on Unit 42 .",
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-123633-nginx-http2-vulnerability/",
+      "source": "Unit 42 (Palo Alto)",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-11-24T23:00:14+00:00",
+      "published_ts": 1795561214.0,
+      "cves": [
+        "CVE-2026-123633"
+      ],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Nginx"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "421ed44500268f07",
+      "title": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
+      "summary": "It was not clear what specific information was compromised or who was responsible. The post An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says appeared first on SecurityWeek .",
+      "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+      "source": "SecurityWeek",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T22:41:58+00:00",
+      "published_ts": 1795560118.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c0f1d199fdb7b072",
+      "title": "Rackspace shuts down Spot cloud platform after security breach",
+      "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T21:37:30+00:00",
+      "published_ts": 1795556250.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [
+        "Kubernetes"
+      ],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "94d73937f66641b8",
+      "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+      "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T21:36:11+00:00",
+      "published_ts": 1795556171.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Africa"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "146ba107601ffeec",
+      "title": "Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen",
+      "summary": "Cybercriminals likely stole data from 150,000 users of myColorado, which residents typically use for digital identification, document storage and accessing state government services.",
+      "url": "https://therecord.media/mycolorado-app-down-data-breach",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T20:52:00+00:00",
+      "published_ts": 1795553520.0,
+      "cves": [],
+      "sectors": [
+        "Government & Public Services"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "4057024651f1444b",
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T16:54:07+00:00",
+      "published_ts": 1795539247.0,
+      "cves": [],
+      "sectors": [
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Middle East"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -760,6 +1273,28 @@
       "related_sources": []
     },
     {
+      "id": "eae8c1927ea1edee",
+      "title": "Reprioritizing Automated Leads with CrowdStrike Signal",
+      "summary": "",
+      "url": "https://www.crowdstrike.com/en-us/blog/reprioritizing-automated-leads-crowdstrike-signal/",
+      "source": "CrowdStrike Blog",
+      "source_trust": 5,
+      "category": "threat",
+      "published": "2026-11-24T08:00:00+00:00",
+      "published_ts": 1795507200.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
       "id": "1afda6ce6333d4c6",
       "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
       "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X. The AI upstart called the initiative a",
@@ -786,143 +1321,49 @@
       "related_sources": []
     },
     {
-      "id": "a9e05b8e95519cb3",
-      "title": "LaLiga hacked: Spain’s top football league confirms theft of fans’ personal data",
-      "summary": "Spain’s professional soccer league LaLiga said Monday hackers stole personal information belonging to fans in a cyberattack affecting its digital services and those of several Spanish clubs.",
-      "url": "https://therecord.media/laliga-hacked-spain-top-professional-league-confirms-cyber-incident",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-24T00:00:00+00:00",
-      "published_ts": 1795478400.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "c2b0a1c15acaef31",
-      "title": "Industrial Serial Gateways Broadcast That They're Insecure",
-      "summary": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't.",
-      "url": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T22:02:46+00:00",
-      "published_ts": 1795471366.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "af1f4e9003c2bb34",
-      "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
-      "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents.",
-      "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T21:21:42+00:00",
-      "published_ts": 1795468902.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "7f6fdc065caac6f6",
-      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
-      "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+      "id": "b6503e45a99bbea1",
+      "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+      "summary": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-23T20:54:51+00:00",
-      "published_ts": 1795467291.0,
+      "published": "2026-11-23T19:42:20+00:00",
+      "published_ts": 1795462940.0,
       "cves": [],
       "sectors": [
-        "Energy Resources & Industrials"
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "f956f629ee6f2e0f",
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
+      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "source": "The Hacker News",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T17:45:15+00:00",
+      "published_ts": 1795455915.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials",
+        "Technology, Media & Telecom"
       ],
       "regions": [
         "Asia-Pacific"
       ],
       "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "2f546f89344e466f",
-      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
-      "summary": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T18:38:40+00:00",
-      "published_ts": 1795459120.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "609abd442a5f934b",
-      "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
-      "summary": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
-      "source": "Dark Reading",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T17:45:52+00:00",
-      "published_ts": 1795455952.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Edge"
-      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
@@ -955,33 +1396,6 @@
       "related_sources": []
     },
     {
-      "id": "4b9690ad367dcfd8",
-      "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
-      "summary": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T13:28:45+00:00",
-      "published_ts": 1795440525.0,
-      "cves": [],
-      "sectors": [
-        "Energy Resources & Industrials",
-        "Technology, Media & Telecom"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 10,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "dbe06c827f0b89d9",
       "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
       "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
@@ -1003,6 +1417,94 @@
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 10,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "8995754d35654170",
+      "title": "Satellites Have a Ground-Level Cybersecurity Problem",
+      "summary": "Weaknesses in the ground-based infrastructure supporting satellite services are becoming more consequential as a new space race gathers pace.",
+      "url": "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T22:05:34+00:00",
+      "published_ts": 1795557934.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "656c9299fd8000a6",
+      "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+      "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T18:59:52+00:00",
+      "published_ts": 1795546792.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "c0ca397957c9537e",
+      "title": "Radware discloses breach exposing customer cloud access keys",
+      "summary": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T17:49:05+00:00",
+      "published_ts": 1795542545.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "72d70f7727f2c0f0",
+      "title": "Lawmakers warn ID verification companies to bolster security after September hack",
+      "summary": "A bicameral, bipartisan letter from lawmakers said identity verification companies still have significant security work to do in the wake of a data breach at IDscan in September.",
+      "url": "https://therecord.media/idscan-data-breach-warning-congressional-letter",
+      "source": "The Record",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-24T17:49:00+00:00",
+      "published_ts": 1795542540.0,
+      "cves": [],
+      "sectors": [],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
       "priority_label": "Low",
       "related_sources": []
     },
@@ -1161,28 +1663,6 @@
       "related_sources": []
     },
     {
-      "id": "649c175e10b1c8ba",
-      "title": "UK cyber agency seeing ‘marked rise’ in AI-driven attacks",
-      "summary": "Britain’s National Cyber Security Centre said it has observed “a marked rise” since September in cyberattacks assisted by artificial intelligence and warned the technology was increasing attackers’ speed, scale and persistence.",
-      "url": "https://therecord.media/cyberattacks-uk-artificial-intelligence",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-24T13:45:00+00:00",
-      "published_ts": 1795527900.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Europe"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
       "id": "583a3364d37b9866",
       "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
       "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
@@ -1196,28 +1676,6 @@
       "sectors": [],
       "regions": [
         "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "f6988a96aeab11f8",
-      "title": "McDonald’s Japan discloses breach exposing customer purchase and location data",
-      "summary": "McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data.",
-      "url": "https://therecord.media/japan-mcdonalds-cyberattack-breach",
-      "source": "The Record",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-24T13:00:00+00:00",
-      "published_ts": 1795525200.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Asia-Pacific"
       ],
       "products": [],
       "actively_exploited": false,
@@ -1249,17 +1707,19 @@
       "related_sources": []
     },
     {
-      "id": "6e03dc8e76108db4",
-      "title": "US Cyber Director Pick Signals Shift Toward Expertise",
-      "summary": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+      "id": "c2b0a1c15acaef31",
+      "title": "Industrial Serial Gateways Broadcast That They're Insecure",
+      "summary": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't.",
+      "url": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
       "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-23T20:13:48+00:00",
-      "published_ts": 1795464828.0,
+      "published": "2026-11-23T22:02:46+00:00",
+      "published_ts": 1795471366.0,
       "cves": [],
-      "sectors": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
       "regions": [
         "Unspecified"
       ],
@@ -1271,21 +1731,95 @@
       "related_sources": []
     },
     {
-      "id": "cf87c72a8cfc9ce4",
-      "title": "OpenRouter drops AI providers over leaked prompts and secrets",
-      "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+      "id": "af1f4e9003c2bb34",
+      "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
+      "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents.",
+      "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T21:21:42+00:00",
+      "published_ts": 1795468902.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Unspecified"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "7f6fdc065caac6f6",
+      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+      "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-23T20:00:20+00:00",
-      "published_ts": 1795464020.0,
+      "published": "2026-11-23T20:54:51+00:00",
+      "published_ts": 1795467291.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Asia-Pacific"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "2f546f89344e466f",
+      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+      "summary": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+      "source": "BleepingComputer",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T18:38:40+00:00",
+      "published_ts": 1795459120.0,
+      "cves": [],
+      "sectors": [
+        "Energy Resources & Industrials"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "products": [],
+      "actively_exploited": false,
+      "cvss": null,
+      "priority_score": 5,
+      "priority_label": "Low",
+      "related_sources": []
+    },
+    {
+      "id": "609abd442a5f934b",
+      "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
+      "summary": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+      "source": "Dark Reading",
+      "source_trust": 4,
+      "category": "mixed",
+      "published": "2026-11-23T17:45:52+00:00",
+      "published_ts": 1795455952.0,
       "cves": [],
       "sectors": [],
       "regions": [
         "Unspecified"
       ],
-      "products": [],
+      "products": [
+        "Edge"
+      ],
       "actively_exploited": false,
       "cvss": null,
       "priority_score": 5,
@@ -1302,30 +1836,6 @@
       "category": "threat",
       "published": "2026-11-23T15:16:27+00:00",
       "published_ts": 1795446987.0,
-      "cves": [],
-      "sectors": [
-        "Government & Public Services"
-      ],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 5,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "8da227be8e3e49e6",
-      "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
-      "summary": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
-      "source": "BleepingComputer",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T12:02:23+00:00",
-      "published_ts": 1795435343.0,
       "cves": [],
       "sectors": [
         "Government & Public Services"
@@ -1415,15 +1925,15 @@
       "related_sources": []
     },
     {
-      "id": "ad5770da019901da",
-      "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
-      "summary": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
-      "source": "BleepingComputer",
+      "id": "6e03dc8e76108db4",
+      "title": "US Cyber Director Pick Signals Shift Toward Expertise",
+      "summary": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+      "source": "Dark Reading",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-23T16:50:01+00:00",
-      "published_ts": 1795452601.0,
+      "published": "2026-11-23T20:13:48+00:00",
+      "published_ts": 1795464828.0,
       "cves": [],
       "sectors": [],
       "regions": [
@@ -1437,37 +1947,15 @@
       "related_sources": []
     },
     {
-      "id": "98fdf801d5599074",
-      "title": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
-      "summary": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack appeared first on SecurityWeek .",
-      "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
-      "source": "SecurityWeek",
-      "source_trust": 4,
-      "category": "mixed",
-      "published": "2026-11-23T15:06:49+00:00",
-      "published_ts": 1795446409.0,
-      "cves": [],
-      "sectors": [],
-      "regions": [
-        "Unspecified"
-      ],
-      "products": [],
-      "actively_exploited": false,
-      "cvss": null,
-      "priority_score": 0,
-      "priority_label": "Low",
-      "related_sources": []
-    },
-    {
-      "id": "219918a71df1a64a",
-      "title": "AI Agents Are Creating a Shared Responsibility Gap",
-      "summary": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+      "id": "cf87c72a8cfc9ce4",
+      "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+      "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
       "source": "BleepingComputer",
       "source_trust": 4,
       "category": "mixed",
-      "published": "2026-11-23T15:00:10+00:00",
-      "published_ts": 1795446010.0,
+      "published": "2026-11-23T20:00:20+00:00",
+      "published_ts": 1795464020.0,
       "cves": [],
       "sectors": [],
       "regions": [
